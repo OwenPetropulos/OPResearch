@@ -1,250 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Moving Average Strategy (v1) | OPResearch</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Moving Average Strategy (v1)</title>
 
   <style>
     :root{
-      --bg: #0b1220;
-      --panel: #0f1a2b;
-      --panel2: #0c1626;
-      --text: #e6edf7;
-      --muted: #a9b7cf;
-      --line: rgba(255,255,255,0.10);
-      --accent: #66a6ff;
-      --accent2: #7ee0a3;
-      --warn: #ffcc66;
-      --shadow: 0 10px 30px rgba(0,0,0,0.35);
-      --radius: 14px;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      --bg: #081425;          /* uniform dark blue background */
+      --panel: rgba(255,255,255,0.06);
+      --panel-2: rgba(255,255,255,0.04);
+      --border: rgba(255,255,255,0.10);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.68);
+      --muted2: rgba(255,255,255,0.58);
+      --shadow: 0 10px 35px rgba(0,0,0,0.35);
+      --radius: 18px;
+      --radius2: 14px;
+      --maxw: 1200px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
     }
-    html, body { height: 100%; }
-    body{
+
+    html, body {
+      height: 100%;
       margin: 0;
-      font-family: var(--sans);
-      background: radial-gradient(1200px 800px at 20% 0%, rgba(102,166,255,0.18), transparent 55%),
-                  radial-gradient(1000px 700px at 100% 10%, rgba(126,224,163,0.12), transparent 55%),
-                  var(--bg);
+      background: var(--bg);  /* IMPORTANT: no gradients anywhere */
       color: var(--text);
+      font-family: var(--font);
     }
-    a { color: var(--accent); text-decoration: none; }
+
+    /* Hard override in case anything else adds gradients */
+    body::before, body::after { content: none !important; }
+
+    a { color: inherit; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     .container{
-      max-width: 1050px;
+      max-width: var(--maxw);
       margin: 0 auto;
-      padding: 28px 18px 60px;
+      padding: 28px 18px 40px;
     }
 
     .topbar{
       display:flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 16px;
-    }
-    .crumb{
-      font-size: 14px;
-      color: var(--muted);
-      display:flex;
       align-items:center;
-      gap: 10px;
-    }
-    .crumb a{ color: var(--muted); }
-    .pill{
-      font-size: 12px;
-      padding: 6px 10px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.04);
-      border-radius: 999px;
+      justify-content:space-between;
+      gap: 12px;
+      margin-bottom: 14px;
       color: var(--muted);
-      font-family: var(--mono);
-      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      color: var(--muted);
     }
 
     .hero{
-      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
-      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
+      border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 22px 22px;
+      padding: 26px 26px 22px;
       box-shadow: var(--shadow);
       margin-bottom: 18px;
     }
-    .hero h1{
-      margin: 0 0 6px 0;
-      font-size: 28px;
-      letter-spacing: 0.2px;
+
+    h1{
+      margin: 0 0 10px;
+      font-size: 46px;
+      letter-spacing: -0.6px;
+      line-height: 1.05;
     }
+
     .subtitle{
       margin: 0;
       color: var(--muted);
-      line-height: 1.5;
-      max-width: 80ch;
+      font-size: 20px;
+      line-height: 1.45;
+      max-width: 980px;
     }
 
     .grid{
       display:grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1fr 2fr;
       gap: 16px;
-      margin-top: 16px;
-    }
-    @media (max-width: 860px){
-      .grid{ grid-template-columns: 1fr; }
+      align-items: start;
     }
 
     .card{
-      background: rgba(255,255,255,0.04);
-      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 18px;
+      overflow:hidden;
     }
-    .card h2{
-      margin: 0 0 10px 0;
-      font-size: 18px;
-      letter-spacing: 0.2px;
-    }
-    .card p, .card li{
-      color: var(--muted);
-      line-height: 1.55;
-      font-size: 14.5px;
-    }
-    ul{ margin: 8px 0 0 18px; }
 
-    .table-wrap{
-      overflow-x: auto;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      background: rgba(0,0,0,0.12);
+    .card-inner{
+      padding: 18px 18px 16px;
     }
+
+    .card h2{
+      margin: 0 0 10px;
+      font-size: 28px;
+      letter-spacing: -0.3px;
+    }
+
+    .body{
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    /* Assumptions list: move bullets left */
+    .assumptions{
+      margin-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 14px;
+    }
+    .assumptions h3{
+      margin: 0 0 10px;
+      font-size: 26px;
+      color: var(--text);
+    }
+    .assumptions ul{
+      margin: 0;
+      padding-left: 16px; /* smaller than default => bullets left */
+      color: var(--muted);
+    }
+    .assumptions li{
+      margin: 8px 0;
+      line-height: 1.45;
+    }
+    .assumptions strong{ color: var(--text); }
+
+    .results-header{
+      padding: 18px 18px 0;
+    }
+    .results-header h2{
+      margin: 0 0 12px;
+      font-size: 28px;
+    }
+
     table{
       width: 100%;
-      border-collapse: collapse;
-      min-width: 640px;
+      border-collapse: separate;
+      border-spacing: 0;
+      overflow: hidden;
+      border-radius: var(--radius2);
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(0,0,0,0.10);
     }
-    th, td{
-      padding: 12px 12px;
-      border-bottom: 1px solid var(--line);
-      font-size: 14px;
+
+    thead th{
+      text-align:left;
+      font-weight: 650;
+      color: rgba(255,255,255,0.86);
+      padding: 14px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.04);
+      font-size: 16px;
     }
-    th{
-      text-align: left;
-      color: var(--text);
-      background: rgba(255,255,255,0.05);
-      font-weight: 600;
+
+    tbody td{
+      padding: 14px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.80);
+      font-size: 18px;
     }
-    td{
-      color: var(--muted);
+
+    tbody tr:last-child td{
+      border-bottom: none;
     }
-    tr:last-child td{ border-bottom: none; }
+
     td.metric{
-      color: var(--text);
-      font-weight: 600;
+      color: rgba(255,255,255,0.90);
+      font-weight: 650;
+      width: 42%;
     }
+
     .note{
-      margin-top: 10px;
-      font-size: 12.5px;
-      color: var(--muted);
-    }
-    .note code{
-      font-family: var(--mono);
-      font-size: 12px;
-      color: var(--text);
-      background: rgba(255,255,255,0.06);
-      padding: 2px 6px;
-      border-radius: 8px;
-      border: 1px solid var(--line);
+      margin: 14px 2px 0;
+      color: var(--muted2);
+      font-size: 16px;
     }
 
     .chart-card{
       margin-top: 16px;
-      padding: 0;
-      overflow: hidden;
     }
-    .chart-header{
-      padding: 16px 18px 10px 18px;
-      border-bottom: 1px solid var(--line);
-      background: rgba(255,255,255,0.03);
+    .chart-inner{
+      padding: 18px;
     }
     .chart-header h2{
-      margin: 0;
-      font-size: 18px;
+      margin: 0 0 8px;
+      font-size: 22px;
     }
     .chart-sub{
-      margin: 6px 0 0 0;
+      margin: 0 0 14px;
       color: var(--muted);
-      font-size: 13px;
+      font-size: 15px;
       line-height: 1.4;
     }
+
     iframe{
       width: 100%;
-      height: 720px;
+      height: 760px;
       border: 0;
-      background: #ffffff; /* Plotly default theme loads white */
-      display:block;
+      border-radius: 16px;
+      overflow: hidden;
+      background: rgba(0,0,0,0.10);
     }
 
-    .footer{
-      margin-top: 18px;
-      color: var(--muted);
-      font-size: 12.5px;
-      line-height: 1.5;
+    @media (max-width: 900px){
+      h1{ font-size: 38px; }
+      .grid{ grid-template-columns: 1fr; }
+      tbody td{ font-size: 16px; }
+      td.metric{ width:auto; }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-
     <div class="topbar">
-      <div class="crumb">
+      <div>
         <a href="../../index.html">← Back to Projects</a>
-        <span style="opacity:.55;">/</span>
+        <span> / </span>
         <span>Moving Average v1</span>
       </div>
-      <div class="pill">OPResearch • v1</div>
+      <div class="pill">OPResearch <span style="opacity:.7;">•</span> v1</div>
     </div>
 
-    <div class="hero">
+    <section class="hero">
       <h1>Moving Average Strategy (v1)</h1>
       <p class="subtitle">
-        A weekly-rebalanced, rules-based strategy that ranks a fixed universe of large-cap U.S. equities using a trailing 12-month signal and holds the top names.
-        Results are shown versus an equal-weight benchmark of the same universe and the Nasdaq 100 (QQQ) as a broad market proxy.
+        A weekly-rebalanced, rules-based strategy that ranks a fixed universe of large-cap U.S. equities using a trailing
+        12-month signal and holds the top names. Results are shown versus an equal-weight benchmark of the same universe
+        and the Nasdaq 100 (QQQ) as a broad market proxy.
       </p>
-    </div>
+    </section>
 
-    <div class="grid">
+    <section class="grid">
+      <!-- LEFT: Overview + Assumptions -->
       <div class="card">
-        <h2>Overview</h2>
-        <p>
-          The objective of this version is to establish a transparent baseline for systematic decision-making using only end-of-week price information.
-          The strategy computes a trailing signal (12-month lookback), selects the strongest names within the universe, and rebalances weekly.
-          All performance statistics are computed on aligned weekly observations (same start date across series) to ensure an apples-to-apples comparison.
-        </p>
+        <div class="card-inner">
+          <h2>Overview</h2>
+          <p class="body">
+            The objective of this version is to establish a transparent baseline for systematic decision-making using only
+            end-of-week price information. The strategy computes a trailing signal (12-month lookback), selects the strongest
+            names within the universe, and rebalances weekly. All performance statistics are computed on aligned weekly
+            observations (same start date across series) to ensure an apples-to-apples comparison.
+          </p>
 
-        <h2 style="margin-top:14px;">Assumptions</h2>
-        <ul>
-          <li><strong>Frequency:</strong> weekly rebalancing (end-of-week data)</li>
-          <li><strong>Lookback:</strong> 12-month trailing window before first trade</li>
-          <li><strong>Universe:</strong> fixed set of 10 large-cap U.S. equities (see repo output files)</li>
-          <li><strong>Portfolio construction:</strong> equal-weight across selected holdings</li>
-          <li><strong>Benchmark:</strong> equal-weight of the same universe (separate from QQQ)</li>
-          <li><strong>Nasdaq 100 proxy:</strong> QQQ (weekly)</li>
-          <li><strong>Transaction costs / slippage:</strong> not included in v1</li>
-        </ul>
-
-        <div class="footer">
-          Disclaimer: educational research only; not investment advice. Backtests are hypothetical and may not reflect real trading constraints.
+          <div class="assumptions">
+            <h3>Assumptions</h3>
+            <ul>
+              <li><strong>Frequency:</strong> weekly rebalancing (end-of-week data)</li>
+              <li><strong>Lookback:</strong> 12-month trailing window before first trade</li>
+              <li><strong>Universe:</strong> fixed set of 10 large-cap U.S. equities</li>
+              <li><strong>Benchmark:</strong> equal-weight basket of the same universe</li>
+              <li><strong>Market proxy:</strong> Nasdaq 100 (QQQ)</li>
+              <li><strong>Costs:</strong> not included in v1</li>
+            </ul>
+          </div>
         </div>
       </div>
 
+      <!-- RIGHT: Results table -->
       <div class="card">
-        <h2>Results Summary</h2>
+        <div class="results-header">
+          <h2>Results Summary</h2>
 
-        <div class="table-wrap">
           <table>
             <thead>
               <tr>
@@ -287,120 +319,112 @@
               </tr>
             </tbody>
           </table>
+
+          <p class="note" id="metrics_period">Loading metrics...</p>
+          <p class="note">Source: Yahoo Finance API</p>
         </div>
 
-        <p class="note" id="metrics_period">Loading metrics…</p>
-        <p class="note">Source: Yahoo Finance API</p>
+        <!-- Chart -->
+        <div class="chart-inner chart-card">
+          <div class="chart-header">
+            <h2>Backtest Visualization</h2>
+            <p class="chart-sub">
+              Interactive equity curves for Strategy vs Benchmark vs Nasdaq 100 (QQQ).
+            </p>
+          </div>
 
-
-        </p>
+          <!-- Cache-bust to avoid GitHub Pages/iframe staleness -->
+          <iframe src="./moving_average_backtest.html?v=11" loading="lazy"></iframe>
+        </div>
       </div>
-    </div>
+    </section>
 
-<div class="card chart-card">
-  <div class="chart-header">
-    <h2>Backtest Visualization</h2>
-    <p class="chart-sub">
-      Interactive equity curves for Strategy vs Benchmark vs Nasdaq 100 (QQQ).
-    </p>
+    <!-- Metrics loader -->
+    <script>
+      (async function loadMetrics() {
+        function $(id) { return document.getElementById(id); }
+        function setText(id, value) { const el = $(id); if (el) el.textContent = value; }
+
+        function asNum(x) {
+          const n = Number(x);
+          return Number.isFinite(n) ? n : null;
+        }
+
+        // For CAGR/volatility/drawdown stored as decimals (0.23 => 23%)
+        function fmtPctDecimal(x) {
+          const n = asNum(x);
+          if (n === null) return "—";
+          return `${(n * 100).toFixed(2)}%`;
+        }
+
+        // For total return stored as MULTIPLE (7.20 => 720%)
+        function fmtTotalReturnMultiple(x) {
+          const n = asNum(x);
+          if (n === null) return "—";
+          return `${(n * 100).toFixed(2)}%`;
+        }
+
+        function fmtNum(x) {
+          const n = asNum(x);
+          if (n === null) return "—";
+          return n.toFixed(2);
+        }
+
+        function fill(prefix, obj) {
+          if (!obj) return;
+
+          // total_return is a multiple in your current metrics.json (e.g., 7.20)
+          setText(`${prefix}_total_return`, fmtTotalReturnMultiple(obj.total_return));
+
+          // annualized return might be stored as cagr (preferred) or annualized_return
+          const ann = (obj.cagr !== undefined) ? obj.cagr : obj.annualized_return;
+          setText(`${prefix}_annualized_return`, fmtPctDecimal(ann));
+
+          setText(`${prefix}_volatility`, fmtPctDecimal(obj.volatility));
+          setText(`${prefix}_sharpe`, fmtNum(obj.sharpe));
+          setText(`${prefix}_max_drawdown`, fmtPctDecimal(obj.max_drawdown));
+        }
+
+        try {
+          // cache-bust JSON (GitHub Pages/CDN can be sticky)
+          const url = `./metrics.json?v=${Date.now()}`;
+          const res = await fetch(url, { cache: "no-store" });
+          if (!res.ok) throw new Error(`metrics.json fetch failed: ${res.status}`);
+
+          const data = await res.json();
+
+          // period text (supports either schema)
+          if (data.period?.start && data.period?.end) {
+            setText("metrics_period", `Metrics computed from ${data.period.start} to ${data.period.end}.`);
+          } else if (data.period_start && data.period_end) {
+            setText("metrics_period", `Metrics computed from ${data.period_start} to ${data.period_end}.`);
+          } else {
+            setText("metrics_period", "Metrics loaded.");
+          }
+
+          // support BOTH schemas:
+          // A) { metrics: { strategy, benchmark, nasdaq } }
+          // B) { strategy, benchmark, nasdaq100/nasdaq_100/qqq }
+          const strategy = data.metrics?.strategy || data.strategy;
+          const benchmark = data.metrics?.benchmark || data.benchmark;
+          const nasdaq   = data.metrics?.nasdaq   || data.nasdaq100 || data.nasdaq_100 || data.qqq || data.nasdaq;
+
+          fill("s", strategy);
+          fill("b", benchmark);
+          fill("n", nasdaq);
+
+          // If something is missing, fail loudly in console (helps debugging)
+          if (!strategy || !benchmark || !nasdaq) {
+            console.warn("One or more metrics sections missing:", { strategy, benchmark, nasdaq });
+          }
+
+        } catch (err) {
+          console.error(err);
+          setText("metrics_period", "Metrics failed to load.");
+        }
+      })();
+    </script>
+
   </div>
-
-  <!-- Cache-bust to avoid GitHub Pages iframe stale render -->
-  <iframe
-    src="./moving_average_backtest.html?v=11"
-    loading="lazy"
-    style="width: 100%; height: 760px; border: 0; border-radius: 16px; overflow: hidden;"
-  ></iframe>
-</div>
-
-
-  <!-- Metrics loader: reads ./metrics.json and populates the table -->
-  <script>
-  (async function loadMetrics() {
-    function $(id) { return document.getElementById(id); }
-    function setText(id, value) {
-      const el = $(id);
-      if (el) el.textContent = value;
-    }
-
-    function asNum(x) {
-      const n = Number(x);
-      return Number.isFinite(n) ? n : null;
-    }
-
-    // For CAGR, volatility, drawdown (stored as decimals like 0.22)
-    function fmtPctDecimal(x) {
-     const n = asNum(x);
-      if (n === null) return "—";
-     return `${(n * 100).toFixed(2)}%`;
-}
-
-// For total return (stored as a multiple like 7.20 = +720%)
-function fmtTotalReturn(x) {
-  const n = asNum(x);
-  if (n === null) return "—";
-  return `${(n * 100).toFixed(2)}%`;
-}
-
-
-    function fmtNum(x) {
-      const n = asNum(x);
-      if (n === null) return "—";
-      return n.toFixed(2);
-    }
-
-    function fill(prefix, obj) {
-      if (!obj) return;
-     setText(`${prefix}_total_return`, fmtTotalReturn(obj.total_return));
-     setText(`${prefix}_annualized_return`, fmtPctDecimal(obj.cagr));
-     setText(`${prefix}_volatility`, fmtPctDecimal(obj.volatility));
-     setText(`${prefix}_sharpe`, fmtNum(obj.sharpe));
-     setText(`${prefix}_max_drawdown`, fmtPctDecimal(obj.max_drawdown));
-  }
-
-   
-}
-
-
-    try {
-      // metrics.json is in the same folder as this index.html
-      // Cache-bust metrics.json (GitHub Pages/CDN can serve stale JSON even with no-store)
-    const METRICS_URL = "./metrics.json?v=" + Date.now();
-
-    const res = await fetch(METRICS_URL, {
-      cache: "no-store"
-});
-
-      if (!res.ok) throw new Error(`metrics.json fetch failed: ${res.status}`);
-
-      const data = await res.json();
-
-      // Optional: show the period (supports either schema)
-      if (data.period_start && data.period_end) {
-        setText("metrics_period", `Metrics computed from ${data.period_start} to ${data.period_end}.`);
-      } else if (data.period && data.period.start && data.period.end) {
-        setText("metrics_period", `Metrics computed from ${data.period.start} to ${data.period.end}.`);
-      } else {
-        setText("metrics_period", `Metrics loaded from metrics.json.`);
-      }
-
-      // Existing
-      fill("s", data.strategy);
-      fill("b", data.benchmark);
-
-      // New: Nasdaq 100 (QQQ) (supports either key name)
-      fill("n", data.nasdaq100 || data.nasdaq_100 || data.qqq);
-
-    } catch (err) {
-      console.error(err);
-      setText("metrics_period", "Metrics failed to load.");
-      ["s","b","n"].forEach(p => {
-        ["total_return","annualized_return","volatility","sharpe","max_drawdown"].forEach(k => {
-          setText(`${p}_${k}`, "—");
-        });
-      });
-    }
-  })();
-  </script>
 </body>
 </html>
