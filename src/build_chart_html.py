@@ -13,9 +13,18 @@ OUT_HTML = Path("docs/projects/moving_average_v1/moving_average_backtest.html")
 
 def _read_datesafe(df: pd.DataFrame, col: str) -> pd.DataFrame:
     df = df.copy()
-    df[col] = pd.to_datetime(df[col], errors="coerce").dt.tz_localize(None)
+
+    # Robust parsing for strings like "2016-01-08 00:00:00-05:00"
+    # Force UTC, then drop timezone so we can merge/plot cleanly.
+    s = pd.to_datetime(df[col], errors="coerce", utc=True)
+
+    # Convert to naive timestamps (no tz)
+    df[col] = s.dt.tz_convert(None)
+
+    # Drop any rows that still failed to parse
     df = df.dropna(subset=[col])
     return df
+
 
 
 def main() -> None:
