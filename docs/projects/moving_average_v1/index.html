@@ -1,99 +1,385 @@
-<h2>Results Summary</h2>
-<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th>Metric</th>
-      <th>Strategy</th>
-      <th>Benchmark</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Total Return</td>
-      <td><span id="s_total_return">—</span></td>
-      <td><span id="b_total_return">—</span></td>
-    </tr>
-    <tr>
-      <td>Annualized Return</td>
-      <td><span id="s_annualized_return">—</span></td>
-      <td><span id="b_annualized_return">—</span></td>
-    </tr>
-    <tr>
-      <td>Volatility</td>
-      <td><span id="s_volatility">—</span></td>
-      <td><span id="b_volatility">—</span></td>
-    </tr>
-    <tr>
-      <td>Sharpe</td>
-      <td><span id="s_sharpe">—</span></td>
-      <td><span id="b_sharpe">—</span></td>
-    </tr>
-    <tr>
-      <td>Max Drawdown</td>
-      <td><span id="s_max_drawdown">—</span></td>
-      <td><span id="b_max_drawdown">—</span></td>
-    </tr>
-  </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moving Average Strategy (v1) | OPResearch</title>
 
-<p id="metrics_period" style="margin-top: 8px; color: #0f01ab; font-size: 0.95em;"></p>
+  <style>
+    :root{
+      --bg: #0b1220;
+      --panel: #0f1a2b;
+      --panel2: #0c1626;
+      --text: #e6edf7;
+      --muted: #a9b7cf;
+      --line: rgba(255,255,255,0.10);
+      --accent: #66a6ff;
+      --accent2: #7ee0a3;
+      --warn: #ffcc66;
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+      --radius: 14px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    html, body { height: 100%; }
+    body{
+      margin: 0;
+      font-family: var(--sans);
+      background: radial-gradient(1200px 800px at 20% 0%, rgba(102,166,255,0.18), transparent 55%),
+                  radial-gradient(1000px 700px at 100% 10%, rgba(126,224,163,0.12), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-<h2>Backtest Visualization</h2>
-
-<iframe
-  src="moving_average_backtest.html?v=2"
-  width="100%"
-  height="600"
-  style="border:1px solid #ccc;">
-</iframe>
-
-<script>
-(async function loadMetrics() {
-  function setText(id, value) {
-    const el = document.getElementById(id);
-    if (el) el.textContent = value;
-  }
-
-  function fmtPct(x) {
-    const n = Number(x);
-    if (!Number.isFinite(n)) return "—";
-    return (n * 100).toFixed(2) + "%";
-  }
-
-  function fmtNum(x) {
-    const n = Number(x);
-    if (!Number.isFinite(n)) return "—";
-    return n.toFixed(2);
-  }
-
-  try {
-    const res = await fetch("./metrics.json", { cache: "no-store" });
-    if (!res.ok) throw new Error("metrics.json fetch failed: " + res.status);
-
-    const data = await res.json();
-
-    if (data.period_start && data.period_end) {
-      setText(
-        "metrics_period",
-        `Metrics computed from ${data.period_start} to ${data.period_end}.`
-      );
+    .container{
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 28px 18px 60px;
     }
 
-    setText("s_total_return", fmtPct(data.strategy.total_return));
-    setText("s_annualized_return", fmtPct(data.strategy.annualized_return));
-    setText("s_volatility", fmtPct(data.strategy.volatility));
-    setText("s_sharpe", fmtNum(data.strategy.sharpe));
-    setText("s_max_drawdown", fmtPct(data.strategy.max_drawdown));
+    .topbar{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .crumb{
+      font-size: 14px;
+      color: var(--muted);
+      display:flex;
+      align-items:center;
+      gap: 10px;
+    }
+    .crumb a{ color: var(--muted); }
+    .pill{
+      font-size: 12px;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      border-radius: 999px;
+      color: var(--muted);
+      font-family: var(--mono);
+      white-space: nowrap;
+    }
 
-    setText("b_total_return", fmtPct(data.benchmark.total_return));
-    setText("b_annualized_return", fmtPct(data.benchmark.annualized_return));
-    setText("b_volatility", fmtPct(data.benchmark.volatility));
-    setText("b_sharpe", fmtNum(data.benchmark.sharpe));
-    setText("b_max_drawdown", fmtPct(data.benchmark.max_drawdown));
+    .hero{
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px 22px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+    .hero h1{
+      margin: 0 0 6px 0;
+      font-size: 28px;
+      letter-spacing: 0.2px;
+    }
+    .subtitle{
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+      max-width: 80ch;
+    }
 
-  } catch (err) {
-    console.error(err);
-    setText("metrics_period", "Metrics failed to load.");
-  }
-})();
-</script>
+    .grid{
+      display:grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    @media (max-width: 860px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+
+    .card{
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .card h2{
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      letter-spacing: 0.2px;
+    }
+    .card p, .card li{
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 14.5px;
+    }
+    ul{ margin: 8px 0 0 18px; }
+
+    .table-wrap{
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(0,0,0,0.12);
+    }
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 640px;
+    }
+    th, td{
+      padding: 12px 12px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+    }
+    th{
+      text-align: left;
+      color: var(--text);
+      background: rgba(255,255,255,0.05);
+      font-weight: 600;
+    }
+    td{
+      color: var(--muted);
+    }
+    tr:last-child td{ border-bottom: none; }
+    td.metric{
+      color: var(--text);
+      font-weight: 600;
+    }
+    .note{
+      margin-top: 10px;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+    .note code{
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+      padding: 2px 6px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+    }
+
+    .chart-card{
+      margin-top: 16px;
+      padding: 0;
+      overflow: hidden;
+    }
+    .chart-header{
+      padding: 16px 18px 10px 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+    }
+    .chart-header h2{
+      margin: 0;
+      font-size: 18px;
+    }
+    .chart-sub{
+      margin: 6px 0 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    iframe{
+      width: 100%;
+      height: 720px;
+      border: 0;
+      background: #ffffff; /* Plotly default theme loads white */
+      display:block;
+    }
+
+    .footer{
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="topbar">
+      <div class="crumb">
+        <a href="../../index.html">← Back to Projects</a>
+        <span style="opacity:.55;">/</span>
+        <span>Moving Average v1</span>
+      </div>
+      <div class="pill">OPResearch • v1</div>
+    </div>
+
+    <div class="hero">
+      <h1>Moving Average Strategy (v1)</h1>
+      <p class="subtitle">
+        A weekly-rebalanced, rules-based strategy that ranks a fixed universe of large-cap U.S. equities using a trailing 12-month signal and holds the top names.
+        Results are shown versus an equal-weight benchmark of the same universe and the Nasdaq 100 (QQQ) as a broad market proxy.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Overview</h2>
+        <p>
+          The objective of this version is to establish a transparent baseline for systematic decision-making using only end-of-week price information.
+          The strategy computes a trailing signal (12-month lookback), selects the strongest names within the universe, and rebalances weekly.
+          All performance statistics are computed on aligned weekly observations (same start date across series) to ensure an apples-to-apples comparison.
+        </p>
+
+        <h2 style="margin-top:14px;">Assumptions</h2>
+        <ul>
+          <li><strong>Frequency:</strong> weekly rebalancing (end-of-week data)</li>
+          <li><strong>Lookback:</strong> 12-month trailing window before first trade</li>
+          <li><strong>Universe:</strong> fixed set of 10 large-cap U.S. equities (see repo output files)</li>
+          <li><strong>Portfolio construction:</strong> equal-weight across selected holdings</li>
+          <li><strong>Benchmark:</strong> equal-weight of the same universe (separate from QQQ)</li>
+          <li><strong>Nasdaq 100 proxy:</strong> QQQ (weekly)</li>
+          <li><strong>Transaction costs / slippage:</strong> not included in v1</li>
+        </ul>
+
+        <div class="footer">
+          Disclaimer: educational research only; not investment advice. Backtests are hypothetical and may not reflect real trading constraints.
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Results Summary</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Strategy</th>
+                <th>Benchmark</th>
+                <th>Nasdaq 100 (QQQ)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="metric">Total Return</td>
+                <td><span id="s_total_return">—</span></td>
+                <td><span id="b_total_return">—</span></td>
+                <td><span id="n_total_return">—</span></td>
+              </tr>
+              <tr>
+                <td class="metric">Annualized Return</td>
+                <td><span id="s_annualized_return">—</span></td>
+                <td><span id="b_annualized_return">—</span></td>
+                <td><span id="n_annualized_return">—</span></td>
+              </tr>
+              <tr>
+                <td class="metric">Volatility</td>
+                <td><span id="s_volatility">—</span></td>
+                <td><span id="b_volatility">—</span></td>
+                <td><span id="n_volatility">—</span></td>
+              </tr>
+              <tr>
+                <td class="metric">Sharpe</td>
+                <td><span id="s_sharpe">—</span></td>
+                <td><span id="b_sharpe">—</span></td>
+                <td><span id="n_sharpe">—</span></td>
+              </tr>
+              <tr>
+                <td class="metric">Max Drawdown</td>
+                <td><span id="s_max_drawdown">—</span></td>
+                <td><span id="b_max_drawdown">—</span></td>
+                <td><span id="n_max_drawdown">—</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="note" id="metrics_period">Loading metrics…</p>
+        <p class="note">
+          Data source: <code>metrics.json</code> (generated by your Python pipeline) and plotted values from aligned weekly series.
+        </p>
+      </div>
+    </div>
+
+    <div class="card chart-card">
+      <div class="chart-header">
+        <h2>Backtest Visualization</h2>
+        <p class="chart-sub">
+          Interactive equity curves for Strategy vs Benchmark vs Nasdaq 100 (QQQ). If the chart looks stale after a deploy, hard refresh (Cmd+Shift+R).
+        </p>
+      </div>
+
+      <!-- Cache-bust to avoid GitHub Pages/iframe stale render -->
+      <iframe src="moving_average_backtest.html?v=3" loading="lazy"></iframe>
+    </div>
+
+  </div>
+
+  <!-- Metrics loader: reads ./metrics.json and populates the table -->
+  <script>
+  (async function loadMetrics() {
+    function $(id) { return document.getElementById(id); }
+    function setText(id, value) {
+      const el = $(id);
+      if (el) el.textContent = value;
+    }
+
+    function asNum(x) {
+      const n = Number(x);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    // Accept either decimals (0.228) or already-percent (22.8)
+    function fmtPct(x) {
+      const n0 = asNum(x);
+      if (n0 === null) return "—";
+      const n = Math.abs(n0) > 1.5 ? n0 : (n0 * 100);
+      return `${n.toFixed(2)}%`;
+    }
+
+    function fmtNum(x) {
+      const n = asNum(x);
+      if (n === null) return "—";
+      return n.toFixed(2);
+    }
+
+    function fill(prefix, obj) {
+      if (!obj) return;
+      setText(`${prefix}_total_return`, fmtPct(obj.total_return));
+      setText(`${prefix}_annualized_return`, fmtPct(obj.annualized_return));
+      setText(`${prefix}_volatility`, fmtPct(obj.volatility));
+      setText(`${prefix}_sharpe`, fmtNum(obj.sharpe));
+      setText(`${prefix}_max_drawdown`, fmtPct(obj.max_drawdown));
+    }
+
+    try {
+      // metrics.json is in the same folder as this index.html
+      const res = await fetch("./metrics.json", { cache: "no-store" });
+      if (!res.ok) throw new Error(`metrics.json fetch failed: ${res.status}`);
+
+      const data = await res.json();
+
+      // Optional: show the period (supports either schema)
+      if (data.period_start && data.period_end) {
+        setText("metrics_period", `Metrics computed from ${data.period_start} to ${data.period_end}.`);
+      } else if (data.period && data.period.start && data.period.end) {
+        setText("metrics_period", `Metrics computed from ${data.period.start} to ${data.period.end}.`);
+      } else {
+        setText("metrics_period", `Metrics loaded from metrics.json.`);
+      }
+
+      // Existing
+      fill("s", data.strategy);
+      fill("b", data.benchmark);
+
+      // New: Nasdaq 100 (QQQ) (supports either key name)
+      fill("n", data.nasdaq100 || data.nasdaq_100 || data.qqq);
+
+    } catch (err) {
+      console.error(err);
+      setText("metrics_period", "Metrics failed to load.");
+      ["s","b","n"].forEach(p => {
+        ["total_return","annualized_return","volatility","sharpe","max_drawdown"].forEach(k => {
+          setText(`${p}_${k}`, "—");
+        });
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
