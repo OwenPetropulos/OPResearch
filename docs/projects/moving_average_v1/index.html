@@ -351,16 +351,14 @@ function fmtTotalReturn(x) {
 
     function fill(prefix, obj) {
       if (!obj) return;
+     setText(`${prefix}_total_return`, fmtTotalReturn(obj.total_return));
+     setText(`${prefix}_annualized_return`, fmtPctDecimal(obj.cagr));
+     setText(`${prefix}_volatility`, fmtPctDecimal(obj.volatility));
+     setText(`${prefix}_sharpe`, fmtNum(obj.sharpe));
+     setText(`${prefix}_max_drawdown`, fmtPctDecimal(obj.max_drawdown));
+  }
 
-     // total return = cumulative multiple → percent
-      setText(`${prefix}_total_return`, fmtTotalReturn(obj.total_return));
-
-      // the rest are standard decimal percentages
-     setText(`${prefix}_annualized_return`, fmtPctDecimal(obj.annualized_return));
-      setText(`${prefix}_volatility`, fmtPctDecimal(obj.volatility));
-      setText(`${prefix}_max_drawdown`, fmtPctDecimal(obj.max_drawdown));
-
-      setText(`${prefix}_sharpe`, fmtNum(obj.sharpe));
+   
 }
 
 
