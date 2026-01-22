@@ -2,92 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Moving Average Strategy (v1)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moving Average Strategy (v1) • OPResearch</title>
 
   <style>
     :root{
-      --bg: #081425;          /* uniform dark blue background */
+      --bg0: #061223;
+      --bg1: #071a2f;
       --panel: rgba(255,255,255,0.06);
-      --panel-2: rgba(255,255,255,0.04);
+      --panel2: rgba(255,255,255,0.04);
       --border: rgba(255,255,255,0.10);
-      --text: rgba(255,255,255,0.92);
-      --muted: rgba(255,255,255,0.68);
-      --muted2: rgba(255,255,255,0.58);
-      --shadow: 0 10px 35px rgba(0,0,0,0.35);
+      --text: #e7eef7;
+      --muted: #a9b8cb;
+      --accent: #6aa6ff;
+      --shadow: 0 20px 50px rgba(0,0,0,0.35);
       --radius: 18px;
       --radius2: 14px;
-      --maxw: 1200px;
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --maxw: 1180px;
     }
 
-    html, body {
-      height: 100%;
+    *{ box-sizing: border-box; }
+    body{
       margin: 0;
-      background: var(--bg);  /* IMPORTANT: no gradients anywhere */
-      color: var(--text);
-      font-family: var(--font);
+      color: var(--muted);
+      font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:
+        radial-gradient(1100px 520px at 16% 5%, rgba(106,166,255,0.25), transparent 55%),
+        radial-gradient(900px 500px at 82% 3%, rgba(126,224,163,0.12), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg0));
+      min-height: 100vh;
     }
 
-    /* Hard override in case anything else adds gradients */
-    body::before, body::after { content: none !important; }
+    a{ color: var(--accent); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
 
-    a { color: inherit; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .container{
+    .wrap{
       max-width: var(--maxw);
       margin: 0 auto;
-      padding: 28px 18px 40px;
+      padding: 22px 18px 44px;
     }
 
     .topbar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 12px;
-      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .crumb{
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
       color: var(--muted);
-      font-size: 14px;
+      opacity: 0.95;
+      font-weight: 500;
     }
 
     .pill{
-      display:inline-flex;
-      align-items:center;
-      gap: 8px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.05);
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 6px 12px;
       border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      border-radius: 999px;
       color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
     }
 
     .hero{
-      background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
-      border: 1px solid var(--border);
+      padding: 26px 26px;
       border-radius: var(--radius);
-      padding: 26px 26px 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.04));
+      border: 1px solid var(--border);
       box-shadow: var(--shadow);
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
 
     h1{
       margin: 0 0 10px;
-      font-size: 46px;
-      letter-spacing: -0.6px;
+      color: var(--text);
+      font-size: 48px;
       line-height: 1.05;
+      letter-spacing: -0.8px;
     }
 
     .subtitle{
       margin: 0;
-      color: var(--muted);
-      font-size: 20px;
-      line-height: 1.45;
       max-width: 980px;
+      font-size: 18px;
     }
 
+    /* 2-column layout */
     .grid{
-      display:grid;
+      display: grid;
       grid-template-columns: 1fr 1.6fr;
       gap: 22px;
       align-items: start;
@@ -95,162 +104,137 @@
 
     .left-col{
       display: flex;
-     flex-direction: column;
-     gap: 22px;
+      flex-direction: column;
+      gap: 22px;
     }
-    
+
+    .right-col{
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
     .card{
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--border);
       border-radius: var(--radius);
+      background: var(--panel);
+      border: 1px solid var(--border);
       box-shadow: var(--shadow);
-      overflow:hidden;
+      overflow: hidden;
     }
 
     .card-inner{
-      padding: 18px 18px 16px;
+      padding: 18px 18px 18px;
     }
 
     .card h2{
       margin: 0 0 10px;
+      color: var(--text);
       font-size: 28px;
       letter-spacing: -0.3px;
     }
 
-    .body{
-      color: var(--muted);
-      font-size: 16px;
-      line-height: 1.55;
-      margin: 0;
+    .divider{
+      border: 0;
+      height: 1px;
+      background: rgba(255,255,255,0.10);
+      margin: 16px 0;
     }
 
-    /* Assumptions list: move bullets left */
-    .assumptions{
-      margin-top: 18px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding-top: 14px;
-    }
-    .assumptions h3{
+    /* Bullet list style used everywhere (Assumptions + Formulas) */
+    .bullets h3{
       margin: 0 0 10px;
       font-size: 26px;
       color: var(--text);
     }
-    .assumptions ul{
+    .bullets ul{
       margin: 0;
-      padding-left: 16px; /* smaller than default => bullets left */
+      padding-left: 16px; /* consistent bullets */
       color: var(--muted);
     }
-    .assumptions li{
+    .bullets li{
       margin: 8px 0;
       line-height: 1.45;
     }
-    .assumptions strong{ color: var(--text); }
+    .bullets strong{ color: var(--text); }
 
-    .divider {
-    border: 0;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.10);
-    margin: 18px 0;
-    }
-
-    .formulas li {
-    line-height: 1.45;
-    }
-
-    .results-header{
-      padding: 18px 18px 0;
-    }
-    .results-header h2{
-      margin: 0 0 12px;
-      font-size: 28px;
-    }
-
+    /* Results table */
     table{
       width: 100%;
       border-collapse: separate;
       border-spacing: 0;
-      overflow: hidden;
-      border-radius: var(--radius2);
       border: 1px solid rgba(255,255,255,0.10);
-      background: rgba(0,0,0,0.10);
+      background: rgba(0,0,0,0.12);
+      border-radius: var(--radius2);
+      overflow: hidden;
     }
-
     thead th{
-      text-align:left;
+      text-align: left;
       font-weight: 650;
-      color: rgba(255,255,255,0.86);
+      color: var(--text);
       padding: 14px 14px;
       border-bottom: 1px solid rgba(255,255,255,0.10);
       background: rgba(255,255,255,0.04);
       font-size: 16px;
     }
-
     tbody td{
       padding: 14px 14px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      color: rgba(255,255,255,0.80);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
       font-size: 18px;
+      color: var(--text);
     }
-
-    tbody tr:last-child td{
-      border-bottom: none;
-    }
-
+    tbody tr:last-child td{ border-bottom: 0; }
     td.metric{
-      color: rgba(255,255,255,0.90);
       font-weight: 650;
-      width: 42%;
+      color: var(--text);
+      width: 44%;
+      font-size: 20px;
     }
 
-    .note{
-      margin: 14px 2px 0;
-      color: var(--muted2);
+    .meta-note{
+      margin-top: 12px;
+      color: var(--muted);
       font-size: 16px;
+      line-height: 1.4;
+      white-space: normal;       /* allow wrapping */
+      overflow-wrap: anywhere;   /* never cut off */
+      padding-bottom: 2px;       /* breathing room */
     }
 
-    .chart-card{
-      margin-top: 16px;
-    }
-    .chart-inner{
+    /* Chart */
+    .chart-card .card-inner{
       padding: 18px;
     }
-    .chart-header h2{
-      margin: 0 0 8px;
-      font-size: 22px;
+    .chart-title{
+      margin: 0 0 6px;
+      color: var(--text);
+      font-size: 28px;
     }
     .chart-sub{
       margin: 0 0 14px;
       color: var(--muted);
-      font-size: 15px;
-      line-height: 1.4;
+      font-size: 16px;
     }
-
-    iframe{
+    .chart-frame{
       width: 100%;
-      height: 760px;
+      height: 540px;
       border: 0;
-      border-radius: 16px;
-      overflow: hidden;
-      background: rgba(0,0,0,0.10);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.02);
     }
 
-    @media (max-width: 900px){
+    /* Responsive */
+    @media (max-width: 980px){
       h1{ font-size: 38px; }
       .grid{ grid-template-columns: 1fr; }
-      tbody td{ font-size: 16px; }
-      td.metric{ width:auto; }
+      .chart-frame{ height: 520px; }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <div class="wrap">
     <div class="topbar">
-      <div>
-        <a href="../../index.html">← Back to Projects</a>
-        <span> / </span>
-        <span>Moving Average v1</span>
-      </div>
+      <a class="crumb" href="../../index.html">← Back to Projects / Moving Average v1</a>
       <div class="pill">OPResearch <span style="opacity:.7;">•</span> v1</div>
     </div>
 
@@ -264,196 +248,215 @@
     </section>
 
     <section class="grid">
-  <!-- LEFT COLUMN -->
-  <div class="left-col">
-    <!-- Overview + Assumptions card -->
-    <div class="card">
-      <div class="card-inner">
-        <h2>Overview</h2>
-        <p class="body">
-          The objective of this version is to establish a transparent baseline for systematic decision-making using only end-of-week price
-          information. The strategy computes a trailing signal (12-month lookback), selects the strongest names within the universe, and
-          rebalances weekly. All performance statistics are computed on aligned weekly observations (same start date across series) to ensure
-          an apples-to-apples comparison.
-        </p>
+      <!-- LEFT COLUMN -->
+      <div class="left-col">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Overview</h2>
+            <p style="margin:0;">
+              The objective of this version is to establish a transparent baseline for systematic decision-making using only
+              end-of-week price information. The strategy computes a trailing signal (12-month lookback), selects the strongest
+              names within the universe, and rebalances weekly. All performance statistics are computed on aligned weekly
+              observations (same start date across series) to ensure an apples-to-apples comparison.
+            </p>
 
-        <div class="assumptions">
-          <h3>Assumptions</h3>
-          <ul>
-            <li><strong>Frequency:</strong> weekly rebalancing (end-of-week data)</li>
-            <li><strong>Lookback:</strong> 12-month trailing window before first trade</li>
-            <li><strong>Universe:</strong> fixed set of 10 large-cap U.S. equities</li>
-            <li><strong>Benchmark:</strong> equal-weight basket of the same universe</li>
-            <li><strong>Market proxy:</strong> Nasdaq 100 (QQQ)</li>
-            <li><strong>Costs:</strong> not included in v1</li>
-          </ul>
+            <hr class="divider" />
+
+            <div class="bullets">
+              <h3>Assumptions</h3>
+              <ul>
+                <li><strong>Frequency:</strong> weekly rebalancing (end-of-week data)</li>
+                <li><strong>Lookback:</strong> 12-month trailing window before first trade</li>
+                <li><strong>Universe:</strong> fixed set of 10 large-cap U.S. equities</li>
+                <li><strong>Benchmark:</strong> equal-weight basket of the same universe</li>
+                <li><strong>Market proxy:</strong> Nasdaq 100 (QQQ)</li>
+                <li><strong>Costs:</strong> not included in v1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-inner bullets">
+            <h3>Key Formulas</h3>
+            <hr class="divider" />
+            <ul>
+              <li><strong>Total Return:</strong> (Final Portfolio Value / Initial Value − 1)</li>
+              <li><strong>Annualized Return (CAGR):</strong> (Final / Initial)<sup>1 / Years</sup> − 1</li>
+              <li><strong>Volatility:</strong> Annualized standard deviation of weekly returns</li>
+              <li><strong>Sharpe Ratio:</strong> Annualized Return ÷ Volatility</li>
+              <li><strong>Max Drawdown:</strong> Minimum peak-to-trough portfolio decline</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Key formulas card -->
-    <div class="card">
-      <div class="card-inner">
-        <h2>Key Formulas</h2>
+      <!-- RIGHT COLUMN -->
+      <div class="right-col">
+        <div class="card">
+          <div class="card-inner">
+            <h2>Results Summary</h2>
 
-        <hr class="divider" />
+            <table>
+              <thead>
+                <tr>
+                  <th>Metric</th>
+                  <th>Strategy</th>
+                  <th>Benchmark</th>
+                  <th>Nasdaq 100 (QQQ)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="metric">Total Return</td>
+                  <td><span id="s_total_return">—</span></td>
+                  <td><span id="b_total_return">—</span></td>
+                  <td><span id="n_total_return">—</span></td>
+                </tr>
+                <tr>
+                  <td class="metric">Annualized Return</td>
+                  <td><span id="s_annualized_return">—</span></td>
+                  <td><span id="b_annualized_return">—</span></td>
+                  <td><span id="n_annualized_return">—</span></td>
+                </tr>
+                <tr>
+                  <td class="metric">Volatility</td>
+                  <td><span id="s_volatility">—</span></td>
+                  <td><span id="b_volatility">—</span></td>
+                  <td><span id="n_volatility">—</span></td>
+                </tr>
+                <tr>
+                  <td class="metric">Sharpe</td>
+                  <td><span id="s_sharpe">—</span></td>
+                  <td><span id="b_sharpe">—</span></td>
+                  <td><span id="n_sharpe">—</span></td>
+                </tr>
+                <tr>
+                  <td class="metric">Max Drawdown</td>
+                  <td><span id="s_max_drawdown">—</span></td>
+                  <td><span id="b_max_drawdown">—</span></td>
+                  <td><span id="n_max_drawdown">—</span></td>
+                </tr>
+              </tbody>
+            </table>
 
-        <div class="formulas">
-          <ul>
-            <li><strong>Total Return:</strong> (Final Portfolio Value / Initial Value − 1)</li>
-            <li><strong>Annualized Return (CAGR):</strong> (Final / Initial)<sup>1 / Years</sup> − 1</li>
-            <li><strong>Volatility:</strong> Annualized standard deviation of weekly returns</li>
-            <li><strong>Sharpe Ratio:</strong> Annualized Return ÷ Volatility</li>
-            <li><strong>Max Drawdown:</strong> Minimum peak-to-trough portfolio decline</li>
-          </ul>
+            <div class="meta-note" id="metrics_period">Loading metrics...</div>
+            <div class="meta-note">Source: Yahoo Finance API</div>
+          </div>
+        </div>
+
+        <div class="card chart-card">
+          <div class="card-inner">
+            <h2 class="chart-title">Backtest Visualization</h2>
+            <p class="chart-sub">Interactive equity curves for Strategy vs Benchmark vs Nasdaq 100 (QQQ).</p>
+
+            <!-- This is the key: always show the chart by embedding the generated plot HTML -->
+            <iframe
+              class="chart-frame"
+              src="./moving_average_backtest.html"
+              title="Moving Average Backtest Chart"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- RIGHT COLUMN -->
-  <div class="card">
-    <div class="results-header">
-      <h2>Results Summary</h2>
-    </div>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Metric</th>
-          <th>Strategy</th>
-          <th>Benchmark</th>
-          <th>Nasdaq 100 (QQQ)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="metric">Total Return</td>
-          <td><span id="s_total_return">—</span></td>
-          <td><span id="b_total_return">—</span></td>
-          <td><span id="n_total_return">—</span></td>
-        </tr>
-        <tr>
-          <td class="metric">Annualized Return</td>
-          <td><span id="s_annualized_return">—</span></td>
-          <td><span id="b_annualized_return">—</span></td>
-          <td><span id="n_annualized_return">—</span></td>
-        </tr>
-        <tr>
-          <td class="metric">Volatility</td>
-          <td><span id="s_volatility">—</span></td>
-          <td><span id="b_volatility">—</span></td>
-          <td><span id="n_volatility">—</span></td>
-        </tr>
-        <tr>
-          <td class="metric">Sharpe</td>
-          <td><span id="s_sharpe">—</span></td>
-          <td><span id="b_sharpe">—</span></td>
-          <td><span id="n_sharpe">—</span></td>
-        </tr>
-        <tr>
-          <td class="metric">Max Drawdown</td>
-          <td><span id="s_max_drawdown">—</span></td>
-          <td><span id="b_max_drawdown">—</span></td>
-          <td><span id="n_max_drawdown">—</span></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="results-footer">
-      <div id="metrics_period" class="muted">Metrics computed from — to —.</div>
-      <div class="muted">Source: Yahoo Finance API</div>
-    </div>
-  </div>
-</section>
-
-
-    <!-- Metrics loader -->
     <script>
-      (async function loadMetrics() {
-        function $(id) { return document.getElementById(id); }
-        function setText(id, value) { const el = $(id); if (el) el.textContent = value; }
+      (async function loadMetrics(){
+        function $(id){ return document.getElementById(id); }
+        function setText(id, value){
+          const el = $(id);
+          if (el) el.textContent = value;
+        }
 
-        function asNum(x) {
+        function asNum(x){
           const n = Number(x);
           return Number.isFinite(n) ? n : null;
         }
 
-        // For CAGR/volatility/drawdown stored as decimals (0.23 => 23%)
-        function fmtPctDecimal(x) {
+        // For CAGR, volatility, drawdown (stored as decimals like 0.22)
+        function fmtPctDecimal(x){
           const n = asNum(x);
           if (n === null) return "—";
-          return `${(n * 100).toFixed(2)}%`;
+          return (n * 100).toFixed(2) + "%";
         }
 
-        // For total return stored as MULTIPLE (7.20 => 720%)
-        function fmtTotalReturnMultiple(x) {
+        // For total return stored as a multiple like 7.20 = +720%
+        function fmtTotalReturn(x){
           const n = asNum(x);
           if (n === null) return "—";
-          return `${(n * 100).toFixed(2)}%`;
+          return (n * 100).toFixed(2) + "%";
         }
 
-        function fmtNum(x) {
+        function fmtNum(x){
           const n = asNum(x);
           if (n === null) return "—";
           return n.toFixed(2);
         }
 
-        function fill(prefix, obj) {
-          if (!obj) return;
-
-          // total_return is a multiple in your current metrics.json (e.g., 7.20)
-          setText(`${prefix}_total_return`, fmtTotalReturnMultiple(obj.total_return));
-
-          // annualized return might be stored as cagr (preferred) or annualized_return
-          const ann = (obj.cagr !== undefined) ? obj.cagr : obj.annualized_return;
-          setText(`${prefix}_annualized_return`, fmtPctDecimal(ann));
-
-          setText(`${prefix}_volatility`, fmtPctDecimal(obj.volatility));
-          setText(`${prefix}_sharpe`, fmtNum(obj.sharpe));
-          setText(`${prefix}_max_drawdown`, fmtPctDecimal(obj.max_drawdown));
-        }
-
         try {
-          // cache-bust JSON (GitHub Pages/CDN can be sticky)
-          const url = `./metrics.json?v=${Date.now()}`;
+          // Cache-bust metrics.json (GitHub Pages can serve stale JSON)
+          const url = "./metrics.json?v=" + Date.now();
           const res = await fetch(url, { cache: "no-store" });
-          if (!res.ok) throw new Error(`metrics.json fetch failed: ${res.status}`);
+          if (!res.ok) throw new Error("metrics.json fetch failed: " + res.status);
 
           const data = await res.json();
 
-          // period text (supports either schema)
-          if (data.period?.start && data.period?.end) {
-            setText("metrics_period", `Metrics computed from ${data.period.start} to ${data.period.end}.`);
-          } else if (data.period_start && data.period_end) {
-            setText("metrics_period", `Metrics computed from ${data.period_start} to ${data.period_end}.`);
+          // Supports either schema:
+          // A) data.strategy.total_return, etc.
+          // B) data.metrics.strategy.total_return, etc.
+          const m = data.metrics || data;
+
+          const strategy = m.strategy || {};
+          const benchmark = m.benchmark || {};
+          const nasdaq = m.nasdaq || m.nasdaq100 || {};
+
+          // Total Return
+          setText("s_total_return", fmtTotalReturn(strategy.total_return));
+          setText("b_total_return", fmtTotalReturn(benchmark.total_return));
+          setText("n_total_return", fmtTotalReturn(nasdaq.total_return));
+
+          // Annualized Return (CAGR)
+          setText("s_annualized_return", fmtPctDecimal(strategy.annualized_return));
+          setText("b_annualized_return", fmtPctDecimal(benchmark.annualized_return));
+          setText("n_annualized_return", fmtPctDecimal(nasdaq.annualized_return));
+
+          // Volatility
+          setText("s_volatility", fmtPctDecimal(strategy.volatility));
+          setText("b_volatility", fmtPctDecimal(benchmark.volatility));
+          setText("n_volatility", fmtPctDecimal(nasdaq.volatility));
+
+          // Sharpe
+          setText("s_sharpe", fmtNum(strategy.sharpe));
+          setText("b_sharpe", fmtNum(benchmark.sharpe));
+          setText("n_sharpe", fmtNum(nasdaq.sharpe));
+
+          // Max Drawdown
+          setText("s_max_drawdown", fmtPctDecimal(strategy.max_drawdown));
+          setText("b_max_drawdown", fmtPctDecimal(benchmark.max_drawdown));
+          setText("n_max_drawdown", fmtPctDecimal(nasdaq.max_drawdown));
+
+          // Period label (supports a few names)
+          const ps = data.period_start || m.period_start;
+          const pe = data.period_end || m.period_end;
+          const ps2 = data.start_date || m.start_date;
+          const pe2 = data.end_date || m.end_date;
+
+          const start = ps || ps2;
+          const end = pe || pe2;
+
+          if (start && end) {
+            setText("metrics_period", `Metrics computed from ${start} to ${end}.`);
           } else {
             setText("metrics_period", "Metrics loaded.");
           }
-
-          // support BOTH schemas:
-          // A) { metrics: { strategy, benchmark, nasdaq } }
-          // B) { strategy, benchmark, nasdaq100/nasdaq_100/qqq }
-          const strategy = data.metrics?.strategy || data.strategy;
-          const benchmark = data.metrics?.benchmark || data.benchmark;
-          const nasdaq   = data.metrics?.nasdaq   || data.nasdaq100 || data.nasdaq_100 || data.qqq || data.nasdaq;
-
-          fill("s", strategy);
-          fill("b", benchmark);
-          fill("n", nasdaq);
-
-          // If something is missing, fail loudly in console (helps debugging)
-          if (!strategy || !benchmark || !nasdaq) {
-            console.warn("One or more metrics sections missing:", { strategy, benchmark, nasdaq });
-          }
-
         } catch (err) {
           console.error(err);
-          setText("metrics_period", "Metrics failed to load.");
+          setText("metrics_period", "Error loading metrics.json. (Check path and JSON format.)");
         }
       })();
     </script>
-
   </div>
 </body>
 </html>
