@@ -330,13 +330,20 @@
       return Number.isFinite(n) ? n : null;
     }
 
-    // Accept either decimals (0.228) or already-percent (22.8)
-    function fmtPct(x) {
-      const n0 = asNum(x);
-      if (n0 === null) return "—";
-      const n = Math.abs(n0) > 1.5 ? n0 : (n0 * 100);
-      return `${n.toFixed(2)}%`;
-    }
+    // For CAGR, volatility, drawdown (stored as decimals like 0.22)
+    function fmtPctDecimal(x) {
+     const n = asNum(x);
+      if (n === null) return "—";
+     return `${(n * 100).toFixed(2)}%`;
+}
+
+// For total return (stored as a multiple like 7.20 = +720%)
+function fmtTotalReturn(x) {
+  const n = asNum(x);
+  if (n === null) return "—";
+  return `${(n * 100).toFixed(2)}%`;
+}
+
 
     function fmtNum(x) {
       const n = asNum(x);
@@ -346,12 +353,18 @@
 
     function fill(prefix, obj) {
       if (!obj) return;
-      setText(`${prefix}_total_return`, fmtPct(obj.total_return));
-      setText(`${prefix}_annualized_return`, fmtPct(obj.annualized_return));
-      setText(`${prefix}_volatility`, fmtPct(obj.volatility));
+
+     // total return = cumulative multiple → percent
+      setText(`${prefix}_total_return`, fmtTotalReturn(obj.total_return));
+
+      // the rest are standard decimal percentages
+     setText(`${prefix}_annualized_return`, fmtPctDecimal(obj.annualized_return));
+      setText(`${prefix}_volatility`, fmtPctDecimal(obj.volatility));
+      setText(`${prefix}_max_drawdown`, fmtPctDecimal(obj.max_drawdown));
+
       setText(`${prefix}_sharpe`, fmtNum(obj.sharpe));
-      setText(`${prefix}_max_drawdown`, fmtPct(obj.max_drawdown));
-    }
+}
+
 
     try {
       // metrics.json is in the same folder as this index.html
