@@ -1,5 +1,6 @@
 """
-Stock Rebalancing Backtest - Robust yfinance Version
+Stock Rebalancing Backtest - CORRECTED VERSION
+Only outputs dates where strategy is actually trading (after 12-month lookback)
 """
 
 import pandas as pd
@@ -7,7 +8,6 @@ import numpy as np
 import warnings
 warnings.filterwarnings('ignore')
 
-# Try importing yfinance
 try:
     import yfinance as yf
 except ImportError:
@@ -23,7 +23,7 @@ except ImportError:
 UNIVERSE = ['AAPL', 'MSFT', 'AMZN', 'GOOGL', 'META', 
             'XOM', 'BRK-B', 'JPM', 'JNJ', 'WMT']
 
-START_DATE = '2015-01-01'
+START_DATE = '2015-01-01'  # Download from 2015 for 12-month lookback
 END_DATE = '2026-01-31'
 LOOKBACK_DAYS = 252
 
@@ -39,12 +39,7 @@ def download_stock_individually(ticker, start, end):
         hist = stock.history(start=start, end=end)
         
         if len(hist) > 0:
-            # Get adjusted close (or close if adjusted not available)
-            if 'Close' in hist.columns:
-                prices = hist['Close']
-            else:
-                prices = hist['Adj Close']
-            
+            prices = hist['Close']
             prices.name = ticker
             print(f"✅ {len(prices)} days")
             return prices
@@ -68,7 +63,6 @@ def download_all_data(tickers, start, end):
         if prices is not None:
             all_prices.append(prices)
         
-        # Small delay to avoid rate limiting
         import time
         time.sleep(0.5)
     
@@ -76,10 +70,8 @@ def download_all_data(tickers, start, end):
         print("\n❌ Failed to download any data")
         return None
     
-    # Combine all stocks
     prices_df = pd.concat(all_prices, axis=1)
     
-    # Rename BRK-B to BRK.B
     if 'BRK-B' in prices_df.columns:
         prices_df.rename(columns={'BRK-B': 'BRK.B'}, inplace=True)
     
@@ -129,7 +121,11 @@ def generate_signals(returns_12m, prices):
             for ticker in valid_returns.index:
                 weights.loc[date, ticker] = 1.0 / len(valid_returns)
     
-    print(f"✅ Generated {len(weights)} weeks\n")
+    # CRITICAL FIX: Remove rows where all weights are 0 (no valid signals yet)
+    weights = weights[(weights != 0).any(axis=1)]
+    weekly_prices = weekly_prices.loc[weights.index]
+    
+    print(f"✅ Generated {len(weights)} weeks (starting {weights.index[0].date()})\n")
     return weights, weekly_prices
 
 def run_backtest(weights, weekly_prices, initial_capital=100000):
@@ -218,6 +214,15 @@ def save_results(portfolio_value, benchmark_value, weights, holdings):
     """Save to CSV"""
     print("💾 Saving results...")
     
+    # Determine output directory
+    import os
+    if os.path.exists('../data'):
+        output_dir = '../data'
+    elif os.path.exists('data'):
+        output_dir = 'data'
+    else:
+        output_dir = '.'
+    
     results = pd.DataFrame({
         'Date': portfolio_value.index,
         'Strategy_Value': portfolio_value.values,
@@ -225,48 +230,19 @@ def save_results(portfolio_value, benchmark_value, weights, holdings):
         'Strategy_Return_%': ((portfolio_value / portfolio_value.iloc[0]) - 1) * 100,
         'Benchmark_Return_%': ((benchmark_value / benchmark_value.iloc[0]) - 1) * 100
     })
-    results.to_csv('portfolio_performance.csv', index=False)
-    weights.to_csv('weekly_weights.csv')
-    holdings.to_csv('weekly_holdings.csv')
-    print("   ✅ Saved all files\n")
-
-import plotly.graph_objects as go
-from pathlib import Path
-import pandas as pd
-
-out_dir = Path("docs/figures")
-out_dir.mkdir(parents=True, exist_ok=True)
-
-df = pd.read_csv("data/portfolio_performance.csv")
-df["Date"] = pd.to_datetime(df["Date"])
-
-fig = go.Figure()
-
-fig.add_trace(go.Scatter(
-    x=df["Date"],
-    y=df["Portfolio"],
-    mode="lines",
-    name="Strategy"
-))
-
-if "Benchmark" in df.columns:
-    fig.add_trace(go.Scatter(
-        x=df["Date"],
-        y=df["Benchmark"],
-        mode="lines",
-        name="Benchmark"
-    ))
-
-fig.update_layout(
-    title="Moving Average Strategy Backtest",
-    xaxis_title="Date",
-    yaxis_title="Portfolio Value",
-    template="plotly_white"
-)
-
-fig.write_html(out_dir / "moving_average_backtest.html", include_plotlyjs="cdn")
-print("Interactive plot written to docs/figures/")
-
+    
+    perf_path = os.path.join(output_dir, 'portfolio_performance.csv')
+    results.to_csv(perf_path, index=False)
+    print(f"   ✅ Saved: {perf_path}")
+    
+    weights_path = os.path.join(output_dir, 'weekly_weights.csv')
+    weights.to_csv(weights_path)
+    print(f"   ✅ Saved: {weights_path}")
+    
+    holdings_path = os.path.join(output_dir, 'weekly_holdings.csv')
+    holdings.to_csv(holdings_path)
+    print(f"   ✅ Saved: {holdings_path}")
+    print()
 
 # ============================================================================
 # MAIN
@@ -283,11 +259,15 @@ def main():
     
     if prices is None or len(prices.columns) < 3:
         print("\n❌ Not enough data downloaded to run backtest")
-        print("   Need at least 3 stocks")
         return
     
     returns_12m = calculate_trailing_returns(prices, LOOKBACK_DAYS)
     weights, weekly_prices = generate_signals(returns_12m, prices)
+    
+    print(f"📅 Strategy starts trading: {weights.index[0].date()}")
+    print(f"   (After 12-month lookback period)")
+    print()
+    
     portfolio_value, holdings = run_backtest(weights, weekly_prices)
     benchmark_value = create_benchmark(weekly_prices)
     calculate_metrics(portfolio_value, benchmark_value)

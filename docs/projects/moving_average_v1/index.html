@@ -1,49 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Moving Average Strategy (v1) | OPResearch</title>
-</head>
-<body>
-  <a href="../../index.html">← Back to Projects</a>
+<h2>Results Summary</h2>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Strategy</th>
+      <th>Benchmark</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total Return</td>
+      <td><span id="s_total_return">—</span></td>
+      <td><span id="b_total_return">—</span></td>
+    </tr>
+    <tr>
+      <td>Annualized Return</td>
+      <td><span id="s_annualized_return">—</span></td>
+      <td><span id="b_annualized_return">—</span></td>
+    </tr>
+    <tr>
+      <td>Volatility</td>
+      <td><span id="s_volatility">—</span></td>
+      <td><span id="b_volatility">—</span></td>
+    </tr>
+    <tr>
+      <td>Sharpe</td>
+      <td><span id="s_sharpe">—</span></td>
+      <td><span id="b_sharpe">—</span></td>
+    </tr>
+    <tr>
+      <td>Max Drawdown</td>
+      <td><span id="s_max_drawdown">—</span></td>
+      <td><span id="b_max_drawdown">—</span></td>
+    </tr>
+  </tbody>
+</table>
 
-  <h1>Moving Average Strategy (v1)</h1>
+<p id="metrics_period" style="margin-top: 8px; color: #0f01ab; font-size: 0.95em;"></p>
 
-  <h2>Overview</h2>
-  <p>[1–3 sentences: what the strategy is doing and why]</p>
-
-  <h2>Assumptions</h2>
-  <ul>
-    <li>[Rebalance frequency, lookback window, universe, etc.]</li>
-    <li>[Transaction costs assumption, if any]</li>
-    <li>[Benchmark definition]</li>
-  </ul>
-
-  <h2>Results Summary</h2>
-  <table border="1" cellpadding="6" cellspacing="0">
-    <thead>
-      <tr>
-        <th>Metric</th>
-        <th>Strategy</th>
-        <th>Benchmark</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Total Return</td><td>[ ]</td><td>[ ]</td></tr>
-      <tr><td>Annualized Return</td><td>[ ]</td><td>[ ]</td></tr>
-      <tr><td>Volatility</td><td>[ ]</td><td>[ ]</td></tr>
-      <tr><td>Sharpe</td><td>[ ]</td><td>[ ]</td></tr>
-      <tr><td>Max Drawdown</td><td>[ ]</td><td>[ ]</td></tr>
-    </tbody>
-  </table>
-
- <h2>Backtest Visualization</h2>
+<h2>Backtest Visualization</h2>
 
 <iframe
-  src="moving_average_backtest.html"
+  src="moving_average_backtest.html?v=2"
   width="100%"
-  height="650"
-  style="border: 1px solid #ce0303;"
-  loading="lazy">
+  height="600"
+  style="border:1px solid #ccc;">
 </iframe>
+
+<script>
+(async function loadMetrics() {
+  function setText(id, value) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
+  }
+
+  function fmtPct(x) {
+    const n = Number(x);
+    if (!Number.isFinite(n)) return "—";
+    return (n * 100).toFixed(2) + "%";
+  }
+
+  function fmtNum(x) {
+    const n = Number(x);
+    if (!Number.isFinite(n)) return "—";
+    return n.toFixed(2);
+  }
+
+  try {
+    const res = await fetch("./metrics.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("metrics.json fetch failed: " + res.status);
+
+    const data = await res.json();
+
+    if (data.period_start && data.period_end) {
+      setText(
+        "metrics_period",
+        `Metrics computed from ${data.period_start} to ${data.period_end}.`
+      );
+    }
+
+    setText("s_total_return", fmtPct(data.strategy.total_return));
+    setText("s_annualized_return", fmtPct(data.strategy.annualized_return));
+    setText("s_volatility", fmtPct(data.strategy.volatility));
+    setText("s_sharpe", fmtNum(data.strategy.sharpe));
+    setText("s_max_drawdown", fmtPct(data.strategy.max_drawdown));
+
+    setText("b_total_return", fmtPct(data.benchmark.total_return));
+    setText("b_annualized_return", fmtPct(data.benchmark.annualized_return));
+    setText("b_volatility", fmtPct(data.benchmark.volatility));
+    setText("b_sharpe", fmtNum(data.benchmark.sharpe));
+    setText("b_max_drawdown", fmtPct(data.benchmark.max_drawdown));
+
+  } catch (err) {
+    console.error(err);
+    setText("metrics_period", "Metrics failed to load.");
+  }
+})();
+</script>
