@@ -1,85 +1,110 @@
-from pathlib import Path
+# src/build_chart_html.py
+from __future__ import annotations
+
 import pandas as pd
 import plotly.graph_objects as go
+from pathlib import Path
 
-# MAIN STRATEGY OUTPUTS
-INPUT = Path("data/portfolio_performance.csv")
 
-# QQQ SERIES (Nasdaq 100 proxy)
-QQQ_INPUT = Path("data/nasdaq100_weekly_growth_aligned.csv")
+PORTFOLIO_CSV = Path("data/portfolio_performance.csv")
+NASDAQ_CSV = Path("data/nasdaq100_weekly_growth_aligned.csv")  # must have Date + Portfolio_Value
+OUT_HTML = Path("docs/projects/moving_average_v1/moving_average_backtest.html")
 
-OUTPUT = Path("docs/projects/moving_average_v1/moving_average_backtest.html")
 
-def normalize_date(s):
-    # robust for timezone strings like "2016-01-08 00:00:00-05:00"
-    return pd.to_datetime(s, utc=True, errors="coerce").dt.tz_convert(None)
+def _read_datesafe(df: pd.DataFrame, col: str) -> pd.DataFrame:
+    df = df.copy()
+    df[col] = pd.to_datetime(df[col], errors="coerce").dt.tz_localize(None)
+    df = df.dropna(subset=[col])
+    return df
 
-def main():
-    # --- Load strategy + benchmark ---
-    df = pd.read_csv(INPUT)
 
-    # Required columns in portfolio_performance.csv
-    DATE_COL = "Date"
-    STRAT_COL = "Strategy_Value"
-    BENCH_COL = "Benchmark_Value"
+def main() -> None:
+    if not PORTFOLIO_CSV.exists():
+        raise FileNotFoundError(f"Missing: {PORTFOLIO_CSV}")
 
-    missing = [c for c in [DATE_COL, STRAT_COL, BENCH_COL] if c not in df.columns]
+    if not NASDAQ_CSV.exists():
+        raise FileNotFoundError(f"Missing: {NASDAQ_CSV}")
+
+    # Strategy + Benchmark (weekly)
+    df = pd.read_csv(PORTFOLIO_CSV)
+    required_cols = {"Date", "Strategy_Value", "Benchmark_Value"}
+    missing = required_cols - set(df.columns)
     if missing:
-        raise ValueError(f"Missing columns in {INPUT}: {missing}. Found: {list(df.columns)}")
+        raise ValueError(f"{PORTFOLIO_CSV} missing columns: {sorted(missing)}. Found: {list(df.columns)}")
 
-    df[DATE_COL] = normalize_date(df[DATE_COL])
-    df = df.dropna(subset=[DATE_COL]).sort_values(DATE_COL)
+    df = _read_datesafe(df, "Date").sort_values("Date")
 
-    # --- Load QQQ weekly series ---
-    qqq = pd.read_csv(QQQ_INPUT)
-
-    # Try common column names
-    qqq_date_candidates = [c for c in qqq.columns if c.strip().lower() in ("date", "datetime", "time")]
-    if not qqq_date_candidates:
-        raise ValueError(f"Could not find a Date column in {QQQ_INPUT}. Found: {list(qqq.columns)}")
-    QQQ_DATE_COL = qqq_date_candidates[0]
-
-    # QQQ value column: handle common names
-    # If your file already has a Portfolio_Value column, that is fine (it represents QQQ growth portfolio).
-    possible_val_cols = ["Portfolio_Value", "QQQ_Value", "Value", "Adj Close", "Adj_Close", "Close"]
-    QQQ_VAL_COL = None
-    for c in possible_val_cols:
-        if c in qqq.columns:
-            QQQ_VAL_COL = c
-            break
-    if QQQ_VAL_COL is None:
+    # Nasdaq weekly aligned growth file (your script output)
+    ndx = pd.read_csv(NASDAQ_CSV)
+    # Expecting: Date, Portfolio_Value, Return_% (based on your screenshot)
+    if "Date" not in ndx.columns or "Portfolio_Value" not in ndx.columns:
         raise ValueError(
-            f"Could not find a QQQ value column in {QQQ_INPUT}. "
-            f"Tried {possible_val_cols}. Found: {list(qqq.columns)}"
+            f"{NASDAQ_CSV} must contain columns Date and Portfolio_Value. Found: {list(ndx.columns)}"
         )
 
-    qqq[QQQ_DATE_COL] = normalize_date(qqq[QQQ_DATE_COL])
-    qqq = qqq.dropna(subset=[QQQ_DATE_COL]).sort_values(QQQ_DATE_COL)
-    qqq = qqq[[QQQ_DATE_COL, QQQ_VAL_COL]].rename(columns={QQQ_DATE_COL: DATE_COL, QQQ_VAL_COL: "Nasdaq100_QQQ"})
+    ndx = _read_datesafe(ndx, "Date").sort_values("Date")
+    ndx = ndx.rename(columns={"Portfolio_Value": "Nasdaq100_Value"})
 
-    # --- Align on dates (inner join so all lines share the same x-axis points) ---
-    merged = df[[DATE_COL, STRAT_COL, BENCH_COL]].merge(qqq, on=DATE_COL, how="inner")
+    # Merge on weekly dates (inner ensures perfect alignment)
+    merged = pd.merge(df, ndx[["Date", "Nasdaq100_Value"]], on="Date", how="inner")
 
-    # --- Plot ---
+    if merged.empty:
+        raise ValueError("Merged dataset is empty. Dates are not aligning between portfolio and Nasdaq series.")
+
     fig = go.Figure()
-    fig.add_trace(go.Scatter(x=merged[DATE_COL], y=merged[STRAT_COL], mode="lines", name="Strategy"))
-    fig.add_trace(go.Scatter(x=merged[DATE_COL], y=merged[BENCH_COL], mode="lines", name="Benchmark (Equal-Weight)"))
-    fig.add_trace(go.Scatter(x=merged[DATE_COL], y=merged["Nasdaq100_QQQ"], mode="lines", name="Nasdaq 100 (QQQ)"))
+
+    fig.add_trace(
+        go.Scatter(
+            x=merged["Date"],
+            y=merged["Strategy_Value"],
+            mode="lines",
+            name="Strategy",
+        )
+    )
+
+    fig.add_trace(
+        go.Scatter(
+            x=merged["Date"],
+            y=merged["Benchmark_Value"],
+            mode="lines",
+            name="Benchmark (Equal-Weight)",
+        )
+    )
+
+    fig.add_trace(
+        go.Scatter(
+            x=merged["Date"],
+            y=merged["Nasdaq100_Value"],
+            mode="lines",
+            name="Nasdaq 100 (QQQ)",
+        )
+    )
 
     fig.update_layout(
         title="Strategy vs Benchmark vs Nasdaq 100 (QQQ)",
         xaxis_title="Date",
         yaxis_title="Portfolio Value",
         template="plotly_white",
-        height=650,
-        margin=dict(l=40, r=20, t=90, b=40),
-        legend=dict(orientation="h", yanchor="bottom", y=1.08, xanchor="left", x=0.5)
+        margin=dict(l=40, r=20, t=60, b=40),
+        legend=dict(
+            orientation="h",
+            x=0.5,
+            xanchor="center",
+            y=1.02,
+            yanchor="bottom",
+        ),
     )
 
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    fig.write_html(str(OUTPUT), include_plotlyjs="cdn", full_html=True)
-    print(f"Wrote: {OUTPUT}")
-    print(f"Points plotted: {len(merged)} (after date alignment)")
+    OUT_HTML.parent.mkdir(parents=True, exist_ok=True)
+
+    # Include Plotly via CDN to keep file size smaller
+    html = fig.to_html(full_html=True, include_plotlyjs="cdn")
+    OUT_HTML.write_text(html, encoding="utf-8")
+
+    print(f"Wrote: {OUT_HTML}")
+    print(f"Rows plotted: {len(merged)}")
+    print(f"Date range: {merged['Date'].min().date()} to {merged['Date'].max().date()}")
+
 
 if __name__ == "__main__":
     main()
