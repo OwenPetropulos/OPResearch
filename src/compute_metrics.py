@@ -50,7 +50,7 @@ def _metrics_from_weekly_values(values: pd.Series) -> dict:
 
     rets = _weekly_returns_from_values(v)
 
-    total_return = float(v.iloc[-1] / v.iloc[0] - 1.0)
+    total_return = float((v.iloc[-1] - v.iloc[0]) / v.iloc[0])
 
     # Weekly -> annual (52)
     n_weeks = len(v) - 1
