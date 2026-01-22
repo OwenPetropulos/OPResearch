@@ -140,6 +140,17 @@
     }
     .assumptions strong{ color: var(--text); }
 
+    .divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.10);
+    margin: 18px 0;
+    }
+
+    .formulas li {
+    line-height: 1.45;
+    }
+
     .results-header{
       padding: 18px 18px 0;
     }
@@ -271,6 +282,39 @@
           </div>
         </div>
       </div>
+
+<div class="assumptions formulas">
+  <h3>Key Formulas</h3>
+
+  <hr class="divider">
+
+  <ul>
+    <li>
+      <strong>Total Return:</strong>
+      (Final Portfolio Value / Initial Value - 1)
+    </li>
+
+    <li>
+      <strong>Annualized Return (CAGR):</strong>
+      (Final / Initial)<sup>1 / Years</sup> - 1
+    </li>
+
+    <li>
+      <strong>Volatility:</strong>
+      Annualized standard deviation of weekly returns
+    </li>
+
+    <li>
+      <strong>Sharpe Ratio:</strong>
+      Annualized Return ÷ Volatility
+    </li>
+
+    <li>
+      <strong>Max Drawdown:</strong>
+      Minimum peak-to-trough portfolio decline
+    </li>
+  </ul>
+</div>
 
       <!-- RIGHT: Results table -->
       <div class="card">
