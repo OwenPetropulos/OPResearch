@@ -297,24 +297,22 @@
       </div>
     </div>
 
-    <div class="card chart-card">
-      <div class="chart-header">
-        <h2>Backtest Visualization</h2>
-        <p class="chart-sub">
-          Interactive equity curves for Strategy vs Benchmark vs Nasdaq 100 (QQQ). If the chart looks stale after a deploy, hard refresh (Cmd+Shift+R).
-        </p>
-      </div>
-
-      <!-- Cache-bust to avoid GitHub Pages/iframe stale render -->
-      <iframe
-         src="./moving_average_backtest.html?v=5"
-        loading="lazy"
-        style="width: 100%; height: 760px; border: 0; border-radius: 16px; overflow: hidden;"
-></iframe>
-
-    </div>
-
+<div class="card chart-card">
+  <div class="chart-header">
+    <h2>Backtest Visualization</h2>
+    <p class="chart-sub">
+      Interactive equity curves for Strategy vs Benchmark vs Nasdaq 100 (QQQ).
+    </p>
   </div>
+
+  <!-- Cache-bust to avoid GitHub Pages iframe stale render -->
+  <iframe
+    src="./moving_average_backtest.html?v=11"
+    loading="lazy"
+    style="width: 100%; height: 760px; border: 0; border-radius: 16px; overflow: hidden;"
+  ></iframe>
+</div>
+
 
   <!-- Metrics loader: reads ./metrics.json and populates the table -->
   <script>
