@@ -90,19 +90,64 @@ def main() -> None:
     )
 
     fig.update_layout(
-        title="Strategy vs Benchmark vs Nasdaq 100 (QQQ)",
-        xaxis_title="Date",
-        yaxis_title="Portfolio Value",
-        template="plotly_white",
-        margin=dict(l=40, r=20, t=80, b=40),
-        legend=dict(
-            orientation="h",
+    title=dict(
+        text="Strategy vs Benchmark vs Nasdaq 100 (QQQ)",
+        x=0.5,
+        xanchor="center",
+        font=dict(
+            size=22,
+            family="Inter, system-ui, -apple-system, sans-serif",
+            color="#0f172a"
+        )
+    ),
+
+    # Light blue background to match site theme
+    paper_bgcolor="#e6f0fa",
+    plot_bgcolor="#e6f0fa",
+
+    xaxis_title="Date",
+    yaxis_title="Portfolio Value",
+
+    xaxis=dict(
+        showgrid=True,
+        gridcolor="rgba(0,0,0,0.05)"
+    ),
+
+    yaxis=dict(
+        showgrid=True,
+        gridcolor="rgba(0,0,0,0.05)"
+    ),
+
+    margin=dict(l=40, r=40, t=120, b=50),
+
+    legend=dict(
+        orientation="h",
+        x=0.5,
+        xanchor="center",
+        y=1.02,
+        yanchor="bottom",
+        font=dict(
+            size=13,
+            color="#2563eb"  # blue to signal interactivity
+        )
+    ),
+
+    annotations=[
+        dict(
+            text="Click legend items to toggle series visibility",
             x=0.5,
-            xanchor="center",
-            y=1.08,
-            yanchor="bottom",
-        ),
-    )
+            y=1.10,
+            xref="paper",
+            yref="paper",
+            showarrow=False,
+            font=dict(
+                size=12,
+                color="#2563eb"
+            )
+        )
+    ]
+)
+
 
     OUT_HTML.parent.mkdir(parents=True, exist_ok=True)
 
