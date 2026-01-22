@@ -365,8 +365,11 @@ function fmtTotalReturn(x) {
     try {
       // metrics.json is in the same folder as this index.html
       // Cache-bust metrics.json (GitHub Pages/CDN can serve stale JSON even with no-store)
-      const METRICS_URL = `./metrics.json?v=${Date.now()}`;
-      const res = await fetch(METRICS_URL, { cache: "no-store" });
+    const METRICS_URL = "./metrics.json?v=" + Date.now();
+
+    const res = await fetch(METRICS_URL, {
+      cache: "no-store"
+});
 
       if (!res.ok) throw new Error(`metrics.json fetch failed: ${res.status}`);
 
