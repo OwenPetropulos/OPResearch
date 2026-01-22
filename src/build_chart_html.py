@@ -72,8 +72,8 @@ def main():
         yaxis_title="Portfolio Value",
         template="plotly_white",
         height=650,
-        margin=dict(l=40, r=20, t=60, b=40),
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="left", x=0)
+        margin=dict(l=40, r=20, t=90, b=40),
+        legend=dict(orientation="h", yanchor="bottom", y=1.08, xanchor="left", x=0.5)
     )
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
