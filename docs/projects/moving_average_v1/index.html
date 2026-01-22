@@ -418,9 +418,9 @@
           setText("n_total_return", fmtTotalReturn(nasdaq.total_return));
 
           // Annualized Return (CAGR)
-          setText("s_annualized_return", fmtPctDecimal(strategy.annualized_return));
-          setText("b_annualized_return", fmtPctDecimal(benchmark.annualized_return));
-          setText("n_annualized_return", fmtPctDecimal(nasdaq.annualized_return));
+          setText("s_annualized_return", fmtPctDecimal(strategy.cagr));
+          setText("b_annualized_return", fmtPctDecimal(benchmark.cagr));
+          setText("n_annualized_return", fmtPctDecimal(nasdaq.cagr));
 
           // Volatility
           setText("s_volatility", fmtPctDecimal(strategy.volatility));
