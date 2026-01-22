@@ -94,12 +94,12 @@ def main() -> None:
         xaxis_title="Date",
         yaxis_title="Portfolio Value",
         template="plotly_white",
-        margin=dict(l=40, r=20, t=60, b=40),
+        margin=dict(l=40, r=20, t=80, b=40),
         legend=dict(
             orientation="h",
             x=0.5,
             xanchor="center",
-            y=1.02,
+            y=1.08,
             yanchor="bottom",
         ),
     )
