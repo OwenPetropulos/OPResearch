@@ -131,21 +131,6 @@ def main() -> None:
             color="#2563eb"  # blue to signal interactivity
         )
     ),
-
-    annotations=[
-        dict(
-            text="Click legend items to toggle series visibility",
-            x=0.5,
-            y=1.10,
-            xref="paper",
-            yref="paper",
-            showarrow=False,
-            font=dict(
-                size=12,
-                color="#2563eb"
-            )
-        )
-    ]
 )
 
 
