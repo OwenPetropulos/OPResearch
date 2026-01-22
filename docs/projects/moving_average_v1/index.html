@@ -88,11 +88,17 @@
 
     .grid{
       display:grid;
-      grid-template-columns: 1fr 2fr;
-      gap: 16px;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 22px;
       align-items: start;
     }
 
+    .left-col{
+      display: flex;
+     flex-direction: column;
+     gap: 22px;
+    }
+    
     .card{
       background: rgba(255,255,255,0.05);
       border: 1px solid var(--border);
@@ -258,129 +264,109 @@
     </section>
 
     <section class="grid">
-      <!-- LEFT: Overview + Assumptions -->
-      <div class="card">
-        <div class="card-inner">
-          <h2>Overview</h2>
-          <p class="body">
-            The objective of this version is to establish a transparent baseline for systematic decision-making using only
-            end-of-week price information. The strategy computes a trailing signal (12-month lookback), selects the strongest
-            names within the universe, and rebalances weekly. All performance statistics are computed on aligned weekly
-            observations (same start date across series) to ensure an apples-to-apples comparison.
-          </p>
+  <!-- LEFT COLUMN -->
+  <div class="left-col">
+    <!-- Overview + Assumptions card -->
+    <div class="card">
+      <div class="card-inner">
+        <h2>Overview</h2>
+        <p class="body">
+          The objective of this version is to establish a transparent baseline for systematic decision-making using only end-of-week price
+          information. The strategy computes a trailing signal (12-month lookback), selects the strongest names within the universe, and
+          rebalances weekly. All performance statistics are computed on aligned weekly observations (same start date across series) to ensure
+          an apples-to-apples comparison.
+        </p>
 
-          <div class="assumptions">
-            <h3>Assumptions</h3>
-            <ul>
-              <li><strong>Frequency:</strong> weekly rebalancing (end-of-week data)</li>
-              <li><strong>Lookback:</strong> 12-month trailing window before first trade</li>
-              <li><strong>Universe:</strong> fixed set of 10 large-cap U.S. equities</li>
-              <li><strong>Benchmark:</strong> equal-weight basket of the same universe</li>
-              <li><strong>Market proxy:</strong> Nasdaq 100 (QQQ)</li>
-              <li><strong>Costs:</strong> not included in v1</li>
-            </ul>
-          </div>
-
-          <div class="assumptions formulas">
-            <h3>Key Formulas</h3>
-            <hr class="divider" />
-
-             <ul>
-              <li>
-               <strong>Total Return:</strong>
-              (Final Portfolio Value / Initial Value − 1)
-              </li>
-
-              <li>
-              <strong>Annualized Return (CAGR):</strong>
-               (Final / Initial)<sup>1 / Years</sup> − 1
-              </li>
-
-              <li>
-               <strong>Volatility:</strong>
-               Annualized standard deviation of weekly returns
-              </li>
-
-              <li>
-               <strong>Sharpe Ratio:</strong>
-                Annualized Return ÷ Volatility
-              </li>
-
-              <li>
-                <strong>Max Drawdown:</strong>
-                Minimum peak-to-trough portfolio decline
-             </li>
-            </ul>
+        <div class="assumptions">
+          <h3>Assumptions</h3>
+          <ul>
+            <li><strong>Frequency:</strong> weekly rebalancing (end-of-week data)</li>
+            <li><strong>Lookback:</strong> 12-month trailing window before first trade</li>
+            <li><strong>Universe:</strong> fixed set of 10 large-cap U.S. equities</li>
+            <li><strong>Benchmark:</strong> equal-weight basket of the same universe</li>
+            <li><strong>Market proxy:</strong> Nasdaq 100 (QQQ)</li>
+            <li><strong>Costs:</strong> not included in v1</li>
+          </ul>
         </div>
       </div>
+    </div>
 
-       
-      <!-- RIGHT: Results table -->
-      <div class="card">
-        <div class="results-header">
-          <h2>Results Summary</h2>
+    <!-- Key formulas card -->
+    <div class="card">
+      <div class="card-inner">
+        <h2>Key Formulas</h2>
 
-          <table>
-            <thead>
-              <tr>
-                <th>Metric</th>
-                <th>Strategy</th>
-                <th>Benchmark</th>
-                <th>Nasdaq 100 (QQQ)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="metric">Total Return</td>
-                <td><span id="s_total_return">—</span></td>
-                <td><span id="b_total_return">—</span></td>
-                <td><span id="n_total_return">—</span></td>
-              </tr>
-              <tr>
-                <td class="metric">Annualized Return</td>
-                <td><span id="s_annualized_return">—</span></td>
-                <td><span id="b_annualized_return">—</span></td>
-                <td><span id="n_annualized_return">—</span></td>
-              </tr>
-              <tr>
-                <td class="metric">Volatility</td>
-                <td><span id="s_volatility">—</span></td>
-                <td><span id="b_volatility">—</span></td>
-                <td><span id="n_volatility">—</span></td>
-              </tr>
-              <tr>
-                <td class="metric">Sharpe</td>
-                <td><span id="s_sharpe">—</span></td>
-                <td><span id="b_sharpe">—</span></td>
-                <td><span id="n_sharpe">—</span></td>
-              </tr>
-              <tr>
-                <td class="metric">Max Drawdown</td>
-                <td><span id="s_max_drawdown">—</span></td>
-                <td><span id="b_max_drawdown">—</span></td>
-                <td><span id="n_max_drawdown">—</span></td>
-              </tr>
-            </tbody>
-          </table>
+        <hr class="divider" />
 
-          <p class="note" id="metrics_period">Loading metrics...</p>
-          <p class="note">Source: Yahoo Finance API</p>
-        </div>
-
-        <!-- Chart -->
-        <div class="chart-inner chart-card">
-          <div class="chart-header">
-            <h2>Backtest Visualization</h2>
-            <p class="chart-sub">
-              Interactive equity curves for Strategy vs Benchmark vs Nasdaq 100 (QQQ).
-            </p>
-          </div>
-
-          <!-- Cache-bust to avoid GitHub Pages/iframe staleness -->
-          <iframe src="./moving_average_backtest.html?v=11" loading="lazy"></iframe>
+        <div class="formulas">
+          <ul>
+            <li><strong>Total Return:</strong> (Final Portfolio Value / Initial Value − 1)</li>
+            <li><strong>Annualized Return (CAGR):</strong> (Final / Initial)<sup>1 / Years</sup> − 1</li>
+            <li><strong>Volatility:</strong> Annualized standard deviation of weekly returns</li>
+            <li><strong>Sharpe Ratio:</strong> Annualized Return ÷ Volatility</li>
+            <li><strong>Max Drawdown:</strong> Minimum peak-to-trough portfolio decline</li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="card">
+    <div class="results-header">
+      <h2>Results Summary</h2>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Strategy</th>
+          <th>Benchmark</th>
+          <th>Nasdaq 100 (QQQ)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="metric">Total Return</td>
+          <td><span id="s_total_return">—</span></td>
+          <td><span id="b_total_return">—</span></td>
+          <td><span id="n_total_return">—</span></td>
+        </tr>
+        <tr>
+          <td class="metric">Annualized Return</td>
+          <td><span id="s_annualized_return">—</span></td>
+          <td><span id="b_annualized_return">—</span></td>
+          <td><span id="n_annualized_return">—</span></td>
+        </tr>
+        <tr>
+          <td class="metric">Volatility</td>
+          <td><span id="s_volatility">—</span></td>
+          <td><span id="b_volatility">—</span></td>
+          <td><span id="n_volatility">—</span></td>
+        </tr>
+        <tr>
+          <td class="metric">Sharpe</td>
+          <td><span id="s_sharpe">—</span></td>
+          <td><span id="b_sharpe">—</span></td>
+          <td><span id="n_sharpe">—</span></td>
+        </tr>
+        <tr>
+          <td class="metric">Max Drawdown</td>
+          <td><span id="s_max_drawdown">—</span></td>
+          <td><span id="b_max_drawdown">—</span></td>
+          <td><span id="n_max_drawdown">—</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="results-footer">
+      <div id="metrics_period" class="muted">Metrics computed from — to —.</div>
+      <div class="muted">Source: Yahoo Finance API</div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Metrics loader -->
     <script>
