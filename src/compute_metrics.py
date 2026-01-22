@@ -1,136 +1,131 @@
-from __future__ import annotations
-
 import json
+import math
 from pathlib import Path
+
 import numpy as np
 import pandas as pd
 
-INPUT_FILE = Path("data/portfolio_performance.csv")
-OUTPUT_FILE = Path("docs/projects/moving_average_v1/metrics.json")
 
-WEEKS_PER_YEAR = 52
-RISK_FREE_ANNUAL = 0.0  # keep 0.0 for now
+ROOT = Path(__file__).resolve().parents[1]
+DATA_DIR = ROOT / "data"
+OUT_DIR = ROOT / "docs" / "projects" / "moving_average_v1"
+OUT_DIR.mkdir(parents=True, exist_ok=True)
+
+PORTFOLIO_CSV = DATA_DIR / "portfolio_performance.csv"
+NASDAQ_ALIGNED_CSV = DATA_DIR / "nasdaq100_weekly_growth_aligned.csv"
+
+OUT_JSON = OUT_DIR / "metrics.json"
 
 
-def _max_drawdown(values: np.ndarray) -> float:
-    peak = np.maximum.accumulate(values)
-    dd = values / peak - 1.0
+def _read_datesafe(df: pd.DataFrame, col: str) -> pd.DataFrame:
+    df = df.copy()
+    s = pd.to_datetime(df[col], errors="coerce", utc=True)
+    df[col] = s.dt.tz_convert(None)
+    return df.dropna(subset=[col])
+
+
+def _weekly_returns_from_values(values: pd.Series) -> pd.Series:
+    # simple returns
+    r = values.pct_change()
+    return r.dropna()
+
+
+def _max_drawdown(values: pd.Series) -> float:
+    v = values.astype(float)
+    peak = v.cummax()
+    dd = (v / peak) - 1.0
     return float(dd.min())
 
 
-def _compute_metrics(values: np.ndarray, dates: pd.Series) -> dict:
-    # weekly returns
-    rets = pd.Series(values, index=dates).pct_change().dropna().values
-    if len(rets) < 10:
-        raise ValueError("Not enough weekly observations to compute stable metrics.")
+def _metrics_from_weekly_values(values: pd.Series) -> dict:
+    v = values.dropna().astype(float)
+    if len(v) < 3:
+        return {
+            "total_return": None,
+            "cagr": None,
+            "volatility": None,
+            "sharpe": None,
+            "max_drawdown": None,
+        }
 
-    total_return = values[-1] / values[0] - 1.0
+    rets = _weekly_returns_from_values(v)
 
-    years = (dates.iloc[-1] - dates.iloc[0]).days / 365.25
-    cagr = (values[-1] / values[0]) ** (1 / years) - 1.0 if years > 0 else float("nan")
+    total_return = float(v.iloc[-1] / v.iloc[0] - 1.0)
 
-    vol_ann = np.std(rets, ddof=1) * np.sqrt(WEEKS_PER_YEAR)
-    sharpe = (cagr - RISK_FREE_ANNUAL) / vol_ann if vol_ann != 0 else float("nan")
+    # Weekly -> annual (52)
+    n_weeks = len(v) - 1
+    years = n_weeks / 52.0 if n_weeks > 0 else None
+    cagr = float((v.iloc[-1] / v.iloc[0]) ** (1.0 / years) - 1.0) if years and years > 0 else None
+
+    vol = float(rets.std(ddof=1) * math.sqrt(52)) if len(rets) > 1 else None
+
+    # Sharpe with rf = 0
+    sharpe = None
+    if len(rets) > 1 and rets.std(ddof=1) != 0:
+        sharpe = float((rets.mean() / rets.std(ddof=1)) * math.sqrt(52))
+
+    mdd = _max_drawdown(v)
 
     return {
-        "total_return": float(total_return),
-        "annualized_return": float(cagr),
-        "volatility": float(vol_ann),
-        "sharpe": float(sharpe),
-        "max_drawdown": _max_drawdown(values),
+        "total_return": total_return,
+        "cagr": cagr,
+        "volatility": vol,
+        "sharpe": sharpe,
+        "max_drawdown": mdd,
     }
-
-
-def _read_portfolio_performance(path: Path) -> pd.DataFrame:
-    """
-    Robust loader:
-    - If file has headers, looks for date/value columns.
-    - If file has no headers, assumes:
-        col0 = date
-        col1 = strategy_value
-        col2 = benchmark_value
-      and ignores extra columns.
-    """
-    df = pd.read_csv(path)
-
-    # Detect headerless CSV: first column name looks like a date string
-    first_col_name = str(df.columns[0])
-    headerless = first_col_name.startswith("20") or "00:00:00" in first_col_name
-
-    if headerless:
-        df = pd.read_csv(path, header=None)
-        if df.shape[1] < 3:
-            raise ValueError(f"{path} needs at least 3 columns (date, strategy, benchmark). Found {df.shape[1]}")
-        df = df.iloc[:, :3].copy()
-        df.columns = ["date", "strategy_value", "benchmark_value"]
-    else:
-        # Normalize column names
-        df.columns = [c.strip() for c in df.columns]
-
-        # Must have a date column
-        date_candidates = [c for c in df.columns if c.lower() in ["date", "datetime", "time"]]
-        if not date_candidates:
-            raise ValueError(f"Could not find a date column in: {list(df.columns)}")
-        date_col = date_candidates[0]
-
-        # Try to identify strategy/benchmark value columns
-        # Prefer obvious names first; fall back to "Portfolio" and "NASDAQ 100" (from your earlier data format).
-        strat_candidates = [c for c in df.columns if c.lower() in ["strategy", "portfolio", "portfolio_value", "strategy_value"]]
-        bench_candidates = [c for c in df.columns if c.lower() in ["benchmark", "nasdaq 100", "nasdaq100", "qqq", "benchmark_value"]]
-
-        # If not found by names, use the first two numeric columns after date
-        tmp = df.copy()
-        tmp[date_col] = tmp[date_col]
-        numeric_cols = [c for c in df.columns if c != date_col]
-
-        if not strat_candidates or not bench_candidates:
-            # try numeric coercion to identify numeric columns
-            numeric_like = []
-            for c in numeric_cols:
-                s = pd.to_numeric(df[c], errors="coerce")
-                if s.notna().sum() > 0.9 * len(df):  # mostly numeric
-                    numeric_like.append(c)
-            if len(numeric_like) < 2:
-                raise ValueError(f"Could not infer strategy/benchmark columns from: {list(df.columns)}")
-            strat_col, bench_col = numeric_like[0], numeric_like[1]
-        else:
-            strat_col = strat_candidates[0]
-            bench_col = bench_candidates[0]
-
-        df = df[[date_col, strat_col, bench_col]].copy()
-        df.columns = ["date", "strategy_value", "benchmark_value"]
-
-    # Parse dates (handles your timezone suffix like -05:00)
-    df["date"] = pd.to_datetime(df["date"], utc=True, errors="coerce").dt.tz_convert(None)
-    df = df.dropna(subset=["date"]).sort_values("date").drop_duplicates(subset=["date"])
-
-    df["strategy_value"] = pd.to_numeric(df["strategy_value"], errors="coerce")
-    df["benchmark_value"] = pd.to_numeric(df["benchmark_value"], errors="coerce")
-    df = df.dropna(subset=["strategy_value", "benchmark_value"])
-
-    return df
 
 
 def main():
-    df = _read_portfolio_performance(INPUT_FILE)
+    if not PORTFOLIO_CSV.exists():
+        raise FileNotFoundError(f"Missing {PORTFOLIO_CSV}")
 
-    # Overlap window is inherently enforced by rows where both values exist
-    start = df["date"].iloc[0]
-    end = df["date"].iloc[-1]
+    df = pd.read_csv(PORTFOLIO_CSV)
+    if "Date" not in df.columns:
+        raise ValueError(f"{PORTFOLIO_CSV} must contain a 'Date' column. Found: {list(df.columns)}")
 
-    strat = _compute_metrics(df["strategy_value"].values.astype(float), df["date"])
-    bench = _compute_metrics(df["benchmark_value"].values.astype(float), df["date"])
+    df = _read_datesafe(df, "Date").sort_values("Date")
 
-    out = {
-        "period_start": start.strftime("%Y-%m-%d"),
-        "period_end": end.strftime("%Y-%m-%d"),
-        "strategy": {k: round(v, 4) for k, v in strat.items()},
-        "benchmark": {k: round(v, 4) for k, v in bench.items()},
+    # Expect these columns (based on your screenshot error earlier)
+    # Date, Strategy_Value, Benchmark_Value, ...
+    needed = {"Strategy_Value", "Benchmark_Value"}
+    missing = needed - set(df.columns)
+    if missing:
+        raise ValueError(f"Expected {needed} in {PORTFOLIO_CSV}. Missing: {missing}. Found: {list(df.columns)}")
+
+    # Nasdaq aligned weekly file
+    if not NASDAQ_ALIGNED_CSV.exists():
+        raise FileNotFoundError(f"Missing {NASDAQ_ALIGNED_CSV}")
+
+    qqq = pd.read_csv(NASDAQ_ALIGNED_CSV)
+    if "Date" not in qqq.columns or "Portfolio_Value" not in qqq.columns:
+        raise ValueError(
+            f"{NASDAQ_ALIGNED_CSV} must contain columns: Date, Portfolio_Value. Found: {list(qqq.columns)}"
+        )
+    qqq = _read_datesafe(qqq, "Date").sort_values("Date").rename(columns={"Portfolio_Value": "Nasdaq100_Value"})
+
+    # Merge on Date (inner = aligned sample)
+    merged = pd.merge(df[["Date", "Strategy_Value", "Benchmark_Value"]], qqq[["Date", "Nasdaq100_Value"]], on="Date", how="inner")
+    if merged.empty:
+        raise ValueError("Merged series is empty. Check that your Date formats align across files.")
+
+    start = merged["Date"].iloc[0].date().isoformat()
+    end = merged["Date"].iloc[-1].date().isoformat()
+
+    strat_m = _metrics_from_weekly_values(merged["Strategy_Value"])
+    bench_m = _metrics_from_weekly_values(merged["Benchmark_Value"])
+    nasdaq_m = _metrics_from_weekly_values(merged["Nasdaq100_Value"])
+
+    payload = {
+        "period": {"start": start, "end": end},
+        "metrics": {
+            "strategy": strat_m,
+            "benchmark": bench_m,
+            "nasdaq": nasdaq_m,
+        },
     }
 
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_FILE.write_text(json.dumps(out, indent=2))
-    print(f"Wrote {OUTPUT_FILE}")
+    OUT_JSON.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    print(f"Wrote {OUT_JSON}")
 
 
 if __name__ == "__main__":
