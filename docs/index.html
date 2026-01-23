@@ -28,6 +28,9 @@
                   radial-gradient(900px 500px at 90% 10%, rgba(126,224,163,0.16), transparent 60%),
                   var(--bg);
       color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     a { color: var(--accent); text-decoration: none; }
@@ -35,8 +38,9 @@
 
     .wrap{
       max-width: var(--maxw);
-      margin: 40px auto 70px;
+      margin: 40px auto 0;
       padding: 0 22px;
+      flex: 1;
     }
 
     .topbar{
@@ -98,6 +102,9 @@
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       padding: 18px 18px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
     }
 
     .card h2{
@@ -117,6 +124,7 @@
       flex-wrap: wrap;
       gap: 8px;
       margin-top: 10px;
+      margin-bottom: 8px;
     }
 
     .tag{
@@ -128,10 +136,57 @@
       background: rgba(255,255,255,0.03);
     }
 
-    .footer{
-      margin-top: 18px;
+    .publish-date{
+      font-size: 11px;
+      color: var(--muted);
+      font-style: italic;
+      text-align: right;
+      margin-top: auto;
+      opacity: 0.8;
+    }
+
+    /* Footer Sections */
+    .footer-container{
+      max-width: var(--maxw);
+      margin: 40px auto 0;
+      padding: 0 22px 30px;
+    }
+
+    .about-section{
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+
+    .about-section h3{
+      margin: 0 0 8px;
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    .about-section p{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .legal-footer{
       color: var(--muted);
       font-size: 12px;
+      line-height: 1.6;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .legal-footer p{
+      margin: 0 0 8px;
+    }
+
+    .legal-footer p:last-child{
+      margin: 0;
     }
   </style>
 </head>
@@ -163,11 +218,26 @@
           <span class="tag">weekly</span>
           <span class="tag">v1 baseline</span>
         </div>
+        <div class="publish-date">Published on 01/23/26</div>
       </section>
     </div>
+  </div>
 
-    <div class="footer">
-      Disclaimer: educational research only; not investment advice.
+  <div class="footer-container">
+    <div class="about-section">
+      <h3>About</h3>
+      <p>
+        I am an undergraduate student at Trinity College studying Mathematics and Economics with an interest in public markets and investment research. 
+        <a href="https://www.linkedin.com/in/owenpetropulos" target="_blank">More about me →</a>
+      </p>
+    </div>
+
+    <div class="legal-footer">
+      <p><strong>Disclaimer:</strong> All content on this site is for educational and research purposes only and does not constitute investment advice. Past performance does not guarantee future results. Always consult with a qualified financial advisor before making investment decisions.</p>
+      
+      <p><strong>Copyright Notice:</strong> © 2026 Owen Petropulos. All rights reserved. The content, methodologies, code, visualizations, and analysis presented on this site are the intellectual property of Owen Petropulos. Unauthorized reproduction, distribution, or use of this material without explicit written permission is prohibited.</p>
+      
+      <p>For inquiries regarding licensing or collaboration, please contact via <a href="https://www.linkedin.com/in/owenpetropulos" target="_blank">LinkedIn</a>.</p>
     </div>
   </div>
 </body>
