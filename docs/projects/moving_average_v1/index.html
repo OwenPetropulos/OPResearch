@@ -25,7 +25,7 @@
     body{
       margin: 0;
       color: var(--muted);
-      font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
       background:
         radial-gradient(1100px 520px at 16% 5%, rgba(106,166,255,0.25), transparent 55%),
         radial-gradient(900px 500px at 82% 3%, rgba(126,224,163,0.12), transparent 55%),
@@ -34,7 +34,6 @@
     }
 
     a{ color: var(--accent); text-decoration: none; }
-    a:hover{ text-decoration: underline; }
 
     .wrap{
       max-width: var(--maxw);
@@ -44,35 +43,19 @@
 
     .topbar{
       display: flex;
-      align-items: center;
       justify-content: space-between;
       margin-bottom: 16px;
     }
 
-    .crumb{
-      display: inline-flex;
-      gap: 10px;
-      align-items: center;
-      color: var(--muted);
-      opacity: 0.95;
-      font-weight: 500;
-    }
-
     .pill{
-      display: inline-flex;
-      gap: 10px;
-      align-items: center;
       padding: 6px 12px;
       border: 1px solid var(--border);
-      background: rgba(255,255,255,0.03);
       border-radius: 999px;
-      color: var(--muted);
       font-size: 13px;
-      white-space: nowrap;
     }
 
     .hero{
-      padding: 26px 26px;
+      padding: 26px;
       border-radius: var(--radius);
       background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.04));
       border: 1px solid var(--border);
@@ -84,31 +67,15 @@
       margin: 0 0 10px;
       color: var(--text);
       font-size: 48px;
-      line-height: 1.05;
-      letter-spacing: -0.8px;
     }
 
-    .subtitle{
-      margin: 0;
-      max-width: 980px;
-      font-size: 18px;
-    }
-
-    /* 2-column layout */
     .grid{
       display: grid;
       grid-template-columns: 1fr 1.6fr;
       gap: 22px;
-      align-items: start;
     }
 
-    .left-col{
-      display: flex;
-      flex-direction: column;
-      gap: 22px;
-    }
-
-    .right-col{
+    .left-col, .right-col{
       display: flex;
       flex-direction: column;
       gap: 22px;
@@ -119,341 +86,163 @@
       background: var(--panel);
       border: 1px solid var(--border);
       box-shadow: var(--shadow);
-      overflow: hidden;
     }
 
     .card-inner{
-      padding: 18px 18px 18px;
+      padding: 18px;
     }
 
     .card h2{
       margin: 0 0 10px;
       color: var(--text);
       font-size: 28px;
-      letter-spacing: -0.3px;
     }
 
     .divider{
-      border: 0;
       height: 1px;
       background: rgba(255,255,255,0.10);
       margin: 16px 0;
-    }
-
-    /* Bullet list style used everywhere (Assumptions + Formulas) */
-    .bullets h3{
-      margin: 0 0 10px;
-      font-size: 26px;
-      color: var(--text);
-    }
-    .bullets ul{
-      margin: 0;
-      padding-left: 16px; /* consistent bullets */
-      color: var(--muted);
-    }
-    .bullets li{
-      margin: 8px 0;
-      line-height: 1.45;
-    }
-    .bullets strong{ color: var(--text); }
-
-    /* Results table */
-    table{
-      width: 100%;
-      border-collapse: separate;
-      border-spacing: 0;
-      border: 1px solid rgba(255,255,255,0.10);
-      background: rgba(0,0,0,0.12);
-      border-radius: var(--radius2);
-      overflow: hidden;
-    }
-    thead th{
-      text-align: left;
-      font-weight: 650;
-      color: var(--text);
-      padding: 14px 14px;
-      border-bottom: 1px solid rgba(255,255,255,0.10);
-      background: rgba(255,255,255,0.04);
-      font-size: 16px;
-    }
-    tbody td{
-      padding: 14px 14px;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-      font-size: 18px;
-      color: var(--text);
-    }
-    tbody tr:last-child td{ border-bottom: 0; }
-    td.metric{
-      font-weight: 650;
-      color: var(--text);
-      width: 44%;
-      font-size: 20px;
-    }
-
-    .meta-note{
-      margin-top: 12px;
-      color: var(--muted);
-      font-size: 16px;
-      line-height: 1.4;
-      white-space: normal;       /* allow wrapping */
-      overflow-wrap: anywhere;   /* never cut off */
-      padding-bottom: 2px;       /* breathing room */
-    }
-
-    /* Chart */
-    .chart-card .card-inner{
-      padding: 18px;
-    }
-    .chart-title{
-      margin: 0 0 6px;
-      color: var(--text);
-      font-size: 28px;
-    }
-    .chart-sub{
-      margin: 0 0 14px;
-      color: var(--muted);
-      font-size: 16px;
-    }
-    .chart-frame{
-      width: 100%;
-      height: 540px;
       border: 0;
-      border-radius: 12px;
-      background: rgba(255,255,255,0.02);
     }
 
-    /* Responsive */
+    /* === FORMULAS SECTION === */
+
+    .formula-block{
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .formula-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .formula-math{
+      font-family: "STIX Two Math", "Cambria Math", "Times New Roman", serif;
+      color: var(--text);
+      font-size: 17px;
+    }
+
+    .formula-toggle{
+      background: none;
+      border: none;
+      color: var(--accent);
+      cursor: pointer;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .formula-explainer{
+      display: none;
+      margin-top: 8px;
+      font-family: "STIX Two Math", "Cambria Math", "Times New Roman", serif;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
     @media (max-width: 980px){
-      h1{ font-size: 38px; }
       .grid{ grid-template-columns: 1fr; }
-      .chart-frame{ height: 520px; }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="topbar">
-      <a class="crumb" href="../../index.html">← Back to Projects / Moving Average v1</a>
-      <div class="pill">OPResearch <span style="opacity:.7;">•</span> v1</div>
-    </div>
+<div class="wrap">
 
-    <section class="hero">
-      <h1>Moving Average Strategy (v1)</h1>
-      <p class="subtitle">
-        Large-cap equities have dramatically outperformed mid and small-cap stocks over the past decade. This strategy takes a basket of the top 10 U.S. equities by market capitalization as of 2016 (diversified across sectors): AAPL, MSFT, AMZN, GOOGL, META, XOM, BRK.B, JPM, JNJ, and WMT. The strategy rebalances weekly to favor undervalued companies. Since these are all fundamentally solid businesses, "undervaluation" here is defined simply by recent price action: which stocks have underperformed their peers over the past 12 months? The algorithm systematically overweighs those laggards, betting that temporary weakness in great companies presents a buying opportunity.
+  <section class="grid">
+    <div class="left-col">
 
-        Over the 10-year backtest period, the strategy outperformed both the equal-weight benchmark and the Nasdaq 100, delivering a 23.3% annualized return compared to 22.3% and 20.3%, respectively. However, this outperformance came with the tradeoff of much higher volatility (22.3% vs. 16.6%) and a deeper maximum drawdown (-42.8% vs. -26.6%). It's worth noting a potential source of survivorship bias: it's rare for the top 10 equities by market cap to remain roughly the same for an entire decade. The fact that this specific basket of stocks stayed dominant from 2016 to 2026 likely contributed to the strong results. V2 will add transaction costs, position limits, and a changing universe selection to improve quality of results and reduce volatility and large drawdowns. 
-      </p>
-    </section>
+      <!-- STRATEGY FORMULAS -->
+      <div class="card">
+        <div class="card-inner">
+          <h2>Strategy Formulas</h2>
 
-    <section class="grid">
-      <!-- LEFT COLUMN -->
-      <div class="left-col">
-        <div class="card">
-          <div class="card-inner">
-            <h2>Overview</h2>
-            <p style="margin:0;">
-              Every Friday, the algorithm calculates each stock's trailing 12-month return and compares it to the group average, flagging stocks below this average as "undervalued" relative to their peers. It then allocates capital proportionally: the further a stock has fallen behind, the larger its position becomes. This is deliberately simple: no transaction costs, no position limits, no stop-losses. The goal is to establish a clean baseline and answer one question: does the core signal (12-month relative performance) actually work?  And more importantly, over the long run, can established mega cap companies be seen as “riskless bets” and be accurately valued relative to one another?
-            </p>
-
-            <hr class="divider" />
-
-            <div class="bullets">
-              <h3>Assumptions</h3>
-              <ul>
-                <li><strong>Frequency:</strong> weekly rebalancing (end-of-week data)</li>
-                <li><strong>Lookback:</strong> 12-month trailing window before first trade</li>
-                <li><strong>Universe:</strong> fixed set of 10 large-cap U.S. equities</li>
-                <li><strong>Benchmark:</strong> equal-weight basket of the same universe</li>
-                <li><strong>Market proxy:</strong> Nasdaq 100 (QQQ)</li>
-                <li><strong>Costs:</strong> not included in v1</li>
-              </ul>
+          <div class="formula-block">
+            <div class="formula-header">
+              <span class="formula-math">
+                MA<sub>t</sub><sup>(k)</sup> = (1 / k) ∑<sub>i=0</sub><sup>k−1</sup> P<sub>t−i</sub>
+              </span>
+              <button class="formula-toggle">Explain</button>
+            </div>
+            <div class="formula-explainer">
+              MA<sub>t</sub><sup>(k)</sup>: k-period moving average at time t<br>
+              P<sub>t−i</sub>: asset price i periods before t<br>
+              k: lookback window length (weeks)
             </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card-inner bullets">
-            <h3>Key Formulas</h3>
-            <hr class="divider" />
-            <ul>
-              <li><strong>Total Return:</strong> (Final Portfolio Value / Initial Value − 1)</li>
-              <li><strong>Annualized Return (CAGR):</strong> (Final / Initial)<sup>1 / Years</sup> − 1</li>
-              <li><strong>Volatility:</strong> Annualized standard deviation of weekly returns</li>
-              <li><strong>Sharpe Ratio:</strong> Annualized Return ÷ Volatility</li>
-              <li><strong>Max Drawdown:</strong> Minimum peak-to-trough portfolio decline</li>
-            </ul>
+          <div class="formula-block">
+            <div class="formula-header">
+              <span class="formula-math">
+                s<sub>t</sub> = 𝟙(P<sub>t</sub> &gt; MA<sub>t</sub>)
+              </span>
+              <button class="formula-toggle">Explain</button>
+            </div>
+            <div class="formula-explainer">
+              s<sub>t</sub>: trading signal (1 = invested, 0 = out)<br>
+              𝟙(·): indicator function
+            </div>
           </div>
+
+          <div class="formula-block">
+            <div class="formula-header">
+              <span class="formula-math">
+                r<sub>t</sub> = s<sub>t−1</sub> · (P<sub>t</sub> − P<sub>t−1</sub>) / P<sub>t−1</sub>
+              </span>
+              <button class="formula-toggle">Explain</button>
+            </div>
+            <div class="formula-explainer">
+              r<sub>t</sub>: asset return at time t<br>
+              s<sub>t−1</sub>: position entering period t
+            </div>
+          </div>
+
+          <div class="formula-block">
+            <div class="formula-header">
+              <span class="formula-math">
+                R<sub>t</sub> = (1 / N) ∑<sub>i=1</sub><sup>N</sup> r<sub>i,t</sub>
+              </span>
+              <button class="formula-toggle">Explain</button>
+            </div>
+            <div class="formula-explainer">
+              R<sub>t</sub>: portfolio return<br>
+              N: number of assets
+            </div>
+          </div>
+
+          <div class="formula-block">
+            <div class="formula-header">
+              <span class="formula-math">
+                V<sub>t</sub> = V<sub>t−1</sub>(1 + R<sub>t</sub>)
+              </span>
+              <button class="formula-toggle">Explain</button>
+            </div>
+            <div class="formula-explainer">
+              V<sub>t</sub>: portfolio value at time t
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <!-- RIGHT COLUMN -->
-      <div class="right-col">
-        <div class="card">
-          <div class="card-inner">
-            <h2>Results Summary</h2>
+    </div>
+  </section>
 
-            <table>
-              <thead>
-                <tr>
-                  <th>Metric</th>
-                  <th>Strategy</th>
-                  <th>Benchmark</th>
-                  <th>Nasdaq 100 (QQQ)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="metric">Total Return</td>
-                  <td><span id="s_total_return">—</span></td>
-                  <td><span id="b_total_return">—</span></td>
-                  <td><span id="n_total_return">—</span></td>
-                </tr>
-                <tr>
-                  <td class="metric">Annualized Return</td>
-                  <td><span id="s_annualized_return">—</span></td>
-                  <td><span id="b_annualized_return">—</span></td>
-                  <td><span id="n_annualized_return">—</span></td>
-                </tr>
-                <tr>
-                  <td class="metric">Volatility</td>
-                  <td><span id="s_volatility">—</span></td>
-                  <td><span id="b_volatility">—</span></td>
-                  <td><span id="n_volatility">—</span></td>
-                </tr>
-                <tr>
-                  <td class="metric">Sharpe</td>
-                  <td><span id="s_sharpe">—</span></td>
-                  <td><span id="b_sharpe">—</span></td>
-                  <td><span id="n_sharpe">—</span></td>
-                </tr>
-                <tr>
-                  <td class="metric">Max Drawdown</td>
-                  <td><span id="s_max_drawdown">—</span></td>
-                  <td><span id="b_max_drawdown">—</span></td>
-                  <td><span id="n_max_drawdown">—</span></td>
-                </tr>
-              </tbody>
-            </table>
+</div>
 
-            <div class="meta-note" id="metrics_period">Loading metrics...</div>
-            <div class="meta-note">Source: Yahoo Finance API</div>
-          </div>
-        </div>
+<script>
+  document.querySelectorAll(".formula-toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const explainer = btn.closest(".formula-block")
+        .querySelector(".formula-explainer");
+      explainer.style.display =
+        explainer.style.display === "block" ? "none" : "block";
+    });
+  });
+</script>
 
-        <div class="card chart-card">
-          <div class="card-inner">
-            <h2 class="chart-title">Backtest Visualization</h2>
-            <p class="chart-sub">Interactive equity curves for Strategy vs Benchmark vs Nasdaq 100 (QQQ).</p>
-
-            <!-- This is the key: always show the chart by embedding the generated plot HTML -->
-            <iframe
-              class="chart-frame"
-              src="./moving_average_backtest.html"
-              title="Moving Average Backtest Chart"
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script>
-      (async function loadMetrics(){
-        function $(id){ return document.getElementById(id); }
-        function setText(id, value){
-          const el = $(id);
-          if (el) el.textContent = value;
-        }
-
-        function asNum(x){
-          const n = Number(x);
-          return Number.isFinite(n) ? n : null;
-        }
-
-        // For CAGR, volatility, drawdown (stored as decimals like 0.22)
-        function fmtPctDecimal(x){
-          const n = asNum(x);
-          if (n === null) return "—";
-          return (n * 100).toFixed(2) + "%";
-        }
-
-        // For total return stored as a multiple like 7.20 = +720%
-        function fmtTotalReturn(x){
-          const n = asNum(x);
-          if (n === null) return "—";
-          return (n * 100).toFixed(2) + "%";
-        }
-
-        function fmtNum(x){
-          const n = asNum(x);
-          if (n === null) return "—";
-          return n.toFixed(2);
-        }
-
-        try {
-          // Cache-bust metrics.json (GitHub Pages can serve stale JSON)
-          const url = "./metrics.json?v=" + Date.now();
-          const res = await fetch(url, { cache: "no-store" });
-          if (!res.ok) throw new Error("metrics.json fetch failed: " + res.status);
-
-          const data = await res.json();
-
-          // Supports either schema:
-          // A) data.strategy.total_return, etc.
-          // B) data.metrics.strategy.total_return, etc.
-          const m = data.metrics || data;
-
-          const strategy = m.strategy || {};
-          const benchmark = m.benchmark || {};
-          const nasdaq = m.nasdaq || m.nasdaq100 || {};
-
-          // Total Return
-          setText("s_total_return", fmtTotalReturn(strategy.total_return));
-          setText("b_total_return", fmtTotalReturn(benchmark.total_return));
-          setText("n_total_return", fmtTotalReturn(nasdaq.total_return));
-
-          // Annualized Return (CAGR)
-          setText("s_annualized_return", fmtPctDecimal(strategy.cagr));
-          setText("b_annualized_return", fmtPctDecimal(benchmark.cagr));
-          setText("n_annualized_return", fmtPctDecimal(nasdaq.cagr));
-
-          // Volatility
-          setText("s_volatility", fmtPctDecimal(strategy.volatility));
-          setText("b_volatility", fmtPctDecimal(benchmark.volatility));
-          setText("n_volatility", fmtPctDecimal(nasdaq.volatility));
-
-          // Sharpe
-          setText("s_sharpe", fmtNum(strategy.sharpe));
-          setText("b_sharpe", fmtNum(benchmark.sharpe));
-          setText("n_sharpe", fmtNum(nasdaq.sharpe));
-
-          // Max Drawdown
-          setText("s_max_drawdown", fmtPctDecimal(strategy.max_drawdown));
-          setText("b_max_drawdown", fmtPctDecimal(benchmark.max_drawdown));
-          setText("n_max_drawdown", fmtPctDecimal(nasdaq.max_drawdown));
-
-          // Period label (supports a few names)
-          const ps = data.period_start || m.period_start;
-          const pe = data.period_end || m.period_end;
-          const ps2 = data.start_date || m.start_date;
-          const pe2 = data.end_date || m.end_date;
-
-          const start = ps || ps2;
-          const end = pe || pe2;
-
-          if (start && end) {
-            setText("metrics_period", `Metrics computed from ${start} to ${end}.`);
-          } else {
-            setText("metrics_period", "Metrics loaded.");
-          }
-        } catch (err) {
-          console.error(err);
-          setText("metrics_period", "Error loading metrics.json. (Check path and JSON format.)");
-        }
-      })();
-    </script>
-  </div>
 </body>
 </html>
