@@ -241,9 +241,9 @@
     <section class="hero">
       <h1>Moving Average Strategy (v1)</h1>
       <p class="subtitle">
-        A weekly-rebalanced, rules-based strategy that ranks a fixed universe of large-cap U.S. equities using a trailing
-        12-month signal and holds the top names. Results are shown versus an equal-weight benchmark of the same universe
-        and the Nasdaq 100 (QQQ) as a broad market proxy.
+        Large-cap equities have dramatically outperformed mid and small-cap stocks over the past decade. This strategy takes a basket of the top 10 U.S. equities by market capitalization as of 2016 (diversified across sectors): AAPL, MSFT, AMZN, GOOGL, META, XOM, BRK.B, JPM, JNJ, and WMT. The strategy rebalances weekly to favor undervalued companies. Since these are all fundamentally solid businesses, "undervaluation" here is defined simply by recent price action: which stocks have underperformed their peers over the past 12 months? The algorithm systematically overweighs those laggards, betting that temporary weakness in great companies presents a buying opportunity.
+
+        Over the 10-year backtest period, the strategy outperformed both the equal-weight benchmark and the Nasdaq 100, delivering a 23.3% annualized return compared to 22.3% and 20.3%, respectively. However, this outperformance came with the tradeoff of much higher volatility (22.3% vs. 16.6%) and a deeper maximum drawdown (-42.8% vs. -26.6%). It's worth noting a potential source of survivorship bias: it's rare for the top 10 equities by market cap to remain roughly the same for an entire decade. The fact that this specific basket of stocks stayed dominant from 2016 to 2026 likely contributed to the strong results. V2 will add transaction costs, position limits, and a changing universe selection to improve quality of results and reduce volatility and large drawdowns. 
       </p>
     </section>
 
@@ -254,10 +254,7 @@
           <div class="card-inner">
             <h2>Overview</h2>
             <p style="margin:0;">
-              The objective of this version is to establish a transparent baseline for systematic decision-making using only
-              end-of-week price information. The strategy computes a trailing signal (12-month lookback), selects the strongest
-              names within the universe, and rebalances weekly. All performance statistics are computed on aligned weekly
-              observations (same start date across series) to ensure an apples-to-apples comparison.
+              Every Friday, the algorithm calculates each stock's trailing 12-month return and compares it to the group average, flagging stocks below this average as "undervalued" relative to their peers. It then allocates capital proportionally: the further a stock has fallen behind, the larger its position becomes. This is deliberately simple: no transaction costs, no position limits, no stop-losses. The goal is to establish a clean baseline and answer one question: does the core signal (12-month relative performance) actually work?  And more importantly, over the long run, can established mega cap companies be seen as “riskless bets” and be accurately valued relative to one another?
             </p>
 
             <hr class="divider" />
