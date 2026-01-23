@@ -174,6 +174,13 @@
 
     .formula-item{
       margin-bottom: 18px;
+    }
+
+    .formula-item:last-child{
+      margin-bottom: 0;
+    }
+
+    .formula-header{
       padding: 16px;
       background: rgba(0,0,0,0.15);
       border-radius: 12px;
@@ -182,10 +189,13 @@
       justify-content: space-between;
       align-items: center;
       gap: 16px;
+      cursor: pointer;
+      transition: all 0.2s;
     }
 
-    .formula-item:last-child{
-      margin-bottom: 0;
+    .formula-header:hover{
+      background: rgba(0,0,0,0.2);
+      border-color: rgba(255,255,255,0.12);
     }
 
     .formula-math{
@@ -204,14 +214,56 @@
       color: var(--accent);
       font-size: 13px;
       font-weight: 600;
-      cursor: pointer;
       white-space: nowrap;
       transition: all 0.2s;
+      pointer-events: none;
     }
 
-    .formula-explain-btn:hover{
+    .formula-header:hover .formula-explain-btn{
       background: rgba(106,166,255,0.25);
       border-color: rgba(106,166,255,0.5);
+    }
+
+    .formula-explanation{
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+      background: rgba(0,0,0,0.25);
+      border-radius: 0 0 12px 12px;
+      margin-top: -12px;
+      padding: 0 16px;
+    }
+
+    .formula-explanation.active{
+      max-height: 500px;
+      padding: 16px;
+      padding-top: 20px;
+      margin-top: 0;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-top: none;
+    }
+
+    .formula-explanation p{
+      margin: 0 0 10px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .formula-explanation p:last-child{
+      margin: 0;
+    }
+
+    .formula-explanation strong{
+      color: var(--text);
+    }
+
+    .formula-explanation code{
+      background: rgba(106,166,255,0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      color: var(--accent);
     }
 
     /* Results table */
@@ -334,38 +386,90 @@
           <h2>Strategy Formulas</h2>
 
           <div class="formula-item">
-            <div class="formula-math">
-              MA<sub>t</sub><sup>(k)</sup> = (1 / k) Σ<sub>i=0</sub><sup>k−1</sup> P<sub>t−i</sub>
+            <div class="formula-header" onclick="toggleExplanation(this)">
+              <div class="formula-math">
+                MA<sub>t</sub><sup>(k)</sup> = (1 / k) Σ<sub>i=0</sub><sup>k−1</sup> P<sub>t−i</sub>
+              </div>
+              <div class="formula-explain-btn">Explain</div>
             </div>
-            <button class="formula-explain-btn" onclick="alert('Moving Average: Calculates the average price over the past k periods.')">Explain</button>
+            <div class="formula-explanation">
+              <p><strong>Moving Average:</strong> Calculates the average price over the past <code>k</code> periods (in this strategy, k = 252 trading days ≈ 12 months).</p>
+              <p><strong>Variables:</strong></p>
+              <p>• <code>MA<sub>t</sub><sup>(k)</sup></code> = Moving average at time t over k periods</p>
+              <p>• <code>P<sub>t−i</sub></code> = Price i days ago from current time t</p>
+              <p>• <code>k</code> = Lookback window (252 days)</p>
+              <p><strong>In context:</strong> This gives us the average price each stock traded at over the past year, which we use as a baseline to identify which stocks have underperformed.</p>
+            </div>
           </div>
 
           <div class="formula-item">
-            <div class="formula-math">
-              s<sub>t</sub> = 𝕀{P<sub>t</sub> > MA<sub>t</sub>}
+            <div class="formula-header" onclick="toggleExplanation(this)">
+              <div class="formula-math">
+                s<sub>t</sub> = 𝕀{P<sub>t</sub> > MA<sub>t</sub>}
+              </div>
+              <div class="formula-explain-btn">Explain</div>
             </div>
-            <button class="formula-explain-btn" onclick="alert('Signal: Indicator function that equals 1 when current price is above moving average, 0 otherwise.')">Explain</button>
+            <div class="formula-explanation">
+              <p><strong>Signal Indicator:</strong> A binary signal that equals 1 when the current price is above its moving average, and 0 otherwise.</p>
+              <p><strong>Variables:</strong></p>
+              <p>• <code>s<sub>t</sub></code> = Signal at time t (either 0 or 1)</p>
+              <p>• <code>𝕀{condition}</code> = Indicator function (1 if true, 0 if false)</p>
+              <p>• <code>P<sub>t</sub></code> = Current price at time t</p>
+              <p>• <code>MA<sub>t</sub></code> = Moving average at time t</p>
+              <p><strong>In context:</strong> This determines whether we hold a position in each stock. If a stock's price is below its 12-month average (signal = 0), we identify it as relatively undervalued and allocate more capital to it.</p>
+            </div>
           </div>
 
           <div class="formula-item">
-            <div class="formula-math">
-              r<sub>t</sub> = s<sub>t−1</sub> · (P<sub>t</sub> − P<sub>t−1</sub>) / P<sub>t−1</sub>
+            <div class="formula-header" onclick="toggleExplanation(this)">
+              <div class="formula-math">
+                r<sub>t</sub> = s<sub>t−1</sub> · (P<sub>t</sub> − P<sub>t−1</sub>) / P<sub>t−1</sub>
+              </div>
+              <div class="formula-explain-btn">Explain</div>
             </div>
-            <button class="formula-explain-btn" onclick="alert('Return: Calculates the return based on the previous signal and price change.')">Explain</button>
+            <div class="formula-explanation">
+              <p><strong>Position Return:</strong> Calculates the return for a single stock position based on the previous week's signal and the current price change.</p>
+              <p><strong>Variables:</strong></p>
+              <p>• <code>r<sub>t</sub></code> = Return at time t</p>
+              <p>• <code>s<sub>t−1</sub></code> = Signal from previous period (our position)</p>
+              <p>• <code>P<sub>t</sub></code> = Current price</p>
+              <p>• <code>P<sub>t−1</sub></code> = Previous period's price</p>
+              <p><strong>In context:</strong> This tracks how much each position contributed to portfolio performance. We only earn returns on positions we held (when signal was 1).</p>
+            </div>
           </div>
 
           <div class="formula-item">
-            <div class="formula-math">
-              R<sub>t</sub> = (1 / N) Σ<sub>i=1</sub><sup>N</sup> r<sub>i,t</sub>
+            <div class="formula-header" onclick="toggleExplanation(this)">
+              <div class="formula-math">
+                R<sub>t</sub> = (1 / N) Σ<sub>i=1</sub><sup>N</sup> r<sub>i,t</sub>
+              </div>
+              <div class="formula-explain-btn">Explain</div>
             </div>
-            <button class="formula-explain-btn" onclick="alert('Portfolio Return: Average return across all N stocks in the portfolio.')">Explain</button>
+            <div class="formula-explanation">
+              <p><strong>Portfolio Return:</strong> The weighted average return across all stocks in the portfolio for the current period.</p>
+              <p><strong>Variables:</strong></p>
+              <p>• <code>R<sub>t</sub></code> = Total portfolio return at time t</p>
+              <p>• <code>N</code> = Number of stocks in portfolio (up to 10)</p>
+              <p>• <code>r<sub>i,t</sub></code> = Return of stock i at time t</p>
+              <p><strong>In context:</strong> This aggregates individual stock returns into the overall portfolio performance. Stocks with higher allocations (bigger underperformance) contribute more to this number.</p>
+            </div>
           </div>
 
           <div class="formula-item">
-            <div class="formula-math">
-              V<sub>t</sub> = V<sub>t−1</sub>(1 + R<sub>t</sub>)
+            <div class="formula-header" onclick="toggleExplanation(this)">
+              <div class="formula-math">
+                V<sub>t</sub> = V<sub>t−1</sub>(1 + R<sub>t</sub>)
+              </div>
+              <div class="formula-explain-btn">Explain</div>
             </div>
-            <button class="formula-explain-btn" onclick="alert('Portfolio Value: Compounds the portfolio value using the portfolio return.')">Explain</button>
+            <div class="formula-explanation">
+              <p><strong>Portfolio Value:</strong> Compounds the portfolio value using the portfolio return from the previous period.</p>
+              <p><strong>Variables:</strong></p>
+              <p>• <code>V<sub>t</sub></code> = Portfolio value at time t</p>
+              <p>• <code>V<sub>t−1</sub></code> = Portfolio value at previous time</p>
+              <p>• <code>R<sub>t</sub></code> = Portfolio return at time t</p>
+              <p><strong>In context:</strong> This is how we track the actual dollar value of the portfolio over time, starting from $100,000 and compounding weekly based on performance. This is what you see in the equity curve chart.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -441,6 +545,23 @@
     </section>
 
     <script>
+      // Toggle formula explanations
+      function toggleExplanation(header) {
+        const explanation = header.nextElementSibling;
+        const allExplanations = document.querySelectorAll('.formula-explanation');
+        
+        // Close all other explanations
+        allExplanations.forEach(exp => {
+          if (exp !== explanation) {
+            exp.classList.remove('active');
+          }
+        });
+        
+        // Toggle current explanation
+        explanation.classList.toggle('active');
+      }
+
+      // Metrics loading
       (async function loadMetrics(){
         function $(id){ return document.getElementById(id); }
         function setText(id, value){
