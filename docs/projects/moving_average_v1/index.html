@@ -140,7 +140,7 @@
       margin: 16px 0;
     }
 
-    /* Bullet list style used everywhere (Assumptions + Formulas) */
+    /* Bullet list style used everywhere (Assumptions) */
     .bullets h3{
       margin: 0 0 10px;
       font-size: 26px;
@@ -148,7 +148,7 @@
     }
     .bullets ul{
       margin: 0;
-      padding-left: 16px; /* consistent bullets */
+      padding-left: 16px;
       color: var(--muted);
     }
     .bullets li{
@@ -156,6 +156,63 @@
       line-height: 1.45;
     }
     .bullets strong{ color: var(--text); }
+
+    /* Strategy Formulas Card */
+    .formulas-card{
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+    }
+
+    .formulas-card h2{
+      margin: 0 0 18px;
+      color: var(--text);
+      font-size: 28px;
+      letter-spacing: -0.3px;
+    }
+
+    .formula-item{
+      margin-bottom: 18px;
+      padding: 16px;
+      background: rgba(0,0,0,0.15);
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .formula-item:last-child{
+      margin-bottom: 0;
+    }
+
+    .formula-math{
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 17px;
+      color: var(--text);
+      font-style: italic;
+      flex: 1;
+    }
+
+    .formula-explain-btn{
+      padding: 6px 14px;
+      background: rgba(106,166,255,0.15);
+      border: 1px solid rgba(106,166,255,0.3);
+      border-radius: 6px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .formula-explain-btn:hover{
+      background: rgba(106,166,255,0.25);
+      border-color: rgba(106,166,255,0.5);
+    }
 
     /* Results table */
     table{
@@ -195,9 +252,9 @@
       color: var(--muted);
       font-size: 16px;
       line-height: 1.4;
-      white-space: normal;       /* allow wrapping */
-      overflow-wrap: anywhere;   /* never cut off */
-      padding-bottom: 2px;       /* breathing room */
+      white-space: normal;
+      overflow-wrap: anywhere;
+      padding-bottom: 2px;
     }
 
     /* Chart */
@@ -254,7 +311,7 @@
           <div class="card-inner">
             <h2>Overview</h2>
             <p style="margin:0;">
-              Every Friday, the algorithm calculates each stock's trailing 12-month return and compares it to the group average, flagging stocks below this average as "undervalued" relative to their peers. It then allocates capital proportionally: the further a stock has fallen behind, the larger its position becomes. This is deliberately simple: no transaction costs, no position limits, no stop-losses. The goal is to establish a clean baseline and answer one question: does the core signal (12-month relative performance) actually work?  And more importantly, over the long run, can established mega cap companies be seen as “riskless bets” and be accurately valued relative to one another?
+              Every Friday, the algorithm calculates each stock's trailing 12-month return and compares it to the group average, flagging stocks below this average as "undervalued" relative to their peers. It then allocates capital proportionally: the further a stock has fallen behind, the larger its position becomes. This is deliberately simple: no transaction costs, no position limits, no stop-losses. The goal is to establish a clean baseline and answer one question: does the core signal (12-month relative performance) actually work?  And more importantly, over the long run, can established mega cap companies be seen as "riskless bets" and be accurately valued relative to one another?
             </p>
 
             <hr class="divider" />
@@ -273,17 +330,42 @@
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-inner bullets">
-            <h3>Key Formulas</h3>
-            <hr class="divider" />
-            <ul>
-              <li><strong>Total Return:</strong> (Final Portfolio Value / Initial Value − 1)</li>
-              <li><strong>Annualized Return (CAGR):</strong> (Final / Initial)<sup>1 / Years</sup> − 1</li>
-              <li><strong>Volatility:</strong> Annualized standard deviation of weekly returns</li>
-              <li><strong>Sharpe Ratio:</strong> Annualized Return ÷ Volatility</li>
-              <li><strong>Max Drawdown:</strong> Minimum peak-to-trough portfolio decline</li>
-            </ul>
+        <div class="formulas-card">
+          <h2>Strategy Formulas</h2>
+
+          <div class="formula-item">
+            <div class="formula-math">
+              MA<sub>t</sub><sup>(k)</sup> = (1 / k) Σ<sub>i=0</sub><sup>k−1</sup> P<sub>t−i</sub>
+            </div>
+            <button class="formula-explain-btn" onclick="alert('Moving Average: Calculates the average price over the past k periods.')">Explain</button>
+          </div>
+
+          <div class="formula-item">
+            <div class="formula-math">
+              s<sub>t</sub> = 𝕀{P<sub>t</sub> > MA<sub>t</sub>}
+            </div>
+            <button class="formula-explain-btn" onclick="alert('Signal: Indicator function that equals 1 when current price is above moving average, 0 otherwise.')">Explain</button>
+          </div>
+
+          <div class="formula-item">
+            <div class="formula-math">
+              r<sub>t</sub> = s<sub>t−1</sub> · (P<sub>t</sub> − P<sub>t−1</sub>) / P<sub>t−1</sub>
+            </div>
+            <button class="formula-explain-btn" onclick="alert('Return: Calculates the return based on the previous signal and price change.')">Explain</button>
+          </div>
+
+          <div class="formula-item">
+            <div class="formula-math">
+              R<sub>t</sub> = (1 / N) Σ<sub>i=1</sub><sup>N</sup> r<sub>i,t</sub>
+            </div>
+            <button class="formula-explain-btn" onclick="alert('Portfolio Return: Average return across all N stocks in the portfolio.')">Explain</button>
+          </div>
+
+          <div class="formula-item">
+            <div class="formula-math">
+              V<sub>t</sub> = V<sub>t−1</sub>(1 + R<sub>t</sub>)
+            </div>
+            <button class="formula-explain-btn" onclick="alert('Portfolio Value: Compounds the portfolio value using the portfolio return.')">Explain</button>
           </div>
         </div>
       </div>
@@ -347,7 +429,6 @@
             <h2 class="chart-title">Backtest Visualization</h2>
             <p class="chart-sub">Interactive equity curves for Strategy vs Benchmark vs Nasdaq 100 (QQQ).</p>
 
-            <!-- This is the key: always show the chart by embedding the generated plot HTML -->
             <iframe
               class="chart-frame"
               src="./moving_average_backtest.html"
@@ -372,14 +453,12 @@
           return Number.isFinite(n) ? n : null;
         }
 
-        // For CAGR, volatility, drawdown (stored as decimals like 0.22)
         function fmtPctDecimal(x){
           const n = asNum(x);
           if (n === null) return "—";
           return (n * 100).toFixed(2) + "%";
         }
 
-        // For total return stored as a multiple like 7.20 = +720%
         function fmtTotalReturn(x){
           const n = asNum(x);
           if (n === null) return "—";
@@ -393,48 +472,37 @@
         }
 
         try {
-          // Cache-bust metrics.json (GitHub Pages can serve stale JSON)
           const url = "./metrics.json?v=" + Date.now();
           const res = await fetch(url, { cache: "no-store" });
           if (!res.ok) throw new Error("metrics.json fetch failed: " + res.status);
 
           const data = await res.json();
-
-          // Supports either schema:
-          // A) data.strategy.total_return, etc.
-          // B) data.metrics.strategy.total_return, etc.
           const m = data.metrics || data;
 
           const strategy = m.strategy || {};
           const benchmark = m.benchmark || {};
           const nasdaq = m.nasdaq || m.nasdaq100 || {};
 
-          // Total Return
           setText("s_total_return", fmtTotalReturn(strategy.total_return));
           setText("b_total_return", fmtTotalReturn(benchmark.total_return));
           setText("n_total_return", fmtTotalReturn(nasdaq.total_return));
 
-          // Annualized Return (CAGR)
           setText("s_annualized_return", fmtPctDecimal(strategy.cagr));
           setText("b_annualized_return", fmtPctDecimal(benchmark.cagr));
           setText("n_annualized_return", fmtPctDecimal(nasdaq.cagr));
 
-          // Volatility
           setText("s_volatility", fmtPctDecimal(strategy.volatility));
           setText("b_volatility", fmtPctDecimal(benchmark.volatility));
           setText("n_volatility", fmtPctDecimal(nasdaq.volatility));
 
-          // Sharpe
           setText("s_sharpe", fmtNum(strategy.sharpe));
           setText("b_sharpe", fmtNum(benchmark.sharpe));
           setText("n_sharpe", fmtNum(nasdaq.sharpe));
 
-          // Max Drawdown
           setText("s_max_drawdown", fmtPctDecimal(strategy.max_drawdown));
           setText("b_max_drawdown", fmtPctDecimal(benchmark.max_drawdown));
           setText("n_max_drawdown", fmtPctDecimal(nasdaq.max_drawdown));
 
-          // Period label (supports a few names)
           const ps = data.period_start || m.period_start;
           const pe = data.period_end || m.period_end;
           const ps2 = data.start_date || m.start_date;
