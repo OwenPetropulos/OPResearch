@@ -1,0 +1,115 @@
+{
+  "last_updated": "2026-04-21T06:30:00Z",
+  "watchlist": [
+    {
+      "ticker": "NVDA",
+      "sector": "Technology",
+      "price": 892.4,
+      "change": -11.2,
+      "percent_move": -1.24,
+      "alert_tag": "Positive",
+      "alert_tag_key": "positive",
+      "notes": "B300 Ultra announcement positive catalyst. Watch hyperscaler capex guidance. Support at $860.",
+      "entry_price": null
+    },
+    {
+      "ticker": "JPM",
+      "sector": "Financials",
+      "price": 201.85,
+      "change": 1.76,
+      "percent_move": 0.88,
+      "alert_tag": "Positive",
+      "alert_tag_key": "positive",
+      "notes": "Q1 beat broad-based. NIM expansion intact. Best-in-class management executing well.",
+      "entry_price": null
+    },
+    {
+      "ticker": "LLY",
+      "sector": "Healthcare",
+      "price": 748.2,
+      "change": 22.78,
+      "percent_move": 3.14,
+      "alert_tag": "Positive",
+      "alert_tag_key": "positive",
+      "notes": "Orforglipron FDA approval is massive. Monitor supply chain capacity and pricing. Long-term secular winner.",
+      "entry_price": null
+    },
+    {
+      "ticker": "TLT",
+      "sector": "Macro",
+      "price": 91.32,
+      "change": -0.66,
+      "percent_move": -0.72,
+      "alert_tag": "Negative",
+      "alert_tag_key": "negative",
+      "notes": "Higher for longer narrative hurts duration. Treasury auction risk this week. Do not add until yield clarity.",
+      "entry_price": null
+    },
+    {
+      "ticker": "KRE",
+      "sector": "Financials",
+      "price": 44.17,
+      "change": -0.85,
+      "percent_move": -1.88,
+      "alert_tag": "Review",
+      "alert_tag_key": "review",
+      "notes": "CRE exposure unresolved. Deposit outflows accelerating. Avoiding until stress test clarity. Watch $42 support.",
+      "entry_price": null
+    },
+    {
+      "ticker": "OXY",
+      "sector": "Energy",
+      "price": 61.48,
+      "change": -0.58,
+      "percent_move": -0.94,
+      "alert_tag": "Review",
+      "alert_tag_key": "review",
+      "notes": "Buffett accumulation intact. Permian execution strong. Oil tape headwind near-term. Range trading $58-$67.",
+      "entry_price": null
+    },
+    {
+      "ticker": "GLD",
+      "sector": "Macro",
+      "price": 232.15,
+      "change": 0.95,
+      "percent_move": 0.41,
+      "alert_tag": "Positive",
+      "alert_tag_key": "positive",
+      "notes": "Gold near ATH. Stagflation hedge thesis building. Central bank demand structurally elevated. Core position.",
+      "entry_price": null
+    },
+    {
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "price": 411.3,
+      "change": -1.36,
+      "percent_move": -0.33,
+      "alert_tag": "Narrative Shift",
+      "alert_tag_key": "narrative_shift",
+      "notes": "Azure re-acceleration thesis developing. Earnings April 30 is key event. AI monetization proving out. Watch RPO.",
+      "entry_price": null
+    },
+    {
+      "ticker": "NKE",
+      "sector": "Consumer",
+      "price": 78.4,
+      "change": -3.45,
+      "percent_move": -4.22,
+      "alert_tag": "Negative",
+      "alert_tag_key": "negative",
+      "notes": "China weakness structural, not cyclical. Inventory glut persisting. Do not bottom fish yet. $72 next support.",
+      "entry_price": null
+    },
+    {
+      "ticker": "RIG",
+      "sector": "Energy",
+      "price": 4.82,
+      "change": 0.07,
+      "percent_move": 1.47,
+      "alert_tag": "Review",
+      "alert_tag_key": "review",
+      "notes": "Offshore day rate cycle strong. Balance sheet repaired. Contrarian value setup. High risk/reward. Small position.",
+      "entry_price": null
+    }
+  ]
+}
