@@ -1,0 +1,385 @@
+"""
+common.py — Shared utilities for the OPResearch data pipeline.
+"""
+
+import json
+import os
+import re
+import hashlib
+import logging
+from datetime import datetime, timezone
+from pathlib import Path
+
+import feedparser
+import yfinance as yf
+
+from config import (
+    SECTOR_KEYWORDS,
+    TICKER_KEYWORDS,
+    POSITIVE_WORDS,
+    NEGATIVE_WORDS,
+    WHY_IT_MATTERS_TEMPLATES,
+)
+
+# ============================================================
+# LOGGING
+# ============================================================
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%H:%M:%S",
+)
+log = logging.getLogger("opr")
+
+# ============================================================
+# PATHS
+# ============================================================
+
+DATA_DIR = REPO_ROOT / "docs" / "dashboard" / "data"
+DATA_DIR  = REPO_ROOT / "data"
+
+
+def data_path(filename: str) -> Path:
+    return DATA_DIR / filename
+
+
+# ============================================================
+# JSON I/O
+# ============================================================
+
+def write_json(path: Path, data: dict | list, indent: int = 2) -> bool:
+    """Write data to a JSON file safely. Returns True on success."""
+    try:
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_suffix(".tmp")
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=indent, ensure_ascii=False)
+        tmp.replace(path)
+        log.info(f"Wrote {path.name}")
+        return True
+    except Exception as e:
+        log.error(f"Failed to write {path}: {e}")
+        return False
+
+
+def read_json(path: Path) -> dict | list | None:
+    """Read and return JSON from a file. Returns None on failure."""
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        log.warning(f"Could not read {path}: {e}")
+        return None
+
+
+# ============================================================
+# TIMESTAMP UTILITIES
+# ============================================================
+
+def utc_now_iso() -> str:
+    """Return current UTC time as ISO 8601 string."""
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def parse_timestamp(ts_string: str | None) -> datetime | None:
+    """
+    Try to parse a timestamp string into a UTC-aware datetime.
+    Handles common RSS and ISO formats. Returns None on failure.
+    """
+    if not ts_string:
+        return None
+    formats = [
+        "%Y-%m-%dT%H:%M:%SZ",
+        "%Y-%m-%dT%H:%M:%S%z",
+        "%a, %d %b %Y %H:%M:%S %z",
+        "%a, %d %b %Y %H:%M:%S GMT",
+        "%Y-%m-%d %H:%M:%S",
+    ]
+    for fmt in formats:
+        try:
+            dt = datetime.strptime(ts_string.strip(), fmt)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
+        except ValueError:
+            continue
+    return None
+
+
+def to_iso(dt: datetime | None) -> str:
+    """Convert a datetime to ISO 8601 string. Returns empty string if None."""
+    if dt is None:
+        return ""
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+# ============================================================
+# YFINANCE HELPERS
+# ============================================================
+
+def fetch_price_data(ticker: str, period: str = "5d", interval: str = "1d") -> dict | None:
+    """
+    Fetch OHLCV data for a single ticker via yfinance.
+    Returns a dict with: price, prev_close, change, percent_change, direction.
+    Returns None if data is unavailable.
+    """
+    try:
+        tk   = yf.Ticker(ticker)
+        hist = tk.history(period=period, interval=interval, auto_adjust=True)
+        if hist.empty or len(hist) < 1:
+            log.warning(f"No price history for {ticker}")
+            return None
+
+        price      = float(hist["Close"].iloc[-1])
+        prev_close = float(hist["Close"].iloc[-2]) if len(hist) >= 2 else price
+        change     = round(price - prev_close, 4)
+        pct_change = round((change / prev_close) * 100, 2) if prev_close else 0.0
+        direction  = "up" if change > 0 else ("down" if change < 0 else "flat")
+
+        return {
+            "price":          round(price, 2),
+            "prev_close":     round(prev_close, 2),
+            "change":         round(change, 2),
+            "percent_change": pct_change,
+            "direction":      direction,
+        }
+    except Exception as e:
+        log.warning(f"yfinance fetch failed for {ticker}: {e}")
+        return None
+
+
+def fetch_prices_bulk(tickers: list[str]) -> dict[str, float]:
+    """
+    Fetch the latest closing price for multiple tickers at once.
+    Returns a dict of {ticker: price}. Missing tickers are omitted.
+    """
+    results = {}
+    if not tickers:
+        return results
+    try:
+        # Download all at once for efficiency
+        raw = yf.download(
+            tickers,
+            period="5d",
+            interval="1d",
+            auto_adjust=True,
+            progress=False,
+            group_by="ticker",
+        )
+        for ticker in tickers:
+            try:
+                if len(tickers) == 1:
+                    closes = raw["Close"]
+                else:
+                    closes = raw["Close"][ticker]
+                closes = closes.dropna()
+                if closes.empty:
+                    continue
+                results[ticker] = round(float(closes.iloc[-1]), 2)
+            except Exception as e:
+                log.warning(f"Price extraction failed for {ticker}: {e}")
+    except Exception as e:
+        log.error(f"Bulk yfinance download failed: {e}")
+    return results
+
+
+# ============================================================
+# RSS FEED PARSING
+# ============================================================
+
+def fetch_feed(feed_def: dict, max_entries: int = 20) -> list[dict]:
+    """
+    Fetch and normalize entries from an RSS feed definition.
+    Returns a list of normalized story dicts.
+    """
+    source_name = feed_def.get("source_name", "Unknown")
+    url         = feed_def.get("url", "")
+    source_type = feed_def.get("source_type", "Mainstream")
+
+    stories = []
+    try:
+        parsed = feedparser.parse(url, agent="OPResearch/1.0")
+        if parsed.bozo and not parsed.entries:
+            log.warning(f"Feed parse error for {source_name}: {parsed.bozo_exception}")
+            return []
+
+        for entry in parsed.entries[:max_entries]:
+            title   = clean_text(getattr(entry, "title", ""))
+            summary = clean_text(getattr(entry, "summary", "") or getattr(entry, "description", ""))
+            link    = getattr(entry, "link", "")
+
+            # Parse timestamp
+            published = getattr(entry, "published", None) or getattr(entry, "updated", None)
+            dt        = parse_timestamp(published)
+            timestamp = to_iso(dt)
+
+            if not title:
+                continue
+
+            stories.append({
+                "title":       title,
+                "summary":     summary[:500] if summary else "",
+                "url":         link,
+                "source_name": source_name,
+                "source_type": source_type,
+                "timestamp":   timestamp,
+                "_dt":         dt,  # for sorting — stripped before output
+            })
+
+        log.info(f"Fetched {len(stories)} entries from {source_name}")
+    except Exception as e:
+        log.error(f"Failed to fetch feed {source_name} ({url}): {e}")
+
+    return stories
+
+
+def deduplicate_stories(stories: list[dict]) -> list[dict]:
+    """
+    Remove duplicate stories by URL and near-duplicate titles.
+    Keeps the first occurrence (assumes already sorted by recency).
+    """
+    seen_urls   = set()
+    seen_hashes = set()
+    unique      = []
+
+    for s in stories:
+        url   = s.get("url", "")
+        title = s.get("title", "")
+
+        # Deduplicate by URL
+        if url and url in seen_urls:
+            continue
+
+        # Deduplicate by title fingerprint (first 80 chars, lowercased, stripped)
+        title_key = re.sub(r"\s+", " ", title.lower().strip())[:80]
+        h         = hashlib.md5(title_key.encode()).hexdigest()
+        if h in seen_hashes:
+            continue
+
+        if url:
+            seen_urls.add(url)
+        seen_hashes.add(h)
+        unique.append(s)
+
+    return unique
+
+
+def sort_stories_by_time(stories: list[dict]) -> list[dict]:
+    """Sort stories descending by _dt (most recent first). Missing timestamps sort to end."""
+    return sorted(
+        stories,
+        key=lambda s: s.get("_dt") or datetime.min.replace(tzinfo=timezone.utc),
+        reverse=True,
+    )
+
+
+def strip_internal_fields(stories: list[dict]) -> list[dict]:
+    """Remove pipeline-internal fields (prefixed with _) before JSON output."""
+    return [{k: v for k, v in s.items() if not k.startswith("_")} for s in stories]
+
+
+# ============================================================
+# TEXT UTILITIES
+# ============================================================
+
+def clean_text(raw: str) -> str:
+    """Strip HTML tags, normalize whitespace, and clean common RSS artifacts."""
+    if not raw:
+        return ""
+    # Strip HTML
+    text = re.sub(r"<[^>]+>", " ", raw)
+    # Decode common HTML entities
+    entities = {"&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"', "&#39;": "'", "&nbsp;": " "}
+    for ent, char in entities.items():
+        text = text.replace(ent, char)
+    # Normalize whitespace
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def make_story_id(title: str, source_name: str) -> str:
+    """Generate a short stable ID for a story."""
+    raw = (title + source_name).lower().encode()
+    return hashlib.md5(raw).hexdigest()[:8]
+
+
+# ============================================================
+# CLASSIFICATION HELPERS
+# ============================================================
+
+def classify_sectors(text: str) -> list[str]:
+    """
+    Return a list of matched sector names based on keyword presence in text.
+    Text should be the combined title + summary (lowercased by caller).
+    """
+    lower = text.lower()
+    matched = []
+    for sector, keywords in SECTOR_KEYWORDS.items():
+        if any(kw in lower for kw in keywords):
+            matched.append(sector)
+    return matched if matched else ["Macro"]
+
+
+def classify_tickers(text: str) -> list[str]:
+    """
+    Return a list of matched ticker symbols based on keyword presence in text.
+    """
+    lower = text.lower()
+    matched = []
+    for ticker, keywords in TICKER_KEYWORDS.items():
+        if any(kw in lower for kw in keywords):
+            if ticker not in matched:
+                matched.append(ticker)
+    return matched[:6]  # Cap at 6 to avoid crowding UI
+
+
+def classify_macro_category(text: str) -> str:
+    """
+    Return the best-matching macro category key for why_it_matters template selection.
+    """
+    lower = text.lower()
+    rules = [
+        ("inflation",        ["cpi", "inflation", "pce", "core prices", "price index"]),
+        ("fed_rates",        ["federal reserve", "fed", "fomc", "rate cut", "rate hike", "dot plot"]),
+        ("china_growth",     ["china", "pboc", "beijing", "chinese economy", "shanghai"]),
+        ("crude_oil",        ["crude", "wti", "brent", "opec", "oil price"]),
+        ("treasury_auction", ["treasury auction", "bond auction", "bid-to-cover", "10-year note"]),
+        ("risk_sentiment",   ["vix", "risk off", "put/call", "sentiment", "volatility"]),
+        ("tech_ai",          ["nvidia", "ai", "artificial intelligence", "semiconductor", "cloud", "azure"]),
+        ("financials",       ["bank", "jpmorgan", "goldman", "nim", "lending", "deposit"]),
+        ("healthcare",       ["fda", "pharma", "glp-1", "biotech", "drug approval"]),
+        ("industrials",      ["defense", "manufacturing", "pmi", "aerospace", "lockheed"]),
+        ("consumer",         ["retail", "consumer spending", "walmart", "nike", "discretionary"]),
+    ]
+    for category, keywords in rules:
+        if any(kw in lower for kw in keywords):
+            return category
+    return "default"
+
+
+def get_why_it_matters(text: str) -> str:
+    """Return a deterministic why_it_matters string based on story text."""
+    category = classify_macro_category(text)
+    return WHY_IT_MATTERS_TEMPLATES.get(category, WHY_IT_MATTERS_TEMPLATES["default"])
+
+
+def score_sentiment(stories: list[dict]) -> str:
+    """
+    Score a list of stories and return 'Positive', 'Negative', or 'Neutral'.
+    Uses simple keyword counting across combined title + summary text.
+    """
+    pos_score = 0
+    neg_score = 0
+    for story in stories:
+        text = (story.get("title", "") + " " + story.get("summary", "")).lower()
+        pos_score += sum(1 for w in POSITIVE_WORDS if w in text)
+        neg_score += sum(1 for w in NEGATIVE_WORDS if w in text)
+
+    if pos_score > neg_score + 1:
+        return "Positive"
+    if neg_score > pos_score + 1:
+        return "Negative"
+    return "Neutral"
