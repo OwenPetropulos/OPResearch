@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPResearch — Watchlist</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
 
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-logo">OP<span>Research</span></div>
+      <ul class="navbar-nav">
+        <li><a href="index.html">Morning Brief</a></li>
+        <li><a href="sectors.html">Sectors</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="watchlist.html" class="active">Watchlist</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-container">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="page-header-top">
+        <h1 class="page-title">Watchlist</h1>
+      </div>
+      <div class="macro-summary-line">Tracked positions with alerts, notes, and sector context.</div>
+    </div>
+
+    <!-- WATCHLIST SECTION -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-title">Tracked Names</span>
+        <span class="section-count" id="watchlistCount">—</span>
+      </div>
+      <div id="watchlistContainer">
+        <div class="loading-state">Loading watchlist…</div>
+      </div>
+    </section>
+
+    <!-- ALERT TAG LEGEND -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-title">Alert Tag Reference</span>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center; padding:20px; background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:6px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="badge tag-positive">Positive</span>
+          <span style="font-size:0.78rem;color:var(--text-muted);">Bullish development or catalyst</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="badge tag-negative">Negative</span>
+          <span style="font-size:0.78rem;color:var(--text-muted);">Bearish signal or risk event</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="badge tag-review">Review</span>
+          <span style="font-size:0.78rem;color:var(--text-muted);">Needs further analysis before acting</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="badge tag-narrative-shift">Narrative Shift</span>
+          <span style="font-size:0.78rem;color:var(--text-muted);">Investment thesis materially changing</span>
+        </div>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="badge tag-no-change">No Major Change</span>
+          <span style="font-size:0.78rem;color:var(--text-muted);">Monitoring — no action required</span>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end page-container -->
+
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/watchlist.js"></script>
+
+</body>
+</html>
