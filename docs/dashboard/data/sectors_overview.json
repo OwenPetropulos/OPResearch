@@ -1,0 +1,109 @@
+{
+  "sectors": [
+    {
+      "sector": "Energy",
+      "sentiment": "Neutral",
+      "tone": "Mixed signals. Oil supply headwinds vs. strong upstream execution.",
+      "story_count": 4,
+      "primary_driver": "OPEC+ compliance slippage, inventory builds",
+      "key_drivers": [
+        "WTI crude sliding on inventory builds and OPEC+ compliance concerns",
+        "Permian E&Ps executing well with guide raises",
+        "Offshore driller day rates at multi-year highs, equities lagging",
+        "European LNG demand structurally weakening"
+      ],
+      "key_tickers": ["XOM", "CVX", "OXY", "PXD", "LNG", "RIG", "VAL"],
+      "trending_tickers": ["RIG", "VAL", "PXD", "OXY"]
+    },
+    {
+      "sector": "Financials",
+      "sentiment": "Positive",
+      "tone": "Large-cap banks crushing estimates; regionals still impaired.",
+      "story_count": 5,
+      "primary_driver": "JPM Q1 beat, NIM expansion, IB fee recovery",
+      "key_drivers": [
+        "JPM Q1 revenue $2.1B above consensus, NIM expanding",
+        "Regional bank deposit outflows accelerating",
+        "Office CRE loan maturities creating systemic overhang",
+        "M&A fee recovery signals deal cycle reopening"
+      ],
+      "key_tickers": ["JPM", "BAC", "GS", "MS", "KRE", "ZION", "WAL"],
+      "trending_tickers": ["JPM", "GS", "KRE"]
+    },
+    {
+      "sector": "Technology",
+      "sentiment": "Positive",
+      "tone": "AI capex cycle intact; hyperscaler demand robust despite valuation pressure.",
+      "story_count": 6,
+      "primary_driver": "NVDA B300 Ultra, Azure re-acceleration signals",
+      "key_drivers": [
+        "Nvidia B300 Ultra architecture unveiled with 3.5x throughput improvement",
+        "Azure CIO surveys showing accelerating share gains",
+        "AI inference demand growth exceeding training demand growth",
+        "Custom silicon risk (TPU, Trainium) remains medium-term overhang"
+      ],
+      "key_tickers": ["NVDA", "MSFT", "GOOGL", "AMZN", "AMD", "META"],
+      "trending_tickers": ["NVDA", "MSFT", "AMD"]
+    },
+    {
+      "sector": "Industrials",
+      "sentiment": "Positive",
+      "tone": "Defense-led re-acceleration. Reshoring capex flowing through order books.",
+      "story_count": 3,
+      "primary_driver": "Manufacturing PMI at 52.4, defense orders surging",
+      "key_drivers": [
+        "ISM Manufacturing PMI at 52.4, third consecutive expansion",
+        "NATO defense spending commitments driving U.S. prime contract flow",
+        "Commercial aviation recovery boosting aerospace components",
+        "Supply chain lead times normalizing"
+      ],
+      "key_tickers": ["GE", "RTX", "LMT", "NOC", "HON", "CAT", "DE"],
+      "trending_tickers": ["LMT", "RTX", "GE"]
+    },
+    {
+      "sector": "Consumer",
+      "sentiment": "Neutral",
+      "tone": "Value consumers resilient; premium and China-exposed names struggling.",
+      "story_count": 3,
+      "primary_driver": "NKE miss, retail sales beat, bifurcated consumer",
+      "key_drivers": [
+        "Nike Q3 miss driven by China -8% YoY and inventory normalization",
+        "Retail sales beat 0.7% MoM suggests broad consumer resilience",
+        "Value/discount formats outperforming premium",
+        "Tariff pass-through risk for imported goods categories"
+      ],
+      "key_tickers": ["NKE", "WMT", "COST", "TGT", "ONON", "LULU"],
+      "trending_tickers": ["NKE", "WMT", "ONON"]
+    },
+    {
+      "sector": "Healthcare",
+      "sentiment": "Positive",
+      "tone": "GLP-1 theme accelerating. Oral delivery is a structural game changer.",
+      "story_count": 4,
+      "primary_driver": "LLY orforglipron FDA approval, oral GLP-1 market opens",
+      "key_drivers": [
+        "FDA approved Lilly's oral GLP-1 orforglipron — removes injection barrier",
+        "Novo Nordisk semaglutide franchise faces direct competitive pressure",
+        "GLP-1 market TAM revision toward $200B+ long-term",
+        "Supply chain and manufacturing capacity are the key near-term constraints"
+      ],
+      "key_tickers": ["LLY", "NVO", "AMGN", "PFE", "VRTX"],
+      "trending_tickers": ["LLY", "NVO", "AMGN"]
+    },
+    {
+      "sector": "Macro",
+      "sentiment": "Negative",
+      "tone": "Risk-off. Higher for longer reasserting. Gold and hard assets in focus.",
+      "story_count": 5,
+      "primary_driver": "Core CPI sticky, Fed hawkish, BOJ yield pressure, Treasury auction risk",
+      "key_drivers": [
+        "Core CPI at 3.2% forcing market repricing of Fed cuts below 2 in 2026",
+        "Japan 10Y at 1.58%; BOJ normalization carry unwind risk elevated",
+        "Treasury 5Y auction Tuesday is key demand signal",
+        "Stagflation probability rising per alternative inflation models"
+      ],
+      "key_tickers": ["TLT", "GLD", "TIP", "FXY", "VIX", "SPY"],
+      "trending_tickers": ["GLD", "VIX", "TLT"]
+    }
+  ]
+}
