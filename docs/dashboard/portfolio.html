@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPResearch — Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-logo">OP<span>Research</span></div>
+      <ul class="navbar-nav">
+        <li><a href="index.html">Morning Brief</a></li>
+        <li><a href="sectors.html">Sectors</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="watchlist.html">Watchlist</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-container">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="page-header-top">
+        <h1 class="page-title">Paper Portfolio</h1>
+        <span style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);">Stored in localStorage · Simulation only</span>
+      </div>
+      <div class="macro-summary-line">Track simulated trades, monitor positions, and analyze performance over time.</div>
+    </div>
+
+    <!-- ============================================================
+         PORTFOLIO CHART
+         ============================================================ -->
+    <div class="portfolio-chart-container">
+      <div class="portfolio-chart-title">Portfolio Value Over Time</div>
+      <canvas id="portfolioChart"></canvas>
+    </div>
+
+    <!-- ============================================================
+         SUMMARY METRICS
+         ============================================================ -->
+    <div class="metrics-row">
+      <div class="metric-card">
+        <div class="metric-label">Total Value</div>
+        <div class="metric-value" id="metricTotal">—</div>
+        <div class="metric-sub">Equity + Cash</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Cash</div>
+        <div class="metric-value" id="metricCash">—</div>
+        <div class="metric-sub">Available capital</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Daily P&amp;L</div>
+        <div class="metric-value" id="metricDaily">—</div>
+        <div class="metric-sub">vs. prior session</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Unrealized P&amp;L</div>
+        <div class="metric-value" id="metricPnL">—</div>
+        <div class="metric-sub">Open positions</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-label">Total Return</div>
+        <div class="metric-value" id="metricReturn">—</div>
+        <div class="metric-sub">vs. starting capital</div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         TRADE ENTRY FORM
+         ============================================================ -->
+    <div class="trade-form-container">
+      <div class="trade-form-title">Log a Trade</div>
+      <div class="trade-form-grid">
+        <div class="form-group">
+          <label class="form-label" for="tradeTicker">Ticker</label>
+          <input class="form-control" type="text" id="tradeTicker" placeholder="e.g. NVDA" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="tradeSide">Side</label>
+          <select class="form-control" id="tradeSide">
+            <option value="buy">Buy</option>
+            <option value="sell">Sell</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="tradeShares">Shares</label>
+          <input class="form-control" type="number" id="tradeShares" placeholder="0" min="0.0001" step="any" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="tradePrice">Execution Price ($)</label>
+          <input class="form-control" type="number" id="tradePrice" placeholder="0.00" min="0.01" step="any" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="tradeDate">Date</label>
+          <input class="form-control" type="date" id="tradeDate" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="tradeNote">Note (optional)</label>
+          <input class="form-control" type="text" id="tradeNote" placeholder="Thesis or context…" />
+        </div>
+      </div>
+      <div class="trade-form-actions">
+        <button class="btn btn-primary" id="addTradeBtn">+ Add Trade</button>
+        <button class="btn btn-secondary" id="exportBtn">Export JSON</button>
+        <button class="btn btn-secondary" id="importBtn">Import JSON</button>
+        <button class="btn btn-danger" id="resetBtn" style="margin-left:auto;">Reset Portfolio</button>
+      </div>
+      <!-- Hidden file input for import -->
+      <input type="file" id="importFile" accept=".json" style="display:none;" />
+    </div>
+
+    <!-- ============================================================
+         HOLDINGS TABLE
+         ============================================================ -->
+    <div class="table-container">
+      <div class="table-header">Current Holdings</div>
+      <div style="overflow-x:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Shares</th>
+              <th>Avg Cost</th>
+              <th>Current Price</th>
+              <th>Market Value</th>
+              <th>Unrealized P&amp;L</th>
+              <th>Weight</th>
+            </tr>
+          </thead>
+          <tbody id="holdingsTbody">
+            <tr><td colspan="7" class="loading-state">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         TRADE LEDGER
+         ============================================================ -->
+    <div class="table-container">
+      <div class="table-header">Trade Ledger</div>
+      <div style="overflow-x:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Ticker</th>
+              <th>Side</th>
+              <th>Shares</th>
+              <th>Price</th>
+              <th>Note</th>
+            </tr>
+          </thead>
+          <tbody id="ledgerTbody">
+            <tr><td colspan="6" class="loading-state">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- end page-container -->
+
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script>
+    // Set default date on load
+    document.addEventListener('DOMContentLoaded', () => {
+      const dateEl = document.getElementById('tradeDate');
+      if (dateEl) dateEl.value = new Date().toISOString().split('T')[0];
+    });
+  </script>
+
+</body>
+</html>
