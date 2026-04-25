@@ -1,0 +1,40 @@
+{
+  "last_updated": "2026-04-21T06:32:00Z",
+  "macro_summary": "Risk-off tone persists as Treasury yields climb on sticky core CPI; equities under pressure, gold near all-time highs.",
+  "market_status": "Pre-Market",
+  "equities": [
+    { "label": "S&P Futures", "ticker": "ES", "price": 5187.50, "change": -18.25, "percent_change": -0.35, "direction": "down" },
+    { "label": "Nasdaq Futures", "ticker": "NQ", "price": 18042.00, "change": -94.50, "percent_change": -0.52, "direction": "down" },
+    { "label": "Dow Futures", "ticker": "YM", "price": 38712.00, "change": -112.00, "percent_change": -0.29, "direction": "down" },
+    { "label": "Russell Futures", "ticker": "RTY", "price": 2021.40, "change": -9.80, "percent_change": -0.48, "direction": "down" },
+    { "label": "VIX", "ticker": "VIX", "price": 18.74, "change": 1.23, "percent_change": 7.02, "direction": "up" }
+  ],
+  "rates": [
+    { "label": "US 2Y", "ticker": "US2Y", "price": 4.91, "change": 0.04, "percent_change": 0.82, "direction": "up" },
+    { "label": "US 10Y", "ticker": "US10Y", "price": 4.63, "change": 0.06, "percent_change": 1.31, "direction": "up" },
+    { "label": "Japan 10Y", "ticker": "JP10Y", "price": 1.58, "change": 0.02, "percent_change": 1.28, "direction": "up" },
+    { "label": "UK 10Y", "ticker": "UK10Y", "price": 4.44, "change": 0.03, "percent_change": 0.68, "direction": "up" },
+    { "label": "Eurozone 10Y", "ticker": "DE10Y", "price": 2.51, "change": 0.02, "percent_change": 0.80, "direction": "up" },
+    { "label": "China 10Y", "ticker": "CN10Y", "price": 2.29, "change": -0.01, "percent_change": -0.44, "direction": "down" }
+  ],
+  "commodities": [
+    { "label": "Crude Oil", "ticker": "CL", "price": 82.14, "change": -0.88, "percent_change": -1.06, "direction": "down" },
+    { "label": "Gold", "ticker": "GC", "price": 3327.40, "change": 14.60, "percent_change": 0.44, "direction": "up" },
+    { "label": "Silver", "ticker": "SI", "price": 32.88, "change": 0.31, "percent_change": 0.95, "direction": "up" },
+    { "label": "Copper", "ticker": "HG", "price": 4.62, "change": -0.03, "percent_change": -0.65, "direction": "down" }
+  ],
+  "global_markets": {
+    "asia": [
+      { "label": "Nikkei 225", "price": 37842.10, "change": -312.40, "percent_change": -0.82, "direction": "down" },
+      { "label": "Hang Seng", "price": 22154.60, "change": 88.20, "percent_change": 0.40, "direction": "up" },
+      { "label": "Shanghai Comp", "price": 3287.40, "change": -11.20, "percent_change": -0.34, "direction": "down" },
+      { "label": "KOSPI", "price": 2621.80, "change": -18.40, "percent_change": -0.70, "direction": "down" }
+    ],
+    "europe": [
+      { "label": "FTSE 100", "price": 8412.30, "change": -42.10, "percent_change": -0.50, "direction": "down" },
+      { "label": "DAX", "price": 17988.70, "change": -88.30, "percent_change": -0.49, "direction": "down" },
+      { "label": "CAC 40", "price": 8021.40, "change": -51.60, "percent_change": -0.64, "direction": "down" },
+      { "label": "Euro Stoxx 50", "price": 4912.20, "change": -31.80, "percent_change": -0.64, "direction": "down" }
+    ]
+  }
+}
