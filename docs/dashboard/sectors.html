@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPResearch — Sector Intelligence</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
 
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-logo">OP<span>Research</span></div>
+      <ul class="navbar-nav">
+        <li><a href="index.html">Morning Brief</a></li>
+        <li><a href="sectors.html" class="active">Sectors</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="watchlist.html">Watchlist</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-container">
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="page-header-top">
+        <h1 class="page-title">Sector Intelligence</h1>
+      </div>
+      <div class="macro-summary-line">Deep-dive views by sector — stories, signals, tickers, and drivers.</div>
+    </div>
+
+    <!-- SECTORS LAYOUT -->
+    <div class="sectors-layout" id="sectorsLayout">
+
+      <!-- Sidebar Navigation -->
+      <div class="sectors-sidebar">
+        <div class="section-header">
+          <span class="section-title">Sectors</span>
+        </div>
+        <div class="sectors-nav" id="sectorNavList">
+          <div class="loading-state">Loading…</div>
+        </div>
+      </div>
+
+      <!-- Main Panel Area -->
+      <div>
+        <div id="sectorPanelsContainer">
+          <div class="loading-state">Loading sector data…</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div><!-- end page-container -->
+
+  <script src="assets/js/utils.js"></script>
+  <script src="assets/js/sectors.js"></script>
+
+</body>
+</html>
