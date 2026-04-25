@@ -1,0 +1,100 @@
+{
+  "stories": [
+    {
+      "id": "mn001",
+      "title": "Fed Officials Signal Caution on Rate Cuts as Core CPI Holds Above 3%",
+      "summary": "Multiple Federal Reserve governors pushed back against near-term rate cut expectations Monday, citing persistent services inflation and a resilient labor market. The latest core CPI print at 3.2% YoY surprised to the upside, forcing markets to reprice the forward curve sharply. Fed funds futures now imply fewer than two cuts in 2026.",
+      "why_it_matters": "Duration assets remain vulnerable as the 'higher for longer' narrative reasserts itself. Bank NIM expansion continues to benefit regionals; growth equities face renewed multiple compression risk. Watch the 10Y/2Y spread for inversion signals.",
+      "source_name": "Wall Street Journal",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-21T05:14:00Z",
+      "url": "https://wsj.com",
+      "sector_tags": ["Financials", "Macro"],
+      "ticker_tags": ["TLT", "SPY", "KRE"]
+    },
+    {
+      "id": "mn002",
+      "title": "China Signals Broad Fiscal Stimulus Package; Property Sector Stabilization Priority",
+      "summary": "Beijing announced a 1.2 trillion yuan fiscal package targeting infrastructure, semiconductor self-sufficiency, and residential property stabilization. Officials confirmed the PBOC will lower reserve requirements for major banks by 50bps. Commodity markets reacted with copper and iron ore futures spiking on improved demand outlook.",
+      "why_it_matters": "A credible Chinese stimulus cycle historically lifts commodity-linked equities, EM sovereign debt, and luxury consumer names with China exposure. Monitor copper as a leading indicator of follow-through. Risk: stimulus may be front-loaded and structural property headwinds persist.",
+      "source_name": "Reuters",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-21T04:48:00Z",
+      "url": "https://reuters.com",
+      "sector_tags": ["Macro", "Industrials", "Consumer"],
+      "ticker_tags": ["FCX", "BHP", "LVMH", "FXI"]
+    },
+    {
+      "id": "mn003",
+      "title": "Japan 10Y Yield Hits 1.58%, Highest Since 2008 as BOJ Taper Expectations Build",
+      "summary": "The Bank of Japan's yield curve control framework faces mounting pressure as 10Y JGB yields touch 1.58%, approaching the 1.60% informal ceiling. Markets are pricing a 70% probability of a 25bps hike at the June BOJ meeting. Yen strengthened 0.8% against the dollar in overnight trading.",
+      "why_it_matters": "A BOJ policy normalization cycle is one of the most significant macro forces in global fixed income. Yen carry unwind risk is real—leveraged positions across EM and high-yield could face forced selling if USD/JPY breaks below 148. Monitor Japan financial stocks as direct beneficiaries.",
+      "source_name": "Financial Times",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-21T03:22:00Z",
+      "url": "https://ft.com",
+      "sector_tags": ["Macro", "Financials"],
+      "ticker_tags": ["FXY", "EWJ", "MUFG"]
+    },
+    {
+      "id": "mn004",
+      "title": "U.S. Retail Sales Beat Estimates; Consumer Resilience Complicates Fed Narrative",
+      "summary": "March retail sales rose 0.7% MoM, well above the 0.4% consensus estimate. Ex-autos and gas, the control group rose 0.5%, suggesting broad-based consumer strength. Discretionary and restaurant categories were notable outperformers. The Atlanta Fed GDPNow model revised Q1 growth to 2.4%.",
+      "why_it_matters": "Strong consumer data delays the conditions for Fed easing and supports the 'no landing' scenario. Retailers with value positioning and discount formats are outperforming. However, this print may be partly driven by pull-forward spending ahead of expected tariff pass-throughs.",
+      "source_name": "Bloomberg",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-21T02:55:00Z",
+      "url": "https://bloomberg.com",
+      "sector_tags": ["Consumer", "Macro"],
+      "ticker_tags": ["XRT", "WMT", "COST", "TGT"]
+    },
+    {
+      "id": "mn005",
+      "title": "WTI Crude Slides Below $83 on Rising Inventory Data; OPEC+ Cut Compliance Questioned",
+      "summary": "U.S. crude inventories rose 4.6 million barrels last week, the third consecutive build, according to API data. Simultaneously, satellite tracking data from S&P Global suggests OPEC+ member compliance has slipped to 78%, the lowest level since the current production agreement was struck in late 2025. WTI fell 1.1% in early trading.",
+      "why_it_matters": "Oversupply risk is re-entering the crude narrative at a time when demand signals from China remain mixed. Integrated majors and E&P names with high operating leverage to oil prices face near-term earnings risk. However, geopolitical premium could provide a floor.",
+      "source_name": "S&P Global Commodity Insights",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-21T01:30:00Z",
+      "url": "https://spglobal.com",
+      "sector_tags": ["Energy", "Macro"],
+      "ticker_tags": ["XOM", "CVX", "CL=F", "OXY"]
+    },
+    {
+      "id": "mn006",
+      "title": "Treasury Announces $58B 5-Year Note Auction; Demand Will Signal Risk Appetite",
+      "summary": "The U.S. Treasury will auction $58 billion in 5-year notes Tuesday. Dealer community is watching bid-to-cover ratios and foreign central bank participation closely after last month's weak 7-year auction triggered a brief yield spike. The current 5Y yield sits at 4.52%.",
+      "why_it_matters": "Weak Treasury demand would accelerate the yield selloff and pressure equity valuations via the discount rate channel. Strong demand could provide a near-term relief rally in rates. This is a key setup risk event for the week.",
+      "source_name": "Macro Data",
+      "source_type": "Macro Data",
+      "timestamp": "2026-04-21T00:45:00Z",
+      "url": "https://treasurydirect.gov",
+      "sector_tags": ["Macro", "Financials"],
+      "ticker_tags": ["TLT", "IEF", "SHY"]
+    },
+    {
+      "id": "mn007",
+      "title": "European Gas Inventories at 5-Year Seasonal High; LNG Demand Outlook Dims",
+      "summary": "European natural gas storage is 64% full entering the refill season, the highest level in five years at this point in the calendar. Mild winter temperatures and aggressive demand reduction programs have left the EU in a structurally stronger energy position. Dutch TTF futures have dropped 18% YTD.",
+      "why_it_matters": "The energy security premium that lifted LNG stocks and midstream names in 2023-2024 is fading structurally for European demand. U.S. LNG exporters face a weaker marginal demand outlook unless Asian demand accelerates. Watch Cheniere and New Fortress Energy for guidance revisions.",
+      "source_name": "GIE AGSI",
+      "source_type": "Macro Data",
+      "timestamp": "2026-04-20T22:10:00Z",
+      "url": "https://agsi.gie.eu",
+      "sector_tags": ["Energy", "Macro"],
+      "ticker_tags": ["LNG", "NFE", "TELL"]
+    },
+    {
+      "id": "mn008",
+      "title": "Reddit Consensus: Retail Options Positioning Skews Bearish; Put/Call Ratio at 6-Month High",
+      "summary": "Analysis of r/options and r/wallstreetbets positioning shows elevated put buying activity across SPY, QQQ, and single-name tech. The CBOE equity put/call ratio rose to 0.88, the highest since October 2025. Sentiment surveys show retail bullishness dropped 12 points week-over-week.",
+      "why_it_matters": "Extreme retail fear readings can be contrarian buy signals in the near term. However, the current put/call elevation is accompanied by institutional hedging flows and dealer gamma positioning that suggests the market structure is fragile. A vol spike could trigger forced deleveraging.",
+      "source_name": "r/wallstreetbets",
+      "source_type": "Reddit",
+      "timestamp": "2026-04-20T21:00:00Z",
+      "url": "https://reddit.com/r/wallstreetbets",
+      "sector_tags": ["Macro"],
+      "ticker_tags": ["SPY", "QQQ", "VIX"]
+    }
+  ]
+}
