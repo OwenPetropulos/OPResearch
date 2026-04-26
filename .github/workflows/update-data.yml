@@ -42,15 +42,9 @@ jobs:
       - name: Detect data directory
         id: detect_dir
         run: |
-          if [ -d "dashboard/data" ]; then
-            echo "data_dir=dashboard/data" >> $GITHUB_OUTPUT
-            echo "git_path=dashboard/data/" >> $GITHUB_OUTPUT
-            echo "Detected: dashboard/data/"
-          else
-            echo "data_dir=data" >> $GITHUB_OUTPUT
-            echo "git_path=data/" >> $GITHUB_OUTPUT
-            echo "Detected: data/"
-          fi
+          echo "data_dir=docs/dashboard/data" >> $GITHUB_OUTPUT
+          echo "git_path=docs/dashboard/data/" >> $GITHUB_OUTPUT
+          echo "Using: docs/dashboard/data/"
 
       - name: Run data pipeline
         run: |
