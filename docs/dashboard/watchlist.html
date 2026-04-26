@@ -8,7 +8,6 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="navbar-inner">
       <div class="navbar-logo">OP<span>Research</span></div>
@@ -23,12 +22,64 @@
 
   <div class="page-container">
 
-    <!-- PAGE HEADER -->
     <div class="page-header">
       <div class="page-header-top">
         <h1 class="page-title">Watchlist</h1>
       </div>
       <div class="macro-summary-line">Tracked positions with alerts, notes, and sector context.</div>
+    </div>
+
+    <!-- ADD TICKER FORM -->
+    <div class="trade-form-container" style="margin-bottom:32px;">
+      <div class="trade-form-title">Add to Watchlist</div>
+      <div class="trade-form-grid">
+        <div class="form-group">
+          <label class="form-label" for="wlTicker">Ticker *</label>
+          <input class="form-control" type="text" id="wlTicker"
+                 placeholder="e.g. NVDA" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wlSector">Sector</label>
+          <select class="form-control" id="wlSector">
+            <option value="">— Select —</option>
+            <option value="Technology">Technology</option>
+            <option value="Financials">Financials</option>
+            <option value="Energy">Energy</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Industrials">Industrials</option>
+            <option value="Consumer">Consumer</option>
+            <option value="Macro">Macro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wlAlertTag">Alert Tag</label>
+          <select class="form-control" id="wlAlertTag">
+            <option value="No Major Change">No Major Change</option>
+            <option value="Positive">Positive</option>
+            <option value="Negative">Negative</option>
+            <option value="Review">Review</option>
+            <option value="Narrative Shift">Narrative Shift</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wlPrice">Last Price ($)</label>
+          <input class="form-control" type="number" id="wlPrice"
+                 placeholder="0.00" step="any" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wlPctMove">% Move</label>
+          <input class="form-control" type="number" id="wlPctMove"
+                 placeholder="e.g. -1.24" step="any" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wlNotes">Notes / Thesis</label>
+          <input class="form-control" type="text" id="wlNotes"
+                 placeholder="Why are you watching this?" />
+        </div>
+      </div>
+      <div class="trade-form-actions">
+        <button class="btn btn-primary" id="addTickerBtn">+ Add to Watchlist</button>
+      </div>
     </div>
 
     <!-- WATCHLIST SECTION -->
@@ -47,7 +98,9 @@
       <div class="section-header">
         <span class="section-title">Alert Tag Reference</span>
       </div>
-      <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center; padding:20px; background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:6px;">
+      <div style="display:flex; flex-wrap:wrap; gap:16px; align-items:center;
+                  padding:20px; background:var(--bg-card);
+                  border:1px solid var(--border-subtle); border-radius:6px;">
         <div style="display:flex; align-items:center; gap:8px;">
           <span class="badge tag-positive">Positive</span>
           <span style="font-size:0.78rem;color:var(--text-muted);">Bullish development or catalyst</span>
@@ -71,7 +124,7 @@
       </div>
     </section>
 
-  </div><!-- end page-container -->
+  </div>
 
   <script src="assets/js/utils.js"></script>
   <script src="assets/js/watchlist.js"></script>
