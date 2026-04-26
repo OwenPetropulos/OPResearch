@@ -34,10 +34,21 @@ log = logging.getLogger("opr")
 
 # ============================================================
 # PATHS
+# Allow OPR_DATA_DIR env variable to override the data output
+# location so the pipeline can write directly into the folder
+# the GitHub Pages site serves from (e.g. dashboard/data/).
 # ============================================================
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR  = REPO_ROOT / "data"
+
+_env_data_dir = os.environ.get("OPR_DATA_DIR", "").strip()
+if _env_data_dir:
+    DATA_DIR = REPO_ROOT / _env_data_dir
+    log.info(f"DATA_DIR overridden by OPR_DATA_DIR: {DATA_DIR}")
+else:
+    DATA_DIR = REPO_ROOT / "data"
+
+log.info(f"DATA_DIR resolved to: {DATA_DIR}")
 
 
 def data_path(filename: str) -> Path:
@@ -56,7 +67,7 @@ def write_json(path: Path, data: dict | list, indent: int = 2) -> bool:
         with open(tmp, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=indent, ensure_ascii=False)
         tmp.replace(path)
-        log.info(f"Wrote {path.name}")
+        log.info(f"Wrote {path}")
         return True
     except Exception as e:
         log.error(f"Failed to write {path}: {e}")
@@ -147,7 +158,7 @@ def fetch_price_data(ticker: str, period: str = "5d", interval: str = "1d") -> d
 
         return {
             "price":          round(price, 2),
-            "prev_close":     round(prev_close, 2),  # always present
+            "prev_close":     round(prev_close, 2),
             "change":         round(change, 2),
             "percent_change": pct_change,
             "direction":      direction,
@@ -212,7 +223,6 @@ def fetch_feed(feed_def: dict, max_entries: int = 20) -> list[dict]:
             summary = clean_text(getattr(entry, "summary", "") or getattr(entry, "description", ""))
             link    = getattr(entry, "link", "")
 
-            # Parse timestamp
             published = getattr(entry, "published", None) or getattr(entry, "updated", None)
             dt        = parse_timestamp(published)
             timestamp = to_iso(dt)
@@ -227,7 +237,7 @@ def fetch_feed(feed_def: dict, max_entries: int = 20) -> list[dict]:
                 "source_name": source_name,
                 "source_type": source_type,
                 "timestamp":   timestamp,
-                "_dt":         dt,  # internal field for sorting — stripped before output
+                "_dt":         dt,
             })
 
         log.info(f"Fetched {len(stories)} entries from {source_name}")
