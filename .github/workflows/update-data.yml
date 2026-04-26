@@ -2,19 +2,18 @@ name: Update Market Data
 
 on:
   schedule:
-    # Morning update: 10:45 UTC = ~6:45 AM ET (approx, ignoring DST)
+    # Morning update: 10:45 UTC = ~6:45 AM ET
     - cron: "45 10 * * 1-5"
-    # After-close update: 21:45 UTC = ~5:45 PM ET (approx, ignoring DST)
+    # After-close update: 21:45 UTC = ~5:45 PM ET
     - cron: "45 21 * * 1-5"
   workflow_dispatch:
-    # Allow manual trigger from GitHub Actions UI at any time
 
 jobs:
   update-data:
     name: Generate and commit updated JSON data
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Required to push commits back to the repo
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -40,30 +39,50 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Detect data directory
+        id: detect_dir
+        run: |
+          # Determine where the JSON data files actually live so we write
+          # to the same location the GitHub Pages site fetches from.
+          # Priority:
+          #   1. dashboard/data/  (site lives under /dashboard/)
+          #   2. data/            (site lives at repo root)
+          if [ -d "dashboard/data" ]; then
+            echo "data_dir=dashboard/data" >> $GITHUB_OUTPUT
+            echo "git_path=dashboard/data/" >> $GITHUB_OUTPUT
+            echo "Detected: dashboard/data/"
+          else
+            echo "data_dir=data" >> $GITHUB_OUTPUT
+            echo "git_path=data/" >> $GITHUB_OUTPUT
+            echo "Detected: data/"
+          fi
+
       - name: Run data pipeline
         run: |
           python scripts/run_all.py
-        env: 
-          OPR_DATA_DIR: dashboard/data
-        # Pipeline runs all generators and prints a summary.
-        # Individual script failures are logged but do not abort the job
-        # unless run_all.py itself exits with code 1 (all failures).
-        # We use continue-on-error: false so partial failures still surface.
+        env:
+          # Tell common.py where to write the JSON files
+          OPR_DATA_DIR: ${{ steps.detect_dir.outputs.data_dir }}
 
-      - name: Check for changes in /data
+      - name: Check for changes in data directory
         id: check_changes
         run: |
-          git diff --quiet data/ || echo "changes=true"
+          git diff --quiet "${{ steps.detect_dir.outputs.git_path }}" || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push updated data files
         if: steps.check_changes.outputs.changes == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/dashboard/data/
+          git add "${{ steps.detect_dir.outputs.git_path }}"
           git commit -m "chore: update market data [$(date -u +'%Y-%m-%d %H:%M UTC')]"
           git push
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: No changes detected — skipping commit
+        if: steps.check_changes.outputs.changes != 'true'
+        run: echo "No data changes detected. Skipping commit."
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: No changes — skipping commit
