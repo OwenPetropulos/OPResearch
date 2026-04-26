@@ -1,38 +1,38 @@
 {
-  "last_updated": "2026-04-26T17:44:54Z",
-  "macro_summary": "Equity futures broadly bid; VIX at 18.7 — market caution elevated; Rates broadly stable; 10Y at 0.43%; Gold firming (+0.8%), safe-haven demand evident; Crude sliding (-1.5%).",
+  "last_updated": "2026-04-26T18:57:46Z",
+  "macro_summary": "Equity futures broadly bid; VIX at 18.7 — market caution elevated; Rates broadly stable; 10Y at 4.31%; Gold firming (+0.8%), safe-haven demand evident; Crude sliding (-1.5%).",
   "market_status": "Closed (Weekend)",
   "equities": [
     {
       "label": "S&P 500",
       "ticker": "ES",
-      "price": 713.94,
-      "change": 5.49,
-      "percent_change": 0.77,
+      "price": 7165.08,
+      "change": 56.68,
+      "percent_change": 0.8,
       "direction": "up"
     },
     {
       "label": "Nasdaq",
       "ticker": "NQ",
-      "price": 663.88,
-      "change": 12.46,
-      "percent_change": 1.91,
+      "price": 24836.6,
+      "change": 398.1,
+      "percent_change": 1.63,
       "direction": "up"
     },
     {
       "label": "Dow Jones",
       "ticker": "YM",
-      "price": 492.21,
-      "change": -0.79,
+      "price": 49230.71,
+      "change": -79.61,
       "percent_change": -0.16,
       "direction": "down"
     },
     {
       "label": "Russell 2000",
       "ticker": "RTY",
-      "price": 276.65,
-      "change": 1.13,
-      "percent_change": 0.41,
+      "price": 2787.0,
+      "change": 11.9,
+      "percent_change": 0.43,
       "direction": "up"
     },
     {
@@ -46,19 +46,27 @@
   ],
   "rates": [
     {
+      "label": "US 3M",
+      "ticker": "US3M",
+      "price": 3.593,
+      "change": -0.002,
+      "percent_change": -0.06,
+      "direction": "down"
+    },
+    {
       "label": "US 2Y",
       "ticker": "US2Y",
-      "price": 0.359,
-      "change": -0.001,
-      "percent_change": -0.28,
+      "price": 3.92,
+      "change": -0.032,
+      "percent_change": -0.81,
       "direction": "down"
     },
     {
       "label": "US 10Y",
       "ticker": "US10Y",
-      "price": 0.431,
-      "change": -0.001,
-      "percent_change": -0.23,
+      "price": 4.31,
+      "change": -0.013,
+      "percent_change": -0.3,
       "direction": "down"
     },
     {
@@ -73,14 +81,6 @@
       "label": "UK 10Y",
       "ticker": "UK10Y",
       "price": 4.4,
-      "change": 0.0,
-      "percent_change": 0.0,
-      "direction": "flat"
-    },
-    {
-      "label": "Eurozone 10Y",
-      "ticker": "DE10Y",
-      "price": 2.5,
       "change": 0.0,
       "percent_change": 0.0,
       "direction": "flat"
@@ -125,6 +125,40 @@
       "price": 6.03,
       "change": -0.05,
       "percent_change": -0.8,
+      "direction": "down"
+    }
+  ],
+  "fx": [
+    {
+      "label": "USD/JPY",
+      "ticker": "USDJPY",
+      "price": 159.333,
+      "change": -0.155,
+      "percent_change": -0.1,
+      "direction": "down"
+    },
+    {
+      "label": "EUR/USD",
+      "ticker": "EURUSD",
+      "price": 1.1726,
+      "change": 0.002,
+      "percent_change": 0.17,
+      "direction": "up"
+    },
+    {
+      "label": "EUR/JPY",
+      "ticker": "EURJPY",
+      "price": 186.811,
+      "change": 0.125,
+      "percent_change": 0.07,
+      "direction": "up"
+    },
+    {
+      "label": "DXY",
+      "ticker": "DXY",
+      "price": 98.51,
+      "change": -0.29,
+      "percent_change": -0.29,
       "direction": "down"
     }
   ],
