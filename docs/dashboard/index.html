@@ -8,9 +8,6 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       NAVBAR
-       ============================================================ -->
   <nav class="navbar">
     <div class="navbar-inner">
       <div class="navbar-logo">OP<span>Research</span></div>
@@ -23,21 +20,14 @@
     </div>
   </nav>
 
-  <!-- ============================================================
-       TICKER STRIP
-       ============================================================ -->
   <div class="ticker-strip">
     <div class="ticker-strip-inner" id="tickerStrip">
       <div class="loading-state">Loading market data…</div>
     </div>
   </div>
 
-  <!-- ============================================================
-       PAGE CONTENT
-       ============================================================ -->
   <div class="page-container">
 
-    <!-- PAGE HEADER -->
     <div class="page-header">
       <div class="page-header-top">
         <h1 class="page-title">Morning Brief</h1>
@@ -47,15 +37,12 @@
       <div id="lastUpdated" class="last-updated"></div>
     </div>
 
-    <!-- ============================================================
-         SECTION A: MACRO SNAPSHOT
-         ============================================================ -->
+    <!-- MACRO SNAPSHOT -->
     <section class="section" id="snapshotSection">
       <div class="section-header">
         <span class="section-title">Macro Snapshot</span>
       </div>
 
-      <!-- Equities Row -->
       <div class="snapshot-group">
         <div class="snapshot-group-label">Equities &amp; Volatility</div>
         <div class="snapshot-row" id="equitiesRow">
@@ -63,7 +50,6 @@
         </div>
       </div>
 
-      <!-- Rates Row -->
       <div class="snapshot-group">
         <div class="snapshot-group-label">Global Rates (10Y Yield %)</div>
         <div class="snapshot-row" id="ratesRow">
@@ -71,18 +57,23 @@
         </div>
       </div>
 
-      <!-- Commodities Row -->
       <div class="snapshot-group">
         <div class="snapshot-group-label">Commodities</div>
         <div class="snapshot-row" id="commoditiesRow">
           <div class="loading-state">Loading…</div>
         </div>
       </div>
+
+      <!-- NEW: FX Row -->
+      <div class="snapshot-group">
+        <div class="snapshot-group-label">FX &amp; Dollar</div>
+        <div class="snapshot-row" id="fxRow">
+          <div class="loading-state">Loading…</div>
+        </div>
+      </div>
     </section>
 
-    <!-- ============================================================
-         SECTION B: GLOBAL MARKETS
-         ============================================================ -->
+    <!-- GLOBAL MARKETS -->
     <section class="section">
       <div class="section-header">
         <span class="section-title">Global Markets</span>
@@ -90,22 +81,16 @@
       <div class="global-markets-grid">
         <div class="global-markets-block">
           <div class="global-markets-block-header">Asia Pacific</div>
-          <div id="asiaMarkets">
-            <div class="loading-state">Loading…</div>
-          </div>
+          <div id="asiaMarkets"><div class="loading-state">Loading…</div></div>
         </div>
         <div class="global-markets-block">
           <div class="global-markets-block-header">Europe</div>
-          <div id="europeMarkets">
-            <div class="loading-state">Loading…</div>
-          </div>
+          <div id="europeMarkets"><div class="loading-state">Loading…</div></div>
         </div>
       </div>
     </section>
 
-    <!-- ============================================================
-         SECTION C: OVERNIGHT MACRO STORIES
-         ============================================================ -->
+    <!-- OVERNIGHT MACRO STORIES -->
     <section class="section">
       <div class="section-header">
         <span class="section-title">Overnight Macro Stories</span>
@@ -115,9 +100,7 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         SECTION D: SECTOR OVERVIEW STRIP
-         ============================================================ -->
+    <!-- SECTOR OVERVIEW -->
     <section class="section">
       <div class="section-header">
         <span class="section-title">Sector Overview</span>
@@ -127,9 +110,7 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         SECTION E: KEY DEVELOPMENTS FEED
-         ============================================================ -->
+    <!-- KEY DEVELOPMENTS -->
     <section class="section">
       <div class="section-header">
         <span class="section-title">Key Developments</span>
@@ -140,22 +121,20 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         SECTION F: WATCHLIST PREVIEW
-         ============================================================ -->
+    <!-- WATCHLIST PREVIEW -->
     <section class="section">
       <div class="section-header">
         <span class="section-title">Watchlist Preview</span>
-        <a href="watchlist.html" style="margin-left:auto; font-size:0.72rem; color:var(--accent-blue); font-weight:600;">View All →</a>
+        <a href="watchlist.html" style="margin-left:auto; font-size:0.72rem;
+           color:var(--accent-blue); font-weight:600;">View All →</a>
       </div>
       <div id="watchlistPreviewContainer">
         <div class="loading-state">Loading watchlist…</div>
       </div>
     </section>
 
-  </div><!-- end page-container -->
+  </div>
 
-  <!-- Scripts -->
   <script src="assets/js/utils.js"></script>
   <script src="assets/js/app.js"></script>
 
