@@ -36,6 +36,7 @@ log = logging.getLogger("opr")
 # PATHS
 # ============================================================
 
+REPO_ROOT = Path(__file__).resolve().parent.parent 
 DATA_DIR = REPO_ROOT / "docs" / "dashboard" / "data"
 DATA_DIR  = REPO_ROOT / "data"
 
