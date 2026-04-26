@@ -58,17 +58,18 @@ jobs:
         env:
           OPR_DATA_DIR: ${{ steps.detect_dir.outputs.data_dir }}
 
-      - name: Check for changes in data directory
+      - name: Stage and check for changes
         id: check_changes
         run: |
-          git diff --quiet "${{ steps.detect_dir.outputs.git_path }}" || echo "changes=true" >> $GITHUB_OUTPUT
+          git add "${{ steps.detect_dir.outputs.git_path }}"
+          # git diff --cached checks staged changes vs last commit
+          git diff --cached --quiet || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push updated data files
         if: steps.check_changes.outputs.changes == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "${{ steps.detect_dir.outputs.git_path }}"
           git commit -m "chore: update market data [$(date -u +'%Y-%m-%d %H:%M UTC')]"
           git push
         env:
