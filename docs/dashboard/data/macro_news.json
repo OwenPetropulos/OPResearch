@@ -1,100 +1,150 @@
 {
   "stories": [
     {
+      "title": "Tillis ends block of Fed chair nominee Warsh, clears way for Trump pick",
+      "summary": "",
+      "url": "https://www.cnbc.com/2026/04/26/thom-tillis-kevin-warsh-federal-reserve.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-26T15:29:32Z",
       "id": "mn001",
-      "title": "Fed Officials Signal Caution on Rate Cuts as Core CPI Holds Above 3%",
-      "summary": "Multiple Federal Reserve governors pushed back against near-term rate cut expectations Monday, citing persistent services inflation and a resilient labor market. The latest core CPI print at 3.2% YoY surprised to the upside, forcing markets to reprice the forward curve sharply. Fed funds futures now imply fewer than two cuts in 2026.",
-      "why_it_matters": "Duration assets remain vulnerable as the 'higher for longer' narrative reasserts itself. Bank NIM expansion continues to benefit regionals; growth equities face renewed multiple compression risk. Watch the 10Y/2Y spread for inversion signals.",
-      "source_name": "Wall Street Journal",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-21T05:14:00Z",
-      "url": "https://wsj.com",
-      "sector_tags": ["Financials", "Macro"],
-      "ticker_tags": ["TLT", "SPY", "KRE"]
+      "sector_tags": [
+        "Financials",
+        "Technology"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Fed policy signals directly set the risk-free rate baseline for all asset valuations. Rate path repricing creates volatility in both equities and fixed income. Monitor forward guidance and dot plot revisions."
     },
     {
+      "title": "I’m exactly 5 years from retirement. Here’s what I’ll do first to prepare.",
+      "summary": "I just turned 54½, and this could be my most consequential age milestone, because it’s the ideal time for me to start detailed planning for my golden years.",
+      "url": "https://www.marketwatch.com/story/happy-54-birthday-to-me-im-now-exactly-5-years-from-retirement-heres-what-ill-do-first-to-prepare-cc0bf06b?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-26T14:50:00Z",
       "id": "mn002",
-      "title": "China Signals Broad Fiscal Stimulus Package; Property Sector Stabilization Priority",
-      "summary": "Beijing announced a 1.2 trillion yuan fiscal package targeting infrastructure, semiconductor self-sufficiency, and residential property stabilization. Officials confirmed the PBOC will lower reserve requirements for major banks by 50bps. Commodity markets reacted with copper and iron ore futures spiking on improved demand outlook.",
-      "why_it_matters": "A credible Chinese stimulus cycle historically lifts commodity-linked equities, EM sovereign debt, and luxury consumer names with China exposure. Monitor copper as a leading indicator of follow-through. Risk: stimulus may be front-loaded and structural property headwinds persist.",
-      "source_name": "Reuters",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-21T04:48:00Z",
-      "url": "https://reuters.com",
-      "sector_tags": ["Macro", "Industrials", "Consumer"],
-      "ticker_tags": ["FCX", "BHP", "LVMH", "FXI"]
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "AI infrastructure spending drives semiconductor, cloud, and data center demand. Hyperscaler capex commitments are the clearest leading indicator for AI-adjacent equities. Monitor GPU supply chains and inference cost curves."
     },
     {
+      "title": "Retiring abroad? Watch out for this expensive housing mistake.",
+      "summary": "It’s an exhilarating time, but it’s important to be cautious during those early expat days.",
+      "url": "https://www.marketwatch.com/story/retiring-abroad-watch-out-for-this-expensive-housing-mistake-1c647caa?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-26T14:40:00Z",
       "id": "mn003",
-      "title": "Japan 10Y Yield Hits 1.58%, Highest Since 2008 as BOJ Taper Expectations Build",
-      "summary": "The Bank of Japan's yield curve control framework faces mounting pressure as 10Y JGB yields touch 1.58%, approaching the 1.60% informal ceiling. Markets are pricing a 70% probability of a 25bps hike at the June BOJ meeting. Yen strengthened 0.8% against the dollar in overnight trading.",
-      "why_it_matters": "A BOJ policy normalization cycle is one of the most significant macro forces in global fixed income. Yen carry unwind risk is real—leveraged positions across EM and high-yield could face forced selling if USD/JPY breaks below 148. Monitor Japan financial stocks as direct beneficiaries.",
-      "source_name": "Financial Times",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-21T03:22:00Z",
-      "url": "https://ft.com",
-      "sector_tags": ["Macro", "Financials"],
-      "ticker_tags": ["FXY", "EWJ", "MUFG"]
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
     },
     {
-      "id": "mn004",
-      "title": "U.S. Retail Sales Beat Estimates; Consumer Resilience Complicates Fed Narrative",
-      "summary": "March retail sales rose 0.7% MoM, well above the 0.4% consensus estimate. Ex-autos and gas, the control group rose 0.5%, suggesting broad-based consumer strength. Discretionary and restaurant categories were notable outperformers. The Atlanta Fed GDPNow model revised Q1 growth to 2.4%.",
-      "why_it_matters": "Strong consumer data delays the conditions for Fed easing and supports the 'no landing' scenario. Retailers with value positioning and discount formats are outperforming. However, this print may be partly driven by pull-forward spending ahead of expected tariff pass-throughs.",
-      "source_name": "Bloomberg",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-21T02:55:00Z",
-      "url": "https://bloomberg.com",
-      "sector_tags": ["Consumer", "Macro"],
-      "ticker_tags": ["XRT", "WMT", "COST", "TGT"]
-    },
-    {
-      "id": "mn005",
-      "title": "WTI Crude Slides Below $83 on Rising Inventory Data; OPEC+ Cut Compliance Questioned",
-      "summary": "U.S. crude inventories rose 4.6 million barrels last week, the third consecutive build, according to API data. Simultaneously, satellite tracking data from S&P Global suggests OPEC+ member compliance has slipped to 78%, the lowest level since the current production agreement was struck in late 2025. WTI fell 1.1% in early trading.",
-      "why_it_matters": "Oversupply risk is re-entering the crude narrative at a time when demand signals from China remain mixed. Integrated majors and E&P names with high operating leverage to oil prices face near-term earnings risk. However, geopolitical premium could provide a floor.",
-      "source_name": "S&P Global Commodity Insights",
+      "title": "A Massive Change Likely Coming To The Fed And Markets May Not Like It",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4894392-massive-change-likely-coming-to-fed-markets-may-not-like-it?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
       "source_type": "Niche / Blog",
-      "timestamp": "2026-04-21T01:30:00Z",
-      "url": "https://spglobal.com",
-      "sector_tags": ["Energy", "Macro"],
-      "ticker_tags": ["XOM", "CVX", "CL=F", "OXY"]
+      "timestamp": "2026-04-26T09:55:58Z",
+      "id": "mn004",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Fed policy signals directly set the risk-free rate baseline for all asset valuations. Rate path repricing creates volatility in both equities and fixed income. Monitor forward guidance and dot plot revisions."
     },
     {
+      "title": "3 Best Gold Stocks With 110%+ Forward Growth For The Next Leg Up",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4894067-3-best-gold-stocks-with-110-percent-plus-forward-growth-for-the-next-leg-up?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-26T09:55:00Z",
+      "id": "mn005",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
+    },
+    {
+      "title": "FEPI: A Battle-Tested 25% Yielder To Buy",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4894176-fepi-a-battle-tested-25-percent-yielder-to-buy?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-26T09:15:00Z",
       "id": "mn006",
-      "title": "Treasury Announces $58B 5-Year Note Auction; Demand Will Signal Risk Appetite",
-      "summary": "The U.S. Treasury will auction $58 billion in 5-year notes Tuesday. Dealer community is watching bid-to-cover ratios and foreign central bank participation closely after last month's weak 7-year auction triggered a brief yield spike. The current 5Y yield sits at 4.52%.",
-      "why_it_matters": "Weak Treasury demand would accelerate the yield selloff and pressure equity valuations via the discount rate channel. Strong demand could provide a near-term relief rally in rates. This is a key setup risk event for the week.",
-      "source_name": "Macro Data",
-      "source_type": "Macro Data",
-      "timestamp": "2026-04-21T00:45:00Z",
-      "url": "https://treasurydirect.gov",
-      "sector_tags": ["Macro", "Financials"],
-      "ticker_tags": ["TLT", "IEF", "SHY"]
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
     },
     {
+      "title": "Annaly Capital Earnings: The 12% Yield Is Safe",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4894420-annaly-capital-earnings-the-12-percent-yield-is-safe?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-26T09:05:22Z",
       "id": "mn007",
-      "title": "European Gas Inventories at 5-Year Seasonal High; LNG Demand Outlook Dims",
-      "summary": "European natural gas storage is 64% full entering the refill season, the highest level in five years at this point in the calendar. Mild winter temperatures and aggressive demand reduction programs have left the EU in a structurally stronger energy position. Dutch TTF futures have dropped 18% YTD.",
-      "why_it_matters": "The energy security premium that lifted LNG stocks and midstream names in 2023-2024 is fading structurally for European demand. U.S. LNG exporters face a weaker marginal demand outlook unless Asian demand accelerates. Watch Cheniere and New Fortress Energy for guidance revisions.",
-      "source_name": "GIE AGSI",
-      "source_type": "Macro Data",
-      "timestamp": "2026-04-20T22:10:00Z",
-      "url": "https://agsi.gie.eu",
-      "sector_tags": ["Energy", "Macro"],
-      "ticker_tags": ["LNG", "NFE", "TELL"]
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
     },
     {
+      "title": "These investments promise high yield with bond-like safety. But what looks too good to be true often is.",
+      "summary": "When dentists start getting cold calls about private credit, you know the fad has peaked.",
+      "url": "https://www.marketwatch.com/story/when-dentists-start-getting-cold-calls-about-private-credit-you-know-the-fad-has-peaked-67f1ef78?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-25T18:44:00Z",
       "id": "mn008",
-      "title": "Reddit Consensus: Retail Options Positioning Skews Bearish; Put/Call Ratio at 6-Month High",
-      "summary": "Analysis of r/options and r/wallstreetbets positioning shows elevated put buying activity across SPY, QQQ, and single-name tech. The CBOE equity put/call ratio rose to 0.88, the highest since October 2025. Sentiment surveys show retail bullishness dropped 12 points week-over-week.",
-      "why_it_matters": "Extreme retail fear readings can be contrarian buy signals in the near term. However, the current put/call elevation is accompanied by institutional hedging flows and dealer gamma positioning that suggests the market structure is fragile. A vol spike could trigger forced deleveraging.",
-      "source_name": "r/wallstreetbets",
-      "source_type": "Reddit",
-      "timestamp": "2026-04-20T21:00:00Z",
-      "url": "https://reddit.com/r/wallstreetbets",
-      "sector_tags": ["Macro"],
-      "ticker_tags": ["SPY", "QQQ", "VIX"]
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
+    },
+    {
+      "title": "This little-known ETF is up over 600% amid U.S.-Iran war, a better trade than oil or energy stocks",
+      "summary": "The Breakwave Tanker Shipping ETF (BWET) has surged more than 600% since the beginning of the year, vastly outperforming crude oil and energy stocks.",
+      "url": "https://www.cnbc.com/2026/04/25/crude-oil-freight-tanker-strait-hormuz-iran-war-energy-stocks.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-25T11:53:07Z",
+      "id": "mn009",
+      "sector_tags": [
+        "Energy"
+      ],
+      "ticker_tags": [
+        "NKE",
+        "CL=F"
+      ],
+      "why_it_matters": "Oil price moves cascade through energy equities, transportation costs, and headline inflation. OPEC+ supply discipline and global demand signals are the key variables to monitor."
+    },
+    {
+      "title": "Pirro could reopen Fed probe at any time, Democratic senators warn",
+      "summary": "Sens. Elizabeth Warren and Dick Durbin, in a letter obtained first by CNBC, question Jeanine Pirro's mention of reopening a probe of Fed Chair Jerome Powell.",
+      "url": "https://www.cnbc.com/2026/04/24/fed-powell-pirro-elizabeth-warren-durbin.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-24T22:02:04Z",
+      "id": "mn010",
+      "sector_tags": [
+        "Financials",
+        "Technology",
+        "Industrials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Fed policy signals directly set the risk-free rate baseline for all asset valuations. Rate path repricing creates volatility in both equities and fixed income. Monitor forward guidance and dot plot revisions."
     }
   ]
 }

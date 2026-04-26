@@ -1,134 +1,201 @@
 {
   "stories": [
     {
+      "title": "Cramer: Why all the money flowing to AI stocks is a problem — and how it can be fixed",
+      "summary": "Just as anything peripherally involved with the data center is blessed, anything even tangentially associated with pharma is a nightmare.",
+      "url": "https://www.cnbc.com/2026/04/26/cramer-the-money-to-ai-stocks-is-a-problem-and-how-it-can-be-fixed.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-26T16:47:00Z",
       "id": "sn001",
-      "sector": "Energy",
-      "title": "Pioneer Natural Resources Posts Q1 Earnings Beat; Raises Full-Year Production Guide",
-      "summary": "PXD reported Q1 EPS of $4.82, beating consensus by $0.34. Permian Basin volumes came in at 748 MBoe/d, ahead of company guidance. Management raised full-year production guidance by 3% and announced a $1.5B incremental buyback authorization.",
-      "why_it_matters": "PXD's cost discipline and Permian execution are best-in-class. The production guide raise signals confidence in well productivity and service cost deflation. This print supports the bull case for Permian-focused E&Ps even in a softer oil tape.",
-      "source_name": "Pioneer IR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-04-21T06:00:00Z",
-      "url": "https://pxd.com/investors",
-      "sector_tags": ["Energy"],
-      "ticker_tags": ["PXD", "OXY", "FANG"]
+      "sector": "Technology",
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [
+        "LLY",
+        "NVO"
+      ],
+      "why_it_matters": "AI infrastructure spending drives semiconductor, cloud, and data center demand. Hyperscaler capex commitments are the clearest leading indicator for AI-adjacent equities. Monitor GPU supply chains and inference cost curves."
     },
     {
+      "title": "Columbia Commodity Strategy Fund Q1 2026 Commentary",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4894433-columbia-commodity-strategy-fund-q1-2026-commentary?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-26T12:44:00Z",
       "id": "sn002",
-      "sector": "Energy",
-      "title": "r/EnergyInvesting: Offshore Drillers Getting No Respect Despite Day Rate Surge",
-      "summary": "Multiple contributors highlighting disconnect between ultra-deepwater day rates (now above $500k/day) and depressed stock valuations for Transocean and Valaris. Thesis: day rate cycle is durable, fleet utilization at multi-year highs, but equity market treating sector as uninvestable.",
-      "why_it_matters": "Contrarian opportunity in offshore drillers if day rate cycle persists. Balance sheet risk has been largely resolved post-restructuring. Catalyst watch: major contract announcements and quarterly earnings in May.",
-      "source_name": "r/EnergyInvesting",
-      "source_type": "Reddit",
-      "timestamp": "2026-04-20T19:30:00Z",
-      "url": "https://reddit.com/r/EnergyInvesting",
-      "sector_tags": ["Energy"],
-      "ticker_tags": ["RIG", "VAL", "DO"]
+      "sector": "Macro",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
     },
     {
+      "title": "Blanket Sell-Off In Software Is Creating Wild Mispricing",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4894431-blanket-sell-off-in-software-is-creating-wild-mispricing?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-26T12:04:00Z",
       "id": "sn003",
       "sector": "Financials",
-      "title": "JPMorgan Q1 Revenue Smashes Estimates; NIM Expansion Accelerates",
-      "summary": "JPM reported Q1 net revenue of $43.7B, $2.1B above consensus. Net interest margin expanded 14bps QoQ as the bank repriced its liability base. Investment banking fees surged 32% YoY on a rebound in M&A and leveraged finance. Management guided conservatively for NII but the beat was broad-based.",
-      "why_it_matters": "JPM continues to take share in nearly every business line. The NIM expansion story is intact and may have more runway if the Fed holds. The IB fee recovery signals a reopening M&A cycle that lifts advisory boutiques and larger platforms alike.",
-      "source_name": "Bloomberg",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-21T07:00:00Z",
-      "url": "https://bloomberg.com",
-      "sector_tags": ["Financials"],
-      "ticker_tags": ["JPM", "BAC", "GS", "MS"]
+      "sector_tags": [
+        "Financials",
+        "Technology"
+      ],
+      "ticker_tags": [
+        "NKE"
+      ],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
     },
     {
+      "title": "NZS Capital Q1 2026 Shareholder Letter",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4894430-nzs-capital-q1-2026-shareholder-letter?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-26T12:00:00Z",
       "id": "sn004",
-      "sector": "Financials",
-      "title": "Regional Banks See Accelerating Deposit Outflows; CRE Exposure Remains Unresolved",
-      "summary": "FDIC data shows mid-tier regional banks lost $28B in deposits in Q1, with outflows concentrated in uninsured commercial accounts. Simultaneously, a Trepp analysis found that $420B in office CRE loans mature in 2026, with refinancing prospects deteriorating as cap rates rise. KRE is -14% YTD.",
-      "why_it_matters": "The regional banking stress of 2023 is not fully resolved. Office CRE losses remain a slow-moving systemic risk. However, well-capitalized regionals with low CRE exposure and strong consumer deposit franchises may offer value after the selloff.",
-      "source_name": "Trepp / FDIC",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-04-20T16:00:00Z",
-      "url": "https://trepp.com",
-      "sector_tags": ["Financials"],
-      "ticker_tags": ["KRE", "PACW", "WAL", "ZION"]
+      "sector": "Macro",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
     },
     {
+      "title": "Trump presses his case for White House ballroom following press dinner shooting",
+      "summary": "The President took to social media to reiterate his case that White House ballroom is a matter of national security in the wake of the press dinner shooting.",
+      "url": "https://www.cnbc.com/2026/04/26/trump-presses-case-for-white-house-ballroom-following-shooting.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-26T15:45:22Z",
       "id": "sn005",
-      "sector": "Technology",
-      "title": "Nvidia Announces Next-Gen Blackwell Ultra Architecture; Data Center TAM Revised Up",
-      "summary": "NVDA unveiled the B300 Ultra GPU architecture at a closed-door event, promising 3.5x inference throughput versus Hopper at comparable power draw. Multiple hyperscaler customers confirmed intent to upgrade procurement plans. Street analysts are revising 2027 data center TAM estimates above $500B.",
-      "why_it_matters": "If the B300 Ultra cycle is real, NVDA's dominant position in training and inference accelerators deepens further. The key risk is whether hyperscaler capex plans hold and whether AMD and custom silicon (Google TPU, AWS Trainium) erode share meaningfully.",
-      "source_name": "The Information",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-04-21T05:30:00Z",
-      "url": "https://theinformation.com",
-      "sector_tags": ["Technology"],
-      "ticker_tags": ["NVDA", "AMD", "MSFT", "GOOGL", "AMZN"]
+      "sector": "Macro",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
     },
     {
+      "title": "Microsoft: Preparing For Pivotal 'Show-Me' Q3 Earnings",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4894429-microsoft-preparing-for-pivotal-show-me-q3-earnings?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-26T11:29:55Z",
       "id": "sn006",
       "sector": "Technology",
-      "title": "r/investing: MSFT Azure Growth Re-Accelerating Per CIO Surveys",
-      "summary": "Multiple CIO survey results (Morgan Stanley, Goldman) showing Azure cloud share gains accelerating in Q1. IT budget allocation to Azure rose 400bps YoY in the surveys. OpenAI integration cited as primary driver of switching and upsell activity.",
-      "why_it_matters": "Azure re-acceleration would validate the AI monetization thesis for Microsoft and put pressure on AWS growth narrative. Watch for Azure RPO disclosures in the MSFT earnings call on April 30.",
-      "source_name": "r/investing",
-      "source_type": "Reddit",
-      "timestamp": "2026-04-20T20:15:00Z",
-      "url": "https://reddit.com/r/investing",
-      "sector_tags": ["Technology"],
-      "ticker_tags": ["MSFT", "AMZN", "GOOGL"]
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [
+        "MSFT"
+      ],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
     },
     {
-      "id": "sn007",
-      "sector": "Healthcare",
-      "title": "FDA Approves Eli Lilly's Weight-Loss Pill Orforglipron; Oral GLP-1 Market Opens",
-      "summary": "The FDA granted approval to Eli Lilly's oral GLP-1 agonist orforglipron for obesity treatment. Phase 3 trials showed 15.6% average weight loss over 40 weeks. The oral formulation addresses the key adoption barrier of injectable delivery and could dramatically expand the addressable market.",
-      "why_it_matters": "An oral GLP-1 is potentially the biggest drug launch in pharmaceutical history. It removes the self-injection barrier and expands the market to patients unwilling to use injectables. Novo Nordisk's semaglutide franchise faces significant competitive pressure. Watch supply chain and pricing dynamics closely.",
-      "source_name": "FDA.gov",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-04-21T06:45:00Z",
-      "url": "https://fda.gov",
-      "sector_tags": ["Healthcare"],
-      "ticker_tags": ["LLY", "NVO", "AMGN", "PFE"]
-    },
-    {
-      "id": "sn008",
-      "sector": "Industrials",
-      "title": "U.S. Manufacturing PMI Rises to 52.4; Defense Orders Driving Expansion",
-      "summary": "The ISM Manufacturing PMI rose to 52.4 in March, the third consecutive expansionary reading. Defense and aerospace new orders led the expansion, with commercial aviation also showing strength. Supply chain lead times are normalizing across most industrial categories.",
-      "why_it_matters": "The industrial cycle is re-accelerating, led by defense spending (NATO commitments, domestic procurement) and reshoring capex. This is broadly positive for diversified industrials, aerospace components, and defense primes. Watch for margin recovery as input cost pressures ease.",
-      "source_name": "ISM",
-      "source_type": "Macro Data",
-      "timestamp": "2026-04-21T04:00:00Z",
-      "url": "https://ismworld.org",
-      "sector_tags": ["Industrials", "Macro"],
-      "ticker_tags": ["GE", "RTX", "LMT", "NOC", "HON"]
-    },
-    {
-      "id": "sn009",
-      "sector": "Consumer",
-      "title": "Nike Q3 Miss Signals Ongoing China Weakness; Inventory Elevation Persists",
-      "summary": "NKE reported Q3 revenue of $11.2B, missing consensus by $400M. North America sales were flat; China declined 8% YoY on weak domestic consumer sentiment. Management flagged ongoing inventory normalization headwinds and guided Q4 revenue below street estimates.",
-      "why_it_matters": "Nike's China struggles reflect broader weakness in domestic Chinese consumer spending that contrasts with the official GDP narrative. The inventory glut may persist into 2026 holiday. Competitors with less China exposure (On Running, Hoka) are taking share in key demographics.",
-      "source_name": "CNBC",
+      "title": "Tillis ends block of Fed chair nominee Warsh, clears way for Trump pick",
+      "summary": "",
+      "url": "https://www.cnbc.com/2026/04/26/thom-tillis-kevin-warsh-federal-reserve.html",
+      "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-20T18:00:00Z",
-      "url": "https://cnbc.com",
-      "sector_tags": ["Consumer"],
-      "ticker_tags": ["NKE", "ONON", "LULU", "UA"]
+      "timestamp": "2026-04-26T15:29:32Z",
+      "id": "sn007",
+      "sector": "Financials",
+      "sector_tags": [
+        "Financials",
+        "Technology"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Fed policy signals directly set the risk-free rate baseline for all asset valuations. Rate path repricing creates volatility in both equities and fixed income. Monitor forward guidance and dot plot revisions."
     },
     {
+      "title": "5 Signs The Markets Are Increasingly Disconnected From Reality",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4894425-5-signs-markets-increasingly-disconnected-from-reality?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-26T11:01:13Z",
+      "id": "sn008",
+      "sector": "Financials",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development may affect near-term price action and sector positioning. Monitor related earnings guidance, macro data, and management commentary for confirming signals before adjusting portfolio exposure."
+    },
+    {
+      "title": "I’m exactly 5 years from retirement. Here’s what I’ll do first to prepare.",
+      "summary": "I just turned 54½, and this could be my most consequential age milestone, because it’s the ideal time for me to start detailed planning for my golden years.",
+      "url": "https://www.marketwatch.com/story/happy-54-birthday-to-me-im-now-exactly-5-years-from-retirement-heres-what-ill-do-first-to-prepare-cc0bf06b?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-26T14:50:00Z",
+      "id": "sn009",
+      "sector": "Technology",
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "AI infrastructure spending drives semiconductor, cloud, and data center demand. Hyperscaler capex commitments are the clearest leading indicator for AI-adjacent equities. Monitor GPU supply chains and inference cost curves."
+    },
+    {
+      "title": "U.S. imposes sanctions on Chinese 'teapot' refinery for buying Iranian oil",
+      "summary": "The Office of Foreign Assets Control said it imposed sanctions on about 40 shipping companies and vessels that operate as part of Iran's shadow fleet.",
+      "url": "https://www.cnbc.com/2026/04/25/us-china-sanctions-iran-oil.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-25T18:49:47Z",
       "id": "sn010",
-      "sector": "Macro",
-      "title": "r/MacroEconomics: Stagflation Probability Rising Per Shadow Stats Models",
-      "summary": "Discussion thread analyzing proprietary inflation models suggesting headline CPI is understated by 1.2-1.8% when using 1990-methodology basket weights. Combined with stalling real wage growth and elevated energy costs, multiple contributors building stagflation scenario probability to 25-30%.",
-      "why_it_matters": "Even if shadow stats models are directionally right, stagflation scenarios historically favor hard assets (gold, commodities, real estate), short-duration fixed income, and value equities over growth. This is a narrative worth tracking as a tail risk hedge.",
-      "source_name": "r/MacroEconomics",
-      "source_type": "Reddit",
-      "timestamp": "2026-04-20T17:30:00Z",
-      "url": "https://reddit.com/r/MacroEconomics",
-      "sector_tags": ["Macro"],
-      "ticker_tags": ["GLD", "TIP", "USO", "VTV"]
+      "sector": "Energy",
+      "sector_tags": [
+        "Energy",
+        "Technology"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "AI infrastructure spending drives semiconductor, cloud, and data center demand. Hyperscaler capex commitments are the clearest leading indicator for AI-adjacent equities. Monitor GPU supply chains and inference cost curves."
+    },
+    {
+      "title": "This little-known ETF is up over 600% amid U.S.-Iran war, a better trade than oil or energy stocks",
+      "summary": "The Breakwave Tanker Shipping ETF (BWET) has surged more than 600% since the beginning of the year, vastly outperforming crude oil and energy stocks.",
+      "url": "https://www.cnbc.com/2026/04/25/crude-oil-freight-tanker-strait-hormuz-iran-war-energy-stocks.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-25T11:53:07Z",
+      "id": "sn011",
+      "sector": "Energy",
+      "sector_tags": [
+        "Energy"
+      ],
+      "ticker_tags": [
+        "NKE",
+        "CL=F"
+      ],
+      "why_it_matters": "Oil price moves cascade through energy equities, transportation costs, and headline inflation. OPEC+ supply discipline and global demand signals are the key variables to monitor."
+    },
+    {
+      "title": "Sunday Night Futures",
+      "summary": "Weekend: • Schedule for Week of January 11, 2026 Monday: • No major economic releases scheduled. From CNBC: Pre-Market Data and Bloomberg futures S&P 500 futures are down 16 and DOW futures are down 104 (fair value). Oil prices were up over the last week with WTI futures at $59.37 per barrel and Brent at $63.60 per barrel. A year ago, WTI was at $77, and Brent was at $80 - so WTI oil prices are down about 24% year-over-year. Here is a graph from Gasbuddy.com for nationwide gasoline prices. Natio",
+      "url": "http://www.calculatedriskblog.com/2026/01/sunday-night-futures_11.html",
+      "source_name": "Calculated Risk",
+      "source_type": "Niche / Blog",
+      "timestamp": "",
+      "id": "sn012",
+      "sector": "Energy",
+      "sector_tags": [
+        "Energy",
+        "Technology"
+      ],
+      "ticker_tags": [
+        "SPY",
+        "CL=F"
+      ],
+      "why_it_matters": "Oil price moves cascade through energy equities, transportation costs, and headline inflation. OPEC+ supply discipline and global demand signals are the key variables to monitor."
     }
   ]
 }
