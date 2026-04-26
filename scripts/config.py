@@ -4,22 +4,22 @@ config.py — Central configuration for OPResearch data pipeline.
 
 SNAPSHOT_SYMBOLS = {
     "equities": [
-        {"label": "S&P 500",      "ticker": "SPY",  "display_ticker": "ES"},
-        {"label": "Nasdaq",       "ticker": "QQQ",  "display_ticker": "NQ"},
-        {"label": "Dow Jones",    "ticker": "DIA",  "display_ticker": "YM"},
-        {"label": "Russell 2000", "ticker": "IWM",  "display_ticker": "RTY"},
+        {"label": "S&P 500",      "ticker": "^GSPC", "display_ticker": "ES"},
+        {"label": "Nasdaq",       "ticker": "^IXIC", "display_ticker": "NQ"},
+        {"label": "Dow Jones",    "ticker": "^DJI",  "display_ticker": "YM"},
+        {"label": "Russell 2000", "ticker": "^RUT",  "display_ticker": "RTY"},
         {"label": "VIX",          "ticker": "^VIX", "display_ticker": "VIX"},
     ],
     "rates": [
-        # ^TNX = 10Y yield, ^IRX = 13-week T-bill (short end proxy)
         # These Yahoo Finance tickers report in percent directly (e.g. 4.63)
         # NOT in tenths — do NOT divide by 10
-        {"label": "US 2Y",        "ticker": "^IRX",     "display_ticker": "US2Y",  "is_yield": True},
+      
+        {"label": "US 3M",        "ticker": "^IRX",     "display_ticker": "US3M",  "is_yield": True},
+        {"label": "US 2Y",        "ticker": "^FVX",     "display_ticker": "US2Y",  "is_yield": True},
         {"label": "US 10Y",       "ticker": "^TNX",     "display_ticker": "US10Y", "is_yield": True},
-        {"label": "Japan 10Y",    "ticker": "DUMMY_JP", "display_ticker": "JP10Y", "is_yield": True, "fallback": 1.55},
-        {"label": "UK 10Y",       "ticker": "DUMMY_UK", "display_ticker": "UK10Y", "is_yield": True, "fallback": 4.40},
-        {"label": "Eurozone 10Y", "ticker": "DUMMY_DE", "display_ticker": "DE10Y", "is_yield": True, "fallback": 2.50},
-        {"label": "China 10Y",    "ticker": "DUMMY_CN", "display_ticker": "CN10Y", "is_yield": True, "fallback": 2.30},
+        {"label": "Japan 10Y",    "ticker": "^JP10Y", "display_ticker": "JP10Y", "is_yield": True, "fallback": 1.55},
+        {"label": "UK 10Y",       "ticker": "^UK10Y", "display_ticker": "UK10Y", "is_yield": True, "fallback": 4.40},
+        {"label": "China 10Y",    "ticker": "^CBON", "display_ticker": "CN10Y", "is_yield": True, "fallback": 2.30},
     ],
     "commodities": [
         {"label": "Crude Oil", "ticker": "CL=F", "display_ticker": "CL"},
