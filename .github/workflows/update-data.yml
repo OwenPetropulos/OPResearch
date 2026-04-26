@@ -51,14 +51,14 @@ jobs:
       - name: Check for changes in /data
         id: check_changes
         run: |
-          git diff --quiet data/ || echo "changes=true" >> $GITHUB_OUTPUT
+          git diff --quiet data/ || echo "changes=true"
 
       - name: Commit and push updated data files
         if: steps.check_changes.outputs.changes == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add docs/dashboard/data/
           git commit -m "chore: update market data [$(date -u +'%Y-%m-%d %H:%M UTC')]"
           git push
         env:
