@@ -21,10 +21,6 @@ from config import (
     WHY_IT_MATTERS_TEMPLATES,
 )
 
-# ============================================================
-# LOGGING
-# ============================================================
-
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -34,9 +30,6 @@ log = logging.getLogger("opr")
 
 # ============================================================
 # PATHS
-# Allow OPR_DATA_DIR env variable to override the data output
-# location so the pipeline can write directly into the folder
-# the GitHub Pages site serves from (e.g. dashboard/data/).
 # ============================================================
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -60,7 +53,6 @@ def data_path(filename: str) -> Path:
 # ============================================================
 
 def write_json(path: Path, data: dict | list, indent: int = 2) -> bool:
-    """Write data to a JSON file safely. Returns True on success."""
     try:
         DATA_DIR.mkdir(parents=True, exist_ok=True)
         tmp = path.with_suffix(".tmp")
@@ -75,7 +67,6 @@ def write_json(path: Path, data: dict | list, indent: int = 2) -> bool:
 
 
 def read_json(path: Path) -> dict | list | None:
-    """Read and return JSON from a file. Returns None on failure."""
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -89,15 +80,10 @@ def read_json(path: Path) -> dict | list | None:
 # ============================================================
 
 def utc_now_iso() -> str:
-    """Return current UTC time as ISO 8601 string."""
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def parse_timestamp(ts_string: str | None) -> datetime | None:
-    """
-    Try to parse a timestamp string into a UTC-aware datetime.
-    Handles common RSS and ISO formats. Returns None on failure.
-    """
     if not ts_string:
         return None
     formats = [
@@ -119,7 +105,6 @@ def parse_timestamp(ts_string: str | None) -> datetime | None:
 
 
 def to_iso(dt: datetime | None) -> str:
-    """Convert a datetime to ISO 8601 string. Returns empty string if None."""
     if dt is None:
         return ""
     if dt.tzinfo is None:
@@ -133,10 +118,11 @@ def to_iso(dt: datetime | None) -> str:
 
 def fetch_price_data(ticker: str, period: str = "5d", interval: str = "1d") -> dict | None:
     """
-    Fetch OHLCV data for a single ticker via yfinance.
-    Returns a dict with: price, prev_close, change, percent_change, direction.
-    Returns None if data is unavailable.
-    prev_close is always present in the returned dict.
+    Fetch price data for a single ticker.
+    Returns price, prev_close, change, percent_change, direction.
+    NOTE: For CBOE rate indices (^TNX, ^IRX), Yahoo Finance returns
+    the yield directly as a percentage (e.g. 4.63 for 4.63%).
+    Do NOT divide by 10 — that was incorrect.
     """
     try:
         tk     = yf.Ticker(ticker)
@@ -157,9 +143,9 @@ def fetch_price_data(ticker: str, period: str = "5d", interval: str = "1d") -> d
         direction  = "up" if change > 0 else ("down" if change < 0 else "flat")
 
         return {
-            "price":          round(price, 2),
-            "prev_close":     round(prev_close, 2),
-            "change":         round(change, 2),
+            "price":          round(price, 4),
+            "prev_close":     round(prev_close, 4),
+            "change":         round(change, 4),
             "percent_change": pct_change,
             "direction":      direction,
         }
@@ -170,9 +156,8 @@ def fetch_price_data(ticker: str, period: str = "5d", interval: str = "1d") -> d
 
 def fetch_prices_bulk(tickers: list[str]) -> dict[str, float]:
     """
-    Fetch the latest closing price for multiple tickers.
-    Fetches individually to avoid MultiIndex issues with yfinance v1.3+.
-    Returns a dict of {ticker: price}. Missing tickers are omitted.
+    Fetch latest closing price for multiple tickers individually.
+    Avoids MultiIndex issues with yfinance v1.3+.
     """
     results = {}
     if not tickers:
@@ -187,9 +172,8 @@ def fetch_prices_bulk(tickers: list[str]) -> dict[str, float]:
                 continue
             closes = hist["Close"].dropna()
             if closes.empty:
-                log.warning(f"No close data for {ticker}")
                 continue
-            price = round(float(closes.iloc[-1]), 2)
+            price = round(float(closes.iloc[-1]), 4)
             results[ticker] = price
             log.info(f"  {ticker}: {price}")
         except Exception as e:
@@ -203,10 +187,6 @@ def fetch_prices_bulk(tickers: list[str]) -> dict[str, float]:
 # ============================================================
 
 def fetch_feed(feed_def: dict, max_entries: int = 20) -> list[dict]:
-    """
-    Fetch and normalize entries from an RSS feed definition.
-    Returns a list of normalized story dicts.
-    """
     source_name = feed_def.get("source_name", "Unknown")
     url         = feed_def.get("url", "")
     source_type = feed_def.get("source_type", "Mainstream")
@@ -232,7 +212,7 @@ def fetch_feed(feed_def: dict, max_entries: int = 20) -> list[dict]:
 
             stories.append({
                 "title":       title,
-                "summary":     summary[:500] if summary else "",
+                "summary":     summary[:600] if summary else "",
                 "url":         link,
                 "source_name": source_name,
                 "source_type": source_type,
@@ -248,10 +228,6 @@ def fetch_feed(feed_def: dict, max_entries: int = 20) -> list[dict]:
 
 
 def deduplicate_stories(stories: list[dict]) -> list[dict]:
-    """
-    Remove duplicate stories by URL and near-duplicate titles.
-    Keeps the first occurrence (assumes already sorted by recency).
-    """
     seen_urls   = set()
     seen_hashes = set()
     unique      = []
@@ -277,7 +253,6 @@ def deduplicate_stories(stories: list[dict]) -> list[dict]:
 
 
 def sort_stories_by_time(stories: list[dict]) -> list[dict]:
-    """Sort stories descending by _dt (most recent first)."""
     return sorted(
         stories,
         key=lambda s: s.get("_dt") or datetime.min.replace(tzinfo=timezone.utc),
@@ -286,7 +261,6 @@ def sort_stories_by_time(stories: list[dict]) -> list[dict]:
 
 
 def strip_internal_fields(stories: list[dict]) -> list[dict]:
-    """Remove pipeline-internal fields (prefixed with _) before JSON output."""
     return [{k: v for k, v in s.items() if not k.startswith("_")} for s in stories]
 
 
@@ -295,7 +269,6 @@ def strip_internal_fields(stories: list[dict]) -> list[dict]:
 # ============================================================
 
 def clean_text(raw: str) -> str:
-    """Strip HTML tags, normalize whitespace, and clean common RSS artifacts."""
     if not raw:
         return ""
     text = re.sub(r"<[^>]+>", " ", raw)
@@ -310,7 +283,6 @@ def clean_text(raw: str) -> str:
 
 
 def make_story_id(title: str, source_name: str) -> str:
-    """Generate a short stable ID for a story."""
     raw = (title + source_name).lower().encode()
     return hashlib.md5(raw).hexdigest()[:8]
 
@@ -320,10 +292,6 @@ def make_story_id(title: str, source_name: str) -> str:
 # ============================================================
 
 def classify_sectors(text: str) -> list[str]:
-    """
-    Return a list of matched sector names based on keyword presence in text.
-    Falls back to ['Macro'] if nothing matches.
-    """
     lower   = text.lower()
     matched = []
     for sector, keywords in SECTOR_KEYWORDS.items():
@@ -333,10 +301,6 @@ def classify_sectors(text: str) -> list[str]:
 
 
 def classify_tickers(text: str) -> list[str]:
-    """
-    Return a list of matched ticker symbols based on keyword presence in text.
-    Capped at 6 to avoid crowding the UI.
-    """
     lower   = text.lower()
     matched = []
     for ticker, keywords in TICKER_KEYWORDS.items():
@@ -348,21 +312,33 @@ def classify_tickers(text: str) -> list[str]:
 
 def classify_macro_category(text: str) -> str:
     """
-    Return the best-matching macro category key for why_it_matters template selection.
+    Return best-matching category key for why_it_matters template selection.
+    Order matters — more specific rules checked first.
     """
     lower = text.lower()
     rules = [
-        ("inflation",        ["cpi", "inflation", "pce", "core prices", "price index"]),
-        ("fed_rates",        ["federal reserve", "fed", "fomc", "rate cut", "rate hike", "dot plot"]),
-        ("china_growth",     ["china", "pboc", "beijing", "chinese economy", "shanghai"]),
-        ("crude_oil",        ["crude", "wti", "brent", "opec", "oil price"]),
-        ("treasury_auction", ["treasury auction", "bond auction", "bid-to-cover", "10-year note"]),
-        ("risk_sentiment",   ["vix", "risk off", "put/call", "sentiment", "volatility"]),
-        ("tech_ai",          ["nvidia", "ai", "artificial intelligence", "semiconductor", "cloud", "azure"]),
-        ("financials",       ["bank", "jpmorgan", "goldman", "nim", "lending", "deposit"]),
-        ("healthcare",       ["fda", "pharma", "glp-1", "biotech", "drug approval"]),
-        ("industrials",      ["defense", "manufacturing", "pmi", "aerospace", "lockheed"]),
-        ("consumer",         ["retail", "consumer spending", "walmart", "nike", "discretionary"]),
+        ("currency_fx",      [
+            "exorbitant privilege", "dedollarization", "reserve currency",
+            "dollar hegemony", "currency war", "yen carry", "carry trade",
+            "usd/jpy", "eur/usd", "dxy", "dollar index", "currency debasement",
+            "devaluation", "dollar weakness", "dollar strength", "petrodollar",
+            "forex", "exchange rate", "fx market",
+        ]),
+        ("geopolitical",     [
+            "sanctions", "war", "conflict", "nato", "iran", "russia", "ukraine",
+            "taiwan", "geopolitical", "shadow fleet", "weapons",
+        ]),
+        ("inflation",        ["cpi", "inflation", "pce", "core prices", "price index", "stagflation"]),
+        ("fed_rates",        ["federal reserve", "fed", "fomc", "rate cut", "rate hike", "dot plot", "powell", "warsh", "fed chair"]),
+        ("china_growth",     ["china", "pboc", "beijing", "chinese economy", "shanghai", "caixin"]),
+        ("crude_oil",        ["crude", "wti", "brent", "opec", "oil price", "tanker", "oil inventory"]),
+        ("treasury_auction", ["treasury auction", "bond auction", "bid-to-cover", "10-year note", "debt ceiling"]),
+        ("risk_sentiment",   ["vix", "risk off", "put/call", "volatility", "gamma", "dealer positioning"]),
+        ("tech_ai",          ["nvidia", "ai", "artificial intelligence", "semiconductor", "cloud", "azure", "gpu", "data center"]),
+        ("financials",       ["bank", "jpmorgan", "goldman", "nim", "lending", "deposit", "credit", "fomc"]),
+        ("healthcare",       ["fda", "pharma", "glp-1", "biotech", "drug approval", "obesity", "clinical"]),
+        ("industrials",      ["defense", "manufacturing", "pmi", "aerospace", "lockheed", "pentagon"]),
+        ("consumer",         ["retail", "consumer spending", "walmart", "nike", "discretionary", "personal finance"]),
     ]
     for category, keywords in rules:
         if any(kw in lower for kw in keywords):
@@ -371,16 +347,11 @@ def classify_macro_category(text: str) -> str:
 
 
 def get_why_it_matters(text: str) -> str:
-    """Return a deterministic why_it_matters string based on story text."""
     category = classify_macro_category(text)
     return WHY_IT_MATTERS_TEMPLATES.get(category, WHY_IT_MATTERS_TEMPLATES["default"])
 
 
 def score_sentiment(stories: list[dict]) -> str:
-    """
-    Score a list of stories and return 'Positive', 'Negative', or 'Neutral'.
-    Uses simple keyword counting across combined title + summary text.
-    """
     pos_score = 0
     neg_score = 0
     for story in stories:
