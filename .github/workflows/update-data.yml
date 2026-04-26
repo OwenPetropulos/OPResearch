@@ -43,6 +43,8 @@ jobs:
       - name: Run data pipeline
         run: |
           python scripts/run_all.py
+        env: 
+          OPR_DATA_DIR: dashboard/data
         # Pipeline runs all generators and prints a summary.
         # Individual script failures are logged but do not abort the job
         # unless run_all.py itself exits with code 1 (all failures).
