@@ -8,45 +8,49 @@ All scripts import from here — nothing is hardcoded in the generators.
 # ============================================================
 # MARKET SNAPSHOT SYMBOLS
 # Uses Yahoo Finance ticker symbols.
+# Tickers prefixed with DUMMY_ are never fetched — they use
+# the fallback value directly. Use these for sovereign yields
+# that have no reliable free Yahoo Finance symbol.
 # ============================================================
 
 SNAPSHOT_SYMBOLS = {
     "equities": [
-        {"label": "S&P 500",       "ticker": "SPY",   "display_ticker": "ES"},
-        {"label": "Nasdaq",        "ticker": "QQQ",   "display_ticker": "NQ"},
-        {"label": "Dow Jones",     "ticker": "DIA",   "display_ticker": "YM"},
-        {"label": "Russell 2000",  "ticker": "IWM",   "display_ticker": "RTY"},
-        {"label": "VIX",           "ticker": "^VIX",  "display_ticker": "VIX"},
+        {"label": "S&P 500",      "ticker": "SPY",  "display_ticker": "ES"},
+        {"label": "Nasdaq",       "ticker": "QQQ",  "display_ticker": "NQ"},
+        {"label": "Dow Jones",    "ticker": "DIA",  "display_ticker": "YM"},
+        {"label": "Russell 2000", "ticker": "IWM",  "display_ticker": "RTY"},
+        {"label": "VIX",          "ticker": "^VIX", "display_ticker": "VIX"},
     ],
     "rates": [
-        # ETF proxies — direct sovereign yield feeds are unreliable from free sources.
-        # SHY ~ 1-3Y UST, IEF ~ 7-10Y UST. Yield is approximated from price movement.
-        # For reference yield levels, we use static fallbacks with live delta adjustments.
-        {"label": "US 2Y",       "ticker": "^IRX",  "display_ticker": "US2Y",  "is_yield": True},
-        {"label": "US 10Y",      "ticker": "^TNX",  "display_ticker": "US10Y", "is_yield": True},
-        {"label": "Japan 10Y",   "ticker": "^JGBL", "display_ticker": "JP10Y", "is_yield": True,  "fallback": 1.55},
-        {"label": "UK 10Y",      "ticker": "^TMBMKGB-10Y", "display_ticker": "UK10Y", "is_yield": True, "fallback": 4.40},
-        {"label": "Eurozone 10Y","ticker": "^TMBMKDE-10Y", "display_ticker": "DE10Y", "is_yield": True, "fallback": 2.50},
-        {"label": "China 10Y",   "ticker": "^TMBMKCN-10Y", "display_ticker": "CN10Y", "is_yield": True, "fallback": 2.30},
+        # ^IRX = 13-week T-bill (proxy for short end), ^TNX = 10Y yield.
+        # Both report in tenths of a percent on Yahoo (e.g. 46.3 = 4.63%).
+        # International sovereign yields have no reliable free ticker —
+        # using DUMMY_ prefix with static fallbacks.
+        {"label": "US 2Y",        "ticker": "^IRX",      "display_ticker": "US2Y",  "is_yield": True},
+        {"label": "US 10Y",       "ticker": "^TNX",      "display_ticker": "US10Y", "is_yield": True},
+        {"label": "Japan 10Y",    "ticker": "DUMMY_JP",  "display_ticker": "JP10Y", "is_yield": True, "fallback": 1.55},
+        {"label": "UK 10Y",       "ticker": "DUMMY_UK",  "display_ticker": "UK10Y", "is_yield": True, "fallback": 4.40},
+        {"label": "Eurozone 10Y", "ticker": "DUMMY_DE",  "display_ticker": "DE10Y", "is_yield": True, "fallback": 2.50},
+        {"label": "China 10Y",    "ticker": "DUMMY_CN",  "display_ticker": "CN10Y", "is_yield": True, "fallback": 2.30},
     ],
     "commodities": [
-        {"label": "Crude Oil",  "ticker": "CL=F",  "display_ticker": "CL"},
-        {"label": "Gold",       "ticker": "GC=F",  "display_ticker": "GC"},
-        {"label": "Silver",     "ticker": "SI=F",  "display_ticker": "SI"},
-        {"label": "Copper",     "ticker": "HG=F",  "display_ticker": "HG"},
+        {"label": "Crude Oil", "ticker": "CL=F", "display_ticker": "CL"},
+        {"label": "Gold",      "ticker": "GC=F", "display_ticker": "GC"},
+        {"label": "Silver",    "ticker": "SI=F", "display_ticker": "SI"},
+        {"label": "Copper",    "ticker": "HG=F", "display_ticker": "HG"},
     ],
     "global_markets": {
         "asia": [
-            {"label": "Nikkei 225",   "ticker": "^N225"},
-            {"label": "Hang Seng",    "ticker": "^HSI"},
-            {"label": "Shanghai Comp","ticker": "000001.SS"},
-            {"label": "KOSPI",        "ticker": "^KS11"},
+            {"label": "Nikkei 225",    "ticker": "^N225"},
+            {"label": "Hang Seng",     "ticker": "^HSI"},
+            {"label": "Shanghai Comp", "ticker": "000001.SS"},
+            {"label": "KOSPI",         "ticker": "^KS11"},
         ],
         "europe": [
-            {"label": "FTSE 100",     "ticker": "^FTSE"},
-            {"label": "DAX",          "ticker": "^GDAXI"},
-            {"label": "CAC 40",       "ticker": "^FCHI"},
-            {"label": "Euro Stoxx 50","ticker": "^STOXX50E"},
+            {"label": "FTSE 100",      "ticker": "^FTSE"},
+            {"label": "DAX",           "ticker": "^GDAXI"},
+            {"label": "CAC 40",        "ticker": "^FCHI"},
+            {"label": "Euro Stoxx 50", "ticker": "^STOXX50E"},
         ],
     },
 }
@@ -54,6 +58,7 @@ SNAPSHOT_SYMBOLS = {
 # ============================================================
 # PORTFOLIO PRICE TICKER UNIVERSE
 # All tickers we want live prices for in portfolio_prices.json.
+# CASH is always 1.00 and is added programmatically, not fetched.
 # ============================================================
 
 PRICE_TICKERS = [
@@ -74,59 +79,57 @@ PRICE_TICKERS = [
     # Commodity ETFs
     "USO", "SLV", "COPX",
 ]
-# CASH is always 1.00 — added programmatically, not fetched.
 
 # ============================================================
 # RSS FEED DEFINITIONS
-# source_name, url, source_type
-# source_type must be one of: Mainstream | Reddit | Macro Data | Filing / IR | Niche / Blog
+# source_type must be one of:
+#   Mainstream | Reddit | Macro Data | Filing / IR | Niche / Blog
 # ============================================================
 
 RSS_FEEDS = [
-    # Mainstream financial news
     {
         "source_name": "Reuters Business",
-        "url": "https://feeds.reuters.com/reuters/businessNews",
+        "url":         "https://feeds.reuters.com/reuters/businessNews",
         "source_type": "Mainstream",
     },
     {
         "source_name": "Reuters Markets",
-        "url": "https://feeds.reuters.com/reuters/financialsNews",
+        "url":         "https://feeds.reuters.com/reuters/financialsNews",
         "source_type": "Mainstream",
     },
     {
         "source_name": "CNBC Top News",
-        "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114",
+        "url":         "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114",
         "source_type": "Mainstream",
     },
     {
         "source_name": "MarketWatch",
-        "url": "https://feeds.marketwatch.com/marketwatch/topstories/",
+        "url":         "https://feeds.marketwatch.com/marketwatch/topstories/",
         "source_type": "Mainstream",
     },
     {
         "source_name": "Seeking Alpha",
-        "url": "https://seekingalpha.com/feed.xml",
+        "url":         "https://seekingalpha.com/feed.xml",
         "source_type": "Niche / Blog",
     },
     {
         "source_name": "Calculated Risk",
-        "url": "https://feeds.feedburner.com/CalculatedRisk",
+        "url":         "https://feeds.feedburner.com/CalculatedRisk",
         "source_type": "Niche / Blog",
     },
     {
         "source_name": "Federal Reserve",
-        "url": "https://www.federalreserve.gov/feeds/press_all.xml",
+        "url":         "https://www.federalreserve.gov/feeds/press_all.xml",
         "source_type": "Macro Data",
     },
     {
         "source_name": "U.S. Treasury",
-        "url": "https://home.treasury.gov/system/files/rss/press-releases.rss",
+        "url":         "https://home.treasury.gov/system/files/rss/press-releases.rss",
         "source_type": "Macro Data",
     },
     {
         "source_name": "SEC EDGAR",
-        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=8-K&dateb=&owner=include&count=20&output=atom",
+        "url":         "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=8-K&dateb=&owner=include&count=20&output=atom",
         "source_type": "Filing / IR",
     },
 ]
@@ -157,7 +160,7 @@ SECTOR_KEYWORDS = {
         "semiconductor", "chip", "ai", "artificial intelligence", "cloud",
         "azure", "aws", "software", "data center", "gpu", "machine learning",
         "openai", "anthropic", "llm", "cyber", "cybersecurity", "saas",
-        "tech sector", "venture capital", "startup", "ipo tech",
+        "tech sector", "venture capital", "startup",
     ],
     "Industrials": [
         "defense", "aerospace", "boeing", "lockheed", "raytheon", "northrop",
@@ -167,7 +170,7 @@ SECTOR_KEYWORDS = {
         "freight", "railroad", "logistics", "construction",
     ],
     "Consumer": [
-        "retail", "consumer spending", "walmart", "target", "amazon retail",
+        "retail", "consumer spending", "walmart", "target",
         "nike", "lululemon", "consumer confidence", "holiday sales",
         "e-commerce", "discretionary", "staples", "restaurants", "travel",
         "airline", "hotel", "leisure", "tariff consumer", "price hike",
@@ -192,7 +195,6 @@ SECTOR_KEYWORDS = {
 # ============================================================
 # TICKER KEYWORD MAPS
 # Maps keywords in headlines/summaries to ticker symbols.
-# Used to populate ticker_tags in story output.
 # ============================================================
 
 TICKER_KEYWORDS = {
@@ -241,18 +243,17 @@ TICKER_KEYWORDS = {
 # ============================================================
 
 SECTOR_DEFAULT_TICKERS = {
-    "Energy":      {"key": ["XOM", "CVX", "OXY", "LNG", "RIG"],     "trending": ["OXY", "RIG"]},
-    "Financials":  {"key": ["JPM", "GS", "BAC", "MS", "KRE"],       "trending": ["JPM", "GS"]},
-    "Technology":  {"key": ["NVDA", "MSFT", "GOOGL", "AMZN", "AMD"],"trending": ["NVDA", "MSFT"]},
-    "Industrials": {"key": ["GE", "RTX", "LMT", "NOC", "HON"],      "trending": ["LMT", "RTX"]},
-    "Consumer":    {"key": ["NKE", "WMT", "COST", "TGT", "ONON"],   "trending": ["NKE", "WMT"]},
-    "Healthcare":  {"key": ["LLY", "NVO", "AMGN", "PFE", "VRTX"],   "trending": ["LLY", "NVO"]},
-    "Macro":       {"key": ["TLT", "GLD", "TIP", "SPY", "VIX"],     "trending": ["GLD", "VIX"]},
+    "Energy":      {"key": ["XOM", "CVX", "OXY", "LNG", "RIG"],      "trending": ["OXY", "RIG"]},
+    "Financials":  {"key": ["JPM", "GS", "BAC", "MS", "KRE"],        "trending": ["JPM", "GS"]},
+    "Technology":  {"key": ["NVDA", "MSFT", "GOOGL", "AMZN", "AMD"], "trending": ["NVDA", "MSFT"]},
+    "Industrials": {"key": ["GE", "RTX", "LMT", "NOC", "HON"],       "trending": ["LMT", "RTX"]},
+    "Consumer":    {"key": ["NKE", "WMT", "COST", "TGT", "ONON"],    "trending": ["NKE", "WMT"]},
+    "Healthcare":  {"key": ["LLY", "NVO", "AMGN", "PFE", "VRTX"],    "trending": ["LLY", "NVO"]},
+    "Macro":       {"key": ["TLT", "GLD", "TIP", "SPY", "VIX"],      "trending": ["GLD", "VIX"]},
 }
 
 # ============================================================
-# SECTOR SENTIMENT KEYWORDS
-# Used to score sentiment in story headlines/summaries.
+# SENTIMENT SCORING KEYWORDS
 # ============================================================
 
 POSITIVE_WORDS = [

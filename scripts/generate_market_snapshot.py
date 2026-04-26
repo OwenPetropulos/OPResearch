@@ -14,6 +14,13 @@ from common import (
 )
 from config import SNAPSHOT_SYMBOLS
 
+# ============================================================
+# CBOE RATE INDEX TICKERS
+# These report in tenths of a percent (e.g. 46.3 = 4.63% yield).
+# ============================================================
+
+CBOE_RATE_TICKERS = {"^TNX", "^IRX", "^TYX", "^FVX"}
+
 
 # ============================================================
 # MARKET STATUS
@@ -22,34 +29,25 @@ from config import SNAPSHOT_SYMBOLS
 def infer_market_status() -> str:
     """
     Infer U.S. market status from current UTC time.
-    NYSE hours: 14:30–21:00 UTC (Mon–Fri).
-    Pre-market: 09:30–14:30 UTC. After-hours: 21:00–01:00 UTC.
+    NYSE hours: 14:30-21:00 UTC (Mon-Fri).
+    Pre-market: 09:30-14:30 UTC.
+    After-hours: 21:00-01:00 UTC.
     """
     now     = datetime.now(timezone.utc)
     weekday = now.weekday()  # 0=Mon, 6=Sun
-    hour    = now.hour
-    minute  = now.minute
-    hm      = hour * 60 + minute  # minutes since midnight UTC
+    hm      = now.hour * 60 + now.minute  # minutes since midnight UTC
 
     if weekday >= 5:
         return "Closed (Weekend)"
 
-    if 570 <= hm < 870:     # 09:30–14:30 UTC
+    if 570 <= hm < 870:          # 09:30-14:30 UTC
         return "Pre-Market"
-    elif 870 <= hm < 1260:  # 14:30–21:00 UTC
+    elif 870 <= hm < 1260:       # 14:30-21:00 UTC
         return "Open"
-    elif hm >= 1260 or hm < 60:  # 21:00–01:00 UTC
+    elif hm >= 1260 or hm < 60:  # 21:00-01:00 UTC
         return "After-Hours"
     else:
         return "Closed"
-
-
-# ============================================================
-# CBOE RATE INDEX TICKERS
-# These report in units of 0.1% (e.g. 46.3 = 4.63% yield).
-# ============================================================
-
-CBOE_RATE_TICKERS = {"^TNX", "^IRX", "^TYX", "^FVX"}
 
 
 # ============================================================
@@ -78,16 +76,34 @@ def build_simple_item(cfg: dict) -> dict | None:
 def build_rate_item(cfg: dict) -> dict | None:
     """
     Build a snapshot item for a yield/rate.
-    Handles CBOE rate index scaling and international yield fallbacks.
+
+    - Tickers prefixed with DUMMY_ skip the fetch entirely and return
+      the configured fallback value with zero change.
+    - CBOE rate indices (^TNX, ^IRX etc.) report in tenths of a percent
+      so we divide by 10 to get the actual yield percentage.
+    - International tickers with no reliable free symbol use fallback.
     """
-    data = fetch_price_data(cfg["ticker"])
+    ticker = cfg["ticker"]
+
+    # Use static fallback for placeholder tickers — no fetch attempted
+    if ticker.startswith("DUMMY_"):
+        return {
+            "label":          cfg["label"],
+            "ticker":         cfg.get("display_ticker", ticker),
+            "price":          cfg.get("fallback", 0.0),
+            "change":         0.0,
+            "percent_change": 0.0,
+            "direction":      "flat",
+        }
+
+    data = fetch_price_data(ticker)
 
     if data is None:
-        # Use fallback value if available in config
+        # Fall back to static value if configured
         if "fallback" in cfg:
             return {
                 "label":          cfg["label"],
-                "ticker":         cfg.get("display_ticker", cfg["ticker"]),
+                "ticker":         cfg.get("display_ticker", ticker),
                 "price":          cfg["fallback"],
                 "change":         0.0,
                 "percent_change": 0.0,
@@ -96,9 +112,9 @@ def build_rate_item(cfg: dict) -> dict | None:
         return None
 
     # CBOE rate indices report in tenths of a percent — divide by 10
-    if cfg["ticker"] in CBOE_RATE_TICKERS:
+    if ticker in CBOE_RATE_TICKERS:
         price      = round(data["price"] / 10, 3)
-        prev       = round(data["prev_close"] / 10, 3) if "prev_close" in data else price
+        prev       = round(data["prev_close"] / 10, 3)
         change     = round(price - prev, 3)
         pct_change = round((change / prev) * 100, 2) if prev else 0.0
         direction  = "up" if change > 0 else ("down" if change < 0 else "flat")
@@ -110,7 +126,7 @@ def build_rate_item(cfg: dict) -> dict | None:
 
     return {
         "label":          cfg["label"],
-        "ticker":         cfg.get("display_ticker", cfg["ticker"]),
+        "ticker":         cfg.get("display_ticker", ticker),
         "price":          price,
         "change":         change,
         "percent_change": pct_change,
@@ -119,17 +135,17 @@ def build_rate_item(cfg: dict) -> dict | None:
 
 
 # ============================================================
-# MACRO SUMMARY
+# MACRO SUMMARY (rule-based, no LLM)
 # ============================================================
 
 def build_macro_summary(equities: list, rates: list, commodities: list) -> str:
     """
     Generate a one-line rule-based macro summary from fetched data.
-    All logic is deterministic — no LLM calls.
+    All logic is deterministic.
     """
     lines = []
 
-    # Equity tone (exclude VIX from average)
+    # Equity tone — exclude VIX from directional average
     eq_changes = [e["percent_change"] for e in equities if e.get("ticker") != "VIX"]
     vix_items  = [e for e in equities if e.get("ticker") == "VIX"]
     vix_level  = vix_items[0]["price"] if vix_items else None
@@ -149,7 +165,7 @@ def build_macro_summary(equities: list, rates: list, commodities: list) -> str:
         elif vix_level >= 18:
             lines.append(f"VIX at {vix_level:.1f} — market caution elevated")
 
-    # 10Y rate tone
+    # 10Y yield tone
     us10y_items = [r for r in rates if r.get("ticker") == "US10Y"]
     if us10y_items:
         r10 = us10y_items[0]
@@ -238,7 +254,7 @@ def main():
             else:
                 log.warning(f"Skipping {region} index: {cfg['label']}")
 
-    # Derive macro summary from fetched data
+    # Derive macro summary from what was actually fetched
     snapshot["macro_summary"] = build_macro_summary(
         snapshot["equities"],
         snapshot["rates"],
@@ -246,8 +262,11 @@ def main():
     )
 
     log.info(f"Market status: {snapshot['market_status']}")
-    log.info(f"Equities: {len(snapshot['equities'])} | Rates: {len(snapshot['rates'])} | "
-             f"Commodities: {len(snapshot['commodities'])}")
+    log.info(
+        f"Equities: {len(snapshot['equities'])} | "
+        f"Rates: {len(snapshot['rates'])} | "
+        f"Commodities: {len(snapshot['commodities'])}"
+    )
 
     success = write_json(data_path("market_snapshot.json"), snapshot)
     sys.exit(0 if success else 1)
