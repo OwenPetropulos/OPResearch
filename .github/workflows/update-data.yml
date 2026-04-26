@@ -42,11 +42,6 @@ jobs:
       - name: Detect data directory
         id: detect_dir
         run: |
-          # Determine where the JSON data files actually live so we write
-          # to the same location the GitHub Pages site fetches from.
-          # Priority:
-          #   1. dashboard/data/  (site lives under /dashboard/)
-          #   2. data/            (site lives at repo root)
           if [ -d "dashboard/data" ]; then
             echo "data_dir=dashboard/data" >> $GITHUB_OUTPUT
             echo "git_path=dashboard/data/" >> $GITHUB_OUTPUT
@@ -61,7 +56,6 @@ jobs:
         run: |
           python scripts/run_all.py
         env:
-          # Tell common.py where to write the JSON files
           OPR_DATA_DIR: ${{ steps.detect_dir.outputs.data_dir }}
 
       - name: Check for changes in data directory
@@ -81,10 +75,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: No changes detected — skipping commit
-        if: steps.check_changes.outputs.changes != 'true'
-        run: echo "No data changes detected. Skipping commit."
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: No changes — skipping commit
         if: steps.check_changes.outputs.changes != 'true'
         run: echo "No data changes detected. Skipping commit."
