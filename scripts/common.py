@@ -36,8 +36,7 @@ log = logging.getLogger("opr")
 # PATHS
 # ============================================================
 
-REPO_ROOT = Path(__file__).resolve().parent.parent 
-DATA_DIR = REPO_ROOT / "docs" / "dashboard" / "data"
+REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR  = REPO_ROOT / "data"
 
 
@@ -126,23 +125,29 @@ def fetch_price_data(ticker: str, period: str = "5d", interval: str = "1d") -> d
     Fetch OHLCV data for a single ticker via yfinance.
     Returns a dict with: price, prev_close, change, percent_change, direction.
     Returns None if data is unavailable.
+    prev_close is always present in the returned dict.
     """
     try:
-        tk   = yf.Ticker(ticker)
-        hist = tk.history(period=period, interval=interval, auto_adjust=True)
+        tk     = yf.Ticker(ticker)
+        hist   = tk.history(period=period, interval=interval, auto_adjust=True)
         if hist.empty or len(hist) < 1:
             log.warning(f"No price history for {ticker}")
             return None
 
-        price      = float(hist["Close"].iloc[-1])
-        prev_close = float(hist["Close"].iloc[-2]) if len(hist) >= 2 else price
+        closes     = hist["Close"].dropna()
+        if closes.empty:
+            log.warning(f"No close prices for {ticker}")
+            return None
+
+        price      = float(closes.iloc[-1])
+        prev_close = float(closes.iloc[-2]) if len(closes) >= 2 else price
         change     = round(price - prev_close, 4)
         pct_change = round((change / prev_close) * 100, 2) if prev_close else 0.0
         direction  = "up" if change > 0 else ("down" if change < 0 else "flat")
 
         return {
             "price":          round(price, 2),
-            "prev_close":     round(prev_close, 2),
+            "prev_close":     round(prev_close, 2),  # always present
             "change":         round(change, 2),
             "percent_change": pct_change,
             "direction":      direction,
@@ -154,36 +159,31 @@ def fetch_price_data(ticker: str, period: str = "5d", interval: str = "1d") -> d
 
 def fetch_prices_bulk(tickers: list[str]) -> dict[str, float]:
     """
-    Fetch the latest closing price for multiple tickers at once.
+    Fetch the latest closing price for multiple tickers.
+    Fetches individually to avoid MultiIndex issues with yfinance v1.3+.
     Returns a dict of {ticker: price}. Missing tickers are omitted.
     """
     results = {}
     if not tickers:
         return results
-    try:
-        # Download all at once for efficiency
-        raw = yf.download(
-            tickers,
-            period="5d",
-            interval="1d",
-            auto_adjust=True,
-            progress=False,
-            group_by="ticker",
-        )
-        for ticker in tickers:
-            try:
-                if len(tickers) == 1:
-                    closes = raw["Close"]
-                else:
-                    closes = raw["Close"][ticker]
-                closes = closes.dropna()
-                if closes.empty:
-                    continue
-                results[ticker] = round(float(closes.iloc[-1]), 2)
-            except Exception as e:
-                log.warning(f"Price extraction failed for {ticker}: {e}")
-    except Exception as e:
-        log.error(f"Bulk yfinance download failed: {e}")
+
+    for ticker in tickers:
+        try:
+            tk     = yf.Ticker(ticker)
+            hist   = tk.history(period="5d", interval="1d", auto_adjust=True)
+            if hist.empty:
+                log.warning(f"No data for {ticker}")
+                continue
+            closes = hist["Close"].dropna()
+            if closes.empty:
+                log.warning(f"No close data for {ticker}")
+                continue
+            price = round(float(closes.iloc[-1]), 2)
+            results[ticker] = price
+            log.info(f"  {ticker}: {price}")
+        except Exception as e:
+            log.warning(f"Price fetch failed for {ticker}: {e}")
+
     return results
 
 
@@ -227,7 +227,7 @@ def fetch_feed(feed_def: dict, max_entries: int = 20) -> list[dict]:
                 "source_name": source_name,
                 "source_type": source_type,
                 "timestamp":   timestamp,
-                "_dt":         dt,  # for sorting — stripped before output
+                "_dt":         dt,  # internal field for sorting — stripped before output
             })
 
         log.info(f"Fetched {len(stories)} entries from {source_name}")
@@ -250,11 +250,9 @@ def deduplicate_stories(stories: list[dict]) -> list[dict]:
         url   = s.get("url", "")
         title = s.get("title", "")
 
-        # Deduplicate by URL
         if url and url in seen_urls:
             continue
 
-        # Deduplicate by title fingerprint (first 80 chars, lowercased, stripped)
         title_key = re.sub(r"\s+", " ", title.lower().strip())[:80]
         h         = hashlib.md5(title_key.encode()).hexdigest()
         if h in seen_hashes:
@@ -269,7 +267,7 @@ def deduplicate_stories(stories: list[dict]) -> list[dict]:
 
 
 def sort_stories_by_time(stories: list[dict]) -> list[dict]:
-    """Sort stories descending by _dt (most recent first). Missing timestamps sort to end."""
+    """Sort stories descending by _dt (most recent first)."""
     return sorted(
         stories,
         key=lambda s: s.get("_dt") or datetime.min.replace(tzinfo=timezone.utc),
@@ -290,13 +288,13 @@ def clean_text(raw: str) -> str:
     """Strip HTML tags, normalize whitespace, and clean common RSS artifacts."""
     if not raw:
         return ""
-    # Strip HTML
     text = re.sub(r"<[^>]+>", " ", raw)
-    # Decode common HTML entities
-    entities = {"&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"', "&#39;": "'", "&nbsp;": " "}
+    entities = {
+        "&amp;": "&", "&lt;": "<", "&gt;": ">",
+        "&quot;": '"', "&#39;": "'", "&nbsp;": " ",
+    }
     for ent, char in entities.items():
         text = text.replace(ent, char)
-    # Normalize whitespace
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
@@ -314,9 +312,9 @@ def make_story_id(title: str, source_name: str) -> str:
 def classify_sectors(text: str) -> list[str]:
     """
     Return a list of matched sector names based on keyword presence in text.
-    Text should be the combined title + summary (lowercased by caller).
+    Falls back to ['Macro'] if nothing matches.
     """
-    lower = text.lower()
+    lower   = text.lower()
     matched = []
     for sector, keywords in SECTOR_KEYWORDS.items():
         if any(kw in lower for kw in keywords):
@@ -327,14 +325,15 @@ def classify_sectors(text: str) -> list[str]:
 def classify_tickers(text: str) -> list[str]:
     """
     Return a list of matched ticker symbols based on keyword presence in text.
+    Capped at 6 to avoid crowding the UI.
     """
-    lower = text.lower()
+    lower   = text.lower()
     matched = []
     for ticker, keywords in TICKER_KEYWORDS.items():
         if any(kw in lower for kw in keywords):
             if ticker not in matched:
                 matched.append(ticker)
-    return matched[:6]  # Cap at 6 to avoid crowding UI
+    return matched[:6]
 
 
 def classify_macro_category(text: str) -> str:
