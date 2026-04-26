@@ -1,25 +1,18 @@
 """
 generate_market_snapshot.py
 
-Fetches live market data via yfinance and writes data/market_snapshot.json.
-Produces: equities, rates, commodities, global_markets, macro_summary, market_status.
+Fetches live market data and writes data/market_snapshot.json.
+Includes equities, rates, commodities, FX, and global markets.
+
+RATE INDEX NOTE: Yahoo Finance ^TNX and ^IRX return yield values
+directly as percentages (e.g. 4.63 = 4.63%). Do NOT divide by 10.
 """
 
 import sys
 from datetime import datetime, timezone
 
-from common import (
-    data_path, write_json, utc_now_iso,
-    fetch_price_data, log,
-)
-from config import SNAPSHOT_SYMBOLS
-
-# ============================================================
-# CBOE RATE INDEX TICKERS
-# These report in tenths of a percent (e.g. 46.3 = 4.63% yield).
-# ============================================================
-
-CBOE_RATE_TICKERS = {"^TNX", "^IRX", "^TYX", "^FVX"}
+from common import data_path, write_json, utc_now_iso, fetch_price_data, log
+from config import SNAPSHOT_SYMBOLS, CBOE_RATE_TICKERS
 
 
 # ============================================================
@@ -27,24 +20,17 @@ CBOE_RATE_TICKERS = {"^TNX", "^IRX", "^TYX", "^FVX"}
 # ============================================================
 
 def infer_market_status() -> str:
-    """
-    Infer U.S. market status from current UTC time.
-    NYSE hours: 14:30-21:00 UTC (Mon-Fri).
-    Pre-market: 09:30-14:30 UTC.
-    After-hours: 21:00-01:00 UTC.
-    """
     now     = datetime.now(timezone.utc)
-    weekday = now.weekday()  # 0=Mon, 6=Sun
-    hm      = now.hour * 60 + now.minute  # minutes since midnight UTC
+    weekday = now.weekday()
+    hm      = now.hour * 60 + now.minute
 
     if weekday >= 5:
         return "Closed (Weekend)"
-
-    if 570 <= hm < 870:          # 09:30-14:30 UTC
+    if 570 <= hm < 870:
         return "Pre-Market"
-    elif 870 <= hm < 1260:       # 14:30-21:00 UTC
+    elif 870 <= hm < 1260:
         return "Open"
-    elif hm >= 1260 or hm < 60:  # 21:00-01:00 UTC
+    elif hm >= 1260 or hm < 60:
         return "After-Hours"
     else:
         return "Closed"
@@ -55,19 +41,14 @@ def infer_market_status() -> str:
 # ============================================================
 
 def build_simple_item(cfg: dict) -> dict | None:
-    """
-    Build a snapshot item for an equity, commodity, or global index.
-    cfg keys: label, ticker, (optional) display_ticker.
-    """
     data = fetch_price_data(cfg["ticker"])
     if data is None:
         return None
-
     return {
         "label":          cfg["label"],
         "ticker":         cfg.get("display_ticker", cfg["ticker"]),
-        "price":          data["price"],
-        "change":         data["change"],
+        "price":          round(data["price"], 2),
+        "change":         round(data["change"], 2),
         "percent_change": data["percent_change"],
         "direction":      data["direction"],
     }
@@ -75,17 +56,12 @@ def build_simple_item(cfg: dict) -> dict | None:
 
 def build_rate_item(cfg: dict) -> dict | None:
     """
-    Build a snapshot item for a yield/rate.
-
-    - Tickers prefixed with DUMMY_ skip the fetch entirely and return
-      the configured fallback value with zero change.
-    - CBOE rate indices (^TNX, ^IRX etc.) report in tenths of a percent
-      so we divide by 10 to get the actual yield percentage.
-    - International tickers with no reliable free symbol use fallback.
+    Build a rate/yield snapshot item.
+    DUMMY_ prefix = use static fallback, no fetch.
+    CBOE tickers return yield directly as percent — no scaling needed.
     """
     ticker = cfg["ticker"]
 
-    # Use static fallback for placeholder tickers — no fetch attempted
     if ticker.startswith("DUMMY_"):
         return {
             "label":          cfg["label"],
@@ -99,7 +75,6 @@ def build_rate_item(cfg: dict) -> dict | None:
     data = fetch_price_data(ticker)
 
     if data is None:
-        # Fall back to static value if configured
         if "fallback" in cfg:
             return {
                 "label":          cfg["label"],
@@ -111,18 +86,13 @@ def build_rate_item(cfg: dict) -> dict | None:
             }
         return None
 
-    # CBOE rate indices report in tenths of a percent — divide by 10
-    if ticker in CBOE_RATE_TICKERS:
-        price      = round(data["price"] / 10, 3)
-        prev       = round(data["prev_close"] / 10, 3)
-        change     = round(price - prev, 3)
-        pct_change = round((change / prev) * 100, 2) if prev else 0.0
-        direction  = "up" if change > 0 else ("down" if change < 0 else "flat")
-    else:
-        price      = data["price"]
-        change     = data["change"]
-        pct_change = data["percent_change"]
-        direction  = data["direction"]
+    # ^TNX and ^IRX already return percent values directly
+    # e.g. 4.63 means 4.63% — no division needed
+    price      = round(data["price"], 3)
+    prev       = round(data["prev_close"], 3)
+    change     = round(price - prev, 3)
+    pct_change = round((change / prev) * 100, 2) if prev else 0.0
+    direction  = "up" if change > 0 else ("down" if change < 0 else "flat")
 
     return {
         "label":          cfg["label"],
@@ -134,18 +104,28 @@ def build_rate_item(cfg: dict) -> dict | None:
     }
 
 
+def build_fx_item(cfg: dict) -> dict | None:
+    """Build a snapshot item for an FX pair."""
+    data = fetch_price_data(cfg["ticker"])
+    if data is None:
+        return None
+    return {
+        "label":          cfg["label"],
+        "ticker":         cfg.get("display_ticker", cfg["ticker"]),
+        "price":          round(data["price"], 4),
+        "change":         round(data["change"], 4),
+        "percent_change": data["percent_change"],
+        "direction":      data["direction"],
+    }
+
+
 # ============================================================
-# MACRO SUMMARY (rule-based, no LLM)
+# MACRO SUMMARY
 # ============================================================
 
-def build_macro_summary(equities: list, rates: list, commodities: list) -> str:
-    """
-    Generate a one-line rule-based macro summary from fetched data.
-    All logic is deterministic.
-    """
+def build_macro_summary(equities, rates, commodities, fx) -> str:
     lines = []
 
-    # Equity tone — exclude VIX from directional average
     eq_changes = [e["percent_change"] for e in equities if e.get("ticker") != "VIX"]
     vix_items  = [e for e in equities if e.get("ticker") == "VIX"]
     vix_level  = vix_items[0]["price"] if vix_items else None
@@ -165,22 +145,16 @@ def build_macro_summary(equities: list, rates: list, commodities: list) -> str:
         elif vix_level >= 18:
             lines.append(f"VIX at {vix_level:.1f} — market caution elevated")
 
-    # 10Y yield tone
     us10y_items = [r for r in rates if r.get("ticker") == "US10Y"]
     if us10y_items:
         r10 = us10y_items[0]
         if r10["change"] >= 0.04:
-            lines.append(
-                f"10Y yields rising ({r10['price']:.2f}%), adding pressure to duration assets"
-            )
+            lines.append(f"10Y yields rising ({r10['price']:.2f}%), pressure on duration assets")
         elif r10["change"] <= -0.04:
-            lines.append(
-                f"10Y yields easing ({r10['price']:.2f}%), providing rate relief"
-            )
+            lines.append(f"10Y yields easing ({r10['price']:.2f}%), rate relief emerging")
         else:
             lines.append(f"Rates broadly stable; 10Y at {r10['price']:.2f}%")
 
-    # Gold tone
     gold_items = [c for c in commodities if c.get("ticker") == "GC"]
     if gold_items:
         g = gold_items[0]
@@ -189,7 +163,6 @@ def build_macro_summary(equities: list, rates: list, commodities: list) -> str:
         elif g["percent_change"] <= -0.5:
             lines.append(f"Gold retreating ({g['percent_change']:+.1f}%)")
 
-    # Crude tone
     crude_items = [c for c in commodities if c.get("ticker") == "CL"]
     if crude_items:
         cl = crude_items[0]
@@ -198,8 +171,17 @@ def build_macro_summary(equities: list, rates: list, commodities: list) -> str:
         elif cl["percent_change"] >= 1.0:
             lines.append(f"Crude firming ({cl['percent_change']:+.1f}%)")
 
+    # FX color
+    dxy_items = [f for f in fx if f.get("ticker") == "DXY"]
+    if dxy_items:
+        dxy = dxy_items[0]
+        if dxy["percent_change"] >= 0.4:
+            lines.append(f"Dollar strengthening (DXY {dxy['percent_change']:+.1f}%)")
+        elif dxy["percent_change"] <= -0.4:
+            lines.append(f"Dollar weakening (DXY {dxy['percent_change']:+.1f}%)")
+
     if not lines:
-        return "Market data refreshed. Monitor key levels and upcoming macro data releases."
+        return "Market data refreshed. Monitor key levels and upcoming macro releases."
 
     return "; ".join(lines) + "."
 
@@ -218,10 +200,10 @@ def main():
         "equities":       [],
         "rates":          [],
         "commodities":    [],
+        "fx":             [],
         "global_markets": {"asia": [], "europe": []},
     }
 
-    # Equities
     for cfg in SNAPSHOT_SYMBOLS.get("equities", []):
         item = build_simple_item(cfg)
         if item:
@@ -229,7 +211,6 @@ def main():
         else:
             log.warning(f"Skipping equity: {cfg['label']}")
 
-    # Rates
     for cfg in SNAPSHOT_SYMBOLS.get("rates", []):
         item = build_rate_item(cfg)
         if item:
@@ -237,7 +218,6 @@ def main():
         else:
             log.warning(f"Skipping rate: {cfg['label']}")
 
-    # Commodities
     for cfg in SNAPSHOT_SYMBOLS.get("commodities", []):
         item = build_simple_item(cfg)
         if item:
@@ -245,7 +225,13 @@ def main():
         else:
             log.warning(f"Skipping commodity: {cfg['label']}")
 
-    # Global markets
+    for cfg in SNAPSHOT_SYMBOLS.get("fx", []):
+        item = build_fx_item(cfg)
+        if item:
+            snapshot["fx"].append(item)
+        else:
+            log.warning(f"Skipping FX: {cfg['label']}")
+
     for region in ("asia", "europe"):
         for cfg in SNAPSHOT_SYMBOLS["global_markets"].get(region, []):
             item = build_simple_item(cfg)
@@ -254,17 +240,18 @@ def main():
             else:
                 log.warning(f"Skipping {region} index: {cfg['label']}")
 
-    # Derive macro summary from what was actually fetched
     snapshot["macro_summary"] = build_macro_summary(
         snapshot["equities"],
         snapshot["rates"],
         snapshot["commodities"],
+        snapshot["fx"],
     )
 
-    log.info(f"Market status: {snapshot['market_status']}")
     log.info(
+        f"Market status: {snapshot['market_status']} | "
         f"Equities: {len(snapshot['equities'])} | "
         f"Rates: {len(snapshot['rates'])} | "
+        f"FX: {len(snapshot['fx'])} | "
         f"Commodities: {len(snapshot['commodities'])}"
     )
 
