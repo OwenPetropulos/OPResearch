@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 5,
-      "primary_driver": "Global oil prices surpass $108 a barrel on concerns Iran may have to cut production due to limited s",
+      "sentiment": "Positive",
+      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
+      "story_count": 6,
+      "primary_driver": "This price for Brent crude is more important for its outlook than $100, charts show",
       "key_drivers": [
-        "Global oil prices surpass $108 a barrel on concerns Iran may have to cut production due to limited storage",
         "This price for Brent crude is more important for its outlook than $100, charts show",
-        "Brent oil prices top $108 per barrel after Iran peace talks unravel",
-        "Oil giant Shell to buy Canada’s ARC Resources for $16.4 billion in push to boost output"
+        "AMZA, Over 8% Distribution On The Hottest Segment Right Now: MLP Midstream",
+        "Gold prices have lost nearly 11% since the Iran war began. Reasons to buy the metal are piling up again.",
+        "Brent oil prices top $108 per barrel after Iran peace talks unravel"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "BAC",
-        "NVO",
-        "LLY"
+        "RIG",
+        "META",
+        "GLD"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Cole Allen charged with trying to assassinate Trump at WHCD event",
+      "primary_driver": "8-K - HPS Corporate Lending Fund (0001838126) (Filer)",
       "key_drivers": [
-        "Cole Allen charged with trying to assassinate Trump at WHCD event",
-        "Jury selection kicks off in Musk v. Altman trial",
-        "Higher inflation is on the way. The Fed needs to make this clearer before it raises rates.",
-        "8-K - Federal Home Loan Bank of Atlanta (0001331465) (Filer)"
+        "8-K - HPS Corporate Lending Fund (0001838126) (Filer)",
+        "8-K - Keen Vision Acquisition Corp. (0001889983) (Filer)",
+        "8-K - AB Private Credit Investors Corp (0001634452) (Filer)",
+        "Atlassian Could Skyrocket This Week On Easing AI Fears"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +46,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN",
-        "GS"
+        "EURUSD=X"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 14,
-      "primary_driver": "TSPY Vs. QDTE: Weighing 2 Ultra-High‑Yield Daily Options Income ETFs",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 11,
+      "primary_driver": "8-K - GULF RESOURCES, INC. (0000885462) (Filer)",
       "key_drivers": [
-        "TSPY Vs. QDTE: Weighing 2 Ultra-High‑Yield Daily Options Income ETFs",
-        "Global oil prices surpass $108 a barrel on concerns Iran may have to cut production due to limited storage",
-        "Intel Confirms Another Gold Mine Segment In Semiconductors",
-        "This price for Brent crude is more important for its outlook than $100, charts show"
+        "8-K - GULF RESOURCES, INC. (0000885462) (Filer)",
+        "There’s a pizza price war going on, and Domino’s is feeling the pain",
+        "Poet Technologies’ stock craters nearly 50% in record drop, as Marvell relationship sours",
+        "Persistent Inflation Constrains Policy"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,18 +71,18 @@
       "trending_tickers": [
         "SPY",
         "CL=F",
-        "LLY",
-        "BAC"
+        "BAC",
+        "META"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Boeing's Preferred And Common Shares Have Similar Risk And Reward: Both Are A Hold",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Boeing's Preferred And Common Shares Have Similar Risk And Reward: Both Are A Hold"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -101,9 +100,10 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "No kids, no care: Solo agers are hiring professional ‘next-of-kin’ for major life decisions",
+      "story_count": 4,
+      "primary_driver": "There’s a pizza price war going on, and Domino’s is feeling the pain",
       "key_drivers": [
+        "There’s a pizza price war going on, and Domino’s is feeling the pain",
         "No kids, no care: Solo agers are hiring professional ‘next-of-kin’ for major life decisions",
         "Social Security benefits can be reduced for some retirees who work. How that may change",
         "1st Look at Local Housing Markets in December"
@@ -124,11 +124,13 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs",
+      "story_count": 5,
+      "primary_driver": "8-K - InMed Pharmaceuticals Inc. (0001728328) (Filer)",
       "key_drivers": [
-        "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs",
-        "Biggest winner of the amended Microsoft-OpenAI deal — plus, mixed news for Eli Lilly"
+        "8-K - InMed Pharmaceuticals Inc. (0001728328) (Filer)",
+        "A new version of an old drug is helping men grow back some of their hair",
+        "Relay Therapeutics, Inc. (RLAY) Discusses Zovegalisib Triplet Data and First-Line Breast Cancer Strategy Transcript",
+        "Ligand Pharmaceuticals Incorporated (LGND) XOMA Royalty Corporation - M&A Call - Slideshow"
       ],
       "key_tickers": [
         "LLY",
@@ -138,22 +140,23 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "AMGN",
-        "MSFT"
+        "RIG",
+        "BAC",
+        "XOM",
+        "LLY"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 11,
-      "primary_driver": "8-K - Origin Bancorp, Inc. (0001516912) (Filer)",
+      "primary_driver": "8-K - Crane Co (0001944013) (Filer)",
       "key_drivers": [
-        "8-K - Origin Bancorp, Inc. (0001516912) (Filer)",
-        "UltraTech Cement Limited (UCLQF) Q4 2026 Earnings Call Transcript",
-        "Easterly Government Properties, Inc. (DEA) Q1 2026 Earnings Call Transcript",
-        "Fastly Is Finally Earning Its Premium"
+        "8-K - Crane Co (0001944013) (Filer)",
+        "8-K - PEOPLES FINANCIAL CORP /MS/ (0000770460) (Filer)",
+        "Trump calls for Jimmy Kimmel to be fired over Melania comments. It’s the latest clash over late-night TV.",
+        "8-K - ENVIRI Corp (0000045876) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -163,8 +166,10 @@
         "DXY"
       ],
       "trending_tickers": [
-        "RIG",
-        "LLY"
+        "META",
+        "GLD",
+        "CL=F",
+        "EURUSD=X"
       ]
     }
   ]
