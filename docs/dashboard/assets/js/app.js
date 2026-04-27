@@ -30,16 +30,15 @@ document.addEventListener('DOMContentLoaded', async () => {
       '<div class="error-state">Market snapshot data could not be loaded.</div>';
   }
 
+  // Global markets + calendar rendered together
   if (snapshot?.global_markets) {
     renderGlobalMarkets(snapshot.global_markets);
-  } else {
-    setInner('asiaMarkets',   '<div class="error-state">Data unavailable.</div>');
-    setInner('europeMarkets', '<div class="error-state">Data unavailable.</div>');
   }
+  renderEarningsCalendar();
 
   if (macroNews?.stories?.length) {
     const sorted = sortByTimestamp(macroNews.stories);
-    setInner('macroStoriesContainer', sorted.map(renderStoryRow).join(''));
+    setInner('macroStoriesContainer', sorted.slice(0, 15).map(renderStoryRow).join(''));
   } else {
     setInner('macroStoriesContainer', '<div class="error-state">Macro stories could not be loaded.</div>');
   }
@@ -52,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   if (sectorNews?.stories?.length) {
     const sorted = sortByTimestamp(sectorNews.stories);
-    setInner('keyDevsContainer', sorted.slice(0, 8).map(renderStoryRow).join(''));
+    setInner('keyDevsContainer', sorted.slice(0, 15).map(renderStoryRow).join(''));
   } else {
     setInner('keyDevsContainer', '<div class="error-state">Development stories could not be loaded.</div>');
   }
@@ -78,14 +77,9 @@ async function loadWatchlistData() {
   } catch (e) {
     console.warn('localStorage watchlist parse error:', e);
   }
-
   const data = await fetchJSON('./data/watchlist.json');
   if (data?.watchlist?.length) {
-    try {
-      localStorage.setItem(WATCHLIST_STORAGE_KEY, JSON.stringify(data.watchlist));
-    } catch (e) {
-      console.warn('Could not seed watchlist to localStorage:', e);
-    }
+    try { localStorage.setItem(WATCHLIST_STORAGE_KEY, JSON.stringify(data.watchlist)); } catch (e) {}
     return data.watchlist;
   }
   return [];
@@ -97,15 +91,10 @@ async function loadWatchlistData() {
 
 function renderPageHeader(snapshot) {
   if (!snapshot) return;
-
   const el = document.getElementById('macroSummaryLine');
   if (el) el.textContent = snapshot.macro_summary || '';
-
   const ts = document.getElementById('lastUpdated');
-  if (ts) ts.textContent = snapshot.last_updated
-    ? 'Updated ' + formatTimestamp(snapshot.last_updated)
-    : '';
-
+  if (ts) ts.textContent = snapshot.last_updated ? 'Updated ' + formatTimestamp(snapshot.last_updated) : '';
   const ms = document.getElementById('marketStatus');
   if (!ms) return;
   ms.textContent = snapshot.market_status || 'Unknown';
@@ -122,16 +111,13 @@ function renderPageHeader(snapshot) {
 function renderTickerStrip(snapshot) {
   const container = document.getElementById('tickerStrip');
   if (!container) return;
-  if (!snapshot) {
-    container.innerHTML = '<div class="loading-state">Market data unavailable.</div>';
-    return;
-  }
+  if (!snapshot) { container.innerHTML = '<div class="loading-state">Market data unavailable.</div>'; return; }
 
   const items = [
-    ...(Array.isArray(snapshot.equities)    ? snapshot.equities    : []),
+    ...(Array.isArray(snapshot.equities)    ? snapshot.equities         : []),
     ...(Array.isArray(snapshot.rates)       ? snapshot.rates.slice(0,2) : []),
-    ...(Array.isArray(snapshot.fx)          ? snapshot.fx          : []),
-    ...(Array.isArray(snapshot.commodities) ? snapshot.commodities : [])
+    ...(Array.isArray(snapshot.fx)          ? snapshot.fx               : []),
+    ...(Array.isArray(snapshot.commodities) ? snapshot.commodities      : [])
   ];
 
   container.innerHTML = items.map(item => {
@@ -141,11 +127,8 @@ function renderTickerStrip(snapshot) {
       <div class="ticker-chip">
         <span class="ticker-label">${item.ticker || item.label || ''}</span>
         <span class="ticker-val">${formatPrice(item.price)}</span>
-        <span class="ticker-chg ${dirClass(chg)}">
-          ${dirArrow(chg)} ${formatPct(pct)}
-        </span>
-      </div>
-    `;
+        <span class="ticker-chg ${dirClass(chg)}">${dirArrow(chg)} ${formatPct(pct)}</span>
+      </div>`;
   }).join('');
 }
 
@@ -156,12 +139,10 @@ function renderTickerStrip(snapshot) {
 function renderSnapshotGroup(containerId, items, label) {
   const container = document.getElementById(containerId);
   if (!container) return;
-
   if (!Array.isArray(items) || !items.length) {
     container.innerHTML = '<div class="error-state">Data unavailable.</div>';
     return;
   }
-
   container.innerHTML = items.map(item => {
     const chg = item.change ?? 0;
     const pct = item.percent_change ?? 0;
@@ -170,26 +151,20 @@ function renderSnapshotGroup(containerId, items, label) {
         <div class="card-label">${item.label || ''}</div>
         <div class="card-value">${formatPrice(item.price)}</div>
         <div class="card-changes">
-          <span class="card-abs ${dirClass(chg)}">
-            <span class="dir-arrow">${dirArrow(chg)}</span>
-            ${formatSigned(chg)}
-          </span>
+          <span class="card-abs ${dirClass(chg)}"><span class="dir-arrow">${dirArrow(chg)}</span>${formatSigned(chg)}</span>
           <span class="card-pct ${dirClass(pct)}">${formatPct(pct)}</span>
         </div>
-      </div>
-    `;
+      </div>`;
   }).join('');
 }
 
 function renderFXRow(containerId, items) {
   const container = document.getElementById(containerId);
   if (!container) return;
-
   if (!Array.isArray(items) || !items.length) {
     container.innerHTML = '<div class="error-state">FX data unavailable.</div>';
     return;
   }
-
   container.innerHTML = items.map(item => {
     const chg = item.change ?? 0;
     const pct = item.percent_change ?? 0;
@@ -198,14 +173,10 @@ function renderFXRow(containerId, items) {
         <div class="card-label">${item.label || ''}</div>
         <div class="card-value">${formatPrice(item.price)}</div>
         <div class="card-changes">
-          <span class="card-abs ${dirClass(chg)}">
-            <span class="dir-arrow">${dirArrow(chg)}</span>
-            ${formatSigned(chg,)}
-          </span>
+          <span class="card-abs ${dirClass(chg)}"><span class="dir-arrow">${dirArrow(chg)}</span>${formatSigned(chg)}</span>
           <span class="card-pct ${dirClass(pct)}">${formatPct(pct)}</span>
         </div>
-      </div>
-    `;
+      </div>`;
   }).join('');
 }
 
@@ -228,17 +199,117 @@ function renderGlobalMarkets(globalData) {
           <span class="global-row-label">${item.label || ''}</span>
           <div class="global-row-right">
             <span class="global-row-price">${formatPrice(item.price)}</span>
-            <span class="global-row-pct ${dirClass(pct)}">
-              ${dirArrow(pct)} ${formatPct(pct)}
-            </span>
+            <span class="global-row-pct ${dirClass(pct)}">${dirArrow(pct)} ${formatPct(pct)}</span>
           </div>
-        </div>
-      `;
+        </div>`;
     }).join('');
   };
-
   renderBlock('asiaMarkets',   globalData.asia);
   renderBlock('europeMarkets', globalData.europe);
+}
+
+/* ============================================================
+   EARNINGS & MACRO CALENDAR
+   Hardcoded weekly schedule — update manually or via JSON later.
+   Shows current week Mon–Fri.
+   ============================================================ */
+
+function renderEarningsCalendar() {
+  const container = document.getElementById('calendarContainer');
+  if (!container) return;
+
+  // Build Mon–Fri dates for current week
+  const today  = new Date();
+  const dow    = today.getDay(); // 0=Sun
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - (dow === 0 ? 6 : dow - 1));
+
+  const days = [];
+  for (let i = 0; i < 5; i++) {
+    const d = new Date(monday);
+    d.setDate(monday.getDate() + i);
+    days.push(d);
+  }
+
+  const dayNames = ['MON', 'TUE', 'WED', 'THU', 'FRI'];
+
+  // ── EDIT THIS SECTION WEEKLY ──────────────────────────────
+  // Format: { date: 'YYYY-MM-DD', events: [ { label, type, time, url } ] }
+  // type: 'earnings-pending' | 'earnings-beat' | 'earnings-miss' | 'macro-event' | 'macro-event high-importance'
+  const schedule = [
+    {
+      date: formatDateKey(days[0]),
+      events: [
+        { label: 'GOOGL earnings', type: 'earnings-pending', time: 'After close', url: 'https://abc.xyz/investor/' },
+        { label: 'ISM Mfg PMI',   type: 'macro-event',      time: '10:00 AM ET', url: 'https://ismworld.org' },
+      ]
+    },
+    {
+      date: formatDateKey(days[1]),
+      events: [
+        { label: 'MSFT earnings', type: 'earnings-pending', time: 'After close', url: 'https://investor.microsoft.com' },
+        { label: 'META earnings', type: 'earnings-pending', time: 'After close', url: 'https://investor.fb.com' },
+        { label: 'JOLTS',         type: 'macro-event',      time: '10:00 AM ET', url: 'https://bls.gov' },
+      ]
+    },
+    {
+      date: formatDateKey(days[2]),
+      events: [
+        { label: 'AAPL earnings', type: 'earnings-pending', time: 'After close', url: 'https://investor.apple.com' },
+        { label: 'AMZN earnings', type: 'earnings-pending', time: 'After close', url: 'https://ir.aboutamazon.com' },
+        { label: 'FOMC Decision', type: 'macro-event high-importance', time: '2:00 PM ET', url: 'https://federalreserve.gov' },
+      ]
+    },
+    {
+      date: formatDateKey(days[3]),
+      events: [
+        { label: 'Initial Claims', type: 'macro-event', time: '8:30 AM ET', url: 'https://dol.gov' },
+      ]
+    },
+    {
+      date: formatDateKey(days[4]),
+      events: [
+        { label: 'NFP / Jobs',    type: 'macro-event high-importance', time: '8:30 AM ET', url: 'https://bls.gov' },
+        { label: 'UMich Sent.',   type: 'macro-event', time: '10:00 AM ET', url: 'https://sca.isr.umich.edu' },
+      ]
+    },
+  ];
+  // ── END EDIT SECTION ──────────────────────────────────────
+
+  const todayKey = formatDateKey(today);
+
+  container.innerHTML = days.map((d, i) => {
+    const key       = formatDateKey(d);
+    const isToday   = key === todayKey;
+    const dayData   = schedule.find(s => s.date === key) || { events: [] };
+    const dateLabel = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+    const eventsHtml = dayData.events.length
+      ? dayData.events.map(ev => `
+          <div class="calendar-event ${ev.type}">
+            ${ev.url
+              ? `<a href="${ev.url}" target="_blank" rel="noopener">${ev.label}</a>`
+              : ev.label}
+            ${ev.time ? `<span class="calendar-event-time">${ev.time}</span>` : ''}
+          </div>`).join('')
+      : `<div style="font-size:0.65rem;color:var(--text-muted);padding:4px 0;">—</div>`;
+
+    return `
+      <div class="calendar-day ${isToday ? 'today' : ''}">
+        <div class="calendar-day-header">
+          <span class="calendar-day-name">${dayNames[i]}</span>
+          <span class="calendar-day-date">${dateLabel}</span>
+        </div>
+        <div class="calendar-events">${eventsHtml}</div>
+      </div>`;
+  }).join('');
+}
+
+function formatDateKey(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
 }
 
 /* ============================================================
@@ -248,15 +319,13 @@ function renderGlobalMarkets(globalData) {
 function renderSectorStrip(sectors) {
   const container = document.getElementById('sectorStripContainer');
   if (!container) return;
-
   container.innerHTML = sectors.map(s => `
     <a class="sector-chip" href="sectors.html?sector=${encodeURIComponent(s.sector || '')}">
       <div class="sector-chip-name">${s.sector || ''}</div>
       <div class="sector-chip-sentiment ${sentimentClass(s.sentiment)}">${s.sentiment || ''}</div>
       <div class="sector-chip-driver">${s.primary_driver || ''}</div>
       <div class="sector-chip-count">${s.story_count ?? 0} stories</div>
-    </a>
-  `).join('');
+    </a>`).join('');
 }
 
 /* ============================================================
@@ -266,12 +335,7 @@ function renderSectorStrip(sectors) {
 function renderWatchlistPreview(items) {
   const container = document.getElementById('watchlistPreviewContainer');
   if (!container) return;
-
-  if (!items.length) {
-    container.innerHTML = '<div class="empty-state">No watchlist items.</div>';
-    return;
-  }
-
+  if (!items.length) { container.innerHTML = '<div class="empty-state">No watchlist items.</div>'; return; }
   container.innerHTML = items.map(item => {
     const move     = item.percent_move ?? 0;
     const alertCls = alertTagClass(item.alert_tag || '');
@@ -280,19 +344,14 @@ function renderWatchlistPreview(items) {
         <div>
           <div class="watchlist-card-ticker">${item.ticker || ''}</div>
           <div class="watchlist-card-sector">${item.sector || ''}</div>
-          <div style="margin-top:10px;">
-            <span class="badge ${alertCls}">${item.alert_tag || ''}</span>
-          </div>
+          <div style="margin-top:10px;"><span class="badge ${alertCls}">${item.alert_tag || ''}</span></div>
         </div>
         <div class="watchlist-card-notes">${item.notes || ''}</div>
         <div class="watchlist-card-meta">
           <div class="watchlist-card-price">${formatCurrency(item.price)}</div>
-          <div class="watchlist-card-move ${dirClass(move)}">
-            ${dirArrow(move)} ${formatPct(move)}
-          </div>
+          <div class="watchlist-card-move ${dirClass(move)}">${dirArrow(move)} ${formatPct(move)}</div>
         </div>
-      </div>
-    `;
+      </div>`;
   }).join('');
 }
 

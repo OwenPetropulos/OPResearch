@@ -2,8 +2,7 @@
 generate_sector_news.py
 
 Ingests stories from public RSS feeds, classifies them into sectors,
-and writes data/sector_news.json for use by the sector intelligence page
-and the homepage key developments feed.
+and writes data/sector_news.json.
 """
 
 import sys
@@ -14,30 +13,18 @@ from common import (
     strip_internal_fields, classify_sectors, classify_tickers,
     get_why_it_matters, make_story_id, log,
 )
-from config import RSS_FEEDS, SECTOR_KEYWORDS
-
-# ============================================================
-# ALL SECTORS WE WANT TO COVER
-# ============================================================
+from config import RSS_FEEDS
 
 ALL_SECTORS = ["Energy", "Financials", "Technology", "Industrials", "Consumer", "Healthcare", "Macro"]
 
-# Maximum stories per sector to prevent one sector dominating the feed.
-MAX_PER_SECTOR = 3
+# Increased from 3 to 8 — sectors page now shows up to 10
+MAX_PER_SECTOR = 8
 
-# Total story cap across all sectors.
-MAX_TOTAL = 30
+# Total story cap
+MAX_TOTAL = 60
 
-
-# ============================================================
-# STORY ENRICHMENT
-# ============================================================
 
 def enrich_sector_story(story: dict, index: int) -> dict:
-    """
-    Add sector classification, ticker tags, why_it_matters, and id.
-    The primary sector is the first match from classify_sectors().
-    """
     combined = story.get("title", "") + " " + story.get("summary", "")
     sectors  = classify_sectors(combined)
 
@@ -50,29 +37,21 @@ def enrich_sector_story(story: dict, index: int) -> dict:
     return story
 
 
-# ============================================================
-# MAIN
-# ============================================================
-
 def main():
     log.info("=== generate_sector_news.py ===")
 
     all_raw = []
-
     for feed_def in RSS_FEEDS:
-        raw = fetch_feed(feed_def, max_entries=30)
+        raw = fetch_feed(feed_def, max_entries=40)
         all_raw.extend(raw)
 
-    # Sort by recency, deduplicate globally
     sorted_raw = sort_stories_by_time(all_raw)
     unique     = deduplicate_stories(sorted_raw)
 
-    # Enrich all stories (add sector classification)
     enriched_all = []
     for i, story in enumerate(unique):
         enriched_all.append(enrich_sector_story(story, i))
 
-    # Per-sector cap: take up to MAX_PER_SECTOR per sector, prioritizing recency
     sector_counts: dict[str, int] = {s: 0 for s in ALL_SECTORS}
     selected = []
 
@@ -86,7 +65,6 @@ def main():
         if len(selected) >= MAX_TOTAL:
             break
 
-    # Re-index IDs after filtering
     for i, story in enumerate(selected):
         story["id"] = f"sn{str(i + 1).zfill(3)}"
 

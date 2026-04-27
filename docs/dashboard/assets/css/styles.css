@@ -1199,3 +1199,255 @@ select.form-control option { background: var(--bg-surface); }
   .trade-form-grid { grid-template-columns: 1fr; }
   .metrics-row { grid-template-columns: 1fr 1fr; }
 }
+
+/* =============================================================================
+   COMPACT STORY ROWS
+   ============================================================================= */
+
+.story-row-compact {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--card-radius);
+  padding: 12px 20px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all var(--transition);
+  min-height: 0;
+}
+
+.story-row-compact:hover {
+  border-color: var(--border-mid);
+  background: var(--bg-card-hover);
+}
+
+.story-row-compact .story-tags {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
+.story-row-compact .story-title-link {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-decoration: none;
+  flex: 1;
+  line-height: 1.35;
+  transition: color var(--transition);
+}
+
+.story-row-compact .story-title-link:hover {
+  color: var(--accent-blue);
+}
+
+.story-row-compact .story-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.story-row-compact .story-meta-source {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.story-row-compact .story-meta-time {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.story-row-compact .story-read-link {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  opacity: 0.6;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity var(--transition);
+}
+
+.story-row-compact .story-read-link:hover {
+  opacity: 1;
+}
+
+/* Sector color tags */
+.tag-energy      { background: rgba(251,146,60,0.12); color: #fb923c; border: 1px solid rgba(251,146,60,0.25); }
+.tag-financials  { background: rgba(59,130,246,0.12); color: #60a5fa; border: 1px solid rgba(59,130,246,0.25); }
+.tag-technology  { background: rgba(168,85,247,0.12); color: #c084fc; border: 1px solid rgba(168,85,247,0.25); }
+.tag-industrials { background: rgba(20,184,166,0.12); color: #2dd4bf; border: 1px solid rgba(20,184,166,0.25); }
+.tag-consumer    { background: rgba(234,179,8,0.12);  color: #facc15; border: 1px solid rgba(234,179,8,0.25); }
+.tag-healthcare  { background: rgba(34,197,94,0.12);  color: #4ade80; border: 1px solid rgba(34,197,94,0.25); }
+.tag-macro       { background: rgba(239,68,68,0.12);  color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
+
+.sector-tag-pill {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+/* =============================================================================
+   EARNINGS & MACRO CALENDAR
+   ============================================================================= */
+
+.markets-calendar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: var(--section-gap);
+}
+
+.calendar-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+}
+
+.calendar-header {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-week {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+}
+
+.calendar-day {
+  border-right: 1px solid var(--border-subtle);
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-day:last-child {
+  border-right: none;
+}
+
+.calendar-day-header {
+  padding: 8px 10px 6px;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.calendar-day-name {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.calendar-day-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+.calendar-day.today .calendar-day-header {
+  background: rgba(56,189,248,0.05);
+}
+
+.calendar-day.today .calendar-day-name {
+  color: var(--accent-blue);
+}
+
+.calendar-day.today .calendar-day-date {
+  color: var(--accent-blue);
+}
+
+.calendar-events {
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.calendar-event {
+  padding: 4px 7px;
+  border-radius: 3px;
+  font-size: 0.67rem;
+  font-weight: 600;
+  line-height: 1.3;
+  cursor: default;
+  transition: opacity var(--transition);
+}
+
+.calendar-event:hover { opacity: 0.85; }
+
+.calendar-event a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.calendar-event.earnings-beat {
+  background: var(--green-dim);
+  color: var(--green);
+  border: 1px solid rgba(34,197,94,0.2);
+}
+
+.calendar-event.earnings-miss {
+  background: var(--red-dim);
+  color: var(--red);
+  border: 1px solid rgba(239,68,68,0.2);
+}
+
+.calendar-event.earnings-pending {
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.calendar-event.macro-event {
+  background: rgba(168,85,247,0.1);
+  color: #c084fc;
+  border: 1px solid rgba(168,85,247,0.2);
+}
+
+.calendar-event.macro-event.high-importance {
+  background: rgba(239,68,68,0.1);
+  color: #f87171;
+  border: 1px solid rgba(239,68,68,0.2);
+}
+
+.calendar-event-time {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  opacity: 0.7;
+  display: block;
+}
+
+@media (max-width: 1100px) {
+  .markets-calendar-grid { grid-template-columns: 1fr; }
+  .calendar-week { grid-template-columns: repeat(5, 1fr); }
+}
+
+@media (max-width: 700px) {
+  .calendar-week { grid-template-columns: 1fr; }
+  .calendar-day { min-height: auto; border-right: none; border-bottom: 1px solid var(--border-subtle); }
+}

@@ -1,5 +1,9 @@
 /* utils.js — Shared utility functions */
 
+/* ============================================================
+   NUMBER FORMATTING
+   ============================================================ */
+
 function formatCurrency(val, decimals = 2) {
   if (val == null || isNaN(val)) return '—';
   const abs  = Math.abs(val);
@@ -30,6 +34,10 @@ function formatSigned(val, decimals = 2) {
   return sign + parseFloat(val).toFixed(decimals);
 }
 
+/* ============================================================
+   DIRECTION HELPERS
+   ============================================================ */
+
 function dirClass(val) {
   if (val == null || isNaN(val)) return 'flat';
   if (val > 0) return 'up';
@@ -43,6 +51,10 @@ function dirArrow(val) {
   if (val < 0) return '▼';
   return '—';
 }
+
+/* ============================================================
+   TIMESTAMP / TIME HELPERS
+   ============================================================ */
 
 function formatTimestamp(iso) {
   if (!iso) return '—';
@@ -77,6 +89,10 @@ function sortByTimestamp(arr) {
   });
 }
 
+/* ============================================================
+   BADGE / TAG CLASS MAPPINGS
+   ============================================================ */
+
 function sourceBadgeClass(sourceType) {
   const map = {
     'Mainstream':  'badge-mainstream',
@@ -108,6 +124,71 @@ function sentimentClass(s) {
   return map[s] || 'sentiment-neutral';
 }
 
+/**
+ * Map a sector name to its color CSS class.
+ */
+function sectorTagClass(sector) {
+  const map = {
+    'Energy':      'tag-energy',
+    'Financials':  'tag-financials',
+    'Technology':  'tag-technology',
+    'Industrials': 'tag-industrials',
+    'Consumer':    'tag-consumer',
+    'Healthcare':  'tag-healthcare',
+    'Macro':       'tag-macro',
+  };
+  return map[sector] || 'tag-macro';
+}
+
+/* ============================================================
+   COMPACT STORY ROW RENDERER
+   No summary, no why-it-matters.
+   Shows: colored sector tags | title (link) | source | time | read →
+   ============================================================ */
+
+function renderStoryRow(story) {
+  if (!story) return '';
+
+  const title      = story.title       || 'Untitled';
+  const sourceName = story.source_name || '';
+  const timestamp  = story.timestamp   || '';
+  const url        = story.url         || '';
+  const sectors    = Array.isArray(story.sector_tags) ? story.sector_tags : [];
+
+  const tsDisplay = timeAgo(timestamp) || formatTimestamp(timestamp);
+
+  // Deduplicate and cap sector tags at 2 for compactness
+  const uniqueSectors = [...new Set(sectors)].slice(0, 2);
+
+  const tagsHtml = uniqueSectors.map(s =>
+    `<span class="sector-tag-pill ${sectorTagClass(s)}">${s}</span>`
+  ).join('');
+
+  const titleHtml = url
+    ? `<a class="story-title-link" href="${url}" target="_blank" rel="noopener">${title}</a>`
+    : `<span class="story-title-link">${title}</span>`;
+
+  const readHtml = url
+    ? `<a class="story-read-link" href="${url}" target="_blank" rel="noopener">Read →</a>`
+    : '';
+
+  return `
+    <div class="story-row-compact">
+      <div class="story-tags">${tagsHtml}</div>
+      ${titleHtml}
+      <div class="story-meta">
+        ${sourceName ? `<span class="story-meta-source">${sourceName}</span>` : ''}
+        ${tsDisplay  ? `<span class="story-meta-time">${tsDisplay}</span>`    : ''}
+        ${readHtml}
+      </div>
+    </div>
+  `;
+}
+
+/* ============================================================
+   BADGE RENDERERS (kept for watchlist/sector pages)
+   ============================================================ */
+
 function renderSourceBadge(sourceType) {
   const label = sourceType || 'Unknown';
   return `<span class="badge ${sourceBadgeClass(sourceType)}">${label}</span>`;
@@ -123,49 +204,9 @@ function renderTickerTags(tickers) {
   return tickers.map(t => `<span class="tag-ticker">${t}</span>`).join('');
 }
 
-function renderStoryRow(story) {
-  if (!story) return '';
-
-  const title        = story.title         || 'Untitled';
-  const summary      = story.summary       || '';
-  const whyItMatters = story.why_it_matters || '';
-  const sourceName   = story.source_name   || '';
-  const sourceType   = story.source_type   || '';
-  const timestamp    = story.timestamp     || '';
-  const url          = story.url           || '';
-  const sectorTags   = Array.isArray(story.sector_tags)  ? story.sector_tags  : [];
-  const tickerTags   = Array.isArray(story.ticker_tags)  ? story.ticker_tags  : [];
-
-  const headlineInner = url
-    ? `<a href="${url}" target="_blank" rel="noopener">${title}</a>`
-    : title;
-
-  const tsDisplay = timeAgo(timestamp) || formatTimestamp(timestamp);
-
-  return `
-    <div class="story-row">
-      <div class="story-row-top">
-        ${sourceType ? renderSourceBadge(sourceType) : ''}
-        ${renderSectorTags(sectorTags)}
-        ${renderTickerTags(tickerTags)}
-      </div>
-      <div class="story-headline">${headlineInner}</div>
-      ${summary ? `<div class="story-summary">${summary}</div>` : ''}
-      ${whyItMatters ? `
-        <div class="story-why-matters">
-          <div class="story-why-label">Why it matters</div>
-          ${whyItMatters}
-        </div>
-      ` : ''}
-      <div class="story-footer">
-        ${sourceName ? `<span class="story-source-name">${sourceName}</span>` : ''}
-        ${sourceName && tsDisplay ? `<span class="divider"></span>` : ''}
-        ${tsDisplay ? `<span class="story-timestamp">${tsDisplay}</span>` : ''}
-        ${url ? `<a class="story-link" href="${url}" target="_blank" rel="noopener">Read →</a>` : ''}
-      </div>
-    </div>
-  `;
-}
+/* ============================================================
+   DATA FETCHING
+   ============================================================ */
 
 async function fetchJSON(path) {
   try {
@@ -177,6 +218,10 @@ async function fetchJSON(path) {
     return null;
   }
 }
+
+/* ============================================================
+   TOAST NOTIFICATIONS
+   ============================================================ */
 
 function showToast(msg, type = 'default') {
   let toast = document.getElementById('globalToast');

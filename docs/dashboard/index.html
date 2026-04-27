@@ -28,6 +28,7 @@
 
   <div class="page-container">
 
+    <!-- PAGE HEADER -->
     <div class="page-header">
       <div class="page-header-top">
         <h1 class="page-title">Morning Brief</h1>
@@ -39,54 +40,56 @@
 
     <!-- MACRO SNAPSHOT -->
     <section class="section" id="snapshotSection">
-      <div class="section-header">
-        <span class="section-title">Macro Snapshot</span>
-      </div>
+      <div class="section-header"><span class="section-title">Macro Snapshot</span></div>
 
       <div class="snapshot-group">
         <div class="snapshot-group-label">Equities &amp; Volatility</div>
-        <div class="snapshot-row" id="equitiesRow">
-          <div class="loading-state">Loading…</div>
-        </div>
+        <div class="snapshot-row" id="equitiesRow"><div class="loading-state">Loading…</div></div>
       </div>
-
       <div class="snapshot-group">
         <div class="snapshot-group-label">Global Rates (10Y Yield %)</div>
-        <div class="snapshot-row" id="ratesRow">
-          <div class="loading-state">Loading…</div>
-        </div>
+        <div class="snapshot-row" id="ratesRow"><div class="loading-state">Loading…</div></div>
       </div>
-
       <div class="snapshot-group">
         <div class="snapshot-group-label">Commodities</div>
-        <div class="snapshot-row" id="commoditiesRow">
-          <div class="loading-state">Loading…</div>
-        </div>
+        <div class="snapshot-row" id="commoditiesRow"><div class="loading-state">Loading…</div></div>
       </div>
-
-      <!-- NEW: FX Row -->
       <div class="snapshot-group">
         <div class="snapshot-group-label">FX &amp; Dollar</div>
-        <div class="snapshot-row" id="fxRow">
-          <div class="loading-state">Loading…</div>
-        </div>
+        <div class="snapshot-row" id="fxRow"><div class="loading-state">Loading…</div></div>
       </div>
     </section>
 
-    <!-- GLOBAL MARKETS -->
+    <!-- GLOBAL MARKETS + EARNINGS CALENDAR (side by side) -->
     <section class="section">
-      <div class="section-header">
-        <span class="section-title">Global Markets</span>
-      </div>
-      <div class="global-markets-grid">
-        <div class="global-markets-block">
-          <div class="global-markets-block-header">Asia Pacific</div>
-          <div id="asiaMarkets"><div class="loading-state">Loading…</div></div>
+      <div class="section-header"><span class="section-title">Global Markets &amp; Calendar</span></div>
+      <div class="markets-calendar-grid">
+
+        <!-- Left: Global Markets -->
+        <div>
+          <div class="global-markets-grid">
+            <div class="global-markets-block">
+              <div class="global-markets-block-header">Asia Pacific</div>
+              <div id="asiaMarkets"><div class="loading-state">Loading…</div></div>
+            </div>
+            <div class="global-markets-block">
+              <div class="global-markets-block-header">Europe</div>
+              <div id="europeMarkets"><div class="loading-state">Loading…</div></div>
+            </div>
+          </div>
         </div>
-        <div class="global-markets-block">
-          <div class="global-markets-block-header">Europe</div>
-          <div id="europeMarkets"><div class="loading-state">Loading…</div></div>
+
+        <!-- Right: Earnings & Macro Calendar -->
+        <div class="calendar-container">
+          <div class="calendar-header">
+            <span>Earnings &amp; Macro Calendar</span>
+            <span style="font-size:0.65rem;color:var(--text-muted);font-weight:400;">Current Week</span>
+          </div>
+          <div class="calendar-week" id="calendarContainer">
+            <div class="loading-state">Loading…</div>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -94,43 +97,33 @@
     <section class="section">
       <div class="section-header">
         <span class="section-title">Overnight Macro Stories</span>
+        <span class="section-count">Top 15</span>
       </div>
-      <div id="macroStoriesContainer">
-        <div class="loading-state">Loading stories…</div>
-      </div>
+      <div id="macroStoriesContainer"><div class="loading-state">Loading stories…</div></div>
     </section>
 
     <!-- SECTOR OVERVIEW -->
     <section class="section">
-      <div class="section-header">
-        <span class="section-title">Sector Overview</span>
-      </div>
-      <div class="sector-strip" id="sectorStripContainer">
-        <div class="loading-state">Loading sectors…</div>
-      </div>
+      <div class="section-header"><span class="section-title">Sector Overview</span></div>
+      <div class="sector-strip" id="sectorStripContainer"><div class="loading-state">Loading…</div></div>
     </section>
 
     <!-- KEY DEVELOPMENTS -->
     <section class="section">
       <div class="section-header">
         <span class="section-title">Key Developments</span>
-        <span class="section-count">Sector stories &amp; filings</span>
+        <span class="section-count">Top 15 sector stories</span>
       </div>
-      <div id="keyDevsContainer">
-        <div class="loading-state">Loading developments…</div>
-      </div>
+      <div id="keyDevsContainer"><div class="loading-state">Loading developments…</div></div>
     </section>
 
     <!-- WATCHLIST PREVIEW -->
     <section class="section">
       <div class="section-header">
         <span class="section-title">Watchlist Preview</span>
-        <a href="watchlist.html" style="margin-left:auto; font-size:0.72rem;
-           color:var(--accent-blue); font-weight:600;">View All →</a>
+        <a href="watchlist.html" style="margin-left:auto;font-size:0.72rem;color:var(--accent-blue);font-weight:600;">View All →</a>
       </div>
-      <div id="watchlistPreviewContainer">
-        <div class="loading-state">Loading watchlist…</div>
-      </div>
+      <div id="watchlistPreviewContainer"><div class="loading-state">Loading watchlist…</div></div>
     </section>
 
   </div>

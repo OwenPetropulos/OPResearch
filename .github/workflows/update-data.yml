@@ -4,8 +4,10 @@ on:
   schedule:
     # Morning update: 10:45 UTC = ~6:45 AM ET
     - cron: "45 10 * * 1-5"
-    # After-close update: 21:45 UTC = ~5:45 PM ET
-    - cron: "45 21 * * 1-5"
+    # Midday update: 16:00 UTC = ~12:00 PM ET
+    - cron: "00 16 * * 1-5"
+    # After-close update: 21:00 UTC = ~5:00 PM ET
+    - cron: "00 21 * * 1-5"
   workflow_dispatch:
 
 jobs:
@@ -56,7 +58,6 @@ jobs:
         id: check_changes
         run: |
           git add "${{ steps.detect_dir.outputs.git_path }}"
-          # git diff --cached checks staged changes vs last commit
           git diff --cached --quiet || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push updated data files
