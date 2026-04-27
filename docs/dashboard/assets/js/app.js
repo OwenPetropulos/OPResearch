@@ -200,7 +200,7 @@ function renderFXRow(containerId, items) {
         <div class="card-changes">
           <span class="card-abs ${dirClass(chg)}">
             <span class="dir-arrow">${dirArrow(chg)}</span>
-            ${formatSigned(chg, 4)}
+            ${formatSigned(chg,)}
           </span>
           <span class="card-pct ${dirClass(pct)}">${formatPct(pct)}</span>
         </div>
