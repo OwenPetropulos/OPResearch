@@ -5,11 +5,11 @@
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 3,
-      "primary_driver": "U.S. imposes sanctions on Chinese 'teapot' refinery for buying Iranian oil",
+      "primary_driver": "U.S. stock futures fall, oil rises ahead of a busy week for Wall Street",
       "key_drivers": [
-        "U.S. imposes sanctions on Chinese 'teapot' refinery for buying Iranian oil",
-        "This little-known ETF is up over 600% amid U.S.-Iran war, a better trade than oil or energy stocks",
-        "Sunday Night Futures"
+        "U.S. stock futures fall, oil rises ahead of a busy week for Wall Street",
+        "Stock futures fall as Iran peace talks stall, oil rises: Live updates",
+        "U.S. imposes sanctions on Chinese 'teapot' refinery for buying Iranian oil"
       ],
       "key_tickers": [
         "XOM",
@@ -19,10 +19,8 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
-        "NKE",
-        "LLY",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
@@ -30,11 +28,11 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 3,
-      "primary_driver": "Blanket Sell-Off In Software Is Creating Wild Mispricing",
+      "primary_driver": "Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s ",
       "key_drivers": [
-        "Blanket Sell-Off In Software Is Creating Wild Mispricing",
-        "Tillis ends block of Fed chair nominee Warsh, clears way for Trump pick",
-        "5 Signs The Markets Are Increasingly Disconnected From Reality"
+        "Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s last Fed meeting",
+        "Sen. Thom Tillis drops opposition, says he’ll back Kevin Warsh’s Fed confirmation",
+        "Blanket Sell-Off In Software Is Creating Wild Mispricing"
       ],
       "key_tickers": [
         "JPM",
@@ -44,7 +42,10 @@
         "KRE"
       ],
       "trending_tickers": [
-        "NKE"
+        "MSFT",
+        "GOOGL",
+        "AMZN",
+        "META"
       ]
     },
     {
@@ -52,12 +53,12 @@
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 7,
-      "primary_driver": "Cramer: Why all the money flowing to AI stocks is a problem — and how it can be fixed",
+      "primary_driver": "Everything we know about Cole Allen, the D.C. correspondents dinner shooter",
       "key_drivers": [
-        "Cramer: Why all the money flowing to AI stocks is a problem — and how it can be fixed",
-        "Blanket Sell-Off In Software Is Creating Wild Mispricing",
-        "Microsoft: Preparing For Pivotal 'Show-Me' Q3 Earnings",
-        "Tillis ends block of Fed chair nominee Warsh, clears way for Trump pick"
+        "Everything we know about Cole Allen, the D.C. correspondents dinner shooter",
+        "Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s last Fed meeting",
+        "Iran's top diplomat briefly returns to Pakistan but Trump says the sides can talk by phone",
+        "Sen. Thom Tillis drops opposition, says he’ll back Kevin Warsh’s Fed confirmation"
       ],
       "key_tickers": [
         "NVDA",
@@ -67,10 +68,10 @@
         "AMD"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO",
-        "NKE",
-        "MSFT"
+        "MSFT",
+        "GOOGL",
+        "AMZN",
+        "META"
       ]
     },
     {
@@ -98,11 +99,10 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "I’m exactly 5 years from retirement. Here’s what I’ll do first to prepare.",
+      "story_count": 2,
+      "primary_driver": "‘My child requires lifelong support’: I’m in my 40s with $330,000 for retirement. How can I make thi",
       "key_drivers": [
-        "I’m exactly 5 years from retirement. Here’s what I’ll do first to prepare.",
-        "Retiring abroad? Watch out for this expensive housing mistake.",
+        "‘My child requires lifelong support’: I’m in my 40s with $330,000 for retirement. How can I make this last both our life",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -140,14 +140,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Invesco EQV International Equity Fund Q1 2026 Commentary",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 4,
+      "primary_driver": "Japan, South Korea stocks hit record high as investors shrug off stalled U.S.-Iran negotiations",
       "key_drivers": [
-        "Invesco EQV International Equity Fund Q1 2026 Commentary",
-        "Intel: Pump The Brakes",
-        "Fidelity International Discovery Fund Q1 2026 Commentary"
+        "Japan, South Korea stocks hit record high as investors shrug off stalled U.S.-Iran negotiations",
+        "Oklo: Why Near-Term Isotope Catalysts Make This Fast Reactor Stock A Speculative Buy",
+        "Brown Advisory Mid-Cap Growth Strategy Portfolio Q1 2026 Commentary",
+        "Stock futures fall as Iran peace talks stall, oil rises: Live updates"
       ],
       "key_tickers": [
         "TLT",
@@ -157,8 +158,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "BAC"
       ]
     }
   ]
