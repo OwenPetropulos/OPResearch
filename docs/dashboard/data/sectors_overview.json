@@ -2,14 +2,14 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
       "story_count": 3,
-      "primary_driver": "U.S. stock futures fall, oil rises ahead of a busy week for Wall Street",
+      "primary_driver": "U.S. stock futures mixed, oil rises ahead of a busy week for Wall Street",
       "key_drivers": [
-        "U.S. stock futures fall, oil rises ahead of a busy week for Wall Street",
+        "U.S. stock futures mixed, oil rises ahead of a busy week for Wall Street",
         "Stock futures fall as Iran peace talks stall, oil rises: Live updates",
-        "U.S. imposes sanctions on Chinese 'teapot' refinery for buying Iranian oil"
+        "China industrial profits jump 15.8% in March despite Iran war oil disruption"
       ],
       "key_tickers": [
         "XOM",
@@ -19,8 +19,8 @@
         "RIG"
       ],
       "trending_tickers": [
-        "SPY",
-        "CL=F"
+        "CL=F",
+        "SPY"
       ]
     },
     {
@@ -28,11 +28,11 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 3,
-      "primary_driver": "Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s ",
+      "primary_driver": "Cushman & Wakefield: An AI-Driven Selloff Creates Opportunity",
       "key_drivers": [
+        "Cushman & Wakefield: An AI-Driven Selloff Creates Opportunity",
         "Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s last Fed meeting",
-        "Sen. Thom Tillis drops opposition, says he’ll back Kevin Warsh’s Fed confirmation",
-        "Blanket Sell-Off In Software Is Creating Wild Mispricing"
+        "Sen. Thom Tillis drops opposition, says he’ll back Kevin Warsh’s Fed confirmation"
       ],
       "key_tickers": [
         "JPM",
@@ -50,15 +50,15 @@
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 7,
-      "primary_driver": "Everything we know about Cole Allen, the D.C. correspondents dinner shooter",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 6,
+      "primary_driver": "ARKQ: AI's Renaissance Lifting Cathie Wood's Autonomous Tech & Robotics ETF (Rating Upgrade)",
       "key_drivers": [
+        "ARKQ: AI's Renaissance Lifting Cathie Wood's Autonomous Tech & Robotics ETF (Rating Upgrade)",
+        "Cushman & Wakefield: An AI-Driven Selloff Creates Opportunity",
         "Everything we know about Cole Allen, the D.C. correspondents dinner shooter",
-        "Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s last Fed meeting",
-        "Iran's top diplomat briefly returns to Pakistan but Trump says the sides can talk by phone",
-        "Sen. Thom Tillis drops opposition, says he’ll back Kevin Warsh’s Fed confirmation"
+        "Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s last Fed meeting"
       ],
       "key_tickers": [
         "NVDA",
@@ -140,14 +140,14 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "Japan, South Korea stocks hit record high as investors shrug off stalled U.S.-Iran negotiations",
+      "primary_driver": "ETY: Attractive Discount Presents Opportunity To Accumulate",
       "key_drivers": [
-        "Japan, South Korea stocks hit record high as investors shrug off stalled U.S.-Iran negotiations",
-        "Oklo: Why Near-Term Isotope Catalysts Make This Fast Reactor Stock A Speculative Buy",
-        "Brown Advisory Mid-Cap Growth Strategy Portfolio Q1 2026 Commentary",
+        "ETY: Attractive Discount Presents Opportunity To Accumulate",
+        "Circle: High Upside As Arc Payments Scale",
+        "Merck KGaA: Small Breakout In 2026, Followed By Normalization",
         "Stock futures fall as Iran peace talks stall, oil rises: Live updates"
       ],
       "key_tickers": [
@@ -158,7 +158,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC"
+        "GLD",
+        "DXY"
       ]
     }
   ]
