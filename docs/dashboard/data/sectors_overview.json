@@ -2,14 +2,14 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Positive",
-      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 3,
-      "primary_driver": "U.S. stock futures mixed, oil rises ahead of a busy week for Wall Street",
+      "primary_driver": "S&P 500 futures are little changed as Iran peace talks stall, oil rises: Live updates",
       "key_drivers": [
-        "U.S. stock futures mixed, oil rises ahead of a busy week for Wall Street",
-        "Stock futures fall as Iran peace talks stall, oil rises: Live updates",
-        "China industrial profits jump 15.8% in March despite Iran war oil disruption"
+        "S&P 500 futures are little changed as Iran peace talks stall, oil rises: Live updates",
+        "Oil could end the year at $100 if flows don’t normalize soon, says Goldman Sachs",
+        "China industrial profits jump 15.8% in March, fueled by AI and chip boom despite oil shock risks"
       ],
       "key_tickers": [
         "XOM",
@@ -19,20 +19,22 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
-        "SPY"
+        "SPY",
+        "GS",
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Cushman & Wakefield: An AI-Driven Selloff Creates Opportunity",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "story_count": 4,
+      "primary_driver": "8-K - Prologis, L.P. (0001045610) (Filer)",
       "key_drivers": [
-        "Cushman & Wakefield: An AI-Driven Selloff Creates Opportunity",
-        "Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s last Fed meeting",
-        "Sen. Thom Tillis drops opposition, says he’ll back Kevin Warsh’s Fed confirmation"
+        "8-K - Prologis, L.P. (0001045610) (Filer)",
+        "8-K - Prologis, Inc. (0001045609) (Filer)",
+        "Pension-fund rebalancing and other red flags that suggest a stock-market pullback is nearing, according to Goldman Sachs",
+        "Oil could end the year at $100 if flows don’t normalize soon, says Goldman Sachs"
       ],
       "key_tickers": [
         "JPM",
@@ -42,23 +44,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "MSFT",
-        "GOOGL",
-        "AMZN",
-        "META"
+        "GS",
+        "BAC",
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 6,
-      "primary_driver": "ARKQ: AI's Renaissance Lifting Cathie Wood's Autonomous Tech & Robotics ETF (Rating Upgrade)",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 4,
+      "primary_driver": "This bank CEO let his AI clone handle an earnings call — now he's signing an OpenAI deal",
       "key_drivers": [
-        "ARKQ: AI's Renaissance Lifting Cathie Wood's Autonomous Tech & Robotics ETF (Rating Upgrade)",
-        "Cushman & Wakefield: An AI-Driven Selloff Creates Opportunity",
-        "Everything we know about Cole Allen, the D.C. correspondents dinner shooter",
-        "Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s last Fed meeting"
+        "This bank CEO let his AI clone handle an earnings call — now he's signing an OpenAI deal",
+        "China blocks Meta's $2 billion takeover of AI startup Manus",
+        "United Airlines CEO confirms he approached American Airlines about merger",
+        "China industrial profits jump 15.8% in March, fueled by AI and chip boom despite oil shock risks"
       ],
       "key_tickers": [
         "NVDA",
@@ -68,20 +70,18 @@
         "AMD"
       ],
       "trending_tickers": [
-        "MSFT",
-        "GOOGL",
-        "AMZN",
-        "META"
+        "META",
+        "CL=F"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "Leonardo: This European Defense Giant Is Quietly Fixing Its Biggest Weakness",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Leonardo: This European Defense Giant Is Quietly Fixing Its Biggest Weakness"
       ],
       "key_tickers": [
         "GE",
@@ -100,9 +100,9 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "‘My child requires lifelong support’: I’m in my 40s with $330,000 for retirement. How can I make thi",
+      "primary_driver": "United Airlines CEO confirms he approached American Airlines about merger",
       "key_drivers": [
-        "‘My child requires lifelong support’: I’m in my 40s with $330,000 for retirement. How can I make this last both our life",
+        "United Airlines CEO confirms he approached American Airlines about merger",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -121,10 +121,12 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 3,
+      "primary_driver": "8-K - Terns Pharmaceuticals, Inc. (0001831363) (Filer)",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "8-K - Terns Pharmaceuticals, Inc. (0001831363) (Filer)",
+        "8-K - Mirum Pharmaceuticals, Inc. (0001759425) (Filer)",
+        "Bumrungrad Hospital Public Company Limited (BUGDF) Q1 2026 Earnings Call Prepared Remarks Transcript"
       ],
       "key_tickers": [
         "LLY",
@@ -142,13 +144,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "ETY: Attractive Discount Presents Opportunity To Accumulate",
+      "story_count": 5,
+      "primary_driver": "They have millions in the bank — but without kids, who makes their life-or-death decisions?",
       "key_drivers": [
-        "ETY: Attractive Discount Presents Opportunity To Accumulate",
-        "Circle: High Upside As Arc Payments Scale",
-        "Merck KGaA: Small Breakout In 2026, Followed By Normalization",
-        "Stock futures fall as Iran peace talks stall, oil rises: Live updates"
+        "They have millions in the bank — but without kids, who makes their life-or-death decisions?",
+        "8-K - CorMedix Inc. (0001410098) (Filer)",
+        "S&P 500 futures are little changed as Iran peace talks stall, oil rises: Live updates",
+        "ServiceNow: The Selloff Looks Ugly Enough To Be Interesting (Rating Upgrade)"
       ],
       "key_tickers": [
         "TLT",
@@ -158,8 +160,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "SPY"
       ]
     }
   ]
