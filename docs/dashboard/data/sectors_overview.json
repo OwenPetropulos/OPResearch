@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Positive",
-      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 6,
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 5,
       "primary_driver": "This price for Brent crude is more important for its outlook than $100, charts show",
       "key_drivers": [
         "This price for Brent crude is more important for its outlook than $100, charts show",
         "AMZA, Over 8% Distribution On The Hottest Segment Right Now: MLP Midstream",
-        "Gold prices have lost nearly 11% since the Iran war began. Reasons to buy the metal are piling up again.",
-        "Brent oil prices top $108 per barrel after Iran peace talks unravel"
+        "Brent oil prices top $108 per barrel after Iran peace talks unravel",
+        "Oil giant Shell to buy Canada’s ARC Resources for $16.4 billion in push to boost output"
       ],
       "key_tickers": [
         "XOM",
@@ -22,21 +22,21 @@
       "trending_tickers": [
         "CL=F",
         "RIG",
-        "META",
-        "GLD"
+        "NVO",
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "8-K - HPS Corporate Lending Fund (0001838126) (Filer)",
+      "primary_driver": "Cole Allen charged with trying to assassinate Trump at WHCD event",
       "key_drivers": [
-        "8-K - HPS Corporate Lending Fund (0001838126) (Filer)",
-        "8-K - Keen Vision Acquisition Corp. (0001889983) (Filer)",
-        "8-K - AB Private Credit Investors Corp (0001634452) (Filer)",
-        "Atlassian Could Skyrocket This Week On Easing AI Fears"
+        "Cole Allen charged with trying to assassinate Trump at WHCD event",
+        "Judge in Musk v. Altman seats nine-person jury. Opening arguments start Tuesday",
+        "8-K - Goldman Sachs Private Credit Corp. (0001920145) (Filer)",
+        "Stocks making the biggest moves after hours: LendingClub, Nucor, Rambus, Bed Bath & Beyond and more"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
+        "GS",
         "EURUSD=X"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 11,
-      "primary_driver": "8-K - GULF RESOURCES, INC. (0000885462) (Filer)",
+      "primary_driver": "Micron and Sandisk continue rally as demand for memory expected to persist",
       "key_drivers": [
-        "8-K - GULF RESOURCES, INC. (0000885462) (Filer)",
-        "There’s a pizza price war going on, and Domino’s is feeling the pain",
-        "Poet Technologies’ stock craters nearly 50% in record drop, as Marvell relationship sours",
-        "Persistent Inflation Constrains Policy"
+        "Micron and Sandisk continue rally as demand for memory expected to persist",
+        "Edison International: I Remain Careful Following My 2024 Thesis",
+        "8-K - Wheels Up Experience Inc. (0001819516) (Filer)",
+        "Dollar Tree: Benefiting From Consumer Stress And Iran Tailwinds (Upgrade)"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,10 +70,10 @@
         "AMD"
       ],
       "trending_tickers": [
-        "SPY",
-        "CL=F",
-        "BAC",
-        "META"
+        "AMZN",
+        "LLY",
+        "RIG",
+        "SPY"
       ]
     },
     {
@@ -100,11 +101,9 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "There’s a pizza price war going on, and Domino’s is feeling the pain",
+      "story_count": 2,
+      "primary_driver": "Social Security benefits can be reduced for some retirees who work. How that may change",
       "key_drivers": [
-        "There’s a pizza price war going on, and Domino’s is feeling the pain",
-        "No kids, no care: Solo agers are hiring professional ‘next-of-kin’ for major life decisions",
         "Social Security benefits can be reduced for some retirees who work. How that may change",
         "1st Look at Local Housing Markets in December"
       ],
@@ -124,13 +123,13 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "8-K - InMed Pharmaceuticals Inc. (0001728328) (Filer)",
+      "story_count": 4,
+      "primary_driver": "8-K - PFIZER INC (0000078003) (Filer)",
       "key_drivers": [
-        "8-K - InMed Pharmaceuticals Inc. (0001728328) (Filer)",
-        "A new version of an old drug is helping men grow back some of their hair",
+        "8-K - PFIZER INC (0000078003) (Filer)",
         "Relay Therapeutics, Inc. (RLAY) Discusses Zovegalisib Triplet Data and First-Line Breast Cancer Strategy Transcript",
-        "Ligand Pharmaceuticals Incorporated (LGND) XOMA Royalty Corporation - M&A Call - Slideshow"
+        "Ligand Pharmaceuticals Incorporated (LGND) XOMA Royalty Corporation - M&A Call - Slideshow",
+        "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs"
       ],
       "key_tickers": [
         "LLY",
@@ -140,10 +139,10 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "RIG",
-        "BAC",
+        "PFE",
         "XOM",
-        "LLY"
+        "LLY",
+        "AMGN"
       ]
     },
     {
@@ -151,12 +150,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 11,
-      "primary_driver": "8-K - Crane Co (0001944013) (Filer)",
+      "primary_driver": "Celestica Earnings: Why I'm Finally Buying In (Rating Upgrade)",
       "key_drivers": [
-        "8-K - Crane Co (0001944013) (Filer)",
-        "8-K - PEOPLES FINANCIAL CORP /MS/ (0000770460) (Filer)",
-        "Trump calls for Jimmy Kimmel to be fired over Melania comments. It’s the latest clash over late-night TV.",
-        "8-K - ENVIRI Corp (0000045876) (Filer)"
+        "Celestica Earnings: Why I'm Finally Buying In (Rating Upgrade)",
+        "Alphabet: All-Time Highs May Be Ahead",
+        "ConnectOne: Merger Benefits Persist, But Loan Quality Requires Monitoring",
+        "Bed Bath & Beyond is seeing new life, as rare sales growth lifts stock more than 30%"
       ],
       "key_tickers": [
         "TLT",
@@ -166,9 +165,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "META",
-        "GLD",
-        "CL=F",
+        "LLY",
+        "GOOGL",
         "EURUSD=X"
       ]
     }

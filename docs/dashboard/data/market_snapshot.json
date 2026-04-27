@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-04-27T21:08:41Z",
-  "macro_summary": "Equity futures mixed; VIX at 18.0 — market caution elevated; Rates broadly stable; 10Y at 4.34%; Gold retreating (-0.6%); Crude firming (+2.4%).",
+  "last_updated": "2026-04-27T21:52:35Z",
+  "macro_summary": "Equity futures mixed; VIX at 18.0 — market caution elevated; Rates broadly stable; 10Y at 4.34%; Gold retreating (-0.5%); Crude firming (+2.4%).",
   "market_status": "After-Hours",
   "equities": [
     {
@@ -98,25 +98,25 @@
     {
       "label": "Crude Oil",
       "ticker": "CL",
-      "price": 96.66,
-      "change": 2.26,
-      "percent_change": 2.39,
+      "price": 96.68,
+      "change": 2.28,
+      "percent_change": 2.42,
       "direction": "up"
     },
     {
       "label": "Gold",
       "ticker": "GC",
-      "price": 4696.3,
-      "change": -26.0,
-      "percent_change": -0.55,
+      "price": 4697.7,
+      "change": -24.6,
+      "percent_change": -0.52,
       "direction": "down"
     },
     {
       "label": "Silver",
       "ticker": "SI",
-      "price": 75.45,
-      "change": -0.93,
-      "percent_change": -1.22,
+      "price": 75.46,
+      "change": -0.92,
+      "percent_change": -1.21,
       "direction": "down"
     },
     {
@@ -124,7 +124,7 @@
       "ticker": "HG",
       "price": 6.09,
       "change": 0.06,
-      "percent_change": 1.03,
+      "percent_change": 1.05,
       "direction": "up"
     }
   ],
@@ -132,9 +132,9 @@
     {
       "label": "USD/JPY",
       "ticker": "USDJPY",
-      "price": 159.369,
-      "change": -0.378,
-      "percent_change": -0.24,
+      "price": 159.374,
+      "change": -0.373,
+      "percent_change": -0.23,
       "direction": "down"
     },
     {
@@ -148,17 +148,17 @@
     {
       "label": "EUR/JPY",
       "ticker": "EURJPY",
-      "price": 186.812,
-      "change": 0.164,
-      "percent_change": 0.09,
+      "price": 186.804,
+      "change": 0.156,
+      "percent_change": 0.08,
       "direction": "up"
     },
     {
       "label": "DXY",
       "ticker": "DXY",
-      "price": 98.493,
-      "change": -0.017,
-      "percent_change": -0.02,
+      "price": 98.476,
+      "change": -0.034,
+      "percent_change": -0.03,
       "direction": "down"
     }
   ],
