@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderSnapshotGroup('equitiesRow',    snapshot.equities,    'Equities & Volatility');
     renderSnapshotGroup('ratesRow',       snapshot.rates,       'Rates');
     renderSnapshotGroup('commoditiesRow', snapshot.commodities, 'Commodities');
-    renderFXRow('fxRow', snapshot.fx);
+    renderFXRow('fxRow', snapshot.fx || []);
   } else {
     document.getElementById('snapshotSection').innerHTML =
       '<div class="error-state">Market snapshot data could not be loaded.</div>';
