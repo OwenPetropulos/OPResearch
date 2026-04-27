@@ -1,55 +1,82 @@
 /* utils.js — Shared utility functions */
 
-/**
- * Format a number as USD currency
- */
 function formatCurrency(val, decimals = 2) {
-  if (isNaN(val)) return '—';
-  return '$' + Math.abs(val).toLocaleString('en-US', {
+  if (val == null || isNaN(val)) return '—';
+  const abs  = Math.abs(val);
+  const sign = val < 0 ? '-' : '';
+  return sign + '$' + abs.toLocaleString('en-US', {
     minimumFractionDigits: decimals,
     maximumFractionDigits: decimals
   });
 }
 
-/**
- * Format a percentage with sign
- */
+function formatPrice(val, decimals = 2) {
+  if (val == null || isNaN(val)) return '—';
+  return parseFloat(val).toLocaleString('en-US', {
+    minimumFractionDigits: decimals,
+    maximumFractionDigits: decimals
+  });
+}
+
 function formatPct(val, decimals = 2) {
-  if (isNaN(val)) return '—';
+  if (val == null || isNaN(val)) return '—';
   const sign = val >= 0 ? '+' : '';
-  return sign + val.toFixed(decimals) + '%';
+  return sign + parseFloat(val).toFixed(decimals) + '%';
 }
 
-/**
- * Format a signed number
- */
 function formatSigned(val, decimals = 2) {
-  if (isNaN(val)) return '—';
+  if (val == null || isNaN(val)) return '—';
   const sign = val >= 0 ? '+' : '';
-  return sign + val.toFixed(decimals);
+  return sign + parseFloat(val).toFixed(decimals);
 }
 
-/**
- * Get CSS class for directional value
- */
 function dirClass(val) {
+  if (val == null || isNaN(val)) return 'flat';
   if (val > 0) return 'up';
   if (val < 0) return 'down';
   return 'flat';
 }
 
-/**
- * Get arrow character for direction
- */
 function dirArrow(val) {
+  if (val == null || isNaN(val)) return '—';
   if (val > 0) return '▲';
   if (val < 0) return '▼';
   return '—';
 }
 
-/**
- * Map source_type to badge CSS class
- */
+function formatTimestamp(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return '—';
+  return d.toLocaleString('en-US', {
+    month: 'short', day: 'numeric',
+    hour: '2-digit', minute: '2-digit', hour12: true
+  });
+}
+
+function timeAgo(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return '';
+  const diffMs  = Date.now() - d.getTime();
+  const diffMin = Math.floor(diffMs / 60000);
+  if (diffMin < 1)   return 'just now';
+  if (diffMin < 60)  return diffMin + 'm ago';
+  const diffHr = Math.floor(diffMin / 60);
+  if (diffHr < 24)   return diffHr + 'h ago';
+  const diffDay = Math.floor(diffHr / 24);
+  return diffDay + 'd ago';
+}
+
+function sortByTimestamp(arr) {
+  if (!Array.isArray(arr)) return [];
+  return [...arr].sort((a, b) => {
+    const ta = a.timestamp ? new Date(a.timestamp).getTime() : 0;
+    const tb = b.timestamp ? new Date(b.timestamp).getTime() : 0;
+    return tb - ta;
+  });
+}
+
 function sourceBadgeClass(sourceType) {
   const map = {
     'Mainstream':  'badge-mainstream',
@@ -61,9 +88,6 @@ function sourceBadgeClass(sourceType) {
   return map[sourceType] || 'badge-mainstream';
 }
 
-/**
- * Map alert_tag to CSS class
- */
 function alertTagClass(tag) {
   const map = {
     'Positive':        'tag-positive',
@@ -75,43 +99,85 @@ function alertTagClass(tag) {
   return map[tag] || 'tag-no-change';
 }
 
-/**
- * Map sentiment to CSS class
- */
 function sentimentClass(s) {
-  const map = { 'Positive': 'sentiment-positive', 'Negative': 'sentiment-negative', 'Neutral': 'sentiment-neutral' };
+  const map = {
+    'Positive': 'sentiment-positive',
+    'Negative': 'sentiment-negative',
+    'Neutral':  'sentiment-neutral'
+  };
   return map[s] || 'sentiment-neutral';
 }
 
-/**
- * Format ISO timestamp to readable string
- */
-function formatTimestamp(iso) {
-  if (!iso) return '';
-  const d = new Date(iso);
-  return d.toLocaleString('en-US', {
-    month: 'short', day: 'numeric',
-    hour: '2-digit', minute: '2-digit', hour12: true
-  });
+function renderSourceBadge(sourceType) {
+  const label = sourceType || 'Unknown';
+  return `<span class="badge ${sourceBadgeClass(sourceType)}">${label}</span>`;
 }
 
-/**
- * Fetch JSON from a local file with error handling
- */
+function renderSectorTags(tags) {
+  if (!Array.isArray(tags) || !tags.length) return '';
+  return tags.map(t => `<span class="badge tag-sector">${t}</span>`).join('');
+}
+
+function renderTickerTags(tickers) {
+  if (!Array.isArray(tickers) || !tickers.length) return '';
+  return tickers.map(t => `<span class="tag-ticker">${t}</span>`).join('');
+}
+
+function renderStoryRow(story) {
+  if (!story) return '';
+
+  const title        = story.title         || 'Untitled';
+  const summary      = story.summary       || '';
+  const whyItMatters = story.why_it_matters || '';
+  const sourceName   = story.source_name   || '';
+  const sourceType   = story.source_type   || '';
+  const timestamp    = story.timestamp     || '';
+  const url          = story.url           || '';
+  const sectorTags   = Array.isArray(story.sector_tags)  ? story.sector_tags  : [];
+  const tickerTags   = Array.isArray(story.ticker_tags)  ? story.ticker_tags  : [];
+
+  const headlineInner = url
+    ? `<a href="${url}" target="_blank" rel="noopener">${title}</a>`
+    : title;
+
+  const tsDisplay = timeAgo(timestamp) || formatTimestamp(timestamp);
+
+  return `
+    <div class="story-row">
+      <div class="story-row-top">
+        ${sourceType ? renderSourceBadge(sourceType) : ''}
+        ${renderSectorTags(sectorTags)}
+        ${renderTickerTags(tickerTags)}
+      </div>
+      <div class="story-headline">${headlineInner}</div>
+      ${summary ? `<div class="story-summary">${summary}</div>` : ''}
+      ${whyItMatters ? `
+        <div class="story-why-matters">
+          <div class="story-why-label">Why it matters</div>
+          ${whyItMatters}
+        </div>
+      ` : ''}
+      <div class="story-footer">
+        ${sourceName ? `<span class="story-source-name">${sourceName}</span>` : ''}
+        ${sourceName && tsDisplay ? `<span class="divider"></span>` : ''}
+        ${tsDisplay ? `<span class="story-timestamp">${tsDisplay}</span>` : ''}
+        ${url ? `<a class="story-link" href="${url}" target="_blank" rel="noopener">Read →</a>` : ''}
+      </div>
+    </div>
+  `;
+}
+
 async function fetchJSON(path) {
   try {
     const res = await fetch(path);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return await res.json();
   } catch (err) {
-    console.warn(`Failed to fetch ${path}:`, err.message);
+    console.warn(`fetchJSON failed for "${path}":`, err.message);
     return null;
   }
 }
 
-/**
- * Show a toast message
- */
 function showToast(msg, type = 'default') {
   let toast = document.getElementById('globalToast');
   if (!toast) {
@@ -122,62 +188,8 @@ function showToast(msg, type = 'default') {
   }
   toast.textContent = msg;
   toast.className = `toast ${type}`;
-  requestAnimationFrame(() => {
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 3000);
-  });
-}
-
-/**
- * Render a source badge element
- */
-function renderSourceBadge(sourceType) {
-  return `<span class="badge ${sourceBadgeClass(sourceType)}">${sourceType}</span>`;
-}
-
-/**
- * Render sector tag badges
- */
-function renderSectorTags(tags = []) {
-  return tags.map(t => `<span class="badge tag-sector">${t}</span>`).join('');
-}
-
-/**
- * Render ticker tags
- */
-function renderTickerTags(tickers = []) {
-  return tickers.map(t => `<span class="tag-ticker">${t}</span>`).join('');
-}
-
-/**
- * Build a full story row HTML
- */
-function renderStoryRow(story) {
-  return `
-    <div class="story-row">
-      <div class="story-row-top">
-        ${renderSourceBadge(story.source_type)}
-        ${renderSectorTags(story.sector_tags)}
-        ${renderTickerTags(story.ticker_tags)}
-      </div>
-      <div class="story-headline">
-        ${story.url
-          ? `<a href="${story.url}" target="_blank" rel="noopener">${story.title}</a>`
-          : story.title}
-      </div>
-      <div class="story-summary">${story.summary}</div>
-      ${story.why_it_matters ? `
-        <div class="story-why-matters">
-          <div class="story-why-label">Why it matters</div>
-          ${story.why_it_matters}
-        </div>
-      ` : ''}
-      <div class="story-footer">
-        <span class="story-source-name">${story.source_name}</span>
-        <span class="divider"></span>
-        <span class="story-timestamp">${formatTimestamp(story.timestamp)}</span>
-        ${story.url ? `<a class="story-link" href="${story.url}" target="_blank" rel="noopener">Read →</a>` : ''}
-      </div>
-    </div>
-  `;
+  void toast.offsetWidth;
+  toast.classList.add('show');
+  clearTimeout(toast._hideTimer);
+  toast._hideTimer = setTimeout(() => toast.classList.remove('show'), 3200);
 }
