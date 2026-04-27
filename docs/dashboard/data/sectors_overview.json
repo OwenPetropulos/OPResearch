@@ -2,14 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "S&P 500 futures are little changed as Iran peace talks stall, oil rises: Live updates",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 5,
+      "primary_driver": "Global oil prices surpass $108 a barrel on concerns Iran may have to cut production due to limited s",
       "key_drivers": [
-        "S&P 500 futures are little changed as Iran peace talks stall, oil rises: Live updates",
-        "Oil could end the year at $100 if flows don’t normalize soon, says Goldman Sachs",
-        "China industrial profits jump 15.8% in March, fueled by AI and chip boom despite oil shock risks"
+        "Global oil prices surpass $108 a barrel on concerns Iran may have to cut production due to limited storage",
+        "This price for Brent crude is more important for its outlook than $100, charts show",
+        "Brent oil prices top $108 per barrel after Iran peace talks unravel",
+        "Oil giant Shell to buy Canada’s ARC Resources for $16.4 billion in push to boost output"
       ],
       "key_tickers": [
         "XOM",
@@ -19,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "SPY",
-        "GS",
-        "CL=F"
+        "CL=F",
+        "BAC",
+        "NVO",
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 4,
-      "primary_driver": "8-K - Prologis, L.P. (0001045610) (Filer)",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 8,
+      "primary_driver": "Cole Allen charged with trying to assassinate Trump at WHCD event",
       "key_drivers": [
-        "8-K - Prologis, L.P. (0001045610) (Filer)",
-        "8-K - Prologis, Inc. (0001045609) (Filer)",
-        "Pension-fund rebalancing and other red flags that suggest a stock-market pullback is nearing, according to Goldman Sachs",
-        "Oil could end the year at $100 if flows don’t normalize soon, says Goldman Sachs"
+        "Cole Allen charged with trying to assassinate Trump at WHCD event",
+        "Jury selection kicks off in Musk v. Altman trial",
+        "Higher inflation is on the way. The Fed needs to make this clearer before it raises rates.",
+        "8-K - Federal Home Loan Bank of Atlanta (0001331465) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -44,23 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
-        "BAC",
-        "LLY",
-        "SPY"
+        "AMZN",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "This bank CEO let his AI clone handle an earnings call — now he's signing an OpenAI deal",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 14,
+      "primary_driver": "TSPY Vs. QDTE: Weighing 2 Ultra-High‑Yield Daily Options Income ETFs",
       "key_drivers": [
-        "This bank CEO let his AI clone handle an earnings call — now he's signing an OpenAI deal",
-        "China blocks Meta's $2 billion takeover of AI startup Manus",
-        "United Airlines CEO confirms he approached American Airlines about merger",
-        "China industrial profits jump 15.8% in March, fueled by AI and chip boom despite oil shock risks"
+        "TSPY Vs. QDTE: Weighing 2 Ultra-High‑Yield Daily Options Income ETFs",
+        "Global oil prices surpass $108 a barrel on concerns Iran may have to cut production due to limited storage",
+        "Intel Confirms Another Gold Mine Segment In Semiconductors",
+        "This price for Brent crude is more important for its outlook than $100, charts show"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,8 +70,10 @@
         "AMD"
       ],
       "trending_tickers": [
-        "META",
-        "CL=F"
+        "SPY",
+        "CL=F",
+        "LLY",
+        "BAC"
       ]
     },
     {
@@ -79,9 +81,9 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Leonardo: This European Defense Giant Is Quietly Fixing Its Biggest Weakness",
+      "primary_driver": "Boeing's Preferred And Common Shares Have Similar Risk And Reward: Both Are A Hold",
       "key_drivers": [
-        "Leonardo: This European Defense Giant Is Quietly Fixing Its Biggest Weakness"
+        "Boeing's Preferred And Common Shares Have Similar Risk And Reward: Both Are A Hold"
       ],
       "key_tickers": [
         "GE",
@@ -99,10 +101,11 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "United Airlines CEO confirms he approached American Airlines about merger",
+      "story_count": 3,
+      "primary_driver": "No kids, no care: Solo agers are hiring professional ‘next-of-kin’ for major life decisions",
       "key_drivers": [
-        "United Airlines CEO confirms he approached American Airlines about merger",
+        "No kids, no care: Solo agers are hiring professional ‘next-of-kin’ for major life decisions",
+        "Social Security benefits can be reduced for some retirees who work. How that may change",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -121,12 +124,11 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "8-K - Terns Pharmaceuticals, Inc. (0001831363) (Filer)",
+      "story_count": 2,
+      "primary_driver": "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs",
       "key_drivers": [
-        "8-K - Terns Pharmaceuticals, Inc. (0001831363) (Filer)",
-        "8-K - Mirum Pharmaceuticals, Inc. (0001759425) (Filer)",
-        "Bumrungrad Hospital Public Company Limited (BUGDF) Q1 2026 Earnings Call Prepared Remarks Transcript"
+        "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs",
+        "Biggest winner of the amended Microsoft-OpenAI deal — plus, mixed news for Eli Lilly"
       ],
       "key_tickers": [
         "LLY",
@@ -137,20 +139,21 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVO"
+        "AMGN",
+        "MSFT"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "They have millions in the bank — but without kids, who makes their life-or-death decisions?",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 11,
+      "primary_driver": "8-K - Origin Bancorp, Inc. (0001516912) (Filer)",
       "key_drivers": [
-        "They have millions in the bank — but without kids, who makes their life-or-death decisions?",
-        "8-K - CorMedix Inc. (0001410098) (Filer)",
-        "S&P 500 futures are little changed as Iran peace talks stall, oil rises: Live updates",
-        "ServiceNow: The Selloff Looks Ugly Enough To Be Interesting (Rating Upgrade)"
+        "8-K - Origin Bancorp, Inc. (0001516912) (Filer)",
+        "UltraTech Cement Limited (UCLQF) Q4 2026 Earnings Call Transcript",
+        "Easterly Government Properties, Inc. (DEA) Q1 2026 Earnings Call Transcript",
+        "Fastly Is Finally Earning Its Premium"
       ],
       "key_tickers": [
         "TLT",
@@ -160,7 +163,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY"
+        "RIG",
+        "LLY"
       ]
     }
   ]
