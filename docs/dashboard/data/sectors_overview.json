@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "This price for Brent crude is more important for its outlook than $100, charts show",
+      "story_count": 6,
+      "primary_driver": "U.S. crude oil tops $100 on report Trump dissatisfied with Iran's proposal to open Hormuz",
       "key_drivers": [
-        "This price for Brent crude is more important for its outlook than $100, charts show",
-        "AMZA, Over 8% Distribution On The Hottest Segment Right Now: MLP Midstream",
-        "Brent oil prices top $108 per barrel after Iran peace talks unravel",
-        "Oil giant Shell to buy Canada’s ARC Resources for $16.4 billion in push to boost output"
+        "U.S. crude oil tops $100 on report Trump dissatisfied with Iran's proposal to open Hormuz",
+        "Tech's hyperscalers face Wall Street for first time since U.S. Iran war sent oil prices soaring",
+        "Citi UK CEO: 'Phenomenal' market resilience is keeping recession risk at bay — for now",
+        "Global oil contract tops $110 after reports that Trump unhappy with proposal from Iran to end war"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,21 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "RIG",
-        "NVO",
-        "LLY"
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Cole Allen charged with trying to assassinate Trump at WHCD event",
+      "primary_driver": "8-K - PATTERSON UTI ENERGY INC (0000889900) (Filer)",
       "key_drivers": [
-        "Cole Allen charged with trying to assassinate Trump at WHCD event",
-        "Judge in Musk v. Altman seats nine-person jury. Opening arguments start Tuesday",
-        "8-K - Goldman Sachs Private Credit Corp. (0001920145) (Filer)",
-        "Stocks making the biggest moves after hours: LendingClub, Nucor, Rambus, Bed Bath & Beyond and more"
+        "8-K - PATTERSON UTI ENERGY INC (0000889900) (Filer)",
+        "8-K - CELESTICA INC (0001030894) (Filer)",
+        "8-K - Sleep Number Corp (0000827187) (Filer)",
+        "SLM : Cheap Valuation Meets Rising Credit Risk"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +45,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
-        "EURUSD=X"
+        "JPM",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Micron and Sandisk continue rally as demand for memory expected to persist",
+      "story_count": 15,
+      "primary_driver": "Watch for these 21 best-in-class stocks to keep powering the tech rally, analysts advise",
       "key_drivers": [
-        "Micron and Sandisk continue rally as demand for memory expected to persist",
-        "Edison International: I Remain Careful Following My 2024 Thesis",
-        "8-K - Wheels Up Experience Inc. (0001819516) (Filer)",
-        "Dollar Tree: Benefiting From Consumer Stress And Iran Tailwinds (Upgrade)"
+        "Watch for these 21 best-in-class stocks to keep powering the tech rally, analysts advise",
+        "8-K - Braze, Inc. (0001676238) (Filer)",
+        "U.S. crude oil tops $100 on report Trump dissatisfied with Iran's proposal to open Hormuz",
+        "What Paul Tudor Jones is warning us against doing as the S&P 500 hits record heights"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,20 +69,21 @@
         "AMD"
       ],
       "trending_tickers": [
-        "AMZN",
+        "CL=F",
         "LLY",
-        "RIG",
-        "SPY"
+        "SPY",
+        "AMD"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "8-K - T3 Defense Inc. (0001787518) (Filer)",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "8-K - T3 Defense Inc. (0001787518) (Filer)",
+        "Tech's hyperscalers face Wall Street for first time since U.S. Iran war sent oil prices soaring"
       ],
       "key_tickers": [
         "GE",
@@ -93,18 +93,18 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "CL=F"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Social Security benefits can be reduced for some retirees who work. How that may change",
+      "story_count": 3,
+      "primary_driver": "UPS leaves full-year outlook intact even as quarterly earnings top target, and stock falls",
       "key_drivers": [
-        "Social Security benefits can be reduced for some retirees who work. How that may change",
+        "UPS leaves full-year outlook intact even as quarterly earnings top target, and stock falls",
+        "‘I hope to retire early’: I’m 56 and have 80% in a traditional IRA and 20% in a Roth. Am I in trouble?",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -115,20 +115,16 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "8-K - PFIZER INC (0000078003) (Filer)",
+      "story_count": 1,
+      "primary_driver": "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs",
       "key_drivers": [
-        "8-K - PFIZER INC (0000078003) (Filer)",
-        "Relay Therapeutics, Inc. (RLAY) Discusses Zovegalisib Triplet Data and First-Line Breast Cancer Strategy Transcript",
-        "Ligand Pharmaceuticals Incorporated (LGND) XOMA Royalty Corporation - M&A Call - Slideshow",
         "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs"
       ],
       "key_tickers": [
@@ -139,23 +135,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "PFE",
-        "XOM",
         "LLY",
         "AMGN"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 11,
-      "primary_driver": "Celestica Earnings: Why I'm Finally Buying In (Rating Upgrade)",
+      "primary_driver": "8-K - Roadzen Inc. (0001868640) (Filer)",
       "key_drivers": [
-        "Celestica Earnings: Why I'm Finally Buying In (Rating Upgrade)",
-        "Alphabet: All-Time Highs May Be Ahead",
-        "ConnectOne: Merger Benefits Persist, But Loan Quality Requires Monitoring",
-        "Bed Bath & Beyond is seeing new life, as rare sales growth lifts stock more than 30%"
+        "8-K - Roadzen Inc. (0001868640) (Filer)",
+        "Virtus KAR Small-Mid Cap Growth Fund Q1 2026 Commentary",
+        "How to spot the silent fees and hidden costs your adviser isn’t mentioning",
+        "ARC Resources: Accepting The Shell Offer (Rating Downgrade)"
       ],
       "key_tickers": [
         "TLT",
@@ -165,9 +159,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY",
-        "GOOGL",
-        "EURUSD=X"
+        "BAC",
+        "COST"
       ]
     }
   ]
