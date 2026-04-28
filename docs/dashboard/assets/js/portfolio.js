@@ -1,36 +1,34 @@
 /* portfolio.js — Paper Portfolio System with localStorage */
 
 /* ============================================================
-   DATA MODEL
-   State stored in localStorage as:
-   - 'opr_portfolio': { cash, transactions: [], history: [] }
+   CONSTANTS & STATE
    ============================================================ */
 
-const STORAGE_KEY   = 'opr_portfolio';
-const STARTING_CASH = 100000; // Default starting capital
+const STORAGE_KEY          = 'opr_portfolio';
+const WATCHLIST_STORAGE_KEY = 'opr_watchlist';
+const STARTING_CASH        = 100000;
 
-let priceMap = {}; // Loaded from portfolio_prices.json
+let priceMap  = {};
 let portfolio = loadPortfolio();
 
-/* --- Initialize --- */
+/* ============================================================
+   INITIALIZATION
+   ============================================================ */
+
 document.addEventListener('DOMContentLoaded', async () => {
-  // Load current prices
-  const priceData = await fetchJSON('data/portfolio_prices.json');
-  if (priceData?.prices) {
+  const priceData = await fetchJSON('./data/portfolio_prices.json');
+  if (priceData?.prices && typeof priceData.prices === 'object') {
     priceMap = priceData.prices;
   } else {
-    showToast('Price data unavailable — using last known prices.', 'error');
+    showToast('Price data unavailable — valuations may be approximate.', 'error');
   }
 
-  // Seed with sample trades if brand new
   if (!portfolio.bootstrapped) {
     seedSamplePortfolio();
   }
 
-  // Render everything
   renderAll();
 
-  // Wire up form
   document.getElementById('addTradeBtn').addEventListener('click', handleAddTrade);
   document.getElementById('exportBtn').addEventListener('click', handleExport);
   document.getElementById('importBtn').addEventListener('click', handleImport);
@@ -45,9 +43,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 function loadPortfolio() {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) return JSON.parse(stored);
+    if (stored) {
+      const parsed = JSON.parse(stored);
+      if (parsed && Array.isArray(parsed.transactions)) return parsed;
+    }
   } catch (e) {
-    console.warn('Failed to parse portfolio:', e);
+    console.warn('Portfolio localStorage parse error:', e);
   }
   return { cash: STARTING_CASH, transactions: [], history: [], bootstrapped: false };
 }
@@ -56,33 +57,109 @@ function savePortfolio() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(portfolio));
   } catch (e) {
-    showToast('Storage error — portfolio may not be saved.', 'error');
+    showToast('Storage write error — portfolio may not be saved.', 'error');
   }
 }
 
 /* ============================================================
-   SAMPLE SEED DATA
+   WATCHLIST AUTO-SYNC
+   When a new ticker is added to the portfolio, automatically
+   create a watchlist entry if one does not already exist.
+   ============================================================ */
+
+function loadWatchlist() {
+  try {
+    const stored = localStorage.getItem(WATCHLIST_STORAGE_KEY);
+    if (stored) {
+      const parsed = JSON.parse(stored);
+      if (Array.isArray(parsed)) return parsed;
+    }
+  } catch (e) {
+    console.warn('Watchlist localStorage parse error:', e);
+  }
+  return [];
+}
+
+function saveWatchlist(items) {
+  try {
+    localStorage.setItem(WATCHLIST_STORAGE_KEY, JSON.stringify(items));
+  } catch (e) {
+    console.warn('Could not save watchlist:', e);
+  }
+}
+
+/**
+ * Add a ticker to the watchlist if it isn't already there.
+ * Infers sector from a simple keyword map — user can edit notes
+ * on the watchlist page afterward.
+ */
+function syncTickerToWatchlist(ticker, entryPrice) {
+  const watchlist = loadWatchlist();
+
+  // Already on watchlist — do not overwrite user's existing entry
+  if (watchlist.some(item => item.ticker === ticker)) {
+    return;
+  }
+
+  // Infer a rough sector from the ticker for convenience
+  const sector = inferSector(ticker);
+
+  const newEntry = {
+    ticker,
+    sector,
+    alert_tag:    'No Major Change',
+    notes:        `Added from portfolio on entry at $${entryPrice.toFixed(2)}. Update thesis here.`,
+    price:        priceMap[ticker] ?? entryPrice,
+    percent_move: null,
+  };
+
+  watchlist.unshift(newEntry); // Add to top of watchlist
+  saveWatchlist(watchlist);
+  log(`Auto-added ${ticker} to watchlist.`);
+}
+
+/**
+ * Simple sector inference from ticker symbol.
+ * Not exhaustive — just catches the most common names.
+ * User can always edit the sector on the watchlist page.
+ */
+function inferSector(ticker) {
+  const t = ticker.toUpperCase();
+  const map = {
+    // Technology
+    Technology:  ['NVDA','MSFT','GOOGL','AMZN','META','AAPL','AMD','ORCL','CRM','NOW','TSM','ASML','QCOM','INTC','MU','AMAT','LRCX','KLAC','AVGO','ARM'],
+    // Financials
+    Financials:  ['JPM','GS','BAC','MS','C','WFC','BRK-B','KRE','ZION','WAL','AXP','V','MA','BX','KKR','APO','SCHW'],
+    // Healthcare
+    Healthcare:  ['LLY','NVO','AMGN','PFE','VRTX','ABBV','MRK','JNJ','BMY','GILD','REGN','ISRG','UNH','CVS','CI'],
+    // Energy
+    Energy:      ['XOM','CVX','OXY','LNG','RIG','VAL','ET','SHEL','BP','TTE','COP','EOG','PXD','DVN','FANG','MPC','VLO','PSX','SLB','HAL'],
+    // Industrials
+    Industrials: ['GE','RTX','LMT','NOC','HON','CAT','DE','BA','GD','TDG','CARR','OTIS','EMR','ETN','ITW','PH'],
+    // Consumer
+    Consumer:    ['NKE','WMT','COST','TGT','ONON','LULU','HD','MCD','SBUX','TJX','BKNG','MAR','HLT','DIS','NFLX'],
+    // Macro (ETFs and macro instruments)
+    Macro:       ['GLD','TLT','TIP','SPY','QQQ','IWM','GDX','SHY','HYG','LQD','USO','SLV','COPX','UNG','FXY','FXE','UUP','VIX','DXY'],
+  };
+
+  for (const [sector, tickers] of Object.entries(map)) {
+    if (tickers.includes(t)) return sector;
+  }
+  return 'Uncategorized';
+}
+
+function log(msg) {
+  console.log(`[OPR Portfolio] ${msg}`);
+}
+
+/* ============================================================
+   SEED DATA
    ============================================================ */
 
 function seedSamplePortfolio() {
-  const seedTrades = [
-    { date: '2026-01-15', ticker: 'NVDA', side: 'buy',  shares: 10,  price: 780.00, note: 'AI cycle position' },
-    { date: '2026-01-20', ticker: 'JPM',  side: 'buy',  shares: 25,  price: 188.50, note: 'Bank earnings play' },
-    { date: '2026-02-03', ticker: 'GLD',  side: 'buy',  shares: 40,  price: 216.80, note: 'Stagflation hedge' },
-    { date: '2026-02-14', ticker: 'MSFT', side: 'buy',  shares: 15,  price: 395.20, note: 'Azure re-acceleration' },
-    { date: '2026-03-01', ticker: 'LLY',  side: 'buy',  shares: 5,   price: 690.00, note: 'GLP-1 secular trend' },
-    { date: '2026-03-10', ticker: 'NVDA', side: 'buy',  shares: 5,   price: 825.00, note: 'Add on dip' },
-    { date: '2026-03-20', ticker: 'NKE',  side: 'buy',  shares: 30,  price: 89.00,  note: 'Value play — China recovery' },
-    { date: '2026-04-01', ticker: 'NKE',  side: 'sell', shares: 15,  price: 82.00,  note: 'Cut on China miss' },
-    { date: '2026-04-10', ticker: 'OXY',  side: 'buy',  shares: 50,  price: 63.00,  note: 'Permian E&P exposure' },
-    { date: '2026-04-15', ticker: 'JPM',  side: 'buy',  shares: 10,  price: 195.00, note: 'Add before earnings' },
-  ];
-
-  seedTrades.forEach(t => applyTransaction(t, false));
+  // Start with a clean slate — no seed trades
+  // Users start with $100,000 cash and enter their own trades
   portfolio.bootstrapped = true;
-
-  // Build initial history from seed
-  rebuildHistory();
   savePortfolio();
 }
 
@@ -90,20 +167,18 @@ function seedSamplePortfolio() {
    PORTFOLIO LOGIC
    ============================================================ */
 
-/**
- * Apply a single transaction to portfolio state.
- * If saveAfter = true, persist to storage.
- */
 function applyTransaction(tx, saveAfter = true) {
   const trade = {
     id:     Date.now() + Math.random(),
     date:   tx.date,
-    ticker: tx.ticker.toUpperCase().trim(),
+    ticker: String(tx.ticker).toUpperCase().trim(),
     side:   tx.side,
     shares: parseFloat(tx.shares),
     price:  parseFloat(tx.price),
     note:   tx.note || ''
   };
+
+  if (!trade.ticker || !trade.date || isNaN(trade.shares) || isNaN(trade.price)) return false;
 
   const cost = trade.shares * trade.price;
 
@@ -113,30 +188,27 @@ function applyTransaction(tx, saveAfter = true) {
       return false;
     }
     portfolio.cash -= cost;
+
+    // Auto-sync new buy to watchlist
+    syncTickerToWatchlist(trade.ticker, trade.price);
+
   } else {
-    // sell
     portfolio.cash += cost;
   }
 
   portfolio.transactions.push(trade);
 
-  // Snapshot history
-  const totalVal = computeTotalValue();
   portfolio.history.push({
     date:  trade.date,
-    value: totalVal + portfolio.cash
+    value: computePortfolioValue()
   });
 
   if (saveAfter) savePortfolio();
   return true;
 }
 
-/**
- * Compute all current holdings from transaction history.
- * Returns array of { ticker, shares, avgCost, totalCost }
- */
 function computeHoldings() {
-  const positions = {}; // ticker -> { shares, totalCost }
+  const positions = {};
 
   portfolio.transactions.forEach(tx => {
     if (!positions[tx.ticker]) {
@@ -148,10 +220,8 @@ function computeHoldings() {
       pos.totalCost += tx.shares * tx.price;
       pos.shares    += tx.shares;
     } else {
-      // Reduce on average cost basis
       const avgCost  = pos.shares > 0 ? pos.totalCost / pos.shares : 0;
-      const costReduction = avgCost * tx.shares;
-      pos.totalCost  = Math.max(0, pos.totalCost - costReduction);
+      pos.totalCost  = Math.max(0, pos.totalCost - avgCost * tx.shares);
       pos.shares     = Math.max(0, pos.shares - tx.shares);
     }
   });
@@ -166,48 +236,15 @@ function computeHoldings() {
     }));
 }
 
-/**
- * Compute total market value of all holdings (no cash).
- */
-function computeTotalValue() {
-  const holdings = computeHoldings();
-  return holdings.reduce((sum, h) => {
-    const price = priceMap[h.ticker] || h.avgCost;
+function computeEquityValue() {
+  return computeHoldings().reduce((sum, h) => {
+    const price = priceMap[h.ticker] ?? h.avgCost;
     return sum + h.shares * price;
   }, 0);
 }
 
-/**
- * Rebuild the portfolio history from scratch (used after seeding).
- */
-function rebuildHistory() {
-  portfolio.history = [];
-  // Walk transactions in order
-  const sorted = [...portfolio.transactions].sort((a, b) => a.date.localeCompare(b.date));
-  let runningCash = STARTING_CASH;
-  const runningPos = {};
-
-  sorted.forEach(tx => {
-    const cost = tx.shares * tx.price;
-    if (tx.side === 'buy') {
-      runningCash -= cost;
-      if (!runningPos[tx.ticker]) runningPos[tx.ticker] = { shares: 0, totalCost: 0 };
-      runningPos[tx.ticker].shares    += tx.shares;
-      runningPos[tx.ticker].totalCost += cost;
-    } else {
-      runningCash += cost;
-      if (runningPos[tx.ticker]) {
-        runningPos[tx.ticker].shares = Math.max(0, runningPos[tx.ticker].shares - tx.shares);
-      }
-    }
-
-    const equityVal = Object.entries(runningPos).reduce((sum, [ticker, pos]) => {
-      const p = priceMap[ticker] || (pos.shares > 0 ? pos.totalCost / pos.shares : 0);
-      return sum + pos.shares * p;
-    }, 0);
-
-    portfolio.history.push({ date: tx.date, value: runningCash + equityVal });
-  });
+function computePortfolioValue() {
+  return computeEquityValue() + portfolio.cash;
 }
 
 /* ============================================================
@@ -221,28 +258,24 @@ function renderAll() {
   renderLedger();
 }
 
-/* --- Summary Metrics --- */
+/* --- Metrics --- */
 function renderMetrics() {
   const holdings   = computeHoldings();
-  const equityVal  = holdings.reduce((sum, h) => {
-    return sum + h.shares * (priceMap[h.ticker] || h.avgCost);
-  }, 0);
+  const equityVal  = computeEquityValue();
   const totalValue = equityVal + portfolio.cash;
-  const totalCost  = holdings.reduce((sum, h) => sum + h.totalCost, 0);
+  const totalCost  = holdings.reduce((s, h) => s + h.totalCost, 0);
   const unrealPnL  = equityVal - totalCost;
-  const returnPct  = totalCost > 0 ? (unrealPnL / STARTING_CASH) * 100 : 0;
+  const returnPct  = ((totalValue - STARTING_CASH) / STARTING_CASH) * 100;
 
-  // Daily P&L: compare last two history entries
   let dailyPnL = 0;
-  if (portfolio.history.length >= 2) {
-    const last    = portfolio.history[portfolio.history.length - 1].value;
-    const prevDay = portfolio.history[portfolio.history.length - 2].value;
-    dailyPnL = last - prevDay;
+  const hist = portfolio.history;
+  if (hist.length >= 2) {
+    dailyPnL = hist[hist.length - 1].value - hist[hist.length - 2].value;
   }
 
   setMetric('metricTotal',  formatCurrency(totalValue));
   setMetric('metricCash',   formatCurrency(portfolio.cash));
-  setMetric('metricDaily',  formatCurrency(dailyPnL), dailyPnL >= 0 ? 'up' : 'down');
+  setMetric('metricDaily',  formatCurrency(dailyPnL),  dailyPnL  >= 0 ? 'up' : 'down');
   setMetric('metricPnL',    formatCurrency(unrealPnL), unrealPnL >= 0 ? 'up' : 'down');
   setMetric('metricReturn', formatPct(returnPct),       returnPct >= 0 ? 'up' : 'down');
 }
@@ -251,36 +284,34 @@ function setMetric(id, value, colorClass = '') {
   const el = document.getElementById(id);
   if (!el) return;
   el.textContent = value;
-  el.className = 'metric-value' + (colorClass ? ' ' + colorClass : '');
+  el.className   = 'metric-value' + (colorClass ? ' ' + colorClass : '');
 }
 
-/* --- Portfolio Chart --- */
+/* --- Chart --- */
 function renderChart() {
   const canvas = document.getElementById('portfolioChart');
   if (!canvas) return;
 
   const history = portfolio.history;
+  canvas.width  = canvas.offsetWidth || (canvas.parentElement?.offsetWidth) || 800;
+  canvas.height = 240;
+
+  const ctx = canvas.getContext('2d');
+  const W   = canvas.width;
+  const H   = canvas.height;
+  ctx.clearRect(0, 0, W, H);
+
   if (history.length < 2) {
-    const ctx = canvas.getContext('2d');
     ctx.fillStyle = '#435570';
-    ctx.font = '13px IBM Plex Mono, monospace';
+    ctx.font      = '12px IBM Plex Mono, monospace';
     ctx.textAlign = 'center';
-    canvas.width  = canvas.offsetWidth || 800;
-    canvas.height = 240;
-    ctx.fillText('Add trades to see portfolio performance chart.', canvas.width / 2, 120);
+    ctx.fillText('Add trades to see portfolio performance chart.', W / 2, H / 2);
     return;
   }
 
-  // Set canvas size
-  canvas.width  = canvas.offsetWidth || canvas.parentElement.offsetWidth || 800;
-  canvas.height = 240;
-
-  const ctx    = canvas.getContext('2d');
-  const W      = canvas.width;
-  const H      = canvas.height;
-  const padL   = 72;
+  const padL   = 80;
   const padR   = 24;
-  const padT   = 20;
+  const padT   = 24;
   const padB   = 36;
   const chartW = W - padL - padR;
   const chartH = H - padT - padB;
@@ -294,34 +325,26 @@ function renderChart() {
   const xScale = i => padL + (i / (values.length - 1)) * chartW;
   const yScale = v => padT + chartH - ((v - minVal) / range) * chartH;
 
-  // Clear
-  ctx.clearRect(0, 0, W, H);
-
-  // Grid lines (horizontal)
-  ctx.strokeStyle = '#1e293b';
-  ctx.lineWidth   = 1;
   const gridLines = 4;
   for (let i = 0; i <= gridLines; i++) {
-    const y = padT + (i / gridLines) * chartH;
+    const y   = padT + (i / gridLines) * chartH;
+    const val = maxVal - (i / gridLines) * range;
+    ctx.strokeStyle = '#1e293b';
+    ctx.lineWidth   = 1;
     ctx.beginPath();
     ctx.moveTo(padL, y);
     ctx.lineTo(W - padR, y);
     ctx.stroke();
-
-    // Y axis labels
-    const val = maxVal - (i / gridLines) * range;
     ctx.fillStyle = '#435570';
     ctx.font      = '10px IBM Plex Mono, monospace';
     ctx.textAlign = 'right';
     ctx.fillText('$' + Math.round(val).toLocaleString(), padL - 8, y + 4);
   }
 
-  // Determine line color (up or down overall)
-  const isUp = values[values.length - 1] >= values[0];
+  const isUp      = values[values.length - 1] >= values[0];
   const lineColor = isUp ? '#22c55e' : '#ef4444';
   const fillColor = isUp ? 'rgba(34,197,94,0.08)' : 'rgba(239,68,68,0.08)';
 
-  // Fill area
   ctx.beginPath();
   ctx.moveTo(xScale(0), yScale(values[0]));
   values.forEach((v, i) => ctx.lineTo(xScale(i), yScale(v)));
@@ -331,30 +354,27 @@ function renderChart() {
   ctx.fillStyle = fillColor;
   ctx.fill();
 
-  // Line
   ctx.beginPath();
   ctx.moveTo(xScale(0), yScale(values[0]));
   values.forEach((v, i) => ctx.lineTo(xScale(i), yScale(v)));
-  ctx.strokeStyle  = lineColor;
-  ctx.lineWidth    = 2;
-  ctx.lineJoin     = 'round';
-  ctx.shadowColor  = lineColor;
-  ctx.shadowBlur   = 6;
+  ctx.strokeStyle = lineColor;
+  ctx.lineWidth   = 2;
+  ctx.lineJoin    = 'round';
+  ctx.shadowColor = lineColor;
+  ctx.shadowBlur  = 6;
   ctx.stroke();
-  ctx.shadowBlur   = 0;
+  ctx.shadowBlur  = 0;
 
-  // X axis labels (show a subset)
   ctx.fillStyle = '#435570';
   ctx.font      = '10px IBM Plex Mono, monospace';
   ctx.textAlign = 'center';
-  const step = Math.max(1, Math.floor(labels.length / 5));
+  const step    = Math.max(1, Math.floor(labels.length / 5));
   labels.forEach((label, i) => {
     if (i % step === 0 || i === labels.length - 1) {
       ctx.fillText(label, xScale(i), H - 8);
     }
   });
 
-  // Current value label (top right)
   const lastVal = values[values.length - 1];
   ctx.fillStyle  = lineColor;
   ctx.font       = 'bold 11px IBM Plex Mono, monospace';
@@ -364,34 +384,42 @@ function renderChart() {
 
 /* --- Holdings Table --- */
 function renderHoldingsTable() {
-  const holdings  = computeHoldings();
-  const totalVal  = computeTotalValue() + portfolio.cash;
-  const tbody     = document.getElementById('holdingsTbody');
+  const tbody   = document.getElementById('holdingsTbody');
   if (!tbody) return;
 
+  const holdings  = computeHoldings();
+  const totalVal  = computePortfolioValue();
+
   if (!holdings.length) {
-    tbody.innerHTML = `<tr><td colspan="7" class="empty-state">No open positions.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="7" class="empty-state">No open positions. Add a trade to get started.</td></tr>`;
     return;
   }
 
   tbody.innerHTML = holdings.map(h => {
-    const price    = priceMap[h.ticker] || h.avgCost;
-    const mktVal   = h.shares * price;
+    const price     = priceMap[h.ticker] ?? h.avgCost;
+    const mktVal    = h.shares * price;
     const unrealPnL = mktVal - h.totalCost;
-    const weight   = totalVal > 0 ? (mktVal / totalVal) * 100 : 0;
-    const pnlClass = unrealPnL >= 0 ? 'up' : 'down';
+    const unrealPct = h.totalCost > 0 ? (unrealPnL / h.totalCost) * 100 : 0;
+    const weight    = totalVal > 0 ? (mktVal / totalVal) * 100 : 0;
+    const pnlClass  = unrealPnL >= 0 ? 'up' : 'down';
+    const isPriced  = !!priceMap[h.ticker];
 
     return `
       <tr>
-        <td class="mono strong">${h.ticker}</td>
-        <td class="mono">${h.shares.toFixed(2)}</td>
+        <td class="mono strong">
+          ${h.ticker}
+          ${!isPriced ? `<span style="font-size:0.6rem;color:var(--amber);margin-left:4px;" title="No live price — using avg cost">~</span>` : ''}
+        </td>
+        <td class="mono">${h.shares.toFixed(4)}</td>
         <td class="mono">${formatCurrency(h.avgCost)}</td>
-        <td class="mono">${formatCurrency(price)}</td>
+        <td class="mono">${formatCurrency(price)}${!isPriced ? ' <span style="color:var(--text-muted);font-size:0.65rem;">(est)</span>' : ''}</td>
         <td class="mono">${formatCurrency(mktVal)}</td>
-        <td class="mono ${pnlClass}">${formatCurrency(unrealPnL)} (${formatPct((unrealPnL / h.totalCost) * 100)})</td>
+        <td class="mono ${pnlClass}">
+          ${formatCurrency(unrealPnL)}
+          <span style="opacity:0.7;">(${formatPct(unrealPct)})</span>
+        </td>
         <td class="mono">${weight.toFixed(1)}%</td>
-      </tr>
-    `;
+      </tr>`;
   }).join('');
 }
 
@@ -409,14 +437,13 @@ function renderLedger() {
 
   tbody.innerHTML = txns.map(tx => `
     <tr>
-      <td class="mono">${tx.date}</td>
+      <td class="mono">${tx.date || '—'}</td>
       <td class="mono strong">${tx.ticker}</td>
       <td><span class="side-${tx.side}">${tx.side.toUpperCase()}</span></td>
       <td class="mono">${tx.shares}</td>
       <td class="mono">${formatCurrency(tx.price)}</td>
       <td style="color:var(--text-muted);font-size:0.78rem;">${tx.note || '—'}</td>
-    </tr>
-  `).join('');
+    </tr>`).join('');
 }
 
 /* ============================================================
@@ -424,19 +451,18 @@ function renderLedger() {
    ============================================================ */
 
 function handleAddTrade() {
-  const ticker = document.getElementById('tradeTicker').value.trim().toUpperCase();
-  const side   = document.getElementById('tradeSide').value;
-  const shares = parseFloat(document.getElementById('tradeShares').value);
-  const price  = parseFloat(document.getElementById('tradePrice').value);
-  const date   = document.getElementById('tradeDate').value;
-  const note   = document.getElementById('tradeNote').value.trim();
+  const ticker = (document.getElementById('tradeTicker')?.value || '').trim().toUpperCase();
+  const side   = document.getElementById('tradeSide')?.value;
+  const shares = parseFloat(document.getElementById('tradeShares')?.value);
+  const price  = parseFloat(document.getElementById('tradePrice')?.value);
+  const date   = document.getElementById('tradeDate')?.value;
+  const note   = (document.getElementById('tradeNote')?.value || '').trim();
 
-  if (!ticker || !side || isNaN(shares) || shares <= 0 || isNaN(price) || price <= 0 || !date) {
+  if (!ticker || !side || !date || isNaN(shares) || shares <= 0 || isNaN(price) || price <= 0) {
     showToast('Please fill in all required trade fields.', 'error');
     return;
   }
 
-  // Validate sell against holdings
   if (side === 'sell') {
     const holdings = computeHoldings();
     const pos = holdings.find(h => h.ticker === ticker);
@@ -448,48 +474,58 @@ function handleAddTrade() {
 
   const ok = applyTransaction({ ticker, side, shares, price, date, note }, true);
   if (ok) {
-    showToast(`${side.toUpperCase()} ${shares} ${ticker} @ ${formatCurrency(price)} recorded.`, 'success');
-    clearForm();
+    const wasAutoAdded = side === 'buy';
+    showToast(
+      `${side.toUpperCase()} ${shares} ${ticker} @ ${formatCurrency(price)} recorded.` +
+      (wasAutoAdded ? ` ${ticker} added to watchlist.` : ''),
+      'success'
+    );
+    clearTradeForm();
     renderAll();
   }
 }
 
-function clearForm() {
-  ['tradeTicker','tradeShares','tradePrice','tradeNote'].forEach(id => {
+function clearTradeForm() {
+  ['tradeTicker', 'tradeShares', 'tradePrice', 'tradeNote'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.value = '';
   });
-  // Reset date to today
   const dateEl = document.getElementById('tradeDate');
   if (dateEl) dateEl.value = new Date().toISOString().split('T')[0];
 }
 
 function handleExport() {
-  const blob = new Blob([JSON.stringify(portfolio, null, 2)], { type: 'application/json' });
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href     = url;
-  a.download = `opr_portfolio_${new Date().toISOString().split('T')[0]}.json`;
-  a.click();
-  URL.revokeObjectURL(url);
-  showToast('Portfolio exported.', 'success');
+  try {
+    const blob = new Blob([JSON.stringify(portfolio, null, 2)], { type: 'application/json' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href     = url;
+    a.download = `opr_portfolio_${new Date().toISOString().split('T')[0]}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    showToast('Portfolio exported.', 'success');
+  } catch (e) {
+    showToast('Export failed: ' + e.message, 'error');
+  }
 }
 
 function handleImport() {
-  document.getElementById('importFile').click();
+  document.getElementById('importFile')?.click();
 }
 
 function handleImportFile(e) {
-  const file = e.target.files[0];
+  const file = e.target.files?.[0];
   if (!file) return;
 
   const reader = new FileReader();
   reader.onload = (ev) => {
     try {
       const imported = JSON.parse(ev.target.result);
-      if (!imported.transactions || !Array.isArray(imported.transactions)) {
-        throw new Error('Invalid portfolio format');
-      }
+      if (!imported || typeof imported !== 'object') throw new Error('File is not a valid JSON object.');
+      if (!Array.isArray(imported.transactions))       throw new Error('"transactions" must be an array.');
+      if (typeof imported.cash !== 'number')            throw new Error('"cash" must be a number.');
+      if (!Array.isArray(imported.history))             throw new Error('"history" must be an array.');
+
       portfolio = imported;
       savePortfolio();
       renderAll();
@@ -499,13 +535,18 @@ function handleImportFile(e) {
     }
   };
   reader.readAsText(file);
-  e.target.value = ''; // reset input
+  e.target.value = '';
 }
 
 function handleReset() {
-  if (!confirm('Reset portfolio? This will clear all trades and cannot be undone.')) return;
-  portfolio = { cash: STARTING_CASH, transactions: [], history: [], bootstrapped: true };
+  if (!confirm('Reset portfolio? This will erase all trades and cannot be undone.')) return;
+  portfolio = {
+    cash:         STARTING_CASH,
+    transactions: [],
+    history:      [],
+    bootstrapped: true
+  };
   savePortfolio();
   renderAll();
-  showToast('Portfolio reset.', 'default');
+  showToast('Portfolio reset to $100,000 starting cash.', 'default');
 }
