@@ -60,17 +60,30 @@ CBOE_RATE_TICKERS = {"^TNX", "^IRX", "^TYX", "^FVX"}
 # ============================================================
 # PORTFOLIO PRICE TICKER UNIVERSE
 # ============================================================
+# In config.py — replace just the PRICE_TICKERS list:
+
 PRICE_TICKERS = [
-    "NVDA", "MSFT", "GOOGL", "AMZN", "META", "AAPL", "AMD",
-    "JPM", "GS", "BAC", "MS", "KRE", "ZION", "WAL",
-    "LLY", "NVO", "AMGN", "PFE", "VRTX",
-    "XOM", "CVX", "OXY", "LNG", "RIG", "VAL",
-    "GE", "RTX", "LMT", "NOC", "HON", "CAT",
-    "NKE", "WMT", "COST", "TGT", "ONON", "LULU",
-    "GLD", "TLT", "TIP", "SPY", "QQQ", "IWM", "GDX",
-    "USO", "SLV", "COPX",
-    # FX ETFs for portfolio pricing
+    # Tech
+    "NVDA", "MSFT", "GOOGL", "AMZN", "META", "AAPL", "AMD", "ORCL", "CRM", "NOW",
+    # Financials
+    "JPM", "GS", "BAC", "MS", "KRE", "ZION", "WAL", "BRK-B", "C", "WFC",
+    # Healthcare
+    "LLY", "NVO", "AMGN", "PFE", "VRTX", "ABBV", "MRK", "JNJ",
+    # Energy
+    "XOM", "CVX", "OXY", "LNG", "RIG", "VAL", "ET", "SHEL", "BP", "TTE",
+    "COP", "EOG", "PXD", "DVN", "FANG", "MPC", "VLO", "PSX",
+    # Industrials
+    "GE", "RTX", "LMT", "NOC", "HON", "CAT", "DE", "BA", "GD",
+    # Consumer
+    "NKE", "WMT", "COST", "TGT", "ONON", "LULU", "AMZN", "HD", "MCD",
+    # Macro ETFs
+    "GLD", "TLT", "TIP", "SPY", "QQQ", "IWM", "GDX", "SHY", "HYG", "LQD",
+    # Commodity ETFs
+    "USO", "SLV", "COPX", "UNG",
+    # FX ETFs
     "FXY", "FXE", "UUP",
+    # International / ADRs
+    "BABA", "TSM", "ASML", "SAP", "NVS", "RYCEY",
 ]
 
 # ============================================================
