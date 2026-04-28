@@ -5,11 +5,11 @@
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "U.S. oil hovers near $100 on report Trump dissatisfied with Iran's proposal to open Hormuz",
+      "primary_driver": "United Arab Emirates to leave OPEC May 1, energy chief says still committed to oil price stability",
       "key_drivers": [
-        "U.S. oil hovers near $100 on report Trump dissatisfied with Iran's proposal to open Hormuz",
-        "Natural Gas Recovers, But Downside Risks Remain",
         "United Arab Emirates to leave OPEC May 1, energy chief says still committed to oil price stability",
+        "UAE's shock OPEC exit: What it means for the oil cartel's future and for crude prices",
+        "U.S. oil hovers near $100 on report Trump dissatisfied with Iran's proposal to open Hormuz",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -30,12 +30,12 @@
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "FCC launches review of Disney broadcast licenses years ahead of schedule",
+      "primary_driver": "OpenAI trial day 2 takeaways: Musk testifies OpenAI was created as nonprofit to counter Google",
       "key_drivers": [
-        "FCC launches review of Disney broadcast licenses years ahead of schedule",
-        "8-K - Stepstone Private Credit Fund LLC (0001950803) (Filer)",
-        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
-        "8-K - PGIM Private Credit Fund (0001923622) (Filer)"
+        "OpenAI trial day 2 takeaways: Musk testifies OpenAI was created as nonprofit to counter Google",
+        "DHS shutdown: Congressional dysfunction imperils pay for TSA, Secret Service",
+        "Starbucks raises full-year outlook as turnaround takes hold — despite higher gas prices",
+        "8-K - Pyrophyte Acquisition Corp. (0001848756) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -45,20 +45,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM"
+        "GOOGL",
+        "AMZN",
+        "RIG",
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 13,
-      "primary_driver": "2 Infrastructure Plays To Power The AI Boom",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 16,
+      "primary_driver": "This is the most critical question facing U.S. investors right now — and it has nothing to do with I",
       "key_drivers": [
-        "2 Infrastructure Plays To Power The AI Boom",
-        "These bonds protect against inflation. How to optimize them for your portfolio",
-        "Elon Musk takes the stand in OpenAI trial: Live updates",
-        "Traders bet Nvidia's stock will return to record highs soon"
+        "This is the most critical question facing U.S. investors right now — and it has nothing to do with Iran",
+        "Why buying crypto in a bear market may be a cheaper way to play the AI boom",
+        "OpenAI trial day 2 takeaways: Musk testifies OpenAI was created as nonprofit to counter Google",
+        "Nvidia: AI Transcends Semiconductors' Cyclical Nature"
       ],
       "key_tickers": [
         "NVDA",
@@ -68,20 +71,20 @@
         "AMD"
       ],
       "trending_tickers": [
+        "RIG",
         "CL=F",
-        "BAC",
-        "AMZN",
-        "AAPL"
+        "LLY",
+        "GOOGL"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "2 Infrastructure Plays To Power The AI Boom",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "2 Infrastructure Plays To Power The AI Boom"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -97,15 +100,14 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Positive",
-      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 5,
-      "primary_driver": "Traders bet Nvidia's stock will return to record highs soon",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 3,
+      "primary_driver": "8-K - Allegiant Travel CO (0001362468) (Filer)",
       "key_drivers": [
-        "Traders bet Nvidia's stock will return to record highs soon",
-        "8-K - PROCACCIANTI HOTEL REIT, INC. (0001692345) (Filer)",
-        "‘I hope to retire early’: I’m 56 and have 80% in a traditional IRA and 20% in a Roth. Am I in trouble?",
-        "Couple launched a burrito spot in a Home Depot parking lot—their two restaurants brought in $2.3 million in sales in 202"
+        "8-K - Allegiant Travel CO (0001362468) (Filer)",
+        "No kids, no care: Solo agers are hiring professional ‘next-of-kin’ for major life decisions",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -115,17 +117,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NVDA",
-        "TGT"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs",
+      "story_count": 3,
+      "primary_driver": "Kiniksa Pharmaceuticals International, plc (KNSA) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
+        "Kiniksa Pharmaceuticals International, plc (KNSA) Q1 2026 Earnings Call Transcript",
+        "Nautilus Biotechnology, Inc. (NAUT) Q1 2026 Earnings Call Transcript",
         "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs"
       ],
       "key_tickers": [
@@ -145,12 +149,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Ex-FBI Director James Comey indicted for his ‘8647’ seashell post on Instagram",
+      "primary_driver": "Ex-FBI Director James Comey charged with threatening Trump's life in ‘8647’ post",
       "key_drivers": [
-        "Ex-FBI Director James Comey indicted for his ‘8647’ seashell post on Instagram",
-        "I Bought 50 Undervalued Stocks In 2019 And 2020: Here's How They Performed",
-        "Trump White House ballroom unlikely to get WHCD buy-in — or end president's off-site events, critics say",
-        "Palantir Down 31%: Might Nibble Around Earnings"
+        "Ex-FBI Director James Comey charged with threatening Trump's life in ‘8647’ post",
+        "Ventas, Inc. (VTR) Q1 2026 Earnings Call Transcript",
+        "Polaris Inc. (PII) Q1 2026 Earnings Call Transcript",
+        "XLB: Materials' Alpha Cools As The U.S.-Iran Conflict Presses On"
       ],
       "key_tickers": [
         "TLT",
@@ -160,9 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "META",
-        "AAPL",
-        "BAC"
+        "META"
       ]
     }
   ]
