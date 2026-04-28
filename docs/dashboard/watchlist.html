@@ -26,7 +26,10 @@
       <div class="page-header-top">
         <h1 class="page-title">Watchlist</h1>
       </div>
-      <div class="macro-summary-line">Tracked positions with alerts, notes, and sector context.</div>
+      <div class="macro-summary-line">
+        Tracked positions with alerts, notes, and sector context.
+        Buying a stock in the Portfolio page automatically adds it here.
+      </div>
     </div>
 
     <!-- ADD TICKER FORM -->
@@ -79,6 +82,14 @@
       </div>
       <div class="trade-form-actions">
         <button class="btn btn-primary" id="addTickerBtn">+ Add to Watchlist</button>
+        <button class="btn btn-secondary" id="exportWatchlistBtn">Export Watchlist JSON</button>
+        <div style="margin-left:auto; font-size:0.72rem; color:var(--text-muted); line-height:1.5; max-width:340px;">
+          After exporting, commit <code style="font-family:var(--font-mono);font-size:0.68rem;
+          background:var(--bg-elevated);padding:1px 5px;border-radius:3px;">watchlist.json</code>
+          to <code style="font-family:var(--font-mono);font-size:0.68rem;background:var(--bg-elevated);
+          padding:1px 5px;border-radius:3px;">docs/dashboard/data/</code>
+          so the pipeline fetches live prices for all your tickers.
+        </div>
       </div>
     </div>
 
