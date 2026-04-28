@@ -1,4 +1,4 @@
-/* watchlist.js — Watchlist Page with full add/remove CRUD */
+/* watchlist.js — Watchlist Page with full add/remove CRUD + export */
 
 const WATCHLIST_STORAGE_KEY = 'opr_watchlist';
 
@@ -71,12 +71,12 @@ function renderWatchlistFull(items) {
 function renderWatchlistCard(item, index) {
   if (!item) return '';
 
-  const ticker    = item.ticker       || '—';
-  const sector    = item.sector       || '—';
-  const price     = item.price        ?? null;
-  const move      = item.percent_move ?? null;
-  const alertTag  = item.alert_tag    || 'No Major Change';
-  const notes     = item.notes        || '';
+  const ticker   = item.ticker       || '—';
+  const sector   = item.sector       || '—';
+  const price    = item.price        ?? null;
+  const move     = item.percent_move ?? null;
+  const alertTag = item.alert_tag    || 'No Major Change';
+  const notes    = item.notes        || '';
 
   const moveClass  = move != null ? dirClass(move)  : 'flat';
   const moveArrow  = move != null ? dirArrow(move)  : '';
@@ -97,14 +97,15 @@ function renderWatchlistCard(item, index) {
       <div>
         ${notes ? `<div class="watchlist-card-notes">${notes}</div>` : ''}
         <div style="margin-top:12px; display:flex; gap:12px; align-items:center;">
-          <a href="${sectorLink}" style="font-size:0.72rem; color:var(--text-muted); font-weight:500;">
+          <a href="${sectorLink}"
+             style="font-size:0.72rem; color:var(--text-muted); font-weight:500;">
             → View ${sector} sector
           </a>
           <button
             onclick="removeItem(${index})"
-            style="font-size:0.68rem; font-weight:600; color:var(--red); background:var(--red-dim);
-                   border:1px solid rgba(239,68,68,0.2); border-radius:3px; padding:3px 10px;
-                   cursor:pointer; letter-spacing:0.04em;"
+            style="font-size:0.68rem; font-weight:600; color:var(--red);
+                   background:var(--red-dim); border:1px solid rgba(239,68,68,0.2);
+                   border-radius:3px; padding:3px 10px; cursor:pointer; letter-spacing:0.04em;"
           >Remove</button>
         </div>
       </div>
@@ -124,24 +125,26 @@ function renderWatchlistCard(item, index) {
    ============================================================ */
 
 function wireForm() {
-  const btn = document.getElementById('addTickerBtn');
-  if (btn) btn.addEventListener('click', handleAddTicker);
+  const addBtn    = document.getElementById('addTickerBtn');
+  const exportBtn = document.getElementById('exportWatchlistBtn');
+
+  if (addBtn)    addBtn.addEventListener('click', handleAddTicker);
+  if (exportBtn) exportBtn.addEventListener('click', handleExportWatchlist);
 }
 
 function handleAddTicker() {
-  const ticker    = (document.getElementById('wlTicker')?.value    || '').trim().toUpperCase();
-  const sector    = (document.getElementById('wlSector')?.value    || '').trim();
-  const alertTag  = document.getElementById('wlAlertTag')?.value   || 'No Major Change';
-  const notes     = (document.getElementById('wlNotes')?.value     || '').trim();
-  const price     = parseFloat(document.getElementById('wlPrice')?.value  || '');
-  const pctMove   = parseFloat(document.getElementById('wlPctMove')?.value || '');
+  const ticker   = (document.getElementById('wlTicker')?.value    || '').trim().toUpperCase();
+  const sector   = (document.getElementById('wlSector')?.value    || '').trim();
+  const alertTag = document.getElementById('wlAlertTag')?.value   || 'No Major Change';
+  const notes    = (document.getElementById('wlNotes')?.value     || '').trim();
+  const price    = parseFloat(document.getElementById('wlPrice')?.value  || '');
+  const pctMove  = parseFloat(document.getElementById('wlPctMove')?.value || '');
 
   if (!ticker) {
     showToast('Ticker is required.', 'error');
     return;
   }
 
-  // Prevent duplicates
   if (watchlistItems.some(item => item.ticker === ticker)) {
     showToast(`${ticker} is already on your watchlist.`, 'error');
     return;
@@ -156,7 +159,7 @@ function handleAddTicker() {
     percent_move: isNaN(pctMove) ? null : pctMove,
   };
 
-  watchlistItems.unshift(newItem); // Add to top
+  watchlistItems.unshift(newItem);
   saveWatchlist(watchlistItems);
   renderAll();
   clearAddForm();
@@ -177,4 +180,34 @@ function clearAddForm() {
     const el = document.getElementById(id);
     if (el) el.value = '';
   });
+}
+
+/* ============================================================
+   EXPORT WATCHLIST TO JSON
+   Downloads current localStorage watchlist as watchlist.json.
+   Commit this file to docs/dashboard/data/watchlist.json so
+   the pipeline fetches prices for all your tracked tickers.
+   ============================================================ */
+
+function handleExportWatchlist() {
+  if (!watchlistItems.length) {
+    showToast('Watchlist is empty — nothing to export.', 'error');
+    return;
+  }
+
+  // Format matches what the pipeline reads from watchlist.json
+  const output = { watchlist: watchlistItems };
+
+  try {
+    const blob = new Blob([JSON.stringify(output, null, 2)], { type: 'application/json' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href     = url;
+    a.download = 'watchlist.json';
+    a.click();
+    URL.revokeObjectURL(url);
+    showToast('Watchlist exported. Commit this file to docs/dashboard/data/ to update live prices.', 'success');
+  } catch (e) {
+    showToast('Export failed: ' + e.message, 'error');
+  }
 }
