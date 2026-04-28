@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "U.A.E. quits OPEC: Here’s what it means for oil prices and the economy",
+      "story_count": 4,
+      "primary_driver": "U.S. oil hovers near $100 on report Trump dissatisfied with Iran's proposal to open Hormuz",
       "key_drivers": [
-        "U.A.E. quits OPEC: Here’s what it means for oil prices and the economy",
+        "U.S. oil hovers near $100 on report Trump dissatisfied with Iran's proposal to open Hormuz",
+        "Natural Gas Recovers, But Downside Risks Remain",
         "United Arab Emirates to leave OPEC May 1, energy chief says still committed to oil price stability",
-        "8-K - Pioneer Bancorp, Inc./MD (0001769663) (Filer)",
-        "Tech's hyperscalers face Wall Street for first time since U.S. Iran war sent oil prices soaring"
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -27,15 +27,15 @@
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "8-K - Federal Home Loan Bank of Boston (0001331463) (Filer)",
+      "primary_driver": "FCC launches review of Disney broadcast licenses years ahead of schedule",
       "key_drivers": [
-        "8-K - Federal Home Loan Bank of Boston (0001331463) (Filer)",
-        "‘I’m not interested in long-term care insurance’: I’d like to retire at 55. How much will I have to pay for healthcare?",
-        "Jamie Dimon warns of 'some kind of bond crisis' ahead as global debt risks build",
-        "8-K - Federal Home Loan Bank of Chicago (0001331451) (Filer)"
+        "FCC launches review of Disney broadcast licenses years ahead of schedule",
+        "8-K - Stepstone Private Credit Fund LLC (0001950803) (Filer)",
+        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
+        "8-K - PGIM Private Credit Fund (0001923622) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -45,8 +45,6 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC",
-        "COST",
         "JPM"
       ]
     },
@@ -55,12 +53,12 @@
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 13,
-      "primary_driver": "OpenAI trial begins its second day with Musk, Altman in attendance: Live updates",
+      "primary_driver": "2 Infrastructure Plays To Power The AI Boom",
       "key_drivers": [
-        "OpenAI trial begins its second day with Musk, Altman in attendance: Live updates",
-        "Nvidia: Dominating By Strategy Focused On AI Inflections",
-        "Micron’s stock has boomed on AI optimism. Now comes the ‘tricky part.’",
-        "Cramer says the OpenAI-driven pullback proves recent rally was overheated"
+        "2 Infrastructure Plays To Power The AI Boom",
+        "These bonds protect against inflation. How to optimize them for your portfolio",
+        "Elon Musk takes the stand in OpenAI trial: Live updates",
+        "Traders bet Nvidia's stock will return to record highs soon"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,10 +68,10 @@
         "AMD"
       ],
       "trending_tickers": [
-        "LLY",
         "CL=F",
+        "BAC",
         "AMZN",
-        "NVDA"
+        "AAPL"
       ]
     },
     {
@@ -81,9 +79,9 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Tech's hyperscalers face Wall Street for first time since U.S. Iran war sent oil prices soaring",
+      "primary_driver": "2 Infrastructure Plays To Power The AI Boom",
       "key_drivers": [
-        "Tech's hyperscalers face Wall Street for first time since U.S. Iran war sent oil prices soaring"
+        "2 Infrastructure Plays To Power The AI Boom"
       ],
       "key_tickers": [
         "GE",
@@ -93,19 +91,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "CL=F"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Working longer isn’t a foolproof retirement plan — 46% of 2025 retirees left earlier than planned, s",
+      "sentiment": "Positive",
+      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
+      "story_count": 5,
+      "primary_driver": "Traders bet Nvidia's stock will return to record highs soon",
       "key_drivers": [
-        "Working longer isn’t a foolproof retirement plan — 46% of 2025 retirees left earlier than planned, survey finds",
-        "Americans are uneasy about gas prices and the Iran war. Are they getting over the shock now?",
-        "1st Look at Local Housing Markets in December"
+        "Traders bet Nvidia's stock will return to record highs soon",
+        "8-K - PROCACCIANTI HOTEL REIT, INC. (0001692345) (Filer)",
+        "‘I hope to retire early’: I’m 56 and have 80% in a traditional IRA and 20% in a Roth. Am I in trouble?",
+        "Couple launched a burrito spot in a Home Depot parking lot—their two restaurants brought in $2.3 million in sales in 202"
       ],
       "key_tickers": [
         "NKE",
@@ -115,17 +115,17 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY"
+        "NVDA",
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Santhera Pharmaceuticals Holding AG 2025 Q4 - Results - Earnings Call Presentation",
+      "story_count": 1,
+      "primary_driver": "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs",
       "key_drivers": [
-        "Santhera Pharmaceuticals Holding AG 2025 Q4 - Results - Earnings Call Presentation",
         "Pharma bets a little-known form of cholesterol will underpin its next blockbuster heart drugs"
       ],
       "key_tickers": [
@@ -145,12 +145,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "BNY Mellon Global Real Return Fund Q1 2026 Commentary",
+      "primary_driver": "Ex-FBI Director James Comey indicted for his ‘8647’ seashell post on Instagram",
       "key_drivers": [
-        "BNY Mellon Global Real Return Fund Q1 2026 Commentary",
-        "Dow Jones And U.S. Stock Market Intraday Outlook - The Tech Honeymoon Is Over... Right Before Earnings?",
-        "SPGI: The February Bears Were Wrong (Earnings Review)",
-        "8-K - OHIO VALLEY BANC CORP (0000894671) (Filer)"
+        "Ex-FBI Director James Comey indicted for his ‘8647’ seashell post on Instagram",
+        "I Bought 50 Undervalued Stocks In 2019 And 2020: Here's How They Performed",
+        "Trump White House ballroom unlikely to get WHCD buy-in — or end president's off-site events, critics say",
+        "Palantir Down 31%: Might Nibble Around Earnings"
       ],
       "key_tickers": [
         "TLT",
@@ -160,7 +160,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "RIG"
+        "META",
+        "AAPL",
+        "BAC"
       ]
     }
   ]
