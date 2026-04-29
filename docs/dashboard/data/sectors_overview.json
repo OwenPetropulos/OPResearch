@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "UAE Leaves OPEC: Here's What It Means For Oil Prices",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 7,
+      "primary_driver": "Analysis: The Warsh revolution is coming. Powell won’t stand in the way.",
       "key_drivers": [
-        "UAE Leaves OPEC: Here's What It Means For Oil Prices",
-        "Brent oil tops $118 after Trump says he will blockade Iran until it agrees to a nuclear deal",
-        "Iran war is fueling a bond selloff ahead of Fed Chair Jerome Powell’s final press conference",
-        "Trump threatens Iran with AI picture of himself with a gun: 'No more Mr. Nice guy!'"
+        "Analysis: The Warsh revolution is coming. Powell won’t stand in the way.",
+        "Iran war fuels bond-market selloff, as inflation fears put future Fed rate cuts in doubt",
+        "The U.S. produces the most oil in the world. So why are gasoline prices so high?",
+        "Shocking UAE exit rocks OPEC, but group will still hold significant sway over the oil market"
       ],
       "key_tickers": [
         "XOM",
@@ -20,22 +20,22 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
         "LLY",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "The Goldman Sachs Group, Inc. (GS) Shareholder/Analyst Call Prepared Remarks Transcript",
+      "story_count": 10,
+      "primary_driver": "CSRE: The Secret Sauce Of This Outperforming Active REIT ETF",
       "key_drivers": [
-        "The Goldman Sachs Group, Inc. (GS) Shareholder/Analyst Call Prepared Remarks Transcript",
-        "Fed meeting live updates: Potential drama ahead if Powell hints he will hang around",
-        "Amazon set to report first-quarter earnings after the bell",
-        "Yum Brands earnings top estimates, fueled by Taco Bell's 8% same-store sales growth"
+        "CSRE: The Secret Sauce Of This Outperforming Active REIT ETF",
+        "Alphabet ups 2026 capex to as much as $190 billion, expects to 'significantly increase' in 2027",
+        "8-K - Profusa, Inc. (0001859807) (Filer)",
+        "April FOMC: Hawks Push Back As Inflation Risks Rise"
       ],
       "key_tickers": [
         "JPM",
@@ -45,9 +45,9 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
-        "TGT",
-        "AMZN",
+        "GOOGL",
+        "RIG",
+        "BAC",
         "LLY"
       ]
     },
@@ -55,13 +55,13 @@
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 12,
-      "primary_driver": "Musk v. Altman live updates: Musk says Microsoft's $10 billion stake was a tipping point",
+      "story_count": 13,
+      "primary_driver": "Microsoft beats on top and bottom lines with 40% Azure growth",
       "key_drivers": [
-        "Musk v. Altman live updates: Musk says Microsoft's $10 billion stake was a tipping point",
-        "James Comey set to appear in court on Trump seashells threat indictment",
-        "8-K - Tri-State Generation & Transmission Association, Inc. (0001637880) (Filer)",
-        "Uber makes big bets on travel, hotels and AI voice bookings at annual product showcase"
+        "Microsoft beats on top and bottom lines with 40% Azure growth",
+        "OpenAI trial day 3 recap: Musk to return to the stand Thursday after tense cross-examination",
+        "Meta Q1: Thanks For The Dip, I'm Buying More",
+        "Ford raises 2026 guidance as $1.3 billion tariff refund assists in offsetting higher costs"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,21 +71,20 @@
         "AMD"
       ],
       "trending_tickers": [
-        "MSFT",
-        "AMZN",
         "LLY",
-        "CL=F"
+        "MSFT",
+        "META",
+        "BAC"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Best-Of-Breed Infrastructure Dividend Growth Machines Yielding Up To 7.6%",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Best-Of-Breed Infrastructure Dividend Growth Machines Yielding Up To 7.6%",
-        "Construction on new homes hits 15-month high, but it doesn’t mean home buyers can rejoice"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -103,13 +102,11 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Fed meeting live updates: Potential drama ahead if Powell hints he will hang around",
+      "story_count": 2,
+      "primary_driver": "What Wall Street is really looking for in hyperscaler earnings",
       "key_drivers": [
-        "Fed meeting live updates: Potential drama ahead if Powell hints he will hang around",
-        "Uber makes big bets on travel, hotels and AI voice bookings at annual product showcase",
-        "These workers are allowed to save $35,000 a year in their 401(k)s. Here’s how many actually do it.",
-        "Construction on new homes hits 15-month high, but it doesn’t mean home buyers can rejoice"
+        "What Wall Street is really looking for in hyperscaler earnings",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -119,7 +116,6 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
         "LLY"
       ]
     },
@@ -146,15 +142,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "A Slightly Warmer Beer To The King",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 13,
+      "primary_driver": "First Commonwealth Financial Corporation (FCF) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "A Slightly Warmer Beer To The King",
-        "8-K - Cottonwood Communities, Inc. (0001692951) (Filer)",
-        "Momentum Group AB (publ) 2026 Q1 - Results - Earnings Call Presentation",
-        "Stocks making the biggest moves midday: GE HealthCare Technologies, Bloom Energy, Seagate, Teradyne, & more"
+        "First Commonwealth Financial Corporation (FCF) Q1 2026 Earnings Call Transcript",
+        "Ford raises 2026 guidance as $1.3 billion tariff refund assists in offsetting higher costs",
+        "Traeger's Cool-Down Justifies A Downgrade",
+        "Renasant Corporation (RNST) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -164,8 +160,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "BAC",
+        "COST",
+        "LLY"
       ]
     }
   ]

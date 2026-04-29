@@ -1,103 +1,106 @@
 {
   "stories": [
     {
-      "title": "Best-Of-Breed Infrastructure Dividend Growth Machines Yielding Up To 7.6%",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4895936-best-of-breed-infrastructure-dividend-growth-machines-yielding-up-to-7-6-percent?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-04-29T13:05:02Z",
-      "id": "mn001",
-      "sector_tags": [
-        "Industrials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "8-K - Cottonwood Communities, Inc. (0001692951) (Filer)",
-      "summary": "Filed: 2026-04-29 AccNo: 0001692951-26-000078 Size: 132 KB Item 3.02: Unregistered Sales of Equity Securities",
-      "url": "https://www.sec.gov/Archives/edgar/data/1692951/000169295126000078/0001692951-26-000078-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-04-29T13:04:40Z",
-      "id": "mn002",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "The Goldman Sachs Group, Inc. (GS) Shareholder/Analyst Call Prepared Remarks Transcript",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4895960-the-goldman-sachs-group-inc-gs-shareholder-analyst-call-prepared-remarks-transcript?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-04-29T12:51:31Z",
-      "id": "mn003",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [
-        "GS"
-      ],
-      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
-    },
-    {
-      "title": "Fed meeting live updates: Potential drama ahead if Powell hints he will hang around",
-      "summary": "The Federal Reserve is widely expected to keep its key interest rate at the target range of 3.5% to 3.75%.",
-      "url": "https://www.cnbc.com/2026/04/29/fed-meeting-today-live-updates-warsh-powell.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-29T16:45:45Z",
-      "id": "mn004",
-      "sector_tags": [
-        "Financials",
-        "Consumer"
-      ],
-      "ticker_tags": [
-        "TGT"
-      ],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "2 High Yield Dividend Stocks I'm Buying Hand Over Fist",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4895908-2-high-yield-dividend-stocks-im-buying-hand-over-fist?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-04-29T12:34:26Z",
-      "id": "mn005",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Ford Motor is set to report earnings after the bell. Here's what Wall Street expects",
+      "title": "Ford raises 2026 guidance as $1.3 billion tariff refund assists in offsetting higher costs",
       "summary": "Aside from earnings and any changes to the automaker's 2026 guidance, investors will be monitoring effects from the Iran war, tariffs and the pullback in EVs.",
       "url": "https://www.cnbc.com/2026/04/29/ford-motor-f-earnings-q1-2026.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-29T16:00:01Z",
-      "id": "mn006",
+      "timestamp": "2026-04-29T21:44:59Z",
+      "id": "mn001",
       "sector_tags": [
+        "Technology",
+        "Macro"
+      ],
+      "ticker_tags": [
+        "BAC",
+        "COST"
+      ],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+    },
+    {
+      "title": "April FOMC: Hawks Push Back As Inflation Risks Rise",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4896137-april-fomc-hawks-push-back-as-inflation-risks-rise?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-29T17:30:19Z",
+      "id": "mn002",
+      "sector_tags": [
+        "Financials",
         "Macro"
       ],
       "ticker_tags": [
         "BAC"
       ],
+      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
+    },
+    {
+      "title": "Fed holds interest rates steady: Here's what that means for credit cards, mortgages, car loans and savings rates",
+      "summary": "From mortgage rates to auto loans and credit cards, here’s a look at how the Fed's April interest rate decision may affect your wallet.",
+      "url": "https://www.cnbc.com/2026/04/29/fed-interest-rates-april.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-29T21:29:09Z",
+      "id": "mn003",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+    },
+    {
+      "title": "Warsh hints at a new reading of the Fed's power over swap lines amid UAE discussion",
+      "summary": "Fed chair nominee Kevin Warsh responded to Senate Banking about swap lines by saying the Fed isn't fully independent in matters of international finance.",
+      "url": "https://www.cnbc.com/2026/04/29/fed-warsh-bessent-uae-swap-lines.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-29T21:26:56Z",
+      "id": "mn004",
+      "sector_tags": [
+        "Financials",
+        "Technology"
+      ],
+      "ticker_tags": [
+        "LLY"
+      ],
       "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
-      "title": "Cole Allen took selfie before Trump assassination attempt at WHCA dinner, prosecutors say",
-      "summary": "Federal prosecutors' detention memo shows guns and knives Allen was allegedly carrying as he tried to enter the White House Correspondents' Association dinner.",
-      "url": "https://www.cnbc.com/2026/04/29/cole-allen-photo-trump-assassination-attempt-whcd-detention.html",
+      "title": "Stock investors fared very well under Powell. Bond investors, not so much",
+      "summary": "Investors are starting to draw conclusions on what Powell's tenure has meant for Wall Street.",
+      "url": "https://www.cnbc.com/2026/04/29/stock-investors-fared-very-well-under-powell-bond-investors-not-so-much.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-29T15:19:02Z",
+      "timestamp": "2026-04-29T21:22:01Z",
+      "id": "mn005",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+    },
+    {
+      "title": "8-K - AMERICAN REBEL HOLDINGS INC (0001648087) (Filer)",
+      "summary": "Filed: 2026-04-29 AccNo: 0001493152-26-019654 Size: 793 KB Item 1.01: Entry into a Material Definitive Agreement Item 3.02: Unregistered Sales of Equity Securities Item 7.01: Regulation FD Disclosure Item 9.01: Financial Statements and Exhibits",
+      "url": "https://www.sec.gov/Archives/edgar/data/1648087/000149315226019654/0001493152-26-019654-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-04-29T17:15:16Z",
+      "id": "mn006",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "Wall Street Lunch Fed Special: Powell Doesn't Go Gently Into That Good Night",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4896118-wall-street-lunch-fed-special-powell-doesnt-go-gently-into-that-good-night?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-29T17:12:37Z",
       "id": "mn007",
       "sector_tags": [
         "Financials"
@@ -106,49 +109,52 @@
       "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     },
     {
-      "title": "Former Attorney General Bondi to testify about Epstein on May 29 before House panel",
-      "summary": "The House Committee on Oversight and Government Reform subpoenaed former Attorney General Pam Bondi in March.",
-      "url": "https://www.cnbc.com/2026/04/29/epstein-bondi-house-congress.html",
+      "title": "Analysis: The Warsh revolution is coming. Powell won’t stand in the way.",
+      "summary": "The outgoing leader may be staying on in a lesser capacity, but he won't be a spoiler in Kevin Warsh's Fed.",
+      "url": "https://www.cnbc.com/2026/04/29/fed-powell-warsh-interest-rates.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-29T14:43:32Z",
+      "timestamp": "2026-04-29T21:09:39Z",
       "id": "mn008",
       "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Iran war is fueling a bond selloff ahead of Fed Chair Jerome Powell’s final press conference",
-      "summary": "The oil shock and elevated inflation are top worries for investors in the bond market as Federal Reserve Chair Jerome Powell prepares to deliver the final press conference of his career at the central bank’s helm.",
-      "url": "https://www.marketwatch.com/story/iran-war-is-fueling-a-bond-selloff-ahead-of-fed-chair-jerome-powells-final-press-conference-cc2dba04?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-29T14:35:00Z",
-      "id": "mn009",
-      "sector_tags": [
         "Energy",
-        "Financials",
-        "Technology",
-        "Macro"
+        "Financials"
       ],
       "ticker_tags": [],
       "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
-      "title": "8-K - Crestline Lending Solutions, LLC (0002035713) (Filer)",
-      "summary": "Filed: 2026-04-29 AccNo: 0001628280-26-028196 Size: 134 KB Item 3.02: Unregistered Sales of Equity Securities Item 8.01: Other Events",
-      "url": "https://www.sec.gov/Archives/edgar/data/2035713/000162828026028196/0001628280-26-028196-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-04-29T10:31:22Z",
-      "id": "mn010",
+      "title": "Carvana stock pops as used car retailer reports record first-quarter results",
+      "summary": "The online used car retailer reported retail sales of 187,393 units, a 40% increase compared with a year earlier.",
+      "url": "https://www.cnbc.com/2026/04/29/carvana-cvna-earnings-q1-2026.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-29T21:02:29Z",
+      "id": "mn009",
       "sector_tags": [
-        "Financials"
+        "Financials",
+        "Technology",
+        "Consumer"
       ],
       "ticker_tags": [],
-      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "Powell won’t leave the Fed, pushing back further against Trump",
+      "summary": "“I will continue to serve as a governor for a period of time to be determined,” the outgoing Federal Reserve chair said Wednesday.",
+      "url": "https://www.marketwatch.com/story/powell-says-hell-stay-at-fed-as-governor-after-his-term-as-chair-ends-in-mid-may-c906c044?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-29T20:58:00Z",
+      "id": "mn010",
+      "sector_tags": [
+        "Financials",
+        "Technology"
+      ],
+      "ticker_tags": [
+        "BAC"
+      ],
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     }
   ]
 }
