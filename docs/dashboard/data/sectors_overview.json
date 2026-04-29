@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 8,
-      "primary_driver": "The key global oil contract tops $115 as Strait of Hormuz impasse continues",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 5,
+      "primary_driver": "UAE Leaves OPEC: Here's What It Means For Oil Prices",
       "key_drivers": [
-        "The key global oil contract tops $115 as Strait of Hormuz impasse continues",
-        "Oil Prices Advance Ahead Of What Will Likely Be Powell's Last FOMC Meeting (As Chair)",
-        "Oil prices extend multi-day rally as Trump issues new threat to Iran; Brent tops $114 per barrel",
-        "$200 oil – and two other scenarios – could tip the world into a recession, says this global bank"
+        "UAE Leaves OPEC: Here's What It Means For Oil Prices",
+        "Brent oil tops $118 after Trump says he will blockade Iran until it agrees to a nuclear deal",
+        "Iran war is fueling a bond selloff ahead of Fed Chair Jerome Powell’s final press conference",
+        "Trump threatens Iran with AI picture of himself with a gun: 'No more Mr. Nice guy!'"
       ],
       "key_tickers": [
         "XOM",
@@ -22,21 +22,20 @@
       "trending_tickers": [
         "CL=F",
         "LLY",
-        "NKE",
         "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "8-K - UY Scuti Acquisition Corp. (0002036973) (Filer)",
+      "primary_driver": "The Goldman Sachs Group, Inc. (GS) Shareholder/Analyst Call Prepared Remarks Transcript",
       "key_drivers": [
-        "8-K - UY Scuti Acquisition Corp. (0002036973) (Filer)",
-        "Finland’s Kone to buy German rival TK Elevator in blockbuster $34.4 billion deal",
-        "Oil Prices Advance Ahead Of What Will Likely Be Powell's Last FOMC Meeting (As Chair)",
-        "Klarna: A Mispriced Fintech Hidden Behind Accounting Noise"
+        "The Goldman Sachs Group, Inc. (GS) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "Fed meeting live updates: Potential drama ahead if Powell hints he will hang around",
+        "Amazon set to report first-quarter earnings after the bell",
+        "Yum Brands earnings top estimates, fueled by Taco Bell's 8% same-store sales growth"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +45,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "CL=F",
-        "BAC",
-        "COST",
-        "META"
+        "GS",
+        "TGT",
+        "AMZN",
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 15,
-      "primary_driver": "8-K - SOLESENCE, INC. (0000883107) (Filer)",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 12,
+      "primary_driver": "Musk v. Altman live updates: Musk says Microsoft's $10 billion stake was a tipping point",
       "key_drivers": [
-        "8-K - SOLESENCE, INC. (0000883107) (Filer)",
-        "8-K - Bain Capital Specialty Finance, Inc. (0001655050) (Filer)",
-        "OpenAI looms over earnings from tech hyperscalers",
-        "The key global oil contract tops $115 as Strait of Hormuz impasse continues"
+        "Musk v. Altman live updates: Musk says Microsoft's $10 billion stake was a tipping point",
+        "James Comey set to appear in court on Trump seashells threat indictment",
+        "8-K - Tri-State Generation & Transmission Association, Inc. (0001637880) (Filer)",
+        "Uber makes big bets on travel, hotels and AI voice bookings at annual product showcase"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,20 +71,21 @@
         "AMD"
       ],
       "trending_tickers": [
-        "META",
-        "CL=F",
         "MSFT",
-        "GOOGL"
+        "AMZN",
+        "LLY",
+        "CL=F"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "Best-Of-Breed Infrastructure Dividend Growth Machines Yielding Up To 7.6%",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Best-Of-Breed Infrastructure Dividend Growth Machines Yielding Up To 7.6%",
+        "Construction on new homes hits 15-month high, but it doesn’t mean home buyers can rejoice"
       ],
       "key_tickers": [
         "GE",
@@ -103,11 +103,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Why Low Tax Muni Bonds Belong In Your Retirement Portfolio In 2026",
+      "story_count": 5,
+      "primary_driver": "Fed meeting live updates: Potential drama ahead if Powell hints he will hang around",
       "key_drivers": [
-        "Why Low Tax Muni Bonds Belong In Your Retirement Portfolio In 2026",
-        "1st Look at Local Housing Markets in December"
+        "Fed meeting live updates: Potential drama ahead if Powell hints he will hang around",
+        "Uber makes big bets on travel, hotels and AI voice bookings at annual product showcase",
+        "These workers are allowed to save $35,000 a year in their 401(k)s. Here’s how many actually do it.",
+        "Construction on new homes hits 15-month high, but it doesn’t mean home buyers can rejoice"
       ],
       "key_tickers": [
         "NKE",
@@ -117,8 +119,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "TGT",
+        "LLY"
       ]
     },
     {
@@ -146,13 +148,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "8-K - EMCOR Group, Inc. (0000105634) (Filer)",
+      "story_count": 9,
+      "primary_driver": "A Slightly Warmer Beer To The King",
       "key_drivers": [
-        "8-K - EMCOR Group, Inc. (0000105634) (Filer)",
-        "8-K - CTS CORP (0000026058) (Filer)",
-        "8-K - AVNET INC (0000008858) (Filer)",
-        "8-K - BRINKER INTERNATIONAL, INC (0000703351) (Filer)"
+        "A Slightly Warmer Beer To The King",
+        "8-K - Cottonwood Communities, Inc. (0001692951) (Filer)",
+        "Momentum Group AB (publ) 2026 Q1 - Results - Earnings Call Presentation",
+        "Stocks making the biggest moves midday: GE HealthCare Technologies, Bloom Energy, Seagate, Teradyne, & more"
       ],
       "key_tickers": [
         "TLT",
@@ -162,8 +164,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "NKE",
-        "CL=F"
+        "GLD",
+        "DXY"
       ]
     }
   ]
