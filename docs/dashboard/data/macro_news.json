@@ -1,82 +1,84 @@
 {
   "stories": [
     {
-      "title": "This is the most critical question facing U.S. investors right now — and it has nothing to do with Iran",
-      "summary": "Chip stocks have pulled back from a parabolic rally, and there are technical and historical reasons for investors to worry that a deeper selloff in the sector will hurt the broader stock market.",
-      "url": "https://www.marketwatch.com/story/this-is-the-most-critical-question-facing-u-s-investors-right-now-and-it-has-nothing-to-do-with-iran-45bc8f2e?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
+      "title": "Finland’s Kone to buy German rival TK Elevator in blockbuster $34.4 billion deal",
+      "summary": "The combination would create the world’s largest elevator maker and marks one of Europe's biggest takeovers in recent years.",
+      "url": "https://www.cnbc.com/2026/04/29/kone-tk-elevator-deal-europe-business.html",
+      "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-28T21:52:00Z",
+      "timestamp": "2026-04-29T11:43:08Z",
       "id": "mn001",
       "sector_tags": [
-        "Technology"
+        "Financials",
+        "Macro"
       ],
-      "ticker_tags": [
-        "BAC",
-        "LLY",
-        "RIG"
-      ],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
-    },
-    {
-      "title": "8-K - P3 Health Partners Inc. (0001832511) (Filer)",
-      "summary": "Filed: 2026-04-28 AccNo: 0001832511-26-000018 Size: 1 MB Item 1.01: Entry into a Material Definitive Agreement Item 3.02: Unregistered Sales of Equity Securities Item 5.03: Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year",
-      "url": "https://www.sec.gov/Archives/edgar/data/1832511/000183251126000018/0001832511-26-000018-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-04-28T17:29:55Z",
-      "id": "mn002",
-      "sector_tags": [
-        "Technology"
-      ],
-      "ticker_tags": [
-        "AMZN"
-      ],
+      "ticker_tags": [],
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "Why I Purchased 9.18% Yielding AGNC Preferred Shares In April",
+      "title": "Oil Prices Advance Ahead Of What Will Likely Be Powell's Last FOMC Meeting (As Chair)",
       "summary": "",
-      "url": "https://seekingalpha.com/article/4895329-why-i-purchased-9-18-percent-yielding-agnc-preferred-shares-in-april?source=feed_all_articles",
+      "url": "https://seekingalpha.com/article/4895690-oil-prices-advance-ahead-of-what-will-likely-be-powell-last-fomc-meeting-as-chair?source=feed_all_articles",
       "source_name": "Seeking Alpha",
       "source_type": "Niche / Blog",
-      "timestamp": "2026-04-28T17:07:31Z",
+      "timestamp": "2026-04-29T07:40:00Z",
+      "id": "mn002",
+      "sector_tags": [
+        "Energy",
+        "Financials",
+        "Technology"
+      ],
+      "ticker_tags": [
+        "CL=F"
+      ],
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+    },
+    {
+      "title": "Why Low Tax Muni Bonds Belong In Your Retirement Portfolio In 2026",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4894811-why-low-tax-muni-bonds-belong-in-your-retirement-portfolio-in-2026?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-29T07:35:00Z",
       "id": "mn003",
       "sector_tags": [
-        "Macro"
+        "Consumer"
       ],
       "ticker_tags": [],
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "Higher inflation is on the way. The Fed needs to make this clear before it raises rates.",
-      "summary": "Fed’s communication should help investors manage risk — including the possibility that rates may rise.",
-      "url": "https://www.marketwatch.com/story/higher-inflation-is-on-the-way-the-fed-needs-to-make-this-clearer-before-it-raises-rates-142c6884?mod=mw_rss_topstories",
+      "title": "$200 oil – and two other scenarios – could tip the world into a recession, says this global bank",
+      "summary": "Oil prices reaching $200 — and two other scenarios — could tip the global economy into a recession, according to the latest quarterly outlook from BNP Paribas, the French banking giant.",
+      "url": "https://www.marketwatch.com/story/200-oil-and-two-other-scenarios-could-tip-the-world-into-a-recession-says-this-global-bank-23a66a46?mod=mw_rss_topstories",
       "source_name": "MarketWatch",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-28T21:04:00Z",
+      "timestamp": "2026-04-29T09:48:00Z",
       "id": "mn004",
       "sector_tags": [
-        "Financials",
-        "Technology",
+        "Energy",
         "Macro"
       ],
-      "ticker_tags": [],
-      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
+      "ticker_tags": [
+        "CL=F"
+      ],
+      "why_it_matters": "Oil prices are simultaneously an input cost, an inflation driver, and a geopolitical signal. A sustained move above $90 WTI historically starts to weigh on consumer spending and airline margins; a break below $70 pressures E&P cash flows and sovereign budgets in OPEC+ nations. The current supply-demand balance is fragile — OPEC+ compliance and U.S. shale production response are the key swing variables. Key watch: EIA weekly inventory builds and IEA demand revision cycles."
     },
     {
-      "title": "Frothy, but not like 1999: This new valuation indicator has stocks beating inflation",
-      "summary": "Shiller CAPE ratio predicts a lost decade, but this superior model shows a path to positive real returns.",
-      "url": "https://www.marketwatch.com/story/frothy-but-not-like-1999-this-new-valuation-indicator-has-stocks-beating-inflation-40482dd5?mod=mw_rss_topstories",
+      "title": "The key reasons why one bank now says U.S. stocks will outperform European equities",
+      "summary": "Earnings, consumer resilience, positioning and corporate buybacks are the fundamental pillars on which the HSBC call to upgrade U.S. stocks rests",
+      "url": "https://www.marketwatch.com/story/the-key-reasons-why-one-bank-now-says-u-s-stocks-will-outperform-european-equities-4ad7af88?mod=mw_rss_topstories",
       "source_name": "MarketWatch",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-28T21:03:00Z",
+      "timestamp": "2026-04-29T09:47:00Z",
       "id": "mn005",
       "sector_tags": [
         "Macro"
       ],
-      "ticker_tags": [],
-      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
+      "ticker_tags": [
+        "BAC"
+      ],
+      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
     },
     {
       "title": "FCC launches review of Disney broadcast licenses years ahead of schedule",
@@ -126,37 +128,32 @@
       "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
     },
     {
-      "title": "Jamie Dimon warns of 'some kind of bond crisis' ahead as global debt risks build",
-      "summary": "Dimon, who runs JPMorgan Chase, the world's largest bank by market cap, said that today's growing mix of risks could combine in unpredictable ways.",
-      "url": "https://www.cnbc.com/2026/04/28/jamie-dimon-bond-crisis-global-debt-risks.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-28T18:44:41Z",
+      "title": "Federal Reserve Board announces approval of application by OceanFirst Financial Corp.",
+      "summary": "Federal Reserve Board announces approval of application by OceanFirst Financial Corp.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260424a.htm",
+      "source_name": "Federal Reserve",
+      "source_type": "Macro Data",
+      "timestamp": "2026-04-24T20:00:00Z",
       "id": "mn009",
       "sector_tags": [
-        "Financials",
-        "Technology"
-      ],
-      "ticker_tags": [
-        "JPM"
-      ],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
-    },
-    {
-      "title": "U.S. is 'being humiliated by Iran,' says Germany's Merz, as Europe's patience wanes",
-      "summary": "The U.S. is being \"humiliated\" by the Iranian regime, Germany's chancellor has said, as European leaders grow increasingly frustrated at the war with Iran.",
-      "url": "https://www.cnbc.com/2026/04/28/us-humiliated-germany-merz-europe-iran-war-energy-prices-fuel.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-28T16:39:02Z",
-      "id": "mn010",
-      "sector_tags": [
-        "Financials",
-        "Technology",
-        "Macro"
+        "Financials"
       ],
       "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+    },
+    {
+      "title": "Federal Reserve Board announces approval of application by Banco de Credito del Peru",
+      "summary": "Federal Reserve Board announces approval of application by Banco de Credito del Peru",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260424b.htm",
+      "source_name": "Federal Reserve",
+      "source_type": "Macro Data",
+      "timestamp": "2026-04-24T20:00:00Z",
+      "id": "mn010",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     }
   ]
 }
