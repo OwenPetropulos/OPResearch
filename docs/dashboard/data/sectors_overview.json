@@ -4,11 +4,10 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
+      "story_count": 3,
       "primary_driver": "Stocks clock their best month since 2020 as Wall Street shakes off Iran oil shock",
       "key_drivers": [
         "Stocks clock their best month since 2020 as Wall Street shakes off Iran oil shock",
-        "Oil’s surge to $125 a barrel just made the next bet for traders a lot harder",
         "Trump said his blockade would cause Iran's oil industry to 'explode' this week. Why that won't happen",
         "Sunday Night Futures"
       ],
@@ -20,22 +19,22 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
         "SPY",
+        "CL=F",
         "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "Could Powell’s decision to stay worsen relations between the Fed and the White House?",
+      "primary_driver": "Mortgage rates increase to 6.3% — but home buyers aren’t scared away",
       "key_drivers": [
+        "Mortgage rates increase to 6.3% — but home buyers aren’t scared away",
         "Could Powell’s decision to stay worsen relations between the Fed and the White House?",
         "Federated Hermes, Inc. (FHI) Shareholder/Analyst Call Prepared Remarks Transcript",
-        "8-K - Glucotrack, Inc. (0001506983) (Filer)",
-        "8-K - FEDERATED HERMES, INC. (0001056288) (Filer)"
+        "8-K - Glucotrack, Inc. (0001506983) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -51,15 +50,15 @@
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 12,
       "primary_driver": "Apple revenue guidance tops estimates on booming iPhone, Mac demand",
       "key_drivers": [
         "Apple revenue guidance tops estimates on booming iPhone, Mac demand",
+        "OpenAI trial recap: Musk concludes testimony, lawyers spar over second witness",
         "Apple Q2: Firing On All Cylinders",
-        "Brown-Forman: A Failed Deal With Pernod Ricard Is Just The Beginning",
-        "Trump says 'I don't think about' another assassination attempt"
+        "Brown-Forman: A Failed Deal With Pernod Ricard Is Just The Beginning"
       ],
       "key_tickers": [
         "NVDA",
@@ -145,15 +144,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "LIV Golf has lost its Saudi funding. Golfers who rejoin the PGA Tour may face financial fallout.",
+      "primary_driver": "‘The numbers don’t lie’: If I had invested my Social Security in the S&P 500 I’d have $4 million. Is",
       "key_drivers": [
-        "LIV Golf has lost its Saudi funding. Golfers who rejoin the PGA Tour may face financial fallout.",
-        "Gildan Activewear Inc. (GIL:CA) Shareholder/Analyst Call Transcript",
-        "Laureate Education, Inc. (LAUR) Q1 2026 Earnings Call Transcript",
-        "Upbound Group, Inc. (UPBD) Q1 2026 Earnings Call Transcript"
+        "‘The numbers don’t lie’: If I had invested my Social Security in the S&P 500 I’d have $4 million. Is the system broken?",
+        "Reddit reports 69% jump in revenue, topping analyst estimates",
+        "MARA Holdings, Inc. (MARA) M&A Call Transcript",
+        "Marcus & Millichap, Inc. (MMI) Shareholder/Analyst Call Prepared Remarks Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -163,8 +162,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "SPY"
       ]
     }
   ]
