@@ -53,6 +53,13 @@ jobs:
           python scripts/run_all.py
         env:
           OPR_DATA_DIR: ${{ steps.detect_dir.outputs.data_dir }}
+          MARKETAUX_API_KEY: ${{ secrets.MARKETAUX_API_KEY }}   
+
+      - name: Run data pipeline
+        run: |
+          python scripts/run_all.py
+        env:
+          OPR_DATA_DIR: ${{ steps.detect_dir.outputs.data_dir }}
 
       - name: Stage and check for changes
         id: check_changes
