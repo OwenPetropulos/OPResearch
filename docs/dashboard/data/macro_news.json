@@ -1,69 +1,76 @@
 {
   "stories": [
     {
-      "title": "Treasury Department announces new Series I bond rate of 4.26% for the next six months",
-      "summary": "The U.S. Department of the Treasury has announced new Series I bond rates through October 2026.",
-      "url": "https://www.cnbc.com/2026/04/30/treasury-i-bond-rate-through-october-2026.html",
+      "title": "Dow is surging, Nasdaq is lagging. The two factors splitting the markets in half: Live updates",
+      "summary": "Investors digested the latest quarterly reports from Amazon, Alphabet and other Magnificent Seven giants.",
+      "url": "https://www.cnbc.com/2026/04/29/stock-market-today-live-updates.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-30T15:06:35Z",
+      "timestamp": "2026-04-30T17:02:38Z",
       "id": "mn001",
       "sector_tags": [
-        "Macro"
+        "Technology"
       ],
-      "ticker_tags": [],
+      "ticker_tags": [
+        "GOOGL",
+        "AMZN"
+      ],
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "Bank of England faces the 'most difficult combination,' says governor Bailey as energy prices soar",
-      "summary": "Bank of England policymakers must contend with the \"most difficult combination\" of economic effects, according to governor Andrew Bailey",
-      "url": "https://www.cnbc.com/2026/04/30/energy-price-very-uncertain-bank-of-england-andrew-bailey-boe.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-30T15:00:40Z",
+      "title": "EUR/USD, GBP/USD Overview - FX Picks Up Again, U.S. Dollar Tumbles After The ECB And BOE",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4896855-eur-usd-gb-pusd-overview-fx-picks-again-dollar-tumbles-ecb-boe?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-30T13:00:00Z",
       "id": "mn002",
       "sector_tags": [
         "Technology",
         "Macro"
       ],
-      "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+      "ticker_tags": [
+        "EURUSD=X"
+      ],
+      "why_it_matters": "Currency moves are often the first market to price geopolitical and macro regime shifts. The dollar's reserve currency status — what Giscard d'Estaing called the 'exorbitant privilege' — means U.S. financial conditions are exported globally via the dollar funding market. A strong dollar tightens financial conditions in EM economies that borrow in USD, compresses S&P 500 earnings from overseas revenue, and makes U.S. exports less competitive. Yen carry unwind risk is particularly acute — an estimated $4 trillion in yen-funded positions could be forced to unwind rapidly if BOJ normalizes rates aggressively. Key watch: DXY trend, USD/JPY 145-150 range, and EUR/USD parity risk."
     },
     {
-      "title": "ECB Keeps Rates On Hold Amid Rising Stagflationary Pressures",
+      "title": "KSPY: How This Hedged Equity ETF Turns Volatility Into A Tool For Choppy U.S. Markets",
       "summary": "",
-      "url": "https://seekingalpha.com/article/4896646-ecb-keeps-rates-hold-rising-stagflationary-pressures?source=feed_all_articles",
+      "url": "https://seekingalpha.com/article/4896842-kspy-how-this-hedged-equity-etf-turns-volatility-into-tool-for-choppy-us-markets?source=feed_all_articles",
       "source_name": "Seeking Alpha",
       "source_type": "Niche / Blog",
-      "timestamp": "2026-04-30T10:44:00Z",
+      "timestamp": "2026-04-30T12:55:00Z",
       "id": "mn003",
       "sector_tags": [
         "Macro"
       ],
-      "ticker_tags": [],
-      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
+      "ticker_tags": [
+        "SPY"
+      ],
+      "why_it_matters": "Broad risk sentiment determines the beta of every portfolio. When VIX spikes above 20, correlations across assets converge toward 1 — diversification fails precisely when you need it most. Dealer gamma positioning amplifies moves: a negative gamma environment means market makers must sell into declines, accelerating drawdowns. Put/call ratios at extremes can be contrarian signals, but only when accompanied by capitulation in fund flows. Key watch: VIX term structure, SKEW index, and equity put/call ratio versus its 20-day moving average."
     },
     {
-      "title": "Centerra Gold: Re-Rating Opportunity Remains Intact Despite Near-Term Iran Pressure",
+      "title": "Federal Home Loan Mortgage Corporation (FMCC) Q1 2026 Earnings Call Prepared Remarks Transcript",
       "summary": "",
-      "url": "https://seekingalpha.com/article/4896636-centerra-gold-re-rating-opportunity-remains-intact-despite-near-term-iran-pressure?source=feed_all_articles",
+      "url": "https://seekingalpha.com/article/4896846-federal-home-loan-mortgage-corporation-fmcc-q1-2026-earnings-call-prepared-remarks-transcript?source=feed_all_articles",
       "source_name": "Seeking Alpha",
       "source_type": "Niche / Blog",
-      "timestamp": "2026-04-30T10:38:48Z",
+      "timestamp": "2026-04-30T12:51:51Z",
       "id": "mn004",
       "sector_tags": [
-        "Technology"
+        "Financials"
       ],
       "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     },
     {
-      "title": "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
-      "summary": "Filed: 2026-04-30 AccNo: 0001325878-26-000091 Size: 168 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant",
-      "url": "https://www.sec.gov/Archives/edgar/data/1325878/000132587826000091/0001325878-26-000091-index.htm",
+      "title": "8-K - Federal Home Loan Bank of Dallas (0001331757) (Filer)",
+      "summary": "Filed: 2026-04-30 AccNo: 0001331757-26-000078 Size: 208 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant",
+      "url": "https://www.sec.gov/Archives/edgar/data/1331757/000133175726000078/0001331757-26-000078-index.htm",
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
-      "timestamp": "2026-04-30T10:38:45Z",
+      "timestamp": "2026-04-30T12:50:11Z",
       "id": "mn005",
       "sector_tags": [
         "Financials"
@@ -72,59 +79,13 @@
       "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     },
     {
-      "title": "Jerome Powell says he will continue to serve as a Fed governor, calls Trump criticism 'unprecedented'",
-      "summary": "Powell addressed the question of whether he will stay on as a Board of Governors member after his term as chair ends.",
-      "url": "https://www.cnbc.com/2026/04/29/jerome-powell-says-he-will-continue-to-serve-as-a-fed-governor-even-after-chairmanship-ends-.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-30T14:36:04Z",
-      "id": "mn006",
-      "sector_tags": [
-        "Financials",
-        "Technology"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "These stocks have been the biggest winners during the S&P 500’s best month since 2020",
-      "summary": "The S&P 500 was up 9.6% for April, led by a gain of nearly 18% for the information technology sector.",
-      "url": "https://www.marketwatch.com/story/these-stocks-have-been-the-biggest-winners-during-the-s-p-500s-best-month-since-2020-36ae706d?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-30T14:26:00Z",
-      "id": "mn007",
-      "sector_tags": [
-        "Technology"
-      ],
-      "ticker_tags": [
-        "SPY"
-      ],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
-      "title": "Yen surges as Japan reportedly intervenes to counter currency weakness",
-      "summary": "The Nikkei, citing a government source, said officials had intervened buying the currency, which had been around its weakest since July 2024 earlier Thursday.",
-      "url": "https://www.cnbc.com/2026/04/30/yen-surges-as-japan-reportedly-intervenes-to-counter-currency-weakness.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-30T13:49:32Z",
-      "id": "mn008",
-      "sector_tags": [
-        "Technology",
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
-      "title": "8-K - Federal Home Loan Bank of Pittsburgh (0001330399) (Filer)",
-      "summary": "Filed: 2026-04-30 AccNo: 0001193125-26-194530 Size: 228 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/1330399/000119312526194530/0001193125-26-194530-index.htm",
+      "title": "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+      "summary": "Filed: 2026-04-30 AccNo: 0001325814-26-000065 Size: 186 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant Item 9.01: Financial Statements and Exhibits",
+      "url": "https://www.sec.gov/Archives/edgar/data/1325814/000132581426000065/0001325814-26-000065-index.htm",
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
-      "timestamp": "2026-04-30T09:43:31Z",
-      "id": "mn009",
+      "timestamp": "2026-04-30T12:32:48Z",
+      "id": "mn006",
       "sector_tags": [
         "Financials"
       ],
@@ -132,20 +93,62 @@
       "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     },
     {
-      "title": "Forget 'Sell in May.' Under Trump, market could be poised for summertime gains",
-      "summary": "The upcoming six-month period has historically been such a bad stretch for the stock market that Wall Street has an adage for it: “Sell in May and go away.”",
-      "url": "https://www.cnbc.com/2026/04/30/forget-sell-in-may-under-trump-market-could-be-poised-for-summertime-gains.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-30T13:43:12Z",
-      "id": "mn010",
+      "title": "8-K - Federal Home Loan Bank of Cincinnati (0001326771) (Filer)",
+      "summary": "Filed: 2026-04-30 AccNo: 0001326771-26-000071 Size: 166 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326771/000132677126000071/0001326771-26-000071-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-04-30T12:06:51Z",
+      "id": "mn007",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+    },
+    {
+      "title": "8-K - Federal Home Loan Bank of Chicago (0001331451) (Filer)",
+      "summary": "Filed: 2026-04-30 AccNo: 0001331451-26-000081 Size: 184 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant",
+      "url": "https://www.sec.gov/Archives/edgar/data/1331451/000133145126000081/0001331451-26-000081-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-04-30T11:55:52Z",
+      "id": "mn008",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+    },
+    {
+      "title": "8-K - GOLDEN ENTERTAINMENT, INC. (0001071255) (Filer)",
+      "summary": "Filed: 2026-04-30 AccNo: 0001104659-26-052390 Size: 216 KB Item 1.02: Termination of a Material Definitive Agreement Item 2.01: Completion of Acquisition or Disposition of Assets Item 3.01: Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing Item 3.03: Material Modifications to Rights of Security Holders Item 5.01: Changes in Control of Registrant Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers Item 5.03: Amendments to Articles of Incorpor",
+      "url": "https://www.sec.gov/Archives/edgar/data/1071255/000110465926052390/0001104659-26-052390-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-04-30T11:12:01Z",
+      "id": "mn009",
       "sector_tags": [
         "Technology"
       ],
       "ticker_tags": [
-        "LLY"
+        "RIG"
       ],
       "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "Treasury Department announces new Series I bond rate of 4.26% for the next six months",
+      "summary": "The U.S. Department of the Treasury has announced new Series I bond rates through October 2026.",
+      "url": "https://www.cnbc.com/2026/04/30/treasury-i-bond-rate-through-october-2026.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-30T15:06:35Z",
+      "id": "mn010",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     }
   ]
 }

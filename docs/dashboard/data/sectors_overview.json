@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 6,
-      "primary_driver": "Oil prices retreat after touching four-year high as traders focus on Iran developments",
+      "primary_driver": "Marathon Petroleum: Earnings Next Week To Reflect Recent Tailwinds",
       "key_drivers": [
-        "Oil prices retreat after touching four-year high as traders focus on Iran developments",
+        "Marathon Petroleum: Earnings Next Week To Reflect Recent Tailwinds",
         "Trump said his blockade would cause Iran's oil industry to 'explode' this week. Why that won't happen",
-        "Core inflation rate hit 3.2% in March as first-quarter growth disappointed at 2%",
-        "Here's why surging oil prices may not derail the consumer trade"
+        "Antero Midstream Corporation 2026 Q1 - Results - Earnings Call Presentation",
+        "California gas prices hit $6 per gallon as fuel costs jump nearly 30 cents in a week across the U.S."
       ],
       "key_tickers": [
         "XOM",
@@ -20,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
+        "COST",
         "LLY",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 9,
-      "primary_driver": "Türk Hava Yollari Anonim Ortakligi 2026 Q1 - Results - Earnings Call Presentation",
+      "primary_driver": "Blue Owl shares surge after private credit firm cites 10X gains from SpaceX loan",
       "key_drivers": [
-        "Türk Hava Yollari Anonim Ortakligi 2026 Q1 - Results - Earnings Call Presentation",
-        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
-        "ACRES Commercial Realty Corp. 2026 Q1 - Results - Earnings Call Presentation",
-        "Jerome Powell says he will continue to serve as a Fed governor, calls Trump criticism 'unprecedented'"
+        "Blue Owl shares surge after private credit firm cites 10X gains from SpaceX loan",
+        "Trump to sign order creating retirement plans for workers who lack them",
+        "Federal Home Loan Mortgage Corporation (FMCC) Q1 2026 Earnings Call Prepared Remarks Transcript",
+        "8-K - Federal Home Loan Bank of Dallas (0001331757) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -45,21 +46,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "GS"
+        "MSFT"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "Big Tech’s $700 billion spending on AI this year is called the ‘greatest capital misallocation in hi",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 14,
+      "primary_driver": "OpenAI trial live updates: Musk says Tesla, SpaceX and X are 'socially beneficial'",
       "key_drivers": [
-        "Big Tech’s $700 billion spending on AI this year is called the ‘greatest capital misallocation in history’",
-        "Bank of England faces the 'most difficult combination,' says governor Bailey as energy prices soar",
-        "8-K/A - Investcorp AI Acquisition Corp. (0001852889) (Filer)",
-        "Intapp Navigates AI Challenges While Maintaining Growth In Regulated Markets (Downgrade)"
+        "OpenAI trial live updates: Musk says Tesla, SpaceX and X are 'socially beneficial'",
+        "Dow is surging, Nasdaq is lagging. The two factors splitting the markets in half: Live updates",
+        "Blue Owl shares surge after private credit firm cites 10X gains from SpaceX loan",
+        "EUR/USD, GBP/USD Overview - FX Picks Up Again, U.S. Dollar Tumbles After The ECB And BOE"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,20 +69,20 @@
         "AMD"
       ],
       "trending_tickers": [
-        "CL=F",
-        "MSFT",
+        "LLY",
         "GOOGL",
-        "AMZN"
+        "AMZN",
+        "EURUSD=X"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Positive",
-      "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 1,
-      "primary_driver": "Caterpillar handily beat Wall Street estimates — not for the first time",
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Caterpillar handily beat Wall Street estimates — not for the first time"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -100,13 +100,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Big Tech’s $700 billion spending on AI this year is called the ‘greatest capital misallocation in hi",
+      "story_count": 6,
+      "primary_driver": "Trump to sign order creating retirement plans for workers who lack them",
       "key_drivers": [
-        "Big Tech’s $700 billion spending on AI this year is called the ‘greatest capital misallocation in history’",
-        "Robinsons Retail Holdings, Inc. (RRETY) Q1 2026 Earnings Call Transcript",
         "Trump to sign order creating retirement plans for workers who lack them",
-        "U.S. economy rebounded in first quarter, driven by sizzling-hot business investment"
+        "Trump to sign executive order expanding retirement account access for workers",
+        "Microsoft just can’t win Wall Street’s trust. The stock is falling as spending fears linger.",
+        "Is one bad week enough to ruin your retirement savings? How about 3 years?"
       ],
       "key_tickers": [
         "NKE",
@@ -117,18 +117,19 @@
       ],
       "trending_tickers": [
         "MSFT",
-        "GOOGL",
-        "AMZN",
-        "META"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Neutral",
-      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "More than 20,000 people are taking Eli Lilly's weight loss pill Foundayo, CEO says",
+      "sentiment": "Negative",
+      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 4,
+      "primary_driver": "Alnylam Pharmaceuticals, Inc. (ALNY) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
+        "Alnylam Pharmaceuticals, Inc. (ALNY) Q1 2026 Earnings Call Transcript",
+        "Hershey says GLP-1s are driving higher gum and mint sales",
+        "FDA proposes excluding Novo, Lilly weight loss drugs from bulk compounding list in win for the companies",
         "More than 20,000 people are taking Eli Lilly's weight loss pill Foundayo, CEO says"
       ],
       "key_tickers": [
@@ -145,15 +146,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Treasury Department announces new Series I bond rate of 4.26% for the next six months",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 10,
+      "primary_driver": "8-K - FIRST NATIONAL CORP /VA/ (0000719402) (Filer)",
       "key_drivers": [
-        "Treasury Department announces new Series I bond rate of 4.26% for the next six months",
-        "Amadeus IT Group, S.A. (AMADY) Idemia Public Security France - M&A Call - Slideshow",
-        "Mastercard Incorporated 2026 Q1 - Results - Earnings Call Presentation",
-        "FTI Consulting, Inc. 2026 Q1 - Results - Earnings Call Presentation"
+        "8-K - FIRST NATIONAL CORP /VA/ (0000719402) (Filer)",
+        "Spok Holdings, Inc. (SPOK) Q1 2026 Earnings Call Transcript",
+        "VICI Properties Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "U.S. Growth Driven By Tech Investment In First Quarter"
       ],
       "key_tickers": [
         "TLT",
@@ -163,8 +164,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "EURUSD=X",
+        "SPY"
       ]
     }
   ]
