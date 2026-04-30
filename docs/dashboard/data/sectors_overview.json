@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 7,
-      "primary_driver": "Analysis: The Warsh revolution is coming. Powell won’t stand in the way.",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 5,
+      "primary_driver": "Brent oil pares gains after climbing to $126 per barrel on U.S.-Iran escalation fears",
       "key_drivers": [
-        "Analysis: The Warsh revolution is coming. Powell won’t stand in the way.",
-        "Iran war fuels bond-market selloff, as inflation fears put future Fed rate cuts in doubt",
-        "The U.S. produces the most oil in the world. So why are gasoline prices so high?",
-        "Shocking UAE exit rocks OPEC, but group will still hold significant sway over the oil market"
+        "Brent oil pares gains after climbing to $126 per barrel on U.S.-Iran escalation fears",
+        "Here's why surging oil prices may not derail the consumer trade",
+        "Markets are still underpricing Iran war risks, investors warn as oil fluctuates around four-year high",
+        "Oil prices drop after earlier reaching four-year high as Iran developments eyed"
       ],
       "key_tickers": [
         "XOM",
@@ -20,22 +20,22 @@
         "RIG"
       ],
       "trending_tickers": [
+        "CL=F",
         "LLY",
-        "SPY",
-        "CL=F"
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "CSRE: The Secret Sauce Of This Outperforming Active REIT ETF",
+      "story_count": 8,
+      "primary_driver": "8-K - FEDERAL HOME LOAN MORTGAGE CORP (0001026214) (Filer)",
       "key_drivers": [
-        "CSRE: The Secret Sauce Of This Outperforming Active REIT ETF",
-        "Alphabet ups 2026 capex to as much as $190 billion, expects to 'significantly increase' in 2027",
-        "8-K - Profusa, Inc. (0001859807) (Filer)",
-        "April FOMC: Hawks Push Back As Inflation Risks Rise"
+        "8-K - FEDERAL HOME LOAN MORTGAGE CORP (0001026214) (Filer)",
+        "Slide Insurance Holdings, Inc. (SLDE) Q1 2026 Earnings Call Transcript",
+        "‘I’m not interested in long-term care insurance’: I’d like to retire at 55. How much will I have to pay for healthcare?",
+        "Bank of England keeps rates on hold at 3.75% as Iran war shakes outlook"
       ],
       "key_tickers": [
         "JPM",
@@ -45,23 +45,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GOOGL",
-        "RIG",
+        "COST",
         "BAC",
-        "LLY"
+        "META",
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 13,
-      "primary_driver": "Microsoft beats on top and bottom lines with 40% Azure growth",
+      "primary_driver": "Eli Lilly blows past quarterly estimates, hikes outlook as Zepbound and Mounjaro sales skyrocket",
       "key_drivers": [
-        "Microsoft beats on top and bottom lines with 40% Azure growth",
-        "OpenAI trial day 3 recap: Musk to return to the stand Thursday after tense cross-examination",
-        "Meta Q1: Thanks For The Dip, I'm Buying More",
-        "Ford raises 2026 guidance as $1.3 billion tariff refund assists in offsetting higher costs"
+        "Eli Lilly blows past quarterly estimates, hikes outlook as Zepbound and Mounjaro sales skyrocket",
+        "8-K - RED ROBIN GOURMET BURGERS INC (0001171759) (Filer)",
+        "Qualcomm: Not Correctly Priced For AI",
+        "Lawyers to the wealthy warn that AI legal advice comes with serious risks"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,19 +72,21 @@
       ],
       "trending_tickers": [
         "LLY",
-        "MSFT",
         "META",
-        "BAC"
+        "CL=F",
+        "AMZN"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Neutral",
-      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "sentiment": "Positive",
+      "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
+      "story_count": 3,
+      "primary_driver": "Stocks making the biggest moves premarket: Meta, Eli Lilly, Caterpillar, Amazon & more",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Stocks making the biggest moves premarket: Meta, Eli Lilly, Caterpillar, Amazon & more",
+        "8-K - FTAI Infrastructure Inc. (0001899883) (Filer)",
+        "Caterpillar's quarterly profit rises on strong construction, power equipment sales"
       ],
       "key_tickers": [
         "GE",
@@ -94,19 +96,22 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "AMZN",
+        "META",
+        "LLY"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "What Wall Street is really looking for in hyperscaler earnings",
+      "story_count": 5,
+      "primary_driver": "8-K - Walmart Inc. (0000104169) (Filer)",
       "key_drivers": [
-        "What Wall Street is really looking for in hyperscaler earnings",
-        "1st Look at Local Housing Markets in December"
+        "8-K - Walmart Inc. (0000104169) (Filer)",
+        "Meta Platforms gets a downgrade from JPMorgan on massive AI spending forecast",
+        "Forget buy the dip. Now retail investors are ‘trading the mania’ in chip stocks, and it’s about to get messy.",
+        "‘I’m very late to the game’: I’m 48, earn $65,000, have $48,000 in debt and no retirement. Am I doomed?"
       ],
       "key_tickers": [
         "NKE",
@@ -116,17 +121,22 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY"
+        "WMT",
+        "META",
+        "JPM",
+        "COST"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Neutral",
-      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "sentiment": "Negative",
+      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 3,
+      "primary_driver": "Eli Lilly blows past quarterly estimates, hikes outlook as Zepbound and Mounjaro sales skyrocket",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "Eli Lilly blows past quarterly estimates, hikes outlook as Zepbound and Mounjaro sales skyrocket",
+        "Novo Nordisk: Pricing Pressure And Falling Margins Make This A Value Trap (Q1 Earnings Preview)",
+        "Stocks making the biggest moves premarket: Meta, Eli Lilly, Caterpillar, Amazon & more"
       ],
       "key_tickers": [
         "LLY",
@@ -137,20 +147,22 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVO"
+        "NVO",
+        "AMZN",
+        "META"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 13,
-      "primary_driver": "First Commonwealth Financial Corporation (FCF) Q1 2026 Earnings Call Transcript",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 10,
+      "primary_driver": "8-K - Genprex, Inc. (0001595248) (Filer)",
       "key_drivers": [
-        "First Commonwealth Financial Corporation (FCF) Q1 2026 Earnings Call Transcript",
-        "Ford raises 2026 guidance as $1.3 billion tariff refund assists in offsetting higher costs",
-        "Traeger's Cool-Down Justifies A Downgrade",
-        "Renasant Corporation (RNST) Q1 2026 Earnings Call Transcript"
+        "8-K - Genprex, Inc. (0001595248) (Filer)",
+        "8-K - BELDEN INC. (0000913142) (Filer)",
+        "8-K - SYNTEC OPTICS HOLDINGS, INC. (0001866816) (Filer)",
+        "8-K - STEPAN CO (0000094049) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -160,9 +172,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
-        "COST",
-        "LLY"
+        "GLD",
+        "DXY"
       ]
     }
   ]
