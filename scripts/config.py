@@ -255,6 +255,50 @@ TICKER_KEYWORDS = {
 }
 
 # ============================================================
+# MARKETAUX API CONFIGURATION
+#
+# MarketAux free tier: 100 requests/day
+# With 3 pipeline runs/day:
+#   - generate_macro_news.py:   1 request per run  = 3/day
+#   - generate_sector_news.py:  7 requests per run = 21/day
+#   Total: ~24 requests/day — well within free limit
+#
+# Topics reference: https://www.marketaux.com/documentation
+# ============================================================
+
+MARKETAUX_MACRO_FILTERS = {
+    # Broad macro/market topics for the morning brief
+    # These are MarketAux topic slugs
+    "topics": "central-banks,monetary-policy,inflation,economic-data,currencies,commodities,bonds,stock-markets,geopolitics",
+}
+
+MARKETAUX_SECTOR_FILTERS = {
+    # Each entry maps a sector name to MarketAux API params
+    # MarketAux supports filtering by industry_group, topics, and symbols
+    "Energy": {
+        "topics": "energy,oil-and-gas,commodities",
+    },
+    "Financials": {
+        "topics": "banking,financial-services,monetary-policy,central-banks",
+    },
+    "Technology": {
+        "topics": "technology,artificial-intelligence,semiconductors,software",
+    },
+    "Industrials": {
+        "topics": "industrials,defense,aerospace,manufacturing",
+    },
+    "Consumer": {
+        "topics": "retail,consumer-goods,e-commerce",
+    },
+    "Healthcare": {
+        "topics": "healthcare,pharmaceuticals,biotech",
+    },
+    "Macro": {
+        "topics": "central-banks,monetary-policy,inflation,economic-data,currencies,bonds,geopolitics",
+    },
+}
+
+# ============================================================
 # SECTOR DEFAULT TICKERS
 # ============================================================
 SECTOR_DEFAULT_TICKERS = {
