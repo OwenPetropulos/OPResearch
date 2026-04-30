@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Marathon Petroleum: Earnings Next Week To Reflect Recent Tailwinds",
+      "story_count": 4,
+      "primary_driver": "Stocks clock their best month since 2020 as Wall Street shakes off Iran oil shock",
       "key_drivers": [
-        "Marathon Petroleum: Earnings Next Week To Reflect Recent Tailwinds",
+        "Stocks clock their best month since 2020 as Wall Street shakes off Iran oil shock",
+        "Oil’s surge to $125 a barrel just made the next bet for traders a lot harder",
         "Trump said his blockade would cause Iran's oil industry to 'explode' this week. Why that won't happen",
-        "Antero Midstream Corporation 2026 Q1 - Results - Earnings Call Presentation",
-        "California gas prices hit $6 per gallon as fuel costs jump nearly 30 cents in a week across the U.S."
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,22 @@
         "RIG"
       ],
       "trending_tickers": [
-        "COST",
-        "LLY",
+        "CL=F",
         "SPY",
-        "CL=F"
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 9,
-      "primary_driver": "Blue Owl shares surge after private credit firm cites 10X gains from SpaceX loan",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "Could Powell’s decision to stay worsen relations between the Fed and the White House?",
       "key_drivers": [
-        "Blue Owl shares surge after private credit firm cites 10X gains from SpaceX loan",
-        "Trump to sign order creating retirement plans for workers who lack them",
-        "Federal Home Loan Mortgage Corporation (FMCC) Q1 2026 Earnings Call Prepared Remarks Transcript",
-        "8-K - Federal Home Loan Bank of Dallas (0001331757) (Filer)"
+        "Could Powell’s decision to stay worsen relations between the Fed and the White House?",
+        "Federated Hermes, Inc. (FHI) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "8-K - Glucotrack, Inc. (0001506983) (Filer)",
+        "8-K - FEDERATED HERMES, INC. (0001056288) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +45,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "MSFT"
+        "BAC",
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 14,
-      "primary_driver": "OpenAI trial live updates: Musk says Tesla, SpaceX and X are 'socially beneficial'",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 11,
+      "primary_driver": "Apple revenue guidance tops estimates on booming iPhone, Mac demand",
       "key_drivers": [
-        "OpenAI trial live updates: Musk says Tesla, SpaceX and X are 'socially beneficial'",
-        "Dow is surging, Nasdaq is lagging. The two factors splitting the markets in half: Live updates",
-        "Blue Owl shares surge after private credit firm cites 10X gains from SpaceX loan",
-        "EUR/USD, GBP/USD Overview - FX Picks Up Again, U.S. Dollar Tumbles After The ECB And BOE"
+        "Apple revenue guidance tops estimates on booming iPhone, Mac demand",
+        "Apple Q2: Firing On All Cylinders",
+        "Brown-Forman: A Failed Deal With Pernod Ricard Is Just The Beginning",
+        "Trump says 'I don't think about' another assassination attempt"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,20 +69,23 @@
         "AMD"
       ],
       "trending_tickers": [
+        "AAPL",
         "LLY",
-        "GOOGL",
         "AMZN",
-        "EURUSD=X"
+        "BAC"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 4,
+      "primary_driver": "Mapletree Logistics Trust (MAPGF) Q4 2026 Earnings Call Transcript",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Mapletree Logistics Trust (MAPGF) Q4 2026 Earnings Call Transcript",
+        "U.S. senators ban themselves from prediction markets trading",
+        "Granite Construction Incorporated (GVA) Q1 2026 Earnings Call Transcript",
+        "8-K - DYNAMIC AEROSPACE SYSTEMS Corp (0001854526) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -92,21 +95,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "AMZN"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Trump to sign order creating retirement plans for workers who lack them",
+      "story_count": 5,
+      "primary_driver": "‘I’m very late to the game’: I’m 48, earn $65,000, have $48,000 in debt and no retirement. Am I doom",
       "key_drivers": [
-        "Trump to sign order creating retirement plans for workers who lack them",
-        "Trump to sign executive order expanding retirement account access for workers",
-        "Microsoft just can’t win Wall Street’s trust. The stock is falling as spending fears linger.",
-        "Is one bad week enough to ruin your retirement savings? How about 3 years?"
+        "‘I’m very late to the game’: I’m 48, earn $65,000, have $48,000 in debt and no retirement. Am I doomed?",
+        "8-K - Braemar Hotels & Resorts Inc. (0001574085) (Filer)",
+        "Trump signs executive order expanding retirement account access for workers",
+        "Why Portland's empty store fronts are causing a budget crisis"
       ],
       "key_tickers": [
         "NKE",
@@ -116,21 +118,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "MSFT",
-        "TGT"
+        "BAC",
+        "LLY"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Negative",
-      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 4,
-      "primary_driver": "Alnylam Pharmaceuticals, Inc. (ALNY) Q1 2026 Earnings Call Transcript",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "Trump taps Nicole Saphier for surgeon general after pulling Casey Means nomination",
       "key_drivers": [
-        "Alnylam Pharmaceuticals, Inc. (ALNY) Q1 2026 Earnings Call Transcript",
-        "Hershey says GLP-1s are driving higher gum and mint sales",
-        "FDA proposes excluding Novo, Lilly weight loss drugs from bulk compounding list in win for the companies",
-        "More than 20,000 people are taking Eli Lilly's weight loss pill Foundayo, CEO says"
+        "Trump taps Nicole Saphier for surgeon general after pulling Casey Means nomination"
       ],
       "key_tickers": [
         "LLY",
@@ -146,15 +145,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 10,
-      "primary_driver": "8-K - FIRST NATIONAL CORP /VA/ (0000719402) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "LIV Golf has lost its Saudi funding. Golfers who rejoin the PGA Tour may face financial fallout.",
       "key_drivers": [
-        "8-K - FIRST NATIONAL CORP /VA/ (0000719402) (Filer)",
-        "Spok Holdings, Inc. (SPOK) Q1 2026 Earnings Call Transcript",
-        "VICI Properties Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "U.S. Growth Driven By Tech Investment In First Quarter"
+        "LIV Golf has lost its Saudi funding. Golfers who rejoin the PGA Tour may face financial fallout.",
+        "Gildan Activewear Inc. (GIL:CA) Shareholder/Analyst Call Transcript",
+        "Laureate Education, Inc. (LAUR) Q1 2026 Earnings Call Transcript",
+        "Upbound Group, Inc. (UPBD) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -164,8 +163,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "EURUSD=X",
-        "SPY"
+        "GLD",
+        "DXY"
       ]
     }
   ]
