@@ -1,42 +1,13 @@
 {
   "stories": [
     {
-      "title": "8-K - FEDERAL HOME LOAN MORTGAGE CORP (0001026214) (Filer)",
-      "summary": "Filed: 2026-04-30 AccNo: 0001026214-26-000028 Size: 3 MB Item 2.02: Results of Operations and Financial Condition Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/1026214/000102621426000028/0001026214-26-000028-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-04-30T07:59:54Z",
-      "id": "mn001",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "Bank of England keeps rates on hold at 3.75% as Iran war shakes outlook",
-      "summary": "The Bank of England voted to keep its key interest rate on hold at 3.75% on Thursday",
-      "url": "https://www.cnbc.com/2026/04/30/bank-of-england-april-2026-interest-rate-decision-iran-war.html",
+      "title": "Treasury Department announces new Series I bond rate of 4.26% for the next six months",
+      "summary": "The U.S. Department of the Treasury has announced new Series I bond rates through October 2026.",
+      "url": "https://www.cnbc.com/2026/04/30/treasury-i-bond-rate-through-october-2026.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-30T11:45:33Z",
-      "id": "mn002",
-      "sector_tags": [
-        "Financials",
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
-    },
-    {
-      "title": "The Yen Recovers On Verbal Intervention",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4896523-yen-recovers-on-verbal-intervention?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-04-30T07:40:00Z",
-      "id": "mn003",
+      "timestamp": "2026-04-30T15:06:35Z",
+      "id": "mn001",
       "sector_tags": [
         "Macro"
       ],
@@ -44,51 +15,61 @@
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "Inflation Nears The 'Red Zone,' Odds Of The Fed Hikes Rise",
+      "title": "Bank of England faces the 'most difficult combination,' says governor Bailey as energy prices soar",
+      "summary": "Bank of England policymakers must contend with the \"most difficult combination\" of economic effects, according to governor Andrew Bailey",
+      "url": "https://www.cnbc.com/2026/04/30/energy-price-very-uncertain-bank-of-england-andrew-bailey-boe.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-30T15:00:40Z",
+      "id": "mn002",
+      "sector_tags": [
+        "Technology",
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "ECB Keeps Rates On Hold Amid Rising Stagflationary Pressures",
       "summary": "",
-      "url": "https://seekingalpha.com/article/4896490-inflation-nears-the-red-zone-odds-of-the-fed-hikes-rise?source=feed_all_articles",
+      "url": "https://seekingalpha.com/article/4896646-ecb-keeps-rates-hold-rising-stagflationary-pressures?source=feed_all_articles",
       "source_name": "Seeking Alpha",
       "source_type": "Niche / Blog",
-      "timestamp": "2026-04-30T07:10:33Z",
+      "timestamp": "2026-04-30T10:44:00Z",
+      "id": "mn003",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
+    },
+    {
+      "title": "Centerra Gold: Re-Rating Opportunity Remains Intact Despite Near-Term Iran Pressure",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4896636-centerra-gold-re-rating-opportunity-remains-intact-despite-near-term-iran-pressure?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-04-30T10:38:48Z",
       "id": "mn004",
       "sector_tags": [
-        "Financials",
-        "Macro"
+        "Technology"
       ],
       "ticker_tags": [],
-      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
-      "title": "GE HealthCare Q1 2026: Inflation And Execution Risks Weigh On Outlook",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4896489-ge-healthcare-stock-1q26-inflation-and-execution-risks-weigh-on-outlook?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-04-30T07:10:29Z",
+      "title": "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
+      "summary": "Filed: 2026-04-30 AccNo: 0001325878-26-000091 Size: 168 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant",
+      "url": "https://www.sec.gov/Archives/edgar/data/1325878/000132587826000091/0001325878-26-000091-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-04-30T10:38:45Z",
       "id": "mn005",
       "sector_tags": [
-        "Macro"
+        "Financials"
       ],
       "ticker_tags": [],
-      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
-    },
-    {
-      "title": "Forget buy the dip. Now retail investors are ‘trading the mania’ in chip stocks, and it’s about to get messy.",
-      "summary": "Goldman Sachs’ traders say investors have been chasing the hot semiconductor sector, but with some high-stakes bets that may be hard to get out of should things go wrong.",
-      "url": "https://www.marketwatch.com/story/forget-buy-the-dip-now-retail-investors-are-trading-the-mania-in-chip-stocks-and-its-about-to-get-messy-08ef5540?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-04-30T11:02:00Z",
-      "id": "mn006",
-      "sector_tags": [
-        "Financials",
-        "Technology",
-        "Consumer"
-      ],
-      "ticker_tags": [
-        "GS"
-      ],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     },
     {
       "title": "Jerome Powell says he will continue to serve as a Fed governor, calls Trump criticism 'unprecedented'",
@@ -96,8 +77,8 @@
       "url": "https://www.cnbc.com/2026/04/29/jerome-powell-says-he-will-continue-to-serve-as-a-fed-governor-even-after-chairmanship-ends-.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-29T19:32:45Z",
-      "id": "mn007",
+      "timestamp": "2026-04-30T14:36:04Z",
+      "id": "mn006",
       "sector_tags": [
         "Financials",
         "Technology"
@@ -106,48 +87,65 @@
       "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     },
     {
-      "title": "Fed holds rates steady but with highest level of dissent since 1992",
-      "summary": "The Federal Reserve on Wednesday released its latest decision on interest rates.",
-      "url": "https://www.cnbc.com/2026/04/29/fed-interest-rate-decision-april-2026.html",
-      "source_name": "CNBC Top News",
+      "title": "These stocks have been the biggest winners during the S&P 500’s best month since 2020",
+      "summary": "The S&P 500 was up 9.6% for April, led by a gain of nearly 18% for the information technology sector.",
+      "url": "https://www.marketwatch.com/story/these-stocks-have-been-the-biggest-winners-during-the-s-p-500s-best-month-since-2020-36ae706d?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-29T19:25:28Z",
-      "id": "mn008",
+      "timestamp": "2026-04-30T14:26:00Z",
+      "id": "mn007",
       "sector_tags": [
-        "Financials"
+        "Technology"
       ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+      "ticker_tags": [
+        "SPY"
+      ],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
     },
     {
-      "title": "Savings rates drop even without Fed cuts. Here’s where you can still earn 4% on your cash",
-      "summary": "While the Federal Reserve's hold on rate cuts is generally good news for savers, there have already been some banks that have lowered their payouts anyway.",
-      "url": "https://www.cnbc.com/2026/04/29/savings-rates-drop-even-without-fed-cuts-heres-where-you-can-still-earn-4percent-on-your-cash.html",
+      "title": "Yen surges as Japan reportedly intervenes to counter currency weakness",
+      "summary": "The Nikkei, citing a government source, said officials had intervened buying the currency, which had been around its weakest since July 2024 earlier Thursday.",
+      "url": "https://www.cnbc.com/2026/04/30/yen-surges-as-japan-reportedly-intervenes-to-counter-currency-weakness.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-04-29T18:35:03Z",
+      "timestamp": "2026-04-30T13:49:32Z",
+      "id": "mn008",
+      "sector_tags": [
+        "Technology",
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "8-K - Federal Home Loan Bank of Pittsburgh (0001330399) (Filer)",
+      "summary": "Filed: 2026-04-30 AccNo: 0001193125-26-194530 Size: 228 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant Item 9.01: Financial Statements and Exhibits",
+      "url": "https://www.sec.gov/Archives/edgar/data/1330399/000119312526194530/0001193125-26-194530-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-04-30T09:43:31Z",
       "id": "mn009",
       "sector_tags": [
         "Financials"
       ],
-      "ticker_tags": [
-        "LLY"
-      ],
+      "ticker_tags": [],
       "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     },
     {
-      "title": "Federal Reserve issues FOMC statement",
-      "summary": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
-      "source_name": "Federal Reserve",
-      "source_type": "Macro Data",
-      "timestamp": "2026-04-29T18:00:00Z",
+      "title": "Forget 'Sell in May.' Under Trump, market could be poised for summertime gains",
+      "summary": "The upcoming six-month period has historically been such a bad stretch for the stock market that Wall Street has an adage for it: “Sell in May and go away.”",
+      "url": "https://www.cnbc.com/2026/04/30/forget-sell-in-may-under-trump-market-could-be-poised-for-summertime-gains.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-04-30T13:43:12Z",
       "id": "mn010",
       "sector_tags": [
-        "Financials"
+        "Technology"
       ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+      "ticker_tags": [
+        "LLY"
+      ],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
     }
   ]
 }

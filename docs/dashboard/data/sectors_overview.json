@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Brent oil pares gains after climbing to $126 per barrel on U.S.-Iran escalation fears",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 6,
+      "primary_driver": "Oil prices retreat after touching four-year high as traders focus on Iran developments",
       "key_drivers": [
-        "Brent oil pares gains after climbing to $126 per barrel on U.S.-Iran escalation fears",
-        "Here's why surging oil prices may not derail the consumer trade",
-        "Markets are still underpricing Iran war risks, investors warn as oil fluctuates around four-year high",
-        "Oil prices drop after earlier reaching four-year high as Iran developments eyed"
+        "Oil prices retreat after touching four-year high as traders focus on Iran developments",
+        "Trump said his blockade would cause Iran's oil industry to 'explode' this week. Why that won't happen",
+        "Core inflation rate hit 3.2% in March as first-quarter growth disappointed at 2%",
+        "Here's why surging oil prices may not derail the consumer trade"
       ],
       "key_tickers": [
         "XOM",
@@ -29,13 +29,13 @@
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "8-K - FEDERAL HOME LOAN MORTGAGE CORP (0001026214) (Filer)",
+      "story_count": 9,
+      "primary_driver": "Türk Hava Yollari Anonim Ortakligi 2026 Q1 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "8-K - FEDERAL HOME LOAN MORTGAGE CORP (0001026214) (Filer)",
-        "Slide Insurance Holdings, Inc. (SLDE) Q1 2026 Earnings Call Transcript",
-        "‘I’m not interested in long-term care insurance’: I’d like to retire at 55. How much will I have to pay for healthcare?",
-        "Bank of England keeps rates on hold at 3.75% as Iran war shakes outlook"
+        "Türk Hava Yollari Anonim Ortakligi 2026 Q1 - Results - Earnings Call Presentation",
+        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
+        "ACRES Commercial Realty Corp. 2026 Q1 - Results - Earnings Call Presentation",
+        "Jerome Powell says he will continue to serve as a Fed governor, calls Trump criticism 'unprecedented'"
       ],
       "key_tickers": [
         "JPM",
@@ -45,23 +45,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "COST",
-        "BAC",
-        "META",
-        "JPM"
+        "JPM",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 13,
-      "primary_driver": "Eli Lilly blows past quarterly estimates, hikes outlook as Zepbound and Mounjaro sales skyrocket",
+      "story_count": 12,
+      "primary_driver": "Big Tech’s $700 billion spending on AI this year is called the ‘greatest capital misallocation in hi",
       "key_drivers": [
-        "Eli Lilly blows past quarterly estimates, hikes outlook as Zepbound and Mounjaro sales skyrocket",
-        "8-K - RED ROBIN GOURMET BURGERS INC (0001171759) (Filer)",
-        "Qualcomm: Not Correctly Priced For AI",
-        "Lawyers to the wealthy warn that AI legal advice comes with serious risks"
+        "Big Tech’s $700 billion spending on AI this year is called the ‘greatest capital misallocation in history’",
+        "Bank of England faces the 'most difficult combination,' says governor Bailey as energy prices soar",
+        "8-K/A - Investcorp AI Acquisition Corp. (0001852889) (Filer)",
+        "Intapp Navigates AI Challenges While Maintaining Growth In Regulated Markets (Downgrade)"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,9 +69,9 @@
         "AMD"
       ],
       "trending_tickers": [
-        "LLY",
-        "META",
         "CL=F",
+        "MSFT",
+        "GOOGL",
         "AMZN"
       ]
     },
@@ -81,12 +79,10 @@
       "sector": "Industrials",
       "sentiment": "Positive",
       "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 3,
-      "primary_driver": "Stocks making the biggest moves premarket: Meta, Eli Lilly, Caterpillar, Amazon & more",
+      "story_count": 1,
+      "primary_driver": "Caterpillar handily beat Wall Street estimates — not for the first time",
       "key_drivers": [
-        "Stocks making the biggest moves premarket: Meta, Eli Lilly, Caterpillar, Amazon & more",
-        "8-K - FTAI Infrastructure Inc. (0001899883) (Filer)",
-        "Caterpillar's quarterly profit rises on strong construction, power equipment sales"
+        "Caterpillar handily beat Wall Street estimates — not for the first time"
       ],
       "key_tickers": [
         "GE",
@@ -96,9 +92,8 @@
         "HON"
       ],
       "trending_tickers": [
-        "AMZN",
-        "META",
-        "LLY"
+        "LMT",
+        "RTX"
       ]
     },
     {
@@ -106,12 +101,12 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 5,
-      "primary_driver": "8-K - Walmart Inc. (0000104169) (Filer)",
+      "primary_driver": "Big Tech’s $700 billion spending on AI this year is called the ‘greatest capital misallocation in hi",
       "key_drivers": [
-        "8-K - Walmart Inc. (0000104169) (Filer)",
-        "Meta Platforms gets a downgrade from JPMorgan on massive AI spending forecast",
-        "Forget buy the dip. Now retail investors are ‘trading the mania’ in chip stocks, and it’s about to get messy.",
-        "‘I’m very late to the game’: I’m 48, earn $65,000, have $48,000 in debt and no retirement. Am I doomed?"
+        "Big Tech’s $700 billion spending on AI this year is called the ‘greatest capital misallocation in history’",
+        "Robinsons Retail Holdings, Inc. (RRETY) Q1 2026 Earnings Call Transcript",
+        "Trump to sign order creating retirement plans for workers who lack them",
+        "U.S. economy rebounded in first quarter, driven by sizzling-hot business investment"
       ],
       "key_tickers": [
         "NKE",
@@ -121,22 +116,20 @@
         "ONON"
       ],
       "trending_tickers": [
-        "WMT",
-        "META",
-        "JPM",
-        "COST"
+        "MSFT",
+        "GOOGL",
+        "AMZN",
+        "META"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Negative",
-      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 3,
-      "primary_driver": "Eli Lilly blows past quarterly estimates, hikes outlook as Zepbound and Mounjaro sales skyrocket",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "More than 20,000 people are taking Eli Lilly's weight loss pill Foundayo, CEO says",
       "key_drivers": [
-        "Eli Lilly blows past quarterly estimates, hikes outlook as Zepbound and Mounjaro sales skyrocket",
-        "Novo Nordisk: Pricing Pressure And Falling Margins Make This A Value Trap (Q1 Earnings Preview)",
-        "Stocks making the biggest moves premarket: Meta, Eli Lilly, Caterpillar, Amazon & more"
+        "More than 20,000 people are taking Eli Lilly's weight loss pill Foundayo, CEO says"
       ],
       "key_tickers": [
         "LLY",
@@ -147,22 +140,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVO",
-        "AMZN",
-        "META"
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "8-K - Genprex, Inc. (0001595248) (Filer)",
+      "story_count": 11,
+      "primary_driver": "Treasury Department announces new Series I bond rate of 4.26% for the next six months",
       "key_drivers": [
-        "8-K - Genprex, Inc. (0001595248) (Filer)",
-        "8-K - BELDEN INC. (0000913142) (Filer)",
-        "8-K - SYNTEC OPTICS HOLDINGS, INC. (0001866816) (Filer)",
-        "8-K - STEPAN CO (0000094049) (Filer)"
+        "Treasury Department announces new Series I bond rate of 4.26% for the next six months",
+        "Amadeus IT Group, S.A. (AMADY) Idemia Public Security France - M&A Call - Slideshow",
+        "Mastercard Incorporated 2026 Q1 - Results - Earnings Call Presentation",
+        "FTI Consulting, Inc. 2026 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
