@@ -5,10 +5,10 @@
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 3,
-      "primary_driver": "Stocks clock their best month since 2020 as Wall Street shakes off Iran oil shock",
+      "primary_driver": "Exxon Mobil and Chevron earnings fall as Iran war disrupts oil shipments",
       "key_drivers": [
-        "Stocks clock their best month since 2020 as Wall Street shakes off Iran oil shock",
-        "Trump said his blockade would cause Iran's oil industry to 'explode' this week. Why that won't happen",
+        "Exxon Mobil and Chevron earnings fall as Iran war disrupts oil shipments",
+        "Oil rises as White House says Iran ceasefire halts 60-day war deadline",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -19,8 +19,9 @@
         "RIG"
       ],
       "trending_tickers": [
-        "SPY",
         "CL=F",
+        "XOM",
+        "CVX",
         "LLY"
       ]
     },
@@ -29,12 +30,12 @@
       "sentiment": "Positive",
       "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "Mortgage rates increase to 6.3% — but home buyers aren’t scared away",
+      "primary_driver": "Inside the Fed: Powell vows he won't be a 'shadow chair,' but a Warsh clash will be tough to avoid",
       "key_drivers": [
-        "Mortgage rates increase to 6.3% — but home buyers aren’t scared away",
-        "Could Powell’s decision to stay worsen relations between the Fed and the White House?",
-        "Federated Hermes, Inc. (FHI) Shareholder/Analyst Call Prepared Remarks Transcript",
-        "8-K - Glucotrack, Inc. (0001506983) (Filer)"
+        "Inside the Fed: Powell vows he won't be a 'shadow chair,' but a Warsh clash will be tough to avoid",
+        "Video shows Cole Allen casing hotel, storming checkpoint in alleged Trump assassination attempt",
+        "8-K - Glucotrack, Inc. (0001506983) (Filer)",
+        "8-K - FEDERATED HERMES, INC. (0001056288) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -53,12 +54,12 @@
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
       "story_count": 12,
-      "primary_driver": "Apple revenue guidance tops estimates on booming iPhone, Mac demand",
+      "primary_driver": "Stocks making the biggest moves premarket: Apple, Estee Lauder, Roku, Reddit, Roblox and more",
       "key_drivers": [
-        "Apple revenue guidance tops estimates on booming iPhone, Mac demand",
-        "OpenAI trial recap: Musk concludes testimony, lawyers spar over second witness",
-        "Apple Q2: Firing On All Cylinders",
-        "Brown-Forman: A Failed Deal With Pernod Ricard Is Just The Beginning"
+        "Stocks making the biggest moves premarket: Apple, Estee Lauder, Roku, Reddit, Roblox and more",
+        "Meta Platforms: What You Buy For AI Technology Growth",
+        "Here's what major analysts are saying about Apple's earnings",
+        "3 questions to ask before raiding your 401(k) for a hardship withdrawal"
       ],
       "key_tickers": [
         "NVDA",
@@ -68,23 +69,20 @@
         "AMD"
       ],
       "trending_tickers": [
-        "AAPL",
         "LLY",
-        "AMZN",
-        "BAC"
+        "AAPL",
+        "BAC",
+        "META"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Mapletree Logistics Trust (MAPGF) Q4 2026 Earnings Call Transcript",
+      "story_count": 1,
+      "primary_driver": "SECURE Waste Infrastructure Corp. (SES:CA) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "Mapletree Logistics Trust (MAPGF) Q4 2026 Earnings Call Transcript",
-        "U.S. senators ban themselves from prediction markets trading",
-        "Granite Construction Incorporated (GVA) Q1 2026 Earnings Call Transcript",
-        "8-K - DYNAMIC AEROSPACE SYSTEMS Corp (0001854526) (Filer)"
+        "SECURE Waste Infrastructure Corp. (SES:CA) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "GE",
@@ -94,20 +92,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "AMZN"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "‘I’m very late to the game’: I’m 48, earn $65,000, have $48,000 in debt and no retirement. Am I doom",
+      "story_count": 6,
+      "primary_driver": "3 questions to ask before raiding your 401(k) for a hardship withdrawal",
       "key_drivers": [
-        "‘I’m very late to the game’: I’m 48, earn $65,000, have $48,000 in debt and no retirement. Am I doomed?",
-        "8-K - Braemar Hotels & Resorts Inc. (0001574085) (Filer)",
+        "3 questions to ask before raiding your 401(k) for a hardship withdrawal",
+        "Video shows Cole Allen casing hotel, storming checkpoint in alleged Trump assassination attempt",
         "Trump signs executive order expanding retirement account access for workers",
-        "Why Portland's empty store fronts are causing a budget crisis"
+        "8-K - Braemar Hotels & Resorts Inc. (0001574085) (Filer)"
       ],
       "key_tickers": [
         "NKE",
@@ -125,10 +124,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Trump taps Nicole Saphier for surgeon general after pulling Casey Means nomination",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Trump taps Nicole Saphier for surgeon general after pulling Casey Means nomination"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -147,12 +146,12 @@
       "sentiment": "Positive",
       "tone": "Macro outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "‘The numbers don’t lie’: If I had invested my Social Security in the S&P 500 I’d have $4 million. Is",
+      "primary_driver": "Quad/Graphics: More Than A Print Business, And I'm Bullish",
       "key_drivers": [
-        "‘The numbers don’t lie’: If I had invested my Social Security in the S&P 500 I’d have $4 million. Is the system broken?",
-        "Reddit reports 69% jump in revenue, topping analyst estimates",
-        "MARA Holdings, Inc. (MARA) M&A Call Transcript",
-        "Marcus & Millichap, Inc. (MMI) Shareholder/Analyst Call Prepared Remarks Transcript"
+        "Quad/Graphics: More Than A Print Business, And I'm Bullish",
+        "Insperity, Inc. (NSP) Q1 2026 Earnings Call Transcript",
+        "Why The Market Needs Small Company Listings",
+        "Fidelity Stock Selector Mid Cap Fund Q1 2026 Commentary"
       ],
       "key_tickers": [
         "TLT",
@@ -162,7 +161,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY"
+        "LLY"
       ]
     }
   ]
