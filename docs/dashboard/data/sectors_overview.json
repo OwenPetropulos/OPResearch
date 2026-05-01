@@ -5,11 +5,11 @@
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "Occidental's Hollub, a rare female chief in U.S. oil, to step down",
+      "primary_driver": "S&P 500 closes at a new record to usher in May as oil prices cool and Apple rises: Live updates",
       "key_drivers": [
-        "Occidental's Hollub, a rare female chief in U.S. oil, to step down",
-        "How investors might be overdoing their bets on semiconductor stocks",
-        "Oil prices fall after Iran sends updated peace proposal to mediators in Pakistan",
+        "S&P 500 closes at a new record to usher in May as oil prices cool and Apple rises: Live updates",
+        "Exxon Mobil CEO expects higher oil prices due to Iran war: ‘The market hasn’t seen the full impact’",
+        "Engine trouble ahead? How the Strait of Hormuz standoff threatens luxury auto giants",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -21,9 +21,9 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "OXY",
-        "LLY",
-        "SPY"
+        "SPY",
+        "AAPL",
+        "XOM"
       ]
     },
     {
@@ -31,12 +31,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "NovoCure: Pancreatic Launch Looks Promising, But I'm Not A Believer Yet",
+      "primary_driver": "Social Security screwed up — and it cost widows and widowers over $50 million",
       "key_drivers": [
-        "NovoCure: Pancreatic Launch Looks Promising, But I'm Not A Believer Yet",
-        "8-K - PDS Biotechnology Corp (0001472091) (Filer)",
-        "Roblox shares plummet 18% as child safety measures weigh on bookings",
-        "Video shows Cole Allen scouting hotel, storming checkpoint in alleged Trump assassination attempt"
+        "Social Security screwed up — and it cost widows and widowers over $50 million",
+        "8-K - authID Inc. (0001534154) (Filer)",
+        "8-K - Olema Pharmaceuticals, Inc. (0001750284) (Filer)",
+        "8-K - Scienture Holdings, Inc. (0001382574) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN",
-        "GS",
-        "NVDA"
+        "COST",
+        "AMZN"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 14,
-      "primary_driver": "AMD: Absolutely Monster Dynamics",
+      "story_count": 13,
+      "primary_driver": "Berkshire Hathaway’s shopping extravaganza draws lighter crowds as spotlight shifts to Greg Abel",
       "key_drivers": [
-        "AMD: Absolutely Monster Dynamics",
-        "Alnylam Pharmaceuticals: The RNAi Leader Continues To Grind Through A Quieter Year",
-        "Roblox shares plummet 18% as child safety measures weigh on bookings",
-        "Video shows Cole Allen scouting hotel, storming checkpoint in alleged Trump assassination attempt"
+        "Berkshire Hathaway’s shopping extravaganza draws lighter crowds as spotlight shifts to Greg Abel",
+        "Trump says he's raising EU auto tariffs to 25%",
+        "Cautious optimism: Berkshire investors weigh future under new CEO Greg Abel",
+        "S&P 500 closes at a new record to usher in May as oil prices cool and Apple rises: Live updates"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,21 +70,20 @@
         "AMD"
       ],
       "trending_tickers": [
-        "LLY",
-        "AMD",
         "AMZN",
-        "COST"
+        "SPY",
+        "CL=F",
+        "AAPL"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Portland General Electric Company 2026 Q1 - Results - Earnings Call Presentation",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Portland General Electric Company 2026 Q1 - Results - Earnings Call Presentation",
-        "Sterling Infrastructure: Why The Growth Story Isn't Over (Earnings Preview)"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -95,17 +93,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "GE"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Video shows Cole Allen scouting hotel, storming checkpoint in alleged Trump assassination attempt",
+      "story_count": 4,
+      "primary_driver": "Spirit Airlines prepares to shut down after failing to reach lifeline bailout deal",
       "key_drivers": [
-        "Video shows Cole Allen scouting hotel, storming checkpoint in alleged Trump assassination attempt",
+        "Spirit Airlines prepares to shut down after failing to reach lifeline bailout deal",
+        "Xenia Hotels & Resorts, Inc. (XHR) Q1 2026 Earnings Call Transcript",
+        "Trump's new executive order, with help from Congress, could increase U.S. retirement wealth up to 77%, researchers find",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -124,13 +125,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "8-K - PDS Biotechnology Corp (0001472091) (Filer)",
+      "story_count": 1,
+      "primary_driver": "8-K - Olema Pharmaceuticals, Inc. (0001750284) (Filer)",
       "key_drivers": [
-        "8-K - PDS Biotechnology Corp (0001472091) (Filer)",
-        "Alnylam Pharmaceuticals: The RNAi Leader Continues To Grind Through A Quieter Year",
-        "Cramer says Apple and Eli Lilly still have room to run after post-earnings rallies",
-        "8-K - Shuttle Pharmaceuticals Holdings, Inc. (0001757499) (Filer)"
+        "8-K - Olema Pharmaceuticals, Inc. (0001750284) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -140,21 +138,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "AAPL",
-        "LLY"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 9,
-      "primary_driver": "Trump says 'Iran wants to make a deal, but I'm not satisfied with it'",
+      "primary_driver": "Trump says he's raising EU auto tariffs to 25%",
       "key_drivers": [
-        "Trump says 'Iran wants to make a deal, but I'm not satisfied with it'",
-        "Trump to talk up his push to lower costs, as analysts see bruising midterms for GOP due to economic worries",
-        "Real Matters Inc. (REAL:CA) Q2 2026 Earnings Call Transcript",
-        "Popular: Attractive But Not Stable"
+        "Trump says he's raising EU auto tariffs to 25%",
+        "The \"Vicious Cycle Index\" Just Triggered A Recession Warning: Here's Why It Could Be Severe",
+        "Trump talks up his push to lower costs, as analysts see bruising midterms for GOP due to economic worries",
+        "Unilever PLC (UL) Q1 2026 Sales/Trading Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -164,6 +162,7 @@
         "DXY"
       ],
       "trending_tickers": [
+        "RIG",
         "COST"
       ]
     }
