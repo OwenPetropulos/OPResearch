@@ -4,11 +4,12 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Exxon Mobil and Chevron earnings fall as Iran war disrupts oil shipments",
+      "story_count": 4,
+      "primary_driver": "Occidental's Hollub, a rare female chief in U.S. oil, to step down",
       "key_drivers": [
-        "Exxon Mobil and Chevron earnings fall as Iran war disrupts oil shipments",
-        "Oil rises as White House says Iran ceasefire halts 60-day war deadline",
+        "Occidental's Hollub, a rare female chief in U.S. oil, to step down",
+        "How investors might be overdoing their bets on semiconductor stocks",
+        "Oil prices fall after Iran sends updated peace proposal to mediators in Pakistan",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -20,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "XOM",
-        "CVX",
-        "LLY"
+        "OXY",
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Inside the Fed: Powell vows he won't be a 'shadow chair,' but a Warsh clash will be tough to avoid",
+      "primary_driver": "NovoCure: Pancreatic Launch Looks Promising, But I'm Not A Believer Yet",
       "key_drivers": [
-        "Inside the Fed: Powell vows he won't be a 'shadow chair,' but a Warsh clash will be tough to avoid",
-        "Video shows Cole Allen casing hotel, storming checkpoint in alleged Trump assassination attempt",
-        "8-K - Glucotrack, Inc. (0001506983) (Filer)",
-        "8-K - FEDERATED HERMES, INC. (0001056288) (Filer)"
+        "NovoCure: Pancreatic Launch Looks Promising, But I'm Not A Believer Yet",
+        "8-K - PDS Biotechnology Corp (0001472091) (Filer)",
+        "Roblox shares plummet 18% as child safety measures weigh on bookings",
+        "Video shows Cole Allen scouting hotel, storming checkpoint in alleged Trump assassination attempt"
       ],
       "key_tickers": [
         "JPM",
@@ -45,21 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC",
-        "LLY"
+        "AMZN",
+        "GS",
+        "NVDA"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 12,
-      "primary_driver": "Stocks making the biggest moves premarket: Apple, Estee Lauder, Roku, Reddit, Roblox and more",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 14,
+      "primary_driver": "AMD: Absolutely Monster Dynamics",
       "key_drivers": [
-        "Stocks making the biggest moves premarket: Apple, Estee Lauder, Roku, Reddit, Roblox and more",
-        "Meta Platforms: What You Buy For AI Technology Growth",
-        "Here's what major analysts are saying about Apple's earnings",
-        "3 questions to ask before raiding your 401(k) for a hardship withdrawal"
+        "AMD: Absolutely Monster Dynamics",
+        "Alnylam Pharmaceuticals: The RNAi Leader Continues To Grind Through A Quieter Year",
+        "Roblox shares plummet 18% as child safety measures weigh on bookings",
+        "Video shows Cole Allen scouting hotel, storming checkpoint in alleged Trump assassination attempt"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,19 +72,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "AAPL",
-        "BAC",
-        "META"
+        "AMD",
+        "AMZN",
+        "COST"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "SECURE Waste Infrastructure Corp. (SES:CA) Q1 2026 Earnings Call Transcript",
+      "story_count": 2,
+      "primary_driver": "Portland General Electric Company 2026 Q1 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "SECURE Waste Infrastructure Corp. (SES:CA) Q1 2026 Earnings Call Transcript"
+        "Portland General Electric Company 2026 Q1 - Results - Earnings Call Presentation",
+        "Sterling Infrastructure: Why The Growth Story Isn't Over (Earnings Preview)"
       ],
       "key_tickers": [
         "GE",
@@ -92,21 +95,18 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "GE"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "3 questions to ask before raiding your 401(k) for a hardship withdrawal",
+      "story_count": 2,
+      "primary_driver": "Video shows Cole Allen scouting hotel, storming checkpoint in alleged Trump assassination attempt",
       "key_drivers": [
-        "3 questions to ask before raiding your 401(k) for a hardship withdrawal",
-        "Video shows Cole Allen casing hotel, storming checkpoint in alleged Trump assassination attempt",
-        "Trump signs executive order expanding retirement account access for workers",
-        "8-K - Braemar Hotels & Resorts Inc. (0001574085) (Filer)"
+        "Video shows Cole Allen scouting hotel, storming checkpoint in alleged Trump assassination attempt",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -116,18 +116,21 @@
         "ONON"
       ],
       "trending_tickers": [
-        "BAC",
-        "LLY"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 4,
+      "primary_driver": "8-K - PDS Biotechnology Corp (0001472091) (Filer)",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "8-K - PDS Biotechnology Corp (0001472091) (Filer)",
+        "Alnylam Pharmaceuticals: The RNAi Leader Continues To Grind Through A Quieter Year",
+        "Cramer says Apple and Eli Lilly still have room to run after post-earnings rallies",
+        "8-K - Shuttle Pharmaceuticals Holdings, Inc. (0001757499) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -137,21 +140,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "AAPL",
+        "LLY"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 8,
-      "primary_driver": "Quad/Graphics: More Than A Print Business, And I'm Bullish",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "Trump says 'Iran wants to make a deal, but I'm not satisfied with it'",
       "key_drivers": [
-        "Quad/Graphics: More Than A Print Business, And I'm Bullish",
-        "Insperity, Inc. (NSP) Q1 2026 Earnings Call Transcript",
-        "Why The Market Needs Small Company Listings",
-        "Fidelity Stock Selector Mid Cap Fund Q1 2026 Commentary"
+        "Trump says 'Iran wants to make a deal, but I'm not satisfied with it'",
+        "Trump to talk up his push to lower costs, as analysts see bruising midterms for GOP due to economic worries",
+        "Real Matters Inc. (REAL:CA) Q2 2026 Earnings Call Transcript",
+        "Popular: Attractive But Not Stable"
       ],
       "key_tickers": [
         "TLT",
@@ -161,7 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY"
+        "COST"
       ]
     }
   ]
