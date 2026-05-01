@@ -1,34 +1,33 @@
 {
   "stories": [
     {
+      "title": "Spirit Airlines prepares to shut down after failing to reach lifeline bailout deal",
+      "summary": "Talks with bondholders for a government bailout this week failed to yield a deal.",
+      "url": "https://www.cnbc.com/2026/05/01/spirit-airlines-trump-bailout.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-01T22:42:45Z",
+      "id": "mn001",
+      "sector_tags": [
+        "Technology",
+        "Consumer"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
       "title": "Trump says he's raising EU auto tariffs to 25%",
       "summary": "The Supreme Court struck down Trump's \"reciprocal\" tariffs earlier this year, and Europe warned that its trade deal with Washington could be in jeopardy.",
       "url": "https://www.cnbc.com/2026/05/01/trump-eu-auto-tariffs.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
       "timestamp": "2026-05-01T21:47:39Z",
-      "id": "mn001",
+      "id": "mn002",
       "sector_tags": [
         "Technology",
         "Macro"
       ],
       "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
-    },
-    {
-      "title": "The \"Vicious Cycle Index\" Just Triggered A Recession Warning: Here's Why It Could Be Severe",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4897621-the-vicious-cycle-index-just-triggered-a-recession-warning-heres-why-it-could-be-severe?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-01T17:46:12Z",
-      "id": "mn002",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [
-        "RIG"
-      ],
       "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
@@ -51,28 +50,13 @@
       "why_it_matters": "Oil prices are simultaneously an input cost, an inflation driver, and a geopolitical signal. A sustained move above $90 WTI historically starts to weigh on consumer spending and airline margins; a break below $70 pressures E&P cash flows and sovereign budgets in OPEC+ nations. The current supply-demand balance is fragile — OPEC+ compliance and U.S. shale production response are the key swing variables. Key watch: EIA weekly inventory builds and IEA demand revision cycles."
     },
     {
-      "title": "Spirit Airlines prepares to shut down after failing to reach lifeline bailout deal",
-      "summary": "Talks with bondholders for a government bailout this week failed to yield a deal.",
-      "url": "https://www.cnbc.com/2026/05/01/spirit-airlines-trump-bailout.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-01T21:36:00Z",
-      "id": "mn004",
-      "sector_tags": [
-        "Technology",
-        "Consumer"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
       "title": "8-K - authID Inc. (0001534154) (Filer)",
       "summary": "Filed: 2026-05-01 AccNo: 0001213900-26-051038 Size: 720 KB Item 1.01: Entry into a Material Definitive Agreement Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant Item 3.02: Unregistered Sales of Equity Securities Item 9.01: Financial Statements and Exhibits",
       "url": "https://www.sec.gov/Archives/edgar/data/1534154/000121390026051038/0001213900-26-051038-index.htm",
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
       "timestamp": "2026-05-01T17:29:40Z",
-      "id": "mn005",
+      "id": "mn004",
       "sector_tags": [
         "Financials"
       ],
@@ -86,7 +70,7 @@
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
       "timestamp": "2026-05-01T17:28:11Z",
-      "id": "mn006",
+      "id": "mn005",
       "sector_tags": [
         "Technology"
       ],
@@ -102,7 +86,7 @@
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
       "timestamp": "2026-05-01T17:25:48Z",
-      "id": "mn007",
+      "id": "mn006",
       "sector_tags": [
         "Macro"
       ],
@@ -116,7 +100,7 @@
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
       "timestamp": "2026-05-01T17:23:22Z",
-      "id": "mn008",
+      "id": "mn007",
       "sector_tags": [
         "Macro"
       ],
@@ -130,7 +114,7 @@
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
       "timestamp": "2026-05-01T17:21:38Z",
-      "id": "mn009",
+      "id": "mn008",
       "sector_tags": [
         "Technology"
       ],
@@ -144,7 +128,7 @@
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
       "timestamp": "2026-05-01T17:17:13Z",
-      "id": "mn010",
+      "id": "mn009",
       "sector_tags": [
         "Technology"
       ],
@@ -161,7 +145,7 @@
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
       "timestamp": "2026-05-01T20:05:41Z",
-      "id": "mn011",
+      "id": "mn010",
       "sector_tags": [
         "Macro"
       ],
@@ -175,7 +159,7 @@
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
       "timestamp": "2026-05-01T19:15:15Z",
-      "id": "mn012",
+      "id": "mn011",
       "sector_tags": [
         "Financials",
         "Technology"
@@ -190,7 +174,7 @@
       "source_name": "MarketWatch",
       "source_type": "Mainstream",
       "timestamp": "2026-05-01T19:12:00Z",
-      "id": "mn013",
+      "id": "mn012",
       "sector_tags": [
         "Macro"
       ],
@@ -206,7 +190,7 @@
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
       "timestamp": "2026-05-01T19:05:36Z",
-      "id": "mn014",
+      "id": "mn013",
       "sector_tags": [
         "Technology"
       ],
@@ -220,7 +204,7 @@
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
       "timestamp": "2026-05-01T18:59:26Z",
-      "id": "mn015",
+      "id": "mn014",
       "sector_tags": [
         "Financials"
       ],
@@ -228,6 +212,21 @@
         "COST"
       ],
       "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+    },
+    {
+      "title": "Inside the Fed: Powell vows he won't be a 'shadow chair,' but a Warsh clash will be tough to avoid",
+      "summary": "When the Fed gathers again, it will mark the first time a sitting and former chair conduct business together in nearly 80 years.",
+      "url": "https://www.cnbc.com/2026/04/30/inside-the-fed-powell-and-warsh-set-to-clash.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-01T11:12:15Z",
+      "id": "mn015",
+      "sector_tags": [
+        "Financials",
+        "Technology"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     }
   ]
 }
