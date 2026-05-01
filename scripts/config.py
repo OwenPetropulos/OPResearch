@@ -84,6 +84,8 @@ PRICE_TICKERS = [
     "FXY", "FXE", "UUP",
     # International / ADRs
     "BABA", "TSM", "ASML", "SAP", "NVS", "RYCEY",
+    # Added Manuelly
+    "RRR", "PS", 
 ]
 
 # ============================================================
