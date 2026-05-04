@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Imperial Oil Limited (IMO:CA) Q1 2026 Earnings Call Transcript",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 7,
+      "primary_driver": "Oil prices climb after disputed report of Iran strike on U.S. warship",
       "key_drivers": [
-        "Imperial Oil Limited (IMO:CA) Q1 2026 Earnings Call Transcript",
-        "S&P 500 closes at a new record to usher in May as oil prices cool and Apple rises: Live updates",
-        "Exxon Mobil CEO expects higher oil prices due to Iran war: ‘The market hasn’t seen the full impact’",
-        "Engine trouble ahead? How the Strait of Hormuz standoff threatens luxury auto giants"
+        "Oil prices climb after disputed report of Iran strike on U.S. warship",
+        "8-K - Hess Midstream LP (0001789832) (Filer)",
+        "Moderna's Post-COVID Collapse: Pipeline Risks & Cash Burn Explained",
+        "Dow futures drop 200 points as oil spikes on increased Iran tensions: Live updates"
       ],
       "key_tickers": [
         "XOM",
@@ -22,21 +22,20 @@
       "trending_tickers": [
         "CL=F",
         "SPY",
-        "AAPL",
-        "XOM"
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Social Security screwed up — and it cost widows and widowers over $50 million",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 11,
+      "primary_driver": "Oil prices climb after disputed report of Iran strike on U.S. warship",
       "key_drivers": [
-        "Social Security screwed up — and it cost widows and widowers over $50 million",
-        "8-K - authID Inc. (0001534154) (Filer)",
-        "8-K - Olema Pharmaceuticals, Inc. (0001750284) (Filer)",
-        "8-K - Scienture Holdings, Inc. (0001382574) (Filer)"
+        "Oil prices climb after disputed report of Iran strike on U.S. warship",
+        "Dow futures drop 200 points as oil spikes on increased Iran tensions: Live updates",
+        "‘We’re all worried the honey pot will run dry’: Does the U.S. government borrow from my Social Security to fund federal ",
+        "The markets are in the early stages of pricing in stagflation. Here’s what happens next."
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +45,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "COST",
-        "AMZN"
+        "CL=F",
+        "SPY",
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 13,
-      "primary_driver": "Open Text: Deep Value Software Showing Signs Of Life",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 16,
+      "primary_driver": "EBay soars as Ryan Cohen says GameStop could issue stock to pay for takeover of much bigger retailer",
       "key_drivers": [
-        "Open Text: Deep Value Software Showing Signs Of Life",
-        "Camden Property Trust (CPT) Q1 2026 Earnings Call Transcript",
-        "Spirit Airlines prepares to shut down after failing to reach lifeline bailout deal",
-        "Jim Cramer says the market powered through a tough earnings week but 'that doesn't mean we're out of the woods yet'"
+        "EBay soars as Ryan Cohen says GameStop could issue stock to pay for takeover of much bigger retailer",
+        "Oil prices climb after disputed report of Iran strike on U.S. warship",
+        "8-K - AGILENT TECHNOLOGIES, INC. (0001090872) (Filer)",
+        "Chart Of The Day: Yes, This Really Is An 'AI Economy'"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,20 +70,20 @@
         "AMD"
       ],
       "trending_tickers": [
-        "AMZN",
-        "SPY",
         "CL=F",
-        "AMD"
+        "LLY",
+        "JPM",
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "Israel approves plan to buy F-35 and F-15IA fighter jets from Lockheed, Boeing",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Israel approves plan to buy F-35 and F-15IA fighter jets from Lockheed, Boeing"
       ],
       "key_tickers": [
         "GE",
@@ -93,8 +93,7 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "LMT"
       ]
     },
     {
@@ -102,12 +101,12 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 6,
-      "primary_driver": "Spirit Airlines prepares to shut down after failing to reach lifeline bailout deal",
+      "primary_driver": "EBay soars as Ryan Cohen says GameStop could issue stock to pay for takeover of much bigger retailer",
       "key_drivers": [
-        "Spirit Airlines prepares to shut down after failing to reach lifeline bailout deal",
-        "Park Hotels & Resorts Inc. (PK) Q1 2026 Earnings Call Transcript",
-        "Park Hotels & Resorts Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "Thinking of raiding your 401(k) for a hardship withdrawal? Ask these questions first."
+        "EBay soars as Ryan Cohen says GameStop could issue stock to pay for takeover of much bigger retailer",
+        "Pebblebrook Hotel Trust: Opportunity At A Discount, Risk At A Premium",
+        "10-13% Yields To Supercharge Your Early Retirement",
+        "What One Bad Hotel Deal Taught Me About Lodging REITs"
       ],
       "key_tickers": [
         "NKE",
@@ -125,10 +124,12 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "8-K - Olema Pharmaceuticals, Inc. (0001750284) (Filer)",
+      "story_count": 3,
+      "primary_driver": "8-K - Mirum Pharmaceuticals, Inc. (0001759425) (Filer)",
       "key_drivers": [
-        "8-K - Olema Pharmaceuticals, Inc. (0001750284) (Filer)"
+        "8-K - Mirum Pharmaceuticals, Inc. (0001759425) (Filer)",
+        "'Bubble effect': Weight loss drug fueled growth is putting the pharma sector at risk, report finds",
+        "Rudy Giuliani, former New York mayor and Trump lawyer, hospitalized in critical condition"
       ],
       "key_tickers": [
         "LLY",
@@ -144,15 +145,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "Crédit Agricole S.A. (CRARY) Q1 2026 Earnings Call Transcript",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 10,
+      "primary_driver": "8-K - Jerash Holdings (US), Inc. (0001696558) (Filer)",
       "key_drivers": [
-        "Crédit Agricole S.A. (CRARY) Q1 2026 Earnings Call Transcript",
-        "Morguard Real Estate Investment Trust (MRT.UN:CA) Q1 2026 Earnings Call Transcript",
-        "ADT Inc. (ADT) Q1 2026 Earnings Call Transcript",
-        "TEC:CA: Blowout Q1 Earnings Print"
+        "8-K - Jerash Holdings (US), Inc. (0001696558) (Filer)",
+        "CNBC's Official WNBA Team Valuations 2026: The league has its first $1 billion team",
+        "8-K - OFF THE HOOK YS INC. (0002067767) (Filer)",
+        "8-K - LCI INDUSTRIES (0000763744) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -162,8 +163,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "JPM"
       ]
     }
   ]
