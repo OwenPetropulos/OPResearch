@@ -64,7 +64,7 @@ CBOE_RATE_TICKERS = {"^TNX", "^IRX", "^TYX", "^FVX"}
 
 PRICE_TICKERS = [
     # Tech
-    "NVDA", "MSFT", "GOOGL", "AMZN", "META", "AAPL", "AMD", "ORCL", "CRM", "NOW", "PLTR",
+    "NVDA", "MSFT", "GOOGL", "AMZN", "META", "AAPL", "AMD", "ORCL", "CRM", "NOW", "PLTR", "Coin", 
     # Financials
     "JPM", "GS", "BAC", "MS", "KRE", "ZION", "WAL", "BRK-B", "C", "WFC",
     # Healthcare
