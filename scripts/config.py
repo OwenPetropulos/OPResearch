@@ -157,14 +157,16 @@ SECTOR_KEYWORDS = {
         "credit card", "private equity", "investment bank", "hedge fund",
         "insurance", "fintech", "treasury yield", "yield curve", "bond market",
         "lending", "deposit", "fdic", "basel", "fomc", "powell", "warsh",
-        "fed chair", "monetary policy", "quantitative", "tightening", "easing",
+        "fed chair", "monetary policy", "quantitative", "tightening", "easing", "Capex",
+        "Depreciaiton", "Free Cash Flow", 
     ],
     "Technology": [
         "nvidia", "microsoft", "google", "amazon", "meta", "apple", "amd",
         "semiconductor", "chip", "ai", "artificial intelligence", "cloud",
         "azure", "aws", "software", "data center", "gpu", "machine learning",
         "openai", "anthropic", "llm", "cyber", "cybersecurity", "saas",
-        "tech sector", "venture capital", "startup",
+        "tech sector", "venture capital", "startup", "Karp", "Palantir", "Claude", "Anthropic", 
+        "OpenAI", 
     ],
     "Industrials": [
         "defense", "aerospace", "boeing", "lockheed", "raytheon", "northrop",
@@ -211,6 +213,7 @@ SECTOR_KEYWORDS = {
 # ============================================================
 TICKER_KEYWORDS = {
     "NVDA":    ["nvidia", "nvda"],
+    "PLTR":    ["Palantir", "pltr", "Karp", "Thiel",]
     "MSFT":    ["microsoft", "azure", "msft"],
     "GOOGL":   ["google", "alphabet", "googl"],
     "AMZN":    ["amazon", "aws", "amzn"],
@@ -306,7 +309,7 @@ MARKETAUX_SECTOR_FILTERS = {
 SECTOR_DEFAULT_TICKERS = {
     "Energy":      {"key": ["XOM", "CVX", "OXY", "LNG", "RIG"],      "trending": ["OXY", "RIG"]},
     "Financials":  {"key": ["JPM", "GS", "BAC", "MS", "KRE"],        "trending": ["JPM", "GS"]},
-    "Technology":  {"key": ["NVDA", "MSFT", "GOOGL", "AMZN", "AMD"], "trending": ["NVDA", "MSFT"]},
+    "Technology":  {"key": ["NVDA", "MSFT", "GOOGL", "AMZN", "AMD", "PLTR",], "trending": ["NVDA", "MSFT"]},
     "Industrials": {"key": ["GE", "RTX", "LMT", "NOC", "HON"],       "trending": ["LMT", "RTX"]},
     "Consumer":    {"key": ["NKE", "WMT", "COST", "TGT", "ONON"],    "trending": ["NKE", "WMT"]},
     "Healthcare":  {"key": ["LLY", "NVO", "AMGN", "PFE", "VRTX"],    "trending": ["LLY", "NVO"]},
