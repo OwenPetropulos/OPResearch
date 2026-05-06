@@ -64,7 +64,7 @@ CBOE_RATE_TICKERS = {"^TNX", "^IRX", "^TYX", "^FVX"}
 
 PRICE_TICKERS = [
     # Tech
-    "NVDA", "MSFT", "GOOGL", "AMZN", "META", "AAPL", "AMD", "ORCL", "CRM", "NOW", "PLTR", "Coin", 
+    "NVDA", "MSFT", "GOOGL", "AMZN", "META", "AAPL", "AMD", "ORCL", "CRM", "NOW", "PLTR", "COIN", 
     # Financials
     "JPM", "GS", "BAC", "MS", "KRE", "ZION", "WAL", "BRK-B", "C", "WFC",
     # Healthcare
@@ -165,7 +165,7 @@ SECTOR_KEYWORDS = {
         "semiconductor", "chip", "ai", "artificial intelligence", "cloud",
         "azure", "aws", "software", "data center", "gpu", "machine learning",
         "openai", "anthropic", "llm", "cyber", "cybersecurity", "saas",
-        "tech sector", "venture capital", "startup", "Karp", "Palantir", "Claude", "Anthropic", 
+        "tech sector", "venture capital", "startup", "Palantir", "Claude", "Anthropic", 
         "OpenAI", 
     ],
     "Industrials": [
@@ -213,7 +213,6 @@ SECTOR_KEYWORDS = {
 # ============================================================
 TICKER_KEYWORDS = {
     "NVDA":    ["nvidia", "nvda"],
-    "PLTR":    ["Palantir", "pltr", "Karp", "Thiel",]
     "MSFT":    ["microsoft", "azure", "msft"],
     "GOOGL":   ["google", "alphabet", "googl"],
     "AMZN":    ["amazon", "aws", "amzn"],
