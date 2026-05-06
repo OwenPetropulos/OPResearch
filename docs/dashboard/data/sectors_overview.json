@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 7,
-      "primary_driver": "Oil prices climb after disputed report of Iran strike on U.S. warship",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 6,
+      "primary_driver": "Dow surges 600 points, S&P 500 posts first close above 7,300 as traders hope for Iran deal: Live upd",
       "key_drivers": [
-        "Oil prices climb after disputed report of Iran strike on U.S. warship",
-        "8-K - Hess Midstream LP (0001789832) (Filer)",
-        "Moderna's Post-COVID Collapse: Pipeline Risks & Cash Burn Explained",
-        "Dow futures drop 200 points as oil spikes on increased Iran tensions: Live updates"
+        "Dow surges 600 points, S&P 500 posts first close above 7,300 as traders hope for Iran deal: Live updates",
+        "Iran war threatens jet fuel shortage that could disrupt summer travel in Asia and Europe",
+        "Trump says Iran will be bombed at a 'much higher level' if it doesn't agree to peace deal",
+        "Oil prices fall more than 7% as U.S. and Iran appear close to deal to end war"
       ],
       "key_tickers": [
         "XOM",
@@ -27,15 +27,15 @@
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 11,
-      "primary_driver": "Oil prices climb after disputed report of Iran strike on U.S. warship",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "8-K - SAFETY INSURANCE GROUP INC (0001172052) (Filer)",
       "key_drivers": [
-        "Oil prices climb after disputed report of Iran strike on U.S. warship",
-        "Dow futures drop 200 points as oil spikes on increased Iran tensions: Live updates",
-        "‘We’re all worried the honey pot will run dry’: Does the U.S. government borrow from my Social Security to fund federal ",
-        "The markets are in the early stages of pricing in stagflation. Here’s what happens next."
+        "8-K - SAFETY INSURANCE GROUP INC (0001172052) (Filer)",
+        "8-K - Core Scientific, Inc./tx (0001839341) (Filer)",
+        "Sixth Street Specialty Lending, Inc. (TSLX) Q1 2026 Earnings Call Transcript",
+        "Marco Rubio heads to the Vatican as 2028 presidential buzz ramps up"
       ],
       "key_tickers": [
         "JPM",
@@ -45,45 +45,46 @@
         "KRE"
       ],
       "trending_tickers": [
-        "CL=F",
-        "SPY",
-        "JPM"
+        "COST",
+        "NVO"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 16,
-      "primary_driver": "EBay soars as Ryan Cohen says GameStop could issue stock to pay for takeover of much bigger retailer",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 10,
+      "primary_driver": "8-K - Mativ Holdings, Inc. (0001000623) (Filer)",
       "key_drivers": [
-        "EBay soars as Ryan Cohen says GameStop could issue stock to pay for takeover of much bigger retailer",
-        "Oil prices climb after disputed report of Iran strike on U.S. warship",
-        "8-K - AGILENT TECHNOLOGIES, INC. (0001090872) (Filer)",
-        "Chart Of The Day: Yes, This Really Is An 'AI Economy'"
+        "8-K - Mativ Holdings, Inc. (0001000623) (Filer)",
+        "8 multibillion-dollar companies later, this serial entrepreneur shares his proven blueprint for massive returns",
+        "AMD's Su explains what's behind massive forecast change as stock roars 19% on earnings",
+        "Nvidia is falling behind as semiconductors surge. Here's what analysts say is going on"
       ],
       "key_tickers": [
         "NVDA",
         "MSFT",
         "GOOGL",
         "AMZN",
-        "AMD"
+        "AMD",
+        "PLTR"
       ],
       "trending_tickers": [
-        "CL=F",
-        "LLY",
-        "JPM",
-        "SPY"
+        "NVDA",
+        "COST",
+        "AMD",
+        "LLY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Israel approves plan to buy F-35 and F-15IA fighter jets from Lockheed, Boeing",
+      "story_count": 2,
+      "primary_driver": "Proficient Auto Logistics, Inc. (PAL) Shareholder/Analyst Call Prepared Remarks Transcript",
       "key_drivers": [
-        "Israel approves plan to buy F-35 and F-15IA fighter jets from Lockheed, Boeing"
+        "Proficient Auto Logistics, Inc. (PAL) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "Elon Musk's Terafab chip factory in Texas could cost up to $119 billion, filing shows"
       ],
       "key_tickers": [
         "GE",
@@ -93,20 +94,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT"
+        "COST"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "EBay soars as Ryan Cohen says GameStop could issue stock to pay for takeover of much bigger retailer",
+      "sentiment": "Negative",
+      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 7,
+      "primary_driver": "Uber and Disney are seeing the same remarkable dynamic in this economy. Both stocks are surging",
       "key_drivers": [
-        "EBay soars as Ryan Cohen says GameStop could issue stock to pay for takeover of much bigger retailer",
-        "Pebblebrook Hotel Trust: Opportunity At A Discount, Risk At A Premium",
-        "10-13% Yields To Supercharge Your Early Retirement",
-        "What One Bad Hotel Deal Taught Me About Lodging REITs"
+        "Uber and Disney are seeing the same remarkable dynamic in this economy. Both stocks are surging",
+        "Iran war threatens jet fuel shortage that could disrupt summer travel in Asia and Europe",
+        "This airline is the best bet to fill Spirit’s void",
+        "Housing Market's Crucial 'Spring Selling Season' Is In Tatters"
       ],
       "key_tickers": [
         "NKE",
@@ -116,8 +117,9 @@
         "ONON"
       ],
       "trending_tickers": [
+        "BAC",
         "NKE",
-        "WMT"
+        "RIG"
       ]
     },
     {
@@ -128,8 +130,8 @@
       "primary_driver": "8-K - Mirum Pharmaceuticals, Inc. (0001759425) (Filer)",
       "key_drivers": [
         "8-K - Mirum Pharmaceuticals, Inc. (0001759425) (Filer)",
-        "'Bubble effect': Weight loss drug fueled growth is putting the pharma sector at risk, report finds",
-        "Rudy Giuliani, former New York mayor and Trump lawyer, hospitalized in critical condition"
+        "BioNTech Q3 Earnings Review: Getting Into The Weeds With Bewildering Oncology Plans",
+        "Novo Nordisk CEO says the drugmaker is more active than ever in seeking out deals"
       ],
       "key_tickers": [
         "LLY",
@@ -139,7 +141,6 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
         "NVO"
       ]
     },
@@ -147,13 +148,13 @@
       "sector": "Macro",
       "sentiment": "Negative",
       "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 10,
-      "primary_driver": "8-K - Jerash Holdings (US), Inc. (0001696558) (Filer)",
+      "story_count": 11,
+      "primary_driver": "Market Signals: Why Global, Why Active, Why Now?",
       "key_drivers": [
-        "8-K - Jerash Holdings (US), Inc. (0001696558) (Filer)",
-        "CNBC's Official WNBA Team Valuations 2026: The league has its first $1 billion team",
-        "8-K - OFF THE HOOK YS INC. (0002067767) (Filer)",
-        "8-K - LCI INDUSTRIES (0000763744) (Filer)"
+        "Market Signals: Why Global, Why Active, Why Now?",
+        "8-K - MATRIX SERVICE CO (0000866273) (Filer)",
+        "8-K - Hamilton Beach Brands Holding Co (0001709164) (Filer)",
+        "8-K - RxSight, Inc. (0001111485) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -163,7 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "JPM"
+        "COST"
       ]
     }
   ]
