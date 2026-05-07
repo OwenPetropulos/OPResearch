@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 5,
-      "primary_driver": "Trump says Iran will be bombed at a 'much higher level' if it doesn't agree to peace deal",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 7,
+      "primary_driver": "Oil prices fall below $100 as U.S.-Iran tensions keep traders focused on Strait of Hormuz risks",
       "key_drivers": [
-        "Trump says Iran will be bombed at a 'much higher level' if it doesn't agree to peace deal",
-        "Iran war threatens jet fuel shortage that could disrupt summer travel in Asia and Europe",
-        "Oil prices fall more than 7% as U.S. and Iran appear close to deal to end war",
-        "Even if an Iran deal calms energy markets, one oil stock can still stand out"
+        "Oil prices fall below $100 as U.S.-Iran tensions keep traders focused on Strait of Hormuz risks",
+        "Traders point to suspicious activity in the oil market on Wednesday",
+        "Shell tops profit estimates as Iran war boosts oil price, cuts share buybacks",
+        "This oil tanker stock has outperformed. Bank of America sees more gains, even if U.S.-Iran war ends"
       ],
       "key_tickers": [
         "XOM",
@@ -21,21 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "LLY",
-        "SPY"
+        "BAC",
+        "NKE",
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Elanco Animal Health Incorporated (ELAN) Q1 2026 Earnings Call Transcript",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "story_count": 9,
+      "primary_driver": "Kevin Warsh’s undisclosed wealth leaves a $100 million mystery atop the Federal Reserve",
       "key_drivers": [
-        "Elanco Animal Health Incorporated (ELAN) Q1 2026 Earnings Call Transcript",
-        "Elanco Animal Health Incorporated 2026 Q1 - Results - Earnings Call Presentation",
-        "8-K - CEA Industries Inc. (0001482541) (Filer)",
-        "8-K - Legato Merger Corp. III (0002002038) (Filer)"
+        "Kevin Warsh’s undisclosed wealth leaves a $100 million mystery atop the Federal Reserve",
+        "Webster Financial: Santander Deal Leaves Limited Upside While Credit Risks Build",
+        "My husband has a $225,000 pension. We don’t trust his ‘too big to fail’ employer. Where do we invest it?",
+        "This oil tanker stock has outperformed. Bank of America sees more gains, even if U.S.-Iran war ends"
       ],
       "key_tickers": [
         "JPM",
@@ -45,21 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN",
-        "MS"
+        "LLY",
+        "BAC",
+        "NKE"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "Anthropic CEO says 80-fold growth in first quarter explains 'difficulties with compute'",
+      "story_count": 15,
+      "primary_driver": "Family office deal-making rebounds in April with healthcare bets",
       "key_drivers": [
-        "Anthropic CEO says 80-fold growth in first quarter explains 'difficulties with compute'",
-        "Will Elon Musk win his lawsuit against Sam Altman's OpenAI? Here's what prediction markets think",
-        "8-K - CEA Industries Inc. (0001482541) (Filer)",
-        "8-K - Legato Merger Corp. III (0002002038) (Filer)"
+        "Family office deal-making rebounds in April with healthcare bets",
+        "AMD Q1: The Rally Has Only Started",
+        "8-K - VIASAT INC (0000797721) (Filer)",
+        "8-K - ONCOR ELECTRIC DELIVERY CO LLC (0001193311) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,20 +72,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
-        "META",
-        "MS",
-        "RIG"
+        "LLY",
+        "CL=F",
+        "BAC",
+        "AMD"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "Taylor Devices: Defense Exposure Supports The Long-Term Story",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Taylor Devices: Defense Exposure Supports The Long-Term Story"
       ],
       "key_tickers": [
         "GE",
@@ -101,13 +103,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Restaurants really don’t want to sell fake meat — and Beyond Meat is suffering",
+      "story_count": 5,
+      "primary_driver": "Whirlpool says Iran war causing 'recession-level industry decline.' The shares are down 20%",
       "key_drivers": [
-        "Restaurants really don’t want to sell fake meat — and Beyond Meat is suffering",
+        "Whirlpool says Iran war causing 'recession-level industry decline.' The shares are down 20%",
+        "Postal Realty Trust: 'Boring' Stability That Belongs In A Retirement Portfolio",
         "DoorDash pops 12% on strong earnings, upbeat order growth guidance",
-        "Iran war threatens jet fuel shortage that could disrupt summer travel in Asia and Europe",
-        "Uber and Disney are seeing the same remarkable dynamic in this economy. Both stocks are surging"
+        "Iran war threatens jet fuel shortage that could disrupt summer travel in Asia and Europe"
       ],
       "key_tickers": [
         "NKE",
@@ -117,20 +119,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY",
-        "BAC",
-        "RIG"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "8-K - ONE Group Hospitality, Inc. (0001399520) (Filer)",
+      "story_count": 1,
+      "primary_driver": "8-K - Aurinia Pharmaceuticals Inc. (0001600620) (Filer)",
       "key_drivers": [
-        "8-K - ONE Group Hospitality, Inc. (0001399520) (Filer)",
-        "Novo Nordisk CEO says the drugmaker is more active than ever in seeking out deals"
+        "8-K - Aurinia Pharmaceuticals Inc. (0001600620) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -140,20 +140,21 @@
         "VRTX"
       ],
       "trending_tickers": [
+        "LLY",
         "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "AT&T Crossed A Historical Point: Buybacks Surpassed Dividends For The First Time",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 11,
+      "primary_driver": "Stocks making the biggest moves premarket: Whirlpool, Shake Shack, McDonald's, Arm Holdings & more",
       "key_drivers": [
-        "AT&T Crossed A Historical Point: Buybacks Surpassed Dividends For The First Time",
-        "Mistras Group, Inc. (MG) Q1 2026 Earnings Call Transcript",
-        "EyePoint, Inc. (EYPT) Q1 2026 Earnings Call Transcript",
-        "Acerinox, S.A. (ANIOY) Shareholder/Analyst Call Transcript"
+        "Stocks making the biggest moves premarket: Whirlpool, Shake Shack, McDonald's, Arm Holdings & more",
+        "8-K - Syra Health Corp (0001922335) (Filer)",
+        "8-K - ACORN ENERGY, INC. (0000880984) (Filer)",
+        "8-K - ORAGENICS INC (0001174940) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -163,7 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC"
+        "COST"
       ]
     }
   ]
