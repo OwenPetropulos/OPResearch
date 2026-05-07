@@ -2,15 +2,13 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Positive",
-      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 5,
-      "primary_driver": "S&P 500 pulls back from record as oil prices gain momentum: Live updates",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 2,
+      "primary_driver": "Shell CEO says oil market is short nearly 1 billion barrels due to Iran war, and the hole deepens ev",
       "key_drivers": [
-        "S&P 500 pulls back from record as oil prices gain momentum: Live updates",
-        "Oil prices little changed as U.S. waits for Iran response to deal proposal",
-        "5 reasons stocks are rallying in the face of an oil-price shock",
-        "Barclays says it's the best buying opportunity in 20 years for these oil stocks"
+        "Shell CEO says oil market is short nearly 1 billion barrels due to Iran war, and the hole deepens every day",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +18,22 @@
         "RIG"
       ],
       "trending_tickers": [
-        "SPY",
-        "CL=F",
         "LLY",
-        "BAC"
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "Deposit Growth Trails Lending At Japanese Megabanks",
+      "primary_driver": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
       "key_drivers": [
-        "Deposit Growth Trails Lending At Japanese Megabanks",
-        "8-K - Federal Home Loan Bank of Cincinnati (0001326771) (Filer)",
-        "Best credit cards for recurring bills and utilities",
-        "8-K - Federal Home Loan Bank of Boston (0001331463) (Filer)"
+        "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
+        "Watch The 5% Level On 30Y Yields -- The Breakout To Trigger Much Higher Interest Rates",
+        "Best credit cards for recurring bills and utilities in 2026",
+        "Here's how the stock market may trade the April jobs report, according to JPMorgan"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +43,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC"
+        "RIG",
+        "JPM",
+        "LLY",
+        "MS"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 15,
-      "primary_driver": "Deposit Growth Trails Lending At Japanese Megabanks",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 14,
+      "primary_driver": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
       "key_drivers": [
-        "Deposit Growth Trails Lending At Japanese Megabanks",
-        "Microsoft: Azure Doing The Heavylifting",
-        "S&P 500 pulls back from record as oil prices gain momentum: Live updates",
-        "Beef is very expensive right now — and Shake Shack just lost money for the first time in years"
+        "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
+        "U.S. and Iran trade fire in Strait of Hormuz; each claims other shot first",
+        "Datadog stock soars 31% on blockbuster earnings as AI winners emerge in software",
+        "Micron: I Finally Get It - The Market Still Underestimates The AI Memory Supercycle"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,20 +70,23 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "CL=F",
+        "LLY",
+        "MS",
         "BAC",
-        "SPY",
-        "COST"
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Neutral",
-      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Boeing CEO Kelly Ortberg set to join Trump on China visit next week",
+      "sentiment": "Negative",
+      "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 5,
+      "primary_driver": "Datadog stock soars 31% on blockbuster earnings as AI winners emerge in software",
       "key_drivers": [
-        "Boeing CEO Kelly Ortberg set to join Trump on China visit next week"
+        "Datadog stock soars 31% on blockbuster earnings as AI winners emerge in software",
+        "Expeditors International of Washington, Inc. (EXPD) Discusses Sustainability Execution in Logistics and Supply Chain - S",
+        "HA Sustainable Infrastructure Capital, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "8-K - STERLING INFRASTRUCTURE, INC. (0000874238) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -93,19 +96,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "LLY"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Negative",
       "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 3,
-      "primary_driver": "Planet Fitness stock plunges 30% after company slashes guidance, cancels planned price hikes",
+      "story_count": 6,
+      "primary_driver": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
       "key_drivers": [
-        "Planet Fitness stock plunges 30% after company slashes guidance, cancels planned price hikes",
-        "McDonald's CEO says consumer spending could be 'getting a little bit worse'",
-        "1st Look at Local Housing Markets in December"
+        "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
+        "Sunstone Hotel Investors: Watching From The Sidelines",
+        "Whirlpool says Iran war causing 'recession-level industry decline.' The shares are down 12%",
+        "Planet Fitness stock plunges 30% after company slashes guidance, cancels planned price hikes"
       ],
       "key_tickers": [
         "NKE",
@@ -124,9 +129,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "8-K - Curanex Pharmaceuticals Inc (0002025942) (Filer)",
+      "primary_driver": "Healthy Returns: First Ozempic generics in Canada will be a test case for Novo Nordisk",
       "key_drivers": [
-        "8-K - Curanex Pharmaceuticals Inc (0002025942) (Filer)"
+        "Healthy Returns: First Ozempic generics in Canada will be a test case for Novo Nordisk"
       ],
       "key_tickers": [
         "LLY",
@@ -136,21 +141,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
         "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "ATN International, Inc. (ATNI) Q1 2026 Earnings Call Transcript",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 11,
+      "primary_driver": "ZIM Integrated: The Sakal $4.5B Bid Just Made A Done Deal Better",
       "key_drivers": [
-        "ATN International, Inc. (ATNI) Q1 2026 Earnings Call Transcript",
-        "DIRTT Environmental Solutions Ltd. (DRT:CA) Q1 2026 Earnings Call Transcript",
-        "Blue Owl Capital Corporation (OBDC) Q1 2026 Earnings Call Transcript",
-        "International Seaways, Inc. (INSW) Q1 2026 Earnings Call Transcript"
+        "ZIM Integrated: The Sakal $4.5B Bid Just Made A Done Deal Better",
+        "Granite Real Estate Investment Trust (GRT.UN:CA) Q1 2026 Earnings Call Transcript",
+        "Formula One Group (FWONK) Q1 2026 Earnings Call Transcript",
+        "Coinbase posts steep first-quarter loss after slide in crypto prices, shares fall 4%"
       ],
       "key_tickers": [
         "TLT",
@@ -160,9 +164,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
-        "RIG",
-        "COST"
+        "JPM",
+        "LLY"
       ]
     }
   ]
