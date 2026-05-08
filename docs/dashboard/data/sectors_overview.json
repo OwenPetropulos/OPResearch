@@ -4,11 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Shell CEO says oil market is short nearly 1 billion barrels due to Iran war, and the hole deepens ev",
+      "story_count": 5,
+      "primary_driver": "Murphy Oil: Aggressive Choices Vindicated",
       "key_drivers": [
-        "Shell CEO says oil market is short nearly 1 billion barrels due to Iran war, and the hole deepens every day",
-        "Sunday Night Futures"
+        "Murphy Oil: Aggressive Choices Vindicated",
+        "Oil prices fall below $100 as Trump insists ceasefire still intact after U.S.-Iran exchange fire",
+        "‘Not a Chance Hormuz Opens’: How Wall Street’s new NACHO trade bets on a prolonged oil shock",
+        "Oil futures rise after U.S., Iran trade fire; stock futures quiet after court rejects Trump’s tariffs"
       ],
       "key_tickers": [
         "XOM",
@@ -18,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
+        "CL=F",
+        "BAC",
         "LLY",
-        "SPY",
-        "CL=F"
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 8,
-      "primary_driver": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "8-K - HNO International, Inc. (0001342916) (Filer)",
       "key_drivers": [
+        "8-K - HNO International, Inc. (0001342916) (Filer)",
+        "Spending in the U.S. just slumped, and Bank of America isn’t sure why",
         "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
-        "Watch The 5% Level On 30Y Yields -- The Breakout To Trigger Much Higher Interest Rates",
-        "Best credit cards for recurring bills and utilities in 2026",
-        "Here's how the stock market may trade the April jobs report, according to JPMorgan"
+        "‘Americans love their rose-colored glasses’: I was a slave to credit-card debt, then I got laid off and turned my life a"
       ],
       "key_tickers": [
         "JPM",
@@ -43,23 +46,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "RIG",
-        "JPM",
-        "LLY",
-        "MS"
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 14,
-      "primary_driver": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 12,
+      "primary_driver": "A cloud computing stock is soaring more than 25%. Here’s what’s driving the rally",
       "key_drivers": [
-        "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
-        "U.S. and Iran trade fire in Strait of Hormuz; each claims other shot first",
-        "Datadog stock soars 31% on blockbuster earnings as AI winners emerge in software",
-        "Micron: I Finally Get It - The Market Still Underestimates The AI Memory Supercycle"
+        "A cloud computing stock is soaring more than 25%. Here’s what’s driving the rally",
+        "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
+        "Stocks making the biggest moves premarket: Cloudflare, Akamai Technologies, JFrog, Trade Desk & more",
+        "U.S. Jobs On Tap After Court Ruled Against Section 122 Tariffs And Conflict In The Middle East"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,22 +71,21 @@
       ],
       "trending_tickers": [
         "LLY",
-        "MS",
         "BAC",
-        "SPY"
+        "CL=F",
+        "MSFT"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Negative",
-      "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 5,
-      "primary_driver": "Datadog stock soars 31% on blockbuster earnings as AI winners emerge in software",
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 3,
+      "primary_driver": "A cloud computing stock is soaring more than 25%. Here’s what’s driving the rally",
       "key_drivers": [
-        "Datadog stock soars 31% on blockbuster earnings as AI winners emerge in software",
-        "Expeditors International of Washington, Inc. (EXPD) Discusses Sustainability Execution in Logistics and Supply Chain - S",
-        "HA Sustainable Infrastructure Capital, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "8-K - STERLING INFRASTRUCTURE, INC. (0000874238) (Filer)"
+        "A cloud computing stock is soaring more than 25%. Here’s what’s driving the rally",
+        "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
+        "8-K - ARRAY DIGITAL INFRASTRUCTURE, INC. (0000821130) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -96,8 +95,8 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "LLY",
+        "BAC"
       ]
     },
     {
@@ -105,12 +104,12 @@
       "sentiment": "Negative",
       "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 6,
-      "primary_driver": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
+      "primary_driver": "This new target for the S&P 500 is very nearly Wall Street’s highest. Here are the trades to make.",
       "key_drivers": [
-        "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
-        "Sunstone Hotel Investors: Watching From The Sidelines",
-        "Whirlpool says Iran war causing 'recession-level industry decline.' The shares are down 12%",
-        "Planet Fitness stock plunges 30% after company slashes guidance, cancels planned price hikes"
+        "This new target for the S&P 500 is very nearly Wall Street’s highest. Here are the trades to make.",
+        "Spending in the U.S. just slumped, and Bank of America isn’t sure why",
+        "Sony targets double-digit profit growth despite slowdown in PlayStation 5 sales amid memory price crunch",
+        "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast"
       ],
       "key_tickers": [
         "NKE",
@@ -120,8 +119,9 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "BAC",
+        "TGT",
+        "SPY"
       ]
     },
     {
@@ -129,9 +129,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Healthy Returns: First Ozempic generics in Canada will be a test case for Novo Nordisk",
+      "primary_driver": "8-K - KIORA PHARMACEUTICALS INC (0001372514) (Filer)",
       "key_drivers": [
-        "Healthy Returns: First Ozempic generics in Canada will be a test case for Novo Nordisk"
+        "8-K - KIORA PHARMACEUTICALS INC (0001372514) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -141,20 +141,21 @@
         "VRTX"
       ],
       "trending_tickers": [
+        "LLY",
         "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
       "story_count": 11,
-      "primary_driver": "ZIM Integrated: The Sakal $4.5B Bid Just Made A Done Deal Better",
+      "primary_driver": "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
       "key_drivers": [
-        "ZIM Integrated: The Sakal $4.5B Bid Just Made A Done Deal Better",
-        "Granite Real Estate Investment Trust (GRT.UN:CA) Q1 2026 Earnings Call Transcript",
-        "Formula One Group (FWONK) Q1 2026 Earnings Call Transcript",
-        "Coinbase posts steep first-quarter loss after slide in crypto prices, shares fall 4%"
+        "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
+        "8-K - PPL Corp (0000922224) (Filer)",
+        "SK Telecom: Operating Profit Beat Expectations With Catalysts Intact",
+        "8-K - Digi Power X Inc. (0001854368) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -164,8 +165,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "JPM",
-        "LLY"
+        "BAC"
       ]
     }
   ]
