@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Murphy Oil: Aggressive Choices Vindicated",
+      "story_count": 4,
+      "primary_driver": "Plains All American Pipeline, L.P. Common Units (PAA) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "Murphy Oil: Aggressive Choices Vindicated",
-        "Oil prices fall below $100 as Trump insists ceasefire still intact after U.S.-Iran exchange fire",
+        "Plains All American Pipeline, L.P. Common Units (PAA) Q1 2026 Earnings Call Transcript",
+        "U.S. says it struck two Iran-flagged oil tankers trying to skirt blockade",
         "‘Not a Chance Hormuz Opens’: How Wall Street’s new NACHO trade bets on a prolonged oil shock",
-        "Oil futures rise after U.S., Iran trade fire; stock futures quiet after court rejects Trump’s tariffs"
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -21,7 +21,7 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "BAC",
+        "NKE",
         "LLY",
         "SPY"
       ]
@@ -30,13 +30,13 @@
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "8-K - HNO International, Inc. (0001342916) (Filer)",
+      "story_count": 8,
+      "primary_driver": "Micron is now worth more than JPMorgan as the stock sees its best week in two decades",
       "key_drivers": [
-        "8-K - HNO International, Inc. (0001342916) (Filer)",
-        "Spending in the U.S. just slumped, and Bank of America isn’t sure why",
-        "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast",
-        "‘Americans love their rose-colored glasses’: I was a slave to credit-card debt, then I got laid off and turned my life a"
+        "Micron is now worth more than JPMorgan as the stock sees its best week in two decades",
+        "Trump is expected to fast-track new tariffs after a federal trade court struck his latest plan down",
+        "Cresco Labs Inc. (CRLBF) Q1 2026 Earnings Call Transcript",
+        "Marco Rubio says U.S. expects Iran response on peace deal 'today'"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC"
+        "JPM",
+        "TGT"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "A cloud computing stock is soaring more than 25%. Here’s what’s driving the rally",
+      "story_count": 13,
+      "primary_driver": "IREN's Nvidia Deal Changes Everything",
       "key_drivers": [
-        "A cloud computing stock is soaring more than 25%. Here’s what’s driving the rally",
-        "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
-        "Stocks making the biggest moves premarket: Cloudflare, Akamai Technologies, JFrog, Trade Desk & more",
-        "U.S. Jobs On Tap After Court Ruled Against Section 122 Tariffs And Conflict In The Middle East"
+        "IREN's Nvidia Deal Changes Everything",
+        "Back-To-Back U.S. Jobs Gains, But Hiring Caution Lingers",
+        "How to help your child transition to financial adulthood",
+        "Plains All American Pipeline, L.P. Common Units (PAA) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,22 +71,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
         "BAC",
-        "CL=F",
-        "MSFT"
+        "NVDA",
+        "AMZN",
+        "AAPL"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "A cloud computing stock is soaring more than 25%. Here’s what’s driving the rally",
+      "story_count": 1,
+      "primary_driver": "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
       "key_drivers": [
-        "A cloud computing stock is soaring more than 25%. Here’s what’s driving the rally",
-        "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
-        "8-K - ARRAY DIGITAL INFRASTRUCTURE, INC. (0000821130) (Filer)"
+        "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths"
       ],
       "key_tickers": [
         "GE",
@@ -95,21 +94,19 @@
         "HON"
       ],
       "trending_tickers": [
-        "LLY",
         "BAC"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Negative",
-      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 6,
-      "primary_driver": "This new target for the S&P 500 is very nearly Wall Street’s highest. Here are the trades to make.",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 3,
+      "primary_driver": "This company made headlines for its aggressive AI-driven layoffs. Citi says it's paying off",
       "key_drivers": [
-        "This new target for the S&P 500 is very nearly Wall Street’s highest. Here are the trades to make.",
-        "Spending in the U.S. just slumped, and Bank of America isn’t sure why",
-        "Sony targets double-digit profit growth despite slowdown in PlayStation 5 sales amid memory price crunch",
-        "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast"
+        "This company made headlines for its aggressive AI-driven layoffs. Citi says it's paying off",
+        "Most women are confident savers, survey finds — but where they stash their cash could be a problem",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -119,19 +116,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "BAC",
-        "TGT",
-        "SPY"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "8-K - KIORA PHARMACEUTICALS INC (0001372514) (Filer)",
+      "story_count": 3,
+      "primary_driver": "ANI Pharmaceuticals, Inc. (ANIP) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "8-K - KIORA PHARMACEUTICALS INC (0001372514) (Filer)"
+        "ANI Pharmaceuticals, Inc. (ANIP) Q1 2026 Earnings Call Transcript",
+        "ANI Pharmaceuticals, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "The Oncology Institute, Inc. (TOI) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "LLY",
@@ -147,15 +144,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 12,
+      "primary_driver": "RNP: REIT And Preferred Exposure Providing Monthly Pay",
       "key_drivers": [
-        "Iran focus at Trump-Xi summit may delay progress on tariffs, rare earths",
-        "8-K - PPL Corp (0000922224) (Filer)",
-        "SK Telecom: Operating Profit Beat Expectations With Catalysts Intact",
-        "8-K - Digi Power X Inc. (0001854368) (Filer)"
+        "RNP: REIT And Preferred Exposure Providing Monthly Pay",
+        "Virginia Supreme Court strikes down redistricting push in blow to Democrats",
+        "NTT Inc. ADR (NTTYY) Q3 2025 Press Conference Call Transcript",
+        "Toast, Inc. (TOST) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
