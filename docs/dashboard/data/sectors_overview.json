@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Koil Energy Solutions, Inc. (KLNG) Analyst/Investor Day Transcript",
+      "story_count": 7,
+      "primary_driver": "Jim Cramer's top 10 things to watch in the stock market Monday",
       "key_drivers": [
-        "Koil Energy Solutions, Inc. (KLNG) Analyst/Investor Day Transcript",
-        "APA Corporation: Cheap Oil Stock With Suriname Optionality",
-        "U.S. says it struck two Iran-flagged oil tankers trying to skirt blockade",
-        "‘Not a Chance Hormuz Opens’: How Wall Street’s new NACHO trade bets on a prolonged oil shock"
+        "Jim Cramer's top 10 things to watch in the stock market Monday",
+        "Oil market won’t return to normal this year if Iran conflict isn’t solved within weeks, Aramco CEO says",
+        "Ed Yardeni sees S&P 500 rising to more than 8,000. Here’s why",
+        "A ‘race against time.’ Hormuz closure could push Brent to $150 a barrel by summer, warns Morgan Stanley."
       ],
       "key_tickers": [
         "XOM",
@@ -20,9 +20,9 @@
         "RIG"
       ],
       "trending_tickers": [
+        "SPY",
         "CL=F",
-        "LNG",
-        "NKE",
+        "MS",
         "LLY"
       ]
     },
@@ -30,13 +30,13 @@
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "The Federal Reserve is quickly running out of reasons to cut interest rates",
+      "story_count": 9,
+      "primary_driver": "Investors are now telling companies to invest in growth, not their own stocks, Goldman Sachs finds",
       "key_drivers": [
-        "The Federal Reserve is quickly running out of reasons to cut interest rates",
-        "VGSH: Berkshire's Cash Position Looks Increasingly Rational",
-        "Amazon Prime Day 2026 is in June. Get a $150 Amazon gift card and extra rewards with the right credit card",
-        "Federal Reserve Board announces approval of related applications by Columbia Bank MHC, and Columbia Financial, Inc."
+        "Investors are now telling companies to invest in growth, not their own stocks, Goldman Sachs finds",
+        "Kevin Warsh will be the richest Fed chair ever. Just how rich — he isn’t saying.",
+        "8-K - UMH PROPERTIES, INC. (0000752642) (Filer)",
+        "A ‘race against time.’ Hormuz closure could push Brent to $150 a barrel by summer, warns Morgan Stanley."
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "RIG",
-        "COST",
-        "AMZN",
-        "LLY"
+        "GS",
+        "MS",
+        "NVDA",
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 13,
-      "primary_driver": "Intel shares soar on Apple chip deal report. Here's why it signals a total pivot for chipmaking",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 17,
+      "primary_driver": "Micron shares are rising again despite weak overall market. Why memory chip rally seems unstoppable",
       "key_drivers": [
-        "Intel shares soar on Apple chip deal report. Here's why it signals a total pivot for chipmaking",
-        "Gold has climbed back above a key trend line. Are more gains on the way?",
-        "Wheaton Precious Metals Corp. (WPM:CA) Q1 2026 Earnings Call Transcript",
-        "8-K - AppTech Payments Corp. (0001070050) (Filer)"
+        "Micron shares are rising again despite weak overall market. Why memory chip rally seems unstoppable",
+        "8-K - Kezar Life Sciences, Inc. (0001645666) (Filer)",
+        "Circle raises $222 million from BlackRock, Apollo and others in Arc token presale valued at $3 billion",
+        "Oil market won’t return to normal this year if Iran conflict isn’t solved within weeks, Aramco CEO says"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,20 +73,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "META",
-        "LLY",
         "RIG",
+        "LLY",
+        "AMZN",
         "AAPL"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Neutral",
-      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Intel shares soar on Apple chip deal report. Here's why it signals a total pivot for chipmaking",
+      "sentiment": "Positive",
+      "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
+      "story_count": 2,
+      "primary_driver": "Keel Infrastructure Corp. 2026 Q1 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "Intel shares soar on Apple chip deal report. Here's why it signals a total pivot for chipmaking"
+        "Keel Infrastructure Corp. 2026 Q1 - Results - Earnings Call Presentation",
+        "UK PM Starmer battles for political survival amid leadership challenge as gilt yields rise"
       ],
       "key_tickers": [
         "GE",
@@ -96,19 +97,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "AAPL"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "RSPD Vs. RSPS: Expecting Staples To Outperform Discretionary",
+      "sentiment": "Negative",
+      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 7,
+      "primary_driver": "Micron shares are rising again despite weak overall market. Why memory chip rally seems unstoppable",
       "key_drivers": [
-        "RSPD Vs. RSPS: Expecting Staples To Outperform Discretionary",
-        "How nearly half of women are cheating themselves out of free money",
-        "1st Look at Local Housing Markets in December"
+        "Micron shares are rising again despite weak overall market. Why memory chip rally seems unstoppable",
+        "There’s a new top target for the S&P 500 as the ‘melt-up’ intensifies",
+        "How TIPS Can Change Your Retirement Math For The Better",
+        "Congress and retailers want to rebuild national parks. Tolls on federal roads might pay for it"
       ],
       "key_tickers": [
         "NKE",
@@ -118,19 +121,22 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "LLY",
+        "TGT",
+        "SPY",
+        "TIP"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Artiva Biotherapeutics: 'Buy' On AlloNK POC And FDA Phase 3 Alignment For Refractory RA",
+      "story_count": 3,
+      "primary_driver": "8-K - Aurinia Pharmaceuticals Inc. (0001600620) (Filer)",
       "key_drivers": [
-        "Artiva Biotherapeutics: 'Buy' On AlloNK POC And FDA Phase 3 Alignment For Refractory RA",
-        "No do-overs: How one extra dollar on your Roth conversion triggers a tax bill you won’t see coming"
+        "8-K - Aurinia Pharmaceuticals Inc. (0001600620) (Filer)",
+        "No do-overs: How one extra dollar on your Roth conversion triggers a tax bill you won’t see coming",
+        "Hantavirus cases spark surge in pharma and biotech stocks — here’s why"
       ],
       "key_tickers": [
         "LLY",
@@ -145,15 +151,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
       "story_count": 11,
-      "primary_driver": "Hercules Capital: My Best BDC Income Pick For 2026",
+      "primary_driver": "Peak Greggs? The Data And A Trip To London Suggest The Growth Story Is Just Starting",
       "key_drivers": [
-        "Hercules Capital: My Best BDC Income Pick For 2026",
-        "Assured Guaranty Ltd. (AGO) Q1 2026 Earnings Call Transcript",
-        "The Federal Reserve is quickly running out of reasons to cut interest rates",
-        "VAALCO Energy, Inc. (EGY) Q1 2026 Earnings Call Transcript"
+        "Peak Greggs? The Data And A Trip To London Suggest The Growth Story Is Just Starting",
+        "8-K - NN INC (0000918541) (Filer)",
+        "Palantir: Reset Unveils A Massive Buying Opportunity",
+        "Micron Exploded From $97 To $747: Here's Why It's Likely Not Over 'Yet'"
       ],
       "key_tickers": [
         "TLT",
@@ -163,8 +169,9 @@
         "DXY"
       ],
       "trending_tickers": [
+        "BAC",
         "RIG",
-        "COST"
+        "JPM"
       ]
     }
   ]
