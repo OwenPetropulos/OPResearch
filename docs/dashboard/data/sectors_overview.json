@@ -28,12 +28,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "JPMorgan Chase-led bank group reins in credit line to troubled KKR private credit fund as losses mou",
+      "primary_driver": "Powell Industries Q2 Review: Still A Long Growth Runway, But I'm Not Adding Here",
       "key_drivers": [
+        "Powell Industries Q2 Review: Still A Long Growth Runway, But I'm Not Adding Here",
+        "As Trump heads to China, here’s how much the dollar is overvalued, according to Goldman Sachs",
         "JPMorgan Chase-led bank group reins in credit line to troubled KKR private credit fund as losses mount",
-        "Trump, congressional Republicans float suspending federal gas tax amid Iran war",
-        "My niece is on Social Security Disability Insurance. Will she lose her health insurance if I buy her a house?",
-        "AI is ‘absolutely useless’ at forecasting inflation. This proven model is 12 times more accurate."
+        "Investors are piling into dividend stocks this year. These names top Wall Street’s buy list"
       ],
       "key_tickers": [
         "JPM",
@@ -43,20 +43,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM"
+        "GS",
+        "JPM",
+        "TGT"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Cerebras could be the next hot chip stock as demand swells ahead of its IPO",
+      "story_count": 10,
+      "primary_driver": "OpenAI trial: Nadella says Musk never raised concerns to him about Microsoft investment",
       "key_drivers": [
-        "Cerebras could be the next hot chip stock as demand swells ahead of its IPO",
-        "Saudi Aramco CEO says oil market won't normalize until 2027 if Hormuz disruption persists",
-        "Cash-strapped homeowners may soon have no choice but to repair their aging houses. These stocks can benefit.",
-        "HYDR: Clean Energy Meets The AI Power Crisis"
+        "OpenAI trial: Nadella says Musk never raised concerns to him about Microsoft investment",
+        "Here’s the next AI ‘battleground’ — and how investors can get in on the action",
+        "Ares Capital's Financial Performance Likely Remains Trapped",
+        "8-K/A - Lunai Bioworks Inc. (0001527728) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -67,20 +69,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "BAC",
-        "MSFT",
         "AMZN",
-        "NVDA"
+        "MSFT",
+        "NVO",
+        "LLY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "Radiant Logistics, Inc. (RLGT) Q3 2026 Earnings Call Transcript",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Radiant Logistics, Inc. (RLGT) Q3 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "GE",
@@ -98,12 +100,11 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Cash-strapped homeowners may soon have no choice but to repair their aging houses. These stocks can ",
+      "story_count": 3,
+      "primary_driver": "Investors are piling into dividend stocks this year. These names top Wall Street’s buy list",
       "key_drivers": [
-        "Cash-strapped homeowners may soon have no choice but to repair their aging houses. These stocks can benefit.",
+        "Investors are piling into dividend stocks this year. These names top Wall Street’s buy list",
         "Trump, congressional Republicans float suspending federal gas tax amid Iran war",
-        "Nearly half of women are cheating themselves out of free money",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -114,21 +115,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Positive",
-      "tone": "Healthcare outlook constructive. Recent developments support near-term strength.",
-      "story_count": 4,
-      "primary_driver": "Moderna’s stock has rallied on hantavirus research that is ‘early-stage’ in nature",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 3,
+      "primary_driver": "8-K - ASHFORD HOSPITALITY TRUST INC (0001232582) (Filer)",
       "key_drivers": [
-        "Moderna’s stock has rallied on hantavirus research that is ‘early-stage’ in nature",
-        "Hantavirus cases spark brief surge in pharma and biotech stocks — here’s why trading is so volatile",
-        "My niece is on Social Security Disability Insurance. Will she lose her health insurance if I buy her a house?",
-        "8-K - Aurinia Pharmaceuticals Inc. (0001600620) (Filer)"
+        "8-K - ASHFORD HOSPITALITY TRUST INC (0001232582) (Filer)",
+        "8-K - Tonix Pharmaceuticals Holding Corp. (0001430306) (Filer)",
+        "Hantavirus cases spark brief surge in pharma and biotech stocks — here’s why trading is so volatile"
       ],
       "key_tickers": [
         "LLY",
@@ -144,15 +143,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Neutron Holdings' Lime Begins IPO Effort To Pay Down Debt",
+      "primary_driver": "Starwood Property Trust Q1: Struggling To Digest",
       "key_drivers": [
-        "Neutron Holdings' Lime Begins IPO Effort To Pay Down Debt",
-        "ZEO:CA: As The War Drags On, This Fund Should Jump",
-        "Caledonia Mining Corporation Plc (CMCL) Q1 2026 Earnings Call Transcript",
-        "REA Group Limited (RPGRY) Q3 2026 Earnings Call Transcript"
+        "Starwood Property Trust Q1: Struggling To Digest",
+        "flyExclusive, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "AST SpaceMobile, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "Babcock & Wilcox Enterprises, Inc. 2026 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -162,8 +161,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "GS"
       ]
     }
   ]
