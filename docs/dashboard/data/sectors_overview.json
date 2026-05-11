@@ -4,13 +4,11 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 7,
-      "primary_driver": "Jim Cramer's top 10 things to watch in the stock market Monday",
+      "story_count": 2,
+      "primary_driver": "Saudi Aramco CEO says oil market won't normalize until 2027 if Hormuz disruption persists",
       "key_drivers": [
-        "Jim Cramer's top 10 things to watch in the stock market Monday",
-        "Oil market won’t return to normal this year if Iran conflict isn’t solved within weeks, Aramco CEO says",
-        "Ed Yardeni sees S&P 500 rising to more than 8,000. Here’s why",
-        "A ‘race against time.’ Hormuz closure could push Brent to $150 a barrel by summer, warns Morgan Stanley."
+        "Saudi Aramco CEO says oil market won't normalize until 2027 if Hormuz disruption persists",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +18,22 @@
         "RIG"
       ],
       "trending_tickers": [
+        "LLY",
         "SPY",
-        "CL=F",
-        "MS",
-        "LLY"
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "Investors are now telling companies to invest in growth, not their own stocks, Goldman Sachs finds",
+      "story_count": 8,
+      "primary_driver": "JPMorgan Chase-led bank group reins in credit line to troubled KKR private credit fund as losses mou",
       "key_drivers": [
-        "Investors are now telling companies to invest in growth, not their own stocks, Goldman Sachs finds",
-        "Kevin Warsh will be the richest Fed chair ever. Just how rich — he isn’t saying.",
-        "8-K - UMH PROPERTIES, INC. (0000752642) (Filer)",
-        "A ‘race against time.’ Hormuz closure could push Brent to $150 a barrel by summer, warns Morgan Stanley."
+        "JPMorgan Chase-led bank group reins in credit line to troubled KKR private credit fund as losses mount",
+        "Trump, congressional Republicans float suspending federal gas tax amid Iran war",
+        "My niece is on Social Security Disability Insurance. Will she lose her health insurance if I buy her a house?",
+        "AI is ‘absolutely useless’ at forecasting inflation. This proven model is 12 times more accurate."
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +43,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
-        "MS",
-        "NVDA",
-        "BAC"
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 17,
-      "primary_driver": "Micron shares are rising again despite weak overall market. Why memory chip rally seems unstoppable",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 11,
+      "primary_driver": "Cerebras could be the next hot chip stock as demand swells ahead of its IPO",
       "key_drivers": [
-        "Micron shares are rising again despite weak overall market. Why memory chip rally seems unstoppable",
-        "8-K - Kezar Life Sciences, Inc. (0001645666) (Filer)",
-        "Circle raises $222 million from BlackRock, Apollo and others in Arc token presale valued at $3 billion",
-        "Oil market won’t return to normal this year if Iran conflict isn’t solved within weeks, Aramco CEO says"
+        "Cerebras could be the next hot chip stock as demand swells ahead of its IPO",
+        "Saudi Aramco CEO says oil market won't normalize until 2027 if Hormuz disruption persists",
+        "Cash-strapped homeowners may soon have no choice but to repair their aging houses. These stocks can benefit.",
+        "HYDR: Clean Energy Meets The AI Power Crisis"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,21 +67,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "RIG",
-        "LLY",
+        "BAC",
+        "MSFT",
         "AMZN",
-        "AAPL"
+        "NVDA"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Positive",
-      "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 2,
-      "primary_driver": "Keel Infrastructure Corp. 2026 Q1 - Results - Earnings Call Presentation",
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Keel Infrastructure Corp. 2026 Q1 - Results - Earnings Call Presentation",
-        "UK PM Starmer battles for political survival amid leadership challenge as gilt yields rise"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -103,15 +96,15 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Negative",
-      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 7,
-      "primary_driver": "Micron shares are rising again despite weak overall market. Why memory chip rally seems unstoppable",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 4,
+      "primary_driver": "Cash-strapped homeowners may soon have no choice but to repair their aging houses. These stocks can ",
       "key_drivers": [
-        "Micron shares are rising again despite weak overall market. Why memory chip rally seems unstoppable",
-        "There’s a new top target for the S&P 500 as the ‘melt-up’ intensifies",
-        "How TIPS Can Change Your Retirement Math For The Better",
-        "Congress and retailers want to rebuild national parks. Tolls on federal roads might pay for it"
+        "Cash-strapped homeowners may soon have no choice but to repair their aging houses. These stocks can benefit.",
+        "Trump, congressional Republicans float suspending federal gas tax amid Iran war",
+        "Nearly half of women are cheating themselves out of free money",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -121,22 +114,21 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY",
-        "TGT",
-        "SPY",
-        "TIP"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Neutral",
-      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "8-K - Aurinia Pharmaceuticals Inc. (0001600620) (Filer)",
+      "sentiment": "Positive",
+      "tone": "Healthcare outlook constructive. Recent developments support near-term strength.",
+      "story_count": 4,
+      "primary_driver": "Moderna’s stock has rallied on hantavirus research that is ‘early-stage’ in nature",
       "key_drivers": [
-        "8-K - Aurinia Pharmaceuticals Inc. (0001600620) (Filer)",
-        "No do-overs: How one extra dollar on your Roth conversion triggers a tax bill you won’t see coming",
-        "Hantavirus cases spark surge in pharma and biotech stocks — here’s why"
+        "Moderna’s stock has rallied on hantavirus research that is ‘early-stage’ in nature",
+        "Hantavirus cases spark brief surge in pharma and biotech stocks — here’s why trading is so volatile",
+        "My niece is on Social Security Disability Insurance. Will she lose her health insurance if I buy her a house?",
+        "8-K - Aurinia Pharmaceuticals Inc. (0001600620) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -146,20 +138,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "RIG"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Positive",
       "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "Peak Greggs? The Data And A Trip To London Suggest The Growth Story Is Just Starting",
+      "story_count": 9,
+      "primary_driver": "Neutron Holdings' Lime Begins IPO Effort To Pay Down Debt",
       "key_drivers": [
-        "Peak Greggs? The Data And A Trip To London Suggest The Growth Story Is Just Starting",
-        "8-K - NN INC (0000918541) (Filer)",
-        "Palantir: Reset Unveils A Massive Buying Opportunity",
-        "Micron Exploded From $97 To $747: Here's Why It's Likely Not Over 'Yet'"
+        "Neutron Holdings' Lime Begins IPO Effort To Pay Down Debt",
+        "ZEO:CA: As The War Drags On, This Fund Should Jump",
+        "Caledonia Mining Corporation Plc (CMCL) Q1 2026 Earnings Call Transcript",
+        "REA Group Limited (RPGRY) Q3 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -169,9 +162,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
-        "RIG",
-        "JPM"
+        "GLD",
+        "DXY"
       ]
     }
   ]
