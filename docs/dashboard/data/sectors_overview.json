@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "U.S. crude oil tops $100 again as hope fades for a U.S.-Iran peace deal",
+      "story_count": 6,
+      "primary_driver": "Is AI power really the new oil? Soon it will trade like just like a commodity.",
       "key_drivers": [
-        "U.S. crude oil tops $100 again as hope fades for a U.S.-Iran peace deal",
-        "Five reasons why oil prices haven’t surged higher despite the Iran war",
+        "Is AI power really the new oil? Soon it will trade like just like a commodity.",
+        "8-K - PLAINS ALL AMERICAN PIPELINE LP (0001070423) (Filer)",
         "It's not just Iran and oil raising inflation. Prices also are reaccelerating in these other areas",
-        "Sunday Night Futures"
+        "Marty Makary resigns as FDA commissioner following industry and White House backlash"
       ],
       "key_tickers": [
         "XOM",
@@ -20,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
         "LLY",
+        "CL=F",
+        "BAC",
         "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+      "primary_driver": "Johnson & Johnson (JNJ) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
       "key_drivers": [
-        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
-        "Ryder System, Inc. (R) Presents at Bank of America 33rd Annual Industrials, Transportation and Airlines Key Leaders Conf",
-        "How A Kevin Warsh Fed Could Impact Rates: 3 Top Stocks To Buy",
-        "Haemonetics Corporation (HAE) Presents at Bank of America Global Healthcare Conference 2026 Transcript"
+        "Johnson & Johnson (JNJ) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
+        "GE HealthCare Technologies Inc. (GEHC) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
+        "Dole plc (DOLE) Presents at Goldman Sachs Global Staples Forum 2026 Transcript",
+        "Trump wants gas tax relief. But slim driver savings could strain a key federal fund"
       ],
       "key_tickers": [
         "JPM",
@@ -45,7 +46,8 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC"
+        "BAC",
+        "GS"
       ]
     },
     {
@@ -53,12 +55,12 @@
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 14,
-      "primary_driver": "U.S. crude oil tops $100 again as hope fades for a U.S.-Iran peace deal",
+      "primary_driver": "Is AI power really the new oil? Soon it will trade like just like a commodity.",
       "key_drivers": [
-        "U.S. crude oil tops $100 again as hope fades for a U.S.-Iran peace deal",
-        "SpaceX and Google may become even more tightly linked through this far-out venture",
-        "Bain Capital Specialty Finance, Inc. (BCSF) Q1 2026 Earnings Call Transcript",
-        "Ryder System, Inc. (R) Presents at Bank of America 33rd Annual Industrials, Transportation and Airlines Key Leaders Conf"
+        "Is AI power really the new oil? Soon it will trade like just like a commodity.",
+        "Why Meta Is My Top Pick: Priced For A Recession With Massive Upside",
+        "Copper prices are now at their highest level on record. AI is only part of the story.",
+        "Trump wants gas tax relief. But slim driver savings could strain a key federal fund"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,10 +71,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "CL=F",
-        "BAC",
         "LLY",
-        "GOOGL"
+        "CL=F",
+        "META",
+        "SPY"
       ]
     },
     {
@@ -80,9 +82,9 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Chemtrade Logistics Income Fund (CHE.UN:CA) Q1 2026 Earnings Call Transcript",
+      "primary_driver": "Boeing could finally reignite its China business. Will that breathe new life into its stock?",
       "key_drivers": [
-        "Chemtrade Logistics Income Fund (CHE.UN:CA) Q1 2026 Earnings Call Transcript"
+        "Boeing could finally reignite its China business. Will that breathe new life into its stock?"
       ],
       "key_tickers": [
         "GE",
@@ -92,21 +94,18 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "LLY"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Positive",
-      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 6,
-      "primary_driver": "Ryder System, Inc. (R) Presents at Bank of America 33rd Annual Industrials, Transportation and Airli",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 2,
+      "primary_driver": "Dole plc (DOLE) Presents at Goldman Sachs Global Staples Forum 2026 Transcript",
       "key_drivers": [
-        "Ryder System, Inc. (R) Presents at Bank of America 33rd Annual Industrials, Transportation and Airlines Key Leaders Conf",
-        "ROKIT America Targets $25 Million U.S. IPO At High Valuation",
-        "Flowserve Corporation (FLS) Presents at Bank of America 33rd Annual Industrials, Transportation and Airlines Key Leaders",
-        "EBay unbans Ryan Cohen as it rejects GameStop’s takeover attempt"
+        "Dole plc (DOLE) Presents at Goldman Sachs Global Staples Forum 2026 Transcript",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -116,22 +115,20 @@
         "ONON"
       ],
       "trending_tickers": [
-        "BAC",
-        "TGT",
-        "NKE"
+        "GS"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Arvinas: FDA Approval Validates The Platform, But Does Not Signal Near-Term Profitability",
+      "story_count": 6,
+      "primary_driver": "Pfizer: Don't Pass On This Dirt-Cheap Buying Opportunity",
       "key_drivers": [
-        "Arvinas: FDA Approval Validates The Platform, But Does Not Signal Near-Term Profitability",
-        "Legend Biotech Corporation (LEGN) Q1 2026 Earnings Call Transcript",
-        "Mirum Pharmaceuticals: A Rare Disease Platform Becoming Bigger Than Its First Franchise",
-        "Hims & Hers plummets 13% after first-quarter loss, weak earnings guidance"
+        "Pfizer: Don't Pass On This Dirt-Cheap Buying Opportunity",
+        "Recursion Pharmaceuticals, Inc. (RXRX) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
+        "Ionis Pharmaceuticals, Inc. (IONS) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
+        "8-K - RIGEL PHARMACEUTICALS INC (0001034842) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -141,6 +138,9 @@
         "VRTX"
       ],
       "trending_tickers": [
+        "BAC",
+        "PFE",
+        "RIG",
         "NVO"
       ]
     },
@@ -149,12 +149,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 10,
-      "primary_driver": "Markets Are Not Ready For What Happens Next",
+      "primary_driver": "Hims & Hers Health: The Real Story Begins",
       "key_drivers": [
-        "Markets Are Not Ready For What Happens Next",
-        "Why I Now Favor A Barbell Model Over Ray Dalio's All-Weather Portfolio",
-        "Canadian Insolvencies On The Rise",
-        "ASUSTeK Computer Inc. 2026 Q1 - Results - Earnings Call Presentation"
+        "Hims & Hers Health: The Real Story Begins",
+        "Cadre Holdings, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "Intellicheck, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "Digimarc Corporation 2026 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -165,7 +165,7 @@
       ],
       "trending_tickers": [
         "LLY",
-        "COST"
+        "META"
       ]
     }
   ]
