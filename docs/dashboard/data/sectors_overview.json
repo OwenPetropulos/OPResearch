@@ -4,11 +4,12 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
+      "story_count": 4,
       "primary_driver": "U.S. crude oil tops $100 again as hope fades for a U.S.-Iran peace deal",
       "key_drivers": [
         "U.S. crude oil tops $100 again as hope fades for a U.S.-Iran peace deal",
-        "Saudi Aramco CEO says oil market won't normalize until 2027 if Hormuz disruption persists",
+        "Five reasons why oil prices haven’t surged higher despite the Iran war",
+        "It's not just Iran and oil raising inflation. Prices also are reaccelerating in these other areas",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -26,15 +27,15 @@
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "EBay rejects GameStop's $56 billion takeover bid, calling it 'neither credible nor attractive'",
+      "primary_driver": "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
       "key_drivers": [
-        "EBay rejects GameStop's $56 billion takeover bid, calling it 'neither credible nor attractive'",
-        "Buy this drone stock as demand for unmanned aircrafts grows, Goldman Sachs says",
-        "Italian Industrial Production Increased Again In March",
-        "Sell In May And Warsh Away"
+        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+        "Ryder System, Inc. (R) Presents at Bank of America 33rd Annual Industrials, Transportation and Airlines Key Leaders Conf",
+        "How A Kevin Warsh Fed Could Impact Rates: 3 Top Stocks To Buy",
+        "Haemonetics Corporation (HAE) Presents at Bank of America Global Healthcare Conference 2026 Transcript"
       ],
       "key_tickers": [
         "JPM",
@@ -44,22 +45,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
-        "COST",
-        "JPM"
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 13,
-      "primary_driver": "Amazon accelerates delivery race with 30-minute drop-offs in dozens of U.S. cities",
+      "story_count": 14,
+      "primary_driver": "U.S. crude oil tops $100 again as hope fades for a U.S.-Iran peace deal",
       "key_drivers": [
-        "Amazon accelerates delivery race with 30-minute drop-offs in dozens of U.S. cities",
-        "Buy this drone stock as demand for unmanned aircrafts grows, Goldman Sachs says",
-        "8-K - C3.ai, Inc. (0001577526) (Filer)",
-        "8-K - AtaiBeckley Inc. (0002081043) (Filer)"
+        "U.S. crude oil tops $100 again as hope fades for a U.S.-Iran peace deal",
+        "SpaceX and Google may become even more tightly linked through this far-out venture",
+        "Bain Capital Specialty Finance, Inc. (BCSF) Q1 2026 Earnings Call Transcript",
+        "Ryder System, Inc. (R) Presents at Bank of America 33rd Annual Industrials, Transportation and Airlines Key Leaders Conf"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,21 +69,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
         "CL=F",
-        "AMZN",
-        "GS"
+        "BAC",
+        "LLY",
+        "GOOGL"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Italian Industrial Production Increased Again In March",
+      "story_count": 1,
+      "primary_driver": "Chemtrade Logistics Income Fund (CHE.UN:CA) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "Italian Industrial Production Increased Again In March",
-        "What's at stake for trade, Taiwan and Iran in Trump's high-risk summit with China's Xi"
+        "Chemtrade Logistics Income Fund (CHE.UN:CA) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "GE",
@@ -102,12 +100,13 @@
       "sector": "Consumer",
       "sentiment": "Positive",
       "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 3,
-      "primary_driver": "The Retirement Playbook Is Breaking - And Few Investors Are Ready",
+      "story_count": 6,
+      "primary_driver": "Ryder System, Inc. (R) Presents at Bank of America 33rd Annual Industrials, Transportation and Airli",
       "key_drivers": [
-        "The Retirement Playbook Is Breaking - And Few Investors Are Ready",
-        "On Holding beats first-quarter expectations, sees double-digit growth in China as Nike lags",
-        "1st Look at Local Housing Markets in December"
+        "Ryder System, Inc. (R) Presents at Bank of America 33rd Annual Industrials, Transportation and Airlines Key Leaders Conf",
+        "ROKIT America Targets $25 Million U.S. IPO At High Valuation",
+        "Flowserve Corporation (FLS) Presents at Bank of America 33rd Annual Industrials, Transportation and Airlines Key Leaders",
+        "EBay unbans Ryan Cohen as it rejects GameStop’s takeover attempt"
       ],
       "key_tickers": [
         "NKE",
@@ -117,18 +116,22 @@
         "ONON"
       ],
       "trending_tickers": [
+        "BAC",
+        "TGT",
         "NKE"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Negative",
-      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 2,
-      "primary_driver": "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 5,
+      "primary_driver": "Arvinas: FDA Approval Validates The Platform, But Does Not Signal Near-Term Profitability",
       "key_drivers": [
-        "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)",
-        "Hims & Hers plummets 15% after first-quarter loss, weak earnings guidance"
+        "Arvinas: FDA Approval Validates The Platform, But Does Not Signal Near-Term Profitability",
+        "Legend Biotech Corporation (LEGN) Q1 2026 Earnings Call Transcript",
+        "Mirum Pharmaceuticals: A Rare Disease Platform Becoming Bigger Than Its First Franchise",
+        "Hims & Hers plummets 13% after first-quarter loss, weak earnings guidance"
       ],
       "key_tickers": [
         "LLY",
@@ -145,13 +148,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "Bakkt, Inc. (BKKT) Q1 2026 Earnings Call Transcript",
+      "story_count": 10,
+      "primary_driver": "Markets Are Not Ready For What Happens Next",
       "key_drivers": [
-        "Bakkt, Inc. (BKKT) Q1 2026 Earnings Call Transcript",
-        "Bonheur ASA (BNHUF) Q1 2026 Earnings Call Transcript",
-        "8-K - ALPHA MODUS HOLDINGS, INC. (0001862463) (Filer)",
-        "Japan's Megabanks Expected To Post Record Profits In Coming Years"
+        "Markets Are Not Ready For What Happens Next",
+        "Why I Now Favor A Barbell Model Over Ray Dalio's All-Weather Portfolio",
+        "Canadian Insolvencies On The Rise",
+        "ASUSTeK Computer Inc. 2026 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -161,7 +164,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY"
+        "LLY",
+        "COST"
       ]
     }
   ]
