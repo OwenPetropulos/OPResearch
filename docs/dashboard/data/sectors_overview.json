@@ -4,9 +4,10 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Saudi Aramco CEO says oil market won't normalize until 2027 if Hormuz disruption persists",
+      "story_count": 3,
+      "primary_driver": "U.S. crude oil tops $100 again as hope fades for a U.S.-Iran peace deal",
       "key_drivers": [
+        "U.S. crude oil tops $100 again as hope fades for a U.S.-Iran peace deal",
         "Saudi Aramco CEO says oil market won't normalize until 2027 if Hormuz disruption persists",
         "Sunday Night Futures"
       ],
@@ -18,9 +19,9 @@
         "RIG"
       ],
       "trending_tickers": [
+        "CL=F",
         "LLY",
-        "SPY",
-        "CL=F"
+        "SPY"
       ]
     },
     {
@@ -28,12 +29,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Powell Industries Q2 Review: Still A Long Growth Runway, But I'm Not Adding Here",
+      "primary_driver": "EBay rejects GameStop's $56 billion takeover bid, calling it 'neither credible nor attractive'",
       "key_drivers": [
-        "Powell Industries Q2 Review: Still A Long Growth Runway, But I'm Not Adding Here",
-        "As Trump heads to China, here’s how much the dollar is overvalued, according to Goldman Sachs",
-        "JPMorgan Chase-led bank group reins in credit line to troubled KKR private credit fund as losses mount",
-        "Investors are piling into dividend stocks this year. These names top Wall Street’s buy list"
+        "EBay rejects GameStop's $56 billion takeover bid, calling it 'neither credible nor attractive'",
+        "Buy this drone stock as demand for unmanned aircrafts grows, Goldman Sachs says",
+        "Italian Industrial Production Increased Again In March",
+        "Sell In May And Warsh Away"
       ],
       "key_tickers": [
         "JPM",
@@ -44,21 +45,21 @@
       ],
       "trending_tickers": [
         "GS",
-        "JPM",
-        "TGT"
+        "COST",
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "OpenAI trial: Nadella says Musk never raised concerns to him about Microsoft investment",
+      "story_count": 13,
+      "primary_driver": "Amazon accelerates delivery race with 30-minute drop-offs in dozens of U.S. cities",
       "key_drivers": [
-        "OpenAI trial: Nadella says Musk never raised concerns to him about Microsoft investment",
-        "Here’s the next AI ‘battleground’ — and how investors can get in on the action",
-        "Ares Capital's Financial Performance Likely Remains Trapped",
-        "8-K/A - Lunai Bioworks Inc. (0001527728) (Filer)"
+        "Amazon accelerates delivery race with 30-minute drop-offs in dozens of U.S. cities",
+        "Buy this drone stock as demand for unmanned aircrafts grows, Goldman Sachs says",
+        "8-K - C3.ai, Inc. (0001577526) (Filer)",
+        "8-K - AtaiBeckley Inc. (0002081043) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,20 +70,21 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "LLY",
+        "CL=F",
         "AMZN",
-        "MSFT",
-        "NVO",
-        "LLY"
+        "GS"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Radiant Logistics, Inc. (RLGT) Q3 2026 Earnings Call Transcript",
+      "story_count": 2,
+      "primary_driver": "Italian Industrial Production Increased Again In March",
       "key_drivers": [
-        "Radiant Logistics, Inc. (RLGT) Q3 2026 Earnings Call Transcript"
+        "Italian Industrial Production Increased Again In March",
+        "What's at stake for trade, Taiwan and Iran in Trump's high-risk summit with China's Xi"
       ],
       "key_tickers": [
         "GE",
@@ -98,13 +100,13 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
       "story_count": 3,
-      "primary_driver": "Investors are piling into dividend stocks this year. These names top Wall Street’s buy list",
+      "primary_driver": "The Retirement Playbook Is Breaking - And Few Investors Are Ready",
       "key_drivers": [
-        "Investors are piling into dividend stocks this year. These names top Wall Street’s buy list",
-        "Trump, congressional Republicans float suspending federal gas tax amid Iran war",
+        "The Retirement Playbook Is Breaking - And Few Investors Are Ready",
+        "On Holding beats first-quarter expectations, sees double-digit growth in China as Nike lags",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -115,19 +117,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT"
+        "NKE"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Neutral",
-      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "8-K - ASHFORD HOSPITALITY TRUST INC (0001232582) (Filer)",
+      "sentiment": "Negative",
+      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 2,
+      "primary_driver": "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)",
       "key_drivers": [
-        "8-K - ASHFORD HOSPITALITY TRUST INC (0001232582) (Filer)",
-        "8-K - Tonix Pharmaceuticals Holding Corp. (0001430306) (Filer)",
-        "Hantavirus cases spark brief surge in pharma and biotech stocks — here’s why trading is so volatile"
+        "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)",
+        "Hims & Hers plummets 15% after first-quarter loss, weak earnings guidance"
       ],
       "key_tickers": [
         "LLY",
@@ -137,7 +138,6 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
         "NVO"
       ]
     },
@@ -146,12 +146,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Starwood Property Trust Q1: Struggling To Digest",
+      "primary_driver": "Bakkt, Inc. (BKKT) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "Starwood Property Trust Q1: Struggling To Digest",
-        "flyExclusive, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "AST SpaceMobile, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "Babcock & Wilcox Enterprises, Inc. 2026 Q1 - Results - Earnings Call Presentation"
+        "Bakkt, Inc. (BKKT) Q1 2026 Earnings Call Transcript",
+        "Bonheur ASA (BNHUF) Q1 2026 Earnings Call Transcript",
+        "8-K - ALPHA MODUS HOLDINGS, INC. (0001862463) (Filer)",
+        "Japan's Megabanks Expected To Post Record Profits In Coming Years"
       ],
       "key_tickers": [
         "TLT",
@@ -161,7 +161,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GS"
+        "LLY"
       ]
     }
   ]
