@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Is AI power really the new oil? Soon it will trade like just like a commodity.",
+      "story_count": 8,
+      "primary_driver": "Energy Transfer: 20% EBITDA Growth With Pipeline Backlog For The AI Buildout",
       "key_drivers": [
-        "Is AI power really the new oil? Soon it will trade like just like a commodity.",
-        "8-K - PLAINS ALL AMERICAN PIPELINE LP (0001070423) (Filer)",
-        "It's not just Iran and oil raising inflation. Prices also are reaccelerating in these other areas",
-        "Marty Makary resigns as FDA commissioner following industry and White House backlash"
+        "Energy Transfer: 20% EBITDA Growth With Pipeline Backlog For The AI Buildout",
+        "May 2026 Trading Outlook: Fiscal Flows, Oil, Bank Credit, And Fed Interest Rates",
+        "Oil price spike turmoil far from over, IEA says as inventories are depleted at “record pace\"",
+        "Hormuz Oil Shock Tilts Shipping Towards Alternative Fuels"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "LLY",
-        "CL=F",
         "BAC",
+        "CL=F",
+        "LLY",
         "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Johnson & Johnson (JNJ) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 9,
+      "primary_driver": "Wholesale prices surged 1.4% in April, much more than expected",
       "key_drivers": [
-        "Johnson & Johnson (JNJ) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
-        "GE HealthCare Technologies Inc. (GEHC) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
-        "Dole plc (DOLE) Presents at Goldman Sachs Global Staples Forum 2026 Transcript",
-        "Trump wants gas tax relief. But slim driver savings could strain a key federal fund"
+        "Wholesale prices surged 1.4% in April, much more than expected",
+        "5 tests Kevin Warsh will face on the first day as Fed chair",
+        "May 2026 Trading Outlook: Fiscal Flows, Oil, Bank Credit, And Fed Interest Rates",
+        "8-K - Nauticus Robotics, Inc. (0001849820) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC",
-        "GS"
+        "JPM",
+        "MS",
+        "COST"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 14,
-      "primary_driver": "Is AI power really the new oil? Soon it will trade like just like a commodity.",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 13,
+      "primary_driver": "Energy Transfer: 20% EBITDA Growth With Pipeline Backlog For The AI Buildout",
       "key_drivers": [
-        "Is AI power really the new oil? Soon it will trade like just like a commodity.",
-        "Why Meta Is My Top Pick: Priced For A Recession With Massive Upside",
-        "Copper prices are now at their highest level on record. AI is only part of the story.",
-        "Trump wants gas tax relief. But slim driver savings could strain a key federal fund"
+        "Energy Transfer: 20% EBITDA Growth With Pipeline Backlog For The AI Buildout",
+        "5 tests Kevin Warsh will face on the first day as Fed chair",
+        "Alphabet is the top holding of this five-star fund that is also finding 240% gains in the ‘unsexy’ side of the AI buildo",
+        "8-K - Navitas Semiconductor Corp (0001821769) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,20 +72,20 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "SPY",
         "LLY",
-        "CL=F",
-        "META",
-        "SPY"
+        "BAC",
+        "GOOGL"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Boeing could finally reignite its China business. Will that breathe new life into its stock?",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Boeing could finally reignite its China business. Will that breathe new life into its stock?"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -94,17 +95,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LLY"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Dole plc (DOLE) Presents at Goldman Sachs Global Staples Forum 2026 Transcript",
+      "story_count": 4,
+      "primary_driver": "Walmart cuts 1,000 roles to simplify operations, Reuters reports",
       "key_drivers": [
-        "Dole plc (DOLE) Presents at Goldman Sachs Global Staples Forum 2026 Transcript",
+        "Walmart cuts 1,000 roles to simplify operations, Reuters reports",
+        "Alibaba's core profit plunges 84% even as AI and cloud growth accelerate",
+        "Aristocrat Leisure Limited (ARLUF) Q2 2026 Earnings Call Transcript",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -115,20 +119,20 @@
         "ONON"
       ],
       "trending_tickers": [
-        "GS"
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Pfizer: Don't Pass On This Dirt-Cheap Buying Opportunity",
+      "story_count": 5,
+      "primary_driver": "8-K - ANI PHARMACEUTICALS INC (0001023024) (Filer)",
       "key_drivers": [
-        "Pfizer: Don't Pass On This Dirt-Cheap Buying Opportunity",
-        "Recursion Pharmaceuticals, Inc. (RXRX) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
-        "Ionis Pharmaceuticals, Inc. (IONS) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
-        "8-K - RIGEL PHARMACEUTICALS INC (0001034842) (Filer)"
+        "8-K - ANI PHARMACEUTICALS INC (0001023024) (Filer)",
+        "8-K - ARS Pharmaceuticals, Inc. (0001671858) (Filer)",
+        "8-K - REVIVA PHARMACEUTICALS HOLDINGS, INC. (0001742927) (Filer)",
+        "8-K - Moleculin Biotech, Inc. (0001659617) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -138,10 +142,7 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "BAC",
-        "PFE",
-        "RIG",
-        "NVO"
+        "BAC"
       ]
     },
     {
@@ -149,12 +150,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 10,
-      "primary_driver": "Hims & Hers Health: The Real Story Begins",
+      "primary_driver": "Bavarian Nordic A/S 2026 Q1 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "Hims & Hers Health: The Real Story Begins",
-        "Cadre Holdings, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "Intellicheck, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "Digimarc Corporation 2026 Q1 - Results - Earnings Call Presentation"
+        "Bavarian Nordic A/S 2026 Q1 - Results - Earnings Call Presentation",
+        "RWE Aktiengesellschaft 2026 Q1 - Results - Earnings Call Presentation",
+        "Recordati Industria Chimica e Farmaceutica S.p.A. 2026 Q1 - Results - Earnings Call Presentation",
+        "8-K - FATE THERAPEUTICS INC (0001434316) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -164,8 +165,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY",
-        "META"
+        "GLD",
+        "DXY"
       ]
     }
   ]

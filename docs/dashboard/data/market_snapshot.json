@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-12T22:12:19Z",
-  "macro_summary": "Equity futures mixed; 10Y yields rising (4.46%), pressure on duration assets; Crude firming (+4.2%).",
-  "market_status": "After-Hours",
+  "last_updated": "2026-05-13T12:33:29Z",
+  "macro_summary": "Equity futures mixed; 10Y yields rising (4.46%), pressure on duration assets.",
+  "market_status": "Pre-Market",
   "equities": [
     {
       "label": "S&P 500",
@@ -38,9 +38,9 @@
     {
       "label": "VIX",
       "ticker": "VIX",
-      "price": 17.99,
-      "change": -0.39,
-      "percent_change": -2.12,
+      "price": 17.88,
+      "change": -0.11,
+      "percent_change": -0.61,
       "direction": "down"
     }
   ],
@@ -99,32 +99,32 @@
       "label": "Crude Oil",
       "ticker": "CL",
       "price": 102.18,
-      "change": 4.11,
-      "percent_change": 4.19,
-      "direction": "up"
+      "change": 0.0,
+      "percent_change": 0.0,
+      "direction": "flat"
     },
     {
       "label": "Gold",
       "ticker": "GC",
-      "price": 4723.2,
-      "change": 4.5,
-      "percent_change": 0.1,
+      "price": 4696.3,
+      "change": 18.7,
+      "percent_change": 0.4,
       "direction": "up"
     },
     {
       "label": "Silver",
       "ticker": "SI",
-      "price": 87.28,
-      "change": 1.79,
-      "percent_change": 2.1,
+      "price": 87.25,
+      "change": 2.12,
+      "percent_change": 2.48,
       "direction": "up"
     },
     {
       "label": "Copper",
       "ticker": "HG",
-      "price": 6.64,
-      "change": 0.23,
-      "percent_change": 3.52,
+      "price": 6.61,
+      "change": 0.13,
+      "percent_change": 1.94,
       "direction": "up"
     }
   ],
@@ -132,33 +132,33 @@
     {
       "label": "USD/JPY",
       "ticker": "USDJPY",
-      "price": 157.597,
-      "change": 0.739,
-      "percent_change": 0.47,
+      "price": 157.858,
+      "change": 0.627,
+      "percent_change": 0.4,
       "direction": "up"
     },
     {
       "label": "EUR/USD",
       "ticker": "EURUSD",
-      "price": 1.1741,
-      "change": -0.0028,
-      "percent_change": -0.24,
+      "price": 1.1708,
+      "change": -0.0072,
+      "percent_change": -0.61,
       "direction": "down"
     },
     {
       "label": "EUR/JPY",
       "ticker": "EURJPY",
-      "price": 184.994,
-      "change": 0.424,
-      "percent_change": 0.23,
-      "direction": "up"
+      "price": 184.783,
+      "change": -0.414,
+      "percent_change": -0.22,
+      "direction": "down"
     },
     {
       "label": "DXY",
       "ticker": "DXY",
-      "price": 98.293,
-      "change": 0.353,
-      "percent_change": 0.36,
+      "price": 98.529,
+      "change": 0.239,
+      "percent_change": 0.24,
       "direction": "up"
     }
   ],
@@ -167,33 +167,33 @@
       {
         "label": "Nikkei 225",
         "ticker": "^N225",
-        "price": 62417.88,
-        "change": -295.77,
-        "percent_change": -0.47,
-        "direction": "down"
+        "price": 63272.11,
+        "change": 529.54,
+        "percent_change": 0.84,
+        "direction": "up"
       },
       {
         "label": "Hang Seng",
         "ticker": "^HSI",
-        "price": 26406.84,
-        "change": 13.13,
-        "percent_change": 0.05,
+        "price": 26388.44,
+        "change": 40.53,
+        "percent_change": 0.15,
         "direction": "up"
       },
       {
         "label": "Shanghai Comp",
         "ticker": "000001.SS",
-        "price": 4225.02,
-        "change": 45.07,
-        "percent_change": 1.08,
+        "price": 4242.57,
+        "change": 28.08,
+        "percent_change": 0.67,
         "direction": "up"
       },
       {
         "label": "KOSPI",
         "ticker": "^KS11",
-        "price": 7822.24,
-        "change": 324.24,
-        "percent_change": 4.32,
+        "price": 7844.01,
+        "change": 200.86,
+        "percent_change": 2.63,
         "direction": "up"
       }
     ],
@@ -201,34 +201,34 @@
       {
         "label": "FTSE 100",
         "ticker": "^FTSE",
-        "price": 10265.32,
-        "change": -4.08,
-        "percent_change": -0.04,
-        "direction": "down"
+        "price": 10276.0,
+        "change": 10.7,
+        "percent_change": 0.1,
+        "direction": "up"
       },
       {
         "label": "DAX",
         "ticker": "^GDAXI",
-        "price": 24350.28,
-        "change": 11.65,
-        "percent_change": 0.05,
+        "price": 24138.37,
+        "change": 183.44,
+        "percent_change": 0.77,
         "direction": "up"
       },
       {
         "label": "CAC 40",
         "ticker": "^FCHI",
-        "price": 8056.38,
-        "change": -56.19,
-        "percent_change": -0.69,
+        "price": 7956.62,
+        "change": -23.3,
+        "percent_change": -0.29,
         "direction": "down"
       },
       {
         "label": "Euro Stoxx 50",
         "ticker": "^STOXX50E",
-        "price": 5895.45,
-        "change": -16.08,
-        "percent_change": -0.27,
-        "direction": "down"
+        "price": 5828.56,
+        "change": 20.11,
+        "percent_change": 0.35,
+        "direction": "up"
       }
     ]
   }
