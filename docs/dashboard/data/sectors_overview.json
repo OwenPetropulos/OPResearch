@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Energy Transfer: 20% EBITDA Growth With Pipeline Backlog For The AI Buildout",
+      "story_count": 4,
+      "primary_driver": "FLEX LNG Ltd. (FLNG) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "Energy Transfer: 20% EBITDA Growth With Pipeline Backlog For The AI Buildout",
-        "May 2026 Trading Outlook: Fiscal Flows, Oil, Bank Credit, And Fed Interest Rates",
+        "FLEX LNG Ltd. (FLNG) Q1 2026 Earnings Call Transcript",
+        "Hormuz closure cuts OPEC oil production by 30% and threatens demand growth this year, cartel says",
         "Oil price spike turmoil far from over, IEA says as inventories are depleted at “record pace\"",
-        "Hormuz Oil Shock Tilts Shipping Towards Alternative Fuels"
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -20,8 +20,8 @@
         "RIG"
       ],
       "trending_tickers": [
-        "BAC",
         "CL=F",
+        "LNG",
         "LLY",
         "SPY"
       ]
@@ -30,13 +30,13 @@
       "sector": "Financials",
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 9,
-      "primary_driver": "Wholesale prices surged 1.4% in April, much more than expected",
+      "story_count": 8,
+      "primary_driver": "American Integrity Insurance Group, Inc. (AII) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "Wholesale prices surged 1.4% in April, much more than expected",
-        "5 tests Kevin Warsh will face on the first day as Fed chair",
-        "May 2026 Trading Outlook: Fiscal Flows, Oil, Bank Credit, And Fed Interest Rates",
-        "8-K - Nauticus Robotics, Inc. (0001849820) (Filer)"
+        "American Integrity Insurance Group, Inc. (AII) Q1 2026 Earnings Call Transcript",
+        "Mettler-Toledo International Inc. (MTD) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
+        "Ardent Health, Inc. (ARDT) Presents at Bank of America Global Healthcare Conference 2026 Transcript",
+        "UroGen Pharma Ltd. (URGN) Presents at Bank of America Global Healthcare Conference 2026 Transcript"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "MS",
-        "COST"
+        "BAC",
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "Energy Transfer: 20% EBITDA Growth With Pipeline Backlog For The AI Buildout",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 11,
+      "primary_driver": "Trump to announce tariff truce extension, aircraft purchases from Boeing in China, traders predict",
       "key_drivers": [
-        "Energy Transfer: 20% EBITDA Growth With Pipeline Backlog For The AI Buildout",
-        "5 tests Kevin Warsh will face on the first day as Fed chair",
-        "Alphabet is the top holding of this five-star fund that is also finding 240% gains in the ‘unsexy’ side of the AI buildo",
-        "8-K - Navitas Semiconductor Corp (0001821769) (Filer)"
+        "Trump to announce tariff truce extension, aircraft purchases from Boeing in China, traders predict",
+        "American Integrity Insurance Group, Inc. (AII) Q1 2026 Earnings Call Transcript",
+        "All In On Semiconductors",
+        "What CEOs from Tesla, Nvidia and over a dozen other companies hope to gain by joining Trump in China"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,20 +71,23 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "SPY",
-        "LLY",
-        "BAC",
-        "GOOGL"
+        "NVDA",
+        "COST",
+        "META",
+        "LLY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 6,
+      "primary_driver": "Trump’s China visit could rattle markets if it doesn’t bring an Iran breakthrough",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Trump’s China visit could rattle markets if it doesn’t bring an Iran breakthrough",
+        "Trump to announce tariff truce extension, aircraft purchases from Boeing in China, traders predict",
+        "Gas tax holiday as Trump promises? Not so fast, trucking, construction industries say",
+        "Applied Aerospace & Defense Pursues IPO On M&A-Led Growth"
       ],
       "key_tickers": [
         "GE",
@@ -104,11 +106,11 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "Walmart cuts 1,000 roles to simplify operations, Reuters reports",
+      "primary_driver": "My overseas flight costs $1,000. Is it better to wait until after the Iran war to buy my ticket?",
       "key_drivers": [
-        "Walmart cuts 1,000 roles to simplify operations, Reuters reports",
-        "Alibaba's core profit plunges 84% even as AI and cloud growth accelerate",
-        "Aristocrat Leisure Limited (ARLUF) Q2 2026 Earnings Call Transcript",
+        "My overseas flight costs $1,000. Is it better to wait until after the Iran war to buy my ticket?",
+        "I have $500,000 in retirement savings. Is it wise to invest it with a single firm?",
+        "This pharma name targeting aging has soared this year. BTIG thinks it can double from here",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -119,20 +121,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "WMT"
+        "COST",
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "8-K - ANI PHARMACEUTICALS INC (0001023024) (Filer)",
+      "story_count": 2,
+      "primary_driver": "Milestone Pharmaceuticals Inc. (MIST) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "8-K - ANI PHARMACEUTICALS INC (0001023024) (Filer)",
-        "8-K - ARS Pharmaceuticals, Inc. (0001671858) (Filer)",
-        "8-K - REVIVA PHARMACEUTICALS HOLDINGS, INC. (0001742927) (Filer)",
-        "8-K - Moleculin Biotech, Inc. (0001659617) (Filer)"
+        "Milestone Pharmaceuticals Inc. (MIST) Q1 2026 Earnings Call Transcript",
+        "This pharma name targeting aging has soared this year. BTIG thinks it can double from here"
       ],
       "key_tickers": [
         "LLY",
@@ -142,7 +143,7 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "BAC"
+        "TGT"
       ]
     },
     {
@@ -150,12 +151,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 10,
-      "primary_driver": "Bavarian Nordic A/S 2026 Q1 - Results - Earnings Call Presentation",
+      "primary_driver": "Trump to announce tariff truce extension, aircraft purchases from Boeing in China, traders predict",
       "key_drivers": [
-        "Bavarian Nordic A/S 2026 Q1 - Results - Earnings Call Presentation",
-        "RWE Aktiengesellschaft 2026 Q1 - Results - Earnings Call Presentation",
-        "Recordati Industria Chimica e Farmaceutica S.p.A. 2026 Q1 - Results - Earnings Call Presentation",
-        "8-K - FATE THERAPEUTICS INC (0001434316) (Filer)"
+        "Trump to announce tariff truce extension, aircraft purchases from Boeing in China, traders predict",
+        "Power Corporation of Canada (POW:CA) Q1 2026 Earnings Call Transcript",
+        "Vanda: A Long-Term Pharma Growth Idea, Despite Q1 Earnings Miss",
+        "National Vision Holdings, Inc. 2026 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
