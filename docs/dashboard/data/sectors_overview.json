@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 6,
-      "primary_driver": "The commodities guru who warned about silver falling now, is saying the hantavirus could do the same",
+      "primary_driver": "Okeanis Eco Tankers Corp. 2026 Q1 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "The commodities guru who warned about silver falling now, is saying the hantavirus could do the same to oil",
-        "Venture Global: Don't Fear Normalizing LNG Prices",
-        "Venezuela embarks on $150 billion restructuring of debt amid political turmoil",
-        "Oil prices mixed as IEA flags greater volatility ahead, OPEC cuts demand forecast"
+        "Okeanis Eco Tankers Corp. 2026 Q1 - Results - Earnings Call Presentation",
+        "Okeanis Eco Tankers Corp. (ECO) Q1 2026 Earnings Call Transcript",
+        "Fermi: Limited Tenant Progress Amid Management Turmoil",
+        "Venezuela embarks on $150 billion restructuring of debt amid political turmoil"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
-        "LNG",
+        "NKE",
         "LLY",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "8-K - OFF THE HOOK YS INC. (0002067767) (Filer)",
+      "story_count": 8,
+      "primary_driver": "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
       "key_drivers": [
-        "8-K - OFF THE HOOK YS INC. (0002067767) (Filer)",
-        "8-K - CABOT CORP (0000016040) (Filer)",
-        "The commodities guru who warned about silver falling now, is saying the hantavirus could do the same to oil",
-        "GeneDx: Disappointing Q1 Creates Another Turnaround Opportunity"
+        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+        "Biogen advances Alzheimer's drug to late-stage trial despite disappointing data",
+        "Federal Agricultural Mortgage Corporation (AGM) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "High-Yield Credit Held Through A War -- Here's Why That Should Worry Equity Investors"
       ],
       "key_tickers": [
         "JPM",
@@ -46,7 +46,7 @@
         "KRE"
       ],
       "trending_tickers": [
-        "LLY",
+        "JPM",
         "GS"
       ]
     },
@@ -54,13 +54,13 @@
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 14,
-      "primary_driver": "Wealthy donors stand to win double tax benefit if 'Trump Accounts' allow stock donations",
+      "story_count": 13,
+      "primary_driver": "China will work behind the scenes to help reopen the Strait of Hormuz, Bessent says",
       "key_drivers": [
-        "Wealthy donors stand to win double tax benefit if 'Trump Accounts' allow stock donations",
-        "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)",
-        "Oatly's Race Against Time: Strong Brand Meets A Dwindling Cash Runway",
-        "The Dow is poised to retake 50,000 as Cisco jumps, Boeing gains: Live updates"
+        "China will work behind the scenes to help reopen the Strait of Hormuz, Bessent says",
+        "Biogen advances Alzheimer's drug to late-stage trial despite disappointing data",
+        "8-K - Onfolio Holdings, Inc (0001825452) (Filer)",
+        "Cerebras’s stock rockets out of the gate, in a sign the AI boom is as strong as ever"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,20 +71,22 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "AMZN",
+        "NVDA",
         "LLY",
-        "SPY",
-        "CL=F"
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Positive",
       "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 3,
-      "primary_driver": "The Dow is poised to retake 50,000 as Cisco jumps, Boeing gains: Live updates",
+      "story_count": 4,
+      "primary_driver": "Bird Construction Inc. (BDT:CA) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "The Dow is poised to retake 50,000 as Cisco jumps, Boeing gains: Live updates",
-        "GE Vernova: Why I Believe This Power Infrastructure Winner Has 60% Upside",
+        "Bird Construction Inc. (BDT:CA) Q1 2026 Earnings Call Transcript",
+        "Trump discloses big buys of shares in Boeing and Nvidia as the companies look set to gain from his China trip",
+        "Cisco CEO says tech is entering a 'networking supercycle' as stock pops 15% on strong AI demand",
         "Senators introduce ban on lawmakers becoming lobbyists"
       ],
       "key_tickers": [
@@ -95,17 +97,17 @@
         "HON"
       ],
       "trending_tickers": [
-        "LLY",
-        "SPY"
+        "NVDA"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "1st Look at Local Housing Markets in December",
+      "story_count": 2,
+      "primary_driver": "Living paycheck to paycheck? These budgeting apps can help you stay ahead of your spending",
       "key_drivers": [
+        "Living paycheck to paycheck? These budgeting apps can help you stay ahead of your spending",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -122,13 +124,12 @@
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Negative",
-      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 2,
-      "primary_driver": "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "8-K - AMERICAN SHARED HOSPITAL SERVICES (0000744825) (Filer)",
       "key_drivers": [
-        "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)",
-        "Should you ever resign by text? Trump's FDA shake-up raises the question"
+        "8-K - AMERICAN SHARED HOSPITAL SERVICES (0000744825) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -146,13 +147,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "8-K - Candel Therapeutics, Inc. (0001841387) (Filer)",
+      "story_count": 9,
+      "primary_driver": "8-K - RREEF Property Trust, Inc. (0001542447) (Filer)",
       "key_drivers": [
-        "8-K - Candel Therapeutics, Inc. (0001841387) (Filer)",
-        "8-K - Dine Brands Global, Inc. (0000049754) (Filer)",
-        "Student loan forgiveness paths have changed under Trump. How to navigate them",
-        "8-K - Ondas Inc. (0001646188) (Filer)"
+        "8-K - RREEF Property Trust, Inc. (0001542447) (Filer)",
+        "Technoprobe S.p.A. 2026 Q1 - Results - Earnings Call Presentation",
+        "Colonial SFL, Socimi S. A. 2026 Q1 - Results - Earnings Call Presentation",
+        "U.S. Border Patrol Chief Mike Banks resigns"
       ],
       "key_tickers": [
         "TLT",
