@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Okeanis Eco Tankers Corp. 2026 Q1 - Results - Earnings Call Presentation",
+      "story_count": 4,
+      "primary_driver": "Loosening The Strait's Jacket: Oil Market Creative Destruction",
       "key_drivers": [
-        "Okeanis Eco Tankers Corp. 2026 Q1 - Results - Earnings Call Presentation",
-        "Okeanis Eco Tankers Corp. (ECO) Q1 2026 Earnings Call Transcript",
-        "Fermi: Limited Tenant Progress Amid Management Turmoil",
-        "Venezuela embarks on $150 billion restructuring of debt amid political turmoil"
+        "Loosening The Strait's Jacket: Oil Market Creative Destruction",
+        "3 Impacts The Middle East Conflict Is Having On Canadian Oil And Gas",
+        "SpaceX’s blockbuster IPO is coming. This overlooked industrial company will be a big winner",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -20,7 +20,7 @@
         "RIG"
       ],
       "trending_tickers": [
-        "NKE",
+        "XOM",
         "LLY",
         "SPY",
         "CL=F"
@@ -30,13 +30,13 @@
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+      "story_count": 9,
+      "primary_driver": "We’re in our 40s. Our mortgage is nearly paid off — how should we invest our extra $1,500 a month?",
       "key_drivers": [
-        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
-        "Biogen advances Alzheimer's drug to late-stage trial despite disappointing data",
-        "Federal Agricultural Mortgage Corporation (AGM) Shareholder/Analyst Call Prepared Remarks Transcript",
-        "High-Yield Credit Held Through A War -- Here's Why That Should Worry Equity Investors"
+        "We’re in our 40s. Our mortgage is nearly paid off — how should we invest our extra $1,500 a month?",
+        "Fed Governor Miran submits resignation, throws support behind Warsh as new chair",
+        "‘Several days have passed’: The restaurant failed to process my 20% tip. Is it cheating the staff?",
+        "8-K - G III APPAREL GROUP LTD /DE/ (0000821002) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "GS"
+        "LLY",
+        "TIP",
+        "RIG"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "China will work behind the scenes to help reopen the Strait of Hormuz, Bessent says",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 16,
+      "primary_driver": "Supreme Court allows mail-order of abortion pill mifepristone pending appeal",
       "key_drivers": [
-        "China will work behind the scenes to help reopen the Strait of Hormuz, Bessent says",
-        "Biogen advances Alzheimer's drug to late-stage trial despite disappointing data",
-        "8-K - Onfolio Holdings, Inc (0001825452) (Filer)",
-        "Cerebras’s stock rockets out of the gate, in a sign the AI boom is as strong as ever"
+        "Supreme Court allows mail-order of abortion pill mifepristone pending appeal",
+        "‘I’m not an extravagant spender’: I’m in my 70s with a $90,000 income. Can I afford my dream home with a pool?",
+        "We’re in our 40s. Our mortgage is nearly paid off — how should we invest our extra $1,500 a month?",
+        "Fed Governor Miran submits resignation, throws support behind Warsh as new chair"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,23 +72,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
-        "NVDA",
         "LLY",
-        "SPY"
+        "RIG",
+        "TIP",
+        "AMZN"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Positive",
-      "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 4,
-      "primary_driver": "Bird Construction Inc. (BDT:CA) Q1 2026 Earnings Call Transcript",
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 2,
+      "primary_driver": "XTI Aerospace, Inc. 2026 Q1 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "Bird Construction Inc. (BDT:CA) Q1 2026 Earnings Call Transcript",
-        "Trump discloses big buys of shares in Boeing and Nvidia as the companies look set to gain from his China trip",
-        "Cisco CEO says tech is entering a 'networking supercycle' as stock pops 15% on strong AI demand",
-        "Senators introduce ban on lawmakers becoming lobbyists"
+        "XTI Aerospace, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "Chinese parts are already in U.S. cars as lawmakers warn Trump against China auto deal"
       ],
       "key_tickers": [
         "GE",
@@ -97,7 +96,8 @@
         "HON"
       ],
       "trending_tickers": [
-        "NVDA"
+        "LMT",
+        "RTX"
       ]
     },
     {
@@ -105,9 +105,9 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "Living paycheck to paycheck? These budgeting apps can help you stay ahead of your spending",
+      "primary_driver": "Bayer: Higher Risks From Litigation Drive My Price Target Down",
       "key_drivers": [
-        "Living paycheck to paycheck? These budgeting apps can help you stay ahead of your spending",
+        "Bayer: Higher Risks From Litigation Drive My Price Target Down",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -118,18 +118,17 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "8-K - AMERICAN SHARED HOSPITAL SERVICES (0000744825) (Filer)",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "8-K - AMERICAN SHARED HOSPITAL SERVICES (0000744825) (Filer)"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -145,15 +144,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "8-K - RREEF Property Trust, Inc. (0001542447) (Filer)",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 8,
+      "primary_driver": "Stock futures are little changed after Dow retakes 50,000: Live updates",
       "key_drivers": [
-        "8-K - RREEF Property Trust, Inc. (0001542447) (Filer)",
-        "Technoprobe S.p.A. 2026 Q1 - Results - Earnings Call Presentation",
-        "Colonial SFL, Socimi S. A. 2026 Q1 - Results - Earnings Call Presentation",
-        "U.S. Border Patrol Chief Mike Banks resigns"
+        "Stock futures are little changed after Dow retakes 50,000: Live updates",
+        "SpaceX IPO prospectus could land as soon as next week, sources say",
+        "Vitesse Energy: Pick Up This 10% Yield With Peace Of Mind",
+        "RideNow Group, Inc. (RDNW) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -163,8 +162,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "SPY"
       ]
     }
   ]
