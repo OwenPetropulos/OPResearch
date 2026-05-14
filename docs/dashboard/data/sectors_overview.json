@@ -2,13 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "The world lost nearly 1 billion barrels in oil supply over the past 75 days. Why investors aren’t wo",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 6,
+      "primary_driver": "The commodities guru who warned about silver falling now, is saying the hantavirus could do the same",
       "key_drivers": [
-        "The world lost nearly 1 billion barrels in oil supply over the past 75 days. Why investors aren’t worrying enough.",
-        "Sunday Night Futures"
+        "The commodities guru who warned about silver falling now, is saying the hantavirus could do the same to oil",
+        "Venture Global: Don't Fear Normalizing LNG Prices",
+        "Venezuela embarks on $150 billion restructuring of debt amid political turmoil",
+        "Oil prices mixed as IEA flags greater volatility ahead, OPEC cuts demand forecast"
       ],
       "key_tickers": [
         "XOM",
@@ -19,6 +21,7 @@
       ],
       "trending_tickers": [
         "CL=F",
+        "LNG",
         "LLY",
         "SPY"
       ]
@@ -27,13 +30,13 @@
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Axogen, Inc. (AXGN) Presents at Bank of America Global Healthcare Conference 2026 Prepared Remarks T",
+      "story_count": 9,
+      "primary_driver": "8-K - OFF THE HOOK YS INC. (0002067767) (Filer)",
       "key_drivers": [
-        "Axogen, Inc. (AXGN) Presents at Bank of America Global Healthcare Conference 2026 Prepared Remarks Transcript",
-        "AI-driven cyberattacks will start to be the 'new norm' in months, Palo Alto warns",
-        "Paychex: Giving Credit Where It's Due (Rating Upgrade)",
-        "Parsons Corporation (PSN) Presents at Bank of America 33rd Annual Industrials, Transportation and Airlines Key Leaders C"
+        "8-K - OFF THE HOOK YS INC. (0002067767) (Filer)",
+        "8-K - CABOT CORP (0000016040) (Filer)",
+        "The commodities guru who warned about silver falling now, is saying the hantavirus could do the same to oil",
+        "GeneDx: Disappointing Q1 Creates Another Turnaround Opportunity"
       ],
       "key_tickers": [
         "JPM",
@@ -43,20 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC"
+        "LLY",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Retailers keep tinkering with their AI shopping assistants, in search of better service",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 14,
+      "primary_driver": "Wealthy donors stand to win double tax benefit if 'Trump Accounts' allow stock donations",
       "key_drivers": [
-        "Retailers keep tinkering with their AI shopping assistants, in search of better service",
-        "Cerebras prices IPO above expected range, as Wall Street braces for AI tsunami",
-        "AI-driven cyberattacks will start to be the 'new norm' in months, Palo Alto warns",
-        "Cisco to cut jobs so it can invest more in AI, and the stock rockets toward a record"
+        "Wealthy donors stand to win double tax benefit if 'Trump Accounts' allow stock donations",
+        "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)",
+        "Oatly's Race Against Time: Strong Brand Meets A Dwindling Cash Runway",
+        "The Dow is poised to retake 50,000 as Cisco jumps, Boeing gains: Live updates"
       ],
       "key_tickers": [
         "NVDA",
@@ -67,22 +71,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
-        "NKE",
-        "META",
-        "BAC"
+        "LLY",
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Neutral",
-      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
       "story_count": 3,
-      "primary_driver": "AI-driven cyberattacks will start to be the 'new norm' in months, Palo Alto warns",
+      "primary_driver": "The Dow is poised to retake 50,000 as Cisco jumps, Boeing gains: Live updates",
       "key_drivers": [
-        "AI-driven cyberattacks will start to be the 'new norm' in months, Palo Alto warns",
-        "Cerebras’s IPO will be a fresh test of investor excitement for AI infrastructure",
-        "Anduril doubles valuation to over $60 billion as defense tech funding boom continues"
+        "The Dow is poised to retake 50,000 as Cisco jumps, Boeing gains: Live updates",
+        "GE Vernova: Why I Believe This Power Infrastructure Winner Has 60% Upside",
+        "Senators introduce ban on lawmakers becoming lobbyists"
       ],
       "key_tickers": [
         "GE",
@@ -92,19 +95,17 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Retailers keep tinkering with their AI shopping assistants, in search of better service",
+      "story_count": 1,
+      "primary_driver": "1st Look at Local Housing Markets in December",
       "key_drivers": [
-        "Retailers keep tinkering with their AI shopping assistants, in search of better service",
-        "Parsons Corporation (PSN) Presents at Bank of America 33rd Annual Industrials, Transportation and Airlines Key Leaders C",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -115,19 +116,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "AMZN",
         "NKE",
-        "BAC"
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Neutral",
-      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "sentiment": "Negative",
+      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 2,
+      "primary_driver": "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)",
+        "Should you ever resign by text? Trump's FDA shake-up raises the question"
       ],
       "key_tickers": [
         "LLY",
@@ -146,12 +147,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Macquarie Group Limited (MQBKY) Q4 2026 Earnings Call Transcript",
+      "primary_driver": "8-K - Candel Therapeutics, Inc. (0001841387) (Filer)",
       "key_drivers": [
-        "Macquarie Group Limited (MQBKY) Q4 2026 Earnings Call Transcript",
-        "Wix.com: Base44 Continues To Be Vastly Underappreciated",
-        "HeartBeam, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "EVI Industries, Inc. (EVI) Q3 2026 Earnings Call Prepared Remarks Transcript"
+        "8-K - Candel Therapeutics, Inc. (0001841387) (Filer)",
+        "8-K - Dine Brands Global, Inc. (0000049754) (Filer)",
+        "Student loan forgiveness paths have changed under Trump. How to navigate them",
+        "8-K - Ondas Inc. (0001646188) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -161,7 +162,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "COST"
+        "GLD",
+        "DXY"
       ]
     }
   ]
