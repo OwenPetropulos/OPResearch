@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "WTI Technical Analysis - Crude Oil Eases Its Overnight Rally, But What's Next?",
+      "story_count": 5,
+      "primary_driver": "Oil Prices Drive Inflation Above Wages: A Blip, Not A Trend",
       "key_drivers": [
-        "WTI Technical Analysis - Crude Oil Eases Its Overnight Rally, But What's Next?",
+        "Oil Prices Drive Inflation Above Wages: A Blip, Not A Trend",
+        "China will buy more U.S. oil because it is a natural trade partner, says Energy Secretary Wright",
         "Exxon's once-hefty dividend is now tiny. Here's how to fix that",
-        "How China and U.S. eased the Middle East oil shock and kept prices from spiking even higher",
-        "China will buy more U.S. oil because it is a natural trade partner, says Energy Secretary Wright"
+        "How China and U.S. eased the Middle East oil shock and kept prices from spiking even higher"
       ],
       "key_tickers": [
         "XOM",
@@ -21,9 +21,9 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "LLY",
+        "RIG",
         "XOM",
-        "RIG"
+        "LLY"
       ]
     },
     {
@@ -31,12 +31,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "30-year Treasury yield tops 5.1%, highest in nearly a year",
+      "primary_driver": "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
       "key_drivers": [
-        "30-year Treasury yield tops 5.1%, highest in nearly a year",
-        "The charts are pointing to a breakout in short-term Treasury yields, says Carter Worth",
-        "Mortgage rates tick lower to 6.36%. Here’s why the decrease probably won’t last.",
-        "Magnum Ice Cream stock soars after report of potential private equity takeover"
+        "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
+        "George Soros’s fund buys Berkshire Hathaway stock — now that Buffett is gone",
+        "8-K - Delek US Holdings, Inc. (0001694426) (Filer)",
+        "8-K - Apollo Commercial Real Estate Finance, Inc. (0001467760) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -47,22 +47,22 @@
       ],
       "trending_tickers": [
         "AMZN",
-        "SPY",
-        "RIG",
-        "CL=F"
+        "COST",
+        "NVDA",
+        "AAPL"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 14,
-      "primary_driver": "S&P 500 and Nasdaq fall, strained by tech pullback and yields spike: Live updates",
+      "primary_driver": "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
       "key_drivers": [
-        "S&P 500 and Nasdaq fall, strained by tech pullback and yields spike: Live updates",
-        "VBIL: Cash Is Still King As Hormuz Tensions Remain",
-        "SPTS: Duration Again An Unforced Portfolio Error Given Expectations Risks",
-        "Trump told Xi ‘I don't talk about’ whether U.S. would defend Taiwan from China"
+        "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
+        "Berkshire’s Abel sours on some of Warren Buffett’s picks, while betting big on Delta",
+        "David Tepper’s Appaloosa nearly doubles Amazon stake, adds Sandisk in the first quarter",
+        "George Soros’s fund buys Berkshire Hathaway stock — now that Buffett is gone"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,20 +73,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "SPY",
+        "AMZN",
         "CL=F",
-        "BAC",
-        "AMZN"
+        "COST",
+        "BAC"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "8-K - COVENANT LOGISTICS GROUP, INC. (0000928658) (Filer)",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "8-K - COVENANT LOGISTICS GROUP, INC. (0000928658) (Filer)",
+        "Volatus Aerospace Inc. (FLT:CA) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "GE",
@@ -104,10 +105,11 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Seth Klarman’s Baupost makes Amazon top holding, starts Aon and Visa stakes",
+      "story_count": 3,
+      "primary_driver": "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
       "key_drivers": [
-        "Seth Klarman’s Baupost makes Amazon top holding, starts Aon and Visa stakes",
+        "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
+        "Berkshire’s Abel sours on some of Warren Buffett’s picks, while betting big on Delta",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -118,7 +120,9 @@
         "ONON"
       ],
       "trending_tickers": [
-        "AMZN"
+        "AMZN",
+        "COST",
+        "BAC"
       ]
     },
     {
@@ -146,13 +150,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "Bapcor Limited (BAPCF) Discusses Turnaround Progress, Trading Update, and Impact of Global Events Tr",
+      "story_count": 10,
+      "primary_driver": "B2Gold: The Re-Rating Setup Is Building As A New Era Begins",
       "key_drivers": [
-        "Bapcor Limited (BAPCF) Discusses Turnaround Progress, Trading Update, and Impact of Global Events Transcript",
-        "Light S.A. (LGSXY) Q1 2026 Earnings Call Transcript",
-        "Americas Gold and Silver Corporation (USA:CA) Q1 2026 Earnings Call Transcript",
-        "DRI Healthcare Trust (DHT.UN:CA) Q1 2026 Earnings Call Transcript"
+        "B2Gold: The Re-Rating Setup Is Building As A New Era Begins",
+        "Western Alliance Bancorporation (WAL) Analyst/Investor Day Transcript",
+        "8-K - Axe Compute Inc. (0001446159) (Filer)",
+        "Great Buy-The-Dip Opportunity: Deeply Discounted 7.8-11% Yields With Buybacks"
       ],
       "key_tickers": [
         "TLT",
@@ -162,8 +166,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "BAC",
+        "CL=F"
       ]
     }
   ]
