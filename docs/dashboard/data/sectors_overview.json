@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Negative",
       "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 5,
-      "primary_driver": "S&P 500 is little changed as traders eye oil prices and bond yields: Live updates",
+      "story_count": 8,
+      "primary_driver": "S&P 500, Nasdaq fall for a second day as Micron drops, traders eye oil and yields: Live updates",
       "key_drivers": [
-        "S&P 500 is little changed as traders eye oil prices and bond yields: Live updates",
-        "Western Midstream Partners: Valuation Not A Screaming Buy, But Opportunities Are Attractive",
-        "Oil prices fall after Iran media report that U.S. proposed temporary oil sanctions waiver",
-        "‘This is bad’: Strategists see European oil shortages within weeks as inventories are depleted"
+        "S&P 500, Nasdaq fall for a second day as Micron drops, traders eye oil and yields: Live updates",
+        "Oil climbs as Trump warns the ‘clock is ticking’ on Iran, but there’s a bigger danger lurking on the horizon",
+        "Stock Markets Are Scared Of Renewed Oil Pressure - Dow Jones, Nasdaq And S&P 500 Intraday Levels",
+        "The oil market is reaching a ‘tipping point’ that could create problems for stocks, according to this Wall Street legend"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
         "SPY",
-        "RIG",
-        "LLY"
+        "CL=F",
+        "LLY",
+        "RIG"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Western Midstream Partners: Valuation Not A Screaming Buy, But Opportunities Are Attractive",
+      "primary_driver": "Retail stocks are ailing on fears about the U.S. consumer. Will these earnings change that?",
       "key_drivers": [
-        "Western Midstream Partners: Valuation Not A Screaming Buy, But Opportunities Are Attractive",
-        "Berkshire has revamped its portfolio — here's how the new stocks are trading",
-        "10-year Treasury yield touches highest in a year, Japan's 30-year yield rises to a record",
-        "As Inflation Heats Up, The Bond Market Loses Its Cool"
+        "Retail stocks are ailing on fears about the U.S. consumer. Will these earnings change that?",
+        "Kevin Warsh to be sworn in as Federal Reserve chair on Friday",
+        "U.S. creates $1.7B 'lawfare' fund in exchange for Trump dropping $10B IRS suit",
+        "Surging Bond Yields And Potential Warsh Fed Test Could Be The Sword Of Damocles For Stocks"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GOOGL",
         "LLY",
-        "JPM"
+        "RIG",
+        "CL=F",
+        "GOOGL"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 13,
-      "primary_driver": "Meta layoffs starting this week stress harsh AI reality inside Zuckerberg’s company",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 15,
+      "primary_driver": "Elon Musk loses court battle against Sam Altman and OpenAI after 3-week trial",
       "key_drivers": [
-        "Meta layoffs starting this week stress harsh AI reality inside Zuckerberg’s company",
-        "8-K - ADTRAN Holdings, Inc. (0000926282) (Filer)",
-        "CorMedix: Long-Term Prospects Remain Poor Despite Q1 Beat",
-        "NextEra Energy to buy Dominion in deal that unites two key players in race to power AI data centers"
+        "Elon Musk loses court battle against Sam Altman and OpenAI after 3-week trial",
+        "S&P 500, Nasdaq fall for a second day as Micron drops, traders eye oil and yields: Live updates",
+        "Retail stocks are ailing on fears about the U.S. consumer. Will these earnings change that?",
+        "Ford lands its first customer for energy business. Buy this pivot by the auto giant?"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,9 +74,9 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "AMZN",
         "SPY",
-        "META"
+        "LLY",
+        "BAC"
       ]
     },
     {
@@ -83,9 +84,9 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Lithium Americas: Construction Progress Does Not Fix The Equity Problem",
+      "primary_driver": "BitGo: Institutional Crypto Infrastructure At A Discount",
       "key_drivers": [
-        "Lithium Americas: Construction Progress Does Not Fix The Equity Problem"
+        "BitGo: Institutional Crypto Infrastructure At A Discount"
       ],
       "key_tickers": [
         "GE",
@@ -103,13 +104,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Homebuilder sentiment improves on late spring surge in demand",
+      "story_count": 5,
+      "primary_driver": "Retail stocks are ailing on fears about the U.S. consumer. Will these earnings change that?",
       "key_drivers": [
+        "Retail stocks are ailing on fears about the U.S. consumer. Will these earnings change that?",
+        "Lululemon hits back at its founder after months of attacks, saying he’s just jealous",
         "Homebuilder sentiment improves on late spring surge in demand",
-        "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did I do the right thing",
-        "Berkshire has revamped its portfolio — here's how the new stocks are trading",
-        "Lululemon takes battle with Chip Wilson public, calls founder 'misguided' and 'outdated'"
+        "Berkshire Hathaway has revamped its portfolio — Here's how the new stocks are trading"
       ],
       "key_tickers": [
         "NKE",
@@ -119,22 +120,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY",
-        "RIG",
+        "BAC",
         "GOOGL"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Negative",
-      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 4,
-      "primary_driver": "NRx Pharmaceuticals, Inc. (NRXP) Q1 2026 Earnings Call Transcript",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 2,
+      "primary_driver": "Some people lose far more weight than others on GLP-1s like Wegovy. Here’s why.",
       "key_drivers": [
-        "NRx Pharmaceuticals, Inc. (NRXP) Q1 2026 Earnings Call Transcript",
-        "Why Pfizer Stock Still Looks Deeply Undervalued In 2026",
-        "Weight-loss wars go global as Novo Nordisk bets big on its Wegovy pill",
-        "Regeneron drops after skin cancer treatment misses late-stage trial goal"
+        "Some people lose far more weight than others on GLP-1s like Wegovy. Here’s why.",
+        "Weight-loss wars go global as Novo Nordisk bets big on its Wegovy pill"
       ],
       "key_tickers": [
         "LLY",
@@ -144,21 +142,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "PFE",
         "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "8-K - NATIONAL BANKSHARES INC (0000796534) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 11,
+      "primary_driver": "Seagate leads memory sell-off as CEO says it would 'take too long' to build new factories",
       "key_drivers": [
-        "8-K - NATIONAL BANKSHARES INC (0000796534) (Filer)",
-        "State judge blocks evidence from Luigi Mangione backpack in UnitedHealthcare CEO murder case",
-        "AppLovin: The $5.8 Billion Free Cash Flow Machine Nobody Wants To Believe",
-        "8-K - HUGOTON ROYALTY TRUST (0000862022) (Filer)"
+        "Seagate leads memory sell-off as CEO says it would 'take too long' to build new factories",
+        "GoDaddy Inc. (GDDY) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Transcrip",
+        "8-K - ReposiTrak, Inc. (0000050471) (Filer)",
+        "Stocks making the biggest moves midday: Regeneron, Dominion, Mobileye, Viking and more"
       ],
       "key_tickers": [
         "TLT",
@@ -168,9 +165,10 @@
         "DXY"
       ],
       "trending_tickers": [
+        "RIG",
         "BAC",
         "LLY",
-        "RIG"
+        "CL=F"
       ]
     }
   ]
