@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 5,
-      "primary_driver": "Oil Prices Drive Inflation Above Wages: A Blip, Not A Trend",
+      "primary_driver": "S&P 500 is little changed as traders eye oil prices and bond yields: Live updates",
       "key_drivers": [
-        "Oil Prices Drive Inflation Above Wages: A Blip, Not A Trend",
-        "China will buy more U.S. oil because it is a natural trade partner, says Energy Secretary Wright",
-        "Exxon's once-hefty dividend is now tiny. Here's how to fix that",
-        "How China and U.S. eased the Middle East oil shock and kept prices from spiking even higher"
+        "S&P 500 is little changed as traders eye oil prices and bond yields: Live updates",
+        "Western Midstream Partners: Valuation Not A Screaming Buy, But Opportunities Are Attractive",
+        "Oil prices fall after Iran media report that U.S. proposed temporary oil sanctions waiver",
+        "‘This is bad’: Strategists see European oil shortages within weeks as inventories are depleted"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
+        "SPY",
         "RIG",
-        "XOM",
         "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 9,
-      "primary_driver": "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
+      "primary_driver": "Western Midstream Partners: Valuation Not A Screaming Buy, But Opportunities Are Attractive",
       "key_drivers": [
-        "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
-        "George Soros’s fund buys Berkshire Hathaway stock — now that Buffett is gone",
-        "8-K - Delek US Holdings, Inc. (0001694426) (Filer)",
-        "8-K - Apollo Commercial Real Estate Finance, Inc. (0001467760) (Filer)"
+        "Western Midstream Partners: Valuation Not A Screaming Buy, But Opportunities Are Attractive",
+        "Berkshire has revamped its portfolio — here's how the new stocks are trading",
+        "10-year Treasury yield touches highest in a year, Japan's 30-year yield rises to a record",
+        "As Inflation Heats Up, The Bond Market Loses Its Cool"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN",
-        "COST",
-        "NVDA",
-        "AAPL"
+        "GOOGL",
+        "LLY",
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Negative",
       "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 14,
-      "primary_driver": "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
+      "story_count": 13,
+      "primary_driver": "Meta layoffs starting this week stress harsh AI reality inside Zuckerberg’s company",
       "key_drivers": [
-        "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
-        "Berkshire’s Abel sours on some of Warren Buffett’s picks, while betting big on Delta",
-        "David Tepper’s Appaloosa nearly doubles Amazon stake, adds Sandisk in the first quarter",
-        "George Soros’s fund buys Berkshire Hathaway stock — now that Buffett is gone"
+        "Meta layoffs starting this week stress harsh AI reality inside Zuckerberg’s company",
+        "8-K - ADTRAN Holdings, Inc. (0000926282) (Filer)",
+        "CorMedix: Long-Term Prospects Remain Poor Despite Q1 Beat",
+        "NextEra Energy to buy Dominion in deal that unites two key players in race to power AI data centers"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,21 +72,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
         "CL=F",
-        "COST",
-        "BAC"
+        "AMZN",
+        "SPY",
+        "META"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "8-K - COVENANT LOGISTICS GROUP, INC. (0000928658) (Filer)",
+      "story_count": 1,
+      "primary_driver": "Lithium Americas: Construction Progress Does Not Fix The Equity Problem",
       "key_drivers": [
-        "8-K - COVENANT LOGISTICS GROUP, INC. (0000928658) (Filer)",
-        "Volatus Aerospace Inc. (FLT:CA) Q1 2026 Earnings Call Transcript"
+        "Lithium Americas: Construction Progress Does Not Fix The Equity Problem"
       ],
       "key_tickers": [
         "GE",
@@ -105,12 +103,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
+      "story_count": 6,
+      "primary_driver": "Homebuilder sentiment improves on late spring surge in demand",
       "key_drivers": [
-        "This hedge fund just dumped the ‘big three’ airline stocks, as the industry faces soaring fuel costs",
-        "Berkshire’s Abel sours on some of Warren Buffett’s picks, while betting big on Delta",
-        "1st Look at Local Housing Markets in December"
+        "Homebuilder sentiment improves on late spring surge in demand",
+        "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did I do the right thing",
+        "Berkshire has revamped its portfolio — here's how the new stocks are trading",
+        "Lululemon takes battle with Chip Wilson public, calls founder 'misguided' and 'outdated'"
       ],
       "key_tickers": [
         "NKE",
@@ -120,19 +119,22 @@
         "ONON"
       ],
       "trending_tickers": [
-        "AMZN",
-        "COST",
-        "BAC"
+        "LLY",
+        "RIG",
+        "GOOGL"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Neutral",
-      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "sentiment": "Negative",
+      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 4,
+      "primary_driver": "NRx Pharmaceuticals, Inc. (NRXP) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "NRx Pharmaceuticals, Inc. (NRXP) Q1 2026 Earnings Call Transcript",
+        "Why Pfizer Stock Still Looks Deeply Undervalued In 2026",
+        "Weight-loss wars go global as Novo Nordisk bets big on its Wegovy pill",
+        "Regeneron drops after skin cancer treatment misses late-stage trial goal"
       ],
       "key_tickers": [
         "LLY",
@@ -142,21 +144,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
+        "PFE",
         "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "B2Gold: The Re-Rating Setup Is Building As A New Era Begins",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 13,
+      "primary_driver": "8-K - NATIONAL BANKSHARES INC (0000796534) (Filer)",
       "key_drivers": [
-        "B2Gold: The Re-Rating Setup Is Building As A New Era Begins",
-        "Western Alliance Bancorporation (WAL) Analyst/Investor Day Transcript",
-        "8-K - Axe Compute Inc. (0001446159) (Filer)",
-        "Great Buy-The-Dip Opportunity: Deeply Discounted 7.8-11% Yields With Buybacks"
+        "8-K - NATIONAL BANKSHARES INC (0000796534) (Filer)",
+        "State judge blocks evidence from Luigi Mangione backpack in UnitedHealthcare CEO murder case",
+        "AppLovin: The $5.8 Billion Free Cash Flow Machine Nobody Wants To Believe",
+        "8-K - HUGOTON ROYALTY TRUST (0000862022) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -167,7 +169,8 @@
       ],
       "trending_tickers": [
         "BAC",
-        "CL=F"
+        "LLY",
+        "RIG"
       ]
     }
   ]
