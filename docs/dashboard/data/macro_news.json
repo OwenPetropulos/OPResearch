@@ -1,47 +1,13 @@
 {
   "stories": [
     {
-      "title": "S&P 500, Nasdaq fall for a second day as Micron drops, traders eye oil and yields: Live updates",
-      "summary": "Traders monitored oil prices and bond yields while awaiting further developments with the conflict in the Middle East.",
-      "url": "https://www.cnbc.com/2026/05/17/stock-market-today-live-updates.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-18T17:50:43Z",
+      "title": "The AI Buildout Is Causing Record Bond Issuances, Including In Canada",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4906205-ai-buildout-causing-record-bond-issuances-including-canada?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-05-18T17:55:00Z",
       "id": "mn001",
-      "sector_tags": [
-        "Energy",
-        "Technology"
-      ],
-      "ticker_tags": [
-        "SPY",
-        "CL=F"
-      ],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
-    },
-    {
-      "title": "Stock Markets Are Scared Of Renewed Oil Pressure - Dow Jones, Nasdaq And S&P 500 Intraday Levels",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4906130-stock-markets-scared-renewed-oil-pressure-dow-jones-nasdaq-sp500-intraday-levels?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-18T13:40:00Z",
-      "id": "mn002",
-      "sector_tags": [
-        "Energy"
-      ],
-      "ticker_tags": [
-        "SPY"
-      ],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Intel: Will Higher Bond Yields Burst The AI Bubble? (Rating Downgrade)",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4906098-intel-will-higher-bond-yields-burst-ai-bubble-rating-downgrade?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-18T13:09:19Z",
-      "id": "mn003",
       "sector_tags": [
         "Technology"
       ],
@@ -49,28 +15,29 @@
       "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
     },
     {
-      "title": "Kevin Warsh to be sworn in as Federal Reserve chair on Friday",
-      "summary": "Trump will swear in Kevin Warsh, his hand-picked choice to lead the Federal Reserve, during a White House ceremony.",
-      "url": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html",
-      "source_name": "CNBC Top News",
+      "title": "The S&P 500 and most of its stocks are heading in opposite directions at a record pace. What investors should know.",
+      "summary": "Here are the S&P 500’s top gainers in market value this year and this quarter",
+      "url": "https://www.marketwatch.com/story/the-s-p-500-and-most-of-its-stocks-are-heading-in-opposite-directions-at-a-record-pace-what-investors-should-know-2a6c55a5?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-18T17:03:42Z",
-      "id": "mn004",
+      "timestamp": "2026-05-18T21:25:00Z",
+      "id": "mn002",
       "sector_tags": [
-        "Financials",
         "Technology"
       ],
-      "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+      "ticker_tags": [
+        "SPY"
+      ],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
     },
     {
-      "title": "8-K - Cottonwood Communities, Inc. (0001692951) (Filer)",
-      "summary": "Filed: 2026-05-18 AccNo: 0001692951-26-000097 Size: 132 KB Item 3.02: Unregistered Sales of Equity Securities",
-      "url": "https://www.sec.gov/Archives/edgar/data/1692951/000169295126000097/0001692951-26-000097-index.htm",
+      "title": "8-K - Our Bond, Inc. (0001756064) (Filer)",
+      "summary": "Filed: 2026-05-18 AccNo: 0001493152-26-024246 Size: 5 MB Item 7.01: Regulation FD Disclosure Item 9.01: Financial Statements and Exhibits",
+      "url": "https://www.sec.gov/Archives/edgar/data/1756064/000149315226024246/0001493152-26-024246-index.htm",
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
-      "timestamp": "2026-05-18T12:39:20Z",
-      "id": "mn005",
+      "timestamp": "2026-05-18T17:24:50Z",
+      "id": "mn003",
       "sector_tags": [
         "Macro"
       ],
@@ -78,18 +45,67 @@
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "5 money moves that made this 32-year-old dad a millionaire in just 9 years",
-      "summary": "A low starting salary, global pandemic, unaffordable housing market, graduate school and two kids didn’t stop Blake Edwards and his wife from becoming millionaires by their early 30s.",
-      "url": "https://www.marketwatch.com/story/5-money-moves-that-made-this-32-year-old-dad-a-millionaire-in-just-9-years-3725c0ed?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-18T16:13:00Z",
+      "title": "8-K - GSR V Acquisition Corp. (0002111762) (Filer)",
+      "summary": "Filed: 2026-05-18 AccNo: 0001213900-26-058555 Size: 2 MB Item 1.01: Entry into a Material Definitive Agreement Item 3.02: Unregistered Sales of Equity Securities Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers Item 5.03: Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year Item 8.01: Other Events Item 9.01: Financial Statements and Exhibits",
+      "url": "https://www.sec.gov/Archives/edgar/data/2111762/000121390026058555/0001213900-26-058555-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-05-18T17:18:33Z",
+      "id": "mn004",
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [
+        "AMZN"
+      ],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "8-K - Iron Dome Acquisition I Corp. (0002090441) (Filer)",
+      "summary": "Filed: 2026-05-18 AccNo: 0001213900-26-058549 Size: 1 MB Item 1.01: Entry into a Material Definitive Agreement Item 3.02: Unregistered Sales of Equity Securities Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers Item 5.03: Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year Item 8.01: Other Events Item 9.01: Financial Statements and Exhibits",
+      "url": "https://www.sec.gov/Archives/edgar/data/2090441/000121390026058549/0001213900-26-058549-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-05-18T17:15:59Z",
+      "id": "mn005",
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [
+        "AMZN"
+      ],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "8-K - Netcapital Inc. (0001414767) (Filer)",
+      "summary": "Filed: 2026-05-18 AccNo: 0001493152-26-024229 Size: 854 KB Item 1.01: Entry into a Material Definitive Agreement Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant Item 3.02: Unregistered Sales of Equity Securities Item 9.01: Financial Statements and Exhibits",
+      "url": "https://www.sec.gov/Archives/edgar/data/1414767/000149315226024229/0001493152-26-024229-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-05-18T17:14:53Z",
       "id": "mn006",
       "sector_tags": [
-        "Technology",
-        "Consumer"
+        "Financials"
       ],
       "ticker_tags": [],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "Nasdaq posts back-to-back losses as Micron's decline weighs down tech sector: Live updates",
+      "summary": "Declines in technology led the losses as traders monitored oil prices and bond yields while awaiting further developments with the conflict in the Middle East.",
+      "url": "https://www.cnbc.com/2026/05/17/stock-market-today-live-updates.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-18T20:29:07Z",
+      "id": "mn007",
+      "sector_tags": [
+        "Energy",
+        "Technology"
+      ],
+      "ticker_tags": [
+        "BAC",
+        "CL=F"
+      ],
       "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
@@ -98,8 +114,8 @@
       "url": "https://www.marketwatch.com/story/the-oil-market-is-reaching-a-tipping-point-that-could-create-problems-for-stocks-according-to-this-wall-street-legend-8e7f9d62?mod=mw_rss_topstories",
       "source_name": "MarketWatch",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-18T16:10:00Z",
-      "id": "mn007",
+      "timestamp": "2026-05-18T19:38:00Z",
+      "id": "mn008",
       "sector_tags": [
         "Energy",
         "Financials",
@@ -114,13 +130,13 @@
       "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
-      "title": "The Fed will have to raise interest rates in July to appease 'bond vigilantes,' Yardeni says",
-      "summary": "Sent to the Federal Reserve to lower interest rates, incoming Chair Kevin Warsh instead may have to push for higher levels.",
-      "url": "https://www.cnbc.com/2026/05/18/the-fed-will-have-to-raise-interest-rates-in-july-to-appease-bond-vigilantes-yardeni-says.html",
+      "title": "Kevin Warsh to be sworn in as Federal Reserve chair on Friday",
+      "summary": "Trump will swear in Kevin Warsh, his hand-picked choice to lead the Federal Reserve, during a White House ceremony.",
+      "url": "https://www.cnbc.com/2026/05/18/kevin-warsh-trump-federal-reserve-chair.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-18T16:08:35Z",
-      "id": "mn008",
+      "timestamp": "2026-05-18T17:03:42Z",
+      "id": "mn009",
       "sector_tags": [
         "Financials",
         "Technology"
@@ -129,34 +145,19 @@
       "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
-      "title": "The last century was great for U.S. stocks, but the next decade might be challenging, says investing chief",
-      "summary": "High valuations and narrow concentration could present challenges for the S&P 500 moving forward, one expert says.",
-      "url": "https://www.cnbc.com/2026/05/18/why-the-next-decade-might-be-challenging-for-us-stocks-investing-chief.html",
+      "title": "The Fed will have to raise interest rates in July to appease 'bond vigilantes,' Yardeni says",
+      "summary": "Sent to the Federal Reserve to lower interest rates, incoming Chair Kevin Warsh instead may have to push for higher levels.",
+      "url": "https://www.cnbc.com/2026/05/18/the-fed-will-have-to-raise-interest-rates-in-july-to-appease-bond-vigilantes-yardeni-says.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-18T15:00:02Z",
-      "id": "mn009",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [
-        "SPY"
-      ],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
-    },
-    {
-      "title": "Trump says he should've asked for 'more' of Intel when negotiating stake with CEO",
-      "summary": "The chipmaker's stock has soared since the U.S. equity deal in August gave the government 9.9% of the company.",
-      "url": "https://www.cnbc.com/2026/05/18/trump-stake-in-intel.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-18T12:26:40Z",
+      "timestamp": "2026-05-18T16:08:35Z",
       "id": "mn010",
       "sector_tags": [
+        "Financials",
         "Technology"
       ],
       "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
       "title": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair",

@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 8,
-      "primary_driver": "S&P 500, Nasdaq fall for a second day as Micron drops, traders eye oil and yields: Live updates",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 5,
+      "primary_driver": "Trump says he's postponing 'scheduled attack of Iran tomorrow' at Middle East leaders' request",
       "key_drivers": [
-        "S&P 500, Nasdaq fall for a second day as Micron drops, traders eye oil and yields: Live updates",
-        "Oil climbs as Trump warns the ‘clock is ticking’ on Iran, but there’s a bigger danger lurking on the horizon",
-        "Stock Markets Are Scared Of Renewed Oil Pressure - Dow Jones, Nasdaq And S&P 500 Intraday Levels",
-        "The oil market is reaching a ‘tipping point’ that could create problems for stocks, according to this Wall Street legend"
+        "Trump says he's postponing 'scheduled attack of Iran tomorrow' at Middle East leaders' request",
+        "Nasdaq posts back-to-back losses as Micron's decline weighs down tech sector: Live updates",
+        "The oil market is reaching a ‘tipping point’ that could create problems for stocks, according to this Wall Street legend",
+        "‘This is bad’: Strategists see European oil shortages within weeks as inventories are depleted"
       ],
       "key_tickers": [
         "XOM",
@@ -20,10 +20,10 @@
         "RIG"
       ],
       "trending_tickers": [
-        "SPY",
         "CL=F",
         "LLY",
-        "RIG"
+        "RIG",
+        "BAC"
       ]
     },
     {
@@ -31,12 +31,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Retail stocks are ailing on fears about the U.S. consumer. Will these earnings change that?",
+      "primary_driver": "Public Storage And JPMorgan Preferreds Pair Trade Idea",
       "key_drivers": [
-        "Retail stocks are ailing on fears about the U.S. consumer. Will these earnings change that?",
-        "Kevin Warsh to be sworn in as Federal Reserve chair on Friday",
-        "U.S. creates $1.7B 'lawfare' fund in exchange for Trump dropping $10B IRS suit",
-        "Surging Bond Yields And Potential Warsh Fed Test Could Be The Sword Of Damocles For Stocks"
+        "Public Storage And JPMorgan Preferreds Pair Trade Idea",
+        "White House adds generic drugs to direct-to-consumer TrumpRx site",
+        "8-K - Crescent Private Credit Income Corp (0001954360) (Filer)",
+        "8-K - Cartesian Growth Corp III (0002049662) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
+        "JPM",
         "LLY",
         "RIG",
-        "CL=F",
-        "GOOGL"
+        "CL=F"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
       "story_count": 15,
-      "primary_driver": "Elon Musk loses court battle against Sam Altman and OpenAI after 3-week trial",
+      "primary_driver": "The AI Buildout Is Causing Record Bond Issuances, Including In Canada",
       "key_drivers": [
-        "Elon Musk loses court battle against Sam Altman and OpenAI after 3-week trial",
-        "S&P 500, Nasdaq fall for a second day as Micron drops, traders eye oil and yields: Live updates",
-        "Retail stocks are ailing on fears about the U.S. consumer. Will these earnings change that?",
-        "Ford lands its first customer for energy business. Buy this pivot by the auto giant?"
+        "The AI Buildout Is Causing Record Bond Issuances, Including In Canada",
+        "Musk slams Altman trial verdict as a 'technicality,' vows to appeal",
+        "Palo Alto Networks hits a big milestone. Why cybersecurity stocks are so hot right now.",
+        "Public Storage And JPMorgan Preferreds Pair Trade Idea"
       ],
       "key_tickers": [
         "NVDA",
@@ -74,19 +74,19 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "SPY",
-        "LLY",
-        "BAC"
+        "RIG",
+        "BAC",
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "BitGo: Institutional Crypto Infrastructure At A Discount",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "BitGo: Institutional Crypto Infrastructure At A Discount"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -102,15 +102,15 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
       "story_count": 5,
-      "primary_driver": "Retail stocks are ailing on fears about the U.S. consumer. Will these earnings change that?",
+      "primary_driver": "Kentucky Republican Thomas Massie is Trump revenge tour's next target",
       "key_drivers": [
-        "Retail stocks are ailing on fears about the U.S. consumer. Will these earnings change that?",
-        "Lululemon hits back at its founder after months of attacks, saying he’s just jealous",
-        "Homebuilder sentiment improves on late spring surge in demand",
-        "Berkshire Hathaway has revamped its portfolio — Here's how the new stocks are trading"
+        "Kentucky Republican Thomas Massie is Trump revenge tour's next target",
+        "FDIS: Consumer Discretionary Dashboard For May",
+        "Berkshire Hathaway has revamped its portfolio — Here's how the new stocks are trading",
+        "Homebuilder sentiment improves on late spring surge in demand"
       ],
       "key_tickers": [
         "NKE",
@@ -121,6 +121,7 @@
       ],
       "trending_tickers": [
         "BAC",
+        "TGT",
         "GOOGL"
       ]
     },
@@ -128,11 +129,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Some people lose far more weight than others on GLP-1s like Wegovy. Here’s why.",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Some people lose far more weight than others on GLP-1s like Wegovy. Here’s why.",
-        "Weight-loss wars go global as Novo Nordisk bets big on its Wegovy pill"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -142,20 +142,21 @@
         "VRTX"
       ],
       "trending_tickers": [
+        "LLY",
         "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Seagate leads memory sell-off as CEO says it would 'take too long' to build new factories",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 10,
+      "primary_driver": "PAR Technology Corporation (PAR) Presents at J.P. Morgan 54th Annual Global Technology, Media and Co",
       "key_drivers": [
-        "Seagate leads memory sell-off as CEO says it would 'take too long' to build new factories",
-        "GoDaddy Inc. (GDDY) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Transcrip",
-        "8-K - ReposiTrak, Inc. (0000050471) (Filer)",
-        "Stocks making the biggest moves midday: Regeneron, Dominion, Mobileye, Viking and more"
+        "PAR Technology Corporation (PAR) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Confere",
+        "SpaceX: Pre-SpaceX-IPO Exposure Ideas, Particularly RONB",
+        "T-Mobile US, Inc. (TMUS) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Tran",
+        "Lamar Advertising Company (LAMR) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Confere"
       ],
       "key_tickers": [
         "TLT",
