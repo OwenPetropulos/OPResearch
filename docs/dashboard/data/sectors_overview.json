@@ -5,12 +5,12 @@
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 7,
-      "primary_driver": "Here are the stocks to buy — and avoid — to protect your portfolio against oil and yield shocks",
+      "primary_driver": "Exxon Mobil: Overvalued Despite Impressive Assets",
       "key_drivers": [
-        "Here are the stocks to buy — and avoid — to protect your portfolio against oil and yield shocks",
-        "Jim Cramer's top 10 things to watch in the stock market Tuesday",
-        "Oil prices edge lower as Trump postpones Iran strike, easing supply disruption fears",
-        "Japan, China lead foreign government retreat from U.S. Treasurys as Iran war fallout stokes currency fears"
+        "Exxon Mobil: Overvalued Despite Impressive Assets",
+        "Permian Resources: Better Business, But Smaller Margin Of Safety",
+        "Crude oil is going the long way around the world as countries scramble to plug Hormuz supply hole",
+        "Bessent urges G7 to help U.S. attack Iran's finances"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "FXY",
-        "OXY",
-        "LLY"
+        "XOM",
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 9,
-      "primary_driver": "Treasury yields rise with 30-year rate touching levels not seen since 2023",
+      "primary_driver": "Eagle Point Credit Company Inc 2026 Q1 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "Treasury yields rise with 30-year rate touching levels not seen since 2023",
-        "Bessent urges G7 to help U.S. attack Iran's finances",
-        "8-K - Federal Home Loan Bank of Atlanta (0001331465) (Filer)",
-        "JNK: Credit Spreads Shouldn't Continue To Fall"
+        "Eagle Point Credit Company Inc 2026 Q1 - Results - Earnings Call Presentation",
+        "Eagle Point Credit Company Inc (ECC) Q1 2026 Earnings Call Transcript",
+        "30-year Treasury yield tops 5.19%, highest since before the financial crisis",
+        "These stocks typically move the most on Nvidia's earnings. Some of the names may surprise you"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "CL=F"
+        "NVDA",
+        "LLY",
+        "SPY",
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
       "story_count": 14,
-      "primary_driver": "S&P 500 falls for third day as chip stocks continue to decline, high yields threaten bull market: Li",
+      "primary_driver": "Wall Street Lunch: Ex-OpenAI Researcher's Fund Shorts Nvidia, AI Chip Stocks",
       "key_drivers": [
-        "S&P 500 falls for third day as chip stocks continue to decline, high yields threaten bull market: Live updates",
-        "Here are the stocks to buy — and avoid — to protect your portfolio against oil and yield shocks",
-        "Nokia: A Bet On The AI Optics Bottleneck",
-        "Don’t worry about risk assets coming under pressure just yet, Deutsche Bank says"
+        "Wall Street Lunch: Ex-OpenAI Researcher's Fund Shorts Nvidia, AI Chip Stocks",
+        "Hesai Group (HSAI) Q1 2026 Earnings Call Transcript",
+        "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic",
+        "30-year Treasury yield tops 5.19%, highest since before the financial crisis"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,19 +73,19 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "SPY",
+        "NVDA",
         "CL=F",
-        "LLY"
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "An AI Infrastructure Sanity Check And Where Do We Go From Here",
+      "story_count": 1,
+      "primary_driver": "Oil prices edge lower as Trump postpones Iran strike, easing supply disruption fears",
       "key_drivers": [
-        "An AI Infrastructure Sanity Check And Where Do We Go From Here",
         "Oil prices edge lower as Trump postpones Iran strike, easing supply disruption fears"
       ],
       "key_tickers": [
@@ -100,10 +103,12 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did ",
+      "story_count": 4,
+      "primary_driver": "Trump flexes endorsement power for Ken Paxton after ousting Cassidy, targeting Massie",
       "key_drivers": [
-        "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did I do the right thing",
+        "Trump flexes endorsement power for Ken Paxton after ousting Cassidy, targeting Massie",
+        "Home Depot says its customers are healthy, but here’s where they are holding back",
+        "Is Nvidia spending its cash on the right things? Investors will soon get an update.",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -114,7 +119,9 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY",
+        "TGT",
+        "BAC",
+        "NVDA",
         "RIG"
       ]
     },
@@ -122,10 +129,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "Corvus Pharmaceuticals: The Market Is Pricing Atopic Dermatitis Success Too Early",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "Corvus Pharmaceuticals: The Market Is Pricing Atopic Dermatitis Success Too Early"
       ],
       "key_tickers": [
         "LLY",
@@ -141,15 +148,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 12,
-      "primary_driver": "Omada Health: A Great Company Without Pricing Power",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "Is RFK’s ‘carnivore diet’ healthy? Here’s what you need to know.",
       "key_drivers": [
-        "Omada Health: A Great Company Without Pricing Power",
-        "Kimco Realty: Why Preferred Stocks Are The 'Hidden Lemon' In The REIT Giant's Portfolio",
-        "Rocket Lab Is The Future, But Don't Buy The Stock",
-        "8-K - ORION ENERGY SYSTEMS, INC. (0001409375) (Filer)"
+        "Is RFK’s ‘carnivore diet’ healthy? Here’s what you need to know.",
+        "CDW Corporation (CDW) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Transcr",
+        "Baytex Energy: Some Catching Up Needed",
+        "Tectonic Therapeutics: Currently In A Catalyst Vacuum"
       ],
       "key_tickers": [
         "TLT",
@@ -159,9 +166,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "CL=F",
-        "FXY",
-        "OXY"
+        "GLD",
+        "DXY"
       ]
     }
   ]
