@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Trump says he's postponing 'scheduled attack of Iran tomorrow' at Middle East leaders' request",
+      "story_count": 7,
+      "primary_driver": "Here are the stocks to buy — and avoid — to protect your portfolio against oil and yield shocks",
       "key_drivers": [
-        "Trump says he's postponing 'scheduled attack of Iran tomorrow' at Middle East leaders' request",
-        "Nasdaq posts back-to-back losses as Micron's decline weighs down tech sector: Live updates",
-        "The oil market is reaching a ‘tipping point’ that could create problems for stocks, according to this Wall Street legend",
-        "‘This is bad’: Strategists see European oil shortages within weeks as inventories are depleted"
+        "Here are the stocks to buy — and avoid — to protect your portfolio against oil and yield shocks",
+        "Jim Cramer's top 10 things to watch in the stock market Tuesday",
+        "Oil prices edge lower as Trump postpones Iran strike, easing supply disruption fears",
+        "Japan, China lead foreign government retreat from U.S. Treasurys as Iran war fallout stokes currency fears"
       ],
       "key_tickers": [
         "XOM",
@@ -21,9 +21,9 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "LLY",
-        "RIG",
-        "BAC"
+        "FXY",
+        "OXY",
+        "LLY"
       ]
     },
     {
@@ -31,12 +31,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Public Storage And JPMorgan Preferreds Pair Trade Idea",
+      "primary_driver": "Treasury yields rise with 30-year rate touching levels not seen since 2023",
       "key_drivers": [
-        "Public Storage And JPMorgan Preferreds Pair Trade Idea",
-        "White House adds generic drugs to direct-to-consumer TrumpRx site",
-        "8-K - Crescent Private Credit Income Corp (0001954360) (Filer)",
-        "8-K - Cartesian Growth Corp III (0002049662) (Filer)"
+        "Treasury yields rise with 30-year rate touching levels not seen since 2023",
+        "Bessent urges G7 to help U.S. attack Iran's finances",
+        "8-K - Federal Home Loan Bank of Atlanta (0001331465) (Filer)",
+        "JNK: Credit Spreads Shouldn't Continue To Fall"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "LLY",
-        "RIG",
         "CL=F"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 15,
-      "primary_driver": "The AI Buildout Is Causing Record Bond Issuances, Including In Canada",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 14,
+      "primary_driver": "S&P 500 falls for third day as chip stocks continue to decline, high yields threaten bull market: Li",
       "key_drivers": [
-        "The AI Buildout Is Causing Record Bond Issuances, Including In Canada",
-        "Musk slams Altman trial verdict as a 'technicality,' vows to appeal",
-        "Palo Alto Networks hits a big milestone. Why cybersecurity stocks are so hot right now.",
-        "Public Storage And JPMorgan Preferreds Pair Trade Idea"
+        "S&P 500 falls for third day as chip stocks continue to decline, high yields threaten bull market: Live updates",
+        "Here are the stocks to buy — and avoid — to protect your portfolio against oil and yield shocks",
+        "Nokia: A Bet On The AI Optics Bottleneck",
+        "Don’t worry about risk assets coming under pressure just yet, Deutsche Bank says"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,20 +70,20 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "SPY",
         "CL=F",
-        "RIG",
-        "BAC",
-        "SPY"
+        "LLY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "An AI Infrastructure Sanity Check And Where Do We Go From Here",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "An AI Infrastructure Sanity Check And Where Do We Go From Here",
+        "Oil prices edge lower as Trump postpones Iran strike, easing supply disruption fears"
       ],
       "key_tickers": [
         "GE",
@@ -96,21 +93,18 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "CL=F"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Positive",
-      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 5,
-      "primary_driver": "Kentucky Republican Thomas Massie is Trump revenge tour's next target",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 2,
+      "primary_driver": "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did ",
       "key_drivers": [
-        "Kentucky Republican Thomas Massie is Trump revenge tour's next target",
-        "FDIS: Consumer Discretionary Dashboard For May",
-        "Berkshire Hathaway has revamped its portfolio — Here's how the new stocks are trading",
-        "Homebuilder sentiment improves on late spring surge in demand"
+        "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did I do the right thing",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -120,9 +114,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "BAC",
-        "TGT",
-        "GOOGL"
+        "LLY",
+        "RIG"
       ]
     },
     {
@@ -150,13 +143,13 @@
       "sector": "Macro",
       "sentiment": "Positive",
       "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 10,
-      "primary_driver": "PAR Technology Corporation (PAR) Presents at J.P. Morgan 54th Annual Global Technology, Media and Co",
+      "story_count": 12,
+      "primary_driver": "Omada Health: A Great Company Without Pricing Power",
       "key_drivers": [
-        "PAR Technology Corporation (PAR) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Confere",
-        "SpaceX: Pre-SpaceX-IPO Exposure Ideas, Particularly RONB",
-        "T-Mobile US, Inc. (TMUS) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Tran",
-        "Lamar Advertising Company (LAMR) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Confere"
+        "Omada Health: A Great Company Without Pricing Power",
+        "Kimco Realty: Why Preferred Stocks Are The 'Hidden Lemon' In The REIT Giant's Portfolio",
+        "Rocket Lab Is The Future, But Don't Buy The Stock",
+        "8-K - ORION ENERGY SYSTEMS, INC. (0001409375) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -166,10 +159,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "RIG",
-        "BAC",
-        "LLY",
-        "CL=F"
+        "CL=F",
+        "FXY",
+        "OXY"
       ]
     }
   ]
