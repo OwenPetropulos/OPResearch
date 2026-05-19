@@ -4,13 +4,12 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 7,
-      "primary_driver": "Exxon Mobil: Overvalued Despite Impressive Assets",
+      "story_count": 3,
+      "primary_driver": "Bessent urges G7 to help U.S. attack Iran's finances",
       "key_drivers": [
-        "Exxon Mobil: Overvalued Despite Impressive Assets",
-        "Permian Resources: Better Business, But Smaller Margin Of Safety",
-        "Crude oil is going the long way around the world as countries scramble to plug Hormuz supply hole",
-        "Bessent urges G7 to help U.S. attack Iran's finances"
+        "Bessent urges G7 to help U.S. attack Iran's finances",
+        "Japan, China lead foreign government retreat from U.S. Treasurys as Iran war fallout stokes currency fears",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +20,21 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "XOM",
         "LLY",
         "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 9,
-      "primary_driver": "Eagle Point Credit Company Inc 2026 Q1 - Results - Earnings Call Presentation",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 8,
+      "primary_driver": "Fed to hike? When traders see a rate increase coming",
       "key_drivers": [
-        "Eagle Point Credit Company Inc 2026 Q1 - Results - Earnings Call Presentation",
-        "Eagle Point Credit Company Inc (ECC) Q1 2026 Earnings Call Transcript",
-        "30-year Treasury yield tops 5.19%, highest since before the financial crisis",
-        "These stocks typically move the most on Nvidia's earnings. Some of the names may surprise you"
+        "Fed to hike? When traders see a rate increase coming",
+        "These charts offer a warning to the next generation — a new era of higher Treasury yields may be coming",
+        "8-K - BLACKSTONE MORTGAGE TRUST, INC. (0001061630) (Filer)",
+        "8-K - Zoomcar Holdings, Inc. (0001854275) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +44,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "NVDA",
-        "LLY",
-        "SPY",
         "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 14,
-      "primary_driver": "Wall Street Lunch: Ex-OpenAI Researcher's Fund Shorts Nvidia, AI Chip Stocks",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 12,
+      "primary_driver": "OpenAI announces new Guaranteed Capacity offering for customers to secure compute",
       "key_drivers": [
-        "Wall Street Lunch: Ex-OpenAI Researcher's Fund Shorts Nvidia, AI Chip Stocks",
-        "Hesai Group (HSAI) Q1 2026 Earnings Call Transcript",
-        "Google debuts new AI models, personal AI agents in effort to keep pace with OpenAI and Anthropic",
-        "30-year Treasury yield tops 5.19%, highest since before the financial crisis"
+        "OpenAI announces new Guaranteed Capacity offering for customers to secure compute",
+        "Here’s why Astera Labs’ stock just staged a big gain",
+        "Don't Mistake Profit Taking For A Regime Change: This Ain't Market Broadening",
+        "8-K - Zoomcar Holdings, Inc. (0001854275) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,20 +68,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "NVDA",
-        "CL=F",
-        "LLY",
-        "SPY"
+        "AMZN",
+        "RIG",
+        "TGT",
+        "LLY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Oil prices edge lower as Trump postpones Iran strike, easing supply disruption fears",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Oil prices edge lower as Trump postpones Iran strike, easing supply disruption fears"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -96,20 +91,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "CL=F"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Trump flexes endorsement power for Ken Paxton after ousting Cassidy, targeting Massie",
+      "story_count": 8,
+      "primary_driver": "Hexagon: Lowering My Target After Q1 2026 (Rating Downgrade)",
       "key_drivers": [
-        "Trump flexes endorsement power for Ken Paxton after ousting Cassidy, targeting Massie",
-        "Home Depot says its customers are healthy, but here’s where they are holding back",
-        "Is Nvidia spending its cash on the right things? Investors will soon get an update.",
-        "1st Look at Local Housing Markets in December"
+        "Hexagon: Lowering My Target After Q1 2026 (Rating Downgrade)",
+        "Trump's past tax returns get protection from IRS enforcement under 'lawfare' fund settlement",
+        "Home Depot says its sales are healthy, but here’s where customers are holding back",
+        "Ink Business Preferred vs. Capital One Venture Business: Which $95 annual fee business travel card is better?"
       ],
       "key_tickers": [
         "NKE",
@@ -120,9 +116,9 @@
       ],
       "trending_tickers": [
         "TGT",
+        "AMZN",
         "BAC",
-        "NVDA",
-        "RIG"
+        "COST"
       ]
     },
     {
@@ -130,9 +126,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Corvus Pharmaceuticals: The Market Is Pricing Atopic Dermatitis Success Too Early",
+      "primary_driver": "8-K - ONE Group Hospitality, Inc. (0001399520) (Filer)",
       "key_drivers": [
-        "Corvus Pharmaceuticals: The Market Is Pricing Atopic Dermatitis Success Too Early"
+        "8-K - ONE Group Hospitality, Inc. (0001399520) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -150,13 +146,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "Is RFK’s ‘carnivore diet’ healthy? Here’s what you need to know.",
+      "story_count": 12,
+      "primary_driver": "IRIDEX Corporation (IRIX) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "Is RFK’s ‘carnivore diet’ healthy? Here’s what you need to know.",
-        "CDW Corporation (CDW) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Transcr",
-        "Baytex Energy: Some Catching Up Needed",
-        "Tectonic Therapeutics: Currently In A Catalyst Vacuum"
+        "IRIDEX Corporation (IRIX) Q1 2026 Earnings Call Transcript",
+        "Axon Enterprise, Inc. (AXON) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference ",
+        "SoFi Technologies, Inc. (SOFI) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conferenc",
+        "Salesforce Q1 Preview: Negative Sentiment Overpowers, Shares Attractive"
       ],
       "key_tickers": [
         "TLT",
@@ -166,8 +162,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "CL=F"
       ]
     }
   ]
