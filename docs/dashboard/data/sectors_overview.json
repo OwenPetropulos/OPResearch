@@ -2,14 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Bessent urges G7 to help U.S. attack Iran's finances",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 7,
+      "primary_driver": "8-K - Pioneer Bancorp, Inc./MD (0001769663) (Filer)",
       "key_drivers": [
-        "Bessent urges G7 to help U.S. attack Iran's finances",
-        "Japan, China lead foreign government retreat from U.S. Treasurys as Iran war fallout stokes currency fears",
-        "Sunday Night Futures"
+        "8-K - Pioneer Bancorp, Inc./MD (0001769663) (Filer)",
+        "S&P 500 futures tick higher as oil falls and traders await Nvidia’s earnings: Live updates",
+        "Golar LNG Limited 2026 Q1 - Results - Earnings Call Presentation",
+        "Global oil prices drop below $108 a barrel after Trump reaffirms he would end the war in Iran ‘very quickly’; Hormuz see"
       ],
       "key_tickers": [
         "XOM",
@@ -19,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
+        "SPY",
         "CL=F",
-        "LLY",
-        "SPY"
+        "NVDA",
+        "LNG"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 8,
-      "primary_driver": "Fed to hike? When traders see a rate increase coming",
+      "story_count": 9,
+      "primary_driver": "Surging Fuel Costs Risk Creating New Split In The Eurozone",
       "key_drivers": [
-        "Fed to hike? When traders see a rate increase coming",
-        "These charts offer a warning to the next generation — a new era of higher Treasury yields may be coming",
-        "8-K - BLACKSTONE MORTGAGE TRUST, INC. (0001061630) (Filer)",
-        "8-K - Zoomcar Holdings, Inc. (0001854275) (Filer)"
+        "Surging Fuel Costs Risk Creating New Split In The Eurozone",
+        "Credo: This Untimely Reversal Is A Big Warning (Rating Downgrade)",
+        "Fanatics to launch first credit card as part of broader deal with American Express",
+        "Jeff Bezos says bottom half of earners should pay zero in income taxes"
       ],
       "key_tickers": [
         "JPM",
@@ -44,20 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC"
+        "COST",
+        "AMZN",
+        "NKE",
+        "CL=F"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 12,
-      "primary_driver": "OpenAI announces new Guaranteed Capacity offering for customers to secure compute",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 14,
+      "primary_driver": "Jeff Bezos says bottom half of earners should pay zero in income taxes",
       "key_drivers": [
-        "OpenAI announces new Guaranteed Capacity offering for customers to secure compute",
-        "Here’s why Astera Labs’ stock just staged a big gain",
-        "Don't Mistake Profit Taking For A Regime Change: This Ain't Market Broadening",
-        "8-K - Zoomcar Holdings, Inc. (0001854275) (Filer)"
+        "Jeff Bezos says bottom half of earners should pay zero in income taxes",
+        "Hyster-Yale: Stabilizing Bookings, But Recovery Risks Remain Elevated",
+        "S&P 500 futures tick higher as oil falls and traders await Nvidia’s earnings: Live updates",
+        "8-K - Lunai Bioworks Inc. (0001527728) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -68,9 +73,9 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "SPY",
         "AMZN",
-        "RIG",
-        "TGT",
+        "NVDA",
         "LLY"
       ]
     },
@@ -78,10 +83,11 @@
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "Hitchhiker Commodities: The Supply Chains Nobody Owns",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Hitchhiker Commodities: The Supply Chains Nobody Owns",
+        "Senate advances measure to end military action in Iran in rebuke to Trump"
       ],
       "key_tickers": [
         "GE",
@@ -99,13 +105,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Hexagon: Lowering My Target After Q1 2026 (Rating Downgrade)",
+      "story_count": 6,
+      "primary_driver": "Expedia Group, Inc. (EXPE) Discusses Evolution of Travel, Industry Resilience and Future Innovation ",
       "key_drivers": [
-        "Hexagon: Lowering My Target After Q1 2026 (Rating Downgrade)",
-        "Trump's past tax returns get protection from IRS enforcement under 'lawfare' fund settlement",
-        "Home Depot says its sales are healthy, but here’s where customers are holding back",
-        "Ink Business Preferred vs. Capital One Venture Business: Which $95 annual fee business travel card is better?"
+        "Expedia Group, Inc. (EXPE) Discusses Evolution of Travel, Industry Resilience and Future Innovation Transcript",
+        "Is gambling culture is taking over shopping? New crypto debit card lets you ‘buy now, pay maybe’",
+        "Stocks making the biggest moves premarket: Lowe's, Cava, Target & more",
+        "Target’s turnaround plan involves upscale baby gear and revamped shopping carts — and it’s starting to work"
       ],
       "key_tickers": [
         "NKE",
@@ -116,9 +122,7 @@
       ],
       "trending_tickers": [
         "TGT",
-        "AMZN",
-        "BAC",
-        "COST"
+        "NVO"
       ]
     },
     {
@@ -126,9 +130,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "8-K - ONE Group Hospitality, Inc. (0001399520) (Filer)",
+      "primary_driver": "8-K - Pursuit Attractions & Hospitality, Inc. (0000884219) (Filer)",
       "key_drivers": [
-        "8-K - ONE Group Hospitality, Inc. (0001399520) (Filer)"
+        "8-K - Pursuit Attractions & Hospitality, Inc. (0000884219) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -146,13 +150,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "IRIDEX Corporation (IRIX) Q1 2026 Earnings Call Transcript",
+      "story_count": 9,
+      "primary_driver": "Surging Fuel Costs Risk Creating New Split In The Eurozone",
       "key_drivers": [
-        "IRIDEX Corporation (IRIX) Q1 2026 Earnings Call Transcript",
-        "Axon Enterprise, Inc. (AXON) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference ",
-        "SoFi Technologies, Inc. (SOFI) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conferenc",
-        "Salesforce Q1 Preview: Negative Sentiment Overpowers, Shares Attractive"
+        "Surging Fuel Costs Risk Creating New Split In The Eurozone",
+        "College career path ‘over’ as skilled trade get 30% pay bump, recruitment giant says",
+        "3 ways the pros are trading, including how one manager is playing Japanese bonds",
+        "Marvell: I Still Like The Stock Ahead Of Earnings (Preview)"
       ],
       "key_tickers": [
         "TLT",
@@ -162,7 +166,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "CL=F"
+        "COST"
       ]
     }
   ]
