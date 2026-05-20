@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 6,
-      "primary_driver": "U.S. crude oil falls below $100 per barrel after Trump says Iran talks in final stages",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 4,
+      "primary_driver": "Investors are flocking to an offshore crypto platform for an early shot at trading the SpaceX IPO",
       "key_drivers": [
+        "Investors are flocking to an offshore crypto platform for an early shot at trading the SpaceX IPO",
+        "UAE says new pipeline that will bypass Strait of Hormuz is nearly 50% complete",
         "U.S. crude oil falls below $100 per barrel after Trump says Iran talks in final stages",
-        "Artificial intelligence was supposed to reduce prices. Instead AI is boosting inflation.",
-        "Golar LNG Limited (GLNG) Q1 2026 Earnings Call Transcript",
-        "Global oil prices drop below $105 a barrel, airline stocks surge on hopes the U.S.-Iran war will soon end"
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -21,7 +21,6 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "LNG",
         "LLY",
         "SPY"
       ]
@@ -31,12 +30,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Fed officials see rate hike ahead if inflation stays elevated, minutes show",
+      "primary_driver": "PSI: Momentum Created By AI Hinges On Diplomatic Efforts In Iran",
       "key_drivers": [
-        "Fed officials see rate hike ahead if inflation stays elevated, minutes show",
-        "8-K - FORTRESS CREDIT REALTY INCOME TRUST (0002026738) (Filer)",
-        "Fed minutes show increased chances of interest-rate hike",
-        "Minutes of the Federal Open Market Committee, April 28-29, 2026"
+        "PSI: Momentum Created By AI Hinges On Diplomatic Efforts In Iran",
+        "E.l.f. Beauty to walk back some tariff price increases amid high gas prices and consumer 'suffering'",
+        "Jan. 6 police officers sue Trump to block $1.8B 'lawfare' fund",
+        "8-K - cbdMD, Inc. (0001644903) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +45,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
-        "MS",
+        "BAC",
+        "AMZN",
+        "AMD",
         "LLY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "8-K - Singularity Future Technology Ltd. (0001422892) (Filer)",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 14,
+      "primary_driver": "Nvidia beats on revenue and guidance, adds $80 billion to buyback plan: Live updates",
       "key_drivers": [
-        "8-K - Singularity Future Technology Ltd. (0001422892) (Filer)",
-        "Something very unusual is happening with Nvidia options",
-        "Nvidia earnings live updates: The key numbers to watch for in the report",
-        "Artificial intelligence was supposed to reduce prices. Instead AI is boosting inflation."
+        "Nvidia beats on revenue and guidance, adds $80 billion to buyback plan: Live updates",
+        "Nvidia Trounces Records, Growth Accelerates",
+        "PSI: Momentum Created By AI Hinges On Diplomatic Efforts In Iran",
+        "Intuit plans to cut workforce by about 17% as tax software maker reckons with slowing growth"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,10 +72,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "CL=F",
         "NVDA",
-        "LLY",
-        "COST"
+        "BAC",
+        "AMZN",
+        "WMT"
       ]
     },
     {
@@ -104,12 +104,12 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 5,
-      "primary_driver": "House approves breakthrough housing bill in a win for investors",
+      "primary_driver": "‘It will not bring you happiness’: I have advice for your single, childless 62-year-old multimillion",
       "key_drivers": [
-        "House approves breakthrough housing bill in a win for investors",
-        "GameStop ups its stake in eBay after its buyout bid was rejected",
-        "Global oil prices drop below $105 a barrel, airline stocks surge on hopes the U.S.-Iran war will soon end",
-        "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did I do the right thing"
+        "‘It will not bring you happiness’: I have advice for your single, childless 62-year-old multimillionaire reader",
+        "Sinkhole shuts runway at LaGuardia Airport, delaying flights, Port Authority warns",
+        "TechTarget, Inc. (TTGT) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Trans",
+        "House approves breakthrough housing bill in a win for investors"
       ],
       "key_tickers": [
         "NKE",
@@ -119,9 +119,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "CL=F",
-        "LLY",
-        "RIG"
+        "WMT",
+        "TGT"
       ]
     },
     {
@@ -149,13 +148,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Fed officials see rate hike ahead if inflation stays elevated, minutes show",
+      "story_count": 10,
+      "primary_driver": "SpaceX's historic IPO plans: Billions in losses and Musk's massive ownership",
       "key_drivers": [
-        "Fed officials see rate hike ahead if inflation stays elevated, minutes show",
-        "Fed minutes show increased chances of interest-rate hike",
-        "Impax Asset Management Group Plc 2026 Q2 - Results - Earnings Call Presentation",
-        "Dr. Martens plc 2026 Q4 - Results - Earnings Call Presentation"
+        "SpaceX's historic IPO plans: Billions in losses and Musk's massive ownership",
+        "I was bought out of the family business for $160,000. My relatives each made $3 million when it sold. Was I cheated?",
+        "Surgical Science Sweden AB (publ) (SUSRF) Q1 2026 Earnings Call Transcript",
+        "Par Pacific: Not As Cheap, But Still Misunderstood"
       ],
       "key_tickers": [
         "TLT",
@@ -165,7 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "CL=F"
+        "BAC"
       ]
     }
   ]
