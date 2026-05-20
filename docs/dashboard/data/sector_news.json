@@ -1,75 +1,74 @@
 {
   "stories": [
     {
-      "title": "8-K - Pioneer Bancorp, Inc./MD (0001769663) (Filer)",
-      "summary": "Filed: 2026-05-20 AccNo: 0000943374-26-000201 Size: 161 KB Item 5.07: Submission of Matters to a Vote of Security Holders",
-      "url": "https://www.sec.gov/Archives/edgar/data/1769663/000094337426000201/0000943374-26-000201-index.htm",
+      "title": "8-K - Singularity Future Technology Ltd. (0001422892) (Filer)",
+      "summary": "Filed: 2026-05-20 AccNo: 0001213900-26-059436 Size: 191 KB Item 3.01: Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing",
+      "url": "https://www.sec.gov/Archives/edgar/data/1422892/000121390026059436/0001213900-26-059436-index.htm",
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
-      "timestamp": "2026-05-20T09:21:23Z",
+      "timestamp": "2026-05-20T14:08:11Z",
       "id": "sn001",
-      "sector": "Energy",
+      "sector": "Technology",
       "sector_tags": [
-        "Energy"
+        "Technology"
       ],
       "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
     },
     {
-      "title": "Surging Fuel Costs Risk Creating New Split In The Eurozone",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4907021-surging-fuel-costs-risk-creating-new-split-in-eurozone?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:20:00Z",
+      "title": "Fed officials see rate hike ahead if inflation stays elevated, minutes show",
+      "summary": "A majority of officials anticipated that interest rate increases would be necessary if the Iran war continued to aggravate inflation.",
+      "url": "https://www.cnbc.com/2026/05/20/fed-officials-see-rate-hike-ahead-if-inflation-stays-elevated-minutes-show.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T18:05:49Z",
       "id": "sn002",
       "sector": "Financials",
       "sector_tags": [
         "Financials",
         "Macro"
       ],
-      "ticker_tags": [
-        "COST"
-      ],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+      "ticker_tags": [],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
-      "title": "Credo: This Untimely Reversal Is A Big Warning (Rating Downgrade)",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4906936-credo-this-untimely-reversal-is-a-big-warning-rating-downgrade?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:20:00Z",
+      "title": "8-K - FORTRESS CREDIT REALTY INCOME TRUST (0002026738) (Filer)",
+      "summary": "Filed: 2026-05-20 AccNo: 0001193125-26-232321 Size: 330 KB Item 8.01: Other Events",
+      "url": "https://www.sec.gov/Archives/edgar/data/2026738/000119312526232321/0001193125-26-232321-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-05-20T14:04:21Z",
       "id": "sn003",
       "sector": "Financials",
       "sector_tags": [
         "Financials"
       ],
       "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
     },
     {
-      "title": "Fanatics to launch first credit card as part of broader deal with American Express",
-      "summary": "Fanatics is planning to put a credit card in the wallets of sports fans, allowing them to earn rewards to get team merch, trading cards and collectibles.",
-      "url": "https://www.cnbc.com/2026/05/20/fanatics-credit-card-deal-american-express.html",
-      "source_name": "CNBC Top News",
+      "title": "Fed minutes show increased chances of interest-rate hike",
+      "summary": "Fed officials see a growing risk that inflation would stay higher for longer.",
+      "url": "https://www.marketwatch.com/story/fed-minutes-show-increased-chances-of-interest-rate-hike-e808453b?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-20T13:19:57Z",
+      "timestamp": "2026-05-20T18:04:00Z",
       "id": "sn004",
       "sector": "Financials",
       "sector_tags": [
-        "Financials"
+        "Financials",
+        "Macro"
       ],
       "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
     },
     {
-      "title": "College career path ‘over’ as skilled trade get 30% pay bump, recruitment giant says",
-      "summary": "\"I would say you can make a good career and good money in skilled trade. That's definitely a career track,\" CEO of world's largest recruitment firm told CNBC.",
-      "url": "https://www.cnbc.com/2026/05/20/ai-skills-randstad-college-trades-jobs-pay-bump.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T13:18:50Z",
+      "title": "Impax Asset Management Group Plc 2026 Q2 - Results - Earnings Call Presentation",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4907183-impax-asset-management-group-plc-2026-q2-results-earnings-call-presentation?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-05-20T14:02:47Z",
       "id": "sn005",
       "sector": "Macro",
       "sector_tags": [
@@ -79,45 +78,42 @@
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "Jeff Bezos says bottom half of earners should pay zero in income taxes",
-      "summary": "Amazon executive chairman Jeff Bezos on Wednesday called for zero federal income taxes on the bottom half of earners.",
-      "url": "https://www.cnbc.com/2026/05/20/jeff-bezos-income-taxes.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T13:17:55Z",
-      "id": "sn006",
-      "sector": "Financials",
-      "sector_tags": [
-        "Financials",
-        "Technology"
-      ],
-      "ticker_tags": [
-        "AMZN"
-      ],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "Hyster-Yale: Stabilizing Bookings, But Recovery Risks Remain Elevated",
+      "title": "Dr. Martens plc 2026 Q4 - Results - Earnings Call Presentation",
       "summary": "",
-      "url": "https://seekingalpha.com/article/4906988-hyster-yale-stabilizing-bookings-but-recovery-risks-remain-elevated?source=feed_all_articles",
+      "url": "https://seekingalpha.com/article/4907181-dr-martens-plc-2026-q4-results-earnings-call-presentation?source=feed_all_articles",
       "source_name": "Seeking Alpha",
       "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:17:11Z",
-      "id": "sn007",
-      "sector": "Technology",
+      "timestamp": "2026-05-20T14:01:39Z",
+      "id": "sn006",
+      "sector": "Macro",
       "sector_tags": [
-        "Technology"
+        "Macro"
       ],
       "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "3 ways the pros are trading, including how one manager is playing Japanese bonds",
+      "title": "Booking Holdings Inc. (BKNG) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Transcript",
       "summary": "",
-      "url": "https://www.cnbc.com/2026/05/20/bonds-china-ai-japan-debt-investors.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T13:16:25Z",
+      "url": "https://seekingalpha.com/article/4907143-booking-holdings-inc-bkng-presents-at-j-p-morgan-54th-annual-global-technology-media-and?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-05-20T14:00:58Z",
+      "id": "sn007",
+      "sector": "Macro",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "Evogene Ltd. (EVGN) Q1 2026 Earnings Call Transcript",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4907071-evogene-ltd-evgn-q1-2026-earnings-call-transcript?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-05-20T14:00:56Z",
       "id": "sn008",
       "sector": "Macro",
       "sector_tags": [
@@ -127,31 +123,27 @@
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "S&P 500 futures tick higher as oil falls and traders await Nvidia’s earnings: Live updates",
-      "summary": "Chipmaker and AI darling Nvidia will report first-quarter earnings after Wednesday's closing bell.",
-      "url": "https://www.cnbc.com/2026/05/19/stock-market-today-live-updates.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T13:16:11Z",
-      "id": "sn009",
-      "sector": "Energy",
-      "sector_tags": [
-        "Energy",
-        "Technology"
-      ],
-      "ticker_tags": [
-        "NVDA",
-        "SPY"
-      ],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
-      "title": "Marvell: I Still Like The Stock Ahead Of Earnings (Preview)",
+      "title": "Workiva Inc. (WK) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Transcript",
       "summary": "",
-      "url": "https://seekingalpha.com/article/4906987-marvell-i-still-like-the-stock-ahead-of-earnings-preview?source=feed_all_articles",
+      "url": "https://seekingalpha.com/article/4907096-workiva-inc-wk-presents-at-j-p-morgan-54th-annual-global-technology-media-and-communications?source=feed_all_articles",
       "source_name": "Seeking Alpha",
       "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:15:44Z",
+      "timestamp": "2026-05-20T14:00:55Z",
+      "id": "sn009",
+      "sector": "Macro",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "8-K - ALTISOURCE PORTFOLIO SOLUTIONS S.A. (0001462418) (Filer)",
+      "summary": "Filed: 2026-05-20 AccNo: 0001462418-26-000036 Size: 230 KB Item 5.07: Submission of Matters to a Vote of Security Holders",
+      "url": "https://www.sec.gov/Archives/edgar/data/1462418/000146241826000036/0001462418-26-000036-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-05-20T14:00:41Z",
       "id": "sn010",
       "sector": "Macro",
       "sector_tags": [
@@ -161,42 +153,42 @@
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "8-K - Lunai Bioworks Inc. (0001527728) (Filer)",
-      "summary": "Filed: 2026-05-20 AccNo: 0001731122-26-000759 Size: 206 KB Item 8.01: Other Events Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/1527728/000173112226000759/0001731122-26-000759-index.htm",
+      "title": "8-K - MARKEL GROUP INC. (0001096343) (Filer)",
+      "summary": "Filed: 2026-05-20 AccNo: 0001096343-26-000046 Size: 2 MB Item 7.01: Regulation FD Disclosure Item 9.01: Financial Statements and Exhibits",
+      "url": "https://www.sec.gov/Archives/edgar/data/1096343/000109634326000046/0001096343-26-000046-index.htm",
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
-      "timestamp": "2026-05-20T09:15:29Z",
+      "timestamp": "2026-05-20T14:00:25Z",
       "id": "sn011",
-      "sector": "Technology",
+      "sector": "Macro",
       "sector_tags": [
-        "Technology"
+        "Macro"
       ],
       "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "8-K - Envirotech Vehicles, Inc. (0001563568) (Filer)",
-      "summary": "Filed: 2026-05-20 AccNo: 0001437749-26-017874 Size: 1 MB Item 1.01: Entry into a Material Definitive Agreement Item 5.01: Changes in Control of Registrant Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers Item 8.01: Other Events Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/1563568/000143774926017874/0001437749-26-017874-index.htm",
+      "title": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
+      "summary": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260520a.htm",
+      "source_name": "Federal Reserve",
+      "source_type": "Macro Data",
+      "timestamp": "2026-05-20T18:00:00Z",
+      "id": "sn012",
+      "sector": "Financials",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+    },
+    {
+      "title": "8-K - Fortress Net Lease REIT (0001966394) (Filer)",
+      "summary": "Filed: 2026-05-20 AccNo: 0001193125-26-232299 Size: 303 KB Item 8.01: Other Events",
+      "url": "https://www.sec.gov/Archives/edgar/data/1966394/000119312526232299/0001193125-26-232299-index.htm",
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
-      "timestamp": "2026-05-20T09:15:16Z",
-      "id": "sn012",
-      "sector": "Technology",
-      "sector_tags": [
-        "Technology"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
-      "title": "Brookfield Asset Management's Price Dip Is A Rare Gift",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4906904-brookfield-asset-management-stock-price-dip-rare-gift?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:15:04Z",
+      "timestamp": "2026-05-20T13:57:01Z",
       "id": "sn013",
       "sector": "Macro",
       "sector_tags": [
@@ -206,164 +198,98 @@
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "MLPs Are Not Overpriced",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4906510-mlps-are-not-overpriced?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:15:00Z",
+      "title": "Trump's face doesn't belong on U.S. passport, senators tell Rubio",
+      "summary": "The State Department announced a special edition U.S. passport that will feature President Donald Trump's likeness.",
+      "url": "https://www.cnbc.com/2026/05/20/trump-passports-congress-rubio.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:56:39Z",
       "id": "sn014",
-      "sector": "Macro",
+      "sector": "Industrials",
       "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "James Hardie Q4: Hold On To Your Position, But I Wouldn't Add More For Now",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4906986-james-hardie-q4-hold-on-to-your-position-but-i-wouldnt-add-more-for-now?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:14:53Z",
-      "id": "sn015",
-      "sector": "Macro",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "8-K - TJX COMPANIES INC /DE/ (0000109198) (Filer)",
-      "summary": "Filed: 2026-05-20 AccNo: 0000109198-26-000023 Size: 350 KB Item 2.02: Results of Operations and Financial Condition Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000023/0000109198-26-000023-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-05-20T09:12:27Z",
-      "id": "sn016",
-      "sector": "Macro",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Eos Energy: Energy Storage Growing Pains",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4906985-eos-energy-energy-storage-growing-pains?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:11:54Z",
-      "id": "sn017",
-      "sector": "Technology",
-      "sector_tags": [
-        "Technology"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
-      "title": "Stellantis CEO Antonio Filosa is about to unveil his plan to turn the company around as the automaker's stock lags",
-      "summary": "Shares of Stellantis are off nearly 30% since Antonio Filosa, a veteran who climbed through the company ranks, was named CEO nearly a year ago.",
-      "url": "https://www.cnbc.com/2026/05/20/stellantis-stock-stla-capital-markets-day-antonio-filosa.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T13:10:58Z",
-      "id": "sn018",
-      "sector": "Macro",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Expedia Group, Inc. (EXPE) Discusses Evolution of Travel, Industry Resilience and Future Innovation Transcript",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4906797-expedia-group-inc-expe-discusses-evolution-of-travel-industry-resilience-and-future?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:10:56Z",
-      "id": "sn019",
-      "sector": "Consumer",
-      "sector_tags": [
-        "Consumer"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Hitchhiker Commodities: The Supply Chains Nobody Owns",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4907010-hitchhiker-commodities-supply-chains-nobody-owns?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:10:00Z",
-      "id": "sn020",
-      "sector": "Technology",
-      "sector_tags": [
-        "Technology",
         "Industrials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
-      "title": "8-K - Ellington Credit Co (0001560672) (Filer)",
-      "summary": "Filed: 2026-05-20 AccNo: 0001628280-26-036741 Size: 374 KB Item 2.02: Results of Operations and Financial Condition Item 7.01: Regulation FD Disclosure Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/1560672/000162828026036741/0001628280-26-036741-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-05-20T09:07:06Z",
-      "id": "sn021",
-      "sector": "Financials",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
-    },
-    {
-      "title": "Sixth Street Specialty Lending: Disappointed But Holding On",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4906983-sixth-street-specialty-lending-disappointed-but-holding-on?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:06:29Z",
-      "id": "sn022",
-      "sector": "Financials",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
-    },
-    {
-      "title": "Iran threatens to extend conflict ‘beyond the region’ if U.S. and Israel resume attacks",
-      "summary": "Iran's Revolutionary Guard on Wednesday threatened to extend the Middle East conflict \"beyond the region\" if the U.S. and Israel resume attacks against Tehran.",
-      "url": "https://www.cnbc.com/2026/05/20/iran-war-us-israel-middle-east.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T13:01:49Z",
-      "id": "sn023",
-      "sector": "Technology",
-      "sector_tags": [
-        "Technology"
       ],
       "ticker_tags": [],
       "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
-      "title": "Golar LNG Limited 2026 Q1 - Results - Earnings Call Presentation",
+      "title": "Something very unusual is happening with Nvidia options",
+      "summary": "Ahead of earnings, NVDA's short-dated calls are trading at a premium to puts.",
+      "url": "https://www.cnbc.com/2026/05/20/something-very-unusual-is-happening-with-nvidia-options.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:54:56Z",
+      "id": "sn015",
+      "sector": "Technology",
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [
+        "NVDA"
+      ],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "U.S. crude oil falls below $100 per barrel after Trump says Iran talks in final stages",
+      "summary": "Trump told reporters that the administration was in the \"final stages\" of negotiations with Iran, according to a pool report.",
+      "url": "https://www.cnbc.com/2026/05/20/oil-price-today-iran-war-strait-hormuz-trump.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:53:02Z",
+      "id": "sn016",
+      "sector": "Energy",
+      "sector_tags": [
+        "Energy"
+      ],
+      "ticker_tags": [
+        "CL=F"
+      ],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+    },
+    {
+      "title": "Nvidia earnings live updates: The key numbers to watch for in the report",
+      "summary": "Nvidia is reporting its first-quarter results after the market closes. The conference call with analysts is scheduled for 5 p.m. ET.",
+      "url": "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:52:40Z",
+      "id": "sn017",
+      "sector": "Technology",
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [
+        "NVDA"
+      ],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "Artificial intelligence was supposed to reduce prices. Instead AI is boosting inflation.",
+      "summary": "The upsurge in U.S. inflation, reaching a three-year high, has been fueled by rising oil prices and the residual effects of the Trump tariffs. But another thing is adding to the problem: the boom in artificial intelligence.",
+      "url": "https://www.marketwatch.com/story/artificial-intelligence-was-supposed-to-reduce-prices-instead-ai-is-boosting-inflation-d7dbec01?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:51:00Z",
+      "id": "sn018",
+      "sector": "Energy",
+      "sector_tags": [
+        "Energy",
+        "Technology",
+        "Macro"
+      ],
+      "ticker_tags": [
+        "CL=F"
+      ],
+      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
+    },
+    {
+      "title": "Golar LNG Limited (GLNG) Q1 2026 Earnings Call Transcript",
       "summary": "",
-      "url": "https://seekingalpha.com/article/4907008-golar-lng-limited-2026-q1-results-earnings-call-presentation?source=feed_all_articles",
+      "url": "https://seekingalpha.com/article/4907031-golar-lng-limited-glng-q1-2026-earnings-call-transcript?source=feed_all_articles",
       "source_name": "Seeking Alpha",
       "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:01:16Z",
-      "id": "sn024",
+      "timestamp": "2026-05-20T13:50:58Z",
+      "id": "sn019",
       "sector": "Energy",
       "sector_tags": [
         "Energy"
@@ -374,13 +300,47 @@
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "Is gambling culture is taking over shopping? New crypto debit card lets you ‘buy now, pay maybe’",
-      "summary": "Critics say new payment model shows gambling culture has hijacked everyday spending",
-      "url": "https://www.marketwatch.com/story/buy-now-pay-maybe-this-new-crypto-card-brings-the-casino-to-the-checkout-line-093fbe57?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
+      "title": "Cheap AI could derail OpenAI and Anthropic's IPOs",
+      "summary": "Chinese AI labs are matching American frontier capability at a fraction of the cost.",
+      "url": "https://www.cnbc.com/2026/05/20/cheap-ai-could-derail-openai-and-anthropics-ipos.html",
+      "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-20T13:01:00Z",
-      "id": "sn025",
+      "timestamp": "2026-05-20T17:47:46Z",
+      "id": "sn020",
+      "sector": "Technology",
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [
+        "COST"
+      ],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "Zuckerberg says 'success isn't a given' in memo to employees amid Meta layoffs",
+      "summary": "Meta on Wednesday commenced its latest round of layoffs affecting about 10% of the company's workforce, equating to roughly 8,000 jobs.",
+      "url": "https://www.cnbc.com/2026/05/20/meta-layoffs-zuckerberg-says-success-isnt-a-given-in-memo.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:43:11Z",
+      "id": "sn021",
+      "sector": "Technology",
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [
+        "META"
+      ],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "House approves breakthrough housing bill in a win for investors",
+      "summary": "The U.S. House approved an updated housing affordability bill after removing industry-opposed requirements on selling build-to-rent homes.",
+      "url": "https://www.cnbc.com/2026/05/20/congress-investors-private-equity-housing-bill.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:35:51Z",
+      "id": "sn022",
       "sector": "Consumer",
       "sector_tags": [
         "Consumer"
@@ -389,27 +349,82 @@
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "8-K - TOMI Environmental Solutions, Inc. (0000314227) (Filer)",
-      "summary": "Filed: 2026-05-20 AccNo: 0001654954-26-005160 Size: 134 KB Item 3.01: Notice of Delisting or Failure to Satisfy a Continued Listing Rule or Standard; Transfer of Listing",
-      "url": "https://www.sec.gov/Archives/edgar/data/314227/000165495426005160/0001654954-26-005160-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-05-20T09:00:39Z",
-      "id": "sn026",
+      "title": "OpenAI to confidentially file for IPO as soon as Friday: Source",
+      "summary": "OpenAI is working with banks including Goldman Sachs and Morgan Stanley.",
+      "url": "https://www.cnbc.com/2026/05/20/openai-ipo-filing.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:35:14Z",
+      "id": "sn023",
+      "sector": "Financials",
+      "sector_tags": [
+        "Financials",
+        "Technology"
+      ],
+      "ticker_tags": [
+        "GS",
+        "MS",
+        "LLY"
+      ],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "GameStop ups its stake in eBay after its buyout bid was rejected",
+      "summary": "eBay may have shot down GameStop’s $56 billion buyout offer this month, but the videogame retailer continues to show interest in the online auction platform.",
+      "url": "https://www.marketwatch.com/story/gamestop-appears-no-closer-to-taking-over-ebay-it-upped-its-stake-in-the-auction-site-anyway-e8b2d2df?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:34:00Z",
+      "id": "sn024",
       "sector": "Technology",
       "sector_tags": [
-        "Technology"
+        "Technology",
+        "Consumer"
       ],
       "ticker_tags": [],
       "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
     },
     {
-      "title": "8-K - Newton Golf Company, Inc. (0001934245) (Filer)",
-      "summary": "Filed: 2026-05-20 AccNo: 0001493152-26-024539 Size: 202 KB Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers",
-      "url": "https://www.sec.gov/Archives/edgar/data/1934245/000149315226024539/0001493152-26-024539-index.htm",
+      "title": "Global oil prices drop below $105 a barrel, airline stocks surge on hopes the U.S.-Iran war will soon end",
+      "summary": "Oil futures were extending their declines on Wednesday after President Donald Trump suggested that a deal with Iran was close, raising hopes for a resolution to the months-long stalemate in the Middle East.",
+      "url": "https://www.marketwatch.com/story/oil-prices-decline-after-trump-reaffirmed-he-would-end-the-war-in-iran-very-quickly-f5148dd4?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:30:00Z",
+      "id": "sn025",
+      "sector": "Energy",
+      "sector_tags": [
+        "Energy",
+        "Technology",
+        "Consumer"
+      ],
+      "ticker_tags": [
+        "CL=F"
+      ],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+    },
+    {
+      "title": "8-K - Stone Point Credit Income Fund (0002031283) (Filer)",
+      "summary": "Filed: 2026-05-20 AccNo: 0001104659-26-064406 Size: 182 KB Item 3.02: Unregistered Sales of Equity Securities",
+      "url": "https://www.sec.gov/Archives/edgar/data/2031283/000110465926064406/0001104659-26-064406-index.htm",
       "source_name": "SEC EDGAR",
       "source_type": "Filing / IR",
-      "timestamp": "2026-05-20T09:00:16Z",
+      "timestamp": "2026-05-20T13:26:23Z",
+      "id": "sn026",
+      "sector": "Financials",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
+    },
+    {
+      "title": "WEBTOON Entertainment Inc. (WBTN) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Transcript",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4907122-webtoon-entertainment-inc-wbtn-presents-at-j-p-morgan-54th-annual-global-technology-media-and?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-05-20T13:21:02Z",
       "id": "sn027",
       "sector": "Technology",
       "sector_tags": [
@@ -419,166 +434,82 @@
       "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
     },
     {
-      "title": "Credit Card Delinquencies Skyrocket As Consumers Feel A Financial Strain",
+      "title": "Check Point Software Technologies Ltd. (CHKP) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Transcript",
       "summary": "",
-      "url": "https://seekingalpha.com/article/4906892-credit-card-delinquencies-skyrocket-as-consumers-feel-a-financial-strain?source=feed_all_articles",
+      "url": "https://seekingalpha.com/article/4907023-check-point-software-technologies-ltd-chkp-presents-at-j-p-morgan-54th-annual-global?source=feed_all_articles",
       "source_name": "Seeking Alpha",
       "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T09:00:00Z",
+      "timestamp": "2026-05-20T13:11:02Z",
       "id": "sn028",
-      "sector": "Financials",
+      "sector": "Technology",
       "sector_tags": [
-        "Financials",
         "Technology"
       ],
       "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
-      "title": "Global oil prices drop below $108 a barrel after Trump reaffirms he would end the war in Iran ‘very quickly’; Hormuz sees increased tanker traffic",
-      "summary": "Oil futures were sliding on Wednesday following comments from President Trump that the war in Iran would be ended “very quickly.”",
-      "url": "https://www.marketwatch.com/story/oil-prices-decline-after-trump-reaffirmed-he-would-end-the-war-in-iran-very-quickly-f5148dd4?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T12:58:00Z",
-      "id": "sn029",
-      "sector": "Energy",
-      "sector_tags": [
-        "Energy",
-        "Financials"
-      ],
-      "ticker_tags": [
-        "NKE",
-        "CL=F"
-      ],
       "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
-      "title": "‘Even better than tech.’ A scramble into this sector is coming, warns veteran wealth manager.",
-      "summary": "Ted Oakley of Oxbow Advisors says investors need more energy sector exposure, and his company owns everything from drillers to producers.",
-      "url": "https://www.marketwatch.com/story/even-better-than-tech-a-scramble-into-this-sector-is-coming-warns-veteran-wealth-manager-e6594815?mod=mw_rss_topstories",
+      "title": "Carlyle Credit Income Fund (CCIF) Q2 2026 Earnings Call Transcript",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4907101-carlyle-credit-income-fund-ccif-q2-2026-earnings-call-transcript?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-05-20T13:11:00Z",
+      "id": "sn029",
+      "sector": "Financials",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
+    },
+    {
+      "title": "This real estate stock is setting up for a move higher despite the rise in interest rates, charts show",
+      "summary": "Frank Cappelleri takes a look at the real estate sector.",
+      "url": "https://www.cnbc.com/2026/05/20/this-real-estate-stock-is-setting-up-for-a-move-higher-charts-show.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-05-20T17:02:47Z",
+      "id": "sn030",
+      "sector": "Financials",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did I do the right thing?",
+      "summary": "“He lived very frugally and maxed out his 401(k)s.”",
+      "url": "https://www.marketwatch.com/story/he-didnt-really-pay-attention-i-told-my-friend-he-left-millions-of-dollars-on-the-table-in-retirement-was-i-right-099bf5bb?mod=mw_rss_topstories",
       "source_name": "MarketWatch",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-20T12:54:00Z",
-      "id": "sn030",
+      "timestamp": "2026-05-20T15:49:00Z",
+      "id": "sn031",
+      "sector": "Consumer",
+      "sector_tags": [
+        "Consumer"
+      ],
+      "ticker_tags": [
+        "LLY",
+        "RIG"
+      ],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "8-K - RESERVE PETROLEUM CO (0000083350) (Filer)",
+      "summary": "Filed: 2026-05-20 AccNo: 0000083350-26-000011 Size: 153 KB Item 5.07: Submission of Matters to a Vote of Security Holders Item 8.01: Other Events",
+      "url": "https://www.sec.gov/Archives/edgar/data/83350/000008335026000011/0000083350-26-000011-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-05-20T10:58:04Z",
+      "id": "sn032",
       "sector": "Energy",
       "sector_tags": [
         "Energy"
       ],
       "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
-    },
-    {
-      "title": "The Fed Is Not Going To Raise Interest Rates",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4906972-the-fed-is-not-going-to-raise-interest-rates?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-20T08:51:36Z",
-      "id": "sn031",
-      "sector": "Financials",
-      "sector_tags": [
-        "Financials",
-        "Technology"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "Buckle up for $120 oil changes. Why car care is about to get more expensive.",
-      "summary": "Drivers are in a jam. But skipping and delaying maintenance may mean bigger repairs later.",
-      "url": "https://www.marketwatch.com/story/buckle-up-for-120-oil-changes-why-car-care-is-about-to-get-more-expensive-c542615c?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T12:47:00Z",
-      "id": "sn032",
-      "sector": "Energy",
-      "sector_tags": [
-        "Energy",
-        "Technology"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
-      "title": "8-K - Pursuit Attractions & Hospitality, Inc. (0000884219) (Filer)",
-      "summary": "Filed: 2026-05-20 AccNo: 0001193125-26-231798 Size: 190 KB Item 8.01: Other Events",
-      "url": "https://www.sec.gov/Archives/edgar/data/884219/000119312526231798/0001193125-26-231798-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-05-20T08:29:43Z",
-      "id": "sn033",
-      "sector": "Healthcare",
-      "sector_tags": [
-        "Healthcare"
-      ],
-      "ticker_tags": [],
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Stocks making the biggest moves premarket: Lowe's, Cava, Target & more",
-      "summary": "These are the stocks posting the largest moves premarket.",
-      "url": "https://www.cnbc.com/2026/05/20/stocks-making-the-biggest-moves-premarket-low-cava-tgt.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T11:39:24Z",
-      "id": "sn034",
-      "sector": "Consumer",
-      "sector_tags": [
-        "Consumer"
-      ],
-      "ticker_tags": [
-        "TGT"
-      ],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Target’s turnaround plan involves upscale baby gear and revamped shopping carts — and it’s starting to work",
-      "summary": "Target just topped earnings expectations and boosted its outlook.",
-      "url": "https://www.marketwatch.com/story/targets-turnaround-involves-upscale-baby-gear-and-revamped-shopping-carts-and-its-starting-to-pay-off-eda9ba67?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T10:56:00Z",
-      "id": "sn035",
-      "sector": "Consumer",
-      "sector_tags": [
-        "Consumer"
-      ],
-      "ticker_tags": [
-        "NVO",
-        "TGT"
-      ],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Breakthrough agreement in housing bill gives investors wins",
-      "summary": "The U.S. House is set to approve an updated housing affordability bill after removing industry-opposed requirements on selling build-to-rent homes.",
-      "url": "https://www.cnbc.com/2026/05/20/congress-investors-private-equity-housing-bill.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-20T10:30:01Z",
-      "id": "sn036",
-      "sector": "Consumer",
-      "sector_tags": [
-        "Consumer"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Senate advances measure to end military action in Iran in rebuke to Trump",
-      "summary": "The war with Iran has now blown past the 60-day requirement under the War Powers Act for the president to seek the authorization of Congress.",
-      "url": "https://www.cnbc.com/2026/05/19/senate-advances-measure-to-end-military-action-in-iran-in-rebuke-to-trump.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-05-19T22:57:28Z",
-      "id": "sn037",
-      "sector": "Industrials",
-      "sector_tags": [
-        "Industrials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
       "title": "Sunday Night Futures",
@@ -587,7 +518,7 @@
       "source_name": "Calculated Risk",
       "source_type": "Niche / Blog",
       "timestamp": "",
-      "id": "sn038",
+      "id": "sn033",
       "sector": "Energy",
       "sector_tags": [
         "Energy",
@@ -607,7 +538,7 @@
       "source_name": "Calculated Risk",
       "source_type": "Niche / Blog",
       "timestamp": "",
-      "id": "sn039",
+      "id": "sn034",
       "sector": "Consumer",
       "sector_tags": [
         "Consumer"

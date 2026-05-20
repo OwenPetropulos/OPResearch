@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Negative",
       "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 7,
-      "primary_driver": "8-K - Pioneer Bancorp, Inc./MD (0001769663) (Filer)",
+      "story_count": 6,
+      "primary_driver": "U.S. crude oil falls below $100 per barrel after Trump says Iran talks in final stages",
       "key_drivers": [
-        "8-K - Pioneer Bancorp, Inc./MD (0001769663) (Filer)",
-        "S&P 500 futures tick higher as oil falls and traders await Nvidia’s earnings: Live updates",
-        "Golar LNG Limited 2026 Q1 - Results - Earnings Call Presentation",
-        "Global oil prices drop below $108 a barrel after Trump reaffirms he would end the war in Iran ‘very quickly’; Hormuz see"
+        "U.S. crude oil falls below $100 per barrel after Trump says Iran talks in final stages",
+        "Artificial intelligence was supposed to reduce prices. Instead AI is boosting inflation.",
+        "Golar LNG Limited (GLNG) Q1 2026 Earnings Call Transcript",
+        "Global oil prices drop below $105 a barrel, airline stocks surge on hopes the U.S.-Iran war will soon end"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "SPY",
         "CL=F",
-        "NVDA",
-        "LNG"
+        "LNG",
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 9,
-      "primary_driver": "Surging Fuel Costs Risk Creating New Split In The Eurozone",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "Fed officials see rate hike ahead if inflation stays elevated, minutes show",
       "key_drivers": [
-        "Surging Fuel Costs Risk Creating New Split In The Eurozone",
-        "Credo: This Untimely Reversal Is A Big Warning (Rating Downgrade)",
-        "Fanatics to launch first credit card as part of broader deal with American Express",
-        "Jeff Bezos says bottom half of earners should pay zero in income taxes"
+        "Fed officials see rate hike ahead if inflation stays elevated, minutes show",
+        "8-K - FORTRESS CREDIT REALTY INCOME TRUST (0002026738) (Filer)",
+        "Fed minutes show increased chances of interest-rate hike",
+        "Minutes of the Federal Open Market Committee, April 28-29, 2026"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "COST",
-        "AMZN",
-        "NKE",
-        "CL=F"
+        "GS",
+        "MS",
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 14,
-      "primary_driver": "Jeff Bezos says bottom half of earners should pay zero in income taxes",
+      "story_count": 12,
+      "primary_driver": "8-K - Singularity Future Technology Ltd. (0001422892) (Filer)",
       "key_drivers": [
-        "Jeff Bezos says bottom half of earners should pay zero in income taxes",
-        "Hyster-Yale: Stabilizing Bookings, But Recovery Risks Remain Elevated",
-        "S&P 500 futures tick higher as oil falls and traders await Nvidia’s earnings: Live updates",
-        "8-K - Lunai Bioworks Inc. (0001527728) (Filer)"
+        "8-K - Singularity Future Technology Ltd. (0001422892) (Filer)",
+        "Something very unusual is happening with Nvidia options",
+        "Nvidia earnings live updates: The key numbers to watch for in the report",
+        "Artificial intelligence was supposed to reduce prices. Instead AI is boosting inflation."
       ],
       "key_tickers": [
         "NVDA",
@@ -73,21 +72,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "SPY",
-        "AMZN",
+        "CL=F",
         "NVDA",
-        "LLY"
+        "LLY",
+        "COST"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Hitchhiker Commodities: The Supply Chains Nobody Owns",
+      "story_count": 1,
+      "primary_driver": "Trump's face doesn't belong on U.S. passport, senators tell Rubio",
       "key_drivers": [
-        "Hitchhiker Commodities: The Supply Chains Nobody Owns",
-        "Senate advances measure to end military action in Iran in rebuke to Trump"
+        "Trump's face doesn't belong on U.S. passport, senators tell Rubio"
       ],
       "key_tickers": [
         "GE",
@@ -105,13 +103,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Expedia Group, Inc. (EXPE) Discusses Evolution of Travel, Industry Resilience and Future Innovation ",
+      "story_count": 5,
+      "primary_driver": "House approves breakthrough housing bill in a win for investors",
       "key_drivers": [
-        "Expedia Group, Inc. (EXPE) Discusses Evolution of Travel, Industry Resilience and Future Innovation Transcript",
-        "Is gambling culture is taking over shopping? New crypto debit card lets you ‘buy now, pay maybe’",
-        "Stocks making the biggest moves premarket: Lowe's, Cava, Target & more",
-        "Target’s turnaround plan involves upscale baby gear and revamped shopping carts — and it’s starting to work"
+        "House approves breakthrough housing bill in a win for investors",
+        "GameStop ups its stake in eBay after its buyout bid was rejected",
+        "Global oil prices drop below $105 a barrel, airline stocks surge on hopes the U.S.-Iran war will soon end",
+        "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did I do the right thing"
       ],
       "key_tickers": [
         "NKE",
@@ -121,18 +119,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "NVO"
+        "CL=F",
+        "LLY",
+        "RIG"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "8-K - Pursuit Attractions & Hospitality, Inc. (0000884219) (Filer)",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "8-K - Pursuit Attractions & Hospitality, Inc. (0000884219) (Filer)"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -150,13 +149,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "Surging Fuel Costs Risk Creating New Split In The Eurozone",
+      "story_count": 11,
+      "primary_driver": "Fed officials see rate hike ahead if inflation stays elevated, minutes show",
       "key_drivers": [
-        "Surging Fuel Costs Risk Creating New Split In The Eurozone",
-        "College career path ‘over’ as skilled trade get 30% pay bump, recruitment giant says",
-        "3 ways the pros are trading, including how one manager is playing Japanese bonds",
-        "Marvell: I Still Like The Stock Ahead Of Earnings (Preview)"
+        "Fed officials see rate hike ahead if inflation stays elevated, minutes show",
+        "Fed minutes show increased chances of interest-rate hike",
+        "Impax Asset Management Group Plc 2026 Q2 - Results - Earnings Call Presentation",
+        "Dr. Martens plc 2026 Q4 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -166,7 +165,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "COST"
+        "CL=F"
       ]
     }
   ]
