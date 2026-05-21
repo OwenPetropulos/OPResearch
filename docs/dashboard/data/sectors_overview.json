@@ -4,13 +4,11 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Oil prices pull back as investors hope for U.S.-Iran deal",
+      "story_count": 2,
+      "primary_driver": "Oil prices fall as investors hope for U.S.-Iran deal",
       "key_drivers": [
-        "Oil prices pull back as investors hope for U.S.-Iran deal",
-        "S&P 500 is little changed as oil rally loses steam, Nvidia declines after earnings: Live updates",
-        "WTI Technical Analysis - The Deal Is Still Quite Unsure, Crude Oil Back Above $100",
-        "Oil market could enter ‘red zone’ by July as stocks dwindle ahead of summer travel season, IEA chief says"
+        "Oil prices fall as investors hope for U.S.-Iran deal",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -21,7 +19,6 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "BAC",
         "LLY",
         "SPY"
       ]
@@ -31,12 +28,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "The bond market just flipped the script on investors — Wall Street is acting like nothing’s wrong",
+      "primary_driver": "Stock futures rise slightly as S&P 500 looks toward another winning week: Live updates",
       "key_drivers": [
-        "The bond market just flipped the script on investors — Wall Street is acting like nothing’s wrong",
-        "8-K - Federal Home Loan Bank of San Francisco (0001316944) (Filer)",
-        "8-K - Federal Home Loan Bank of Cincinnati (0001326771) (Filer)",
-        "This Warren Buffett classic stock is a great buy right now that will compound for years, Bank of America says"
+        "Stock futures rise slightly as S&P 500 looks toward another winning week: Live updates",
+        "8-K - NKGen Biotech, Inc. (0001845459) (Filer)",
+        "8-K - SharonAI Holdings Inc. (0002068385) (Filer)",
+        "Prediction markets are fueling a high-stakes brawl between states and federal regulators"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +43,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC",
-        "RIG",
-        "AMZN"
+        "SPY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 13,
-      "primary_driver": "Spotify soars 15% after announcing AI music deal with UMG, guidance",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 12,
+      "primary_driver": "‘It will not bring you happiness’: I have advice for your single, childless 62-year-old multimillion",
       "key_drivers": [
-        "Spotify soars 15% after announcing AI music deal with UMG, guidance",
-        "8-K - Digimarc Parent, Inc. (0002119322) (Filer)",
-        "Nvidia Confirmed The 'ChatGPT Moment' For The Entire Economy",
-        "S&P 500 is little changed as oil rally loses steam, Nvidia declines after earnings: Live updates"
+        "‘It will not bring you happiness’: I have advice for your single, childless 62-year-old multimillionaire reader",
+        "Workday jumps 14% as it bumps up margin forecast on AI strength",
+        "If Advanced Drainage Systems Keeps Getting Cheaper, An Upgrade Could Be In Store",
+        "8-K - KOHLS Corp (0000885639) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,21 +67,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
-        "NVDA",
+        "WMT",
         "LLY",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Stocks making the biggest moves midday: Rigetti Computing, Deere, Bloom Energy, Spotify & more",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Stocks making the biggest moves midday: Rigetti Computing, Deere, Bloom Energy, Spotify & more",
-        "AG Blanche meets with GOP senators on Trump's DOJ fund; Tillis calls it 'stupid'"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -96,20 +90,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "RIG"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "CORRECTION: Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2027",
+      "sentiment": "Negative",
+      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 7,
+      "primary_driver": "lululemon: North American Sales Slump And A Stale Product Line Spell Trouble For Shares",
       "key_drivers": [
-        "CORRECTION: Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2027",
-        "lululemon: Might Regret Not Buying At These Prices (Earnings Preview)",
+        "lululemon: North American Sales Slump And A Stale Product Line Spell Trouble For Shares",
+        "‘It will not bring you happiness’: I have advice for your single, childless 62-year-old multimillionaire reader",
         "People are putting less gas in their tanks as high prices crimp budgets, Walmart says",
-        "Walmart Inc. (WMT) Q1 2027 Earnings Call Transcript"
+        "Local TV faces financial pinch as political ad spending increasingly moves online"
       ],
       "key_tickers": [
         "NKE",
@@ -120,18 +115,18 @@
       ],
       "trending_tickers": [
         "WMT",
-        "TGT",
-        "TIP"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Eli Lilly says next-generation weight loss drug clears crucial obesity trial",
+      "story_count": 2,
+      "primary_driver": "8-K - Zentalis Pharmaceuticals, Inc. (0001725160) (Filer)",
       "key_drivers": [
-        "Eli Lilly says next-generation weight loss drug clears crucial obesity trial"
+        "8-K - Zentalis Pharmaceuticals, Inc. (0001725160) (Filer)",
+        "8-K - NKGen Biotech, Inc. (0001845459) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -141,20 +136,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "CORRECTION: Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2027",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 10,
+      "primary_driver": "McConnell calls DOJ Trump fund 'utterly stupid, morally wrong' after Blanche meeting",
       "key_drivers": [
-        "CORRECTION: Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2027",
-        "Super Micro Computer: Back To Accounting Basics",
-        "ICG plc (ICGUF) Q4 2026 Earnings Call Transcript",
-        "Dow Jones, Nasdaq And S&P 500 Intraday Levels - Stock Markets Stall, Too Early For The Deal?"
+        "McConnell calls DOJ Trump fund 'utterly stupid, morally wrong' after Blanche meeting",
+        "SpaceX readies 12th test flight of massive Starship rocket as IPO looms",
+        "2-time NASCAR champion Kyle Busch has died at 41, NASCAR says",
+        "K33 AB (publ) 2026 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -164,9 +160,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "TGT",
-        "BAC",
-        "SPY"
+        "LLY",
+        "TGT"
       ]
     }
   ]
