@@ -5,11 +5,11 @@
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "Investors are flocking to an offshore crypto platform for an early shot at trading the SpaceX IPO",
+      "primary_driver": "Oil prices jump more than 3% after Iran supreme leader says uranium must remain in country",
       "key_drivers": [
-        "Investors are flocking to an offshore crypto platform for an early shot at trading the SpaceX IPO",
-        "UAE says new pipeline that will bypass Strait of Hormuz is nearly 50% complete",
-        "U.S. crude oil falls below $100 per barrel after Trump says Iran talks in final stages",
+        "Oil prices jump more than 3% after Iran supreme leader says uranium must remain in country",
+        "Artificial intelligence has Americans worried about jobs. Now there’s a new AI worry.",
+        "Oil market could enter ‘red zone’ by July as stocks dwindle ahead of summer travel season, IEA chief says",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -30,12 +30,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "PSI: Momentum Created By AI Hinges On Diplomatic Efforts In Iran",
+      "primary_driver": "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
       "key_drivers": [
-        "PSI: Momentum Created By AI Hinges On Diplomatic Efforts In Iran",
-        "E.l.f. Beauty to walk back some tariff price increases amid high gas prices and consumer 'suffering'",
-        "Jan. 6 police officers sue Trump to block $1.8B 'lawfare' fund",
-        "8-K - cbdMD, Inc. (0001644903) (Filer)"
+        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
+        "Why a ‘meaningful’ selloff for stocks is needed to bring down bond yields",
+        "8-K - Federal Home Loan Bank of Pittsburgh (0001330399) (Filer)",
+        "Your bond portfolio is facing a ‘termite’ infestation far worse than Jamie Dimon’s ‘cockroaches’"
       ],
       "key_tickers": [
         "JPM",
@@ -45,23 +45,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC",
+        "JPM",
+        "NVDA",
         "AMZN",
-        "AMD",
-        "LLY"
+        "META"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 14,
-      "primary_driver": "Nvidia beats on revenue and guidance, adds $80 billion to buyback plan: Live updates",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 16,
+      "primary_driver": "Why Nvidia's massive earnings report isn't driving the market higher on Thursday",
       "key_drivers": [
-        "Nvidia beats on revenue and guidance, adds $80 billion to buyback plan: Live updates",
-        "Nvidia Trounces Records, Growth Accelerates",
-        "PSI: Momentum Created By AI Hinges On Diplomatic Efforts In Iran",
-        "Intuit plans to cut workforce by about 17% as tax software maker reckons with slowing growth"
+        "Why Nvidia's massive earnings report isn't driving the market higher on Thursday",
+        "NVIDIA Q1: No China In The Guide, 75% Margins, And A Tougher Bull Case",
+        "Ouster: The 'Perception Stack' Critical To Physical AI",
+        "8-K - BayFirst Financial Corp. (0001649739) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,19 +73,20 @@
       ],
       "trending_tickers": [
         "NVDA",
-        "BAC",
-        "AMZN",
-        "WMT"
+        "CL=F",
+        "JPM",
+        "GOOGL"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Neutral",
-      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Trump's face doesn't belong on U.S. passport, senators tell Rubio",
+      "sentiment": "Negative",
+      "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 2,
+      "primary_driver": "8-K - OLD DOMINION FREIGHT LINE, INC. (0000878927) (Filer)",
       "key_drivers": [
-        "Trump's face doesn't belong on U.S. passport, senators tell Rubio"
+        "8-K - OLD DOMINION FREIGHT LINE, INC. (0000878927) (Filer)",
+        "8-K - ARRAY DIGITAL INFRASTRUCTURE, INC. (0000821130) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -104,12 +105,12 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 5,
-      "primary_driver": "‘It will not bring you happiness’: I have advice for your single, childless 62-year-old multimillion",
+      "primary_driver": "Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2028",
       "key_drivers": [
-        "‘It will not bring you happiness’: I have advice for your single, childless 62-year-old multimillionaire reader",
-        "Sinkhole shuts runway at LaGuardia Airport, delaying flights, Port Authority warns",
-        "TechTarget, Inc. (TTGT) Presents at J.P. Morgan 54th Annual Global Technology, Media and Communications Conference Trans",
-        "House approves breakthrough housing bill in a win for investors"
+        "Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2028",
+        "Equity Residential and AvalonBay to merge in mega U.S. real estate deal",
+        "Oil market could enter ‘red zone’ by July as stocks dwindle ahead of summer travel season, IEA chief says",
+        "Walmart sees slowing sales growth and warns of a profit miss, in contrast to rival Target"
       ],
       "key_tickers": [
         "NKE",
@@ -119,18 +120,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "WMT",
-        "TGT"
+        "TGT",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "Eli Lilly says next-generation weight loss drug clears crucial obesity trial",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "Eli Lilly says next-generation weight loss drug clears crucial obesity trial",
+        "There’s a ‘powerful’ new weight-loss drug. A new study shows it produced 28% weight loss."
       ],
       "key_tickers": [
         "LLY",
@@ -140,21 +142,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "LLY"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
       "story_count": 10,
-      "primary_driver": "SpaceX's historic IPO plans: Billions in losses and Musk's massive ownership",
+      "primary_driver": "8-K - NexPoint Capital, Inc. (0001588272) (Filer)",
       "key_drivers": [
-        "SpaceX's historic IPO plans: Billions in losses and Musk's massive ownership",
-        "I was bought out of the family business for $160,000. My relatives each made $3 million when it sold. Was I cheated?",
-        "Surgical Science Sweden AB (publ) (SUSRF) Q1 2026 Earnings Call Transcript",
-        "Par Pacific: Not As Cheap, But Still Misunderstood"
+        "8-K - NexPoint Capital, Inc. (0001588272) (Filer)",
+        "Why Gilead Sciences Is Now A Hold (Rating Upgrade)",
+        "Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2028",
+        "ACM Research: Path To $4 Billion Is Now Visible"
       ],
       "key_tickers": [
         "TLT",
@@ -164,7 +165,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC"
+        "TGT",
+        "CL=F"
       ]
     }
   ]
