@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Oil prices jump more than 3% after Iran supreme leader says uranium must remain in country",
+      "story_count": 5,
+      "primary_driver": "Oil prices pull back as investors hope for U.S.-Iran deal",
       "key_drivers": [
-        "Oil prices jump more than 3% after Iran supreme leader says uranium must remain in country",
-        "Artificial intelligence has Americans worried about jobs. Now there’s a new AI worry.",
-        "Oil market could enter ‘red zone’ by July as stocks dwindle ahead of summer travel season, IEA chief says",
-        "Sunday Night Futures"
+        "Oil prices pull back as investors hope for U.S.-Iran deal",
+        "S&P 500 is little changed as oil rally loses steam, Nvidia declines after earnings: Live updates",
+        "WTI Technical Analysis - The Deal Is Still Quite Unsure, Crude Oil Back Above $100",
+        "Oil market could enter ‘red zone’ by July as stocks dwindle ahead of summer travel season, IEA chief says"
       ],
       "key_tickers": [
         "XOM",
@@ -21,6 +21,7 @@
       ],
       "trending_tickers": [
         "CL=F",
+        "BAC",
         "LLY",
         "SPY"
       ]
@@ -30,12 +31,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
+      "primary_driver": "The bond market just flipped the script on investors — Wall Street is acting like nothing’s wrong",
       "key_drivers": [
-        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
-        "Why a ‘meaningful’ selloff for stocks is needed to bring down bond yields",
-        "8-K - Federal Home Loan Bank of Pittsburgh (0001330399) (Filer)",
-        "Your bond portfolio is facing a ‘termite’ infestation far worse than Jamie Dimon’s ‘cockroaches’"
+        "The bond market just flipped the script on investors — Wall Street is acting like nothing’s wrong",
+        "8-K - Federal Home Loan Bank of San Francisco (0001316944) (Filer)",
+        "8-K - Federal Home Loan Bank of Cincinnati (0001326771) (Filer)",
+        "This Warren Buffett classic stock is a great buy right now that will compound for years, Bank of America says"
       ],
       "key_tickers": [
         "JPM",
@@ -45,23 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "NVDA",
-        "AMZN",
-        "META"
+        "BAC",
+        "RIG",
+        "AMZN"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 16,
-      "primary_driver": "Why Nvidia's massive earnings report isn't driving the market higher on Thursday",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 13,
+      "primary_driver": "Spotify soars 15% after announcing AI music deal with UMG, guidance",
       "key_drivers": [
-        "Why Nvidia's massive earnings report isn't driving the market higher on Thursday",
-        "NVIDIA Q1: No China In The Guide, 75% Margins, And A Tougher Bull Case",
-        "Ouster: The 'Perception Stack' Critical To Physical AI",
-        "8-K - BayFirst Financial Corp. (0001649739) (Filer)"
+        "Spotify soars 15% after announcing AI music deal with UMG, guidance",
+        "8-K - Digimarc Parent, Inc. (0002119322) (Filer)",
+        "Nvidia Confirmed The 'ChatGPT Moment' For The Entire Economy",
+        "S&P 500 is little changed as oil rally loses steam, Nvidia declines after earnings: Live updates"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,21 +72,21 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "AMZN",
         "NVDA",
-        "CL=F",
-        "JPM",
-        "GOOGL"
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Negative",
-      "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "8-K - OLD DOMINION FREIGHT LINE, INC. (0000878927) (Filer)",
+      "primary_driver": "Stocks making the biggest moves midday: Rigetti Computing, Deere, Bloom Energy, Spotify & more",
       "key_drivers": [
-        "8-K - OLD DOMINION FREIGHT LINE, INC. (0000878927) (Filer)",
-        "8-K - ARRAY DIGITAL INFRASTRUCTURE, INC. (0000821130) (Filer)"
+        "Stocks making the biggest moves midday: Rigetti Computing, Deere, Bloom Energy, Spotify & more",
+        "AG Blanche meets with GOP senators on Trump's DOJ fund; Tillis calls it 'stupid'"
       ],
       "key_tickers": [
         "GE",
@@ -96,21 +96,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "RIG"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2028",
+      "story_count": 8,
+      "primary_driver": "CORRECTION: Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2027",
       "key_drivers": [
-        "Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2028",
-        "Equity Residential and AvalonBay to merge in mega U.S. real estate deal",
-        "Oil market could enter ‘red zone’ by July as stocks dwindle ahead of summer travel season, IEA chief says",
-        "Walmart sees slowing sales growth and warns of a profit miss, in contrast to rival Target"
+        "CORRECTION: Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2027",
+        "lululemon: Might Regret Not Buying At These Prices (Earnings Preview)",
+        "People are putting less gas in their tanks as high prices crimp budgets, Walmart says",
+        "Walmart Inc. (WMT) Q1 2027 Earnings Call Transcript"
       ],
       "key_tickers": [
         "NKE",
@@ -120,19 +119,19 @@
         "ONON"
       ],
       "trending_tickers": [
+        "WMT",
         "TGT",
-        "WMT"
+        "TIP"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
+      "story_count": 1,
       "primary_driver": "Eli Lilly says next-generation weight loss drug clears crucial obesity trial",
       "key_drivers": [
-        "Eli Lilly says next-generation weight loss drug clears crucial obesity trial",
-        "There’s a ‘powerful’ new weight-loss drug. A new study shows it produced 28% weight loss."
+        "Eli Lilly says next-generation weight loss drug clears crucial obesity trial"
       ],
       "key_tickers": [
         "LLY",
@@ -147,15 +146,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 10,
-      "primary_driver": "8-K - NexPoint Capital, Inc. (0001588272) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "CORRECTION: Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2027",
       "key_drivers": [
-        "8-K - NexPoint Capital, Inc. (0001588272) (Filer)",
-        "Why Gilead Sciences Is Now A Hold (Rating Upgrade)",
-        "Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2028",
-        "ACM Research: Path To $4 Billion Is Now Visible"
+        "CORRECTION: Stellantis unveils $70 billion turnaround plan, targets positive cash flow by 2027",
+        "Super Micro Computer: Back To Accounting Basics",
+        "ICG plc (ICGUF) Q4 2026 Earnings Call Transcript",
+        "Dow Jones, Nasdaq And S&P 500 Intraday Levels - Stock Markets Stall, Too Early For The Deal?"
       ],
       "key_tickers": [
         "TLT",
@@ -166,7 +165,8 @@
       ],
       "trending_tickers": [
         "TGT",
-        "CL=F"
+        "BAC",
+        "SPY"
       ]
     }
   ]
