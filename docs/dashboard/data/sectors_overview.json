@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "Are Equity Markets Underpricing The Oil Risk?",
+      "primary_driver": "8-K - Koil Energy Solutions, Inc. (0001110607) (Filer)",
       "key_drivers": [
-        "Are Equity Markets Underpricing The Oil Risk?",
-        "BJ’s Wholesale’s earnings show that cheap gas matters for people",
-        "Consumer sentiment hits fresh record low in May as Iran war fuels inflation worries",
-        "The new-Fed-chair ‘curse’ and $100-plus oil are already testing Kevin Warsh — and the stock market"
+        "8-K - Koil Energy Solutions, Inc. (0001110607) (Filer)",
+        "Official Data Confirms Consumer Oil Demand Is Falling As Refined Stockpiles Remain Ample",
+        "The oil shock meets the Fed ‘curse’: What Kevin Warsh means for your portfolio",
+        "11 'Safer' Dividend Dogs Lead 20 May Barron's 2026 Oil And Blue Chips"
       ],
       "key_tickers": [
         "XOM",
@@ -21,21 +21,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "CL=F",
-        "SPY"
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "Dow jumps 500 points to record as Wall Street heads for winning week, Treasury yields ease: Live upd",
+      "story_count": 9,
+      "primary_driver": "8-K - CNL Strategic Residential Credit, Inc. (0002066337) (Filer)",
       "key_drivers": [
-        "Dow jumps 500 points to record as Wall Street heads for winning week, Treasury yields ease: Live updates",
-        "This bond strategy can protect your portfolio even if interest rates go up",
-        "Trump tells Warsh ‘to be totally independent’ as Fed chair. ‘Don’t look at me,’ president says.",
-        "BJ’s Wholesale’s earnings show that cheap gas matters for people"
+        "8-K - CNL Strategic Residential Credit, Inc. (0002066337) (Filer)",
+        "8-K - Polar Power, Inc. (0001622345) (Filer)",
+        "New lawsuits against Trump's DOJ 'lawfare' fund",
+        "Worried about private credit? Stay away from this even riskier investment right now."
       ],
       "key_tickers": [
         "JPM",
@@ -45,22 +44,23 @@
         "KRE"
       ],
       "trending_tickers": [
+        "AMZN",
+        "RIG",
         "LLY",
-        "JPM",
         "SPY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 15,
-      "primary_driver": "8-K - HOME BANCORP, INC. (0001436425) (Filer)",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 18,
+      "primary_driver": "Tulsi Gabbard resigning as Trump's intelligence chief",
       "key_drivers": [
-        "8-K - HOME BANCORP, INC. (0001436425) (Filer)",
-        "Trump tells Warsh ‘to be totally independent’ as Fed chair. ‘Don’t look at me,’ president says.",
-        "Canadian National Railway Company (CNR:CA) Presents at Wolfe Research 19th Annual Global Transportation & Industrials Co",
-        "Trump said he'd 'remember' companies that didn't apply for tariff refunds. Many of them are anyway"
+        "Tulsi Gabbard resigning as Trump's intelligence chief",
+        "International Consolidated Airlines: Strong Q1 Execution, Fuel Protection, And Shareholder Returns Support Further Upsid",
+        "Dexcom: A Medical Platform Play Gaining From AI, Not Disrupted By It",
+        "8-K - Polar Power, Inc. (0001622345) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,20 +71,18 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
-        "BAC",
-        "WMT",
-        "JPM"
+        "AMZN",
+        "RIG"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "PMI And The Yield Curve Correlation",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "PMI And The Yield Curve Correlation"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -102,13 +100,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Trump said he'd 'remember' companies that didn't apply for tariff refunds. Many of them are anyway",
+      "story_count": 4,
+      "primary_driver": "International Consolidated Airlines: Strong Q1 Execution, Fuel Protection, And Shareholder Returns S",
       "key_drivers": [
-        "Trump said he'd 'remember' companies that didn't apply for tariff refunds. Many of them are anyway",
-        "8-K - Travel & Leisure Co. (0001361658) (Filer)",
-        "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did I do the right thing",
-        "Ross, TJX, and Walmart reveal how the real engine of the U.S. economy is doing"
+        "International Consolidated Airlines: Strong Q1 Execution, Fuel Protection, And Shareholder Returns Support Further Upsid",
+        "Judge tosses Kilmar Abrego Garcia charges, calls Trump administration prosecution 'vindictive'",
+        "Two top Walmart executives leave company under new CEO John Furner",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -118,22 +116,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "WMT",
-        "BAC",
-        "LLY",
-        "RIG"
+        "TGT",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
+      "story_count": 2,
       "primary_driver": "Tulsi Gabbard resigning as Trump's intelligence chief",
       "key_drivers": [
         "Tulsi Gabbard resigning as Trump's intelligence chief",
-        "Bicara Therapeutics Inc. (BCAX) Discusses New Clinical Data on Investigational Therapy for HPV Negative Head and Neck Ca",
-        "Eli Lilly says next-generation weight loss drug clears crucial obesity trial"
+        "Trump skipping wedding of son Donald Jr. to Bettina Anderson"
       ],
       "key_tickers": [
         "LLY",
@@ -143,20 +138,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 11,
-      "primary_driver": "Broadcom: Be Fearful When Others Are Hyped (Ratings Downgrade)",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "Nippon Sanso Holdings Corporation 2026 Q4 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "Broadcom: Be Fearful When Others Are Hyped (Ratings Downgrade)",
-        "8-K - First Guaranty Bancshares, Inc. (0001408534) (Filer)",
-        "Compagnie Générale des Établissements Michelin Société en commandite par actions (MGDDY) Shareholder/Analyst Call Transc",
-        "Why The Market Is Completely Misreading Micron's Latest Run"
+        "Nippon Sanso Holdings Corporation 2026 Q4 - Results - Earnings Call Presentation",
+        "SPYT: The Covered Call ETF That Barely Wants Premium",
+        "The Timken Company (TKR) Analyst/Investor Day Transcript",
+        "Investec Group (ITCFY) Q4 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -166,8 +162,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
-        "WMT",
+        "SPY",
         "LLY",
         "CL=F"
       ]
