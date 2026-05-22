@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-21T22:19:34Z",
-  "macro_summary": "Equity futures mixed; Rates broadly stable; 10Y at 4.59%.",
-  "market_status": "After-Hours",
+  "last_updated": "2026-05-22T13:16:16Z",
+  "macro_summary": "Equity futures mixed; 10Y yields easing (4.54%), rate relief emerging.",
+  "market_status": "Pre-Market",
   "equities": [
     {
       "label": "S&P 500",
@@ -38,9 +38,9 @@
     {
       "label": "VIX",
       "ticker": "VIX",
-      "price": 16.76,
-      "change": -0.68,
-      "percent_change": -3.9,
+      "price": 16.73,
+      "change": -0.03,
+      "percent_change": -0.18,
       "direction": "down"
     }
   ],
@@ -48,26 +48,26 @@
     {
       "label": "US 3M",
       "ticker": "US3M",
-      "price": 3.582,
-      "change": 0.025,
-      "percent_change": 0.7,
-      "direction": "up"
+      "price": 3.578,
+      "change": -0.004,
+      "percent_change": -0.11,
+      "direction": "down"
     },
     {
       "label": "US 2Y",
       "ticker": "US2Y",
-      "price": 4.257,
-      "change": 0.032,
-      "percent_change": 0.76,
-      "direction": "up"
+      "price": 4.222,
+      "change": -0.035,
+      "percent_change": -0.82,
+      "direction": "down"
     },
     {
       "label": "US 10Y",
       "ticker": "US10Y",
-      "price": 4.586,
-      "change": 0.014,
-      "percent_change": 0.31,
-      "direction": "up"
+      "price": 4.544,
+      "change": -0.042,
+      "percent_change": -0.92,
+      "direction": "down"
     },
     {
       "label": "Japan 10Y",
@@ -98,33 +98,33 @@
     {
       "label": "Crude Oil",
       "ticker": "CL",
-      "price": 97.43,
-      "change": -0.83,
-      "percent_change": -0.84,
-      "direction": "down"
+      "price": 96.75,
+      "change": 0.4,
+      "percent_change": 0.42,
+      "direction": "up"
     },
     {
       "label": "Gold",
       "ticker": "GC",
-      "price": 4542.7,
-      "change": 11.4,
-      "percent_change": 0.25,
-      "direction": "up"
+      "price": 4524.4,
+      "change": -15.4,
+      "percent_change": -0.34,
+      "direction": "down"
     },
     {
       "label": "Silver",
       "ticker": "SI",
-      "price": 76.98,
-      "change": 1.13,
-      "percent_change": 1.5,
-      "direction": "up"
+      "price": 76.25,
+      "change": -0.16,
+      "percent_change": -0.21,
+      "direction": "down"
     },
     {
       "label": "Copper",
       "ticker": "HG",
-      "price": 6.34,
-      "change": 0.05,
-      "percent_change": 0.82,
+      "price": 6.35,
+      "change": 0.09,
+      "percent_change": 1.49,
       "direction": "up"
     }
   ],
@@ -132,33 +132,33 @@
     {
       "label": "USD/JPY",
       "ticker": "USDJPY",
-      "price": 159.017,
-      "change": -0.018,
-      "percent_change": -0.01,
-      "direction": "down"
+      "price": 159.024,
+      "change": 0.136,
+      "percent_change": 0.09,
+      "direction": "up"
     },
     {
       "label": "EUR/USD",
       "ticker": "EURUSD",
-      "price": 1.1621,
-      "change": 0.0014,
-      "percent_change": 0.12,
-      "direction": "up"
+      "price": 1.1617,
+      "change": -0.0008,
+      "percent_change": -0.07,
+      "direction": "down"
     },
     {
       "label": "EUR/JPY",
       "ticker": "EURJPY",
-      "price": 184.718,
-      "change": 0.128,
-      "percent_change": 0.07,
-      "direction": "up"
+      "price": 184.68,
+      "change": -0.007,
+      "percent_change": -0.0,
+      "direction": "down"
     },
     {
       "label": "DXY",
       "ticker": "DXY",
-      "price": 99.191,
-      "change": 0.081,
-      "percent_change": 0.08,
+      "price": 99.276,
+      "change": 0.086,
+      "percent_change": 0.09,
       "direction": "up"
     }
   ],
@@ -167,67 +167,67 @@
       {
         "label": "Nikkei 225",
         "ticker": "^N225",
-        "price": 59804.41,
-        "change": -746.18,
-        "percent_change": -1.23,
-        "direction": "down"
+        "price": 63339.07,
+        "change": 1654.93,
+        "percent_change": 2.68,
+        "direction": "up"
       },
       {
         "label": "Hang Seng",
         "ticker": "^HSI",
-        "price": 25651.12,
-        "change": -146.73,
-        "percent_change": -0.57,
-        "direction": "down"
+        "price": 25606.03,
+        "change": 219.51,
+        "percent_change": 0.86,
+        "direction": "up"
       },
       {
         "label": "Shanghai Comp",
         "ticker": "000001.SS",
-        "price": 4162.19,
-        "change": -7.35,
-        "percent_change": -0.18,
-        "direction": "down"
+        "price": 4112.9,
+        "change": 35.62,
+        "percent_change": 0.87,
+        "direction": "up"
       },
       {
         "label": "KOSPI",
         "ticker": "^KS11",
-        "price": 7208.95,
-        "change": -62.71,
-        "percent_change": -0.86,
-        "direction": "down"
+        "price": 7847.71,
+        "change": 32.12,
+        "percent_change": 0.41,
+        "direction": "up"
       }
     ],
     "europe": [
       {
         "label": "FTSE 100",
         "ticker": "^FTSE",
-        "price": 10443.47,
-        "change": 11.17,
-        "percent_change": 0.11,
+        "price": 10479.87,
+        "change": 36.37,
+        "percent_change": 0.35,
         "direction": "up"
       },
       {
         "label": "DAX",
         "ticker": "^GDAXI",
-        "price": 24737.24,
-        "change": 336.59,
-        "percent_change": 1.38,
+        "price": 24891.36,
+        "change": 284.59,
+        "percent_change": 1.16,
         "direction": "up"
       },
       {
         "label": "CAC 40",
         "ticker": "^FCHI",
-        "price": 8117.42,
-        "change": 135.66,
-        "percent_change": 1.7,
+        "price": 8145.02,
+        "change": 59.02,
+        "percent_change": 0.73,
         "direction": "up"
       },
       {
         "label": "Euro Stoxx 50",
         "ticker": "^STOXX50E",
-        "price": 5976.07,
-        "change": 124.91,
-        "percent_change": 2.13,
+        "price": 6024.54,
+        "change": 64.22,
+        "percent_change": 1.08,
         "direction": "up"
       }
     ]

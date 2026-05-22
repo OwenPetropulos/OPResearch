@@ -4,11 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Oil prices fall as investors hope for U.S.-Iran deal",
+      "story_count": 6,
+      "primary_driver": "Golar LNG: Infrastructure Re-Rating Still Ahead As Backlog Visibility And FLNG Demand Accelerate",
       "key_drivers": [
-        "Oil prices fall as investors hope for U.S.-Iran deal",
-        "Sunday Night Futures"
+        "Golar LNG: Infrastructure Re-Rating Still Ahead As Backlog Visibility And FLNG Demand Accelerate",
+        "Iran war leaves U.S. gas prices at highest levels in nearly four years ahead of Memorial Day",
+        "BJ’s Wholesale’s earnings show that cheap gas matters for people",
+        "As bullish bets surge, here’s the Goldman Sachs options play to protect portfolios from the likely pullback"
       ],
       "key_tickers": [
         "XOM",
@@ -18,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
+        "BAC",
         "LLY",
-        "SPY"
+        "LNG",
+        "GS"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Stock futures rise slightly as S&P 500 looks toward another winning week: Live updates",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "story_count": 10,
+      "primary_driver": "Dow futures jump 300 points as Wall Street heads for winning week, Treasury yields ease: Live update",
       "key_drivers": [
-        "Stock futures rise slightly as S&P 500 looks toward another winning week: Live updates",
-        "8-K - NKGen Biotech, Inc. (0001845459) (Filer)",
-        "8-K - SharonAI Holdings Inc. (0002068385) (Filer)",
-        "Prediction markets are fueling a high-stakes brawl between states and federal regulators"
+        "Dow futures jump 300 points as Wall Street heads for winning week, Treasury yields ease: Live updates",
+        "What the AvalonBay, Equity Residential megamerger means for the apartment industry and rents",
+        "Kevin Warsh takes over as Fed chair today — after first swearing-in at White House in nearly 40 years",
+        "Nvidia Is Becoming An Incredible Dividend Growth Compounder And Is Undervalued"
       ],
       "key_tickers": [
         "JPM",
@@ -43,20 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "SPY"
+        "LLY",
+        "NVDA",
+        "SPY",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "‘It will not bring you happiness’: I have advice for your single, childless 62-year-old multimillion",
+      "story_count": 15,
+      "primary_driver": "8-K - SHORE BANCSHARES INC (0001035092) (Filer)",
       "key_drivers": [
-        "‘It will not bring you happiness’: I have advice for your single, childless 62-year-old multimillionaire reader",
-        "Workday jumps 14% as it bumps up margin forecast on AI strength",
-        "If Advanced Drainage Systems Keeps Getting Cheaper, An Upgrade Could Be In Store",
-        "8-K - KOHLS Corp (0000885639) (Filer)"
+        "8-K - SHORE BANCSHARES INC (0001035092) (Filer)",
+        "8-K - iPower Inc. (0001830072) (Filer)",
+        "2 AI Stocks Hugely Benefit From 'RAMpocalypse'",
+        "Workday Q1: Shares Undervalued As AI Complements, Not Replaces"
       ],
       "key_tickers": [
         "NVDA",
@@ -67,20 +73,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "WMT",
-        "LLY",
+        "NVDA",
         "SPY",
-        "CL=F"
+        "AMZN",
+        "RIG"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "Golar LNG: Infrastructure Re-Rating Still Ahead As Backlog Visibility And FLNG Demand Accelerate",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Golar LNG: Infrastructure Re-Rating Still Ahead As Backlog Visibility And FLNG Demand Accelerate",
+        "Flash U.S. PMI Signals Subdued Growth And Job Cuts In May Amid Price Surge"
       ],
       "key_tickers": [
         "GE",
@@ -90,21 +97,18 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "BAC",
+        "LNG"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Negative",
-      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 7,
-      "primary_driver": "lululemon: North American Sales Slump And A Stale Product Line Spell Trouble For Shares",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "1st Look at Local Housing Markets in December",
       "key_drivers": [
-        "lululemon: North American Sales Slump And A Stale Product Line Spell Trouble For Shares",
-        "‘It will not bring you happiness’: I have advice for your single, childless 62-year-old multimillionaire reader",
-        "People are putting less gas in their tanks as high prices crimp budgets, Walmart says",
-        "Local TV faces financial pinch as political ad spending increasingly moves online"
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -114,8 +118,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "WMT",
-        "TGT"
+        "NKE",
+        "WMT"
       ]
     },
     {
@@ -123,10 +127,10 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "8-K - Zentalis Pharmaceuticals, Inc. (0001725160) (Filer)",
+      "primary_driver": "8-K - ONCOLYTICS BIOTECH INC (0001129928) (Filer)",
       "key_drivers": [
-        "8-K - Zentalis Pharmaceuticals, Inc. (0001725160) (Filer)",
-        "8-K - NKGen Biotech, Inc. (0001845459) (Filer)"
+        "8-K - ONCOLYTICS BIOTECH INC (0001129928) (Filer)",
+        "Eli Lilly says next-generation weight loss drug clears crucial obesity trial"
       ],
       "key_tickers": [
         "LLY",
@@ -136,21 +140,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "LLY"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 10,
-      "primary_driver": "McConnell calls DOJ Trump fund 'utterly stupid, morally wrong' after Blanche meeting",
+      "primary_driver": "8-K - Grayscale CoinDesk Crypto 5 ETF (0001729997) (Filer)",
       "key_drivers": [
-        "McConnell calls DOJ Trump fund 'utterly stupid, morally wrong' after Blanche meeting",
-        "SpaceX readies 12th test flight of massive Starship rocket as IPO looms",
-        "2-time NASCAR champion Kyle Busch has died at 41, NASCAR says",
-        "K33 AB (publ) 2026 Q1 - Results - Earnings Call Presentation"
+        "8-K - Grayscale CoinDesk Crypto 5 ETF (0001729997) (Filer)",
+        "8-K - Grayscale Litecoin Trust (LTC) (0001732406) (Filer)",
+        "Rising Global Bond Yields: The Test For Risk Assets",
+        "Mercado Libre: Love And Hate"
       ],
       "key_tickers": [
         "TLT",
@@ -161,7 +164,7 @@
       ],
       "trending_tickers": [
         "LLY",
-        "TGT"
+        "SPY"
       ]
     }
   ]
