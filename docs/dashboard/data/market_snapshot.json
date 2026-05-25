@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-05-25T17:27:09Z",
+  "last_updated": "2026-05-25T22:08:05Z",
   "macro_summary": "Equity futures broadly bid; Rates broadly stable; 10Y at 4.56%.",
-  "market_status": "Open",
+  "market_status": "After-Hours",
   "equities": [
     {
       "label": "S&P 500",
@@ -132,33 +132,33 @@
     {
       "label": "USD/JPY",
       "ticker": "USDJPY",
-      "price": 158.897,
-      "change": -0.121,
-      "percent_change": -0.08,
+      "price": 158.908,
+      "change": -0.11,
+      "percent_change": -0.07,
       "direction": "down"
     },
     {
       "label": "EUR/USD",
       "ticker": "EURUSD",
-      "price": 1.1647,
-      "change": 0.0026,
-      "percent_change": 0.22,
+      "price": 1.1643,
+      "change": 0.0022,
+      "percent_change": 0.19,
       "direction": "up"
     },
     {
       "label": "EUR/JPY",
       "ticker": "EURJPY",
-      "price": 185.006,
-      "change": 0.26,
-      "percent_change": 0.14,
+      "price": 184.984,
+      "change": 0.238,
+      "percent_change": 0.13,
       "direction": "up"
     },
     {
       "label": "DXY",
       "ticker": "DXY",
-      "price": 98.973,
-      "change": -0.347,
-      "percent_change": -0.35,
+      "price": 99.239,
+      "change": -0.081,
+      "percent_change": -0.08,
       "direction": "down"
     }
   ],
@@ -209,17 +209,17 @@
       {
         "label": "DAX",
         "ticker": "^GDAXI",
-        "price": 25389.1,
-        "change": 500.54,
-        "percent_change": 2.01,
+        "price": 24888.56,
+        "change": 281.79,
+        "percent_change": 1.15,
         "direction": "up"
       },
       {
         "label": "CAC 40",
         "ticker": "^FCHI",
-        "price": 8258.26,
-        "change": 142.51,
-        "percent_change": 1.76,
+        "price": 8115.75,
+        "change": 29.75,
+        "percent_change": 0.37,
         "direction": "up"
       },
       {

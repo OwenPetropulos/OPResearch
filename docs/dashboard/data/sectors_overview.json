@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 7,
-      "primary_driver": "Gold rises as dollar, oil ease on U.S.-Iran deal prospects",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 8,
+      "primary_driver": "Oil prices fall 7% after Trump says Iran talks are 'proceeding nicely'",
       "key_drivers": [
-        "Gold rises as dollar, oil ease on U.S.-Iran deal prospects",
-        "Japan’s Nikkei 225 tops 65,000 for first time as oil falls on Hormuz reopening hopes",
-        "Oil market at 'tank bottoms' in Asia, and Europe isn't far behind, warns market veteran Jeff Currie",
-        "Oil prices tumble as deal to end Iran war appears close, though Trump says there’s no rush"
+        "Oil prices fall 7% after Trump says Iran talks are 'proceeding nicely'",
+        "Oil prices tumble as deal to end Iran war appears close, though Trump says there’s no rush",
+        "WTI Technical Analysis - The Strait Of Hormuz Is To Be Opened In 30 Days, Oil Down 7%",
+        "Gold rises as dollar, oil ease on U.S.-Iran deal prospects"
       ],
       "key_tickers": [
         "XOM",
@@ -21,9 +21,8 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "LLY",
         "GC=F",
-        "SPY"
+        "LLY"
       ]
     },
     {
@@ -31,12 +30,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
+      "primary_driver": "MS&AD Insurance Group Holdings, Inc. (MSADY) Q4 2026 Earnings Call Transcript",
       "key_drivers": [
+        "MS&AD Insurance Group Holdings, Inc. (MSADY) Q4 2026 Earnings Call Transcript",
+        "LexinFintech Holdings Ltd. (LX) Q1 2026 Earnings Call Transcript",
         "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
-        "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it",
-        "Iran and U.S. play down hopes for imminent breakthrough in war",
-        "Oil market at 'tank bottoms' in Asia, and Europe isn't far behind, warns market veteran Jeff Currie"
+        "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it"
       ],
       "key_tickers": [
         "JPM",
@@ -55,12 +54,12 @@
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
       "story_count": 17,
-      "primary_driver": "Boise Cascade Company: Enduring Short Term Pain For Long Term Gain",
+      "primary_driver": "Oil prices fall 7% after Trump says Iran talks are 'proceeding nicely'",
       "key_drivers": [
-        "Boise Cascade Company: Enduring Short Term Pain For Long Term Gain",
-        "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
-        "Nvidia: ASIC Discount Applied Prematurely - Reiterate Strong Buy",
-        "Eisai Co., Ltd. (ESAIY) Analyst/Investor Day Transcript"
+        "Oil prices fall 7% after Trump says Iran talks are 'proceeding nicely'",
+        "These underdogs are a big reason S&P 500 profit growth is the fastest in nearly 5 years",
+        "Trump links Abraham Accords to Iran deal",
+        "Oil prices tumble as deal to end Iran war appears close, though Trump says there’s no rush"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,10 +70,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
         "CL=F",
+        "SPY",
         "NVDA",
-        "RIG"
+        "AAPL"
       ]
     },
     {
@@ -102,13 +101,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "The Dark Side Of Dividend Growth Investing That Dashes Retirement Dreams",
+      "story_count": 4,
+      "primary_driver": "The 5 best affordable hotel brands for your next trip",
       "key_drivers": [
-        "The Dark Side Of Dividend Growth Investing That Dashes Retirement Dreams",
         "The 5 best affordable hotel brands for your next trip",
         "Boosting retirement savings has a less-appreciated benefit",
-        "Spirit's collapse, high fuel prices test limits of summer vacation spending"
+        "Americans are feeling inflation's pinch into the holiday weekend. Here's where prices are rising the most",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -126,9 +125,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it",
+      "story_count": 2,
+      "primary_driver": "InMed Pharmaceuticals Inc. (INM) M&A Call Prepared Remarks Transcript",
       "key_drivers": [
+        "InMed Pharmaceuticals Inc. (INM) M&A Call Prepared Remarks Transcript",
         "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it"
       ],
       "key_tickers": [
@@ -148,12 +148,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 12,
-      "primary_driver": "No, The Market Is Not Getting Cheaper",
+      "primary_driver": "Tracking John Rogers' Ariel Investments Portfolio - Q1 2026 Update",
       "key_drivers": [
-        "No, The Market Is Not Getting Cheaper",
-        "The Most Valuable Asset In The SpaceX IPO Is A Gift That Most Investors Will Ignore",
-        "Atlas Engineered Products Ltd. (AEP:CA) Q1 2026 Earnings Call Transcript",
-        "iQIYI: Contrarian Bet On A Strategic Content Pivot"
+        "Tracking John Rogers' Ariel Investments Portfolio - Q1 2026 Update",
+        "Granite Ridge Resources, Inc. (GRNT) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "Oceana Group Limited (OCGPF) Q2 2026 Earnings Call Transcript",
+        "Oceana Group Limited 2026 Q2 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
