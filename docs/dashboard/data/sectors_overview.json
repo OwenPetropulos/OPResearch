@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "8-K - Koil Energy Solutions, Inc. (0001110607) (Filer)",
+      "primary_driver": "Grab: Impressive Resilience Amid Oil Price Shocks",
       "key_drivers": [
-        "8-K - Koil Energy Solutions, Inc. (0001110607) (Filer)",
-        "Official Data Confirms Consumer Oil Demand Is Falling As Refined Stockpiles Remain Ample",
-        "The oil shock meets the Fed ‘curse’: What Kevin Warsh means for your portfolio",
-        "11 'Safer' Dividend Dogs Lead 20 May Barron's 2026 Oil And Blue Chips"
+        "Grab: Impressive Resilience Amid Oil Price Shocks",
+        "Gold rises as dollar, oil ease on U.S.-Iran deal prospects",
+        "Japan’s Nikkei 225 tops 65,000 for first time as oil falls on Hormuz reopening hopes",
+        "Oil market at 'tank bottoms' in Asia, and Europe isn't far behind, warns market veteran Jeff Currie"
       ],
       "key_tickers": [
         "XOM",
@@ -20,21 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
+        "CL=F",
+        "GC=F",
         "LLY",
-        "CL=F"
+        "BAC"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "8-K - CNL Strategic Residential Credit, Inc. (0002066337) (Filer)",
+      "story_count": 10,
+      "primary_driver": "McCormick: Unilever Synergies Create A Great Long-Term Story",
       "key_drivers": [
-        "8-K - CNL Strategic Residential Credit, Inc. (0002066337) (Filer)",
-        "8-K - Polar Power, Inc. (0001622345) (Filer)",
-        "New lawsuits against Trump's DOJ 'lawfare' fund",
-        "Worried about private credit? Stay away from this even riskier investment right now."
+        "McCormick: Unilever Synergies Create A Great Long-Term Story",
+        "Whale's Insight: The Bond Market Just Broke - Where Does That Leave Bitcoin?",
+        "SEGRO Plc: Surging U.K. Gilt Yields Create An Attractive Entry Point",
+        "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it"
       ],
       "key_tickers": [
         "JPM",
@@ -44,23 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN",
-        "RIG",
         "LLY",
+        "BAC",
+        "GS",
         "SPY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 18,
-      "primary_driver": "Tulsi Gabbard resigning as Trump's intelligence chief",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 16,
+      "primary_driver": "Mastercard’s stock is up 11,000% since its IPO 20 years ago. What comes next?",
       "key_drivers": [
-        "Tulsi Gabbard resigning as Trump's intelligence chief",
-        "International Consolidated Airlines: Strong Q1 Execution, Fuel Protection, And Shareholder Returns Support Further Upsid",
-        "Dexcom: A Medical Platform Play Gaining From AI, Not Disrupted By It",
-        "8-K - Polar Power, Inc. (0001622345) (Filer)"
+        "Mastercard’s stock is up 11,000% since its IPO 20 years ago. What comes next?",
+        "Aeluma: The AI Optical Inflection Trade",
+        "Duos Technologies: An Under-The-Radar Microcap Staging A Promising Pivot Into AI",
+        "Cavco Industries: Relatively Defensive Against Sector Pressure"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,8 +73,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
-        "RIG"
+        "LLY",
+        "CL=F",
+        "NVDA",
+        "AAPL"
       ]
     },
     {
@@ -101,11 +105,11 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "International Consolidated Airlines: Strong Q1 Execution, Fuel Protection, And Shareholder Returns S",
+      "primary_driver": "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did ",
       "key_drivers": [
-        "International Consolidated Airlines: Strong Q1 Execution, Fuel Protection, And Shareholder Returns Support Further Upsid",
-        "Judge tosses Kilmar Abrego Garcia charges, calls Trump administration prosecution 'vindictive'",
-        "Two top Walmart executives leave company under new CEO John Furner",
+        "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did I do the right thing",
+        "Boosting retirement savings has a less-appreciated benefit",
+        "Spirit's collapse, high fuel prices test limits of summer vacation spending",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -116,19 +120,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "WMT"
+        "LLY",
+        "RIG"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Tulsi Gabbard resigning as Trump's intelligence chief",
+      "story_count": 1,
+      "primary_driver": "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it",
       "key_drivers": [
-        "Tulsi Gabbard resigning as Trump's intelligence chief",
-        "Trump skipping wedding of son Donald Jr. to Bettina Anderson"
+        "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it"
       ],
       "key_tickers": [
         "LLY",
@@ -138,21 +141,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "GS",
+        "LLY"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "Nippon Sanso Holdings Corporation 2026 Q4 - Results - Earnings Call Presentation",
+      "story_count": 11,
+      "primary_driver": "I’m selling my $1 million home. Will my agent really charge less than a 6% commission?",
       "key_drivers": [
-        "Nippon Sanso Holdings Corporation 2026 Q4 - Results - Earnings Call Presentation",
-        "SPYT: The Covered Call ETF That Barely Wants Premium",
-        "The Timken Company (TKR) Analyst/Investor Day Transcript",
-        "Investec Group (ITCFY) Q4 2026 Earnings Call Transcript"
+        "I’m selling my $1 million home. Will my agent really charge less than a 6% commission?",
+        "Allspring Intermediate Tax/AMT-Free Fund Q1 2026 Commentary",
+        "Hartford Municipal Short Duration Fund Q1 2026 Commentary",
+        "Flowers Foods, Inc. (FLO) Q1 2026 Earnings Call Prepared Remarks Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -162,8 +165,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY",
         "LLY",
+        "GC=F",
         "CL=F"
       ]
     }
