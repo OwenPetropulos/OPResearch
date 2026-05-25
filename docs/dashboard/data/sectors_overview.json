@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Grab: Impressive Resilience Amid Oil Price Shocks",
+      "story_count": 7,
+      "primary_driver": "Gold rises as dollar, oil ease on U.S.-Iran deal prospects",
       "key_drivers": [
-        "Grab: Impressive Resilience Amid Oil Price Shocks",
         "Gold rises as dollar, oil ease on U.S.-Iran deal prospects",
         "Japan’s Nikkei 225 tops 65,000 for first time as oil falls on Hormuz reopening hopes",
-        "Oil market at 'tank bottoms' in Asia, and Europe isn't far behind, warns market veteran Jeff Currie"
+        "Oil market at 'tank bottoms' in Asia, and Europe isn't far behind, warns market veteran Jeff Currie",
+        "Oil prices tumble as deal to end Iran war appears close, though Trump says there’s no rush"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "GC=F",
         "LLY",
-        "BAC"
+        "GC=F",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "McCormick: Unilever Synergies Create A Great Long-Term Story",
+      "story_count": 9,
+      "primary_driver": "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
       "key_drivers": [
-        "McCormick: Unilever Synergies Create A Great Long-Term Story",
-        "Whale's Insight: The Bond Market Just Broke - Where Does That Leave Bitcoin?",
-        "SEGRO Plc: Surging U.K. Gilt Yields Create An Attractive Entry Point",
-        "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it"
+        "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
+        "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it",
+        "Iran and U.S. play down hopes for imminent breakthrough in war",
+        "Oil market at 'tank bottoms' in Asia, and Europe isn't far behind, warns market veteran Jeff Currie"
       ],
       "key_tickers": [
         "JPM",
@@ -47,22 +47,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "BAC",
-        "GS",
-        "SPY"
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 16,
-      "primary_driver": "Mastercard’s stock is up 11,000% since its IPO 20 years ago. What comes next?",
+      "story_count": 17,
+      "primary_driver": "Boise Cascade Company: Enduring Short Term Pain For Long Term Gain",
       "key_drivers": [
-        "Mastercard’s stock is up 11,000% since its IPO 20 years ago. What comes next?",
-        "Aeluma: The AI Optical Inflection Trade",
-        "Duos Technologies: An Under-The-Radar Microcap Staging A Promising Pivot Into AI",
-        "Cavco Industries: Relatively Defensive Against Sector Pressure"
+        "Boise Cascade Company: Enduring Short Term Pain For Long Term Gain",
+        "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
+        "Nvidia: ASIC Discount Applied Prematurely - Reiterate Strong Buy",
+        "Eisai Co., Ltd. (ESAIY) Analyst/Investor Day Transcript"
       ],
       "key_tickers": [
         "NVDA",
@@ -76,7 +74,7 @@
         "LLY",
         "CL=F",
         "NVDA",
-        "AAPL"
+        "RIG"
       ]
     },
     {
@@ -104,13 +102,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did ",
+      "story_count": 6,
+      "primary_driver": "The Dark Side Of Dividend Growth Investing That Dashes Retirement Dreams",
       "key_drivers": [
-        "‘He didn’t really pay attention’: I told my friend he left millions on the table in retirement. Did I do the right thing",
+        "The Dark Side Of Dividend Growth Investing That Dashes Retirement Dreams",
+        "The 5 best affordable hotel brands for your next trip",
         "Boosting retirement savings has a less-appreciated benefit",
-        "Spirit's collapse, high fuel prices test limits of summer vacation spending",
-        "1st Look at Local Housing Markets in December"
+        "Spirit's collapse, high fuel prices test limits of summer vacation spending"
       ],
       "key_tickers": [
         "NKE",
@@ -120,8 +118,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY",
-        "RIG"
+        "NKE",
+        "WMT"
       ]
     },
     {
@@ -149,13 +147,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "I’m selling my $1 million home. Will my agent really charge less than a 6% commission?",
+      "story_count": 12,
+      "primary_driver": "No, The Market Is Not Getting Cheaper",
       "key_drivers": [
-        "I’m selling my $1 million home. Will my agent really charge less than a 6% commission?",
-        "Allspring Intermediate Tax/AMT-Free Fund Q1 2026 Commentary",
-        "Hartford Municipal Short Duration Fund Q1 2026 Commentary",
-        "Flowers Foods, Inc. (FLO) Q1 2026 Earnings Call Prepared Remarks Transcript"
+        "No, The Market Is Not Getting Cheaper",
+        "The Most Valuable Asset In The SpaceX IPO Is A Gift That Most Investors Will Ignore",
+        "Atlas Engineered Products Ltd. (AEP:CA) Q1 2026 Earnings Call Transcript",
+        "iQIYI: Contrarian Bet On A Strategic Content Pivot"
       ],
       "key_tickers": [
         "TLT",
@@ -165,9 +163,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY",
         "GC=F",
-        "CL=F"
+        "CL=F",
+        "LLY"
       ]
     }
   ]
