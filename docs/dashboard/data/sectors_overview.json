@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 5,
-      "primary_driver": "Dropbox CEO Drew Houston to step down after 19 years at helm of cloud storage pioneer",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 7,
+      "primary_driver": "Is The U.S. Running Out Of Oil? Setting The Record Straight",
       "key_drivers": [
-        "Dropbox CEO Drew Houston to step down after 19 years at helm of cloud storage pioneer",
-        "Brent oil jumps back above $100 after Iran vows to retaliate for U.S. strikes",
-        "8-K - ZION OIL & GAS INC (0001131312) (Filer)",
-        "'I never heard of the Strait of Hormuz before this': How one medical supply CEO is navigating the oil price shock"
+        "Is The U.S. Running Out Of Oil? Setting The Record Straight",
+        "Why I'm Still Neutral On Nektar Therapeutics After Alopecia Areata Extension Data",
+        "Western Midstream: 8% Yield, Acquisition Growth, Cheap",
+        "Piper Sandler says Strait of Hormuz to remain closed for months and oil to hit new highs"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "BAC",
+        "VIX",
         "LLY",
         "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "Your credit card could help cut the cost of your summer vacation",
+      "primary_driver": "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
       "key_drivers": [
-        "Your credit card could help cut the cost of your summer vacation",
-        "Early Warning From The U.K. Bond Market",
-        "Democratic AGs snub Vance's anti-fraud roundtable at White House after late invite",
-        "Putting your baby to work as a model could net them $5.7 million by age 60. Here’s the legit way to do it."
+        "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
+        "8-K - Trinseo PLC (0001519061) (Filer)",
+        "8-K - Blue Owl Credit Income Corp. (0001812554) (Filer)",
+        "The bond market has been rocked by a violent selloff. Here’s how to play it."
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "COST",
-        "LLY",
-        "AAPL",
-        "BAC"
+        "WMT",
+        "RIG",
+        "JPM",
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 17,
-      "primary_driver": "Nvidia's Just Getting Started; It's Time To Buy (Rating Upgrade)",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 14,
+      "primary_driver": "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
       "key_drivers": [
-        "Nvidia's Just Getting Started; It's Time To Buy (Rating Upgrade)",
-        "Putting your baby to work as a model could net them $5.7 million by age 60. Here’s the legit way to do it.",
-        "Trump to host Cabinet meeting at Camp David on Wednesday as Iran talks continue",
-        "Cloudflare Is Priced For Perfection"
+        "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
+        "8-K - CVB FINANCIAL CORP (0000354647) (Filer)",
+        "8-K - Evolution Metals & Technologies Corp. (0001866226) (Filer)",
+        "8-K - TRIMBLE INC. (0000864749) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,21 +73,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
-        "BAC",
+        "AMZN",
         "CL=F",
-        "NVDA"
+        "WMT",
+        "META"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Negative",
       "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 3,
-      "primary_driver": "Brent oil jumps back above $100 after Iran vows to retaliate for U.S. strikes",
+      "story_count": 2,
+      "primary_driver": "Brent oil jumps more than 3% after Iran vows to retaliate for U.S. strikes",
       "key_drivers": [
-        "Brent oil jumps back above $100 after Iran vows to retaliate for U.S. strikes",
-        "A defense stock down big lately is primed for a turnaround. How to play a comeback with less risk",
+        "Brent oil jumps more than 3% after Iran vows to retaliate for U.S. strikes",
         "U.S. conducts 'self-defense strikes' in Iran as Trump pushes for peace deal"
       ],
       "key_tickers": [
@@ -98,20 +97,18 @@
         "HON"
       ],
       "trending_tickers": [
-        "BAC",
-        "NOC",
         "TGT"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Negative",
-      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "Your credit card could help cut the cost of your summer vacation",
+      "primary_driver": "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
       "key_drivers": [
-        "Your credit card could help cut the cost of your summer vacation",
-        "Consumer Confidence Dipped In May As Inflation Intensifies",
+        "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
+        "Nike: Still Not Interested",
         "U.S. conducts 'self-defense strikes' in Iran as Trump pushes for peace deal",
         "1st Look at Local Housing Markets in December"
       ],
@@ -123,7 +120,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "COST",
+        "WMT",
+        "NKE",
         "TGT"
       ]
     },
@@ -131,11 +129,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Corbus Pharmaceuticals Holdings, Inc. (CRBP) Discusses Clinical Data Update From Phase 1/2 Study of ",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Corbus Pharmaceuticals Holdings, Inc. (CRBP) Discusses Clinical Data Update From Phase 1/2 Study of CRB-701 Presented at",
-        "Eli Lilly stock edges higher as company plans nearly $4 billion in vaccine deals"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -145,20 +142,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 10,
-      "primary_driver": "8-K - PORTSMOUTH SQUARE INC (0000079661) (Filer)",
+      "primary_driver": "There Is No 'Cash On The Sidelines'",
       "key_drivers": [
-        "8-K - PORTSMOUTH SQUARE INC (0000079661) (Filer)",
-        "8-K - INTERGROUP CORP (0000069422) (Filer)",
-        "8-K - CBL & ASSOCIATES PROPERTIES INC (0000910612) (Filer)",
-        "Elbit Systems Ltd. (ESLT) Q1 2026 Earnings Call Transcript"
+        "There Is No 'Cash On The Sidelines'",
+        "Valeo SE (VLEEY) Shareholder/Analyst Call Transcript",
+        "Stock futures are little changed after the S&P 500 closes at another record: Live updates",
+        "POET Technologies: I Don't Know When, But This Party Won't End Well"
       ],
       "key_tickers": [
         "TLT",
@@ -168,8 +166,10 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "SPY",
+        "LLY",
+        "VIX",
+        "CL=F"
       ]
     }
   ]
