@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Negative",
       "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 8,
-      "primary_driver": "Oil prices fall 7% after Trump says Iran talks are 'proceeding nicely'",
+      "story_count": 5,
+      "primary_driver": "Dropbox CEO Drew Houston to step down after 19 years at helm of cloud storage pioneer",
       "key_drivers": [
-        "Oil prices fall 7% after Trump says Iran talks are 'proceeding nicely'",
-        "Oil prices tumble as deal to end Iran war appears close, though Trump says there’s no rush",
-        "WTI Technical Analysis - The Strait Of Hormuz Is To Be Opened In 30 Days, Oil Down 7%",
-        "Gold rises as dollar, oil ease on U.S.-Iran deal prospects"
+        "Dropbox CEO Drew Houston to step down after 19 years at helm of cloud storage pioneer",
+        "Investors ‘afraid’ to take position on oil, data chiefs say as tankers face potential Hormuz fees",
+        "Global oil prices climb back toward $100 a barrel after U.S. launches new strikes in southern Iran despite potential dea",
+        "'I never heard of the Strait of Hormuz before this': How one medical supply CEO is navigating the oil price shock"
       ],
       "key_tickers": [
         "XOM",
@@ -21,21 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "GC=F",
+        "NKE",
+        "BAC",
         "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 9,
-      "primary_driver": "MS&AD Insurance Group Holdings, Inc. (MSADY) Q4 2026 Earnings Call Transcript",
+      "primary_driver": "Credit 'FEMO' for driving the market higher despite Iran and other worries. Here's what it means",
       "key_drivers": [
-        "MS&AD Insurance Group Holdings, Inc. (MSADY) Q4 2026 Earnings Call Transcript",
-        "LexinFintech Holdings Ltd. (LX) Q1 2026 Earnings Call Transcript",
-        "Is the stock market open today? Does the post office deliver mail on Memorial Day?",
-        "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it"
+        "Credit 'FEMO' for driving the market higher despite Iran and other worries. Here's what it means",
+        "8-K - UGI CORP /PA/ (0000884614) (Filer)",
+        "BP shares fall after board removes chairman Albert Manifold over 'serious’ conduct concerns",
+        "Since 1930, This Is The Average Return Of The S&P 500 After A New Fed Chair Is Elected"
       ],
       "key_tickers": [
         "JPM",
@@ -45,21 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "LLY",
-        "GS"
+        "BAC",
+        "SPY",
+        "CL=F",
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 17,
-      "primary_driver": "Oil prices fall 7% after Trump says Iran talks are 'proceeding nicely'",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 15,
+      "primary_driver": "8-K - PURE CYCLE CORP (0000276720) (Filer)",
       "key_drivers": [
-        "Oil prices fall 7% after Trump says Iran talks are 'proceeding nicely'",
-        "These underdogs are a big reason S&P 500 profit growth is the fastest in nearly 5 years",
-        "Trump links Abraham Accords to Iran deal",
-        "Oil prices tumble as deal to end Iran war appears close, though Trump says there’s no rush"
+        "8-K - PURE CYCLE CORP (0000276720) (Filer)",
+        "Dine Brands: Flynn, Lawsuits, And The Battle Over Dual-Branded Stores",
+        "Amazon: The 20% Rally Is Just The Beginning",
+        "8-K - MainStreet Bancshares, Inc. (0001693577) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,20 +73,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "CL=F",
+        "AMZN",
+        "LLY",
         "SPY",
-        "NVDA",
-        "AAPL"
+        "CL=F"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "U.S. conducts 'self-defense strikes' in Iran as Trump pushes for peace deal",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "U.S. conducts 'self-defense strikes' in Iran as Trump pushes for peace deal"
       ],
       "key_tickers": [
         "GE",
@@ -93,20 +96,18 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "TGT"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "The 5 best affordable hotel brands for your next trip",
+      "story_count": 3,
+      "primary_driver": "U.S. conducts 'self-defense strikes' in Iran as Trump pushes for peace deal",
       "key_drivers": [
-        "The 5 best affordable hotel brands for your next trip",
-        "Boosting retirement savings has a less-appreciated benefit",
-        "Americans are feeling inflation's pinch into the holiday weekend. Here's where prices are rising the most",
+        "U.S. conducts 'self-defense strikes' in Iran as Trump pushes for peace deal",
+        "‘Blue dot fever’? What's really behind a tricky summer dynamic for live music",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -117,8 +118,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "TGT",
+        "LLY"
       ]
     },
     {
@@ -126,10 +127,10 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "InMed Pharmaceuticals Inc. (INM) M&A Call Prepared Remarks Transcript",
+      "primary_driver": "Eli Lilly stock edges higher as company plans nearly $4 billion in vaccine deals",
       "key_drivers": [
-        "InMed Pharmaceuticals Inc. (INM) M&A Call Prepared Remarks Transcript",
-        "Want to hop off the AI trade? Goldman says buy these stocks that have nothing to do with it"
+        "Eli Lilly stock edges higher as company plans nearly $4 billion in vaccine deals",
+        "8-K - Corbus Pharmaceuticals Holdings, Inc. (0001595097) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -139,21 +140,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "GS",
         "LLY"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "Tracking John Rogers' Ariel Investments Portfolio - Q1 2026 Update",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 8,
+      "primary_driver": "W. P. Carey: A Deep Value Net Lease REIT With A 5% Yield",
       "key_drivers": [
-        "Tracking John Rogers' Ariel Investments Portfolio - Q1 2026 Update",
-        "Granite Ridge Resources, Inc. (GRNT) Shareholder/Analyst Call Prepared Remarks Transcript",
-        "Oceana Group Limited (OCGPF) Q2 2026 Earnings Call Transcript",
-        "Oceana Group Limited 2026 Q2 - Results - Earnings Call Presentation"
+        "W. P. Carey: A Deep Value Net Lease REIT With A 5% Yield",
+        "Stocks open higher on hope Iran deal is near, relentless Micron and tech rally: Live updates",
+        "Pepkor Holdings Limited (PPKRF) Q2 2026 Earnings Call Transcript",
+        "Champion Homes, Inc. (SKY) Q4 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -163,9 +163,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GC=F",
-        "CL=F",
-        "LLY"
+        "LLY",
+        "SPY"
       ]
     }
   ]
