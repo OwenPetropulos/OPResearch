@@ -4,13 +4,12 @@
       "sector": "Energy",
       "sentiment": "Negative",
       "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 5,
-      "primary_driver": "Oil prices fall more than 4% after Rubio says U.S. will give Iran talks 'every chance to succeed'",
+      "story_count": 3,
+      "primary_driver": "Oil prices fall more than 5% after Rubio says U.S. will give Iran talks 'every chance to succeed'",
       "key_drivers": [
-        "Oil prices fall more than 4% after Rubio says U.S. will give Iran talks 'every chance to succeed'",
+        "Oil prices fall more than 5% after Rubio says U.S. will give Iran talks 'every chance to succeed'",
         "Trump opposes Russia or China taking Iran's highly enriched uranium",
-        "Lululemon settles proxy battle with founder Chip Wilson, agrees to two board nominees",
-        "8-K - IIOT-OXYS, Inc. (0001290658) (Filer)"
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +20,21 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "OXY",
         "LLY",
         "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+      "primary_driver": "Stock futures are little changed as Wall Street awaits key April inflation reading: Live updates",
       "key_drivers": [
-        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
-        "8-K - AB Private Credit Investors Corp (0001634452) (Filer)",
-        "Low-income households face ‘remarkable’ rise in food insecurity in K-shaped economy: New York Fed",
-        "8-K - VISTA CREDIT STRATEGIC LENDING CORP. (0001919369) (Filer)"
+        "Stock futures are little changed as Wall Street awaits key April inflation reading: Live updates",
+        "Elanco Animal Health Incorporated (ELAN) Presents at Stifel Jaws & Paws Conference 2026 Transcript",
+        "8-K - TELEFLEX INC (0000096943) (Filer)",
+        "8-K - NATIONAL HEALTHCARE CORP (0001047335) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +44,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC",
-        "LLY",
-        "JPM"
+        "AMZN",
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 13,
-      "primary_driver": "Here’s our monthly update on all 33 portfolio stocks, including 4 to buy right now",
+      "primary_driver": "Salesforce CEO Marc Benioff outlines his plan to turn around his struggling stock",
       "key_drivers": [
-        "Here’s our monthly update on all 33 portfolio stocks, including 4 to buy right now",
-        "Oil prices fall more than 4% after Rubio says U.S. will give Iran talks 'every chance to succeed'",
-        "After Ferrari Luce backlash, Lamborghini CEO says canceling its own EV was the right choice",
-        "Trump opposes Russia or China taking Iran's highly enriched uranium"
+        "Salesforce CEO Marc Benioff outlines his plan to turn around his struggling stock",
+        "Stock futures are little changed as Wall Street awaits key April inflation reading: Live updates",
+        "Elanco Animal Health Incorporated (ELAN) Presents at Stifel Jaws & Paws Conference 2026 Transcript",
+        "Traders are skeptical of Iran timeline for Strait of Hormuz reopening"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,22 +69,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "BAC",
-        "RIG",
+        "AMZN",
         "CL=F",
-        "SPY"
+        "BAC",
+        "LLY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "General Electric Company (GE) Presents at Bernstein 42nd Annual Strategic Decisions Conference - Sli",
+      "story_count": 2,
+      "primary_driver": "HICL Infrastructure PLC 2026 Q4 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "General Electric Company (GE) Presents at Bernstein 42nd Annual Strategic Decisions Conference - Slideshow",
-        "Freightos Limited 2026 Q1 - Results - Earnings Call Presentation",
-        "SECURE Waste Infrastructure Corp. (SES:CA) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "HICL Infrastructure PLC 2026 Q4 - Results - Earnings Call Presentation",
         "Alabama asks Supreme Court to allow congressional map that dilutes Black vote"
       ],
       "key_tickers": [
@@ -98,7 +93,6 @@
         "HON"
       ],
       "trending_tickers": [
-        "GE",
         "LLY"
       ]
     },
@@ -106,12 +100,10 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Investors betting the Iran war is ending are buying up travel stocks",
+      "story_count": 2,
+      "primary_driver": "United Airlines Holdings, Inc. (UAL) Presents at Bernstein 42nd Annual Strategic Decisions Conferenc",
       "key_drivers": [
-        "Investors betting the Iran war is ending are buying up travel stocks",
-        "The death of Nascar driver Kyle Busch is renewing the debate around indexed universal life insurance",
-        "Lululemon settles proxy battle with founder Chip Wilson, agrees to two board nominees",
+        "United Airlines Holdings, Inc. (UAL) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -122,8 +114,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "SPY",
-        "OXY"
+        "NKE",
+        "WMT"
       ]
     },
     {
@@ -148,15 +140,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
       "story_count": 9,
-      "primary_driver": "TransUnion (TRU) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript",
+      "primary_driver": "Stock futures are little changed as Wall Street awaits key April inflation reading: Live updates",
       "key_drivers": [
-        "TransUnion (TRU) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript",
-        "PayPal Holdings, Inc. (PYPL) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript",
-        "Abercrombie shares jump 12% on earnings beat even as Iran conflict hits sales",
-        "National Bank of Canada 2026 Q2 - Results - Earnings Call Presentation"
+        "Stock futures are little changed as Wall Street awaits key April inflation reading: Live updates",
+        "Stocks just scored a trifecta of record closes for the first time in 2026. What to expect next.",
+        "Merck & Co., Inc. (MRK) Shareholder/Analyst Call - Slideshow",
+        "Everpure, Inc. 2027 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -166,7 +158,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC"
+        "GLD",
+        "DXY"
       ]
     }
   ]
