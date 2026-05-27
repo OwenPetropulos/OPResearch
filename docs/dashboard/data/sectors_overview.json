@@ -4,12 +4,12 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 7,
-      "primary_driver": "Is The U.S. Running Out Of Oil? Setting The Record Straight",
+      "story_count": 5,
+      "primary_driver": "U.S. oil falls below $90 on report Iran agreement would restore Hormuz traffic in one month",
       "key_drivers": [
-        "Is The U.S. Running Out Of Oil? Setting The Record Straight",
-        "Why I'm Still Neutral On Nektar Therapeutics After Alopecia Areata Extension Data",
-        "Western Midstream: 8% Yield, Acquisition Growth, Cheap",
+        "U.S. oil falls below $90 on report Iran agreement would restore Hormuz traffic in one month",
+        "Diamondback Energy: The Iran Oil Rally Changes Things (Rating Downgrade)",
+        "Lululemon settles proxy battle with founder Chip Wilson, agrees to two board nominees",
         "Piper Sandler says Strait of Hormuz to remain closed for months and oil to hit new highs"
       ],
       "key_tickers": [
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "VIX",
         "LLY",
-        "SPY"
+        "BAC",
+        "OXY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
+      "primary_driver": "Federal judge had sex in chambers with high-ranking police officer, panel says",
       "key_drivers": [
-        "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
-        "8-K - Trinseo PLC (0001519061) (Filer)",
-        "8-K - Blue Owl Credit Income Corp. (0001812554) (Filer)",
-        "The bond market has been rocked by a violent selloff. Here’s how to play it."
+        "Federal judge had sex in chambers with high-ranking police officer, panel says",
+        "These 5 skills are AI-proof and likely to become more valuable 'over the next 5 years,' says Oxford-trained career exper",
+        "Your AI agent can now trade for you on Robinhood. And buy stuff with your credit card too",
+        "LexinFintech: Staying Bullish, But Understand The Skepticism"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "WMT",
-        "RIG",
-        "JPM",
-        "LLY"
+        "NVO",
+        "MSFT",
+        "AAPL",
+        "GE"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 14,
-      "primary_driver": "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
+      "story_count": 15,
+      "primary_driver": "Sustainable Perspectives: Pinpointing The Opportunities Of China's Clean Energy Transition",
       "key_drivers": [
-        "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
-        "8-K - CVB FINANCIAL CORP (0000354647) (Filer)",
-        "8-K - Evolution Metals & Technologies Corp. (0001866226) (Filer)",
-        "8-K - TRIMBLE INC. (0000864749) (Filer)"
+        "Sustainable Perspectives: Pinpointing The Opportunities Of China's Clean Energy Transition",
+        "PFFV: Still Retaining Appeal As A Cautious Allocation",
+        "Bath & Body Works Q1 Recap: Clean Quarter, Shares Fairly Valued",
+        "U.S. oil falls below $90 on report Iran agreement would restore Hormuz traffic in one month"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,21 +73,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
         "CL=F",
-        "WMT",
-        "META"
+        "NVDA",
+        "AMZN",
+        "NVO"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Negative",
-      "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "Brent oil jumps more than 3% after Iran vows to retaliate for U.S. strikes",
+      "primary_driver": "Here are Wednesday's biggest analyst calls: Apple, Microsoft, SanDisk, FedEx, Micron, GE Aerospace, ",
       "key_drivers": [
-        "Brent oil jumps more than 3% after Iran vows to retaliate for U.S. strikes",
-        "U.S. conducts 'self-defense strikes' in Iran as Trump pushes for peace deal"
+        "Here are Wednesday's biggest analyst calls: Apple, Microsoft, SanDisk, FedEx, Micron, GE Aerospace, MGM & more",
+        "FedEx is a buy as freight business spinoff approaches, JPMorgan says"
       ],
       "key_tickers": [
         "GE",
@@ -97,19 +97,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "TGT"
+        "MSFT",
+        "AAPL",
+        "GE",
+        "JPM"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
+      "story_count": 3,
+      "primary_driver": "Your AI agent can now trade for you on Robinhood. And buy stuff with your credit card too",
       "key_drivers": [
-        "Gen Z demands bigger bargains — driving gains for discount retailers like Walmart and Ross",
-        "Nike: Still Not Interested",
-        "U.S. conducts 'self-defense strikes' in Iran as Trump pushes for peace deal",
+        "Your AI agent can now trade for you on Robinhood. And buy stuff with your credit card too",
+        "Lululemon settles proxy battle with founder Chip Wilson, agrees to two board nominees",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -120,19 +122,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "WMT",
-        "NKE",
-        "TGT"
+        "NVO",
+        "OXY"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "8-K - Shuttle Pharmaceuticals Holdings, Inc. (0001757499) (Filer)",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "8-K - Shuttle Pharmaceuticals Holdings, Inc. (0001757499) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -151,12 +152,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 10,
-      "primary_driver": "There Is No 'Cash On The Sidelines'",
+      "primary_driver": "Xiaomi: The Market May Be Missing The EV Potential",
       "key_drivers": [
-        "There Is No 'Cash On The Sidelines'",
-        "Valeo SE (VLEEY) Shareholder/Analyst Call Transcript",
-        "Stock futures are little changed after the S&P 500 closes at another record: Live updates",
-        "POET Technologies: I Don't Know When, But This Party Won't End Well"
+        "Xiaomi: The Market May Be Missing The EV Potential",
+        "CoreWeave: Something Doesn't Add Up About The Backlog",
+        "Paxton bests Cornyn in Texas Republican Senate primary after Trump endorsement",
+        "Manulife: The Market Punished The Wrong Q1"
       ],
       "key_tickers": [
         "TLT",
@@ -166,10 +167,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY",
-        "LLY",
-        "VIX",
-        "CL=F"
+        "BAC",
+        "COST",
+        "NKE"
       ]
     }
   ]
