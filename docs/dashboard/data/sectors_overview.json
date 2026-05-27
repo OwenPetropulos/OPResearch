@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 5,
-      "primary_driver": "U.S. oil falls below $90 on report Iran agreement would restore Hormuz traffic in one month",
+      "primary_driver": "Oil prices fall more than 4% after Rubio says U.S. will give Iran talks 'every chance to succeed'",
       "key_drivers": [
-        "U.S. oil falls below $90 on report Iran agreement would restore Hormuz traffic in one month",
-        "Diamondback Energy: The Iran Oil Rally Changes Things (Rating Downgrade)",
+        "Oil prices fall more than 4% after Rubio says U.S. will give Iran talks 'every chance to succeed'",
+        "Trump opposes Russia or China taking Iran's highly enriched uranium",
         "Lululemon settles proxy battle with founder Chip Wilson, agrees to two board nominees",
-        "Piper Sandler says Strait of Hormuz to remain closed for months and oil to hit new highs"
+        "8-K - IIOT-OXYS, Inc. (0001290658) (Filer)"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
+        "OXY",
         "LLY",
-        "BAC",
-        "OXY"
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "Federal judge had sex in chambers with high-ranking police officer, panel says",
+      "primary_driver": "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
       "key_drivers": [
-        "Federal judge had sex in chambers with high-ranking police officer, panel says",
-        "These 5 skills are AI-proof and likely to become more valuable 'over the next 5 years,' says Oxford-trained career exper",
-        "Your AI agent can now trade for you on Robinhood. And buy stuff with your credit card too",
-        "LexinFintech: Staying Bullish, But Understand The Skepticism"
+        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+        "8-K - AB Private Credit Investors Corp (0001634452) (Filer)",
+        "Low-income households face ‘remarkable’ rise in food insecurity in K-shaped economy: New York Fed",
+        "8-K - VISTA CREDIT STRATEGIC LENDING CORP. (0001919369) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "NVO",
-        "MSFT",
-        "AAPL",
-        "GE"
+        "BAC",
+        "LLY",
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 15,
-      "primary_driver": "Sustainable Perspectives: Pinpointing The Opportunities Of China's Clean Energy Transition",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 13,
+      "primary_driver": "Here’s our monthly update on all 33 portfolio stocks, including 4 to buy right now",
       "key_drivers": [
-        "Sustainable Perspectives: Pinpointing The Opportunities Of China's Clean Energy Transition",
-        "PFFV: Still Retaining Appeal As A Cautious Allocation",
-        "Bath & Body Works Q1 Recap: Clean Quarter, Shares Fairly Valued",
-        "U.S. oil falls below $90 on report Iran agreement would restore Hormuz traffic in one month"
+        "Here’s our monthly update on all 33 portfolio stocks, including 4 to buy right now",
+        "Oil prices fall more than 4% after Rubio says U.S. will give Iran talks 'every chance to succeed'",
+        "After Ferrari Luce backlash, Lamborghini CEO says canceling its own EV was the right choice",
+        "Trump opposes Russia or China taking Iran's highly enriched uranium"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,21 +72,23 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "BAC",
+        "RIG",
         "CL=F",
-        "NVDA",
-        "AMZN",
-        "NVO"
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Here are Wednesday's biggest analyst calls: Apple, Microsoft, SanDisk, FedEx, Micron, GE Aerospace, ",
+      "story_count": 4,
+      "primary_driver": "General Electric Company (GE) Presents at Bernstein 42nd Annual Strategic Decisions Conference - Sli",
       "key_drivers": [
-        "Here are Wednesday's biggest analyst calls: Apple, Microsoft, SanDisk, FedEx, Micron, GE Aerospace, MGM & more",
-        "FedEx is a buy as freight business spinoff approaches, JPMorgan says"
+        "General Electric Company (GE) Presents at Bernstein 42nd Annual Strategic Decisions Conference - Slideshow",
+        "Freightos Limited 2026 Q1 - Results - Earnings Call Presentation",
+        "SECURE Waste Infrastructure Corp. (SES:CA) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "Alabama asks Supreme Court to allow congressional map that dilutes Black vote"
       ],
       "key_tickers": [
         "GE",
@@ -97,20 +98,19 @@
         "HON"
       ],
       "trending_tickers": [
-        "MSFT",
-        "AAPL",
         "GE",
-        "JPM"
+        "LLY"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Your AI agent can now trade for you on Robinhood. And buy stuff with your credit card too",
+      "story_count": 4,
+      "primary_driver": "Investors betting the Iran war is ending are buying up travel stocks",
       "key_drivers": [
-        "Your AI agent can now trade for you on Robinhood. And buy stuff with your credit card too",
+        "Investors betting the Iran war is ending are buying up travel stocks",
+        "The death of Nascar driver Kyle Busch is renewing the debate around indexed universal life insurance",
         "Lululemon settles proxy battle with founder Chip Wilson, agrees to two board nominees",
         "1st Look at Local Housing Markets in December"
       ],
@@ -122,7 +122,7 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NVO",
+        "SPY",
         "OXY"
       ]
     },
@@ -131,9 +131,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "8-K - Shuttle Pharmaceuticals Holdings, Inc. (0001757499) (Filer)",
+      "primary_driver": "Healthy Returns: Eli Lilly makes a new push into vaccines — here’s what to know",
       "key_drivers": [
-        "8-K - Shuttle Pharmaceuticals Holdings, Inc. (0001757499) (Filer)"
+        "Healthy Returns: Eli Lilly makes a new push into vaccines — here’s what to know"
       ],
       "key_tickers": [
         "LLY",
@@ -143,21 +143,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "LLY"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "Xiaomi: The Market May Be Missing The EV Potential",
+      "story_count": 9,
+      "primary_driver": "TransUnion (TRU) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript",
       "key_drivers": [
-        "Xiaomi: The Market May Be Missing The EV Potential",
-        "CoreWeave: Something Doesn't Add Up About The Backlog",
-        "Paxton bests Cornyn in Texas Republican Senate primary after Trump endorsement",
-        "Manulife: The Market Punished The Wrong Q1"
+        "TransUnion (TRU) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript",
+        "PayPal Holdings, Inc. (PYPL) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript",
+        "Abercrombie shares jump 12% on earnings beat even as Iran conflict hits sales",
+        "National Bank of Canada 2026 Q2 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -167,9 +166,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
-        "COST",
-        "NKE"
+        "BAC"
       ]
     }
   ]
