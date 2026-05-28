@@ -2,15 +2,13 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Positive",
-      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 6,
-      "primary_driver": "Oil, Rates, And EM Currency: Temporary Shock Or Macro Shift?",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 2,
+      "primary_driver": "The Iran war may be winding down, but the era of $60 oil could be over",
       "key_drivers": [
-        "Oil, Rates, And EM Currency: Temporary Shock Or Macro Shift?",
-        "Oil prices turn lower as U.S.-Iran ceasefire extension awaits Trump approval",
-        "Oil prices turn lower as White House backs report on progress toward Iran peace pact",
-        "Here’s the real story behind the record drop in America’s oil reserves"
+        "The Iran war may be winding down, but the era of $60 oil could be over",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -31,12 +29,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "AI play Nebius is surging after mysterious new hedge fund manager reveals stake. Here are his other ",
+      "primary_driver": "8-K - Piedmont Realty Trust, Inc. (0001042776) (Filer)",
       "key_drivers": [
-        "AI play Nebius is surging after mysterious new hedge fund manager reveals stake. Here are his other holdings",
-        "Mythos was the critical trigger for IBM's open-source cybersecurity push, Krishna says",
-        "There may be a secret winner of the streaming wars, and it could end up saving you money",
-        "8-K - HPS Corporate Lending Fund (0001838126) (Filer)"
+        "8-K - Piedmont Realty Trust, Inc. (0001042776) (Filer)",
+        "8-K - Vestand Inc. (0001898604) (Filer)",
+        "8-K - Golub Capital Private Credit Fund (0001930087) (Filer)",
+        "With Inflation Increasing Once More, The Inflation-Protected VTIP Deserves A Closer Look"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +44,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
+        "RIG",
+        "LLY",
         "JPM",
-        "BAC",
-        "MS"
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "8-K - BEL FUSE INC /NJ (0000729580) (Filer)",
+      "story_count": 12,
+      "primary_driver": "Zoetis Inc. (ZTS) Presents at Stifel Jaws & Paws Conference 2026 Transcript",
       "key_drivers": [
-        "8-K - BEL FUSE INC /NJ (0000729580) (Filer)",
-        "AI play Nebius is surging after mysterious new hedge fund manager reveals stake. Here are his other holdings",
-        "Mythos was the critical trigger for IBM's open-source cybersecurity push, Krishna says",
-        "Burlington: Selling Overdone After Earnings, Maybe The Best Discount Retail Stock"
+        "Zoetis Inc. (ZTS) Presents at Stifel Jaws & Paws Conference 2026 Transcript",
+        "F&G Annuities & Life Remains Dramatically Undervalued",
+        "Disney's ABC files early broadcast licenses renewal 'under protest' against the FCC",
+        "Stock futures are little changed as traders eye developments in Middle East: Live updates"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,20 +71,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "BAC",
-        "CL=F",
-        "JPM",
-        "GS"
+        "LLY",
+        "RIG",
+        "AMZN",
+        "JPM"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Neutral",
-      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 1,
-      "primary_driver": "AI play Nebius is surging after mysterious new hedge fund manager reveals stake. Here are his other ",
+      "primary_driver": "Iran reportedly launches missiles as Trump mulls deal to pause war for two months",
       "key_drivers": [
-        "AI play Nebius is surging after mysterious new hedge fund manager reveals stake. Here are his other holdings"
+        "Iran reportedly launches missiles as Trump mulls deal to pause war for two months"
       ],
       "key_tickers": [
         "GE",
@@ -105,11 +103,11 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "Burlington: Selling Overdone After Earnings, Maybe The Best Discount Retail Stock",
+      "primary_driver": "Gap shares tumble 14% as retailer cuts sales guidance after disappointing Old Navy performance",
       "key_drivers": [
-        "Burlington: Selling Overdone After Earnings, Maybe The Best Discount Retail Stock",
-        "Kingsoft Cloud Q1: AI Capex Spending Needs To Be Justified Over The Next Few Quarters",
-        "Time to buy this once high-flying apparel stock? Jay Woods looks at the charts ahead of earnings",
+        "Gap shares tumble 14% as retailer cuts sales guidance after disappointing Old Navy performance",
+        "8-K - Target Hospitality Corp. (0001712189) (Filer)",
+        "Airlines, hotels warn against Trump admin threat to international flights to 'sanctuary cities'",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -120,18 +118,20 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "8-K - IONIS PHARMACEUTICALS INC (0000874015) (Filer)",
+      "story_count": 4,
+      "primary_driver": "Eli Lilly and Company (LLY) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcr",
       "key_drivers": [
-        "8-K - IONIS PHARMACEUTICALS INC (0000874015) (Filer)"
+        "Eli Lilly and Company (LLY) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript",
+        "8-K - Target Hospitality Corp. (0001712189) (Filer)",
+        "Personalis: Initiating Coverage Of Cancer Testing Biotech With A Buy Rating",
+        "Lilly’s GLP-1 medications will soon be covered by CVS, potentially opening access for millions of Americans"
       ],
       "key_tickers": [
         "LLY",
@@ -142,20 +142,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVO"
+        "TGT"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "Red-hot Arm Holdings soars to another all-time high. What's fueling the move this time?",
+      "story_count": 10,
+      "primary_driver": "ePlus inc. (PLUS) Q4 2026 Earnings Call Transcript",
       "key_drivers": [
-        "Red-hot Arm Holdings soars to another all-time high. What's fueling the move this time?",
-        "Traders' hopes fade for U.S.-Iran nuclear deal this year despite report on potential ceasefire agreement",
-        "Royal Bank of Canada (RY:CA) Q2 2026 Earnings Call Transcript",
-        "SSE plc (SSEZY) Q4 2026 Earnings Call Transcript"
+        "ePlus inc. (PLUS) Q4 2026 Earnings Call Transcript",
+        "Materion Corporation (MTRN) Presents at KeyBanc Capital Markets 2026 Industrials & Basic Materials Conference - Slidesho",
+        "The Gap, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "Okta, Inc. 2027 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -165,7 +165,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "RIG"
+        "COST"
       ]
     }
   ]
