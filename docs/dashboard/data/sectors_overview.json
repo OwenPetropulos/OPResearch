@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 7,
-      "primary_driver": "Oil prices jump 2% after Iran says it targeted U.S. air base following fresh American strikes",
+      "sentiment": "Positive",
+      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
+      "story_count": 6,
+      "primary_driver": "Oil, Rates, And EM Currency: Temporary Shock Or Macro Shift?",
       "key_drivers": [
-        "Oil prices jump 2% after Iran says it targeted U.S. air base following fresh American strikes",
-        "Here’s the real story behind the record drop in America’s oil reserves",
-        "TotalEnergies: Oil's War Premium Won't Last Forever (Downgrade)",
-        "The two oil scenarios investors should be positioning for, per Bank of America"
+        "Oil, Rates, And EM Currency: Temporary Shock Or Macro Shift?",
+        "Oil prices turn lower as U.S.-Iran ceasefire extension awaits Trump approval",
+        "Oil prices turn lower as White House backs report on progress toward Iran peace pact",
+        "Here’s the real story behind the record drop in America’s oil reserves"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "TGT",
         "BAC",
-        "LLY"
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 10,
-      "primary_driver": "Crexendo: Strong Long-Term Stock Gains Likely Due To High Growth",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "AI play Nebius is surging after mysterious new hedge fund manager reveals stake. Here are his other ",
       "key_drivers": [
-        "Crexendo: Strong Long-Term Stock Gains Likely Due To High Growth",
-        "8-K - Fidelity Private Credit Fund (0001920453) (Filer)",
-        "Core inflation hit an annual rate of 3.3% in April, as expected, Fed’s preferred gauge shows",
-        "Credo Remains A Buy Ahead Of Earnings (Earnings Preview)"
+        "AI play Nebius is surging after mysterious new hedge fund manager reveals stake. Here are his other holdings",
+        "Mythos was the critical trigger for IBM's open-source cybersecurity push, Krishna says",
+        "There may be a secret winner of the streaming wars, and it could end up saving you money",
+        "8-K - HPS Corporate Lending Fund (0001838126) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
+        "GS",
+        "JPM",
         "BAC",
-        "LLY",
-        "CL=F"
+        "MS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 17,
-      "primary_driver": "Crexendo: Strong Long-Term Stock Gains Likely Due To High Growth",
+      "story_count": 13,
+      "primary_driver": "8-K - BEL FUSE INC /NJ (0000729580) (Filer)",
       "key_drivers": [
-        "Crexendo: Strong Long-Term Stock Gains Likely Due To High Growth",
-        "More Americans are raiding their emergency savings just to fill up their gas tanks",
-        "Oil prices jump 2% after Iran says it targeted U.S. air base following fresh American strikes",
-        "Snowflake surges 35% toward best day ever on AI frenzy, fueling software rally"
+        "8-K - BEL FUSE INC /NJ (0000729580) (Filer)",
+        "AI play Nebius is surging after mysterious new hedge fund manager reveals stake. Here are his other holdings",
+        "Mythos was the critical trigger for IBM's open-source cybersecurity push, Krishna says",
+        "Burlington: Selling Overdone After Earnings, Maybe The Best Discount Retail Stock"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,21 +73,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
-        "CL=F",
         "BAC",
-        "COST"
+        "CL=F",
+        "JPM",
+        "GS"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Oracle Q4 Preview: AI Infrastructure In Focus As Sentiment Turns Positive",
+      "story_count": 1,
+      "primary_driver": "AI play Nebius is surging after mysterious new hedge fund manager reveals stake. Here are his other ",
       "key_drivers": [
-        "Oracle Q4 Preview: AI Infrastructure In Focus As Sentiment Turns Positive",
-        "M-tron Industries Could Benefit From Tight U.S. Defense Inventory"
+        "AI play Nebius is surging after mysterious new hedge fund manager reveals stake. Here are his other holdings"
       ],
       "key_tickers": [
         "GE",
@@ -104,11 +104,12 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Oil prices jump 2% after Iran says it targeted U.S. air base following fresh American strikes",
+      "story_count": 4,
+      "primary_driver": "Burlington: Selling Overdone After Earnings, Maybe The Best Discount Retail Stock",
       "key_drivers": [
-        "Oil prices jump 2% after Iran says it targeted U.S. air base following fresh American strikes",
-        "Fertitta-owned firm to buy Caesars Entertainment in nearly $18 billion leisure push",
+        "Burlington: Selling Overdone After Earnings, Maybe The Best Discount Retail Stock",
+        "Kingsoft Cloud Q1: AI Capex Spending Needs To Be Justified Over The Next Few Quarters",
+        "Time to buy this once high-flying apparel stock? Jay Woods looks at the charts ahead of earnings",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -119,21 +120,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "CL=F"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "More Americans are raiding their emergency savings just to fill up their gas tanks",
+      "story_count": 1,
+      "primary_driver": "8-K - IONIS PHARMACEUTICALS INC (0000874015) (Filer)",
       "key_drivers": [
-        "More Americans are raiding their emergency savings just to fill up their gas tanks",
-        "This biotech is leading what could be a 'GLP-1 moment for hair loss,' says BTIG",
-        "Eli Lilly Expands Into Infectious Diseases, Retatrutide Adds Another Phase 3 Win",
-        "CVS to restore coverage of Zepbound, add Eli Lilly's obesity pill to drug plans"
+        "8-K - IONIS PHARMACEUTICALS INC (0000874015) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -144,20 +142,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "COST"
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "8-K - Tamboran Resources Corp (0001997652) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 12,
+      "primary_driver": "Red-hot Arm Holdings soars to another all-time high. What's fueling the move this time?",
       "key_drivers": [
-        "8-K - Tamboran Resources Corp (0001997652) (Filer)",
-        "MEGI Vs. DPG: Both Attractively Valued, But I Think We Have A Clear Winner",
-        "Inside The Quant Growth & Income Portfolio",
-        "8-K - REGENCY CENTERS LP (0001066247) (Filer)"
+        "Red-hot Arm Holdings soars to another all-time high. What's fueling the move this time?",
+        "Traders' hopes fade for U.S.-Iran nuclear deal this year despite report on potential ceasefire agreement",
+        "Royal Bank of Canada (RY:CA) Q2 2026 Earnings Call Transcript",
+        "SSE plc (SSEZY) Q4 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -167,8 +165,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "TIP",
-        "CL=F"
+        "RIG"
       ]
     }
   ]
