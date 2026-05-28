@@ -4,12 +4,13 @@
       "sector": "Energy",
       "sentiment": "Negative",
       "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 3,
-      "primary_driver": "Oil prices fall more than 5% after Rubio says U.S. will give Iran talks 'every chance to succeed'",
+      "story_count": 7,
+      "primary_driver": "Oil prices jump 2% after Iran says it targeted U.S. air base following fresh American strikes",
       "key_drivers": [
-        "Oil prices fall more than 5% after Rubio says U.S. will give Iran talks 'every chance to succeed'",
-        "Trump opposes Russia or China taking Iran's highly enriched uranium",
-        "Sunday Night Futures"
+        "Oil prices jump 2% after Iran says it targeted U.S. air base following fresh American strikes",
+        "Here’s the real story behind the record drop in America’s oil reserves",
+        "TotalEnergies: Oil's War Premium Won't Last Forever (Downgrade)",
+        "The two oil scenarios investors should be positioning for, per Bank of America"
       ],
       "key_tickers": [
         "XOM",
@@ -20,21 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "LLY",
-        "SPY"
+        "TGT",
+        "BAC",
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Stock futures are little changed as Wall Street awaits key April inflation reading: Live updates",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "story_count": 10,
+      "primary_driver": "Crexendo: Strong Long-Term Stock Gains Likely Due To High Growth",
       "key_drivers": [
-        "Stock futures are little changed as Wall Street awaits key April inflation reading: Live updates",
-        "Elanco Animal Health Incorporated (ELAN) Presents at Stifel Jaws & Paws Conference 2026 Transcript",
-        "8-K - TELEFLEX INC (0000096943) (Filer)",
-        "8-K - NATIONAL HEALTHCARE CORP (0001047335) (Filer)"
+        "Crexendo: Strong Long-Term Stock Gains Likely Due To High Growth",
+        "8-K - Fidelity Private Credit Fund (0001920453) (Filer)",
+        "Core inflation hit an annual rate of 3.3% in April, as expected, Fed’s preferred gauge shows",
+        "Credo Remains A Buy Ahead Of Earnings (Earnings Preview)"
       ],
       "key_tickers": [
         "JPM",
@@ -44,21 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN",
-        "BAC"
+        "BAC",
+        "LLY",
+        "CL=F"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 13,
-      "primary_driver": "Salesforce CEO Marc Benioff outlines his plan to turn around his struggling stock",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 17,
+      "primary_driver": "Crexendo: Strong Long-Term Stock Gains Likely Due To High Growth",
       "key_drivers": [
-        "Salesforce CEO Marc Benioff outlines his plan to turn around his struggling stock",
-        "Stock futures are little changed as Wall Street awaits key April inflation reading: Live updates",
-        "Elanco Animal Health Incorporated (ELAN) Presents at Stifel Jaws & Paws Conference 2026 Transcript",
-        "Traders are skeptical of Iran timeline for Strait of Hormuz reopening"
+        "Crexendo: Strong Long-Term Stock Gains Likely Due To High Growth",
+        "More Americans are raiding their emergency savings just to fill up their gas tanks",
+        "Oil prices jump 2% after Iran says it targeted U.S. air base following fresh American strikes",
+        "Snowflake surges 35% toward best day ever on AI frenzy, fueling software rally"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,10 +72,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
+        "LLY",
         "CL=F",
         "BAC",
-        "LLY"
+        "COST"
       ]
     },
     {
@@ -80,10 +83,10 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "HICL Infrastructure PLC 2026 Q4 - Results - Earnings Call Presentation",
+      "primary_driver": "Oracle Q4 Preview: AI Infrastructure In Focus As Sentiment Turns Positive",
       "key_drivers": [
-        "HICL Infrastructure PLC 2026 Q4 - Results - Earnings Call Presentation",
-        "Alabama asks Supreme Court to allow congressional map that dilutes Black vote"
+        "Oracle Q4 Preview: AI Infrastructure In Focus As Sentiment Turns Positive",
+        "M-tron Industries Could Benefit From Tight U.S. Defense Inventory"
       ],
       "key_tickers": [
         "GE",
@@ -93,17 +96,19 @@
         "HON"
       ],
       "trending_tickers": [
-        "LLY"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "United Airlines Holdings, Inc. (UAL) Presents at Bernstein 42nd Annual Strategic Decisions Conferenc",
+      "story_count": 3,
+      "primary_driver": "Oil prices jump 2% after Iran says it targeted U.S. air base following fresh American strikes",
       "key_drivers": [
-        "United Airlines Holdings, Inc. (UAL) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript",
+        "Oil prices jump 2% after Iran says it targeted U.S. air base following fresh American strikes",
+        "Fertitta-owned firm to buy Caesars Entertainment in nearly $18 billion leisure push",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -114,18 +119,21 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "TGT",
+        "CL=F"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Healthy Returns: Eli Lilly makes a new push into vaccines — here’s what to know",
+      "story_count": 4,
+      "primary_driver": "More Americans are raiding their emergency savings just to fill up their gas tanks",
       "key_drivers": [
-        "Healthy Returns: Eli Lilly makes a new push into vaccines — here’s what to know"
+        "More Americans are raiding their emergency savings just to fill up their gas tanks",
+        "This biotech is leading what could be a 'GLP-1 moment for hair loss,' says BTIG",
+        "Eli Lilly Expands Into Infectious Diseases, Retatrutide Adds Another Phase 3 Win",
+        "CVS to restore coverage of Zepbound, add Eli Lilly's obesity pill to drug plans"
       ],
       "key_tickers": [
         "LLY",
@@ -135,20 +143,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY"
+        "LLY",
+        "COST"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Positive",
       "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 9,
-      "primary_driver": "Stock futures are little changed as Wall Street awaits key April inflation reading: Live updates",
+      "story_count": 11,
+      "primary_driver": "8-K - Tamboran Resources Corp (0001997652) (Filer)",
       "key_drivers": [
-        "Stock futures are little changed as Wall Street awaits key April inflation reading: Live updates",
-        "Stocks just scored a trifecta of record closes for the first time in 2026. What to expect next.",
-        "Merck & Co., Inc. (MRK) Shareholder/Analyst Call - Slideshow",
-        "Everpure, Inc. 2027 Q1 - Results - Earnings Call Presentation"
+        "8-K - Tamboran Resources Corp (0001997652) (Filer)",
+        "MEGI Vs. DPG: Both Attractively Valued, But I Think We Have A Clear Winner",
+        "Inside The Quant Growth & Income Portfolio",
+        "8-K - REGENCY CENTERS LP (0001066247) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -158,8 +167,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "TIP",
+        "CL=F"
       ]
     }
   ]
