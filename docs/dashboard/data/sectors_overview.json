@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Negative",
       "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 6,
-      "primary_driver": "The Iran war may be winding down, but the era of $60 oil could be over",
+      "story_count": 5,
+      "primary_driver": "Oil prices tumble 20% in May — the biggest monthly drop since 2020. Here’s what’s next.",
       "key_drivers": [
-        "The Iran war may be winding down, but the era of $60 oil could be over",
+        "Oil prices tumble 20% in May — the biggest monthly drop since 2020. Here’s what’s next.",
+        "Kalshi is moving beyond prediction markets and into one of crypto's biggest trading lanes",
         "8-K - CHEVRON CORP (0000093410) (Filer)",
-        "WTI Crude Is Entrenched In A Minor Downtrend Below 20-Day And 50-Day Moving Averages",
-        "Oil drops 20% from 2026 peak on optimism over U.S.-Iran ceasefire talks"
+        "Exxon warns oil inventories will hit dangerously low levels in weeks, forcing prices to shoot higher"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "BAC",
         "CVX",
-        "XOM"
+        "XOM",
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "The death of Nascar driver Kyle Busch is renewing the debate around indexed universal life insurance",
+      "primary_driver": "The company behind the White House’s UFC event says rivals ‘would kill’ for the opportunity. Critics",
       "key_drivers": [
-        "The death of Nascar driver Kyle Busch is renewing the debate around indexed universal life insurance",
-        "8-K - Starwood Credit Real Estate Income Trust (0001986395) (Filer)",
-        "Fed Governor Michelle Bowman warns against hiking interest rates because of inflation spike",
-        "8-K - TYLER TECHNOLOGIES INC (0000860731) (Filer)"
+        "The company behind the White House’s UFC event says rivals ‘would kill’ for the opportunity. Critics say that’s a proble",
+        "Auna: A Discounted Hospital Operator With An Insurance Twist",
+        "Mogotes Metals: Possibly The Next Major Deposit In The Vicuna District",
+        "Vienna Insurance Group AG (VNRFY) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN"
+        "META",
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 14,
-      "primary_driver": "Dell stock skyrockets 32%, heads for best day ever as AI server revenue soars",
+      "story_count": 12,
+      "primary_driver": "What’s next for investors after the AI rally supercharged stocks in May?",
       "key_drivers": [
-        "Dell stock skyrockets 32%, heads for best day ever as AI server revenue soars",
-        "Stocks are only slightly higher Friday, but the Nasdaq is closing out the month up 8%: Live updates",
-        "8-K - FIRST FINANCIAL BANCORP /OH/ (0000708955) (Filer)",
-        "Alcoa: I Remain Bullish After The Massive Rally"
+        "What’s next for investors after the AI rally supercharged stocks in May?",
+        "Nvidia And The Reality Of Paying For Perfection",
+        "8-K - MOSAIC CO (0001285785) (Filer)",
+        "As SpaceX IPO nears, traders think it's a near-certainty Musk becomes the first trillionaire"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,20 +72,19 @@
       ],
       "trending_tickers": [
         "LLY",
-        "CL=F",
-        "RIG",
-        "CVX"
+        "NVDA",
+        "META",
+        "BAC"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Negative",
-      "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 2,
-      "primary_driver": "8-K - Blackstone Infrastructure Strategies L.P. (0002030772) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "EverGen Infrastructure Corp. (EVGN:CA) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "8-K - Blackstone Infrastructure Strategies L.P. (0002030772) (Filer)",
-        "Iran reportedly launches missiles as Trump mulls deal to pause war for two months"
+        "EverGen Infrastructure Corp. (EVGN:CA) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "GE",
@@ -103,9 +103,9 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "The death of Nascar driver Kyle Busch is renewing the debate around indexed universal life insurance",
+      "primary_driver": "Delta Business Traveler won't replace a premium business travel card, but it's free",
       "key_drivers": [
-        "The death of Nascar driver Kyle Busch is renewing the debate around indexed universal life insurance",
+        "Delta Business Traveler won't replace a premium business travel card, but it's free",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -116,18 +116,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "NKE"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "8-K - Moleculin Biotech, Inc. (0001659617) (Filer)",
+      "story_count": 3,
+      "primary_driver": "Auna: A Discounted Hospital Operator With An Insurance Twist",
       "key_drivers": [
-        "8-K - Moleculin Biotech, Inc. (0001659617) (Filer)"
+        "Auna: A Discounted Hospital Operator With An Insurance Twist",
+        "AbbVie Inc. (ABBV) Presents at EU Clinical Trial Regulation: Latest Developments and Upcoming Opportunities Transcript",
+        "Vertex Pharmaceuticals Incorporated (VRTX) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript"
       ],
       "key_tickers": [
         "LLY",
@@ -137,21 +138,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "RTX"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 9,
-      "primary_driver": "Trump DOJ 'lawfare' fund temporarily blocked by judge as suit proceeds",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "USD/JPY: Largest Quarterly Intervention Since 2004",
       "key_drivers": [
-        "Trump DOJ 'lawfare' fund temporarily blocked by judge as suit proceeds",
-        "NetApp: Excellent Returns, I'm Out (Rating Downgrade)",
-        "Adtran: Rampant Data-Center Related Bandwidth Demands Powering Stock Forward",
-        "SentinelOne: The Layoff Panic Feels Like An Overreaction"
+        "USD/JPY: Largest Quarterly Intervention Since 2004",
+        "8-K - Invesco Real Estate Income Trust Inc. (0001756761) (Filer)",
+        "CIMB Group Holdings Berhad 2026 Q1 - Results - Earnings Call Presentation",
+        "CIMB Group Holdings Berhad (CIMDF) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -161,8 +161,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "JPY=X"
       ]
     }
   ]
