@@ -2,13 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 6,
       "primary_driver": "The Iran war may be winding down, but the era of $60 oil could be over",
       "key_drivers": [
         "The Iran war may be winding down, but the era of $60 oil could be over",
-        "Sunday Night Futures"
+        "8-K - CHEVRON CORP (0000093410) (Filer)",
+        "WTI Crude Is Entrenched In A Minor Downtrend Below 20-Day And 50-Day Moving Averages",
+        "Oil drops 20% from 2026 peak on optimism over U.S.-Iran ceasefire talks"
       ],
       "key_tickers": [
         "XOM",
@@ -20,21 +22,21 @@
       "trending_tickers": [
         "CL=F",
         "BAC",
-        "LLY",
-        "SPY"
+        "CVX",
+        "XOM"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "8-K - Piedmont Realty Trust, Inc. (0001042776) (Filer)",
+      "primary_driver": "The death of Nascar driver Kyle Busch is renewing the debate around indexed universal life insurance",
       "key_drivers": [
-        "8-K - Piedmont Realty Trust, Inc. (0001042776) (Filer)",
-        "8-K - Vestand Inc. (0001898604) (Filer)",
-        "8-K - Golub Capital Private Credit Fund (0001930087) (Filer)",
-        "With Inflation Increasing Once More, The Inflation-Protected VTIP Deserves A Closer Look"
+        "The death of Nascar driver Kyle Busch is renewing the debate around indexed universal life insurance",
+        "8-K - Starwood Credit Real Estate Income Trust (0001986395) (Filer)",
+        "Fed Governor Michelle Bowman warns against hiking interest rates because of inflation spike",
+        "8-K - TYLER TECHNOLOGIES INC (0000860731) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -44,23 +46,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "RIG",
-        "LLY",
-        "JPM",
-        "GS"
+        "AMZN"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 12,
-      "primary_driver": "Zoetis Inc. (ZTS) Presents at Stifel Jaws & Paws Conference 2026 Transcript",
+      "story_count": 14,
+      "primary_driver": "Dell stock skyrockets 32%, heads for best day ever as AI server revenue soars",
       "key_drivers": [
-        "Zoetis Inc. (ZTS) Presents at Stifel Jaws & Paws Conference 2026 Transcript",
-        "F&G Annuities & Life Remains Dramatically Undervalued",
-        "Disney's ABC files early broadcast licenses renewal 'under protest' against the FCC",
-        "Stock futures are little changed as traders eye developments in Middle East: Live updates"
+        "Dell stock skyrockets 32%, heads for best day ever as AI server revenue soars",
+        "Stocks are only slightly higher Friday, but the Nasdaq is closing out the month up 8%: Live updates",
+        "8-K - FIRST FINANCIAL BANCORP /OH/ (0000708955) (Filer)",
+        "Alcoa: I Remain Bullish After The Massive Rally"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,18 +71,19 @@
       ],
       "trending_tickers": [
         "LLY",
+        "CL=F",
         "RIG",
-        "AMZN",
-        "JPM"
+        "CVX"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Negative",
       "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 1,
-      "primary_driver": "Iran reportedly launches missiles as Trump mulls deal to pause war for two months",
+      "story_count": 2,
+      "primary_driver": "8-K - Blackstone Infrastructure Strategies L.P. (0002030772) (Filer)",
       "key_drivers": [
+        "8-K - Blackstone Infrastructure Strategies L.P. (0002030772) (Filer)",
         "Iran reportedly launches missiles as Trump mulls deal to pause war for two months"
       ],
       "key_tickers": [
@@ -102,12 +102,10 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Gap shares tumble 14% as retailer cuts sales guidance after disappointing Old Navy performance",
+      "story_count": 2,
+      "primary_driver": "The death of Nascar driver Kyle Busch is renewing the debate around indexed universal life insurance",
       "key_drivers": [
-        "Gap shares tumble 14% as retailer cuts sales guidance after disappointing Old Navy performance",
-        "8-K - Target Hospitality Corp. (0001712189) (Filer)",
-        "Airlines, hotels warn against Trump admin threat to international flights to 'sanctuary cities'",
+        "The death of Nascar driver Kyle Busch is renewing the debate around indexed universal life insurance",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -118,20 +116,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Eli Lilly and Company (LLY) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcr",
+      "story_count": 1,
+      "primary_driver": "8-K - Moleculin Biotech, Inc. (0001659617) (Filer)",
       "key_drivers": [
-        "Eli Lilly and Company (LLY) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript",
-        "8-K - Target Hospitality Corp. (0001712189) (Filer)",
-        "Personalis: Initiating Coverage Of Cancer Testing Biotech With A Buy Rating",
-        "Lilly’s GLP-1 medications will soon be covered by CVS, potentially opening access for millions of Americans"
+        "8-K - Moleculin Biotech, Inc. (0001659617) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -142,20 +138,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "TGT"
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "ePlus inc. (PLUS) Q4 2026 Earnings Call Transcript",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 9,
+      "primary_driver": "Trump DOJ 'lawfare' fund temporarily blocked by judge as suit proceeds",
       "key_drivers": [
-        "ePlus inc. (PLUS) Q4 2026 Earnings Call Transcript",
-        "Materion Corporation (MTRN) Presents at KeyBanc Capital Markets 2026 Industrials & Basic Materials Conference - Slidesho",
-        "The Gap, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "Okta, Inc. 2027 Q1 - Results - Earnings Call Presentation"
+        "Trump DOJ 'lawfare' fund temporarily blocked by judge as suit proceeds",
+        "NetApp: Excellent Returns, I'm Out (Rating Downgrade)",
+        "Adtran: Rampant Data-Center Related Bandwidth Demands Powering Stock Forward",
+        "SentinelOne: The Layoff Panic Feels Like An Overreaction"
       ],
       "key_tickers": [
         "TLT",
@@ -165,7 +161,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "COST"
+        "GLD",
+        "DXY"
       ]
     }
   ]
