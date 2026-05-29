@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 5,
-      "primary_driver": "Oil prices tumble 20% in May — the biggest monthly drop since 2020. Here’s what’s next.",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "Oil slides, stocks climb as Trump puts off determination on Iran proposal",
       "key_drivers": [
-        "Oil prices tumble 20% in May — the biggest monthly drop since 2020. Here’s what’s next.",
-        "Kalshi is moving beyond prediction markets and into one of crypto's biggest trading lanes",
-        "8-K - CHEVRON CORP (0000093410) (Filer)",
-        "Exxon warns oil inventories will hit dangerously low levels in weeks, forcing prices to shoot higher"
+        "Oil slides, stocks climb as Trump puts off determination on Iran proposal",
+        "Here’s the real story behind the record drop in America’s oil reserves",
+        "Stocks close at record highs with tech leading the way again. Nasdaq gains 8% in May",
+        "Halliburton May Be Down, But It's Certainly Not Out"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,21 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "CVX",
-        "XOM",
-        "LLY"
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "The company behind the White House’s UFC event says rivals ‘would kill’ for the opportunity. Critics",
+      "primary_driver": "XMAG: Secretly Funded By The Excluded",
       "key_drivers": [
-        "The company behind the White House’s UFC event says rivals ‘would kill’ for the opportunity. Critics say that’s a proble",
-        "Auna: A Discounted Hospital Operator With An Insurance Twist",
-        "Mogotes Metals: Possibly The Next Major Deposit In The Vicuna District",
-        "Vienna Insurance Group AG (VNRFY) Q1 2026 Earnings Call Transcript"
+        "XMAG: Secretly Funded By The Excluded",
+        "8-K - American Airlines Group Inc. (0000006201) (Filer)",
+        "8-K - AMERICAN AIRLINES, INC. (0000004515) (Filer)",
+        "IRS unveils new health savings account limits for 2027"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +45,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "META",
-        "JPM"
+        "GS",
+        "MS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 12,
-      "primary_driver": "What’s next for investors after the AI rally supercharged stocks in May?",
+      "story_count": 15,
+      "primary_driver": "A mystery man tried to buy Playboy’s high-end lingerie business. It turned out to all be a scam.",
       "key_drivers": [
-        "What’s next for investors after the AI rally supercharged stocks in May?",
-        "Nvidia And The Reality Of Paying For Perfection",
-        "8-K - MOSAIC CO (0001285785) (Filer)",
-        "As SpaceX IPO nears, traders think it's a near-certainty Musk becomes the first trillionaire"
+        "A mystery man tried to buy Playboy’s high-end lingerie business. It turned out to all be a scam.",
+        "Gap and American Eagle shares both get crushed — and neither retailer is blaming the economy",
+        "Postal Service proposes requiring states to provide mail-in ballot voter lists",
+        "Fincantieri: I Was Right To Wait (Rating Upgrade)"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,19 +71,19 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVDA",
-        "META",
-        "BAC"
+        "CL=F",
+        "RIG",
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "EverGen Infrastructure Corp. (EVGN:CA) Q1 2026 Earnings Call Transcript",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "EverGen Infrastructure Corp. (EVGN:CA) Q1 2026 Earnings Call Transcript"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -102,11 +101,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Delta Business Traveler won't replace a premium business travel card, but it's free",
+      "story_count": 6,
+      "primary_driver": "Gap and American Eagle shares both get crushed — and neither retailer is blaming the economy",
       "key_drivers": [
-        "Delta Business Traveler won't replace a premium business travel card, but it's free",
-        "1st Look at Local Housing Markets in December"
+        "Gap and American Eagle shares both get crushed — and neither retailer is blaming the economy",
+        "8-K - American Airlines Group Inc. (0000006201) (Filer)",
+        "8-K - AMERICAN AIRLINES, INC. (0000004515) (Filer)",
+        "Southwest Airlines Co. (LUV) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript"
       ],
       "key_tickers": [
         "NKE",
@@ -123,12 +124,11 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Auna: A Discounted Hospital Operator With An Insurance Twist",
+      "story_count": 2,
+      "primary_driver": "Fortress Biotech: Is It Time To Pay The Deferred Preferred Stock Dividends?",
       "key_drivers": [
-        "Auna: A Discounted Hospital Operator With An Insurance Twist",
-        "AbbVie Inc. (ABBV) Presents at EU Clinical Trial Regulation: Latest Developments and Upcoming Opportunities Transcript",
-        "Vertex Pharmaceuticals Incorporated (VRTX) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript"
+        "Fortress Biotech: Is It Time To Pay The Deferred Preferred Stock Dividends?",
+        "8-K - Cardiff Oncology, Inc. (0001213037) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -138,7 +138,8 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "RTX"
+        "LLY",
+        "NVO"
       ]
     },
     {
@@ -146,12 +147,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "USD/JPY: Largest Quarterly Intervention Since 2004",
+      "primary_driver": "Realbotix Corp. (XBOTF) Q2 2026 Earnings Call Transcript",
       "key_drivers": [
-        "USD/JPY: Largest Quarterly Intervention Since 2004",
-        "8-K - Invesco Real Estate Income Trust Inc. (0001756761) (Filer)",
-        "CIMB Group Holdings Berhad 2026 Q1 - Results - Earnings Call Presentation",
-        "CIMB Group Holdings Berhad (CIMDF) Q1 2026 Earnings Call Transcript"
+        "Realbotix Corp. (XBOTF) Q2 2026 Earnings Call Transcript",
+        "ZenaTech: Navigating High Growth, Dilution, And Government Contract Potential",
+        "National Beverage: Insider Dominance And Alignment Risks",
+        "POSaBIT Systems Corporation (POSAF) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -161,7 +162,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "JPY=X"
+        "GLD",
+        "DXY"
       ]
     }
   ]
