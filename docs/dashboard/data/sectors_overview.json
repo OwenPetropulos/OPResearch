@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Positive",
       "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 6,
-      "primary_driver": "S&P 500 closes at a record to kick off June trading as tech rally overpowers oil spike: Live updates",
+      "story_count": 4,
+      "primary_driver": "Many big oil tankers remain stuck in the Strait of Hormuz — and may not return once they escape",
       "key_drivers": [
+        "Many big oil tankers remain stuck in the Strait of Hormuz — and may not return once they escape",
+        "SRV: Earn An Attractive Double-Digit Yield From This Midstream Fund Today",
         "S&P 500 closes at a record to kick off June trading as tech rally overpowers oil spike: Live updates",
-        "IVOL: Market Moves Coil The Spring Even More",
-        "Many big oil tankers remain stuck in Strait of Hormuz — and may not return once they escape",
-        "Global oil prices top $95 a barrel and log best day in a month despite Trump saying peace talks with Iran have resumed f"
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -28,15 +28,15 @@
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "8-K - PRINCIPAL FINANCIAL GROUP INC (0001126328) (Filer)",
+      "primary_driver": "Microsoft and Google are late to AI coding, but 'absolutely critical' they compete for growth",
       "key_drivers": [
-        "8-K - PRINCIPAL FINANCIAL GROUP INC (0001126328) (Filer)",
-        "CNBC Points Pro: How to maximize your American Airlines credit card",
-        "Remote work is worsening youth unemployment, New York Fed finds",
-        "Rubio odds for GOP 2028 nominee close to overtaking Vance on Kalshi"
+        "Microsoft and Google are late to AI coding, but 'absolutely critical' they compete for growth",
+        "8-K - OCEANFIRST FINANCIAL CORP (0001004702) (Filer)",
+        "8-K - Enviri II Corp (0002104052) (Filer)",
+        "Ryman Hospitality Properties, Inc. (RHP) Presents at 4th Annual Morgan Stanley Travel & Leisure Conference Transcript"
       ],
       "key_tickers": [
         "JPM",
@@ -46,8 +46,10 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "GS"
+        "RIG",
+        "MSFT",
+        "GOOGL",
+        "TGT"
       ]
     },
     {
@@ -55,12 +57,12 @@
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
       "story_count": 16,
-      "primary_driver": "8-K - CHEETAH NET SUPPLY CHAIN SERVICE INC. (0001951667) (Filer)",
+      "primary_driver": "Here’s what’s worth streaming in June 2026 on Netflix, Hulu, HBO Max and more",
       "key_drivers": [
-        "8-K - CHEETAH NET SUPPLY CHAIN SERVICE INC. (0001951667) (Filer)",
-        "Wall Street’s red-hot momentum trade is still winning, as strategy delivers best 2-month gain on record",
-        "S&P 500 closes at a record to kick off June trading as tech rally overpowers oil spike: Live updates",
-        "8-K - Dime Commercial Bancshares, Inc. /NY/ (0000846617) (Filer)"
+        "Here’s what’s worth streaming in June 2026 on Netflix, Hulu, HBO Max and more",
+        "Stargate live updates: OpenAI's Altman says 'people are right to be anxious' about AI",
+        "Alphabet plans to raise $80 billion from stock sales to fund AI buildout",
+        "I am 71. Would it be foolish to sell $10,000 in shares to visit my grandchildren in Thailand?"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,22 +73,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "SPY",
-        "LLY",
-        "CL=F",
-        "AMZN"
+        "RIG",
+        "GOOGL",
+        "NVDA",
+        "LLY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "8-K - Industrial Logistics Properties Trust (0001717307) (Filer)",
+      "story_count": 2,
+      "primary_driver": "Stargate live updates: OpenAI's Altman says 'people are right to be anxious' about AI",
       "key_drivers": [
-        "8-K - Industrial Logistics Properties Trust (0001717307) (Filer)",
-        "8-K - CHEETAH NET SUPPLY CHAIN SERVICE INC. (0001951667) (Filer)",
-        "Stargate live updates: OpenAI's Altman says 'people are right to be anxious' about AI"
+        "Stargate live updates: OpenAI's Altman says 'people are right to be anxious' about AI",
+        "8-K - Proficient Auto Logistics, Inc (0001998768) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -103,13 +104,13 @@
       "sector": "Consumer",
       "sentiment": "Positive",
       "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 5,
-      "primary_driver": "Canada's Housing Market Still Soft Amid Uneven Economic Conditions",
+      "story_count": 9,
+      "primary_driver": "Retail had a 'surprisingly robust' first quarter, but the real test is ahead as tax refunds dry up",
       "key_drivers": [
-        "Canada's Housing Market Still Soft Amid Uneven Economic Conditions",
-        "CNBC Points Pro: How to maximize your American Airlines credit card",
-        "McDonald's unveils new global growth strategy to win over diners as competition rises",
-        "Berkshire's bet on Taylor Morrison suggests the housing market may have bottomed"
+        "Retail had a 'surprisingly robust' first quarter, but the real test is ahead as tax refunds dry up",
+        "Microsoft and Google are late to AI coding, but 'absolutely critical' they compete for growth",
+        "Host Hotels & Resorts, Inc. (HST) Shareholder/Analyst Call Transcript",
+        "McDonald's unveils new global growth strategy to win over diners as competition rises"
       ],
       "key_tickers": [
         "NKE",
@@ -119,18 +120,22 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "MSFT",
+        "GOOGL",
+        "TGT",
+        "MS"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 3,
+      "primary_driver": "Veracyte, Inc. (VCYT) Discusses ASCO Findings From OPTIMA and ENZAMET Phase III Trials in Breast and",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "Veracyte, Inc. (VCYT) Discusses ASCO Findings From OPTIMA and ENZAMET Phase III Trials in Breast and Prostate Cancer Tra",
+        "Ryman Hospitality Properties, Inc. (RHP) Presents at 4th Annual Morgan Stanley Travel & Leisure Conference Transcript",
+        "Agios Pharmaceuticals, Inc. (AGIO) Discusses Global License Agreement for Cevidoplenib and Strategic Expansion in Rare H"
       ],
       "key_tickers": [
         "LLY",
@@ -140,21 +145,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "MS"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "8-K - Wheeler Real Estate Investment Trust, Inc. (0001527541) (Filer)",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 10,
+      "primary_driver": "Landis+Gyr Group AG (LDGYY) Analyst/Investor Day Transcript",
       "key_drivers": [
-        "8-K - Wheeler Real Estate Investment Trust, Inc. (0001527541) (Filer)",
-        "8-K - DIGITAL REALTY TRUST, INC. (0001297996) (Filer)",
-        "8-K - Capital Bancorp Inc (0001419536) (Filer)",
-        "8-K - IDEAYA Biosciences, Inc. (0001676725) (Filer)"
+        "Landis+Gyr Group AG (LDGYY) Analyst/Investor Day Transcript",
+        "Stock futures tick lower after all three major indexes close at new records: Live updates",
+        "El Pollo Loco's Crazy Surge Was Justified (Upgrade)",
+        "ASTA Energy Solutions AG (XASTF) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -164,8 +168,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "LLY"
       ]
     }
   ]
