@@ -1,26 +1,30 @@
 {
   "stories": [
     {
-      "title": "8-K - Wellgistics Health, Inc. (0002030763) (Filer)",
-      "summary": "Filed: 2026-05-29 AccNo: 0001493152-26-026452 Size: 1 MB Item 1.01: Entry into a Material Definitive Agreement Item 3.02: Unregistered Sales of Equity Securities Item 7.01: Regulation FD Disclosure Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/2030763/000149315226026452/0001493152-26-026452-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-05-29T17:30:04Z",
+      "title": "S&P 500 is little changed as oil jumps, overshadowing Nvidia gain: Live updates",
+      "summary": "Stocks wrapped up a strong May, with all three major indexes posting solid gains.",
+      "url": "https://www.cnbc.com/2026/05/31/stock-market-today-live-updates.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-01T16:26:53Z",
       "id": "mn001",
       "sector_tags": [
-        "Macro"
+        "Energy",
+        "Technology"
       ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+      "ticker_tags": [
+        "NVDA",
+        "SPY"
+      ],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
     },
     {
-      "title": "8-K - Ondas Inc. (0001646188) (Filer)",
-      "summary": "Filed: 2026-05-29 AccNo: 0001213900-26-062972 Size: 211 KB Item 3.02: Unregistered Sales of Equity Securities Item 8.01: Other Events Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/1646188/000121390026062972/0001213900-26-062972-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-05-29T17:25:24Z",
+      "title": "BOND: An Intermediate Active Fixed Income Allocation In A Relatively Attractive Environment",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4910661-bond-active-fixed-income-allocation-in-a-relatively-attractive-environment?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-06-01T12:18:32Z",
       "id": "mn002",
       "sector_tags": [
         "Macro"
@@ -29,75 +33,58 @@
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "8-K - Matternet, Inc. (0002075109) (Filer)",
-      "summary": "Filed: 2026-05-29 AccNo: 0001213900-26-062961 Size: 6 MB Item 1.01: Entry into a Material Definitive Agreement Item 2.01: Completion of Acquisition or Disposition of Assets Item 3.02: Unregistered Sales of Equity Securities Item 3.03: Material Modifications to Rights of Security Holders Item 4.01: Changes in Registrant's Certifying Accountant Item 5.01: Changes in Control of Registrant Item 5.02: Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers: Compensatory Arrangements of Certain Officers Item 5.03: Amendments to Articles of Incorporation or ",
-      "url": "https://www.sec.gov/Archives/edgar/data/2075109/000121390026062961/0001213900-26-062961-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-05-29T17:21:17Z",
-      "id": "mn003",
-      "sector_tags": [
-        "Technology"
-      ],
-      "ticker_tags": [
-        "RIG"
-      ],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
-      "title": "Stocks close at record highs with tech leading the way again. Nasdaq gains 8% in May",
-      "summary": "U.S. equities closed at record highs on Friday, while crude prices slipped, helping the major averages score a winning month, boosted by technology.",
-      "url": "https://www.cnbc.com/2026/05/28/stock-market-today-live-updates.html",
+      "title": "Remote work is worsening youth unemployment, New York Fed finds",
+      "summary": "The expansion of remote work may explain the recent surge in youth unemployment, according to research by the Federal Reserve Bank of New York.",
+      "url": "https://www.cnbc.com/2026/06/01/remote-work-youth-unemployment-new-york-fed.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-29T20:49:56Z",
-      "id": "mn004",
+      "timestamp": "2026-06-01T16:01:47Z",
+      "id": "mn003",
       "sector_tags": [
-        "Energy",
-        "Technology"
+        "Financials",
+        "Technology",
+        "Macro"
       ],
       "ticker_tags": [],
-      "why_it_matters": "Oil prices are simultaneously an input cost, an inflation driver, and a geopolitical signal. A sustained move above $90 WTI historically starts to weigh on consumer spending and airline margins; a break below $70 pressures E&P cash flows and sovereign budgets in OPEC+ nations. The current supply-demand balance is fragile — OPEC+ compliance and U.S. shale production response are the key swing variables. Key watch: EIA weekly inventory builds and IEA demand revision cycles."
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     },
     {
-      "title": "These S&P 500 stocks soared the most during the AI-driven May rally",
-      "summary": "Even stocks in the beleaguered software industry have been on fire.",
-      "url": "https://www.marketwatch.com/story/these-s-p-500-stocks-have-soared-the-most-during-the-ai-driven-may-rally-570ad48f?mod=mw_rss_topstories",
+      "title": "Berkshire's bet on Taylor Morrison suggests the housing market may have bottomed",
+      "summary": "Analysts say the deal between Berkshire Hathaway and Taylor Morrison signals that the housing market may have bottomed.",
+      "url": "https://www.cnbc.com/2026/06/01/berkshire-taylor-morrison-bet-housing-market-bottom.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-01T15:48:20Z",
+      "id": "mn004",
+      "sector_tags": [
+        "Consumer"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "SpaceX says it will reserve 5% of its IPO shares for staff, friends and family",
+      "summary": "In a new filing, the company also clarified the nature of its multibillion-dollar deal with rival Anthropic.",
+      "url": "https://www.marketwatch.com/story/spacex-says-it-will-reserve-5-of-its-ipo-shares-for-staff-friends-and-family-d248d1ae?mod=mw_rss_topstories",
       "source_name": "MarketWatch",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-29T20:43:00Z",
+      "timestamp": "2026-06-01T15:15:00Z",
       "id": "mn005",
       "sector_tags": [
-        "Technology"
-      ],
-      "ticker_tags": [
-        "LLY",
-        "SPY"
-      ],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
-    },
-    {
-      "title": "Gold And Silver: I Am Reminded Of Silver Thursday",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4910154-gold-and-silver-i-am-reminded-of-silver-thursday?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-05-29T16:32:40Z",
-      "id": "mn006",
-      "sector_tags": [
+        "Technology",
         "Macro"
       ],
       "ticker_tags": [],
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "Wall Street rides high into June on hopes that the war will soon come to an end. Here's what's ahead",
-      "summary": "The stock market continues to bet on some sort of resolution being found with Iran. But there is also no shortage of other risks heading into a new month.",
-      "url": "https://www.cnbc.com/2026/05/29/stock-market-next-week-outlook-for-june-1-5-2026.html",
-      "source_name": "CNBC Top News",
+      "title": "U.S. manufacturers extend best hot streak since 2022, so why aren’t business leaders happy?",
+      "summary": "American manufacturers grew in May for the fifth month in a row — the biggest winning streak in four years — but lingering anxiety about the Trump tariffs and a rise in inflation tied to the Iran war left business leaders anxious.",
+      "url": "https://www.marketwatch.com/story/u-s-manufacturers-extend-best-hot-streak-since-2022-so-why-arent-business-leaders-happy-d838157d?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-29T20:07:16Z",
-      "id": "mn007",
+      "timestamp": "2026-06-01T14:17:00Z",
+      "id": "mn006",
       "sector_tags": [
         "Macro"
       ],
@@ -105,18 +92,65 @@
       "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
-      "title": "Student loan borrowers will have two new repayment options come July 1. Here's how to pick one",
-      "summary": "Starting July 1, millions of federal student loan holders will have two new ways to repay their debt. Here's what to know about the additional options.",
-      "url": "https://www.cnbc.com/2026/05/29/student-loan-borrowers-new-repayment-plans.html",
+      "title": "The stock market just did something eerily similar to the dot-com bubble top in 2000",
+      "summary": "Surging stock performance in May was concentrated in the AI adjacent.",
+      "url": "https://www.cnbc.com/2026/06/01/the-stock-market-just-did-something-eerily-similar-to-the-dotcom-bubble-top-in-2000.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-05-29T14:39:28Z",
-      "id": "mn008",
+      "timestamp": "2026-06-01T14:14:19Z",
+      "id": "mn007",
       "sector_tags": [
-        "Financials"
+        "Technology"
       ],
       "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "Strategy shares fall after selling $2.5 million in bitcoin, its first sale since 2022",
+      "summary": "Michael Saylor's Strategy sold bitcoin for the second time ever as geopolitical uncertainty continues to weigh on the cryptocurrency's price.",
+      "url": "https://www.cnbc.com/2026/06/01/strategy-shares-fall-after-selling-2point5-million-in-bitcoin-its-first-sale-since-2022.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-01T14:10:52Z",
+      "id": "mn008",
+      "sector_tags": [
+        "Technology",
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+    },
+    {
+      "title": "8-K - ExchangeRight Income Fund (0001771514) (Filer)",
+      "summary": "Filed: 2026-06-01 AccNo: 0001193125-26-250105 Size: 176 KB Item 3.02: Unregistered Sales of Equity Securities",
+      "url": "https://www.sec.gov/Archives/edgar/data/1771514/000119312526250105/0001193125-26-250105-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-06-01T10:00:15Z",
+      "id": "mn009",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [
+        "RIG"
+      ],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "Fed's Powell warns Trump's political 'stress test' will wreck public trust in central bank",
+      "summary": "Jerome Powell said White House pressure on the Fed will damage public trust in the U.S. central bank.",
+      "url": "https://www.cnbc.com/2026/06/01/federal-reserve-trump-political-pressure-powell-stress-test.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-01T12:38:04Z",
+      "id": "mn010",
+      "sector_tags": [
+        "Financials",
+        "Technology",
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
       "title": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank",
@@ -125,7 +159,7 @@
       "source_name": "Federal Reserve",
       "source_type": "Macro Data",
       "timestamp": "2026-05-28T15:00:00Z",
-      "id": "mn009",
+      "id": "mn011",
       "sector_tags": [
         "Financials"
       ],
@@ -139,7 +173,7 @@
       "source_name": "Federal Reserve",
       "source_type": "Macro Data",
       "timestamp": "2026-05-22T20:15:00Z",
-      "id": "mn010",
+      "id": "mn012",
       "sector_tags": [
         "Financials",
         "Technology"
@@ -154,7 +188,7 @@
       "source_name": "Federal Reserve",
       "source_type": "Macro Data",
       "timestamp": "2026-05-21T15:00:00Z",
-      "id": "mn011",
+      "id": "mn013",
       "sector_tags": [
         "Financials"
       ],
@@ -168,7 +202,7 @@
       "source_name": "Federal Reserve",
       "source_type": "Macro Data",
       "timestamp": "2026-05-20T20:00:00Z",
-      "id": "mn012",
+      "id": "mn014",
       "sector_tags": [
         "Financials"
       ],
@@ -184,35 +218,6 @@
       "source_name": "Federal Reserve",
       "source_type": "Macro Data",
       "timestamp": "2026-05-20T18:00:00Z",
-      "id": "mn013",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair",
-      "summary": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260515a.htm",
-      "source_name": "Federal Reserve",
-      "source_type": "Macro Data",
-      "timestamp": "2026-05-15T21:00:00Z",
-      "id": "mn014",
-      "sector_tags": [
-        "Financials",
-        "Technology"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
-    },
-    {
-      "title": "Federal Reserve Board announces approval of application by the Stephen M. Calk 2025 Trust",
-      "summary": "Federal Reserve Board announces approval of application by the Stephen M. Calk 2025 Trust",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260515a.htm",
-      "source_name": "Federal Reserve",
-      "source_type": "Macro Data",
-      "timestamp": "2026-05-15T20:30:00Z",
       "id": "mn015",
       "sector_tags": [
         "Financials"

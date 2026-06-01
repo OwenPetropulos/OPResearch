@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Oil slides, stocks climb as Trump puts off determination on Iran proposal",
+      "sentiment": "Positive",
+      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
+      "story_count": 5,
+      "primary_driver": "S&P 500 is little changed as oil jumps, overshadowing Nvidia gain: Live updates",
       "key_drivers": [
-        "Oil slides, stocks climb as Trump puts off determination on Iran proposal",
-        "Here’s the real story behind the record drop in America’s oil reserves",
-        "Stocks close at record highs with tech leading the way again. Nasdaq gains 8% in May",
-        "Halliburton May Be Down, But It's Certainly Not Out"
+        "S&P 500 is little changed as oil jumps, overshadowing Nvidia gain: Live updates",
+        "Global oil prices jump 7% to top $97 a barrel after Iran reportedly suspends talks with U.S. and fully closes Strait of ",
+        "Nvidia, Meta and Schlumberger rank among top companies in adopting AI, new study says",
+        "U.S. oil jumps more than 7% on report Iran will halt talks with U.S. and completely block Hormuz"
       ],
       "key_tickers": [
         "XOM",
@@ -20,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
+        "SPY",
         "CL=F",
-        "LLY",
-        "SPY"
+        "NVDA",
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "XMAG: Secretly Funded By The Excluded",
+      "primary_driver": "Revolution Medicines, Inc. (RVMD) Discusses Positive Clinical Results and Implications for Metastati",
       "key_drivers": [
-        "XMAG: Secretly Funded By The Excluded",
-        "8-K - American Airlines Group Inc. (0000006201) (Filer)",
-        "8-K - AMERICAN AIRLINES, INC. (0000004515) (Filer)",
-        "IRS unveils new health savings account limits for 2027"
+        "Revolution Medicines, Inc. (RVMD) Discusses Positive Clinical Results and Implications for Metastatic Pancreatic Cancer ",
+        "Treasury yields rise after Iran reportedly stops communication with U.S.",
+        "Remote work is worsening youth unemployment, New York Fed finds",
+        "Rubio odds for GOP 2028 nominee close to overtaking Vance on Kalshi"
       ],
       "key_tickers": [
         "JPM",
@@ -45,21 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
-        "MS"
+        "META",
+        "AMZN"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 15,
-      "primary_driver": "A mystery man tried to buy Playboy’s high-end lingerie business. It turned out to all be a scam.",
+      "story_count": 17,
+      "primary_driver": "S&P 500 is little changed as oil jumps, overshadowing Nvidia gain: Live updates",
       "key_drivers": [
-        "A mystery man tried to buy Playboy’s high-end lingerie business. It turned out to all be a scam.",
-        "Gap and American Eagle shares both get crushed — and neither retailer is blaming the economy",
-        "Postal Service proposes requiring states to provide mail-in ballot voter lists",
-        "Fincantieri: I Was Right To Wait (Rating Upgrade)"
+        "S&P 500 is little changed as oil jumps, overshadowing Nvidia gain: Live updates",
+        "Anthropic confidentially files IPO prospectus with SEC",
+        "Iran stops negotiations with U.S., vows to 'completely' block Strait of Hormuz: State media",
+        "Stocks making the biggest moves midday: MGM Resorts, Zoom Communications, Nvidia, Viasat, IBM & more"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,20 +71,22 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "NVDA",
+        "SPY",
         "LLY",
-        "CL=F",
-        "RIG",
-        "SPY"
+        "META"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 3,
+      "primary_driver": "Iran stops negotiations with U.S., vows to 'completely' block Strait of Hormuz: State media",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Iran stops negotiations with U.S., vows to 'completely' block Strait of Hormuz: State media",
+        "Stargate live updates: Developer suggests China is behind paid protesters opposing data centers",
+        "Global oil prices jump 7% to top $97 a barrel after Iran reportedly suspends talks with U.S. and fully closes Strait of "
       ],
       "key_tickers": [
         "GE",
@@ -93,21 +96,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "BAC",
+        "LLY",
+        "CL=F"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Gap and American Eagle shares both get crushed — and neither retailer is blaming the economy",
+      "story_count": 2,
+      "primary_driver": "Berkshire's bet on Taylor Morrison suggests the housing market may have bottomed",
       "key_drivers": [
-        "Gap and American Eagle shares both get crushed — and neither retailer is blaming the economy",
-        "8-K - American Airlines Group Inc. (0000006201) (Filer)",
-        "8-K - AMERICAN AIRLINES, INC. (0000004515) (Filer)",
-        "Southwest Airlines Co. (LUV) Presents at Bernstein 42nd Annual Strategic Decisions Conference Transcript"
+        "Berkshire's bet on Taylor Morrison suggests the housing market may have bottomed",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -117,7 +119,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE"
+        "NKE",
+        "WMT"
       ]
     },
     {
@@ -125,10 +128,10 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "Fortress Biotech: Is It Time To Pay The Deferred Preferred Stock Dividends?",
+      "primary_driver": "Revolution Medicines, Inc. (RVMD) Discusses Positive Clinical Results and Implications for Metastati",
       "key_drivers": [
-        "Fortress Biotech: Is It Time To Pay The Deferred Preferred Stock Dividends?",
-        "8-K - Cardiff Oncology, Inc. (0001213037) (Filer)"
+        "Revolution Medicines, Inc. (RVMD) Discusses Positive Clinical Results and Implications for Metastatic Pancreatic Cancer ",
+        "uniQure: Why A Shifting FDA Could Change Everything For AMT-130"
       ],
       "key_tickers": [
         "LLY",
@@ -138,21 +141,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "META"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Realbotix Corp. (XBOTF) Q2 2026 Earnings Call Transcript",
+      "story_count": 10,
+      "primary_driver": "Nationwide Strategic Income Fund Q1 2026 Commentary",
       "key_drivers": [
-        "Realbotix Corp. (XBOTF) Q2 2026 Earnings Call Transcript",
-        "ZenaTech: Navigating High Growth, Dilution, And Government Contract Potential",
-        "National Beverage: Insider Dominance And Alignment Risks",
-        "POSaBIT Systems Corporation (POSAF) Q1 2026 Earnings Call Transcript"
+        "Nationwide Strategic Income Fund Q1 2026 Commentary",
+        "SOXX: The Party May Be Over",
+        "BOND: An Intermediate Active Fixed Income Allocation In A Relatively Attractive Environment",
+        "Calamos Global Dynamic Income Fund Q1 2026 Commentary"
       ],
       "key_tickers": [
         "TLT",
