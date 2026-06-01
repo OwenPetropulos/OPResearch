@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Positive",
       "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 5,
-      "primary_driver": "S&P 500 is little changed as oil jumps, overshadowing Nvidia gain: Live updates",
+      "story_count": 6,
+      "primary_driver": "S&P 500 closes at a record to kick off June trading as tech rally overpowers oil spike: Live updates",
       "key_drivers": [
-        "S&P 500 is little changed as oil jumps, overshadowing Nvidia gain: Live updates",
-        "Global oil prices jump 7% to top $97 a barrel after Iran reportedly suspends talks with U.S. and fully closes Strait of ",
-        "Nvidia, Meta and Schlumberger rank among top companies in adopting AI, new study says",
-        "U.S. oil jumps more than 7% on report Iran will halt talks with U.S. and completely block Hormuz"
+        "S&P 500 closes at a record to kick off June trading as tech rally overpowers oil spike: Live updates",
+        "IVOL: Market Moves Coil The Spring Even More",
+        "Many big oil tankers remain stuck in Strait of Hormuz — and may not return once they escape",
+        "Global oil prices top $95 a barrel and log best day in a month despite Trump saying peace talks with Iran have resumed f"
       ],
       "key_tickers": [
         "XOM",
@@ -20,10 +20,10 @@
         "RIG"
       ],
       "trending_tickers": [
+        "LLY",
         "SPY",
         "CL=F",
-        "NVDA",
-        "LLY"
+        "BAC"
       ]
     },
     {
@@ -31,10 +31,10 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Revolution Medicines, Inc. (RVMD) Discusses Positive Clinical Results and Implications for Metastati",
+      "primary_driver": "8-K - PRINCIPAL FINANCIAL GROUP INC (0001126328) (Filer)",
       "key_drivers": [
-        "Revolution Medicines, Inc. (RVMD) Discusses Positive Clinical Results and Implications for Metastatic Pancreatic Cancer ",
-        "Treasury yields rise after Iran reportedly stops communication with U.S.",
+        "8-K - PRINCIPAL FINANCIAL GROUP INC (0001126328) (Filer)",
+        "CNBC Points Pro: How to maximize your American Airlines credit card",
         "Remote work is worsening youth unemployment, New York Fed finds",
         "Rubio odds for GOP 2028 nominee close to overtaking Vance on Kalshi"
       ],
@@ -46,21 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "META",
-        "AMZN"
+        "JPM",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 17,
-      "primary_driver": "S&P 500 is little changed as oil jumps, overshadowing Nvidia gain: Live updates",
+      "story_count": 16,
+      "primary_driver": "8-K - CHEETAH NET SUPPLY CHAIN SERVICE INC. (0001951667) (Filer)",
       "key_drivers": [
-        "S&P 500 is little changed as oil jumps, overshadowing Nvidia gain: Live updates",
-        "Anthropic confidentially files IPO prospectus with SEC",
-        "Iran stops negotiations with U.S., vows to 'completely' block Strait of Hormuz: State media",
-        "Stocks making the biggest moves midday: MGM Resorts, Zoom Communications, Nvidia, Viasat, IBM & more"
+        "8-K - CHEETAH NET SUPPLY CHAIN SERVICE INC. (0001951667) (Filer)",
+        "Wall Street’s red-hot momentum trade is still winning, as strategy delivers best 2-month gain on record",
+        "S&P 500 closes at a record to kick off June trading as tech rally overpowers oil spike: Live updates",
+        "8-K - Dime Commercial Bancshares, Inc. /NY/ (0000846617) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,10 +71,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "NVDA",
         "SPY",
         "LLY",
-        "META"
+        "CL=F",
+        "AMZN"
       ]
     },
     {
@@ -82,11 +82,11 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 3,
-      "primary_driver": "Iran stops negotiations with U.S., vows to 'completely' block Strait of Hormuz: State media",
+      "primary_driver": "8-K - Industrial Logistics Properties Trust (0001717307) (Filer)",
       "key_drivers": [
-        "Iran stops negotiations with U.S., vows to 'completely' block Strait of Hormuz: State media",
-        "Stargate live updates: Developer suggests China is behind paid protesters opposing data centers",
-        "Global oil prices jump 7% to top $97 a barrel after Iran reportedly suspends talks with U.S. and fully closes Strait of "
+        "8-K - Industrial Logistics Properties Trust (0001717307) (Filer)",
+        "8-K - CHEETAH NET SUPPLY CHAIN SERVICE INC. (0001951667) (Filer)",
+        "Stargate live updates: OpenAI's Altman says 'people are right to be anxious' about AI"
       ],
       "key_tickers": [
         "GE",
@@ -96,20 +96,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "BAC",
-        "LLY",
-        "CL=F"
+        "RIG"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Berkshire's bet on Taylor Morrison suggests the housing market may have bottomed",
+      "sentiment": "Positive",
+      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
+      "story_count": 5,
+      "primary_driver": "Canada's Housing Market Still Soft Amid Uneven Economic Conditions",
       "key_drivers": [
-        "Berkshire's bet on Taylor Morrison suggests the housing market may have bottomed",
-        "1st Look at Local Housing Markets in December"
+        "Canada's Housing Market Still Soft Amid Uneven Economic Conditions",
+        "CNBC Points Pro: How to maximize your American Airlines credit card",
+        "McDonald's unveils new global growth strategy to win over diners as competition rises",
+        "Berkshire's bet on Taylor Morrison suggests the housing market may have bottomed"
       ],
       "key_tickers": [
         "NKE",
@@ -127,11 +127,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Revolution Medicines, Inc. (RVMD) Discusses Positive Clinical Results and Implications for Metastati",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Revolution Medicines, Inc. (RVMD) Discusses Positive Clinical Results and Implications for Metastatic Pancreatic Cancer ",
-        "uniQure: Why A Shifting FDA Could Change Everything For AMT-130"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -141,20 +140,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "META"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "Nationwide Strategic Income Fund Q1 2026 Commentary",
+      "story_count": 11,
+      "primary_driver": "8-K - Wheeler Real Estate Investment Trust, Inc. (0001527541) (Filer)",
       "key_drivers": [
-        "Nationwide Strategic Income Fund Q1 2026 Commentary",
-        "SOXX: The Party May Be Over",
-        "BOND: An Intermediate Active Fixed Income Allocation In A Relatively Attractive Environment",
-        "Calamos Global Dynamic Income Fund Q1 2026 Commentary"
+        "8-K - Wheeler Real Estate Investment Trust, Inc. (0001527541) (Filer)",
+        "8-K - DIGITAL REALTY TRUST, INC. (0001297996) (Filer)",
+        "8-K - Capital Bancorp Inc (0001419536) (Filer)",
+        "8-K - IDEAYA Biosciences, Inc. (0001676725) (Filer)"
       ],
       "key_tickers": [
         "TLT",
