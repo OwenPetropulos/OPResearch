@@ -2,14 +2,13 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Positive",
-      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 4,
-      "primary_driver": "Many big oil tankers remain stuck in the Strait of Hormuz — and may not return once they escape",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 3,
+      "primary_driver": "Exxon Mobil: Buy As Iran Fades Into The Past (Hopefully Soon)",
       "key_drivers": [
+        "Exxon Mobil: Buy As Iran Fades Into The Past (Hopefully Soon)",
         "Many big oil tankers remain stuck in the Strait of Hormuz — and may not return once they escape",
-        "SRV: Earn An Attractive Double-Digit Yield From This Midstream Fund Today",
-        "S&P 500 closes at a record to kick off June trading as tech rally overpowers oil spike: Live updates",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -21,22 +20,22 @@
       ],
       "trending_tickers": [
         "LLY",
-        "SPY",
-        "CL=F",
-        "BAC"
+        "XOM",
+        "BAC",
+        "NKE"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Microsoft and Google are late to AI coding, but 'absolutely critical' they compete for growth",
+      "primary_driver": "UP Fintech Holding Limited (TIGR) Q1 2026 Earnings Call Transcript",
       "key_drivers": [
-        "Microsoft and Google are late to AI coding, but 'absolutely critical' they compete for growth",
-        "8-K - OCEANFIRST FINANCIAL CORP (0001004702) (Filer)",
-        "8-K - Enviri II Corp (0002104052) (Filer)",
-        "Ryman Hospitality Properties, Inc. (RHP) Presents at 4th Annual Morgan Stanley Travel & Leisure Conference Transcript"
+        "UP Fintech Holding Limited (TIGR) Q1 2026 Earnings Call Transcript",
+        "Trump picks housing Dir. Bill Pulte as acting intelligence chief, replacing Tulsi Gabbard",
+        "8-K - Federal Home Loan Bank of Atlanta (0001331465) (Filer)",
+        "8-K - PEABODY ENERGY CORP (0001064728) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +45,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "RIG",
-        "MSFT",
-        "GOOGL",
-        "TGT"
+        "JPM",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 16,
-      "primary_driver": "Here’s what’s worth streaming in June 2026 on Netflix, Hulu, HBO Max and more",
+      "story_count": 13,
+      "primary_driver": "HPE surges 25% after blowout earnings, pacing for its best day ever",
       "key_drivers": [
-        "Here’s what’s worth streaming in June 2026 on Netflix, Hulu, HBO Max and more",
-        "Stargate live updates: OpenAI's Altman says 'people are right to be anxious' about AI",
-        "Alphabet plans to raise $80 billion from stock sales to fund AI buildout",
-        "I am 71. Would it be foolish to sell $10,000 in shares to visit my grandchildren in Thailand?"
+        "HPE surges 25% after blowout earnings, pacing for its best day ever",
+        "8-K - Cornerstone Building Brands, Inc. (0000883902) (Filer)",
+        "The top 10 highest-paying jobs for teens in the U.S.—No. 1 isn't retail or food service",
+        "Trump picks housing Dir. Bill Pulte as acting intelligence chief, replacing Tulsi Gabbard"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,21 +70,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "RIG",
-        "GOOGL",
+        "LLY",
         "NVDA",
-        "LLY"
+        "GOOGL",
+        "AMZN"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Stargate live updates: OpenAI's Altman says 'people are right to be anxious' about AI",
+      "story_count": 1,
+      "primary_driver": "Nuclear weapons could soon be hosted in more NATO nations — what it means for defense stocks",
       "key_drivers": [
-        "Stargate live updates: OpenAI's Altman says 'people are right to be anxious' about AI",
-        "8-K - Proficient Auto Logistics, Inc (0001998768) (Filer)"
+        "Nuclear weapons could soon be hosted in more NATO nations — what it means for defense stocks"
       ],
       "key_tickers": [
         "GE",
@@ -97,20 +93,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "RIG"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Positive",
       "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 9,
-      "primary_driver": "Retail had a 'surprisingly robust' first quarter, but the real test is ahead as tax refunds dry up",
+      "story_count": 5,
+      "primary_driver": "The top 10 highest-paying jobs for teens in the U.S.—No. 1 isn't retail or food service",
       "key_drivers": [
-        "Retail had a 'surprisingly robust' first quarter, but the real test is ahead as tax refunds dry up",
-        "Microsoft and Google are late to AI coding, but 'absolutely critical' they compete for growth",
-        "Host Hotels & Resorts, Inc. (HST) Shareholder/Analyst Call Transcript",
-        "McDonald's unveils new global growth strategy to win over diners as competition rises"
+        "The top 10 highest-paying jobs for teens in the U.S.—No. 1 isn't retail or food service",
+        "Trump picks housing Dir. Bill Pulte as acting intelligence chief, replacing Tulsi Gabbard",
+        "Commodities regulator alleges Winklevoss' Gemini crypto exchange was politically targeted",
+        "Wall Street’s AI stock-picking secrets aren’t coming to your portfolio"
       ],
       "key_tickers": [
         "NKE",
@@ -120,22 +117,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "MSFT",
-        "GOOGL",
-        "TGT",
-        "MS"
+        "LLY",
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Veracyte, Inc. (VCYT) Discusses ASCO Findings From OPTIMA and ENZAMET Phase III Trials in Breast and",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Veracyte, Inc. (VCYT) Discusses ASCO Findings From OPTIMA and ENZAMET Phase III Trials in Breast and Prostate Cancer Tra",
-        "Ryman Hospitality Properties, Inc. (RHP) Presents at 4th Annual Morgan Stanley Travel & Leisure Conference Transcript",
-        "Agios Pharmaceuticals, Inc. (AGIO) Discusses Global License Agreement for Cevidoplenib and Strategic Expansion in Rare H"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -145,20 +138,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "MS"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 10,
-      "primary_driver": "Landis+Gyr Group AG (LDGYY) Analyst/Investor Day Transcript",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "This space stock is rising as Blue Origin predicts quick recovery from big explosion",
       "key_drivers": [
-        "Landis+Gyr Group AG (LDGYY) Analyst/Investor Day Transcript",
-        "Stock futures tick lower after all three major indexes close at new records: Live updates",
-        "El Pollo Loco's Crazy Surge Was Justified (Upgrade)",
-        "ASTA Energy Solutions AG (XASTF) Q1 2026 Earnings Call Transcript"
+        "This space stock is rising as Blue Origin predicts quick recovery from big explosion",
+        "Urban Outfitters, Inc.: Fundamentals Improving And Valuation Is Still Attractive",
+        "S&P 500 is little changed Tuesday as Alphabet slides: Live updates",
+        "There's a compelling opportunity in this ridesharing name"
       ],
       "key_tickers": [
         "TLT",
@@ -168,7 +162,10 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY"
+        "RIG",
+        "GOOGL",
+        "SPY",
+        "BAC"
       ]
     }
   ]
