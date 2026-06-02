@@ -4,9 +4,10 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Sunday Night Futures",
+      "story_count": 2,
+      "primary_driver": "Zion Oil & Gas, Inc. (ZNOG) Shareholder/Analyst Call Transcript",
       "key_drivers": [
+        "Zion Oil & Gas, Inc. (ZNOG) Shareholder/Analyst Call Transcript",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -27,12 +28,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Analog Devices, Inc. (ADI) Presents at Bank of America 2026 Global Technology Conference Transcript",
+      "primary_driver": "Palantir's $369 Billion Valuation Requires Unprecedented Federal Market Share",
       "key_drivers": [
-        "Analog Devices, Inc. (ADI) Presents at Bank of America 2026 Global Technology Conference Transcript",
-        "CarGurus, Inc. (CARG) Presents at Bank of America 2026 Global Technology Conference Transcript",
-        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
-        "The CFTC has sparked a potential revolution on Wall Street. Exchange stocks are dropping"
+        "Palantir's $369 Billion Valuation Requires Unprecedented Federal Market Share",
+        "Ambarella, Inc. (AMBA) Presents at Bank of America 2026 Global Technology Conference - Slideshow",
+        "Victoria’s Secret’s stock just had its best day ever. It came down to better bras.",
+        "PDO: Best For A Normalizing Interest Rate Environment"
       ],
       "key_tickers": [
         "JPM",
@@ -42,21 +43,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC",
-        "GS"
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "Trump signs a scaled-back executive order on AI. Critics say it’s almost meaningless.",
+      "story_count": 12,
+      "primary_driver": "Alphabet’s relentless AI spending is giving new shine to Broadcom’s stock",
       "key_drivers": [
-        "Trump signs a scaled-back executive order on AI. Critics say it’s almost meaningless.",
-        "Microsoft unveils new AI models to lessen reliance on OpenAI and lower costs for developers",
-        "Why BlackRock's Rick Rieder feels 'a bit more relaxed' about AI bull market than dotcom era",
-        "Peloton Interactive, Inc. (PTON) Presents at 2026 Baird Global Consumer, Technology & Services Conference Transcript"
+        "Alphabet’s relentless AI spending is giving new shine to Broadcom’s stock",
+        "Daqo New Energy: It's A Waiting Game, Patience Required (Downgrade)",
+        "Sterling: How A Valuation Analyst Tried (And Failed) To Justify The Price",
+        "Victoria’s Secret’s stock just had its best day ever. It came down to better bras."
       ],
       "key_tickers": [
         "NVDA",
@@ -67,20 +67,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
-        "SPY",
+        "GOOGL",
+        "NVDA",
         "BAC",
-        "MSFT"
+        "LLY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Honeywell's aerospace spin approaches key milestone. Plus, the new stock supply problem",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Honeywell's aerospace spin approaches key milestone. Plus, the new stock supply problem"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -98,9 +98,12 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "1st Look at Local Housing Markets in December",
+      "story_count": 4,
+      "primary_driver": "Alphabet’s relentless AI spending is giving new shine to Broadcom’s stock",
       "key_drivers": [
+        "Alphabet’s relentless AI spending is giving new shine to Broadcom’s stock",
+        "Victoria’s Secret’s stock just had its best day ever. It came down to better bras.",
+        "GameStop wants to buy back $2 billion of its own stock after an eBay-fueled selloff",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -111,18 +114,20 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "GOOGL",
+        "BAC"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 3,
+      "primary_driver": "NextCure, Inc. (NXTC) Discusses Preliminary Phase I Data for SIM0505 in Platinum-Resistant Ovarian C",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "NextCure, Inc. (NXTC) Discusses Preliminary Phase I Data for SIM0505 in Platinum-Resistant Ovarian Cancer and Uterine Se",
+        "8-K - NRX Pharmaceuticals, Inc. (0001719406) (Filer)",
+        "8-K - NKGen Biotech, Inc. (0001845459) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -138,15 +143,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Bid Corporation Limited (BPPPF) Analyst/Investor Day Transcript",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 9,
+      "primary_driver": "Trump still protected from tax enforcement, but anti-weaponization fund is dead, Blanche says",
       "key_drivers": [
-        "Bid Corporation Limited (BPPPF) Analyst/Investor Day Transcript",
-        "Hydreight Technologies Inc. (NURS:CA) Q1 2026 Earnings Call Prepared Remarks Transcript",
-        "abrdn Australia Equity Fund Q1 2026 Commentary",
-        "Link Real Estate Investment Trust (LKREF) Q4 2026 Earnings Call Transcript"
+        "Trump still protected from tax enforcement, but anti-weaponization fund is dead, Blanche says",
+        "VNET Group: A 'Buy' On EBITDA Beat And Major Ownership Shift",
+        "Brinker International: Chili's Momentum Is Intact, Yet The Stock Isn't Hot",
+        "Ulta Beauty, Inc. 2026 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -156,7 +161,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "KRE"
+        "NKE",
+        "RIG"
       ]
     }
   ]
