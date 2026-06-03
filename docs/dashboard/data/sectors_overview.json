@@ -2,14 +2,13 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 4,
-      "primary_driver": "Stocks making the biggest moves midday: Exxon Mobil, GameStop, Palo Alto Networks, Blackstone & more",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 3,
+      "primary_driver": "Thursday's big stock stories: What’s likely to move the market in the next trading session",
       "key_drivers": [
+        "Thursday's big stock stories: What’s likely to move the market in the next trading session",
         "Stocks making the biggest moves midday: Exxon Mobil, GameStop, Palo Alto Networks, Blackstone & more",
-        "Oil prices look to end at highest levels in over a week: ‘Oil tanks are getting emptier each week Hormuz stays closed’",
-        "8-K - ZION OIL & GAS INC (0001131312) (Filer)",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -20,23 +19,23 @@
         "RIG"
       ],
       "trending_tickers": [
+        "SPY",
         "CL=F",
         "XOM",
-        "LLY",
-        "SPY"
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Samples from Texas calves tested for possible screwworm, rattling markets: Reuters",
+      "story_count": 9,
+      "primary_driver": "Vienna Insurance Group AG 2026 Q1 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "Samples from Texas calves tested for possible screwworm, rattling markets: Reuters",
-        "KLA Corporation (KLAC) Presents at Bank of America 2026 Global Technology Conference Transcript",
-        "Box, Inc. (BOX) Presents at Bank of America 2026 Global Technology Conference Transcript",
-        "8-K - Lord Abbett Private Credit Fund (0002008748) (Filer)"
+        "Vienna Insurance Group AG 2026 Q1 - Results - Earnings Call Presentation",
+        "ON Semiconductor Corporation (ON) Presents at Bank of America 2026 Global Technology Conference Transcript",
+        "Jim Cramer warns excess supply could be the next biggest threat to the bull market",
+        "DigitalOcean Holdings, Inc. (DOCN) Presents at Bank of America 2026 Global Technology Conference Transcript"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +45,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC"
+        "BAC",
+        "SPY",
+        "CL=F",
+        "RIG"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 10,
-      "primary_driver": "Telix Pharmaceuticals Limited (TLX) Presents at 46th Annual William Blair Growth Stock Conference - ",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 11,
+      "primary_driver": "Broadcom stock plunges on weak software sales, unchanged AI chip forecast for the year",
       "key_drivers": [
-        "Telix Pharmaceuticals Limited (TLX) Presents at 46th Annual William Blair Growth Stock Conference - Slideshow",
-        "Microsoft's Core Internal Conflict Continues To Significantly Cap Upside",
-        "Carillon Reams Unconstrained Bond Fund Q1 2026 Commentary",
-        "TaskUs: Promising Transition, But With Many Uncertainties"
+        "Broadcom stock plunges on weak software sales, unchanged AI chip forecast for the year",
+        "ON Semiconductor Corporation (ON) Presents at Bank of America 2026 Global Technology Conference Transcript",
+        "Broadcom Q2: The AI Bar Was Too High",
+        "Jim Cramer warns excess supply could be the next biggest threat to the bull market"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,10 +72,10 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "BAC",
+        "META",
         "LLY",
-        "CL=F",
-        "MSFT",
-        "META"
+        "SPY"
       ]
     },
     {
@@ -102,12 +104,12 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 7,
-      "primary_driver": "Are you financially fulfilled? If not, your retirement plans are in danger.",
+      "primary_driver": "You’re going to pay tax on RMDs — there’s no way around it. Or is there?",
       "key_drivers": [
-        "Are you financially fulfilled? If not, your retirement plans are in danger.",
-        "Social Security benefit cuts could average $500 a month for retirees if trust fund runs dry, report finds",
-        "GOP Sen. Tillis slams Trump intelligence pick Pulte: 'Don't think he has a prayer'",
-        "Tom Steyer spent $216 million of his own money to run for governor of California — here’s where that ranks"
+        "You’re going to pay tax on RMDs — there’s no way around it. Or is there?",
+        "SpaceX officially set to crush global records in targeting massive IPO haul of up to $86 billion",
+        "SpaceX targets $135 IPO price at valuation of $1.77 trillion",
+        "Social Security benefit cuts could average $500 a month for retirees if trust fund runs dry, report finds"
       ],
       "key_tickers": [
         "NKE",
@@ -125,11 +127,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Telix Pharmaceuticals Limited (TLX) Presents at 46th Annual William Blair Growth Stock Conference - ",
+      "story_count": 1,
+      "primary_driver": "Amphastar Pharmaceuticals, Inc. (AMPH) Presents at Jefferies Global Healthcare Conference 2026 - Sli",
       "key_drivers": [
-        "Telix Pharmaceuticals Limited (TLX) Presents at 46th Annual William Blair Growth Stock Conference - Slideshow",
-        "Cardiff Oncology, Inc. (CRDF) Discusses Updated Phase II CRDF-004 Data on Onvansertib in First-Line RAS-Mutated Metastat"
+        "Amphastar Pharmaceuticals, Inc. (AMPH) Presents at Jefferies Global Healthcare Conference 2026 - Slideshow"
       ],
       "key_tickers": [
         "LLY",
@@ -139,7 +140,8 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "META"
+        "LLY",
+        "NVO"
       ]
     },
     {
@@ -147,12 +149,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "eHealth, Inc. (EHTH) Presents at Noble Capital Markets June 2026 Emerging Growth Virtual Equity Conf",
+      "primary_driver": "ePlus inc. 2026 Q4 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "eHealth, Inc. (EHTH) Presents at Noble Capital Markets June 2026 Emerging Growth Virtual Equity Conference - Slideshow",
-        "Medtronic plc (MDT) Q4 2026 Earnings Call Transcript",
-        "8-K - IPC Alternative Real Estate Income Trust, Inc. (0001959961) (Filer)",
-        "Bitcoin's high conviction holders are turning into sellers as the crypto's price hits new lows"
+        "ePlus inc. 2026 Q4 - Results - Earnings Call Presentation",
+        "Netskope, Inc. 2027 Q1 - Results - Earnings Call Presentation",
+        "Formycon AG 2026 Q1 - Results - Earnings Call Presentation",
+        "Adeka Corporation 2026 Q4 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
