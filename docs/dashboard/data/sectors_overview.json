@@ -2,12 +2,13 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Zion Oil & Gas, Inc. (ZNOG) Shareholder/Analyst Call Transcript",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 3,
+      "primary_driver": "Dow falls 400 points as oil prices and bond yields creep higher: Live updates",
       "key_drivers": [
-        "Zion Oil & Gas, Inc. (ZNOG) Shareholder/Analyst Call Transcript",
+        "Dow falls 400 points as oil prices and bond yields creep higher: Live updates",
+        "Frontline: Buy Until Tanker Market Shows Weakness",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -18,22 +19,23 @@
         "RIG"
       ],
       "trending_tickers": [
+        "CL=F",
+        "NKE",
         "LLY",
-        "SPY",
-        "CL=F"
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Palantir's $369 Billion Valuation Requires Unprecedented Federal Market Share",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 9,
+      "primary_driver": "KKR, Ares, Blackstone tumble as Partners Group caps private equity fund withdrawals",
       "key_drivers": [
-        "Palantir's $369 Billion Valuation Requires Unprecedented Federal Market Share",
-        "Ambarella, Inc. (AMBA) Presents at Bank of America 2026 Global Technology Conference - Slideshow",
-        "Victoria’s Secret’s stock just had its best day ever. It came down to better bras.",
-        "PDO: Best For A Normalizing Interest Rate Environment"
+        "KKR, Ares, Blackstone tumble as Partners Group caps private equity fund withdrawals",
+        "Fed Chair Warsh Steps In As Inflation Reignites And The Treasury Market Hints At A Rate Hike",
+        "Dow falls 400 points as oil prices and bond yields creep higher: Live updates",
+        "Sellers are pulling homes off the market at the fastest pace since 2020"
       ],
       "key_tickers": [
         "JPM",
@@ -43,6 +45,9 @@
         "KRE"
       ],
       "trending_tickers": [
+        "CL=F",
+        "GS",
+        "JPM",
         "BAC"
       ]
     },
@@ -51,12 +56,12 @@
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
       "story_count": 12,
-      "primary_driver": "Alphabet’s relentless AI spending is giving new shine to Broadcom’s stock",
+      "primary_driver": "You’re over 40 and laid off. Is it age discrimination? What you can do.",
       "key_drivers": [
-        "Alphabet’s relentless AI spending is giving new shine to Broadcom’s stock",
-        "Daqo New Energy: It's A Waiting Game, Patience Required (Downgrade)",
-        "Sterling: How A Valuation Analyst Tried (And Failed) To Justify The Price",
-        "Victoria’s Secret’s stock just had its best day ever. It came down to better bras."
+        "You’re over 40 and laid off. Is it age discrimination? What you can do.",
+        "Dell Has Become An AI Infrastructure Powerhouse",
+        "May AI Kill SaaS--But It Will Supercharge ServiceNow's Growth",
+        "Citi Trends Continues To Impress, But I Maintain That The Price Is Risky"
       ],
       "key_tickers": [
         "NVDA",
@@ -67,20 +72,22 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "GOOGL",
-        "NVDA",
-        "BAC",
-        "LLY"
+        "GS",
+        "LLY",
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 3,
+      "primary_driver": "Dell Has Become An AI Infrastructure Powerhouse",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Dell Has Become An AI Infrastructure Powerhouse",
+        "Keel Infrastructure Corp.: Wait For Some Earnings And Positive Cash Flow",
+        "8-K - OLD DOMINION FREIGHT LINE, INC. (0000878927) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -98,13 +105,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Alphabet’s relentless AI spending is giving new shine to Broadcom’s stock",
+      "story_count": 6,
+      "primary_driver": "GOP Sen. Tillis slams Trump intelligence pick Pulte: 'Don't think he has a prayer'",
       "key_drivers": [
-        "Alphabet’s relentless AI spending is giving new shine to Broadcom’s stock",
-        "Victoria’s Secret’s stock just had its best day ever. It came down to better bras.",
-        "GameStop wants to buy back $2 billion of its own stock after an eBay-fueled selloff",
-        "1st Look at Local Housing Markets in December"
+        "GOP Sen. Tillis slams Trump intelligence pick Pulte: 'Don't think he has a prayer'",
+        "SpaceX targets fixed $135 IPO roadshow price at $1.75 trillion valuation, source says",
+        "Entrata Targets IPO On Solid Growth And Profitability",
+        "Trump Accounts create a 'legal backdoor' for Roth IRA wealth, tax attorney says"
       ],
       "key_tickers": [
         "NKE",
@@ -114,20 +121,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "GOOGL",
-        "BAC"
+        "TGT",
+        "BAC",
+        "SPY"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "NextCure, Inc. (NXTC) Discusses Preliminary Phase I Data for SIM0505 in Platinum-Resistant Ovarian C",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "NextCure, Inc. (NXTC) Discusses Preliminary Phase I Data for SIM0505 in Platinum-Resistant Ovarian Cancer and Uterine Se",
-        "8-K - NRX Pharmaceuticals, Inc. (0001719406) (Filer)",
-        "8-K - NKGen Biotech, Inc. (0001845459) (Filer)"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -143,15 +149,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 9,
-      "primary_driver": "Trump still protected from tax enforcement, but anti-weaponization fund is dead, Blanche says",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 13,
+      "primary_driver": "DiDi Global: Strong Q1 Reinforces Our Long-Term Investment Thesis",
       "key_drivers": [
-        "Trump still protected from tax enforcement, but anti-weaponization fund is dead, Blanche says",
-        "VNET Group: A 'Buy' On EBITDA Beat And Major Ownership Shift",
-        "Brinker International: Chili's Momentum Is Intact, Yet The Stock Isn't Hot",
-        "Ulta Beauty, Inc. 2026 Q1 - Results - Earnings Call Presentation"
+        "DiDi Global: Strong Q1 Reinforces Our Long-Term Investment Thesis",
+        "Marvell’s stock is on a run not seen in a quarter-century as the tech company grows in stature",
+        "Ondas May Be Just Getting Started",
+        "BW LPG: The Rally Was Earned, And The Dividend Case Still Holds"
       ],
       "key_tickers": [
         "TLT",
@@ -161,8 +167,10 @@
         "DXY"
       ],
       "trending_tickers": [
-        "NKE",
-        "RIG"
+        "SPY",
+        "LLY",
+        "CL=F",
+        "JPM"
       ]
     }
   ]
