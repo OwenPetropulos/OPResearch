@@ -28,12 +28,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Why institutional investors are returning to retail 'in a very big way'",
+      "primary_driver": "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
       "key_drivers": [
-        "Why institutional investors are returning to retail 'in a very big way'",
-        "Blackstone restricts flagship fund withdrawals as private asset fears reemerge",
-        "Inside Wealth: Soaring stocks created 2 million new millionaires around the world last year",
-        "Calumet, Inc. (CLMT) Presents at Bank of America Energy & Power Credit Conference - Slideshow"
+        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
+        "This drugmaker is developing breakthroughs like an 'EpiPen for heart attacks.' The market has yet to give it credit",
+        "8-K - Federal Home Loan Bank of Boston (0001331463) (Filer)",
+        "Flesh-eating screwworm is confirmed in the U.S., officials say"
       ],
       "key_tickers": [
         "JPM",
@@ -43,21 +43,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC",
-        "LMT"
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 13,
-      "primary_driver": "Why institutional investors are returning to retail 'in a very big way'",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 12,
+      "primary_driver": "This drugmaker is developing breakthroughs like an 'EpiPen for heart attacks.' The market has yet to",
       "key_drivers": [
-        "Why institutional investors are returning to retail 'in a very big way'",
-        "Publicis Groupe: AI Fears Are Overstated (Rating Upgrade)",
-        "Inside Wealth: Soaring stocks created 2 million new millionaires around the world last year",
-        "Micron, Marvell, and Broadcom sink, leading chip stocks lower"
+        "This drugmaker is developing breakthroughs like an 'EpiPen for heart attacks.' The market has yet to give it credit",
+        "Dow jumps 800 points, Nasdaq lags as investors rotate out of chip stocks for banks, retail: Live updates",
+        "Flesh-eating screwworm is confirmed in the U.S., officials say",
+        "Quantinuum stock opens at $68 per share after IPO"
       ],
       "key_tickers": [
         "NVDA",
@@ -68,20 +67,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "CL=F",
         "SPY",
-        "AMZN",
-        "LLY"
+        "CL=F",
+        "NOC",
+        "TGT"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "As Honeywell Aerospace readies for its stand-alone debut, its CEO is forecasting big growth",
+      "story_count": 2,
+      "primary_driver": "Applied Aerospace & Defense: A Demanding Valuation At The IPO",
       "key_drivers": [
-        "As Honeywell Aerospace readies for its stand-alone debut, its CEO is forecasting big growth"
+        "Applied Aerospace & Defense: A Demanding Valuation At The IPO",
+        "Quantinuum stock opens at $68 per share after IPO"
       ],
       "key_tickers": [
         "GE",
@@ -91,7 +91,8 @@
         "HON"
       ],
       "trending_tickers": [
-        "TGT"
+        "LMT",
+        "RTX"
       ]
     },
     {
@@ -99,10 +100,10 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "Why institutional investors are returning to retail 'in a very big way'",
+      "primary_driver": "Dow jumps 800 points, Nasdaq lags as investors rotate out of chip stocks for banks, retail: Live upd",
       "key_drivers": [
-        "Why institutional investors are returning to retail 'in a very big way'",
-        "As Honeywell Aerospace readies for its stand-alone debut, its CEO is forecasting big growth",
+        "Dow jumps 800 points, Nasdaq lags as investors rotate out of chip stocks for banks, retail: Live updates",
+        "Ex-Trump advisor John Bolton agrees to plead guilty to retaining classified information: MS NOW",
         "SpaceX targets $135 IPO price at valuation of $1.77 trillion",
         "1st Look at Local Housing Markets in December"
       ],
@@ -114,17 +115,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT"
+        "TGT",
+        "SPY",
+        "NOC"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "8-K - Twin Hospitality Group Inc. (0002011954) (Filer)",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "8-K - Twin Hospitality Group Inc. (0002011954) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -142,13 +145,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Tandem: Upgrading To Hold On A High-Stakes Pivot Story",
+      "story_count": 9,
+      "primary_driver": "Gulf Development Public Company Limited 2026 Q1 - Results - Earnings Call Presentation",
       "key_drivers": [
-        "Tandem: Upgrading To Hold On A High-Stakes Pivot Story",
-        "Tech is flashing a warning sign last seen in 2020. Strategist Larry McDonald sees a massive rotation coming.",
-        "Ticketplus Seeks IPO On LatAm Growth Plans",
-        "8-K - PROVIDENT FINANCIAL SERVICES INC (0001178970) (Filer)"
+        "Gulf Development Public Company Limited 2026 Q1 - Results - Earnings Call Presentation",
+        "The Toro Company (TTC) Q2 2026 Earnings Call Transcript",
+        "Petco Health and Wellness Company, Inc. 2026 Q1 - Results - Earnings Call Presentation",
+        "ChargePoint Holdings, Inc. 2027 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -158,9 +161,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
-        "LLY",
-        "SPY"
+        "GLD",
+        "DXY"
       ]
     }
   ]
