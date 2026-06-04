@@ -1,30 +1,16 @@
 {
   "stories": [
     {
-      "title": "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
-      "summary": "Filed: 2026-06-04 AccNo: 0001325878-26-000113 Size: 169 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant",
-      "url": "https://www.sec.gov/Archives/edgar/data/1325878/000132587826000113/0001325878-26-000113-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-06-04T13:55:27Z",
-      "id": "mn001",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "Dow jumps 800 points, Nasdaq lags as investors rotate out of chip stocks for banks, retail: Live updates",
-      "summary": "The S&P 500 fell Thursday as traders dumped chip stocks following an underwhelming report from Broadcom.",
-      "url": "https://www.cnbc.com/2026/06/03/stock-market-today-live-updates.html",
+      "title": "S&P 500 futures tick lower as Wall Street awaits May jobs report: Live updates",
+      "summary": "The S&P 500 is on track to finish the week slightly higher, which would mark its 10th straight week of gains and its longest weekly win streak since 1985.",
+      "url": "https://www.cnbc.com/2026/06/04/stock-market-today-live-updates.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-06-04T17:54:13Z",
-      "id": "mn002",
+      "timestamp": "2026-06-04T22:17:29Z",
+      "id": "mn001",
       "sector_tags": [
         "Technology",
-        "Consumer"
+        "Macro"
       ],
       "ticker_tags": [
         "SPY"
@@ -32,27 +18,153 @@
       "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
     },
     {
-      "title": "8-K - Federal Home Loan Bank of Boston (0001331463) (Filer)",
-      "summary": "Filed: 2026-06-04 AccNo: 0001331463-26-000107 Size: 170 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant",
-      "url": "https://www.sec.gov/Archives/edgar/data/1331463/000133146326000107/0001331463-26-000107-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-06-04T13:52:21Z",
+      "title": "ZSP:CA - This Unhedged S&P 500 ETF Could Slide As CAD Appreciates",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4912147-zspca-this-unhedged-s-and-p-500-etf-could-slide-as-cad-appreciates?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-06-04T17:57:23Z",
+      "id": "mn002",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [
+        "SPY"
+      ],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "Trump says Pulte won't be permanent national intelligence director",
+      "summary": "Trump's comment came two days after he tapped Bill Pulte, who leads the Federal Housing Finance Agency, as acting DNI to replace Tulsi Gabbard.",
+      "url": "https://www.cnbc.com/2026/06/04/pulte-intelligence-trump-dni-temporary.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-04T21:35:59Z",
       "id": "mn003",
       "sector_tags": [
-        "Financials"
+        "Financials",
+        "Consumer"
       ],
       "ticker_tags": [],
       "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     },
     {
-      "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
-      "summary": "Long-term unemployment can have ramifications on financial, emotional and family health that linger even after reentry into the workforce.",
-      "url": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html",
+      "title": "Chevron: Why Its Long-Term Outlook Is Bright Amid Near-Term Oil Volatility",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4912137-chevron-why-its-long-term-outlook-is-bright-amid-near-term-oil-volatility?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-06-04T17:30:09Z",
+      "id": "mn004",
+      "sector_tags": [
+        "Energy"
+      ],
+      "ticker_tags": [
+        "CVX",
+        "RIG"
+      ],
+      "why_it_matters": "Broad risk sentiment determines the beta of every portfolio. When VIX spikes above 20, correlations across assets converge toward 1 — diversification fails precisely when you need it most. Dealer gamma positioning amplifies moves: a negative gamma environment means market makers must sell into declines, accelerating drawdowns. Put/call ratios at extremes can be contrarian signals, but only when accompanied by capitulation in fund flows. Key watch: VIX term structure, SKEW index, and equity put/call ratio versus its 20-day moving average."
+    },
+    {
+      "title": "8-K - Cycurion, Inc. (0001868419) (Filer)",
+      "summary": "Filed: 2026-06-04 AccNo: 0001868419-26-000041 Size: 35 MB Item 1.01: Entry into a Material Definitive Agreement Item 3.02: Unregistered Sales of Equity Securities Item 5.03: Amendments to Articles of Incorporation or Bylaws; Change in Fiscal Year Item 9.01: Financial Statements and Exhibits",
+      "url": "https://www.sec.gov/Archives/edgar/data/1868419/000186841926000041/0001868419-26-000041-index.htm",
+      "source_name": "SEC EDGAR",
+      "source_type": "Filing / IR",
+      "timestamp": "2026-06-04T17:26:58Z",
+      "id": "mn005",
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [
+        "AMZN"
+      ],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "B&M European Value Retail plc (BMRRY) Q4 2026 Earnings Call Transcript",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4911941-b-and-m-european-value-retail-plc-bmrry-q4-2026-earnings-call-transcript?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-06-04T17:12:56Z",
+      "id": "mn006",
+      "sector_tags": [
+        "Technology",
+        "Consumer",
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "A war-weary Treasury market faces a fresh test with Friday’s jobs report",
+      "summary": "The new worry on Wall Street is that investors are simply losing patience and demanding higher compensation to lend money to the U.S. government.",
+      "url": "https://www.marketwatch.com/story/a-war-weary-treasury-market-faces-a-fresh-test-with-fridays-jobs-report-73789d8a?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-04T21:05:00Z",
+      "id": "mn007",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+    },
+    {
+      "title": "Coal stocks climb as Trump shovels $700 million to the sector",
+      "summary": "Coal stocks advanced Thursday, helped by news that President Donald Trump plans to provide about $700 million to the industry through a Korean War–era law that gives the federal government authority over sectors tied to national security.",
+      "url": "https://www.marketwatch.com/story/coal-stocks-climb-as-trump-shovels-700-million-to-the-sector-8a61953c?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-04T21:02:00Z",
+      "id": "mn008",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+    },
+    {
+      "title": "Don’t rule out a ‘June swoon’ — the S&P 500 is pushing its limits",
+      "summary": "Even upbeat Oracle earnings next week might not be enough to rally the market.",
+      "url": "https://www.marketwatch.com/story/dont-rule-out-a-june-swoon-the-s-p-500-is-pushing-its-limits-3c067a6b?mod=mw_rss_topstories",
+      "source_name": "MarketWatch",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-04T21:01:00Z",
+      "id": "mn009",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [
+        "LLY",
+        "SPY"
+      ],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "Quantinuum closes flat in Nasdaq debut, after upsized offering",
+      "summary": "Honeywell will retain a majority stake in Quantinuum and will continue to be a strategic customer and partner following the listing.",
+      "url": "https://www.cnbc.com/2026/06/04/quantinuum-qnt-stock-first-trade-ipo.html",
       "source_name": "CNBC Top News",
       "source_type": "Mainstream",
-      "timestamp": "2026-06-04T17:30:53Z",
-      "id": "mn004",
+      "timestamp": "2026-06-04T20:22:22Z",
+      "id": "mn010",
+      "sector_tags": [
+        "Technology",
+        "Industrials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+    },
+    {
+      "title": "These income funds offer double-digit yields – but come with cost and complexity. How they work",
+      "summary": "Autocallable ETFs offer attractive coupon payments, but investors should prepare to do some homework if they're exploring these funds.",
+      "url": "https://www.cnbc.com/2026/06/04/these-income-funds-offer-double-digit-yields-but-come-with-cost-and-complexity.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-04T20:18:23Z",
+      "id": "mn011",
       "sector_tags": [
         "Macro"
       ],
@@ -62,133 +174,20 @@
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
     },
     {
-      "title": "8-K - Ares Real Estate Income Trust Inc. (0001327978) (Filer)",
-      "summary": "Filed: 2026-06-04 AccNo: 0001628280-26-040694 Size: 238 KB Item 1.01: Entry into a Material Definitive Agreement Item 3.02: Unregistered Sales of Equity Securities Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/1327978/000162828026040694/0001628280-26-040694-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-06-04T13:11:40Z",
-      "id": "mn005",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "8-K - Federal Home Loan Bank of Chicago (0001331451) (Filer)",
-      "summary": "Filed: 2026-06-04 AccNo: 0001331451-26-000101 Size: 168 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant",
-      "url": "https://www.sec.gov/Archives/edgar/data/1331451/000133145126000101/0001331451-26-000101-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-06-04T13:08:17Z",
-      "id": "mn006",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "8-K - ExchangeRight Income Fund (0001771514) (Filer)",
-      "summary": "Filed: 2026-06-04 AccNo: 0001193125-26-256941 Size: 176 KB Item 3.02: Unregistered Sales of Equity Securities",
-      "url": "https://www.sec.gov/Archives/edgar/data/1771514/000119312526256941/0001193125-26-256941-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-06-04T13:02:13Z",
-      "id": "mn007",
+      "title": "Long-term unemployment is surging in the U.S. There are hidden costs for workers and the economy",
+      "summary": "Long-term unemployment can have ramifications on financial, emotional and family health that linger even after reentry into the workforce.",
+      "url": "https://www.cnbc.com/2026/06/04/long-term-unemployment-economy-jobs.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-04T18:55:32Z",
+      "id": "mn012",
       "sector_tags": [
         "Macro"
       ],
       "ticker_tags": [
-        "RIG"
+        "COST"
       ],
       "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "Confirmed screwworm case in Texas sends two biotech stocks higher",
-      "summary": "Options volume is surging for Zoetis as traders look for potential stock market winners in light of a screwworm case in Texas.",
-      "url": "https://www.cnbc.com/2026/06/04/confirmed-screwworm-case-in-texas-sends-two-biotech-stocks-higher.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-06-04T16:57:40Z",
-      "id": "mn008",
-      "sector_tags": [
-        "Financials",
-        "Healthcare"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "FDA approval decisions create binary, event-driven return profiles. A major drug launch can shift a company's revenue trajectory for a decade; a rejection can destroy 40-60% of market cap overnight. The GLP-1 obesity drug market is reshaping the entire healthcare landscape — downstream impacts include reduced demand for diabetes devices, bariatric surgery, and cardiovascular interventions. Payer dynamics (insurance coverage, formulary placement) determine whether clinical efficacy translates into commercial success. Key watch: CMS coverage decisions, pharmacy benefit manager formulary updates, and manufacturing capacity announcements."
-    },
-    {
-      "title": "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
-      "summary": "Filed: 2026-06-04 AccNo: 0001325814-26-000086 Size: 186 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/1325814/000132581426000086/0001325814-26-000086-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-06-04T12:53:45Z",
-      "id": "mn009",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "A war-weary Treasury market faces a fresh test with Friday’s jobs report",
-      "summary": "The new worry on Wall Street is that investors are simply losing patience and demanding higher compensation to lend money to the U.S. government.",
-      "url": "https://www.marketwatch.com/story/a-war-weary-treasury-market-faces-a-fresh-test-with-fridays-jobs-report-73789d8a?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-06-04T16:46:00Z",
-      "id": "mn010",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
-    },
-    {
-      "title": "8-K - Rithm Perpetual Life Residential Trust (0002081628) (Filer)",
-      "summary": "Filed: 2026-06-04 AccNo: 0001628280-26-040672 Size: 145 KB Item 3.02: Unregistered Sales of Equity Securities Item 7.01: Regulation FD Disclosure",
-      "url": "https://www.sec.gov/Archives/edgar/data/2081628/000162828026040672/0001628280-26-040672-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-06-04T12:15:52Z",
-      "id": "mn011",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
-    },
-    {
-      "title": "8-K - Federal Home Loan Bank of Atlanta (0001331465) (Filer)",
-      "summary": "Filed: 2026-06-04 AccNo: 0001331465-26-000107 Size: 154 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant",
-      "url": "https://www.sec.gov/Archives/edgar/data/1331465/000133146526000107/0001331465-26-000107-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-06-04T12:01:54Z",
-      "id": "mn012",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "8-K - Federal Home Loan Bank of New York (0001329842) (Filer)",
-      "summary": "Filed: 2026-06-04 AccNo: 0001654954-26-005692 Size: 157 KB Item 2.03: Creation of a Direct Financial Obligation or an Obligation under an Off-Balance Sheet Arrangement of a Registrant Item 9.01: Financial Statements and Exhibits",
-      "url": "https://www.sec.gov/Archives/edgar/data/1329842/000165495426005692/0001654954-26-005692-index.htm",
-      "source_name": "SEC EDGAR",
-      "source_type": "Filing / IR",
-      "timestamp": "2026-06-04T11:03:44Z",
-      "id": "mn013",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     },
     {
       "title": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank",
@@ -197,7 +196,7 @@
       "source_name": "Federal Reserve",
       "source_type": "Macro Data",
       "timestamp": "2026-05-28T15:00:00Z",
-      "id": "mn014",
+      "id": "mn013",
       "sector_tags": [
         "Financials"
       ],
@@ -211,13 +210,27 @@
       "source_name": "Federal Reserve",
       "source_type": "Macro Data",
       "timestamp": "2026-05-22T20:15:00Z",
-      "id": "mn015",
+      "id": "mn014",
       "sector_tags": [
         "Financials",
         "Technology"
       ],
       "ticker_tags": [],
       "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+    },
+    {
+      "title": "Federal Reserve Board issues enforcement action with former employee of Commerce Bank",
+      "summary": "Federal Reserve Board issues enforcement action with former employee of Commerce Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260521a.htm",
+      "source_name": "Federal Reserve",
+      "source_type": "Macro Data",
+      "timestamp": "2026-05-21T15:00:00Z",
+      "id": "mn015",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
     }
   ]
 }

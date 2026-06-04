@@ -4,9 +4,10 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Oil prices fall 3% on report Trump reluctant to restart Iran war",
+      "story_count": 3,
+      "primary_driver": "Chevron: Why Its Long-Term Outlook Is Bright Amid Near-Term Oil Volatility",
       "key_drivers": [
+        "Chevron: Why Its Long-Term Outlook Is Bright Amid Near-Term Oil Volatility",
         "Oil prices fall 3% on report Trump reluctant to restart Iran war",
         "Sunday Night Futures"
       ],
@@ -19,8 +20,9 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "LLY",
-        "SPY"
+        "CVX",
+        "RIG",
+        "LLY"
       ]
     },
     {
@@ -28,12 +30,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
+      "primary_driver": "Trump says Pulte won't be permanent national intelligence director",
       "key_drivers": [
-        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
-        "This drugmaker is developing breakthroughs like an 'EpiPen for heart attacks.' The market has yet to give it credit",
-        "8-K - Federal Home Loan Bank of Boston (0001331463) (Filer)",
-        "Flesh-eating screwworm is confirmed in the U.S., officials say"
+        "Trump says Pulte won't be permanent national intelligence director",
+        "Concrete Pumping Holdings, Inc. 2026 Q2 - Results - Earnings Call Presentation",
+        "8-K - MSP Recovery, Inc. (0001802450) (Filer)",
+        "8-K - Open Lending Corp (0001806201) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -48,15 +50,15 @@
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 12,
-      "primary_driver": "This drugmaker is developing breakthroughs like an 'EpiPen for heart attacks.' The market has yet to",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 11,
+      "primary_driver": "S&P 500 futures tick lower as Wall Street awaits May jobs report: Live updates",
       "key_drivers": [
-        "This drugmaker is developing breakthroughs like an 'EpiPen for heart attacks.' The market has yet to give it credit",
-        "Dow jumps 800 points, Nasdaq lags as investors rotate out of chip stocks for banks, retail: Live updates",
-        "Flesh-eating screwworm is confirmed in the U.S., officials say",
-        "Quantinuum stock opens at $68 per share after IPO"
+        "S&P 500 futures tick lower as Wall Street awaits May jobs report: Live updates",
+        "Jim Cramer says Thursday's rally shows investors' 'huge appetite' for stocks",
+        "Time To Cash In The Chips",
+        "Warren invites Nvidia CEO Jensen Huang to Senate hearing on China AI chip sales"
       ],
       "key_tickers": [
         "NVDA",
@@ -68,20 +70,21 @@
       ],
       "trending_tickers": [
         "SPY",
+        "LLY",
         "CL=F",
-        "NOC",
-        "TGT"
+        "NVDA"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Applied Aerospace & Defense: A Demanding Valuation At The IPO",
+      "story_count": 3,
+      "primary_driver": "Northrop Grumman Is Taking A Smart Approach To The Drone Pivot",
       "key_drivers": [
-        "Applied Aerospace & Defense: A Demanding Valuation At The IPO",
-        "Quantinuum stock opens at $68 per share after IPO"
+        "Northrop Grumman Is Taking A Smart Approach To The Drone Pivot",
+        "8-K - Keel Infrastructure Corp. (0001812477) (Filer)",
+        "Honeywell’s quantum company goes public. What investors should know about the IPO"
       ],
       "key_tickers": [
         "GE",
@@ -91,21 +94,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "NOC"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Dow jumps 800 points, Nasdaq lags as investors rotate out of chip stocks for banks, retail: Live upd",
+      "sentiment": "Negative",
+      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 8,
+      "primary_driver": "Lululemon cuts annual outlook, citing 'negative' media commentary and disappointing product launches",
       "key_drivers": [
-        "Dow jumps 800 points, Nasdaq lags as investors rotate out of chip stocks for banks, retail: Live updates",
-        "Ex-Trump advisor John Bolton agrees to plead guilty to retaining classified information: MS NOW",
-        "SpaceX targets $135 IPO price at valuation of $1.77 trillion",
-        "1st Look at Local Housing Markets in December"
+        "Lululemon cuts annual outlook, citing 'negative' media commentary and disappointing product launches",
+        "Trump says Pulte won't be permanent national intelligence director",
+        "You’re going to pay tax on RMDs — there’s no way around it. Or is there?",
+        "Stocks making the biggest moves after hours: Lululemon Athletica, ServiceTitan, Argan and more"
       ],
       "key_tickers": [
         "NKE",
@@ -115,9 +117,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "SPY",
-        "NOC"
+        "LLY",
+        "TGT"
       ]
     },
     {
@@ -125,9 +126,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "8-K - Twin Hospitality Group Inc. (0002011954) (Filer)",
+      "primary_driver": "8-K - NRX Pharmaceuticals, Inc. (0001719406) (Filer)",
       "key_drivers": [
-        "8-K - Twin Hospitality Group Inc. (0002011954) (Filer)"
+        "8-K - NRX Pharmaceuticals, Inc. (0001719406) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -146,12 +147,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Gulf Development Public Company Limited 2026 Q1 - Results - Earnings Call Presentation",
+      "primary_driver": "The Toro Company: A Great Showing, But Not Cheap Enough To Hop On Board",
       "key_drivers": [
-        "Gulf Development Public Company Limited 2026 Q1 - Results - Earnings Call Presentation",
-        "The Toro Company (TTC) Q2 2026 Earnings Call Transcript",
-        "Petco Health and Wellness Company, Inc. 2026 Q1 - Results - Earnings Call Presentation",
-        "ChargePoint Holdings, Inc. 2027 Q1 - Results - Earnings Call Presentation"
+        "The Toro Company: A Great Showing, But Not Cheap Enough To Hop On Board",
+        "S&P 500 futures tick lower as Wall Street awaits May jobs report: Live updates",
+        "ZSP:CA - This Unhedged S&P 500 ETF Could Slide As CAD Appreciates",
+        "FINN:CA Is On Fire In Q2"
       ],
       "key_tickers": [
         "TLT",
@@ -161,8 +162,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "SPY"
       ]
     }
   ]
