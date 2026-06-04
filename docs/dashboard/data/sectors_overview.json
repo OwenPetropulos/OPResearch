@@ -4,11 +4,10 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Thursday's big stock stories: What’s likely to move the market in the next trading session",
+      "story_count": 2,
+      "primary_driver": "Oil prices fall 3% on report Trump reluctant to restart Iran war",
       "key_drivers": [
-        "Thursday's big stock stories: What’s likely to move the market in the next trading session",
-        "Stocks making the biggest moves midday: Exxon Mobil, GameStop, Palo Alto Networks, Blackstone & more",
+        "Oil prices fall 3% on report Trump reluctant to restart Iran war",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -19,23 +18,22 @@
         "RIG"
       ],
       "trending_tickers": [
-        "SPY",
         "CL=F",
-        "XOM",
-        "LLY"
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "Vienna Insurance Group AG 2026 Q1 - Results - Earnings Call Presentation",
+      "story_count": 8,
+      "primary_driver": "Why institutional investors are returning to retail 'in a very big way'",
       "key_drivers": [
-        "Vienna Insurance Group AG 2026 Q1 - Results - Earnings Call Presentation",
-        "ON Semiconductor Corporation (ON) Presents at Bank of America 2026 Global Technology Conference Transcript",
-        "Jim Cramer warns excess supply could be the next biggest threat to the bull market",
-        "DigitalOcean Holdings, Inc. (DOCN) Presents at Bank of America 2026 Global Technology Conference Transcript"
+        "Why institutional investors are returning to retail 'in a very big way'",
+        "Blackstone restricts flagship fund withdrawals as private asset fears reemerge",
+        "Inside Wealth: Soaring stocks created 2 million new millionaires around the world last year",
+        "Calumet, Inc. (CLMT) Presents at Bank of America Energy & Power Credit Conference - Slideshow"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +44,20 @@
       ],
       "trending_tickers": [
         "BAC",
-        "SPY",
-        "CL=F",
-        "RIG"
+        "LMT"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Broadcom stock plunges on weak software sales, unchanged AI chip forecast for the year",
+      "story_count": 13,
+      "primary_driver": "Why institutional investors are returning to retail 'in a very big way'",
       "key_drivers": [
-        "Broadcom stock plunges on weak software sales, unchanged AI chip forecast for the year",
-        "ON Semiconductor Corporation (ON) Presents at Bank of America 2026 Global Technology Conference Transcript",
-        "Broadcom Q2: The AI Bar Was Too High",
-        "Jim Cramer warns excess supply could be the next biggest threat to the bull market"
+        "Why institutional investors are returning to retail 'in a very big way'",
+        "Publicis Groupe: AI Fears Are Overstated (Rating Upgrade)",
+        "Inside Wealth: Soaring stocks created 2 million new millionaires around the world last year",
+        "Micron, Marvell, and Broadcom sink, leading chip stocks lower"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,10 +68,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "BAC",
-        "META",
-        "LLY",
-        "SPY"
+        "CL=F",
+        "SPY",
+        "AMZN",
+        "LLY"
       ]
     },
     {
@@ -83,9 +79,9 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Khanna and China committee press Blanche for report on Chinese manufacturing in U.S.",
+      "primary_driver": "As Honeywell Aerospace readies for its stand-alone debut, its CEO is forecasting big growth",
       "key_drivers": [
-        "Khanna and China committee press Blanche for report on Chinese manufacturing in U.S."
+        "As Honeywell Aerospace readies for its stand-alone debut, its CEO is forecasting big growth"
       ],
       "key_tickers": [
         "GE",
@@ -95,21 +91,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "TGT"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 7,
-      "primary_driver": "You’re going to pay tax on RMDs — there’s no way around it. Or is there?",
+      "story_count": 4,
+      "primary_driver": "Why institutional investors are returning to retail 'in a very big way'",
       "key_drivers": [
-        "You’re going to pay tax on RMDs — there’s no way around it. Or is there?",
-        "SpaceX officially set to crush global records in targeting massive IPO haul of up to $86 billion",
+        "Why institutional investors are returning to retail 'in a very big way'",
+        "As Honeywell Aerospace readies for its stand-alone debut, its CEO is forecasting big growth",
         "SpaceX targets $135 IPO price at valuation of $1.77 trillion",
-        "Social Security benefit cuts could average $500 a month for retirees if trust fund runs dry, report finds"
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -119,18 +114,17 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "LLY"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Amphastar Pharmaceuticals, Inc. (AMPH) Presents at Jefferies Global Healthcare Conference 2026 - Sli",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Amphastar Pharmaceuticals, Inc. (AMPH) Presents at Jefferies Global Healthcare Conference 2026 - Slideshow"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -149,12 +143,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "ePlus inc. 2026 Q4 - Results - Earnings Call Presentation",
+      "primary_driver": "Tandem: Upgrading To Hold On A High-Stakes Pivot Story",
       "key_drivers": [
-        "ePlus inc. 2026 Q4 - Results - Earnings Call Presentation",
-        "Netskope, Inc. 2027 Q1 - Results - Earnings Call Presentation",
-        "Formycon AG 2026 Q1 - Results - Earnings Call Presentation",
-        "Adeka Corporation 2026 Q4 - Results - Earnings Call Presentation"
+        "Tandem: Upgrading To Hold On A High-Stakes Pivot Story",
+        "Tech is flashing a warning sign last seen in 2020. Strategist Larry McDonald sees a massive rotation coming.",
+        "Ticketplus Seeks IPO On LatAm Growth Plans",
+        "8-K - PROVIDENT FINANCIAL SERVICES INC (0001178970) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -164,8 +158,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "BAC",
+        "LLY",
+        "SPY"
       ]
     }
   ]
