@@ -4,11 +4,10 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Chevron: Why Its Long-Term Outlook Is Bright Amid Near-Term Oil Volatility",
+      "story_count": 2,
+      "primary_driver": "Chevron Looks Fully Valued As An Iran Deal Could Send Oil Lower (Rating Downgrade)",
       "key_drivers": [
-        "Chevron: Why Its Long-Term Outlook Is Bright Amid Near-Term Oil Volatility",
-        "Oil prices fall 3% on report Trump reluctant to restart Iran war",
+        "Chevron Looks Fully Valued As An Iran Deal Could Send Oil Lower (Rating Downgrade)",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -19,23 +18,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
+        "LLY",
         "CVX",
-        "RIG",
-        "LLY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "Trump says Pulte won't be permanent national intelligence director",
+      "primary_driver": "May Jobs Boom: Best 3-Month Employment Gain Points To A Fed Rate Hike",
       "key_drivers": [
-        "Trump says Pulte won't be permanent national intelligence director",
-        "Concrete Pumping Holdings, Inc. 2026 Q2 - Results - Earnings Call Presentation",
-        "8-K - MSP Recovery, Inc. (0001802450) (Filer)",
-        "8-K - Open Lending Corp (0001806201) (Filer)"
+        "May Jobs Boom: Best 3-Month Employment Gain Points To A Fed Rate Hike",
+        "U.S. payrolls rose by 172,000 in May, much more than expected; unemployment at 4.3%",
+        "South Korea is the ultimate backdoor tech play — but stock investors now face a looming threat",
+        "Where investors may find the next 'big wave' for AI trade"
       ],
       "key_tickers": [
         "JPM",
@@ -45,20 +44,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC"
+        "BAC",
+        "RIG",
+        "GS",
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "S&P 500 futures tick lower as Wall Street awaits May jobs report: Live updates",
+      "story_count": 12,
+      "primary_driver": "U.S. Senate passes $70 billion ICE funding, fails to ban Trump's 'anti-weaponization' fund",
       "key_drivers": [
-        "S&P 500 futures tick lower as Wall Street awaits May jobs report: Live updates",
-        "Jim Cramer says Thursday's rally shows investors' 'huge appetite' for stocks",
-        "Time To Cash In The Chips",
-        "Warren invites Nvidia CEO Jensen Huang to Senate hearing on China AI chip sales"
+        "U.S. Senate passes $70 billion ICE funding, fails to ban Trump's 'anti-weaponization' fund",
+        "Inside Wealth: Family offices bet on sports, from pickleball leagues to smart soccer balls",
+        "Bulls declare victory in AI debate, but two classic signs of a market top are looming",
+        "May Jobs Boom: Best 3-Month Employment Gain Points To A Fed Rate Hike"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,22 +71,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "SPY",
-        "LLY",
-        "CL=F",
-        "NVDA"
+        "NVDA",
+        "MSFT",
+        "BAC",
+        "RIG"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Northrop Grumman Is Taking A Smart Approach To The Drone Pivot",
+      "story_count": 2,
+      "primary_driver": "8-K - Transportation & Logistics Systems, Inc. (0001463208) (Filer)",
       "key_drivers": [
-        "Northrop Grumman Is Taking A Smart Approach To The Drone Pivot",
-        "8-K - Keel Infrastructure Corp. (0001812477) (Filer)",
-        "Honeywell’s quantum company goes public. What investors should know about the IPO"
+        "8-K - Transportation & Logistics Systems, Inc. (0001463208) (Filer)",
+        "8-K - Keel Infrastructure Corp. (0001812477) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -94,20 +95,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "NOC"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Negative",
       "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 8,
-      "primary_driver": "Lululemon cuts annual outlook, citing 'negative' media commentary and disappointing product launches",
+      "story_count": 5,
+      "primary_driver": "Jim Cramer's top 10 things to watch in the stock market Friday",
       "key_drivers": [
+        "Jim Cramer's top 10 things to watch in the stock market Friday",
+        "Alphabet is seeking fresh capital as stock's 4-week losing streak tests investor appetite",
         "Lululemon cuts annual outlook, citing 'negative' media commentary and disappointing product launches",
-        "Trump says Pulte won't be permanent national intelligence director",
-        "You’re going to pay tax on RMDs — there’s no way around it. Or is there?",
-        "Stocks making the biggest moves after hours: Lululemon Athletica, ServiceTitan, Argan and more"
+        "Trump says Pulte won't be permanent national intelligence director"
       ],
       "key_tickers": [
         "NKE",
@@ -117,18 +119,20 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY",
-        "TGT"
+        "GOOGL"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "8-K - NRX Pharmaceuticals, Inc. (0001719406) (Filer)",
+      "story_count": 5,
+      "primary_driver": "8-K - Edesa Biotech, Inc. (0001540159) (Filer)",
       "key_drivers": [
-        "8-K - NRX Pharmaceuticals, Inc. (0001719406) (Filer)"
+        "8-K - Edesa Biotech, Inc. (0001540159) (Filer)",
+        "‘This would be a one-time event’: How can I take extra money from my 401(k) without triggering higher Medicare premiums?",
+        "8-K - Pursuit Attractions & Hospitality, Inc. (0000884219) (Filer)",
+        "A new blood test can help detect colon cancer, but it’s not as good as the test you hate to take"
       ],
       "key_tickers": [
         "LLY",
@@ -139,20 +143,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVO"
+        "RIG"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "The Toro Company: A Great Showing, But Not Cheap Enough To Hop On Board",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 11,
+      "primary_driver": "SPYT: ETF Offering A 20% Yield From S&P 500 Option Spreads",
       "key_drivers": [
-        "The Toro Company: A Great Showing, But Not Cheap Enough To Hop On Board",
-        "S&P 500 futures tick lower as Wall Street awaits May jobs report: Live updates",
-        "ZSP:CA - This Unhedged S&P 500 ETF Could Slide As CAD Appreciates",
-        "FINN:CA Is On Fire In Q2"
+        "SPYT: ETF Offering A 20% Yield From S&P 500 Option Spreads",
+        "TTM Technologies: Strong Demand Suggests The Transformation Is Long Over",
+        "Chart Of The Day: Revenge Of The Tortoises",
+        "Bitcoin: Strategy's Sales Point To More Downside"
       ],
       "key_tickers": [
         "TLT",
@@ -162,7 +166,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY"
+        "SPY",
+        "BAC"
       ]
     }
   ]
