@@ -4,10 +4,11 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Chevron Looks Fully Valued As An Iran Deal Could Send Oil Lower (Rating Downgrade)",
+      "story_count": 3,
+      "primary_driver": "Trump wants Bill Pulte to fire big chunk of national intelligence office staff: WSJ",
       "key_drivers": [
-        "Chevron Looks Fully Valued As An Iran Deal Could Send Oil Lower (Rating Downgrade)",
+        "Trump wants Bill Pulte to fire big chunk of national intelligence office staff: WSJ",
+        "Chevron: Long-Term Prospects Are Still Rosy",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -18,23 +19,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "LLY",
         "CVX",
+        "LLY",
         "SPY",
         "CL=F"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "May Jobs Boom: Best 3-Month Employment Gain Points To A Fed Rate Hike",
+      "primary_driver": "Zumiez: Balance Sheet Strength Offsets Discretionary Spending Pressures",
       "key_drivers": [
-        "May Jobs Boom: Best 3-Month Employment Gain Points To A Fed Rate Hike",
-        "U.S. payrolls rose by 172,000 in May, much more than expected; unemployment at 4.3%",
-        "South Korea is the ultimate backdoor tech play — but stock investors now face a looming threat",
-        "Where investors may find the next 'big wave' for AI trade"
+        "Zumiez: Balance Sheet Strength Offsets Discretionary Spending Pressures",
+        "The Stronger Labor Market Will Keep The Fed On Hold",
+        "Boeing to start 737 Max production on new assembly line July 6, CEO says",
+        "8-K - Invesco Commercial Real Estate Finance Trust, Inc. (0001976927) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -44,23 +45,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC",
-        "RIG",
-        "GS",
-        "JPM"
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "U.S. Senate passes $70 billion ICE funding, fails to ban Trump's 'anti-weaponization' fund",
+      "story_count": 11,
+      "primary_driver": "Nasdaq falls the most in nearly 8 months as chips tumble; S&P 500's 9-week winning streak set to end",
       "key_drivers": [
-        "U.S. Senate passes $70 billion ICE funding, fails to ban Trump's 'anti-weaponization' fund",
-        "Inside Wealth: Family offices bet on sports, from pickleball leagues to smart soccer balls",
-        "Bulls declare victory in AI debate, but two classic signs of a market top are looming",
-        "May Jobs Boom: Best 3-Month Employment Gain Points To A Fed Rate Hike"
+        "Nasdaq falls the most in nearly 8 months as chips tumble; S&P 500's 9-week winning streak set to end: Live updates",
+        "Chip stock breakout vs the rest of tech showing signs of topping out, says Carter Worth",
+        "8-K - North Haven Net REIT (0001999784) (Filer)",
+        "Guidewire Software, Inc. 2026 Q3 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,21 +69,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "NVDA",
-        "MSFT",
-        "BAC",
-        "RIG"
+        "SPY",
+        "LLY",
+        "AMZN",
+        "BAC"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "8-K - Transportation & Logistics Systems, Inc. (0001463208) (Filer)",
+      "story_count": 1,
+      "primary_driver": "Boeing to start 737 Max production on new assembly line July 6, CEO says",
       "key_drivers": [
-        "8-K - Transportation & Logistics Systems, Inc. (0001463208) (Filer)",
-        "8-K - Keel Infrastructure Corp. (0001812477) (Filer)"
+        "Boeing to start 737 Max production on new assembly line July 6, CEO says"
       ],
       "key_tickers": [
         "GE",
@@ -103,13 +100,13 @@
       "sector": "Consumer",
       "sentiment": "Negative",
       "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 5,
-      "primary_driver": "Jim Cramer's top 10 things to watch in the stock market Friday",
+      "story_count": 6,
+      "primary_driver": "Zumiez: Balance Sheet Strength Offsets Discretionary Spending Pressures",
       "key_drivers": [
-        "Jim Cramer's top 10 things to watch in the stock market Friday",
-        "Alphabet is seeking fresh capital as stock's 4-week losing streak tests investor appetite",
-        "Lululemon cuts annual outlook, citing 'negative' media commentary and disappointing product launches",
-        "Trump says Pulte won't be permanent national intelligence director"
+        "Zumiez: Balance Sheet Strength Offsets Discretionary Spending Pressures",
+        "A ‘rudderless’ Lululemon needs to ditch logos and get back to basics, analysts say",
+        "We thought we found the perfect luxury retirement community, but it’s millions of dollars in debt. Are we trapped?",
+        "Alphabet is seeking fresh capital as stock's 4-week losing streak tests investor appetite"
       ],
       "key_tickers": [
         "NKE",
@@ -119,20 +116,21 @@
         "ONON"
       ],
       "trending_tickers": [
+        "BAC",
         "GOOGL"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Neutral",
-      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "8-K - Edesa Biotech, Inc. (0001540159) (Filer)",
+      "sentiment": "Negative",
+      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 4,
+      "primary_driver": "Ionis Pharmaceuticals, Inc. (IONS) Shareholder/Analyst Call - Slideshow",
       "key_drivers": [
+        "Ionis Pharmaceuticals, Inc. (IONS) Shareholder/Analyst Call - Slideshow",
+        "Social Security is looking at a $500-a-month cut. Could a new bipartisan commission make a difference?",
         "8-K - Edesa Biotech, Inc. (0001540159) (Filer)",
-        "‘This would be a one-time event’: How can I take extra money from my 401(k) without triggering higher Medicare premiums?",
-        "8-K - Pursuit Attractions & Hospitality, Inc. (0000884219) (Filer)",
-        "A new blood test can help detect colon cancer, but it’s not as good as the test you hate to take"
+        "Warren Buffett disciple Guy Spier built career on value investing. A rare cancer changed everything"
       ],
       "key_tickers": [
         "LLY",
@@ -143,20 +141,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "RIG"
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "SPYT: ETF Offering A 20% Yield From S&P 500 Option Spreads",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 10,
+      "primary_driver": "8-K/A - CYTTA CORP. (0001383088) (Filer)",
       "key_drivers": [
-        "SPYT: ETF Offering A 20% Yield From S&P 500 Option Spreads",
-        "TTM Technologies: Strong Demand Suggests The Transformation Is Long Over",
-        "Chart Of The Day: Revenge Of The Tortoises",
-        "Bitcoin: Strategy's Sales Point To More Downside"
+        "8-K/A - CYTTA CORP. (0001383088) (Filer)",
+        "WeRide: Focus On Geographical Diversification And Regulatory Developments",
+        "PGIM Jennison Growth Fund Q1 2026 Commentary",
+        "Bitcoin cracks $60,000, sinking to lowest level since October 2024"
       ],
       "key_tickers": [
         "TLT",
@@ -166,8 +164,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY",
-        "BAC"
+        "GLD",
+        "DXY"
       ]
     }
   ]
