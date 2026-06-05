@@ -4,11 +4,12 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Trump wants Bill Pulte to fire big chunk of national intelligence office staff: WSJ",
+      "story_count": 4,
+      "primary_driver": "Iran's threats against this Red Sea choke point are a big vulnerability for the oil market",
       "key_drivers": [
+        "Iran's threats against this Red Sea choke point are a big vulnerability for the oil market",
         "Trump wants Bill Pulte to fire big chunk of national intelligence office staff: WSJ",
-        "Chevron: Long-Term Prospects Are Still Rosy",
+        "Oil Has Until July",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -19,10 +20,9 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CVX",
+        "CL=F",
         "LLY",
-        "SPY",
-        "CL=F"
+        "SPY"
       ]
     },
     {
@@ -30,12 +30,12 @@
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "Zumiez: Balance Sheet Strength Offsets Discretionary Spending Pressures",
+      "primary_driver": "May Jobs Creation Is Illusory - Details Show Weakness, War Remains Concern",
       "key_drivers": [
-        "Zumiez: Balance Sheet Strength Offsets Discretionary Spending Pressures",
-        "The Stronger Labor Market Will Keep The Fed On Hold",
+        "May Jobs Creation Is Illusory - Details Show Weakness, War Remains Concern",
         "Boeing to start 737 Max production on new assembly line July 6, CEO says",
-        "8-K - Invesco Commercial Real Estate Finance Trust, Inc. (0001976927) (Filer)"
+        "First Google, now Meta? Big Tech may increasingly sell stock to bankroll $820 billion AI boom.",
+        "Delta SkyMiles credit cards now come with 2 free checked bags and monster intro offers. Are they worth it?"
       ],
       "key_tickers": [
         "JPM",
@@ -45,20 +45,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS"
+        "GOOGL",
+        "META"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Nasdaq falls the most in nearly 8 months as chips tumble; S&P 500's 9-week winning streak set to end",
+      "story_count": 14,
+      "primary_driver": "Iran's threats against this Red Sea choke point are a big vulnerability for the oil market",
       "key_drivers": [
-        "Nasdaq falls the most in nearly 8 months as chips tumble; S&P 500's 9-week winning streak set to end: Live updates",
-        "Chip stock breakout vs the rest of tech showing signs of topping out, says Carter Worth",
-        "8-K - North Haven Net REIT (0001999784) (Filer)",
-        "Guidewire Software, Inc. 2026 Q3 - Results - Earnings Call Presentation"
+        "Iran's threats against this Red Sea choke point are a big vulnerability for the oil market",
+        "Bitcoin is suffering from an ‘attention’ deficit, as momentum traders have moved on",
+        "May Jobs Creation Is Illusory - Details Show Weakness, War Remains Concern",
+        "I Was Wrong About Upgrading Winnebago - Downgrading To Sell Again"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,10 +70,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "SPY",
-        "LLY",
-        "AMZN",
-        "BAC"
+        "CL=F",
+        "GOOGL",
+        "META",
+        "LLY"
       ]
     },
     {
@@ -100,13 +101,13 @@
       "sector": "Consumer",
       "sentiment": "Negative",
       "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 6,
-      "primary_driver": "Zumiez: Balance Sheet Strength Offsets Discretionary Spending Pressures",
+      "story_count": 5,
+      "primary_driver": "We thought we found the perfect luxury retirement community, but it’s millions of dollars in debt. A",
       "key_drivers": [
-        "Zumiez: Balance Sheet Strength Offsets Discretionary Spending Pressures",
-        "A ‘rudderless’ Lululemon needs to ditch logos and get back to basics, analysts say",
         "We thought we found the perfect luxury retirement community, but it’s millions of dollars in debt. Are we trapped?",
-        "Alphabet is seeking fresh capital as stock's 4-week losing streak tests investor appetite"
+        "Alphabet is seeking fresh capital as stock's 4-week losing streak tests investor appetite",
+        "Crypto mutiny on Strategy: Shorts target 'MSTR' in bitcoin bloodbath",
+        "Lululemon cuts annual outlook, citing 'negative' media commentary and disappointing product launches"
       ],
       "key_tickers": [
         "NKE",
@@ -116,20 +117,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "BAC",
-        "GOOGL"
+        "GOOGL",
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Negative",
-      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 4,
-      "primary_driver": "Ionis Pharmaceuticals, Inc. (IONS) Shareholder/Analyst Call - Slideshow",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 3,
+      "primary_driver": "‘This would be a one-time event’: How can I take extra money from my 401(k) without triggering highe",
       "key_drivers": [
-        "Ionis Pharmaceuticals, Inc. (IONS) Shareholder/Analyst Call - Slideshow",
-        "Social Security is looking at a $500-a-month cut. Could a new bipartisan commission make a difference?",
-        "8-K - Edesa Biotech, Inc. (0001540159) (Filer)",
+        "‘This would be a one-time event’: How can I take extra money from my 401(k) without triggering higher Medicare premiums?",
+        "Rocket Pharmaceuticals, Inc. (RCKT) Presents at Jefferies Global Healthcare Conference 2026 Transcript",
         "Warren Buffett disciple Guy Spier built career on value investing. A rare cancer changed everything"
       ],
       "key_tickers": [
@@ -141,20 +141,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVO"
+        "RIG"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "8-K/A - CYTTA CORP. (0001383088) (Filer)",
+      "story_count": 14,
+      "primary_driver": "ABM Industries Cleaned Up Nicely",
       "key_drivers": [
-        "8-K/A - CYTTA CORP. (0001383088) (Filer)",
-        "WeRide: Focus On Geographical Diversification And Regulatory Developments",
-        "PGIM Jennison Growth Fund Q1 2026 Commentary",
-        "Bitcoin cracks $60,000, sinking to lowest level since October 2024"
+        "ABM Industries Cleaned Up Nicely",
+        "We thought we found the perfect luxury retirement community, but it’s millions of dollars in debt. Are we trapped?",
+        "Duolingo: I Was Wrong (Double Downgrade)",
+        "StealthGas Inc. 2026 Q1 - Results - Earnings Call Presentation"
       ],
       "key_tickers": [
         "TLT",
@@ -164,8 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "SPY"
       ]
     }
   ]
