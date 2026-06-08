@@ -4,12 +4,11 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Iran's threats against this Red Sea choke point are a big vulnerability for the oil market",
+      "story_count": 3,
+      "primary_driver": "Global oil prices erase most gains after topping $98 a barrel as Iran announces end of current attac",
       "key_drivers": [
-        "Iran's threats against this Red Sea choke point are a big vulnerability for the oil market",
-        "Trump wants Bill Pulte to fire big chunk of national intelligence office staff: WSJ",
-        "Oil Has Until July",
+        "Global oil prices erase most gains after topping $98 a barrel as Iran announces end of current attacks after exchanging ",
+        "China is helping to cushion global oil prices below $100 — but analysts warn it won’t last",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -27,15 +26,15 @@
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "May Jobs Creation Is Illusory - Details Show Weakness, War Remains Concern",
+      "primary_driver": "Food supply 'not at risk' after new Texas screwworm cases, USDA secretary says",
       "key_drivers": [
-        "May Jobs Creation Is Illusory - Details Show Weakness, War Remains Concern",
-        "Boeing to start 737 Max production on new assembly line July 6, CEO says",
-        "First Google, now Meta? Big Tech may increasingly sell stock to bankroll $820 billion AI boom.",
-        "Delta SkyMiles credit cards now come with 2 free checked bags and monster intro offers. Are they worth it?"
+        "Food supply 'not at risk' after new Texas screwworm cases, USDA secretary says",
+        "JPMorgan sees shares of the Wrangler jeans maker gaining nearly 30%",
+        "Bank of America says take profits: 'Too many red flags'",
+        "Why tech’s record pullback is just a ‘healthy reset’ for the bull market, according to Morgan Stanley’s top stock-market"
       ],
       "key_tickers": [
         "JPM",
@@ -45,21 +44,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GOOGL",
-        "META"
+        "BAC",
+        "NVO",
+        "JPM",
+        "MS"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
       "story_count": 14,
-      "primary_driver": "Iran's threats against this Red Sea choke point are a big vulnerability for the oil market",
+      "primary_driver": "Corning shares jump 4% after company strikes deal to power Amazon AI data centers in U.S.",
       "key_drivers": [
-        "Iran's threats against this Red Sea choke point are a big vulnerability for the oil market",
-        "Bitcoin is suffering from an ‘attention’ deficit, as momentum traders have moved on",
-        "May Jobs Creation Is Illusory - Details Show Weakness, War Remains Concern",
-        "I Was Wrong About Upgrading Winnebago - Downgrading To Sell Again"
+        "Corning shares jump 4% after company strikes deal to power Amazon AI data centers in U.S.",
+        "SentinelOne: A High-Potential, Cheap Cybersecurity Play",
+        "WWDC 2026 live updates: Apple AI, Siri and iPhone software in focus",
+        "8-K - Digimarc Corp (0002119322) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,9 +72,9 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "GOOGL",
-        "META",
-        "LLY"
+        "AMZN",
+        "AAPL",
+        "JPM"
       ]
     },
     {
@@ -81,9 +82,9 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Boeing to start 737 Max production on new assembly line July 6, CEO says",
+      "primary_driver": "Global oil prices erase most gains after topping $98 a barrel as Iran announces end of current attac",
       "key_drivers": [
-        "Boeing to start 737 Max production on new assembly line July 6, CEO says"
+        "Global oil prices erase most gains after topping $98 a barrel as Iran announces end of current attacks after exchanging "
       ],
       "key_tickers": [
         "GE",
@@ -93,8 +94,7 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "CL=F"
       ]
     },
     {
@@ -102,12 +102,12 @@
       "sentiment": "Negative",
       "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 5,
-      "primary_driver": "We thought we found the perfect luxury retirement community, but it’s millions of dollars in debt. A",
+      "primary_driver": "QQQI: A Good Retirement Investment",
       "key_drivers": [
-        "We thought we found the perfect luxury retirement community, but it’s millions of dollars in debt. Are we trapped?",
-        "Alphabet is seeking fresh capital as stock's 4-week losing streak tests investor appetite",
-        "Crypto mutiny on Strategy: Shorts target 'MSTR' in bitcoin bloodbath",
-        "Lululemon cuts annual outlook, citing 'negative' media commentary and disappointing product launches"
+        "QQQI: A Good Retirement Investment",
+        "Weight loss drug maker sinks 25% after new safety data spooks investors",
+        "8-K - Global Business Travel Group, Inc. (0001820872) (Filer)",
+        "Retirees fear running out of money. Many are spending too little instead"
       ],
       "key_tickers": [
         "NKE",
@@ -117,20 +117,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "GOOGL",
+        "QQQ",
         "TGT"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Neutral",
-      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "‘This would be a one-time event’: How can I take extra money from my 401(k) without triggering highe",
+      "sentiment": "Negative",
+      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 2,
+      "primary_driver": "Novo and Lilly are competing to win the GLP-1 pill market as they prepare for Medicare coverage",
       "key_drivers": [
-        "‘This would be a one-time event’: How can I take extra money from my 401(k) without triggering higher Medicare premiums?",
-        "Rocket Pharmaceuticals, Inc. (RCKT) Presents at Jefferies Global Healthcare Conference 2026 Transcript",
-        "Warren Buffett disciple Guy Spier built career on value investing. A rare cancer changed everything"
+        "Novo and Lilly are competing to win the GLP-1 pill market as they prepare for Medicare coverage",
+        "Weight loss drug maker sinks 25% after new safety data spooks investors"
       ],
       "key_tickers": [
         "LLY",
@@ -141,20 +140,21 @@
       ],
       "trending_tickers": [
         "LLY",
-        "RIG"
+        "NVO",
+        "TGT"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 14,
-      "primary_driver": "ABM Industries Cleaned Up Nicely",
+      "story_count": 9,
+      "primary_driver": "Biomea Fusion, Inc. (BMEA) Presents at American Diabetes Association (ADA) 86th Scientific Sessions ",
       "key_drivers": [
-        "ABM Industries Cleaned Up Nicely",
-        "We thought we found the perfect luxury retirement community, but it’s millions of dollars in debt. Are we trapped?",
-        "Duolingo: I Was Wrong (Double Downgrade)",
-        "StealthGas Inc. 2026 Q1 - Results - Earnings Call Presentation"
+        "Biomea Fusion, Inc. (BMEA) Presents at American Diabetes Association (ADA) 86th Scientific Sessions - Slideshow",
+        "FVCBankcorp: A Promising But Underfollowed Local Bank",
+        "Fortrea: A Greater Recovery Priced In Here",
+        "Oracle: Risks To Watch For In Q4 And Beyond"
       ],
       "key_tickers": [
         "TLT",
@@ -164,7 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY"
+        "NVO"
       ]
     }
   ]
