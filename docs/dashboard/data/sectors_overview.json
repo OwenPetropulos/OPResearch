@@ -4,13 +4,12 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Iran Escalates: Is Oil About To Soar?",
+      "story_count": 3,
+      "primary_driver": "Oil prices ease after Iran says military operations against Israel are over",
       "key_drivers": [
-        "Iran Escalates: Is Oil About To Soar?",
         "Oil prices ease after Iran says military operations against Israel are over",
-        "Shattuck Labs, Inc. (STTK) Discusses Phase I Results for DR3 Blocking Antibody SL-325 and Pipeline Update Transcript",
-        "The Case For Trading Natural Gas With The BOIL And KOLD ETFs"
+        "China is helping to cushion global oil prices below $100 — but analysts warn it won’t last",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -27,15 +26,15 @@
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Convicted FTX founder Sam Bankman-Fried files formal request for Trump pardon",
+      "primary_driver": "Axsome Therapeutics, Inc. (AXSM) Presents at Goldman Sachs 47th Annual Global Healthcare Conference ",
       "key_drivers": [
-        "Convicted FTX founder Sam Bankman-Fried files formal request for Trump pardon",
-        "Cabaletta Bio, Inc. (CABA) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "Corvus Pharmaceuticals, Inc. (CRVS) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "8-K - Brookfield Private Equity Fund LP (0002074065) (Filer)"
+        "Axsome Therapeutics, Inc. (AXSM) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
+        "Sight Sciences, Inc. (SGHT) Presents At Bank Of America Global Healthcare Conference 2026 Transcript",
+        "DocGo Inc. (DCGO) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
+        "Regeneron Pharmaceuticals, Inc. (REGN) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcrip"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +45,20 @@
       ],
       "trending_tickers": [
         "GS",
-        "LLY"
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 12,
-      "primary_driver": "WWDC 2026: Siri AI revealed, child safety updates, Liquid Glass changes",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 10,
+      "primary_driver": "Chipotle Mexican Grill Plunge Hasn't Made It Tasty Enough",
       "key_drivers": [
-        "WWDC 2026: Siri AI revealed, child safety updates, Liquid Glass changes",
-        "Wall Street Lunch: Intel Leads Chip And AI Rally On Google, Nvidia Foundry Report",
-        "Silicon Valley’s new buyout playbook is hitting Wall Street",
-        "S&P 500 and Nasdaq gain as chipmakers rebound from rout, Iran halts Israel attacks: Live updates"
+        "Chipotle Mexican Grill Plunge Hasn't Made It Tasty Enough",
+        "OpenAI files confidentially for IPO — but there’s a catch",
+        "Your tech portfolio could be on the wrong side of the AI boom",
+        "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,18 +70,19 @@
       ],
       "trending_tickers": [
         "LLY",
-        "SPY",
-        "META",
-        "CL=F"
+        "CL=F",
+        "RIG",
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Oil prices ease after Iran says military operations against Israel are over",
+      "story_count": 2,
+      "primary_driver": "Trump nominates Todd Blanche for attorney general amid controversy over DOJ fund",
       "key_drivers": [
+        "Trump nominates Todd Blanche for attorney general amid controversy over DOJ fund",
         "Oil prices ease after Iran says military operations against Israel are over"
       ],
       "key_tickers": [
@@ -100,13 +100,12 @@
       "sector": "Consumer",
       "sentiment": "Negative",
       "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 6,
-      "primary_driver": "Hormel Foods Corporation (HRL) Presents at Oppenheimer 26th Annual Consumer Growth and E-Commerce Co",
+      "story_count": 3,
+      "primary_driver": "Retirement 'underspending' is risky, advisor says. Here's why",
       "key_drivers": [
-        "Hormel Foods Corporation (HRL) Presents at Oppenheimer 26th Annual Consumer Growth and E-Commerce Conference Transcript",
-        "Voya Target Solution Trust Series Q1 2026 Commentary",
-        "We thought we found the perfect luxury retirement community, but it’s millions of dollars in debt. Are we trapped?",
-        "Retirement 'underspending' is risky, advisor says. Here's why"
+        "Retirement 'underspending' is risky, advisor says. Here's why",
+        "Weight loss drug maker sinks 23% after new safety data spooks investors",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -124,10 +123,10 @@
       "sentiment": "Negative",
       "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 4,
-      "primary_driver": "Corvus Pharmaceuticals, Inc. (CRVS) Presents at Goldman Sachs 47th Annual Global Healthcare Conferen",
+      "primary_driver": "Regeneron Pharmaceuticals, Inc. (REGN) Presents at Goldman Sachs 47th Annual Global Healthcare Confe",
       "key_drivers": [
-        "Corvus Pharmaceuticals, Inc. (CRVS) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "Jim Cramer says he can't sell Eli Lilly despite its massive run up. Here's why",
+        "Regeneron Pharmaceuticals, Inc. (REGN) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcrip",
+        "Rhythm Pharmaceuticals, Inc. (RYTM) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
         "Weight loss drug maker sinks 23% after new safety data spooks investors",
         "Novo and Lilly are competing to win the GLP-1 pill market as they prepare for Medicare coverage"
       ],
@@ -139,23 +138,23 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
         "GS",
         "TGT",
+        "LLY",
         "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "Judge blocks Trump's $100,000 H-1B visa fee",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "Mega IPOs Pose Leveraged Downside Risk For The Nasdaq 100",
       "key_drivers": [
-        "Judge blocks Trump's $100,000 H-1B visa fee",
-        "‘DOGE’ wanted to declare 2.7 million people ‘dead’ at Social Security: whistleblower",
-        "BofA sees ‘red flags’ in the U.S. stock market. Here’s what to buy now.",
-        "Tesla: 190x P/E Ratio Reexamined"
+        "Mega IPOs Pose Leveraged Downside Risk For The Nasdaq 100",
+        "Flowers Foods: A Pure‑Play Leader Offering A 6.8% Yield And A Clearer Path Ahead",
+        "Duluth Holdings Inc. (DLTH) Analyst/Investor Day Transcript",
+        "Endeavour Mining: A Cash-Return Machine With A Tier-One Growth Option"
       ],
       "key_tickers": [
         "TLT",
@@ -165,10 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY",
-        "LLY",
-        "RIG",
-        "META"
+        "QQQ"
       ]
     }
   ]
