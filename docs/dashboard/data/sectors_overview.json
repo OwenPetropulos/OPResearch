@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
       "story_count": 6,
-      "primary_driver": "Stocks rise as chip rebound continues, oil retreats: Live updates",
+      "primary_driver": "Oil-Dri Corporation of America (ODC) Q3 2026 Earnings Call Transcript",
       "key_drivers": [
-        "Stocks rise as chip rebound continues, oil retreats: Live updates",
-        "Jim Cramer's top 10 things to watch in the stock market Tuesday",
-        "Oil prices fall as Trump tries to convince market an Iran deal is close despite recent violence",
-        "Gold could slump another 20% by September, says Citi — here's why"
+        "Oil-Dri Corporation of America (ODC) Q3 2026 Earnings Call Transcript",
+        "Oil prices are defying a worst-case energy crisis — but workarounds won’t last forever",
+        "The World Cup could deliver Fox a ratings bonanza: ‘There will be all sorts of viewership records’",
+        "Energy Secretary Chris Wright says traffic in Strait of Hormuz is rising 'very meaningfully'"
       ],
       "key_tickers": [
         "XOM",
@@ -22,6 +22,7 @@
       "trending_tickers": [
         "CL=F",
         "LLY",
+        "RIG",
         "SPY"
       ]
     },
@@ -29,13 +30,13 @@
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "SpaceX employee group creates low-fee wealth management option with Choreo for post-IPO",
+      "story_count": 9,
+      "primary_driver": "Truist Financial Corporation (TFC) Presents at Morgan Stanley US Financials Conference 2026 Transcri",
       "key_drivers": [
-        "SpaceX employee group creates low-fee wealth management option with Choreo for post-IPO",
-        "Inflation data threatens to derail market comeback. How the S&P 500 may react",
-        "The 'SaaSpocalypse' is over, says private equity giant Thoma Bravo. Here's why it sees an AI boom for software",
-        "Markets are pricing in a rate hike by the European Central Bank — which one top economist sees as a ‘mistake in the maki"
+        "Truist Financial Corporation (TFC) Presents at Morgan Stanley US Financials Conference 2026 Transcript",
+        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+        "8-K - Federal Home Loan Bank of Chicago (0001331451) (Filer)",
+        "Alignment Healthcare, Inc. (ALHC) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript"
       ],
       "key_tickers": [
         "JPM",
@@ -45,22 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
+        "MS",
+        "GS",
         "BAC",
-        "SPY"
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 15,
-      "primary_driver": "Stocks rise as chip rebound continues, oil retreats: Live updates",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 12,
+      "primary_driver": "Sandisk: Market Has Completely Misread The AI NAND Supercycle",
       "key_drivers": [
-        "Stocks rise as chip rebound continues, oil retreats: Live updates",
-        "8-K/A - 22nd Century Group, Inc. (0001347858) (Filer)",
-        "Upstart chipmakers keep challenging Nvidia. This time it's Microsoft-backed D-Matrix",
-        "Broadcom: One Of The Most Interesting AI Opportunities On The Market Today"
+        "Sandisk: Market Has Completely Misread The AI NAND Supercycle",
+        "Trump says U.S. must 'respond' after Iran shoots down helicopter over Hormuz Strait",
+        "Stocks making the biggest moves midday: Apple, Micron Technology, Coherent, DraftKings, J.M. Smucker & more",
+        "Stocks tumble, with Nasdaq shedding more than 2% as chip comeback fizzles: Live updates"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,10 +73,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "SPY",
         "LLY",
+        "AAPL",
         "BAC",
-        "CL=F"
+        "SPY"
       ]
     },
     {
@@ -82,10 +84,10 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "8-K - STERLING INFRASTRUCTURE, INC. (0000874238) (Filer)",
+      "primary_driver": "FuelCell Energy's Manufacturing Footprint Isn't Its Greatest Risk",
       "key_drivers": [
-        "8-K - STERLING INFRASTRUCTURE, INC. (0000874238) (Filer)",
-        "Washington is quietly changing the rules for America’s railroads, and the timing couldn’t be worse"
+        "FuelCell Energy's Manufacturing Footprint Isn't Its Greatest Risk",
+        "Boeing jet deliveries jump to 60 in May, 33% higher than last year"
       ],
       "key_tickers": [
         "GE",
@@ -101,15 +103,15 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Positive",
-      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 6,
-      "primary_driver": "8-K - Allegiant Travel CO (0001362468) (Filer)",
+      "sentiment": "Negative",
+      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 7,
+      "primary_driver": "SpaceX IPO explained: The price is set, but retail allocation still up in the air",
       "key_drivers": [
-        "8-K - Allegiant Travel CO (0001362468) (Filer)",
-        "Fund a grandchild’s retirement tax-free from birth — if you can trust an 18-year-old with the money",
-        "Trump's trade war has a new target: forced labor. The case behind it is far from simple",
-        "KBW upgrades Toll, citing the K-shaped housing market favoring the 'affluent'"
+        "SpaceX IPO explained: The price is set, but retail allocation still up in the air",
+        "FIFA pres. on ticket prices: The World Cup being in America is a 'once-in-a-lifetime opportunity'",
+        "Social Security retirement trust fund may be depleted in 2032, new trustees report finds",
+        "Capital One unveils 3 limited-time card offers: Earn up to $250 in bonus cash back"
       ],
       "key_tickers": [
         "NKE",
@@ -119,17 +121,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY",
-        "TGT"
+        "MS",
+        "BAC",
+        "LLY"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Nuvalent shares surge 39% after UK's GSK agrees to buy the cancer drugmaker for $10.6 billion",
+      "story_count": 2,
+      "primary_driver": "Amneal Pharmaceuticals, Inc. (AMRX) Presents at Goldman Sachs 47th Annual Global Healthcare Conferen",
       "key_drivers": [
+        "Amneal Pharmaceuticals, Inc. (AMRX) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
         "Nuvalent shares surge 39% after UK's GSK agrees to buy the cancer drugmaker for $10.6 billion"
       ],
       "key_tickers": [
@@ -140,21 +144,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "GS"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 13,
-      "primary_driver": "8-K - Axiom Intelligence Acquisition Corp 1 (0002057030) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "SBAR: A 'Worst Of Three Strategy' That Distributes Over 11%",
       "key_drivers": [
-        "8-K - Axiom Intelligence Acquisition Corp 1 (0002057030) (Filer)",
-        "The Speed Of Transmission: Cost Pass-Through In Emerging Vs. Developed Markets",
-        "AbCellera: Q3 Hot Flashes Data Drop Aside, This Stock Is A Difficult Sell",
-        "Vinted boss sees 'fundamental' shift in consumer patterns, as secondhand firm notches $9 billion valuation"
+        "SBAR: A 'Worst Of Three Strategy' That Distributes Over 11%",
+        "TQQQ: What 7 Months Of Trading This ETF Taught Me About Market Timing",
+        "As LIV Golf faces a Saudi funding cliff, CEO says to take PIF 'at their word'",
+        "Avalon Advanced Materials Inc. (AVL:CA) Presents at WTR Insights Conference: Powered by The Small Cap Showcase - Slidesh"
       ],
       "key_tickers": [
         "TLT",
@@ -164,10 +167,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "COST",
-        "JPM",
-        "BAC",
-        "SPY"
+        "QQQ"
       ]
     }
   ]
