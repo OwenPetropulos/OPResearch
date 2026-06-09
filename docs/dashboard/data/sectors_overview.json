@@ -4,12 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Oil prices ease after Iran says military operations against Israel are over",
+      "story_count": 6,
+      "primary_driver": "Stocks rise as chip rebound continues, oil retreats: Live updates",
       "key_drivers": [
-        "Oil prices ease after Iran says military operations against Israel are over",
-        "China is helping to cushion global oil prices below $100 — but analysts warn it won’t last",
-        "Sunday Night Futures"
+        "Stocks rise as chip rebound continues, oil retreats: Live updates",
+        "Jim Cramer's top 10 things to watch in the stock market Tuesday",
+        "Oil prices fall as Trump tries to convince market an Iran deal is close despite recent violence",
+        "Gold could slump another 20% by September, says Citi — here's why"
       ],
       "key_tickers": [
         "XOM",
@@ -29,12 +30,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Axsome Therapeutics, Inc. (AXSM) Presents at Goldman Sachs 47th Annual Global Healthcare Conference ",
+      "primary_driver": "SpaceX employee group creates low-fee wealth management option with Choreo for post-IPO",
       "key_drivers": [
-        "Axsome Therapeutics, Inc. (AXSM) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "Sight Sciences, Inc. (SGHT) Presents At Bank Of America Global Healthcare Conference 2026 Transcript",
-        "DocGo Inc. (DCGO) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "Regeneron Pharmaceuticals, Inc. (REGN) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcrip"
+        "SpaceX employee group creates low-fee wealth management option with Choreo for post-IPO",
+        "Inflation data threatens to derail market comeback. How the S&P 500 may react",
+        "The 'SaaSpocalypse' is over, says private equity giant Thoma Bravo. Here's why it sees an AI boom for software",
+        "Markets are pricing in a rate hike by the European Central Bank — which one top economist sees as a ‘mistake in the maki"
       ],
       "key_tickers": [
         "JPM",
@@ -44,21 +45,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
-        "BAC"
+        "JPM",
+        "BAC",
+        "SPY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "Chipotle Mexican Grill Plunge Hasn't Made It Tasty Enough",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 15,
+      "primary_driver": "Stocks rise as chip rebound continues, oil retreats: Live updates",
       "key_drivers": [
-        "Chipotle Mexican Grill Plunge Hasn't Made It Tasty Enough",
-        "OpenAI files confidentially for IPO — but there’s a catch",
-        "Your tech portfolio could be on the wrong side of the AI boom",
-        "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut"
+        "Stocks rise as chip rebound continues, oil retreats: Live updates",
+        "8-K/A - 22nd Century Group, Inc. (0001347858) (Filer)",
+        "Upstart chipmakers keep challenging Nvidia. This time it's Microsoft-backed D-Matrix",
+        "Broadcom: One Of The Most Interesting AI Opportunities On The Market Today"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,10 +71,10 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "SPY",
         "LLY",
-        "CL=F",
-        "RIG",
-        "SPY"
+        "BAC",
+        "CL=F"
       ]
     },
     {
@@ -80,10 +82,10 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "Trump nominates Todd Blanche for attorney general amid controversy over DOJ fund",
+      "primary_driver": "8-K - STERLING INFRASTRUCTURE, INC. (0000874238) (Filer)",
       "key_drivers": [
-        "Trump nominates Todd Blanche for attorney general amid controversy over DOJ fund",
-        "Oil prices ease after Iran says military operations against Israel are over"
+        "8-K - STERLING INFRASTRUCTURE, INC. (0000874238) (Filer)",
+        "Washington is quietly changing the rules for America’s railroads, and the timing couldn’t be worse"
       ],
       "key_tickers": [
         "GE",
@@ -93,19 +95,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "CL=F"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Negative",
-      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 3,
-      "primary_driver": "Retirement 'underspending' is risky, advisor says. Here's why",
+      "sentiment": "Positive",
+      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
+      "story_count": 6,
+      "primary_driver": "8-K - Allegiant Travel CO (0001362468) (Filer)",
       "key_drivers": [
-        "Retirement 'underspending' is risky, advisor says. Here's why",
-        "Weight loss drug maker sinks 23% after new safety data spooks investors",
-        "1st Look at Local Housing Markets in December"
+        "8-K - Allegiant Travel CO (0001362468) (Filer)",
+        "Fund a grandchild’s retirement tax-free from birth — if you can trust an 18-year-old with the money",
+        "Trump's trade war has a new target: forced labor. The case behind it is far from simple",
+        "KBW upgrades Toll, citing the K-shaped housing market favoring the 'affluent'"
       ],
       "key_tickers": [
         "NKE",
@@ -115,20 +119,18 @@
         "ONON"
       ],
       "trending_tickers": [
+        "LLY",
         "TGT"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Negative",
-      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 4,
-      "primary_driver": "Regeneron Pharmaceuticals, Inc. (REGN) Presents at Goldman Sachs 47th Annual Global Healthcare Confe",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "Nuvalent shares surge 39% after UK's GSK agrees to buy the cancer drugmaker for $10.6 billion",
       "key_drivers": [
-        "Regeneron Pharmaceuticals, Inc. (REGN) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcrip",
-        "Rhythm Pharmaceuticals, Inc. (RYTM) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "Weight loss drug maker sinks 23% after new safety data spooks investors",
-        "Novo and Lilly are competing to win the GLP-1 pill market as they prepare for Medicare coverage"
+        "Nuvalent shares surge 39% after UK's GSK agrees to buy the cancer drugmaker for $10.6 billion"
       ],
       "key_tickers": [
         "LLY",
@@ -138,23 +140,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "GS",
-        "TGT",
         "LLY",
         "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Mega IPOs Pose Leveraged Downside Risk For The Nasdaq 100",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 13,
+      "primary_driver": "8-K - Axiom Intelligence Acquisition Corp 1 (0002057030) (Filer)",
       "key_drivers": [
-        "Mega IPOs Pose Leveraged Downside Risk For The Nasdaq 100",
-        "Flowers Foods: A Pure‑Play Leader Offering A 6.8% Yield And A Clearer Path Ahead",
-        "Duluth Holdings Inc. (DLTH) Analyst/Investor Day Transcript",
-        "Endeavour Mining: A Cash-Return Machine With A Tier-One Growth Option"
+        "8-K - Axiom Intelligence Acquisition Corp 1 (0002057030) (Filer)",
+        "The Speed Of Transmission: Cost Pass-Through In Emerging Vs. Developed Markets",
+        "AbCellera: Q3 Hot Flashes Data Drop Aside, This Stock Is A Difficult Sell",
+        "Vinted boss sees 'fundamental' shift in consumer patterns, as secondhand firm notches $9 billion valuation"
       ],
       "key_tickers": [
         "TLT",
@@ -164,7 +164,10 @@
         "DXY"
       ],
       "trending_tickers": [
-        "QQQ"
+        "COST",
+        "JPM",
+        "BAC",
+        "SPY"
       ]
     }
   ]
