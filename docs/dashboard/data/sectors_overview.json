@@ -2,15 +2,14 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Positive",
-      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 6,
-      "primary_driver": "Oil-Dri Corporation of America (ODC) Q3 2026 Earnings Call Transcript",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 3,
+      "primary_driver": "Absci Corporation: A Big Binary Approaching In Alopecia",
       "key_drivers": [
-        "Oil-Dri Corporation of America (ODC) Q3 2026 Earnings Call Transcript",
-        "Oil prices are defying a worst-case energy crisis — but workarounds won’t last forever",
-        "The World Cup could deliver Fox a ratings bonanza: ‘There will be all sorts of viewership records’",
-        "Energy Secretary Chris Wright says traffic in Strait of Hormuz is rising 'very meaningfully'"
+        "Absci Corporation: A Big Binary Approaching In Alopecia",
+        "Energy Secretary Chris Wright says traffic in Strait of Hormuz is rising 'very meaningfully'",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -20,10 +19,10 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
         "LLY",
         "RIG",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
@@ -31,12 +30,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Truist Financial Corporation (TFC) Presents at Morgan Stanley US Financials Conference 2026 Transcri",
+      "primary_driver": "Royalty Pharma plc (RPRX) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Tr",
       "key_drivers": [
-        "Truist Financial Corporation (TFC) Presents at Morgan Stanley US Financials Conference 2026 Transcript",
-        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
-        "8-K - Federal Home Loan Bank of Chicago (0001331451) (Filer)",
-        "Alignment Healthcare, Inc. (ALHC) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript"
+        "Royalty Pharma plc (RPRX) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
+        "Corpay, Inc. (CPAY) Presents at Morgan Stanley US Financials Conference 2026 Transcript",
+        "Apple’s AI could usher in a historic upgrade cycle that investors are overlooking",
+        "CG Oncology, Inc. (CGON) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript"
       ],
       "key_tickers": [
         "JPM",
@@ -48,7 +47,7 @@
       "trending_tickers": [
         "MS",
         "GS",
-        "BAC",
+        "AAPL",
         "LLY"
       ]
     },
@@ -56,13 +55,13 @@
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "Sandisk: Market Has Completely Misread The AI NAND Supercycle",
+      "story_count": 11,
+      "primary_driver": "Super Micro stock plunges as $7 billion equity raise overshadows booming backlog",
       "key_drivers": [
-        "Sandisk: Market Has Completely Misread The AI NAND Supercycle",
-        "Trump says U.S. must 'respond' after Iran shoots down helicopter over Hormuz Strait",
-        "Stocks making the biggest moves midday: Apple, Micron Technology, Coherent, DraftKings, J.M. Smucker & more",
-        "Stocks tumble, with Nasdaq shedding more than 2% as chip comeback fizzles: Live updates"
+        "Super Micro stock plunges as $7 billion equity raise overshadows booming backlog",
+        "U.S. military launches strikes in retaliation for Iran downing helicopter",
+        "AMD Is Soaring, But Here's Why It's Time To Say Goodbye",
+        "Apple’s AI could usher in a historic upgrade cycle that investors are overlooking"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,10 +72,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
+        "AMD",
         "AAPL",
-        "BAC",
-        "SPY"
+        "LLY",
+        "BAC"
       ]
     },
     {
@@ -84,9 +83,9 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "FuelCell Energy's Manufacturing Footprint Isn't Its Greatest Risk",
+      "primary_driver": "U.S. military launches strikes in retaliation for Iran downing helicopter",
       "key_drivers": [
-        "FuelCell Energy's Manufacturing Footprint Isn't Its Greatest Risk",
+        "U.S. military launches strikes in retaliation for Iran downing helicopter",
         "Boeing jet deliveries jump to 60 in May, 33% higher than last year"
       ],
       "key_tickers": [
@@ -105,12 +104,12 @@
       "sector": "Consumer",
       "sentiment": "Negative",
       "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 7,
-      "primary_driver": "SpaceX IPO explained: The price is set, but retail allocation still up in the air",
+      "story_count": 5,
+      "primary_driver": "Fund a grandchild’s retirement tax-free from birth — if you can trust an 18-year-old with the money",
       "key_drivers": [
-        "SpaceX IPO explained: The price is set, but retail allocation still up in the air",
-        "FIFA pres. on ticket prices: The World Cup being in America is a 'once-in-a-lifetime opportunity'",
+        "Fund a grandchild’s retirement tax-free from birth — if you can trust an 18-year-old with the money",
         "Social Security retirement trust fund may be depleted in 2032, new trustees report finds",
+        "FIFA pres. on ticket prices: The World Cup being in America is a 'once-in-a-lifetime opportunity'",
         "Capital One unveils 3 limited-time card offers: Earn up to $250 in bonus cash back"
       ],
       "key_tickers": [
@@ -121,7 +120,6 @@
         "ONON"
       ],
       "trending_tickers": [
-        "MS",
         "BAC",
         "LLY"
       ]
@@ -130,11 +128,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Amneal Pharmaceuticals, Inc. (AMRX) Presents at Goldman Sachs 47th Annual Global Healthcare Conferen",
+      "story_count": 1,
+      "primary_driver": "CG Oncology, Inc. (CGON) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Tra",
       "key_drivers": [
-        "Amneal Pharmaceuticals, Inc. (AMRX) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "Nuvalent shares surge 39% after UK's GSK agrees to buy the cancer drugmaker for $10.6 billion"
+        "CG Oncology, Inc. (CGON) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript"
       ],
       "key_tickers": [
         "LLY",
@@ -149,15 +146,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "SBAR: A 'Worst Of Three Strategy' That Distributes Over 11%",
+      "primary_driver": "Intuit Inc. (INTU) Presents at Mizuho Technology Conference 2026 Transcript",
       "key_drivers": [
-        "SBAR: A 'Worst Of Three Strategy' That Distributes Over 11%",
-        "TQQQ: What 7 Months Of Trading This ETF Taught Me About Market Timing",
-        "As LIV Golf faces a Saudi funding cliff, CEO says to take PIF 'at their word'",
-        "Avalon Advanced Materials Inc. (AVL:CA) Presents at WTR Insights Conference: Powered by The Small Cap Showcase - Slidesh"
+        "Intuit Inc. (INTU) Presents at Mizuho Technology Conference 2026 Transcript",
+        "Niu Technologies: Strong Revenue Growth Should Eventually Push It Higher",
+        "Invesco High Yield Fund Q1 2026 Commentary",
+        "Fidelity Select Utilities Portfolio Q1 2026 Commentary"
       ],
       "key_tickers": [
         "TLT",
@@ -167,7 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "QQQ"
+        "LLY"
       ]
     }
   ]
