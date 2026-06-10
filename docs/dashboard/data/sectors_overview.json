@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Positive",
-      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 4,
-      "primary_driver": "Dow slides 600 points as Trump doubles down on Iran threat, oil rises: Live updates",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "Viking Therapeutics: Drugs Are In The Pipeline, But Profitability Is Still Unproven",
       "key_drivers": [
-        "Dow slides 600 points as Trump doubles down on Iran threat, oil rises: Live updates",
-        "Evolution Petroleum Corporation (EPM) Discusses Asset Base Growth Strategy and Role of Royalty Acquisitions in Enhancing",
-        "Trump says 'I love the inflation' after consumer price index hits 3-year high",
-        "Sunday Night Futures"
+        "Viking Therapeutics: Drugs Are In The Pipeline, But Profitability Is Still Unproven",
+        "Oracle’s stock slides after earnings, as the steep price of AI spooks investors",
+        "My plumber charged $160 to fix the cistern on my toilet — but created another problem. Do I pay again?",
+        "Trump says U.S. secretly moved more than 100 million barrels of oil through Strait of Hormuz"
       ],
       "key_tickers": [
         "XOM",
@@ -20,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
         "LLY",
-        "SPY"
+        "CL=F",
+        "COST",
+        "RIG"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Madrigal Pharmaceuticals, Inc. (MDGL) Presents at Goldman Sachs 47th Annual Global Healthcare Confer",
+      "story_count": 11,
+      "primary_driver": "Atlantic Union Bankshares Corporation (AUB) Presents at Morgan Stanley US Financials Conference 2026",
       "key_drivers": [
-        "Madrigal Pharmaceuticals, Inc. (MDGL) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "Vertex Pharmaceuticals Incorporated (VRTX) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Trans",
-        "Remitly Global, Inc. (RELY) Presents at Bank of America Global Research C-Suite TMT Conference Transcript",
-        "Amylyx Pharmaceuticals, Inc. (AMLX) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript"
+        "Atlantic Union Bankshares Corporation (AUB) Presents at Morgan Stanley US Financials Conference 2026 Transcript",
+        "Pulse Biosciences, Inc. (PLSE) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
+        "Upstart Holdings, Inc. (UPST) Presents at Morgan Stanley US Financials Conference 2026 Transcript",
+        "USDA's Rollins called screwworm a 'little pest' amid U.S. spread. Last year, she called it 'terrifying'"
       ],
       "key_tickers": [
         "JPM",
@@ -45,23 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
+        "MS",
         "GS",
-        "RIG",
-        "RTX",
-        "BAC"
+        "LLY",
+        "RIG"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "Dow slides 600 points as Trump doubles down on Iran threat, oil rises: Live updates",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 15,
+      "primary_driver": "Oracle Q4 Earnings: The AI Bill Arrives (Rating Downgrade)",
       "key_drivers": [
-        "Dow slides 600 points as Trump doubles down on Iran threat, oil rises: Live updates",
-        "Wall Street needs a crash course in the token economy ahead of AI IPOs. SpaceX offers a preview",
-        "Lufthansa: Underperformance Continues, I Fail To See A Clear Upside",
-        "Core & Main, Inc. (CNM) Q1 2027 Earnings Call Transcript"
+        "Oracle Q4 Earnings: The AI Bill Arrives (Rating Downgrade)",
+        "Elastic N.V. (ESTC) Presents at Rosenblatt 6th Annual Age of AI Technology Summit Transcript",
+        "Lumen Technologies: Limited AI Detected",
+        "U.S. military begins strikes on 'multiple targets' in Iran at Trump's direction"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,21 +73,23 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "RIG",
+        "LLY",
         "CL=F",
-        "NVDA",
-        "WMT",
-        "AMZN"
+        "TGT"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Positive",
       "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 2,
-      "primary_driver": "Dow slides 600 points as Trump doubles down on Iran threat, oil rises: Live updates",
+      "story_count": 4,
+      "primary_driver": "U.S. military begins strikes on 'multiple targets' in Iran at Trump's direction",
       "key_drivers": [
-        "Dow slides 600 points as Trump doubles down on Iran threat, oil rises: Live updates",
-        "Autonomous EV freight trucking company Einride rises sharply in first trade on Nasdaq"
+        "U.S. military begins strikes on 'multiple targets' in Iran at Trump's direction",
+        "8-K - Macquarie Infrastructure Fund, L.P. (0002079966) (Filer)",
+        "SpaceX's Trillion‑Dollar Moonshot: 3 Aerospace And Defense Stocks Delivering 50%+ EPS Growth",
+        "Oil prices rise after Trump says U.S. will attack Iran 'very hard'"
       ],
       "key_tickers": [
         "GE",
@@ -96,6 +99,7 @@
         "HON"
       ],
       "trending_tickers": [
+        "TGT",
         "CL=F"
       ]
     },
@@ -103,13 +107,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Walmart Inc. (WMT) Presents at The 6th Annual Evercore Consumer & Retail Conference Transcript",
+      "story_count": 6,
+      "primary_driver": "U.S. military begins strikes on 'multiple targets' in Iran at Trump's direction",
       "key_drivers": [
-        "Walmart Inc. (WMT) Presents at The 6th Annual Evercore Consumer & Retail Conference Transcript",
-        "World Cup travel boost hasn't materialized for U.S. businesses — yet",
-        "We thought we found the perfect luxury retirement community, but it’s millions of dollars in debt. Are we trapped?",
-        "Social Security could face an automatic 22% cut in 2032. These 4 moves will protect your retirement."
+        "U.S. military begins strikes on 'multiple targets' in Iran at Trump's direction",
+        "8-K - Braemar Hotels & Resorts Inc. (0001574085) (Filer)",
+        "Why Nike saw its stock downgraded a day before the World Cup’s kickoff",
+        "Social Security is facing a 22% cliff — 4 ways to build an income stream Washington can’t touch"
       ],
       "key_tickers": [
         "NKE",
@@ -119,20 +123,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "WMT"
+        "TGT",
+        "NKE"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Positive",
-      "tone": "Healthcare outlook constructive. Recent developments support near-term strength.",
-      "story_count": 6,
-      "primary_driver": "Madrigal Pharmaceuticals, Inc. (MDGL) Presents at Goldman Sachs 47th Annual Global Healthcare Confer",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "8-K - FENNEC PHARMACEUTICALS INC. (0001211583) (Filer)",
       "key_drivers": [
-        "Madrigal Pharmaceuticals, Inc. (MDGL) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "Vertex Pharmaceuticals Incorporated (VRTX) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Trans",
-        "Amylyx Pharmaceuticals, Inc. (AMLX) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "Roche Vs. Pfizer: Obesity Week Presentations Deep Dive - What Investors Must Know"
+        "8-K - FENNEC PHARMACEUTICALS INC. (0001211583) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -142,23 +144,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "GS",
-        "RIG",
         "LLY",
-        "RTX"
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "Clean Harbors, Inc. (CLH) Presents at Waste360/ Stifel Investor Summit Transcript",
+      "story_count": 12,
+      "primary_driver": "First Financial Bancorp.: A Buy As Earnings Momentum Likely To Accelerate Into 2027",
       "key_drivers": [
-        "Clean Harbors, Inc. (CLH) Presents at Waste360/ Stifel Investor Summit Transcript",
-        "Packaging Corporation of America (PKG) Presents at 16th Annual Wells Fargo Industrials & Materials Conference Transcript",
-        "KLIP: Giving Up On China (Rating Downgrade)",
-        "Trump doubles down on Pulte for DNI, calls for short-term extension of foreign surveillance law"
+        "First Financial Bancorp.: A Buy As Earnings Momentum Likely To Accelerate Into 2027",
+        "Unique SpaceX IPO is hedging challenge for Wall Street: 'What are you going to do, short NASA?'",
+        "On Tesla Becoming X",
+        "Oracle Q4: Back To Buy Territory"
       ],
       "key_tickers": [
         "TLT",
@@ -168,7 +168,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC"
+        "BAC",
+        "LLY"
       ]
     }
   ]
