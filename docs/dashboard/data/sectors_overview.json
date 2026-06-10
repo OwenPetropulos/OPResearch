@@ -4,11 +4,12 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Absci Corporation: A Big Binary Approaching In Alopecia",
+      "story_count": 4,
+      "primary_driver": "Dow falls 200 points on chip sell-off, Trump Iran threat and 3-year inflation high: Live updates",
       "key_drivers": [
-        "Absci Corporation: A Big Binary Approaching In Alopecia",
-        "Energy Secretary Chris Wright says traffic in Strait of Hormuz is rising 'very meaningfully'",
+        "Dow falls 200 points on chip sell-off, Trump Iran threat and 3-year inflation high: Live updates",
+        "My plumber charged $160 to fix the cistern on my toilet — but created another problem. Do I pay again?",
+        "Oil prices jump after Trump says Iran will 'pay the price' for failing at peace deal",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -19,23 +20,22 @@
         "RIG"
       ],
       "trending_tickers": [
+        "CL=F",
         "LLY",
-        "RIG",
-        "SPY",
-        "CL=F"
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 9,
-      "primary_driver": "Royalty Pharma plc (RPRX) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Tr",
+      "primary_driver": "Honda recalls more than 880,000 cars due to a problem with rear suspension components",
       "key_drivers": [
-        "Royalty Pharma plc (RPRX) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-        "Corpay, Inc. (CPAY) Presents at Morgan Stanley US Financials Conference 2026 Transcript",
-        "Apple’s AI could usher in a historic upgrade cycle that investors are overlooking",
-        "CG Oncology, Inc. (CGON) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript"
+        "Honda recalls more than 880,000 cars due to a problem with rear suspension components",
+        "SLM Corporation (SLM) Presents at Morgan Stanley US Financials Conference 2026 Transcript",
+        "Investors are fleeing tech stocks in record numbers",
+        "We're trimming another stock to increase cash ahead of any SpaceX IPO volatility"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +46,22 @@
       ],
       "trending_tickers": [
         "MS",
+        "BAC",
         "GS",
-        "AAPL",
-        "LLY"
+        "AMZN"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Super Micro stock plunges as $7 billion equity raise overshadows booming backlog",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 15,
+      "primary_driver": "Dow falls 200 points on chip sell-off, Trump Iran threat and 3-year inflation high: Live updates",
       "key_drivers": [
-        "Super Micro stock plunges as $7 billion equity raise overshadows booming backlog",
-        "U.S. military launches strikes in retaliation for Iran downing helicopter",
-        "AMD Is Soaring, But Here's Why It's Time To Say Goodbye",
-        "Apple’s AI could usher in a historic upgrade cycle that investors are overlooking"
+        "Dow falls 200 points on chip sell-off, Trump Iran threat and 3-year inflation high: Live updates",
+        "My husband won’t sell his home so we can live together full time. Is this a red flag after a decade of marriage?",
+        "Consumer prices rose 4.2% annually in May, highest in three years",
+        "Amazon trucking expansion sparks freight stock selloff"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,9 +72,9 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMD",
-        "AAPL",
+        "CL=F",
         "LLY",
+        "AMZN",
         "BAC"
       ]
     },
@@ -82,11 +82,13 @@
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "U.S. military launches strikes in retaliation for Iran downing helicopter",
+      "story_count": 5,
+      "primary_driver": "Dow falls 200 points on chip sell-off, Trump Iran threat and 3-year inflation high: Live updates",
       "key_drivers": [
-        "U.S. military launches strikes in retaliation for Iran downing helicopter",
-        "Boeing jet deliveries jump to 60 in May, 33% higher than last year"
+        "Dow falls 200 points on chip sell-off, Trump Iran threat and 3-year inflation high: Live updates",
+        "Amazon trucking expansion sparks freight stock selloff",
+        "Coda Octopus: The Market May Be Missing Its Underwater Defense Catalyst",
+        "8-K - NWPX Infrastructure, Inc. (0001001385) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -96,21 +98,19 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "CL=F",
+        "AMZN"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Negative",
-      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 5,
-      "primary_driver": "Fund a grandchild’s retirement tax-free from birth — if you can trust an 18-year-old with the money",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 2,
+      "primary_driver": "Social Security could face an automatic 22% cut in 2032. These 4 moves will protect your retirement.",
       "key_drivers": [
-        "Fund a grandchild’s retirement tax-free from birth — if you can trust an 18-year-old with the money",
-        "Social Security retirement trust fund may be depleted in 2032, new trustees report finds",
-        "FIFA pres. on ticket prices: The World Cup being in America is a 'once-in-a-lifetime opportunity'",
-        "Capital One unveils 3 limited-time card offers: Earn up to $250 in bonus cash back"
+        "Social Security could face an automatic 22% cut in 2032. These 4 moves will protect your retirement.",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -120,18 +120,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "BAC",
-        "LLY"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "CG Oncology, Inc. (CGON) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Tra",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "CG Oncology, Inc. (CGON) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -141,20 +141,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "GS"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 8,
-      "primary_driver": "Intuit Inc. (INTU) Presents at Mizuho Technology Conference 2026 Transcript",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "Dow falls 200 points on chip sell-off, Trump Iran threat and 3-year inflation high: Live updates",
       "key_drivers": [
-        "Intuit Inc. (INTU) Presents at Mizuho Technology Conference 2026 Transcript",
-        "Niu Technologies: Strong Revenue Growth Should Eventually Push It Higher",
-        "Invesco High Yield Fund Q1 2026 Commentary",
-        "Fidelity Select Utilities Portfolio Q1 2026 Commentary"
+        "Dow falls 200 points on chip sell-off, Trump Iran threat and 3-year inflation high: Live updates",
+        "Innodata: The Bull Case Got Stronger, The Valuation Got Harder",
+        "Celestica: The Broadcom Scare Looks Overdone",
+        "8-K - QNB CORP. (0000750558) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -164,7 +165,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY"
+        "CL=F"
       ]
     }
   ]

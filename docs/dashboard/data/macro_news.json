@@ -1,124 +1,32 @@
 {
   "stories": [
     {
-      "title": "Invesco High Yield Fund Q1 2026 Commentary",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4913513-invesco-high-yield-fund-q1-2026-commentary?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-06-09T18:20:00Z",
+      "title": "Dow falls 200 points on chip sell-off, Trump Iran threat and 3-year inflation high: Live updates",
+      "summary": "U.S. forces launched “self-defense strikes” against Iran on Tuesday in retaliation for the downing of a helicopter, pushing up crude oil prices.",
+      "url": "https://www.cnbc.com/2026/06/09/stock-market-today-live-updates.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-10T14:03:03Z",
       "id": "mn001",
       "sector_tags": [
+        "Energy",
+        "Technology",
+        "Industrials",
         "Macro"
       ],
-      "ticker_tags": [],
-      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+      "ticker_tags": [
+        "CL=F"
+      ],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
     },
     {
-      "title": "Super Micro stock plunges as $7 billion equity raise overshadows booming backlog",
-      "summary": "Super Micro looks to raise equity as it faces staggering AI demand but also an intense cash burn",
-      "url": "https://www.marketwatch.com/story/super-micro-stock-plunges-as-7-billion-equity-raise-overshadows-booming-backlog-c5df2fc8?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-06-09T22:17:00Z",
+      "title": "May CPI Hottest In Years, Why We May Be Over The Inflation Hill",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4913741-may-cpi-hottest-in-years-why-we-may-be-over-the-inflation-hill?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-06-10T09:40:56Z",
       "id": "mn002",
-      "sector_tags": [
-        "Technology"
-      ],
-      "ticker_tags": [
-        "BAC"
-      ],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
-    },
-    {
-      "title": "CG Oncology, Inc. (CGON) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4913470-cg-oncology-inc-cgon-presents-at-goldman-sachs-47th-annual-global-healthcare-conference-2026?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-06-09T17:52:11Z",
-      "id": "mn003",
-      "sector_tags": [
-        "Financials",
-        "Healthcare"
-      ],
-      "ticker_tags": [
-        "GS"
-      ],
-      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
-    },
-    {
-      "title": "Omnicell, Inc. (OMCL) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4913484-omnicell-inc-omcl-presents-at-goldman-sachs-47th-annual-global-healthcare-conference-2026?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-06-09T17:32:11Z",
-      "id": "mn004",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [
-        "GS"
-      ],
-      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
-    },
-    {
-      "title": "Moderna, Inc. (MRNA) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4913488-moderna-inc-mrna-presents-at-goldman-sachs-47th-annual-global-healthcare-conference-2026?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-06-09T17:32:09Z",
-      "id": "mn005",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [
-        "GS"
-      ],
-      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
-    },
-    {
-      "title": "Arcutis Biotherapeutics, Inc. (ARQT) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4913454-arcutis-biotherapeutics-inc-arqt-presents-at-goldman-sachs-47th-annual-global-healthcare?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-06-09T17:22:10Z",
-      "id": "mn006",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [
-        "GS"
-      ],
-      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
-    },
-    {
-      "title": "EyePoint, Inc. (EYPT) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
-      "summary": "",
-      "url": "https://seekingalpha.com/article/4913500-eyepoint-inc-eypt-presents-at-goldman-sachs-47th-annual-global-healthcare-conference-2026?source=feed_all_articles",
-      "source_name": "Seeking Alpha",
-      "source_type": "Niche / Blog",
-      "timestamp": "2026-06-09T17:12:15Z",
-      "id": "mn007",
-      "sector_tags": [
-        "Financials"
-      ],
-      "ticker_tags": [
-        "GS"
-      ],
-      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
-    },
-    {
-      "title": "A powerful inflation storm is brewing — and your portfolio isn’t ready",
-      "summary": "Looming El Niño shock threatens to drive up global commodity prices. These investments can help protect your purchasing power.",
-      "url": "https://www.marketwatch.com/story/an-inflation-storm-is-brewing-in-the-pacific-ocean-and-your-portfolio-isnt-ready-f200fc60?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-06-09T20:23:00Z",
-      "id": "mn008",
       "sector_tags": [
         "Macro"
       ],
@@ -126,19 +34,122 @@
       "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
     },
     {
-      "title": "Adobe needs a new CEO to make bold AI moves, and its choice could be revealed on Thursday",
-      "summary": "Given all the doubts around Adobe, it’s perhaps surprising that the company will likely go with an internal candidate to replace outgoing CEO Shantanu Narayen.",
-      "url": "https://www.marketwatch.com/story/adobe-needs-a-new-ceo-to-make-bold-ai-moves-and-its-choice-could-be-revealed-on-thursday-31269df8?mod=mw_rss_topstories",
-      "source_name": "MarketWatch",
-      "source_type": "Mainstream",
-      "timestamp": "2026-06-09T20:21:00Z",
-      "id": "mn009",
+      "title": "Sneak Peak Into The New Quant Growth & Income Portfolio: An Energy Giant Built For Volatility",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4913739-inside-the-new-quant-portfolio-the-1-energy-giant-built-for-volatility?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-06-10T09:25:00Z",
+      "id": "mn003",
       "sector_tags": [
-        "Technology",
         "Macro"
       ],
       "ticker_tags": [],
-      "why_it_matters": "The AI infrastructure buildout is the dominant capex cycle of this decade. Hyperscaler spending on GPUs, networking, and data center power is running at a pace that dwarfs prior investment cycles. The investment thesis has two phases: the picks-and-shovels phase (benefiting Nvidia, TSMC, power equipment names) and the monetization phase (benefiting software and application layer companies that can convert AI spend into revenue). The key risk is whether ROI on AI infrastructure materializes fast enough to justify continued capex. Key watch: hyperscaler capex guidance in earnings calls and enterprise software ARR growth rates."
+      "why_it_matters": "Broad risk sentiment determines the beta of every portfolio. When VIX spikes above 20, correlations across assets converge toward 1 — diversification fails precisely when you need it most. Dealer gamma positioning amplifies moves: a negative gamma environment means market makers must sell into declines, accelerating drawdowns. Put/call ratios at extremes can be contrarian signals, but only when accompanied by capitulation in fund flows. Key watch: VIX term structure, SKEW index, and equity put/call ratio versus its 20-day moving average."
+    },
+    {
+      "title": "2 Picks, 7%+ Yields, One Goal: Survive The Meltdown",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4913252-2-picks-7-percent-plus-yields-one-goal-survive-the-meltdown?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-06-10T09:15:00Z",
+      "id": "mn004",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "May CPI: Tone Setting As Inflation Crosses 4%",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4913726-may-cpi-tone-setting-as-inflation-crosses-4-percent?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-06-10T09:10:11Z",
+      "id": "mn005",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
+    },
+    {
+      "title": "Resilient, Not Recessionary: The U.S. Economy Refuses To Crack",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4913724-resilient-not-recessionary-us-economy-refuses-to-crack?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-06-10T09:10:00Z",
+      "id": "mn006",
+      "sector_tags": [
+        "Macro"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "Jim Cramer's top 10 things to watch in the stock market Wednesday",
+      "summary": "Stocks are headed for a lower open after President Trump said that Iran is taking too long to agree on a peace deal and must \"pay the price.\"",
+      "url": "https://www.cnbc.com/2026/06/10/jim-cramers-top-10-things-to-watch-in-the-stock-market-wednesday.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-10T13:04:50Z",
+      "id": "mn007",
+      "sector_tags": [
+        "Technology"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "Geopolitical risk creates fat-tail scenarios that standard risk models systematically underprice. Commodity supply disruptions, sanctions regimes, and reserve currency fragmentation are the three primary transmission channels into financial markets. Energy price spikes from conflict are stagflationary — they raise inflation while simultaneously depressing growth. Safe-haven flows into gold, U.S. Treasuries, and the Swiss franc are the typical first-order response. Key watch: oil price volatility premium, gold/oil ratio, and credit default swap spreads on exposed sovereigns."
+    },
+    {
+      "title": "Lyell Immunopharma, Inc. (LYEL) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transcript",
+      "summary": "",
+      "url": "https://seekingalpha.com/article/4913722-lyell-immunopharma-inc-lyel-presents-at-goldman-sachs-47th-annual-global-healthcare?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "source_type": "Niche / Blog",
+      "timestamp": "2026-06-10T09:03:21Z",
+      "id": "mn008",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [
+        "GS"
+      ],
+      "why_it_matters": "Bank earnings are a real-time readout on the health of the credit cycle and the transmission of monetary policy. Net interest margin tells you how well banks are monetizing the rate environment; provisions for loan losses tell you what management actually thinks about credit quality ahead. Investment banking fee recovery is a leading indicator for M&A and capital markets activity — when deal volumes recover, advisory boutiques and prime brokers benefit disproportionately. Key watch: NIM trajectory, deposit beta, CRE reserve builds, and IB fee backlog."
+    },
+    {
+      "title": "Weekly mortgage demand surges nearly 11% higher, despite volatile interest rates",
+      "summary": "Mortgage demand from both current homeowners and potential buyers rose sharply, even though interest rates climbed as well.",
+      "url": "https://www.cnbc.com/2026/06/10/weekly-mortgage-demand-surges-nearly-11percent-higher-despite-volatile-interest-rates.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-10T11:44:59Z",
+      "id": "mn009",
+      "sector_tags": [
+        "Financials"
+      ],
+      "ticker_tags": [],
+      "why_it_matters": "This development has direct or indirect implications for asset prices and portfolio positioning. The primary transmission channels to watch are: earnings revisions for directly exposed companies, sector rotation flows as capital reprices risk, and any second-order macro effects on the rate or inflation outlook. Monitor management commentary on the next earnings call for forward guidance revisions, and track options market implied volatility for the affected names as a real-time risk gauge."
+    },
+    {
+      "title": "Gold, silver and bitcoin fall as traders up Fed rate hike bets",
+      "summary": "Precious metals were firmly in negative territory, as fears about inflation and the Federal Reserve's interest rate path weighed on investor sentiment.",
+      "url": "https://www.cnbc.com/2026/06/10/gold-silver-and-bitcoin-fall-as-interest-rates-hold-investor-focus.html",
+      "source_name": "CNBC Top News",
+      "source_type": "Mainstream",
+      "timestamp": "2026-06-10T11:35:17Z",
+      "id": "mn010",
+      "sector_tags": [
+        "Financials",
+        "Technology",
+        "Macro"
+      ],
+      "ticker_tags": [
+        "META"
+      ],
+      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
     },
     {
       "title": "Federal Reserve Board announces that results from its annual bank stress test will be released on Wednesday, June 24, at 4 p.m. EDT.",
@@ -147,26 +158,12 @@
       "source_name": "Federal Reserve",
       "source_type": "Macro Data",
       "timestamp": "2026-06-09T20:00:00Z",
-      "id": "mn010",
+      "id": "mn011",
       "sector_tags": [
         "Financials"
       ],
       "ticker_tags": [],
       "why_it_matters": "The Fed's rate path is the single most important variable for asset pricing across every major class. Each 25bps shift reprices risk-free rates, reshapes the equity risk premium, and resets the cost of capital for corporate balance sheets. A hawkish pivot crushes duration and growth equities hardest; a dovish pivot is broadly reflationary. Monitor the dot plot, FOMC minutes, and Fed speaker tone for forward guidance. The gap between market pricing and Fed projections is where volatility is born."
-    },
-    {
-      "title": "The May inflation numbers are due out Wednesday morning. Here's what to expect",
-      "summary": "If the Wall Street consensus is correct, the consumer price index is expected to show inflation running at a 4.2% annual rate.",
-      "url": "https://www.cnbc.com/2026/06/09/the-may-inflation-numbers-are-due-out-wednesday-morning-heres-what-to-expect.html",
-      "source_name": "CNBC Top News",
-      "source_type": "Mainstream",
-      "timestamp": "2026-06-09T19:49:59Z",
-      "id": "mn011",
-      "sector_tags": [
-        "Macro"
-      ],
-      "ticker_tags": [],
-      "why_it_matters": "Inflation above the Fed's 2% target keeps the policy rate restrictive, compressing equity multiples via a higher discount rate and squeezing consumers through real wage erosion. Watch the services component — it is the stickiest and the Fed's primary focus. Persistent core CPI above 3% effectively rules out near-term cuts and keeps the short end of the curve elevated. Key watch: breakeven inflation rates and 5Y5Y forward inflation swaps for market-implied long-run expectations."
     },
     {
       "title": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank",
