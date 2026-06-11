@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 6,
-      "primary_driver": "Trump cancels Iran strikes scheduled for Thursday evening",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 4,
+      "primary_driver": "What energy insiders in DC are saying about oil prices and a possible Iran deal",
       "key_drivers": [
-        "Trump cancels Iran strikes scheduled for Thursday evening",
-        "Oil prices drop as Trump backs away from his threat of strikes on Iran",
+        "What energy insiders in DC are saying about oil prices and a possible Iran deal",
+        "Trump claims Iran war settled 'subject to finalization,' expects signing in 'next few days'",
         "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal",
-        "Enbridge Vs. TC Energy Vs. Pembina Pipeline: How I Rank Canada's 3 Pipeline Giants"
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -21,9 +21,9 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "BAC",
         "NKE",
-        "LLY"
+        "LLY",
+        "SPY"
       ]
     },
     {
@@ -31,12 +31,12 @@
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 9,
-      "primary_driver": "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal",
+      "primary_driver": "Pirro's losses in Fed investigation should stay on the books, judge rules",
       "key_drivers": [
-        "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal",
-        "8-K - Federal Home Loan Bank of New York (0001329842) (Filer)",
-        "Pimco is warning about a spike in defaults — How it says income investors should position portfolios",
-        "8-K - Federal Home Loan Bank of San Francisco (0001316944) (Filer)"
+        "Pirro's losses in Fed investigation should stay on the books, judge rules",
+        "BrightSpring Health Services, Inc. (BTSG) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transc",
+        "Oracle shares tumble 11% on increased capital raise, cash concerns",
+        "Pimco is warning about a spike in defaults — How it says income investors should position portfolios"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "NKE",
-        "LLY"
+        "GS",
+        "RIG",
+        "META",
+        "NKE"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "Oil prices drop as Trump backs away from his threat of strikes on Iran",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 15,
+      "primary_driver": "Oxford Industries Remains Expensive After Q1 Earnings And Price Fall",
       "key_drivers": [
-        "Oil prices drop as Trump backs away from his threat of strikes on Iran",
+        "Oxford Industries Remains Expensive After Q1 Earnings And Price Fall",
+        "Warren questions SpaceX IPO oversight in new letter to stock indexes",
         "Trump picks former SEC Chairman Jay Clayton as national intelligence director",
-        "From startup to $1.8 trillion: The investors who took a chance on SpaceX now reap the rewards",
-        "8-K - Elvictor Group, Inc. (0001741489) (Filer)"
+        "SpaceX cuts retail IPO allocation to low 20% range, source says"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,8 +73,8 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "CL=F",
-        "BAC",
+        "AMZN",
+        "META",
         "NKE",
         "LLY"
       ]
@@ -81,11 +83,10 @@
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Trump cancels Iran strikes scheduled for Thursday evening",
+      "story_count": 1,
+      "primary_driver": "Trump claims Iran war settled 'subject to finalization,' expects signing in 'next few days'",
       "key_drivers": [
-        "Trump cancels Iran strikes scheduled for Thursday evening",
-        "Trump threatens to seize Kharg Island and other Iran oil infrastructure"
+        "Trump claims Iran war settled 'subject to finalization,' expects signing in 'next few days'"
       ],
       "key_tickers": [
         "GE",
@@ -101,13 +102,15 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "SpaceX IPO hype is massive — and the FOMO can ruin your retirement",
+      "sentiment": "Negative",
+      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 5,
+      "primary_driver": "Warren questions SpaceX IPO oversight in new letter to stock indexes",
       "key_drivers": [
-        "SpaceX IPO hype is massive — and the FOMO can ruin your retirement",
-        "1st Look at Local Housing Markets in December"
+        "Warren questions SpaceX IPO oversight in new letter to stock indexes",
+        "SpaceX cuts retail IPO allocation to low 20% range, source says",
+        "Nike: 29 Times Earnings And Negative Guidance",
+        "SpaceX IPO hype is massive — and the FOMO can ruin your retirement"
       ],
       "key_tickers": [
         "NKE",
@@ -117,18 +120,17 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "NKE"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Structure Therapeutics: My Top Small-Cap Pick For The Obesity Market (Upgrade)",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Structure Therapeutics: My Top Small-Cap Pick For The Obesity Market (Upgrade)"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -144,15 +146,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "8-K - BANK5 2026-5YR22 (0002134743) (Filer)",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 9,
+      "primary_driver": "Match Group, Inc. (MTCH) Discusses Gen Z Insights and Evolving Expectations in Dating and Connection",
       "key_drivers": [
-        "8-K - BANK5 2026-5YR22 (0002134743) (Filer)",
-        "SpaceX IPO will test how Wall Street prices ‘strategic tech’",
-        "There’s a ticking time bomb under the Paramount-Warner Bros. deal. Here’s what could set it off.",
-        "8-K - GRIFFON CORP (0000050725) (Filer)"
+        "Match Group, Inc. (MTCH) Discusses Gen Z Insights and Evolving Expectations in Dating and Connection Transcript",
+        "EnerSys (ENS) Analyst/Investor Day - Slideshow",
+        "Adobe Q2: The Market Has Lost Its Mind With This Low Valuation",
+        "SpaceX IPO Preview: Placing It In Context"
       ],
       "key_tickers": [
         "TLT",
@@ -162,9 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY",
-        "COST",
-        "BAC"
+        "META"
       ]
     }
   ]
