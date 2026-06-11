@@ -2,14 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Trump threatens to seize 'total control' of Iran's oil industry including key export terminal Kharg ",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 6,
+      "primary_driver": "Trump cancels Iran strikes scheduled for Thursday evening",
       "key_drivers": [
-        "Trump threatens to seize 'total control' of Iran's oil industry including key export terminal Kharg Island",
-        "PDBC: Oil Leading Commodities Lower, Despite The Strait of Hormuz's Closure (Downgrade)",
-        "Sunday Night Futures"
+        "Trump cancels Iran strikes scheduled for Thursday evening",
+        "Oil prices drop as Trump backs away from his threat of strikes on Iran",
+        "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal",
+        "Enbridge Vs. TC Energy Vs. Pembina Pipeline: How I Rank Canada's 3 Pipeline Giants"
       ],
       "key_tickers": [
         "XOM",
@@ -19,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "LLY",
-        "SPY",
-        "CL=F"
+        "CL=F",
+        "BAC",
+        "NKE",
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "8-K - Federal Home Loan Bank of Pittsburgh (0001330399) (Filer)",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 9,
+      "primary_driver": "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal",
       "key_drivers": [
-        "8-K - Federal Home Loan Bank of Pittsburgh (0001330399) (Filer)",
-        "Lesaka Technologies: The Fintech Re-Rating Nobody Sees",
-        "Wall Street sees one clear winner from the World Cup gambling boom",
-        "Asian Policy Tightening Ahead As FX And Inflation Risks Build"
+        "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal",
+        "8-K - Federal Home Loan Bank of New York (0001329842) (Filer)",
+        "Pimco is warning about a spike in defaults — How it says income investors should position portfolios",
+        "8-K - Federal Home Loan Bank of San Francisco (0001316944) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -44,21 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "COST",
-        "BAC"
+        "NKE",
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 13,
-      "primary_driver": "8-K - LVPAI GROUP Ltd (0000831378) (Filer)",
+      "story_count": 12,
+      "primary_driver": "Oil prices drop as Trump backs away from his threat of strikes on Iran",
       "key_drivers": [
-        "8-K - LVPAI GROUP Ltd (0000831378) (Filer)",
-        "Bezos speaks to CNBC exclusively as his AI startup Prometheus raises $12 billion: Live updates",
-        "Iran threatens Elon Musk's companies in Middle East: Iranian state media",
-        "SpaceX soon-to-be millionaires are set to spend big on luxury homes, watches and private jet travel"
+        "Oil prices drop as Trump backs away from his threat of strikes on Iran",
+        "Trump picks former SEC Chairman Jay Clayton as national intelligence director",
+        "From startup to $1.8 trillion: The investors who took a chance on SpaceX now reap the rewards",
+        "8-K - Elvictor Group, Inc. (0001741489) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,10 +71,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "TGT",
-        "COST",
-        "NVDA",
-        "BAC"
+        "CL=F",
+        "BAC",
+        "NKE",
+        "LLY"
       ]
     },
     {
@@ -80,10 +82,10 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "Iran threatens Elon Musk's companies in Middle East: Iranian state media",
+      "primary_driver": "Trump cancels Iran strikes scheduled for Thursday evening",
       "key_drivers": [
-        "Iran threatens Elon Musk's companies in Middle East: Iranian state media",
-        "Trump threatens to seize 'total control' of Iran's oil industry including key export terminal Kharg Island"
+        "Trump cancels Iran strikes scheduled for Thursday evening",
+        "Trump threatens to seize Kharg Island and other Iran oil infrastructure"
       ],
       "key_tickers": [
         "GE",
@@ -93,19 +95,18 @@
         "HON"
       ],
       "trending_tickers": [
-        "TGT"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Iran threatens Elon Musk's companies in Middle East: Iranian state media",
+      "story_count": 2,
+      "primary_driver": "SpaceX IPO hype is massive — and the FOMO can ruin your retirement",
       "key_drivers": [
-        "Iran threatens Elon Musk's companies in Middle East: Iranian state media",
-        "SpaceX soon-to-be millionaires are set to spend big on luxury homes, watches and private jet travel",
-        "Aktis Oncology: Mini-Proteins With A Targeted Punch",
+        "SpaceX IPO hype is massive — and the FOMO can ruin your retirement",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -116,19 +117,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Aktis Oncology: Mini-Proteins With A Targeted Punch",
+      "story_count": 1,
+      "primary_driver": "Structure Therapeutics: My Top Small-Cap Pick For The Obesity Market (Upgrade)",
       "key_drivers": [
-        "Aktis Oncology: Mini-Proteins With A Targeted Punch",
-        "Pursuit Attractions And Hospitality: Scarcity Value",
-        "8-K - Edesa Biotech, Inc. (0001540159) (Filer)"
+        "Structure Therapeutics: My Top Small-Cap Pick For The Obesity Market (Upgrade)"
       ],
       "key_tickers": [
         "LLY",
@@ -138,20 +138,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "TGT"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "I Am Buying Tesla Before The Market Fully Prices The SpaceX Effect",
+      "story_count": 8,
+      "primary_driver": "8-K - BANK5 2026-5YR22 (0002134743) (Filer)",
       "key_drivers": [
-        "I Am Buying Tesla Before The Market Fully Prices The SpaceX Effect",
-        "U.S. 10-Year Yield Risk Premium Continues To Rise",
-        "Major Drilling Group International Inc. (MDI:CA) Q4 2026 Earnings Call Transcript",
-        "SS&C Technologies Holdings, Inc. (SSNC) Presents at RBC Capital Markets Global Financial Technology Conference 2026 Tran"
+        "8-K - BANK5 2026-5YR22 (0002134743) (Filer)",
+        "SpaceX IPO will test how Wall Street prices ‘strategic tech’",
+        "There’s a ticking time bomb under the Paramount-Warner Bros. deal. Here’s what could set it off.",
+        "8-K - GRIFFON CORP (0000050725) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -161,8 +162,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "COST",
         "LLY",
+        "COST",
         "BAC"
       ]
     }
