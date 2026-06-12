@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 7,
-      "primary_driver": "XME: Mining Companies Are Stealth Beneficiaries Of Cheaper Oil",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 4,
+      "primary_driver": "Oil prices fall after Pakistan says U.S. and Iran have reached final peace deal text",
       "key_drivers": [
-        "XME: Mining Companies Are Stealth Beneficiaries Of Cheaper Oil",
-        "My plumber charged $160 to fix the cistern on my toilet — but created another problem. Do I pay again?",
-        "Proposed Iran-U.S. deal would reopen Hormuz strait and lift oil sanctions, Iran state media says",
-        "Oil prices fall on proposed U.S.-Iran peace deal to reopen Strait of Hormuz"
+        "Oil prices fall after Pakistan says U.S. and Iran have reached final peace deal text",
+        "SpaceX 'proxies' plunge as real deal arrives: Here's where traders are buying the dip",
+        "U.S. oil prices drop to $84 a barrel after Pakistan says a U.S.-Iran peace deal has been reached",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "NKE",
+        "OXY",
         "LLY",
         "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "Oracle: Market Panic Created An Amazing Entry Point",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "story_count": 8,
+      "primary_driver": "Trump name still must come down from Kennedy Center, judge says",
       "key_drivers": [
-        "Oracle: Market Panic Created An Amazing Entry Point",
-        "Mizuho Financial: Spotlight On Capital Preservation And Rate Hike Potential",
-        "My plumber charged $160 to fix the cistern on my toilet — but created another problem. Do I pay again?",
-        "8-K - BlackRock Private Credit Fund (0001902649) (Filer)"
+        "Trump name still must come down from Kennedy Center, judge says",
+        "8-K - Concrete Leveling Systems Inc (0001414382) (Filer)",
+        "Judge blocks DOJ 'anti-weaponization' fund for longer, wants guarantee it’s dead",
+        "Wesfarmers Limited (WFAFY) Discusses Strategic Priorities and Long-Term Value Creation at Strategy Briefing Day - Slides"
       ],
       "key_tickers": [
         "JPM",
@@ -47,22 +47,20 @@
       ],
       "trending_tickers": [
         "JPM",
-        "GS",
-        "MS",
-        "NKE"
+        "GS"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 16,
-      "primary_driver": "8-K - TON Strategy Co (0001566610) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 12,
+      "primary_driver": "SpaceX market cap tops $2 trillion after shares of Elon Musk's rocket company gain 28% on debut",
       "key_drivers": [
-        "8-K - TON Strategy Co (0001566610) (Filer)",
-        "Microsoft: Nadella's Next Move Could Define The AI Trade",
-        "Warren questions SpaceX IPO oversight in new letter to stock indexes",
-        "Super Micro Computer: $7 Billion Financing Plan Overshadows $39 Billion AI Order"
+        "SpaceX market cap tops $2 trillion after shares of Elon Musk's rocket company gain 28% on debut",
+        "TBIL: Real Return On Capital In Uncertain Times",
+        "How to get SpaceX stock — without buying the IPO",
+        "Trump admin: Iran deal signing likely in coming days, but not '100%' certain"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,20 +71,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
-        "RIG",
         "CL=F",
-        "MSFT"
+        "OXY",
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "American Tower: Buy This Infrastructure REIT Before Growth Reaccelerates",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "American Tower: Buy This Infrastructure REIT Before Growth Reaccelerates"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -104,13 +102,12 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Warren questions SpaceX IPO oversight in new letter to stock indexes",
+      "story_count": 3,
+      "primary_driver": "8-K - PROCACCIANTI HOTEL REIT, INC. (0001692345) (Filer)",
       "key_drivers": [
-        "Warren questions SpaceX IPO oversight in new letter to stock indexes",
+        "8-K - PROCACCIANTI HOTEL REIT, INC. (0001692345) (Filer)",
         "SpaceX IPO hype is massive — and the FOMO can ruin your retirement",
-        "JD.com: This Chinese E-Commerce Giant Is Still On Sale",
-        "BTS-mania poised to boost South Korea's economy well into the future"
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -128,10 +125,12 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 3,
+      "primary_driver": "Recursion Pharmaceuticals: Short-Trade Crowded But Near-Term Squeeze Not Guaranteed",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "Recursion Pharmaceuticals: Short-Trade Crowded But Near-Term Squeeze Not Guaranteed",
+        "Novo Nordisk: Wegovy Pill Is Encouraging But Still Not Enough To Make Me Buy",
+        "‘This would be a one-time event’: How can I take extra money from my 401(k) without triggering higher Medicare premiums?"
       ],
       "key_tickers": [
         "LLY",
@@ -141,8 +140,9 @@
         "VRTX"
       ],
       "trending_tickers": [
+        "NVO",
         "LLY",
-        "NVO"
+        "RIG"
       ]
     },
     {
@@ -150,12 +150,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Touchstone Mid Cap Growth Fund Q1 2026 Commentary",
+      "primary_driver": "SpaceX IPO live updates: SPCX pops 30% after biggest IPO ever",
       "key_drivers": [
-        "Touchstone Mid Cap Growth Fund Q1 2026 Commentary",
-        "SpaceX IPO live updates: Elon Musk, Gwynne Shotwell ring opening bell in NYC and Texas",
-        "SpaceX’s Gwynne Shotwell had IPO doubts for years, now she has a message for investors",
-        "Blue Owl Technology Finance: Buying The Fear In The Right Place"
+        "SpaceX IPO live updates: SPCX pops 30% after biggest IPO ever",
+        "8-K - Santander Holdings USA, Inc. (0000811830) (Filer)",
+        "ROCY: A Different Strategy To Generate Premium You Need To Know",
+        "As investors flock to SpaceX, one trader eyes a sleepy 'stealth' play"
       ],
       "key_tickers": [
         "TLT",
@@ -165,7 +165,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "RIG"
+        "GLD",
+        "DXY"
       ]
     }
   ]
