@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Oil prices fall after Pakistan says U.S. and Iran have reached final peace deal text",
+      "story_count": 5,
+      "primary_driver": "SpaceX 'proxies' plunge as real deal arrives: Here's where traders are buying the dip",
       "key_drivers": [
-        "Oil prices fall after Pakistan says U.S. and Iran have reached final peace deal text",
         "SpaceX 'proxies' plunge as real deal arrives: Here's where traders are buying the dip",
-        "U.S. oil prices drop to $84 a barrel after Pakistan says a U.S.-Iran peace deal has been reached",
-        "Sunday Night Futures"
+        "U.S. crude oil falls below $85 as U.S. and Iran near a deal to reopen Hormuz",
+        "Global oil prices end at 3-month low after Pakistan says a U.S.-Iran peace deal has been reached",
+        "June 2026 Trading Outlook: Fiscal Flows, Oil, Bank Credit, And Fed Interest Rates"
       ],
       "key_tickers": [
         "XOM",
@@ -28,15 +28,15 @@
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 8,
-      "primary_driver": "Trump name still must come down from Kennedy Center, judge says",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "Analyzing 4 Goldman Sachs High Yield Income Funds",
       "key_drivers": [
-        "Trump name still must come down from Kennedy Center, judge says",
-        "8-K - Concrete Leveling Systems Inc (0001414382) (Filer)",
-        "Judge blocks DOJ 'anti-weaponization' fund for longer, wants guarantee it’s dead",
-        "Wesfarmers Limited (WFAFY) Discusses Strategic Priorities and Long-Term Value Creation at Strategy Briefing Day - Slides"
+        "Analyzing 4 Goldman Sachs High Yield Income Funds",
+        "Social Security COLA for 2027 may jump to 4.7%, one estimate finds. This chart shows prices driving the increase",
+        "8-K - Edible Garden AG Inc (0001809750) (Filer)",
+        "Call Kevin Warsh the Fed 'chairman'"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "GS"
+        "GS",
+        "COST"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "SpaceX market cap tops $2 trillion after shares of Elon Musk's rocket company gain 28% on debut",
+      "story_count": 14,
+      "primary_driver": "How Elon Musk nailed the SpaceX IPO: ‘I’m not sure that this could have gone much better’",
       "key_drivers": [
-        "SpaceX market cap tops $2 trillion after shares of Elon Musk's rocket company gain 28% on debut",
-        "TBIL: Real Return On Capital In Uncertain Times",
-        "How to get SpaceX stock — without buying the IPO",
-        "Trump admin: Iran deal signing likely in coming days, but not '100%' certain"
+        "How Elon Musk nailed the SpaceX IPO: ‘I’m not sure that this could have gone much better’",
+        "New SpaceX millionaires are reinventing the business of managing large wealth",
+        "8-K/A - Marblegate Capital Corp (0001965052) (Filer)",
+        "8-K - Perfect Moment Ltd. (0001849221) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,9 +72,9 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "OXY",
-        "LLY",
-        "SPY"
+        "AMZN",
+        "COST",
+        "OXY"
       ]
     },
     {
@@ -102,11 +102,12 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "8-K - PROCACCIANTI HOTEL REIT, INC. (0001692345) (Filer)",
+      "story_count": 4,
+      "primary_driver": "Pebblebrook Hotel Trust: Preferred Stocks Below Par, But Spreads Don't Justify The Risk",
       "key_drivers": [
-        "8-K - PROCACCIANTI HOTEL REIT, INC. (0001692345) (Filer)",
-        "SpaceX IPO hype is massive — and the FOMO can ruin your retirement",
+        "Pebblebrook Hotel Trust: Preferred Stocks Below Par, But Spreads Don't Justify The Risk",
+        "How to decide whether a major splurge — like spending thousands on Knicks or World Cup tickets — is worth it",
+        "Is it too late to buy SpaceX’s stock? Here’s how Tesla’s did after one day — and five years.",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -125,12 +126,11 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Recursion Pharmaceuticals: Short-Trade Crowded But Near-Term Squeeze Not Guaranteed",
+      "story_count": 2,
+      "primary_driver": "Nanobiotix: A Royalty-Backed Physics Platform Hidden Inside A Biotech",
       "key_drivers": [
-        "Recursion Pharmaceuticals: Short-Trade Crowded But Near-Term Squeeze Not Guaranteed",
-        "Novo Nordisk: Wegovy Pill Is Encouraging But Still Not Enough To Make Me Buy",
-        "‘This would be a one-time event’: How can I take extra money from my 401(k) without triggering higher Medicare premiums?"
+        "Nanobiotix: A Royalty-Backed Physics Platform Hidden Inside A Biotech",
+        "Regeneron Pharmaceuticals, Inc. (REGN) Shareholder/Analyst Call - Slideshow"
       ],
       "key_tickers": [
         "LLY",
@@ -140,22 +140,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "NVO",
-        "LLY",
-        "RIG"
+        "BAC"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "SpaceX IPO live updates: SPCX pops 30% after biggest IPO ever",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 9,
+      "primary_driver": "Millicom Cellular: A Rare Telecom Growth Story With A 3% Yield",
       "key_drivers": [
-        "SpaceX IPO live updates: SPCX pops 30% after biggest IPO ever",
-        "8-K - Santander Holdings USA, Inc. (0000811830) (Filer)",
-        "ROCY: A Different Strategy To Generate Premium You Need To Know",
-        "As investors flock to SpaceX, one trader eyes a sleepy 'stealth' play"
+        "Millicom Cellular: A Rare Telecom Growth Story With A 3% Yield",
+        "Terumo Corporation (TRUMY) Analyst/Investor Day Transcript",
+        "Paramount-WBD merger wins approval from DOJ",
+        "Small investors scrambled to get in on the SpaceX IPO, even as some believe the valuation is 'stupid'"
       ],
       "key_tickers": [
         "TLT",
@@ -165,8 +163,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "COST"
       ]
     }
   ]
