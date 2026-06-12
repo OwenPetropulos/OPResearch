@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "What energy insiders in DC are saying about oil prices and a possible Iran deal",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 7,
+      "primary_driver": "XME: Mining Companies Are Stealth Beneficiaries Of Cheaper Oil",
       "key_drivers": [
-        "What energy insiders in DC are saying about oil prices and a possible Iran deal",
-        "Trump claims Iran war settled 'subject to finalization,' expects signing in 'next few days'",
-        "Oil tanker CEO sees Hormuz ship traffic quickly increasing if U.S. and Iran reach a deal",
-        "Sunday Night Futures"
+        "XME: Mining Companies Are Stealth Beneficiaries Of Cheaper Oil",
+        "My plumber charged $160 to fix the cistern on my toilet — but created another problem. Do I pay again?",
+        "Proposed Iran-U.S. deal would reopen Hormuz strait and lift oil sanctions, Iran state media says",
+        "Oil prices fall on proposed U.S.-Iran peace deal to reopen Strait of Hormuz"
       ],
       "key_tickers": [
         "XOM",
@@ -28,15 +28,15 @@
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 9,
-      "primary_driver": "Pirro's losses in Fed investigation should stay on the books, judge rules",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 10,
+      "primary_driver": "Oracle: Market Panic Created An Amazing Entry Point",
       "key_drivers": [
-        "Pirro's losses in Fed investigation should stay on the books, judge rules",
-        "BrightSpring Health Services, Inc. (BTSG) Presents at Goldman Sachs 47th Annual Global Healthcare Conference 2026 Transc",
-        "Oracle shares tumble 11% on increased capital raise, cash concerns",
-        "Pimco is warning about a spike in defaults — How it says income investors should position portfolios"
+        "Oracle: Market Panic Created An Amazing Entry Point",
+        "Mizuho Financial: Spotlight On Capital Preservation And Rate Hike Potential",
+        "My plumber charged $160 to fix the cistern on my toilet — but created another problem. Do I pay again?",
+        "8-K - BlackRock Private Credit Fund (0001902649) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,9 +46,9 @@
         "KRE"
       ],
       "trending_tickers": [
+        "JPM",
         "GS",
-        "RIG",
-        "META",
+        "MS",
         "NKE"
       ]
     },
@@ -56,13 +56,13 @@
       "sector": "Technology",
       "sentiment": "Negative",
       "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 15,
-      "primary_driver": "Oxford Industries Remains Expensive After Q1 Earnings And Price Fall",
+      "story_count": 16,
+      "primary_driver": "8-K - TON Strategy Co (0001566610) (Filer)",
       "key_drivers": [
-        "Oxford Industries Remains Expensive After Q1 Earnings And Price Fall",
+        "8-K - TON Strategy Co (0001566610) (Filer)",
+        "Microsoft: Nadella's Next Move Could Define The AI Trade",
         "Warren questions SpaceX IPO oversight in new letter to stock indexes",
-        "Trump picks former SEC Chairman Jay Clayton as national intelligence director",
-        "SpaceX cuts retail IPO allocation to low 20% range, source says"
+        "Super Micro Computer: $7 Billion Financing Plan Overshadows $39 Billion AI Order"
       ],
       "key_tickers": [
         "NVDA",
@@ -74,9 +74,9 @@
       ],
       "trending_tickers": [
         "AMZN",
-        "META",
-        "NKE",
-        "LLY"
+        "RIG",
+        "CL=F",
+        "MSFT"
       ]
     },
     {
@@ -84,9 +84,9 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Trump claims Iran war settled 'subject to finalization,' expects signing in 'next few days'",
+      "primary_driver": "American Tower: Buy This Infrastructure REIT Before Growth Reaccelerates",
       "key_drivers": [
-        "Trump claims Iran war settled 'subject to finalization,' expects signing in 'next few days'"
+        "American Tower: Buy This Infrastructure REIT Before Growth Reaccelerates"
       ],
       "key_tickers": [
         "GE",
@@ -102,15 +102,15 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Negative",
-      "tone": "Consumer facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 5,
       "primary_driver": "Warren questions SpaceX IPO oversight in new letter to stock indexes",
       "key_drivers": [
         "Warren questions SpaceX IPO oversight in new letter to stock indexes",
-        "SpaceX cuts retail IPO allocation to low 20% range, source says",
-        "Nike: 29 Times Earnings And Negative Guidance",
-        "SpaceX IPO hype is massive — and the FOMO can ruin your retirement"
+        "SpaceX IPO hype is massive — and the FOMO can ruin your retirement",
+        "JD.com: This Chinese E-Commerce Giant Is Still On Sale",
+        "BTS-mania poised to boost South Korea's economy well into the future"
       ],
       "key_tickers": [
         "NKE",
@@ -120,7 +120,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE"
+        "NKE",
+        "WMT"
       ]
     },
     {
@@ -146,15 +147,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 9,
-      "primary_driver": "Match Group, Inc. (MTCH) Discusses Gen Z Insights and Evolving Expectations in Dating and Connection",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "Touchstone Mid Cap Growth Fund Q1 2026 Commentary",
       "key_drivers": [
-        "Match Group, Inc. (MTCH) Discusses Gen Z Insights and Evolving Expectations in Dating and Connection Transcript",
-        "EnerSys (ENS) Analyst/Investor Day - Slideshow",
-        "Adobe Q2: The Market Has Lost Its Mind With This Low Valuation",
-        "SpaceX IPO Preview: Placing It In Context"
+        "Touchstone Mid Cap Growth Fund Q1 2026 Commentary",
+        "SpaceX IPO live updates: Elon Musk, Gwynne Shotwell ring opening bell in NYC and Texas",
+        "SpaceX’s Gwynne Shotwell had IPO doubts for years, now she has a message for investors",
+        "Blue Owl Technology Finance: Buying The Fear In The Right Place"
       ],
       "key_tickers": [
         "TLT",
@@ -164,7 +165,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "META"
+        "RIG"
       ]
     }
   ]
