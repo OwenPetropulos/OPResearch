@@ -2,13 +2,14 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 3,
-      "primary_driver": "U.S. crude drops below $80 for the first time since March as Iran deal is set to open Hormuz Strait",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 4,
+      "primary_driver": "It could take years for oil prices to return to $67 a barrel. Here’s why.",
       "key_drivers": [
-        "U.S. crude drops below $80 for the first time since March as Iran deal is set to open Hormuz Strait",
-        "We're adding to our position in a consumer bank that benefits from lower oil prices",
+        "It could take years for oil prices to return to $67 a barrel. Here’s why.",
+        "Oil prices fall about 5% as Iran deal is set to open Hormuz Strait",
+        "Oil tumbles on US-Iran deal framework: How one trader is playing the move",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -21,6 +22,7 @@
       "trending_tickers": [
         "CL=F",
         "LLY",
+        "COST",
         "SPY"
       ]
     },
@@ -28,13 +30,13 @@
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "FedEx Freight: 37 Times Forward Earnings For A Fourth-Year Freight Recession",
+      "story_count": 8,
+      "primary_driver": "Oracle Q4: 20x FY2027 Adjusted P/E Discounts Credit Risk And Capex Uncertainty",
       "key_drivers": [
-        "FedEx Freight: 37 Times Forward Earnings For A Fourth-Year Freight Recession",
-        "IGF Provides International Transportation Exposure With US Energy Creating A Foundation",
-        "Even Nvidia is joining the AI borrowing spree, with a historic $20 billion bond deal",
-        "8-K - SAFETY INSURANCE GROUP INC (0001172052) (Filer)"
+        "Oracle Q4: 20x FY2027 Adjusted P/E Discounts Credit Risk And Capex Uncertainty",
+        "‘We are comfortable financially’: My husband is in his 60s and has $500,000 life insurance. Is this a good time to cance",
+        "Trump is giving Warsh room to reshape the Fed",
+        "8-K - Invesco Commercial Real Estate Finance Trust, Inc. (0001976927) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -44,21 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "NVDA",
-        "CL=F"
+        "LLY",
+        "AMD",
+        "JPM"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "U.S.-Iran deal explained: What we know — and what remains unresolved",
+      "story_count": 16,
+      "primary_driver": "Oracle Q4: 20x FY2027 Adjusted P/E Discounts Credit Risk And Capex Uncertainty",
       "key_drivers": [
-        "U.S.-Iran deal explained: What we know — and what remains unresolved",
-        "Vance says 'a lot' of Iran deal details to figure out, but U.S. has 'all the cards'",
-        "Vance says U.S. expects Strait of Hormuz to be open 'toll free' long term",
-        "FLTR: Useful Cash-Plus Income, Not A Bargain"
+        "Oracle Q4: 20x FY2027 Adjusted P/E Discounts Credit Risk And Capex Uncertainty",
+        "It could take years for oil prices to return to $67 a barrel. Here’s why.",
+        "Here’s when gas prices will come down if the U.S.’s deal to end the Iran war pans out",
+        "Dow jumps 600 points to record with rally gaining steam after Trump signs Iran deal memorandum: Live updates"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,22 +73,19 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVDA",
-        "SPY",
-        "CL=F"
+        "CL=F",
+        "COST",
+        "AMD"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Negative",
-      "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 4,
-      "primary_driver": "FedEx Freight: 37 Times Forward Earnings For A Fourth-Year Freight Recession",
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "How the World Cup spending boom is also an opportunity for income investors",
       "key_drivers": [
-        "FedEx Freight: 37 Times Forward Earnings For A Fourth-Year Freight Recession",
-        "Eurozone Industrial Production Holds Up, But Trade Surplus Under Pressure",
-        "Caterpillar: A World-Class Industrial At A World-Class Price Tag",
-        "Inside the unique challenges of military spouse entrepreneurs: 'Not everybody is going to understand this life'"
+        "How the World Cup spending boom is also an opportunity for income investors"
       ],
       "key_tickers": [
         "GE",
@@ -101,12 +101,15 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "1st Look at Local Housing Markets in December",
+      "sentiment": "Positive",
+      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
+      "story_count": 7,
+      "primary_driver": "Here’s when gas prices will come down if the U.S.’s deal to end the Iran war pans out",
       "key_drivers": [
-        "1st Look at Local Housing Markets in December"
+        "Here’s when gas prices will come down if the U.S.’s deal to end the Iran war pans out",
+        "The record-high Chase Sapphire Preferred bonus is back: Earn 100,000 bonus points amid major card changes",
+        "How the World Cup spending boom is also an opportunity for income investors",
+        "I’m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?"
       ],
       "key_tickers": [
         "NKE",
@@ -116,18 +119,20 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "LLY",
+        "BAC",
+        "COST",
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "BioCryst Pharmaceuticals: Management's Plans For Multibillion HAE Franchise Add Up",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "BioCryst Pharmaceuticals: Management's Plans For Multibillion HAE Franchise Add Up"
       ],
       "key_tickers": [
         "LLY",
@@ -145,13 +150,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Ondas: Why I'm Reversing Course On The Drone Revolution",
+      "story_count": 8,
+      "primary_driver": "Gavin Newsom says Trump ordered DOJ to investigate him and his wife",
       "key_drivers": [
-        "Ondas: Why I'm Reversing Course On The Drone Revolution",
-        "8-K - AMERICAN EXPRESS CO (0000004962) (Filer)",
-        "Stocks making the biggest moves midday: SpaceX, Roku, Tripadvisor, Ferrari & more",
-        "8-K - JLL Income Property Trust, Inc. (0001314152) (Filer)"
+        "Gavin Newsom says Trump ordered DOJ to investigate him and his wife",
+        "8-K - Global Innovative Platforms Inc. (0001837774) (Filer)",
+        "ClearBridge Growth ESG Portfolios Q1 2026 Commentary",
+        "Wall Street's fear gauge tumbles as traders bid up SpaceX shares"
       ],
       "key_tickers": [
         "TLT",
@@ -161,7 +166,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY"
+        "BAC"
       ]
     }
   ]
