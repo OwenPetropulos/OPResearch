@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "It could take years for oil prices to return to $67 a barrel. Here’s why.",
+      "story_count": 6,
+      "primary_driver": "CFTC chair Selig defends decision to approve ‘perps’ in U.S.",
       "key_drivers": [
-        "It could take years for oil prices to return to $67 a barrel. Here’s why.",
-        "Oil prices fall about 5% as Iran deal is set to open Hormuz Strait",
-        "Oil tumbles on US-Iran deal framework: How one trader is playing the move",
-        "Sunday Night Futures"
+        "CFTC chair Selig defends decision to approve ‘perps’ in U.S.",
+        "The Iran deal came just in time as Strategic Petroleum Reserve hits lowest level since 1983",
+        "How the Strait of Hormuz reopening could unfold if the U.S.-Iran deal is implemented",
+        "Oil prices fall about 5% as Iran deal is set to open Hormuz Strait"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
         "LLY",
-        "COST",
-        "SPY"
+        "CL=F",
+        "RIG",
+        "NKE"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Oracle Q4: 20x FY2027 Adjusted P/E Discounts Credit Risk And Capex Uncertainty",
+      "story_count": 9,
+      "primary_driver": "This no-fee Amex checking account is offering a $300 bonus for a limited time — how to qualify",
       "key_drivers": [
-        "Oracle Q4: 20x FY2027 Adjusted P/E Discounts Credit Risk And Capex Uncertainty",
-        "‘We are comfortable financially’: My husband is in his 60s and has $500,000 life insurance. Is this a good time to cance",
-        "Trump is giving Warsh room to reshape the Fed",
-        "8-K - Invesco Commercial Real Estate Finance Trust, Inc. (0001976927) (Filer)"
+        "This no-fee Amex checking account is offering a $300 bonus for a limited time — how to qualify",
+        "LendingClub: The Transformation From Lending Platform To Digital Banking Provider Is On",
+        "8-K - INNOVATIVE INDUSTRIAL PROPERTIES INC (0001677576) (Filer)",
+        "8-K - Cipher Digital Inc. (0001819989) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "LLY",
-        "AMD",
-        "JPM"
+        "NVDA",
+        "NKE"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 16,
-      "primary_driver": "Oracle Q4: 20x FY2027 Adjusted P/E Discounts Credit Risk And Capex Uncertainty",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 14,
+      "primary_driver": "Nvidia plans to raise at least $20 billion in its first debt sale since start of AI boom",
       "key_drivers": [
-        "Oracle Q4: 20x FY2027 Adjusted P/E Discounts Credit Risk And Capex Uncertainty",
-        "It could take years for oil prices to return to $67 a barrel. Here’s why.",
-        "Here’s when gas prices will come down if the U.S.’s deal to end the Iran war pans out",
-        "Dow jumps 600 points to record with rally gaining steam after Trump signs Iran deal memorandum: Live updates"
+        "Nvidia plans to raise at least $20 billion in its first debt sale since start of AI boom",
+        "CFTC chair Selig defends decision to approve ‘perps’ in U.S.",
+        "AMD: Agentic AI Makes EPYC The Winner Of The AI Infrastructure Cycle",
+        "Here’s when gas prices will come down if the U.S. deal to end the Iran war pans out"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,18 +72,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "CL=F",
-        "COST",
-        "AMD"
+        "NVDA",
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "How the World Cup spending boom is also an opportunity for income investors",
+      "story_count": 3,
+      "primary_driver": "AMD: Agentic AI Makes EPYC The Winner Of The AI Infrastructure Cycle",
       "key_drivers": [
+        "AMD: Agentic AI Makes EPYC The Winner Of The AI Infrastructure Cycle",
+        "8-K - T3 Defense Inc. (0001787518) (Filer)",
         "How the World Cup spending boom is also an opportunity for income investors"
       ],
       "key_tickers": [
@@ -95,21 +96,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "AMD"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Positive",
-      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 7,
-      "primary_driver": "Here’s when gas prices will come down if the U.S.’s deal to end the Iran war pans out",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "Here’s when gas prices will come down if the U.S. deal to end the Iran war pans out",
       "key_drivers": [
-        "Here’s when gas prices will come down if the U.S.’s deal to end the Iran war pans out",
-        "The record-high Chase Sapphire Preferred bonus is back: Earn 100,000 bonus points amid major card changes",
-        "How the World Cup spending boom is also an opportunity for income investors",
-        "I’m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?"
+        "Here’s when gas prices will come down if the U.S. deal to end the Iran war pans out",
+        "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000 Social Security now or wait?",
+        "I’m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?",
+        "8-K - TechTarget, Inc. (0002018064) (Filer)"
       ],
       "key_tickers": [
         "NKE",
@@ -120,7 +120,7 @@
       ],
       "trending_tickers": [
         "LLY",
-        "BAC",
+        "RIG",
         "COST",
         "TGT"
       ]
@@ -130,9 +130,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "BioCryst Pharmaceuticals: Management's Plans For Multibillion HAE Franchise Add Up",
+      "primary_driver": "Crinetics Pharmaceuticals, Inc. (CRNX) Presents at Endocrine Society's Annual Meeting (ENDO 2026) - ",
       "key_drivers": [
-        "BioCryst Pharmaceuticals: Management's Plans For Multibillion HAE Franchise Add Up"
+        "Crinetics Pharmaceuticals, Inc. (CRNX) Presents at Endocrine Society's Annual Meeting (ENDO 2026) - Slideshow"
       ],
       "key_tickers": [
         "LLY",
@@ -151,12 +151,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Gavin Newsom says Trump ordered DOJ to investigate him and his wife",
+      "primary_driver": "Dow futures are little changed after index posts new record close on potential U.S.-Iran peace deal:",
       "key_drivers": [
-        "Gavin Newsom says Trump ordered DOJ to investigate him and his wife",
-        "8-K - Global Innovative Platforms Inc. (0001837774) (Filer)",
-        "ClearBridge Growth ESG Portfolios Q1 2026 Commentary",
-        "Wall Street's fear gauge tumbles as traders bid up SpaceX shares"
+        "Dow futures are little changed after index posts new record close on potential U.S.-Iran peace deal: Live updates",
+        "Acacia Research: Hold On, But A Better Buy At Lower Prices",
+        "Vallourec S.A. (VLOWY) Discusses Strategic Position and Innovation in Geothermal Energy Markets Transcript",
+        "USA Compression: Opportunity Knocks For An 8% Yield After Price Pullback"
       ],
       "key_tickers": [
         "TLT",
@@ -166,7 +166,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC"
+        "BAC",
+        "NOC",
+        "LLY"
       ]
     }
   ]
