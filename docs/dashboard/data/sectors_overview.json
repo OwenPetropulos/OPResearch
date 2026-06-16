@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 5,
-      "primary_driver": "Brent oil dips below $80 per barrel for first time since March",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 6,
+      "primary_driver": "Dow jumps 350 points as oil drop fuels economy bets; Chip rollover knocks Nasdaq: Live updates",
       "key_drivers": [
-        "Brent oil dips below $80 per barrel for first time since March",
-        "As Hormuz crisis eases, gas prices may drop—other costs like groceries and home goods could stay high for a while",
-        "The new oil? Inside the effort to turn AI computing power into a tradeable commodity",
-        "CFTC chair Selig defends decision to approve ‘perps’ in U.S."
+        "Dow jumps 350 points as oil drop fuels economy bets; Chip rollover knocks Nasdaq: Live updates",
+        "Global oil prices end below $80 for the first time since the Iran war began. Ships still aren’t passing through Hormuz.",
+        "Brent falls below $80 per barrel on report U.S. will allow Iran to sell oil immediately",
+        "The new oil? Inside the effort to turn AI computing power into a tradeable commodity"
       ],
       "key_tickers": [
         "XOM",
@@ -22,21 +22,21 @@
       "trending_tickers": [
         "CL=F",
         "LLY",
-        "COST",
-        "SPY"
+        "NOC",
+        "NKE"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "8-K - Federal Home Loan Bank of Cincinnati (0001326771) (Filer)",
+      "primary_driver": "Five International Dividend Growers Your Screen Is Distorting",
       "key_drivers": [
-        "8-K - Federal Home Loan Bank of Cincinnati (0001326771) (Filer)",
-        "Treasury yields are little changed as Fed begins monetary policy meeting",
-        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
-        "Kevin Warsh's Fed is not expected to make any change to rates for a while, according to CNBC Fed Survey"
+        "Five International Dividend Growers Your Screen Is Distorting",
+        "Olin And Huntsman Are Getting Hitched, And That Creates Opportunity",
+        "Fed Chair Warsh expected to withhold 'dot' from central bank's interest rate outlook",
+        "July Fourth is around the corner. Here's how your credit card can help you save on last-minute travel"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +46,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "LLY"
+        "AMZN"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 12,
-      "primary_driver": "Dow rises for fourth day in a row; SpaceX gains again: Live updates",
+      "story_count": 16,
+      "primary_driver": "Dow jumps 350 points as oil drop fuels economy bets; Chip rollover knocks Nasdaq: Live updates",
       "key_drivers": [
-        "Dow rises for fourth day in a row; SpaceX gains again: Live updates",
-        "Novig wins CFTC approval as competition intensifies in sports prediction markets",
-        "‘It seems too good to be true’: At a steak-dinner retirement seminar, the guy said annuities can outperform the market. ",
-        "This AI play is no longer a 'hidden gem,' but Wall Street is still underestimating its potential, says Melius"
+        "Dow jumps 350 points as oil drop fuels economy bets; Chip rollover knocks Nasdaq: Live updates",
+        "Odds that a proposed billionaire tax appears on California ballots plunge on prediction markets",
+        "Global oil prices end below $80 for the first time since the Iran war began. Ships still aren’t passing through Hormuz.",
+        "Fed Chair Warsh expected to withhold 'dot' from central bank's interest rate outlook"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,21 +70,22 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
         "CL=F",
-        "MSFT",
-        "AMZN"
+        "LLY",
+        "AMZN",
+        "NOC"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "XPLR Infrastructure: The Recovery Is Real, But The Valuation Is Not Clean Enough Yet",
+      "story_count": 3,
+      "primary_driver": "Bad news, home buyers: New construction sinks to a 6-year low. Here’s what it means for you.",
       "key_drivers": [
-        "XPLR Infrastructure: The Recovery Is Real, But The Valuation Is Not Clean Enough Yet",
-        "Deere: Better Floor, But The Buy Case Still Needs Proof"
+        "Bad news, home buyers: New construction sinks to a 6-year low. Here’s what it means for you.",
+        "Deere: Market Is Still Pricing A Tractor Maker, The Field Tells A Different Story",
+        "Iran deal won't solve oil supply issues overnight. Barclays keeps $100 forecast"
       ],
       "key_tickers": [
         "GE",
@@ -103,12 +104,12 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 6,
-      "primary_driver": "Self-driving tech supplier Mobileye targets U.S. robotaxi launch in 2027",
+      "primary_driver": "July Fourth is around the corner. Here's how your credit card can help you save on last-minute trave",
       "key_drivers": [
-        "Self-driving tech supplier Mobileye targets U.S. robotaxi launch in 2027",
-        "‘It seems too good to be true’: At a steak-dinner retirement seminar, the guy said annuities can outperform the market. ",
         "July Fourth is around the corner. Here's how your credit card can help you save on last-minute travel",
-        "New Wharton forecast puts Social Security trust fund depletion later than official projections"
+        "T. Rowe Price: Still A Top Pick For My Retirement Portfolio Despite Headwinds",
+        "New Wharton forecast puts Social Security trust fund depletion later than official projections",
+        "I’m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?"
       ],
       "key_tickers": [
         "NKE",
@@ -118,6 +119,7 @@
         "ONON"
       ],
       "trending_tickers": [
+        "COST",
         "TGT"
       ]
     },
@@ -125,10 +127,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "8-K - ONCOLYTICS BIOTECH INC (0001129928) (Filer)",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "8-K - ONCOLYTICS BIOTECH INC (0001129928) (Filer)"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -144,15 +146,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Compute As A Service: Buy CoreWeave And Sell Nebius On Valuation And Execution Risk",
+      "primary_driver": "SpaceX trading hits ‘bonkers’ levels as new ETFs see a massive cash influx",
       "key_drivers": [
-        "Compute As A Service: Buy CoreWeave And Sell Nebius On Valuation And Execution Risk",
-        "Barrick Mining: An Undervalued Cash Machine",
-        "Nexa Resources: The Zinc Cycle Just Turned, And The Market Hasn't Fully Repriced It",
-        "MHP SE (MHPSY) Q1 2026 Earnings Call Transcript"
+        "SpaceX trading hits ‘bonkers’ levels as new ETFs see a massive cash influx",
+        "Central banks plan to keep buying more gold. Here’s an interesting step they’re taking to store it safely.",
+        "Mega-IPOs Put Spotlight On Private Markets",
+        "YBTC: Weekly Distributions On BTC-USD"
       ],
       "key_tickers": [
         "TLT",
@@ -162,7 +164,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY"
+        "BAC",
+        "NKE",
+        "GLD"
       ]
     }
   ]
