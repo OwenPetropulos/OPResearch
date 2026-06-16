@@ -4,11 +4,11 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Dow jumps 350 points as oil drop fuels economy bets; Chip rollover knocks Nasdaq: Live updates",
+      "story_count": 5,
+      "primary_driver": "MDST: A Good Midstream Fund If Oil Prices Start Declining",
       "key_drivers": [
-        "Dow jumps 350 points as oil drop fuels economy bets; Chip rollover knocks Nasdaq: Live updates",
-        "Global oil prices end below $80 for the first time since the Iran war began. Ships still aren’t passing through Hormuz.",
+        "MDST: A Good Midstream Fund If Oil Prices Start Declining",
+        "‘Outsized upside’ could be around the corner for these dividend-paying energy plays, Morgan Stanley says",
         "Brent falls below $80 per barrel on report U.S. will allow Iran to sell oil immediately",
         "The new oil? Inside the effort to turn AI computing power into a tradeable commodity"
       ],
@@ -22,21 +22,21 @@
       "trending_tickers": [
         "CL=F",
         "LLY",
-        "NOC",
-        "NKE"
+        "MS",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Positive",
       "tone": "Financials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 8,
-      "primary_driver": "Five International Dividend Growers Your Screen Is Distorting",
+      "story_count": 9,
+      "primary_driver": "DOJ assists Musk's xAI in NAACP air pollution suit, asks court to toss case",
       "key_drivers": [
-        "Five International Dividend Growers Your Screen Is Distorting",
-        "Olin And Huntsman Are Getting Hitched, And That Creates Opportunity",
-        "Fed Chair Warsh expected to withhold 'dot' from central bank's interest rate outlook",
-        "July Fourth is around the corner. Here's how your credit card can help you save on last-minute travel"
+        "DOJ assists Musk's xAI in NAACP air pollution suit, asks court to toss case",
+        "Pernod Ricard: Complications Of Political Negotiations Could Create Opportunities",
+        "Databricks sales growth tops 80%, but margin are shrinking from swarm of AI agents",
+        "8-K - Sleep Number Corp (0000827187) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN"
+        "AMZN",
+        "COST",
+        "MS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 16,
-      "primary_driver": "Dow jumps 350 points as oil drop fuels economy bets; Chip rollover knocks Nasdaq: Live updates",
+      "story_count": 13,
+      "primary_driver": "DOJ assists Musk's xAI in NAACP air pollution suit, asks court to toss case",
       "key_drivers": [
-        "Dow jumps 350 points as oil drop fuels economy bets; Chip rollover knocks Nasdaq: Live updates",
-        "Odds that a proposed billionaire tax appears on California ballots plunge on prediction markets",
-        "Global oil prices end below $80 for the first time since the Iran war began. Ships still aren’t passing through Hormuz.",
-        "Fed Chair Warsh expected to withhold 'dot' from central bank's interest rate outlook"
+        "DOJ assists Musk's xAI in NAACP air pollution suit, asks court to toss case",
+        "Anthropic's Fable shutdown is a big moment for open-source AI",
+        "Databricks sales growth tops 80%, but margin are shrinking from swarm of AI agents",
+        "SpaceX rises 4% to leapfrog Amazon in market cap, closes short of Microsoft"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,22 +72,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "CL=F",
-        "LLY",
         "AMZN",
-        "NOC"
+        "LLY",
+        "COST",
+        "MSFT"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Bad news, home buyers: New construction sinks to a 6-year low. Here’s what it means for you.",
+      "story_count": 1,
+      "primary_driver": "Intel takes a major step toward turning around a business that’s bleeding cash",
       "key_drivers": [
-        "Bad news, home buyers: New construction sinks to a 6-year low. Here’s what it means for you.",
-        "Deere: Market Is Still Pricing A Tractor Maker, The Field Tells A Different Story",
-        "Iran deal won't solve oil supply issues overnight. Barclays keeps $100 forecast"
+        "Intel takes a major step toward turning around a business that’s bleeding cash"
       ],
       "key_tickers": [
         "GE",
@@ -103,13 +103,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "July Fourth is around the corner. Here's how your credit card can help you save on last-minute trave",
+      "story_count": 7,
+      "primary_driver": "Bill limiting investors from buying homes set to speed through Congress",
       "key_drivers": [
-        "July Fourth is around the corner. Here's how your credit card can help you save on last-minute travel",
-        "T. Rowe Price: Still A Top Pick For My Retirement Portfolio Despite Headwinds",
-        "New Wharton forecast puts Social Security trust fund depletion later than official projections",
-        "I’m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?"
+        "Bill limiting investors from buying homes set to speed through Congress",
+        "I’m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?",
+        "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security now or wait?",
+        "Norwegian Air Shuttle ASA (NWARF) Nordic Leisure Travel Group AB, - M&A Call - Slideshow"
       ],
       "key_tickers": [
         "NKE",
@@ -120,6 +120,7 @@
       ],
       "trending_tickers": [
         "COST",
+        "RIG",
         "TGT"
       ]
     },
@@ -146,15 +147,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "SpaceX trading hits ‘bonkers’ levels as new ETFs see a massive cash influx",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 8,
+      "primary_driver": "Advantage Energy: The Infra-Cycle Is Finished, Heavy Buybacks Are Next. My New Top Energy Pick",
       "key_drivers": [
-        "SpaceX trading hits ‘bonkers’ levels as new ETFs see a massive cash influx",
-        "Central banks plan to keep buying more gold. Here’s an interesting step they’re taking to store it safely.",
-        "Mega-IPOs Put Spotlight On Private Markets",
-        "YBTC: Weekly Distributions On BTC-USD"
+        "Advantage Energy: The Infra-Cycle Is Finished, Heavy Buybacks Are Next. My New Top Energy Pick",
+        "Yalla Group: An Asymmetric Tech Bet Trading At The Ultimate Cash Floor",
+        "Groupe Dynamite Inc. (GRGD:CA) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "Marvell: A Great Franchise Priced For Perfection"
       ],
       "key_tickers": [
         "TLT",
@@ -164,9 +165,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
-        "NKE",
-        "GLD"
+        "BAC"
       ]
     }
   ]
