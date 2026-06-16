@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "CFTC chair Selig defends decision to approve ‘perps’ in U.S.",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 5,
+      "primary_driver": "Brent oil dips below $80 per barrel for first time since March",
       "key_drivers": [
-        "CFTC chair Selig defends decision to approve ‘perps’ in U.S.",
-        "The Iran deal came just in time as Strategic Petroleum Reserve hits lowest level since 1983",
-        "How the Strait of Hormuz reopening could unfold if the U.S.-Iran deal is implemented",
-        "Oil prices fall about 5% as Iran deal is set to open Hormuz Strait"
+        "Brent oil dips below $80 per barrel for first time since March",
+        "As Hormuz crisis eases, gas prices may drop—other costs like groceries and home goods could stay high for a while",
+        "The new oil? Inside the effort to turn AI computing power into a tradeable commodity",
+        "CFTC chair Selig defends decision to approve ‘perps’ in U.S."
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "LLY",
         "CL=F",
-        "RIG",
-        "NKE"
+        "LLY",
+        "COST",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "This no-fee Amex checking account is offering a $300 bonus for a limited time — how to qualify",
+      "story_count": 8,
+      "primary_driver": "8-K - Federal Home Loan Bank of Cincinnati (0001326771) (Filer)",
       "key_drivers": [
-        "This no-fee Amex checking account is offering a $300 bonus for a limited time — how to qualify",
-        "LendingClub: The Transformation From Lending Platform To Digital Banking Provider Is On",
-        "8-K - INNOVATIVE INDUSTRIAL PROPERTIES INC (0001677576) (Filer)",
-        "8-K - Cipher Digital Inc. (0001819989) (Filer)"
+        "8-K - Federal Home Loan Bank of Cincinnati (0001326771) (Filer)",
+        "Treasury yields are little changed as Fed begins monetary policy meeting",
+        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
+        "Kevin Warsh's Fed is not expected to make any change to rates for a while, according to CNBC Fed Survey"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +46,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "NVDA",
-        "NKE"
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 14,
-      "primary_driver": "Nvidia plans to raise at least $20 billion in its first debt sale since start of AI boom",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 12,
+      "primary_driver": "Dow rises for fourth day in a row; SpaceX gains again: Live updates",
       "key_drivers": [
-        "Nvidia plans to raise at least $20 billion in its first debt sale since start of AI boom",
-        "CFTC chair Selig defends decision to approve ‘perps’ in U.S.",
-        "AMD: Agentic AI Makes EPYC The Winner Of The AI Infrastructure Cycle",
-        "Here’s when gas prices will come down if the U.S. deal to end the Iran war pans out"
+        "Dow rises for fourth day in a row; SpaceX gains again: Live updates",
+        "Novig wins CFTC approval as competition intensifies in sports prediction markets",
+        "‘It seems too good to be true’: At a steak-dinner retirement seminar, the guy said annuities can outperform the market. ",
+        "This AI play is no longer a 'hidden gem,' but Wall Street is still underestimating its potential, says Melius"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,21 +71,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVDA",
-        "SPY",
-        "CL=F"
+        "CL=F",
+        "MSFT",
+        "AMZN"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "AMD: Agentic AI Makes EPYC The Winner Of The AI Infrastructure Cycle",
+      "story_count": 2,
+      "primary_driver": "XPLR Infrastructure: The Recovery Is Real, But The Valuation Is Not Clean Enough Yet",
       "key_drivers": [
-        "AMD: Agentic AI Makes EPYC The Winner Of The AI Infrastructure Cycle",
-        "8-K - T3 Defense Inc. (0001787518) (Filer)",
-        "How the World Cup spending boom is also an opportunity for income investors"
+        "XPLR Infrastructure: The Recovery Is Real, But The Valuation Is Not Clean Enough Yet",
+        "Deere: Better Floor, But The Buy Case Still Needs Proof"
       ],
       "key_tickers": [
         "GE",
@@ -96,20 +94,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "AMD"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Here’s when gas prices will come down if the U.S. deal to end the Iran war pans out",
+      "story_count": 6,
+      "primary_driver": "Self-driving tech supplier Mobileye targets U.S. robotaxi launch in 2027",
       "key_drivers": [
-        "Here’s when gas prices will come down if the U.S. deal to end the Iran war pans out",
-        "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000 Social Security now or wait?",
-        "I’m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?",
-        "8-K - TechTarget, Inc. (0002018064) (Filer)"
+        "Self-driving tech supplier Mobileye targets U.S. robotaxi launch in 2027",
+        "‘It seems too good to be true’: At a steak-dinner retirement seminar, the guy said annuities can outperform the market. ",
+        "July Fourth is around the corner. Here's how your credit card can help you save on last-minute travel",
+        "New Wharton forecast puts Social Security trust fund depletion later than official projections"
       ],
       "key_tickers": [
         "NKE",
@@ -119,9 +118,6 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY",
-        "RIG",
-        "COST",
         "TGT"
       ]
     },
@@ -130,9 +126,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Crinetics Pharmaceuticals, Inc. (CRNX) Presents at Endocrine Society's Annual Meeting (ENDO 2026) - ",
+      "primary_driver": "8-K - ONCOLYTICS BIOTECH INC (0001129928) (Filer)",
       "key_drivers": [
-        "Crinetics Pharmaceuticals, Inc. (CRNX) Presents at Endocrine Society's Annual Meeting (ENDO 2026) - Slideshow"
+        "8-K - ONCOLYTICS BIOTECH INC (0001129928) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -148,15 +144,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Dow futures are little changed after index posts new record close on potential U.S.-Iran peace deal:",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 9,
+      "primary_driver": "Compute As A Service: Buy CoreWeave And Sell Nebius On Valuation And Execution Risk",
       "key_drivers": [
-        "Dow futures are little changed after index posts new record close on potential U.S.-Iran peace deal: Live updates",
-        "Acacia Research: Hold On, But A Better Buy At Lower Prices",
-        "Vallourec S.A. (VLOWY) Discusses Strategic Position and Innovation in Geothermal Energy Markets Transcript",
-        "USA Compression: Opportunity Knocks For An 8% Yield After Price Pullback"
+        "Compute As A Service: Buy CoreWeave And Sell Nebius On Valuation And Execution Risk",
+        "Barrick Mining: An Undervalued Cash Machine",
+        "Nexa Resources: The Zinc Cycle Just Turned, And The Market Hasn't Fully Repriced It",
+        "MHP SE (MHPSY) Q1 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -166,8 +162,6 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
-        "NOC",
         "LLY"
       ]
     }
