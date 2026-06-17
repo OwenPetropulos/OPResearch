@@ -2,15 +2,14 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Positive",
-      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 5,
-      "primary_driver": "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 3,
+      "primary_driver": "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
       "key_drivers": [
-        "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
-        "Is Oil's Peak Behind Us? Does It Matter For Midstream?",
-        "An oil bull’s ‘insane’ bet: Why this veteran trader is buying energy stocks as crude prices tumble",
-        "Three Iranian tankers exit U.S. blockade for first time in months as shipowners eye Hormuz in 'wary disbelief'"
+        "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
+        "From supply shock to oil glut: IEA flags scale of demand destruction caused by Iran war",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +19,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
-        "NKE",
+        "RIG",
         "LLY",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 9,
-      "primary_driver": "The private space race is spurring a luxury hotel land grab for Florida oceanfront property",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "Fed holds interest rates steady: Here's what that means for credit cards, savings rates, mortgages a",
       "key_drivers": [
-        "The private space race is spurring a luxury hotel land grab for Florida oceanfront property",
-        "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
-        "Fed meeting live updates: New Chairman Kevin Warsh squares off against a 'hawkish' committee",
-        "More united Fed board seen at Warsh's first meeting, according to Kalshi traders"
+        "Fed holds interest rates steady: Here's what that means for credit cards, savings rates, mortgages and car loans",
+        "Fed holds rates steady, pares down statement to remove cutting bias",
+        "Federal Reserve issues FOMC statement",
+        "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +45,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "RIG",
+        "MSFT",
+        "GOOGL",
         "AMZN",
-        "COST"
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 16,
-      "primary_driver": "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 10,
+      "primary_driver": "Trump says he likes idea of blaming Vance if Iran deal doesn't work out",
       "key_drivers": [
-        "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
-        "CoreWeave Just Delivered The First Good News - Two More Remain",
-        "Fed meeting live updates: New Chairman Kevin Warsh squares off against a 'hawkish' committee",
-        "Nvidia, CoreWeave, And Nebius: Inside The Circular Financing Of The GPU Boom"
+        "Trump says he likes idea of blaming Vance if Iran deal doesn't work out",
+        "Nio Strategic Metals Inc. (NIO:CA) Shareholder/Analyst Call Transcript",
+        "JetBlue to reduce Newark, LaGuardia footprint as it forges ahead in Fort Lauderdale",
+        "8-K - Hyundai Auto Receivables Trust 2026-B (0002135188) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,20 +72,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
-        "NVDA",
-        "COST",
-        "LLY"
+        "GOOGL",
+        "LLY",
+        "META",
+        "MSFT"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalition in meeting at G7",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalition in meeting at G7"
       ],
       "key_tickers": [
         "GE",
@@ -95,8 +95,7 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "GOOGL"
       ]
     },
     {
@@ -104,10 +103,10 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 3,
-      "primary_driver": "The private space race is spurring a luxury hotel land grab for Florida oceanfront property",
+      "primary_driver": "Scared to spend your retirement money? Here’s one way to get over the fear of running out.",
       "key_drivers": [
-        "The private space race is spurring a luxury hotel land grab for Florida oceanfront property",
-        "Bill limiting investors from buying homes set to speed through Congress",
+        "Scared to spend your retirement money? Here’s one way to get over the fear of running out.",
+        "Americans’ 401(k) balances hit record levels last year. See how you compare.",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -118,17 +117,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "RIG"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "The Great Wealth Transfer is real — but the IRS or a nursing home might get your money first",
+      "story_count": 2,
+      "primary_driver": "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
       "key_drivers": [
-        "The Great Wealth Transfer is real — but the IRS or a nursing home might get your money first"
+        "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
+        "We read the Social Security and Medicare trustees reports. If you’re not worried, you should be."
       ],
       "key_tickers": [
         "LLY",
@@ -146,13 +147,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
+      "story_count": 8,
+      "primary_driver": "Arthur J. Gallagher & Co. (AJG) Discusses Strategic Pillars, Growth Drivers and Financial Outlook - ",
       "key_drivers": [
-        "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
-        "My mother was co-owner of my late grandmother’s bank account. Should she share the money with her siblings?",
-        "FUTY: Utilities Dashboard For June",
-        "Mortgage rates are now falling but demand is still weaker"
+        "Arthur J. Gallagher & Co. (AJG) Discusses Strategic Pillars, Growth Drivers and Financial Outlook - Slideshow",
+        "Jabil Inc. 2026 Q3 - Results - Earnings Call Presentation",
+        "Maximus: The Market Doesn't Seem To Trust The Earnings Growth",
+        "Inside the push to weaken Washington’s toughest financial watchdog"
       ],
       "key_tickers": [
         "TLT",
@@ -162,7 +163,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY"
+        "GLD",
+        "DXY"
       ]
     }
   ]
