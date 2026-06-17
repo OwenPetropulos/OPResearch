@@ -4,11 +4,10 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
+      "story_count": 2,
       "primary_driver": "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
       "key_drivers": [
         "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
-        "From supply shock to oil glut: IEA flags scale of demand destruction caused by Iran war",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -19,7 +18,6 @@
         "RIG"
       ],
       "trending_tickers": [
-        "RIG",
         "LLY",
         "SPY",
         "CL=F"
@@ -30,12 +28,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Fed holds interest rates steady: Here's what that means for credit cards, savings rates, mortgages a",
+      "primary_driver": "June FOMC: Warsh's Debut Was More Hawkish Than Expected",
       "key_drivers": [
-        "Fed holds interest rates steady: Here's what that means for credit cards, savings rates, mortgages and car loans",
+        "June FOMC: Warsh's Debut Was More Hawkish Than Expected",
         "Fed holds rates steady, pares down statement to remove cutting bias",
-        "Federal Reserve issues FOMC statement",
-        "Federal Reserve Board and Federal Open Market Committee release economic projections from the June 16-17 FOMC meeting"
+        "The Fed just threw investors a curveball. Here’s how stocks, bonds, gold and the dollar reacted.",
+        "Wall Street Lunch: Fed Task Force Five"
       ],
       "key_tickers": [
         "JPM",
@@ -45,23 +43,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "MSFT",
-        "GOOGL",
-        "AMZN",
-        "LLY"
+        "LLY",
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 10,
-      "primary_driver": "Trump says he likes idea of blaming Vance if Iran deal doesn't work out",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 13,
+      "primary_driver": "Why Hewlett Packard Enterprise Is The Ultimate Pure-Play On Enterprise AI",
       "key_drivers": [
-        "Trump says he likes idea of blaming Vance if Iran deal doesn't work out",
-        "Nio Strategic Metals Inc. (NIO:CA) Shareholder/Analyst Call Transcript",
-        "JetBlue to reduce Newark, LaGuardia footprint as it forges ahead in Fort Lauderdale",
-        "8-K - Hyundai Auto Receivables Trust 2026-B (0002135188) (Filer)"
+        "Why Hewlett Packard Enterprise Is The Ultimate Pure-Play On Enterprise AI",
+        "Nvidia Won't Be This Cheap Forever",
+        "It’s ‘unavoidable’: Apple says it will be forced to raise prices due to the AI boom",
+        "Stock-market pessimists have one less reason to worry as shares of banks and retailers perk up"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,20 +68,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "GOOGL",
         "LLY",
-        "META",
-        "MSFT"
+        "NVDA",
+        "AAPL",
+        "COST"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Neutral",
-      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
       "story_count": 1,
-      "primary_driver": "CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalition in meeting at G7",
+      "primary_driver": "Defense contractors would be barred from buying back their stock in bill approved by Senate panel",
       "key_drivers": [
-        "CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalition in meeting at G7"
+        "Defense contractors would be barred from buying back their stock in bill approved by Senate panel"
       ],
       "key_tickers": [
         "GE",
@@ -95,18 +91,17 @@
         "HON"
       ],
       "trending_tickers": [
-        "GOOGL"
+        "BAC"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Scared to spend your retirement money? Here’s one way to get over the fear of running out.",
+      "sentiment": "Positive",
+      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
+      "story_count": 2,
+      "primary_driver": "Stock-market pessimists have one less reason to worry as shares of banks and retailers perk up",
       "key_drivers": [
-        "Scared to spend your retirement money? Here’s one way to get over the fear of running out.",
-        "Americans’ 401(k) balances hit record levels last year. See how you compare.",
+        "Stock-market pessimists have one less reason to worry as shares of banks and retailers perk up",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -117,19 +112,17 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "LLY"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
+      "story_count": 1,
       "primary_driver": "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
       "key_drivers": [
-        "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
-        "We read the Social Security and Medicare trustees reports. If you’re not worried, you should be."
+        "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency"
       ],
       "key_tickers": [
         "LLY",
@@ -147,13 +140,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Arthur J. Gallagher & Co. (AJG) Discusses Strategic Pillars, Growth Drivers and Financial Outlook - ",
+      "story_count": 10,
+      "primary_driver": "Trisura Group Ltd. (TSU:CA) Shareholder/Analyst Call Transcript",
       "key_drivers": [
-        "Arthur J. Gallagher & Co. (AJG) Discusses Strategic Pillars, Growth Drivers and Financial Outlook - Slideshow",
-        "Jabil Inc. 2026 Q3 - Results - Earnings Call Presentation",
-        "Maximus: The Market Doesn't Seem To Trust The Earnings Growth",
-        "Inside the push to weaken Washington’s toughest financial watchdog"
+        "Trisura Group Ltd. (TSU:CA) Shareholder/Analyst Call Transcript",
+        "Intel: The Re-Rating Has Gone Too Far",
+        "DFAS: A Solid Small-Cap ETF, But DFSV Is The Better Option",
+        "Jabil's Amazing Run Can Continue... A Bit"
       ],
       "key_tickers": [
         "TLT",
