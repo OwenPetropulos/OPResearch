@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
       "story_count": 5,
-      "primary_driver": "MDST: A Good Midstream Fund If Oil Prices Start Declining",
+      "primary_driver": "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
       "key_drivers": [
-        "MDST: A Good Midstream Fund If Oil Prices Start Declining",
-        "‘Outsized upside’ could be around the corner for these dividend-paying energy plays, Morgan Stanley says",
-        "Brent falls below $80 per barrel on report U.S. will allow Iran to sell oil immediately",
-        "The new oil? Inside the effort to turn AI computing power into a tradeable commodity"
+        "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
+        "Is Oil's Peak Behind Us? Does It Matter For Midstream?",
+        "An oil bull’s ‘insane’ bet: Why this veteran trader is buying energy stocks as crude prices tumble",
+        "Three Iranian tankers exit U.S. blockade for first time in months as shipowners eye Hormuz in 'wary disbelief'"
       ],
       "key_tickers": [
         "XOM",
@@ -21,8 +21,8 @@
       ],
       "trending_tickers": [
         "CL=F",
+        "NKE",
         "LLY",
-        "MS",
         "SPY"
       ]
     },
@@ -31,12 +31,12 @@
       "sentiment": "Positive",
       "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 9,
-      "primary_driver": "DOJ assists Musk's xAI in NAACP air pollution suit, asks court to toss case",
+      "primary_driver": "The private space race is spurring a luxury hotel land grab for Florida oceanfront property",
       "key_drivers": [
-        "DOJ assists Musk's xAI in NAACP air pollution suit, asks court to toss case",
-        "Pernod Ricard: Complications Of Political Negotiations Could Create Opportunities",
-        "Databricks sales growth tops 80%, but margin are shrinking from swarm of AI agents",
-        "8-K - Sleep Number Corp (0000827187) (Filer)"
+        "The private space race is spurring a luxury hotel land grab for Florida oceanfront property",
+        "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
+        "Fed meeting live updates: New Chairman Kevin Warsh squares off against a 'hawkish' committee",
+        "More united Fed board seen at Warsh's first meeting, according to Kalshi traders"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
+        "RIG",
         "AMZN",
-        "COST",
-        "MS"
+        "COST"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "DOJ assists Musk's xAI in NAACP air pollution suit, asks court to toss case",
+      "story_count": 16,
+      "primary_driver": "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
       "key_drivers": [
-        "DOJ assists Musk's xAI in NAACP air pollution suit, asks court to toss case",
-        "Anthropic's Fable shutdown is a big moment for open-source AI",
-        "Databricks sales growth tops 80%, but margin are shrinking from swarm of AI agents",
-        "SpaceX rises 4% to leapfrog Amazon in market cap, closes short of Microsoft"
+        "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
+        "CoreWeave Just Delivered The First Good News - Two More Remain",
+        "Fed meeting live updates: New Chairman Kevin Warsh squares off against a 'hawkish' committee",
+        "Nvidia, CoreWeave, And Nebius: Inside The Circular Financing Of The GPU Boom"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,19 +73,19 @@
       ],
       "trending_tickers": [
         "AMZN",
-        "LLY",
+        "NVDA",
         "COST",
-        "MSFT"
+        "LLY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Intel takes a major step toward turning around a business that’s bleeding cash",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Intel takes a major step toward turning around a business that’s bleeding cash"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -103,13 +103,12 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 7,
-      "primary_driver": "Bill limiting investors from buying homes set to speed through Congress",
+      "story_count": 3,
+      "primary_driver": "The private space race is spurring a luxury hotel land grab for Florida oceanfront property",
       "key_drivers": [
+        "The private space race is spurring a luxury hotel land grab for Florida oceanfront property",
         "Bill limiting investors from buying homes set to speed through Congress",
-        "I’m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?",
-        "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security now or wait?",
-        "Norwegian Air Shuttle ASA (NWARF) Nordic Leisure Travel Group AB, - M&A Call - Slideshow"
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -119,19 +118,17 @@
         "ONON"
       ],
       "trending_tickers": [
-        "COST",
-        "RIG",
-        "TGT"
+        "RIG"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "The Great Wealth Transfer is real — but the IRS or a nursing home might get your money first",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "The Great Wealth Transfer is real — but the IRS or a nursing home might get your money first"
       ],
       "key_tickers": [
         "LLY",
@@ -147,15 +144,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 8,
-      "primary_driver": "Advantage Energy: The Infra-Cycle Is Finished, Heavy Buybacks Are Next. My New Top Energy Pick",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
       "key_drivers": [
-        "Advantage Energy: The Infra-Cycle Is Finished, Heavy Buybacks Are Next. My New Top Energy Pick",
-        "Yalla Group: An Asymmetric Tech Bet Trading At The Ultimate Cash Floor",
-        "Groupe Dynamite Inc. (GRGD:CA) Shareholder/Analyst Call Prepared Remarks Transcript",
-        "Marvell: A Great Franchise Priced For Perfection"
+        "Dow rises to record as oil ticks higher, traders await Fed rate decision: Live updates",
+        "My mother was co-owner of my late grandmother’s bank account. Should she share the money with her siblings?",
+        "FUTY: Utilities Dashboard For June",
+        "Mortgage rates are now falling but demand is still weaker"
       ],
       "key_tickers": [
         "TLT",
@@ -165,7 +162,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC"
+        "LLY"
       ]
     }
   ]
