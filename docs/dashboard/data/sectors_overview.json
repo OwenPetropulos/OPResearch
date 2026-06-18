@@ -2,14 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 3,
-      "primary_driver": "Antero Midstream: The Yield Gap Is Too Wide To Ignore (Rating Downgrade)",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "KNOT Offshore Partners: Tanker Strength Meets Capital Return Weakness (Downgrade)",
       "key_drivers": [
-        "Antero Midstream: The Yield Gap Is Too Wide To Ignore (Rating Downgrade)",
-        "Oil prices fall after Trump signs deal to end Iran war",
-        "Sunday Night Futures"
+        "KNOT Offshore Partners: Tanker Strength Meets Capital Return Weakness (Downgrade)",
+        "Stocks rebound from Fed sell-off as oil prices slide, chip stocks rally: Live updates",
+        "Three Saudi oil tankers carrying 6 million barrels cross Strait of Hormuz",
+        "Inside the wild week for SpaceX and the traders who pushed up its stock price"
       ],
       "key_tickers": [
         "XOM",
@@ -20,21 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
+        "NKE",
         "LLY",
-        "SPY"
+        "XOM"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Stocks rise as Wall Street tries to rebound from Fed-led sell-off; Intel leads chips higher: Live up",
+      "story_count": 10,
+      "primary_driver": "These stocks are in trouble now that Kevin Warsh removed the market’s guardrails",
       "key_drivers": [
-        "Stocks rise as Wall Street tries to rebound from Fed-led sell-off; Intel leads chips higher: Live updates",
-        "Analysis: Chairman Kevin Warsh’s task forces are the key to understanding the new Fed",
-        "California’s counting on an IPO tax windfall. Several factors are complicating the equation",
-        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)"
+        "These stocks are in trouble now that Kevin Warsh removed the market’s guardrails",
+        "8-K - Federal Home Loan Bank of New York (0001329842) (Filer)",
+        "Markets are set for a much more hawkish Warsh Fed than expected",
+        "8-K - BRADY CORP (0000746598) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -44,21 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "GS"
+        "CL=F",
+        "LLY",
+        "COST",
+        "TGT"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 14,
-      "primary_driver": "Stocks rise as Wall Street tries to rebound from Fed-led sell-off; Intel leads chips higher: Live up",
+      "story_count": 15,
+      "primary_driver": "These stocks are in trouble now that Kevin Warsh removed the market’s guardrails",
       "key_drivers": [
-        "Stocks rise as Wall Street tries to rebound from Fed-led sell-off; Intel leads chips higher: Live updates",
-        "Analysis: Chairman Kevin Warsh’s task forces are the key to understanding the new Fed",
-        "Intel surges 11% after Trump says company will partner with Apple on U.S. chip design",
-        "California’s counting on an IPO tax windfall. Several factors are complicating the equation"
+        "These stocks are in trouble now that Kevin Warsh removed the market’s guardrails",
+        "Own The AI Power Bottleneck With Value Through Talen Energy",
+        "Markets are set for a much more hawkish Warsh Fed than expected",
+        "SCHD: A Strategic Hedge Against An AI Sell-Off"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,21 +73,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AAPL",
         "LLY",
-        "BAC",
-        "PFE"
+        "CL=F",
+        "NVDA",
+        "BAC"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Positive",
-      "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 2,
-      "primary_driver": "Trump hits back at critics as Iran peace deal fuels debate over U.S. concessions",
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "The AI trade could shift back in Nvidia's favor. Here's why",
       "key_drivers": [
-        "Trump hits back at critics as Iran peace deal fuels debate over U.S. concessions",
-        "Defense contractors would be barred from buying back their stock in bill approved by Senate panel"
+        "The AI trade could shift back in Nvidia's favor. Here's why"
       ],
       "key_tickers": [
         "GE",
@@ -93,6 +96,7 @@
         "HON"
       ],
       "trending_tickers": [
+        "NVDA",
         "BAC"
       ]
     },
@@ -101,11 +105,11 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 5,
-      "primary_driver": "Retirement savers may own SpaceX — or soon will — and not even know it",
+      "primary_driver": "Why this year's World Cup is happening at the perfect time for struggling Nike",
       "key_drivers": [
+        "Why this year's World Cup is happening at the perfect time for struggling Nike",
+        "Did Warsh and Vance just open the door to higher inflation?",
         "Retirement savers may own SpaceX — or soon will — and not even know it",
-        "Jim Cramer's top 10 things to watch in the stock market Thursday",
-        "I’m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?",
         "Hollister partners with Target to tap into $89 billion back-to-college shopping market"
       ],
       "key_tickers": [
@@ -116,10 +120,9 @@
         "ONON"
       ],
       "trending_tickers": [
-        "AAPL",
-        "COST",
-        "BAC",
-        "TGT"
+        "TGT",
+        "NKE",
+        "BAC"
       ]
     },
     {
@@ -127,11 +130,11 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 3,
-      "primary_driver": "Sarepta: Caution Still Warranted Despite FDA's Gene Therapy-Friendly Stance",
+      "primary_driver": "8-K - Twin Hospitality Group Inc. (0002011954) (Filer)",
       "key_drivers": [
-        "Sarepta: Caution Still Warranted Despite FDA's Gene Therapy-Friendly Stance",
-        "Pfizer CFO Dave Denton to leave company in August",
-        "ClearPoint Neuro: AMT-130's FDA Reversal Revives The Bull Case"
+        "8-K - Twin Hospitality Group Inc. (0002011954) (Filer)",
+        "TransCode Therapeutics, Inc. (RNAZ) Discusses Strategic, Scientific, and Clinical Updates With Focus on TTX-MC138 Phase ",
+        "8-K - PFIZER INC (0000078003) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -146,15 +149,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 11,
-      "primary_driver": "8-K - HUGOTON ROYALTY TRUST (0000862022) (Filer)",
+      "primary_driver": "U.S. Navy ends blockade of Iran's ports and coastal areas, CENTCOM says",
       "key_drivers": [
-        "8-K - HUGOTON ROYALTY TRUST (0000862022) (Filer)",
-        "Bank of England Decision Points To Prolonged Pause",
-        "Analysis: Chairman Kevin Warsh’s task forces are the key to understanding the new Fed",
-        "DMO: High Yield And Discount Starts To Open But Not Enough Yet"
+        "U.S. Navy ends blockade of Iran's ports and coastal areas, CENTCOM says",
+        "These stocks are in trouble now that Kevin Warsh removed the market’s guardrails",
+        "SpaceX shares to more than double to above $400, research firm predicts",
+        "8-K - KOPIN CORP (0000771266) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -164,7 +167,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY"
+        "BAC",
+        "LLY",
+        "TGT"
       ]
     }
   ]
