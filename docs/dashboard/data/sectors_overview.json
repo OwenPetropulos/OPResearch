@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "KNOT Offshore Partners: Tanker Strength Meets Capital Return Weakness (Downgrade)",
+      "story_count": 5,
+      "primary_driver": "8-K - BATTALION OIL CORP (0001282648) (Filer)",
       "key_drivers": [
-        "KNOT Offshore Partners: Tanker Strength Meets Capital Return Weakness (Downgrade)",
-        "Stocks rebound from Fed sell-off as oil prices slide, chip stocks rally: Live updates",
+        "8-K - BATTALION OIL CORP (0001282648) (Filer)",
         "Three Saudi oil tankers carrying 6 million barrels cross Strait of Hormuz",
-        "Inside the wild week for SpaceX and the traders who pushed up its stock price"
+        "Gas prices fall below $4 per gallon as oil supply fears ease after Iran deal",
+        "OPEC chief dismisses IEA supply glut forecast as 'critical' Strait of Hormuz reopens"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
         "NKE",
+        "RIG",
         "LLY",
-        "XOM"
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "These stocks are in trouble now that Kevin Warsh removed the market’s guardrails",
+      "story_count": 8,
+      "primary_driver": "Intel’s stock jumps 11% — even as analysts say new Apple chip deal might start small",
       "key_drivers": [
-        "These stocks are in trouble now that Kevin Warsh removed the market’s guardrails",
-        "8-K - Federal Home Loan Bank of New York (0001329842) (Filer)",
-        "Markets are set for a much more hawkish Warsh Fed than expected",
-        "8-K - BRADY CORP (0000746598) (Filer)"
+        "Intel’s stock jumps 11% — even as analysts say new Apple chip deal might start small",
+        "Trump administration temporarily cuts student loan interest rates for borrowers on autopay",
+        "SpaceX options volume explodes as trading kicks off. Here is a low-risk strategy to play the massive surge.",
+        "These stocks are in trouble after Fed Chair Kevin Warsh removed the market’s guardrails"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "CL=F",
-        "LLY",
+        "AAPL",
         "COST",
-        "TGT"
+        "LLY",
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 15,
-      "primary_driver": "These stocks are in trouble now that Kevin Warsh removed the market’s guardrails",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 16,
+      "primary_driver": "SpaceX is vastly more expensive than any stock in the S&P 500, fueled by ‘FOMO’ mentality",
       "key_drivers": [
-        "These stocks are in trouble now that Kevin Warsh removed the market’s guardrails",
-        "Own The AI Power Bottleneck With Value Through Talen Energy",
-        "Markets are set for a much more hawkish Warsh Fed than expected",
-        "SCHD: A Strategic Hedge Against An AI Sell-Off"
+        "SpaceX is vastly more expensive than any stock in the S&P 500, fueled by ‘FOMO’ mentality",
+        "Intel’s stock jumps 11% — even as analysts say new Apple chip deal might start small",
+        "Waymo recalls about 3,900 robotaxis after some drove into 'freeway construction zones'",
+        "Micron’s stock is on the rise. Even Apple isn’t safe from ballooning memory-chip costs."
       ],
       "key_tickers": [
         "NVDA",
@@ -73,20 +73,22 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
-        "CL=F",
-        "NVDA",
-        "BAC"
+        "SPY",
+        "AAPL",
+        "COST",
+        "AMZN"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "The AI trade could shift back in Nvidia's favor. Here's why",
+      "story_count": 3,
+      "primary_driver": "Waymo recalls about 3,900 robotaxis after some drove into 'freeway construction zones'",
       "key_drivers": [
-        "The AI trade could shift back in Nvidia's favor. Here's why"
+        "Waymo recalls about 3,900 robotaxis after some drove into 'freeway construction zones'",
+        "Micron’s stock is on the rise. Even Apple isn’t safe from ballooning memory-chip costs.",
+        "8-K - T3 Defense Inc. (0001787518) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -96,21 +98,19 @@
         "HON"
       ],
       "trending_tickers": [
-        "NVDA",
-        "BAC"
+        "AAPL",
+        "COST"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Why this year's World Cup is happening at the perfect time for struggling Nike",
+      "story_count": 2,
+      "primary_driver": "SpaceX is vastly more expensive than any stock in the S&P 500, fueled by ‘FOMO’ mentality",
       "key_drivers": [
-        "Why this year's World Cup is happening at the perfect time for struggling Nike",
-        "Did Warsh and Vance just open the door to higher inflation?",
-        "Retirement savers may own SpaceX — or soon will — and not even know it",
-        "Hollister partners with Target to tap into $89 billion back-to-college shopping market"
+        "SpaceX is vastly more expensive than any stock in the S&P 500, fueled by ‘FOMO’ mentality",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -120,21 +120,17 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "NKE",
-        "BAC"
+        "SPY"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "8-K - Twin Hospitality Group Inc. (0002011954) (Filer)",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "8-K - Twin Hospitality Group Inc. (0002011954) (Filer)",
-        "TransCode Therapeutics, Inc. (RNAZ) Discusses Strategic, Scientific, and Clinical Updates With Focus on TTX-MC138 Phase ",
-        "8-K - PFIZER INC (0000078003) (Filer)"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -144,20 +140,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "PFE"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "U.S. Navy ends blockade of Iran's ports and coastal areas, CENTCOM says",
+      "story_count": 12,
+      "primary_driver": "YIT Oyj (YITYY) Discusses Residential CEE Segment Performance and Market Outlook Transcript",
       "key_drivers": [
-        "U.S. Navy ends blockade of Iran's ports and coastal areas, CENTCOM says",
-        "These stocks are in trouble now that Kevin Warsh removed the market’s guardrails",
-        "SpaceX shares to more than double to above $400, research firm predicts",
-        "8-K - KOPIN CORP (0000771266) (Filer)"
+        "YIT Oyj (YITYY) Discusses Residential CEE Segment Performance and Market Outlook Transcript",
+        "Rumble's Transformation Is A Risky Bet",
+        "Wingstop: The Fundamentals Do Not Justify The Valuation",
+        "TONIES SE (TNIEF) Analyst/Investor Day Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -167,9 +164,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
+        "SPY",
         "LLY",
-        "TGT"
+        "BAC"
       ]
     }
   ]
