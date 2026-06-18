@@ -2,12 +2,13 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 3,
+      "primary_driver": "Antero Midstream: The Yield Gap Is Too Wide To Ignore (Rating Downgrade)",
       "key_drivers": [
-        "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
+        "Antero Midstream: The Yield Gap Is Too Wide To Ignore (Rating Downgrade)",
+        "Oil prices fall after Trump signs deal to end Iran war",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -18,9 +19,9 @@
         "RIG"
       ],
       "trending_tickers": [
+        "CL=F",
         "LLY",
-        "SPY",
-        "CL=F"
+        "SPY"
       ]
     },
     {
@@ -28,12 +29,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "June FOMC: Warsh's Debut Was More Hawkish Than Expected",
+      "primary_driver": "Stocks rise as Wall Street tries to rebound from Fed-led sell-off; Intel leads chips higher: Live up",
       "key_drivers": [
-        "June FOMC: Warsh's Debut Was More Hawkish Than Expected",
-        "Fed holds rates steady, pares down statement to remove cutting bias",
-        "The Fed just threw investors a curveball. Here’s how stocks, bonds, gold and the dollar reacted.",
-        "Wall Street Lunch: Fed Task Force Five"
+        "Stocks rise as Wall Street tries to rebound from Fed-led sell-off; Intel leads chips higher: Live updates",
+        "Analysis: Chairman Kevin Warsh’s task forces are the key to understanding the new Fed",
+        "California’s counting on an IPO tax windfall. Several factors are complicating the equation",
+        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -43,21 +44,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "LLY",
-        "BAC"
+        "JPM",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "Why Hewlett Packard Enterprise Is The Ultimate Pure-Play On Enterprise AI",
+      "story_count": 14,
+      "primary_driver": "Stocks rise as Wall Street tries to rebound from Fed-led sell-off; Intel leads chips higher: Live up",
       "key_drivers": [
-        "Why Hewlett Packard Enterprise Is The Ultimate Pure-Play On Enterprise AI",
-        "Nvidia Won't Be This Cheap Forever",
-        "It’s ‘unavoidable’: Apple says it will be forced to raise prices due to the AI boom",
-        "Stock-market pessimists have one less reason to worry as shares of banks and retailers perk up"
+        "Stocks rise as Wall Street tries to rebound from Fed-led sell-off; Intel leads chips higher: Live updates",
+        "Analysis: Chairman Kevin Warsh’s task forces are the key to understanding the new Fed",
+        "Intel surges 11% after Trump says company will partner with Apple on U.S. chip design",
+        "California’s counting on an IPO tax windfall. Several factors are complicating the equation"
       ],
       "key_tickers": [
         "NVDA",
@@ -68,19 +69,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVDA",
         "AAPL",
-        "COST"
+        "LLY",
+        "BAC",
+        "PFE"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Positive",
       "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 1,
-      "primary_driver": "Defense contractors would be barred from buying back their stock in bill approved by Senate panel",
+      "story_count": 2,
+      "primary_driver": "Trump hits back at critics as Iran peace deal fuels debate over U.S. concessions",
       "key_drivers": [
+        "Trump hits back at critics as Iran peace deal fuels debate over U.S. concessions",
         "Defense contractors would be barred from buying back their stock in bill approved by Senate panel"
       ],
       "key_tickers": [
@@ -96,13 +98,15 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Positive",
-      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 2,
-      "primary_driver": "Stock-market pessimists have one less reason to worry as shares of banks and retailers perk up",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 5,
+      "primary_driver": "Retirement savers may own SpaceX — or soon will — and not even know it",
       "key_drivers": [
-        "Stock-market pessimists have one less reason to worry as shares of banks and retailers perk up",
-        "1st Look at Local Housing Markets in December"
+        "Retirement savers may own SpaceX — or soon will — and not even know it",
+        "Jim Cramer's top 10 things to watch in the stock market Thursday",
+        "I’m spending $170,000 to upgrade my home for my aging parents. Can I get tax breaks?",
+        "Hollister partners with Target to tap into $89 billion back-to-college shopping market"
       ],
       "key_tickers": [
         "NKE",
@@ -112,17 +116,22 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY"
+        "AAPL",
+        "COST",
+        "BAC",
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency",
+      "story_count": 3,
+      "primary_driver": "Sarepta: Caution Still Warranted Despite FDA's Gene Therapy-Friendly Stance",
       "key_drivers": [
-        "UniQure to seek FDA approval for Huntington's disease gene therapy after previous clash with agency"
+        "Sarepta: Caution Still Warranted Despite FDA's Gene Therapy-Friendly Stance",
+        "Pfizer CFO Dave Denton to leave company in August",
+        "ClearPoint Neuro: AMT-130's FDA Reversal Revives The Bull Case"
       ],
       "key_tickers": [
         "LLY",
@@ -132,21 +141,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "PFE"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "Trisura Group Ltd. (TSU:CA) Shareholder/Analyst Call Transcript",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 11,
+      "primary_driver": "8-K - HUGOTON ROYALTY TRUST (0000862022) (Filer)",
       "key_drivers": [
-        "Trisura Group Ltd. (TSU:CA) Shareholder/Analyst Call Transcript",
-        "Intel: The Re-Rating Has Gone Too Far",
-        "DFAS: A Solid Small-Cap ETF, But DFSV Is The Better Option",
-        "Jabil's Amazing Run Can Continue... A Bit"
+        "8-K - HUGOTON ROYALTY TRUST (0000862022) (Filer)",
+        "Bank of England Decision Points To Prolonged Pause",
+        "Analysis: Chairman Kevin Warsh’s task forces are the key to understanding the new Fed",
+        "DMO: High Yield And Discount Starts To Open But Not Enough Yet"
       ],
       "key_tickers": [
         "TLT",
@@ -156,8 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "LLY"
       ]
     }
   ]
