@@ -5,11 +5,11 @@
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 5,
-      "primary_driver": "8-K - BATTALION OIL CORP (0001282648) (Filer)",
+      "primary_driver": "Oil prices turn negative after U.S. official says Israel, Hezbollah agree to ceasefire",
       "key_drivers": [
+        "Oil prices turn negative after U.S. official says Israel, Hezbollah agree to ceasefire",
+        "Gulf Keystone Petroleum Limited (GUKYF) Shareholder/Analyst Call - Slideshow",
         "8-K - BATTALION OIL CORP (0001282648) (Filer)",
-        "Three Saudi oil tankers carrying 6 million barrels cross Strait of Hormuz",
-        "Gas prices fall below $4 per gallon as oil supply fears ease after Iran deal",
         "OPEC chief dismisses IEA supply glut forecast as 'critical' Strait of Hormuz reopens"
       ],
       "key_tickers": [
@@ -20,10 +20,10 @@
         "RIG"
       ],
       "trending_tickers": [
-        "NKE",
+        "CL=F",
+        "BAC",
         "RIG",
-        "LLY",
-        "SPY"
+        "LLY"
       ]
     },
     {
@@ -31,12 +31,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Intel’s stock jumps 11% — even as analysts say new Apple chip deal might start small",
+      "primary_driver": "CRE's Recovery Masks A Widening Divide",
       "key_drivers": [
-        "Intel’s stock jumps 11% — even as analysts say new Apple chip deal might start small",
-        "Trump administration temporarily cuts student loan interest rates for borrowers on autopay",
-        "SpaceX options volume explodes as trading kicks off. Here is a low-risk strategy to play the massive surge.",
-        "These stocks are in trouble after Fed Chair Kevin Warsh removed the market’s guardrails"
+        "CRE's Recovery Masks A Widening Divide",
+        "Fed watching is looking very different now. Two charts can help you in the Warsh era.",
+        "Memory crisis hits such extremes that 'even Apple can't be safe'",
+        "The Fed’s new hawkish reality just forced Goldman Sachs to slash its gold forecast by $500"
       ],
       "key_tickers": [
         "JPM",
@@ -47,22 +47,20 @@
       ],
       "trending_tickers": [
         "AAPL",
-        "COST",
-        "LLY",
-        "BAC"
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 16,
-      "primary_driver": "SpaceX is vastly more expensive than any stock in the S&P 500, fueled by ‘FOMO’ mentality",
+      "story_count": 14,
+      "primary_driver": "U.S.-Iran accord hits early snag after Swiss talks fail to proceed as planned",
       "key_drivers": [
-        "SpaceX is vastly more expensive than any stock in the S&P 500, fueled by ‘FOMO’ mentality",
-        "Intel’s stock jumps 11% — even as analysts say new Apple chip deal might start small",
-        "Waymo recalls about 3,900 robotaxis after some drove into 'freeway construction zones'",
-        "Micron’s stock is on the rise. Even Apple isn’t safe from ballooning memory-chip costs."
+        "U.S.-Iran accord hits early snag after Swiss talks fail to proceed as planned",
+        "Chip stocks are setting records, but this hidden chart pattern says momentum favors the bears",
+        "NewLake Capital: Rich Dividends, Healthy Metrics & Legal Tailwinds, Reiterate Buy",
+        "‘I’ll probably be working until I die’: I’m 60, work as a waiter and have $2,000 in a Roth IRA. What will happen to me?"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,21 +71,19 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "SPY",
         "AAPL",
-        "COST",
-        "AMZN"
+        "RIG",
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Waymo recalls about 3,900 robotaxis after some drove into 'freeway construction zones'",
+      "story_count": 1,
+      "primary_driver": "8-K - T3 Defense Inc. (0001787518) (Filer)",
       "key_drivers": [
-        "Waymo recalls about 3,900 robotaxis after some drove into 'freeway construction zones'",
-        "Micron’s stock is on the rise. Even Apple isn’t safe from ballooning memory-chip costs.",
         "8-K - T3 Defense Inc. (0001787518) (Filer)"
       ],
       "key_tickers": [
@@ -98,19 +94,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "AAPL",
-        "COST"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "SpaceX is vastly more expensive than any stock in the S&P 500, fueled by ‘FOMO’ mentality",
+      "story_count": 6,
+      "primary_driver": "U.S.-Iran accord hits early snag after Swiss talks fail to proceed as planned",
       "key_drivers": [
-        "SpaceX is vastly more expensive than any stock in the S&P 500, fueled by ‘FOMO’ mentality",
-        "1st Look at Local Housing Markets in December"
+        "U.S.-Iran accord hits early snag after Swiss talks fail to proceed as planned",
+        "2 Internally Managed BDCs For Retirement Income: Only 1 Made The Cut",
+        "$100,000 In 7%+ Average Yielding MLPs: Tax-Friendly Retirement Picks",
+        "National Healthcare Properties: Out Of The Shadows And Into The Light Of Senior Housing"
       ],
       "key_tickers": [
         "NKE",
@@ -120,17 +118,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "SPY"
+        "LLY"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "AbbVie: Immunology Cash Flow Funds Oncology Expansion",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "AbbVie: Immunology Cash Flow Funds Oncology Expansion",
+        "What this biotech's volatile stock price tells you about the weight loss market right now"
       ],
       "key_tickers": [
         "LLY",
@@ -140,21 +139,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "RIG"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "YIT Oyj (YITYY) Discusses Residential CEE Segment Performance and Market Outlook Transcript",
+      "story_count": 10,
+      "primary_driver": "In photos: Star-studded crowd gathers to celebrate the Obama Presidential Center dedication",
       "key_drivers": [
-        "YIT Oyj (YITYY) Discusses Residential CEE Segment Performance and Market Outlook Transcript",
-        "Rumble's Transformation Is A Risky Bet",
-        "Wingstop: The Fundamentals Do Not Justify The Valuation",
-        "TONIES SE (TNIEF) Analyst/Investor Day Transcript"
+        "In photos: Star-studded crowd gathers to celebrate the Obama Presidential Center dedication",
+        "Versant Media Group: Cheap Cash Flow, But Not Enough To Justify Buy",
+        "Magnite: CTV Momentum Should Continue To Translate Into Higher Value",
+        "Fidelity Limited Term Bond ETF Q1 2026 Commentary"
       ],
       "key_tickers": [
         "TLT",
@@ -164,9 +162,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY",
-        "LLY",
-        "BAC"
+        "LLY"
       ]
     }
   ]
