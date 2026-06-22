@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 7,
-      "primary_driver": "S&P 500 runs out of steam Monday, falls into the red as Big Tech, SpaceX struggle: Live updates",
+      "sentiment": "Positive",
+      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
+      "story_count": 8,
+      "primary_driver": "S&P 500 falls as Big Tech and SpaceX struggle: Live updates",
       "key_drivers": [
-        "S&P 500 runs out of steam Monday, falls into the red as Big Tech, SpaceX struggle: Live updates",
-        "Treasury Department authorizes Iranian oil sales through August",
-        "U.S. oil prices fall below $74 a barrel on 60-day pause on Iranian oil sanctions",
-        "Oil prices fall after Vance says U.S. and Iran made progress in peace talks"
+        "S&P 500 falls as Big Tech and SpaceX struggle: Live updates",
+        "Wall Street Lunch: U.S. Authorizes Iranian Oil Sales",
+        "A flood of oil is set to hit energy markets. Here’s how much crude may be unleashed.",
+        "A 40% market crash is lurking in the IPO pipeline. SpaceX and OpenAI could trigger it."
       ],
       "key_tickers": [
         "XOM",
@@ -22,8 +22,8 @@
       "trending_tickers": [
         "CL=F",
         "SPY",
-        "LLY",
-        "NKE"
+        "NKE",
+        "RIG"
       ]
     },
     {
@@ -31,12 +31,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Alan Greenspan’s legacy as Fed chair: The ‘Greenspan put’ and a shift to overprotecting markets",
+      "primary_driver": "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
       "key_drivers": [
-        "Alan Greenspan’s legacy as Fed chair: The ‘Greenspan put’ and a shift to overprotecting markets",
-        "8-K - MERRILL LYNCH DEPOSITOR INC INDEXPLUS TRUST SERIES 2003-1 (0001267332) (Filer)",
-        "Braze: Incredible Growth Acceleration Shouldn't Be Ignored",
-        "Meta's WhatsApp head to step down, will be replaced by Indian fintech founder Kunal Shah"
+        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
+        "Cross-Asset Volatilities Decline As Traders Pivot Away From Hawkish Fed",
+        "Senate poised to advance housing bill to limit private equity purchases of single-family homes",
+        "8-K - Barings Private Credit Corp (0001859919) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
+        "GS",
         "META"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 15,
-      "primary_driver": "Alan Greenspan’s legacy as Fed chair: The ‘Greenspan put’ and a shift to overprotecting markets",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 13,
+      "primary_driver": "Armani On Why The AI Boom Is Different",
       "key_drivers": [
-        "Alan Greenspan’s legacy as Fed chair: The ‘Greenspan put’ and a shift to overprotecting markets",
-        "Lucid to lay off roughly 18% of U.S. workforce, COO Marc Winterhoff leaves",
-        "These 2 stocks could be big winners from the next generation of AI chips",
-        "Albertsons: After Failed Kroger Merger, Supermarket Brand Bets On Digital And New Stores"
+        "Armani On Why The AI Boom Is Different",
+        "8-K - Verses AI Inc. (0001879001) (Filer)",
+        "DigitalOcean: AI Inflection Story, FCF To Double (Upgrade)",
+        "SpaceX kicks off bond sale days after record IPO, discloses over $100 billion cash pile"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,20 +71,21 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "AAPL",
+        "RIG",
         "META",
-        "MSFT",
-        "COST",
-        "BAC"
+        "NKE"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "RTX: Raytheon Powers Growth While Valuation Caps Returns",
+      "story_count": 3,
+      "primary_driver": "Micron grew by $1 trillion this year. These two wild cards will determine its trajectory.",
       "key_drivers": [
-        "RTX: Raytheon Powers Growth While Valuation Caps Returns",
+        "Micron grew by $1 trillion this year. These two wild cards will determine its trajectory.",
+        "Caterpillar’s stock hits a milestone as roaring industrials rally sweeps up Wall Street",
         "UPS to invest $48 million in temperature-controlled facilities amid healthcare boom"
       ],
       "key_tickers": [
@@ -94,16 +96,18 @@
         "HON"
       ],
       "trending_tickers": [
-        "RTX"
+        "LLY"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "1st Look at Local Housing Markets in December",
+      "story_count": 3,
+      "primary_driver": "Senate poised to advance housing bill to limit private equity purchases of single-family homes",
       "key_drivers": [
+        "Senate poised to advance housing bill to limit private equity purchases of single-family homes",
+        "China’s weird new economic spark: toy elves and robocops",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -123,10 +127,10 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "Nuvectis Pharma, Inc. (NVCT) Discusses Strategic In-Licensing Deal and Expansion Into Complement-Med",
+      "primary_driver": "Eledon Pharmaceuticals, Inc. (ELDN) Discusses Updated Long-term Data From Phase 2 BESTOW Clinical Tr",
       "key_drivers": [
-        "Nuvectis Pharma, Inc. (NVCT) Discusses Strategic In-Licensing Deal and Expansion Into Complement-Mediated Diseases and O",
-        "Merck's Oncology Engine Is Still Accelerating"
+        "Eledon Pharmaceuticals, Inc. (ELDN) Discusses Updated Long-term Data From Phase 2 BESTOW Clinical Trial in Kidney Transp",
+        "The loneliness crisis has gotten so bad that lawmakers are ready to spend millions of dollars to fight it"
       ],
       "key_tickers": [
         "LLY",
@@ -142,15 +146,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "CRH plc (CRH) M&A Call Transcript",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 9,
+      "primary_driver": "Allot: Strong SECaaS Momentum Supports Improving Outlook",
       "key_drivers": [
-        "CRH plc (CRH) M&A Call Transcript",
-        "Who is Andy Burnham? And 4 other things investors should know as the U.K. replaces its prime minister",
-        "SPXX: Attractive Discount, Distribution Gets A Bump",
-        "DGRO Wins Out Over VIG: Better Momentum And A Smoother Ride"
+        "Allot: Strong SECaaS Momentum Supports Improving Outlook",
+        "Childcare tax breaks can save families and businesses money — but few use them, congressional report finds",
+        "8-K - Third Point Private Capital Partners (0002025369) (Filer)",
+        "MoonLake Immunotherapeutics (MLTX) Analyst/Investor Day Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -160,8 +164,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "COST"
       ]
     }
   ]
