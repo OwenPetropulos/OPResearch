@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Positive",
       "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 8,
-      "primary_driver": "S&P 500 falls as Big Tech and SpaceX struggle: Live updates",
+      "story_count": 5,
+      "primary_driver": "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
       "key_drivers": [
-        "S&P 500 falls as Big Tech and SpaceX struggle: Live updates",
-        "Wall Street Lunch: U.S. Authorizes Iranian Oil Sales",
-        "A flood of oil is set to hit energy markets. Here’s how much crude may be unleashed.",
-        "A 40% market crash is lurking in the IPO pipeline. SpaceX and OpenAI could trigger it."
+        "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
+        "A 40% market crash is lurking in the IPO pipeline. SpaceX and OpenAI could trigger it.",
+        "Treasury Department authorizes Iranian oil sales through August",
+        "Shipping stalls in Strait of Hormuz after Iran declares key waterway closed again"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
-        "SPY",
         "NKE",
-        "RIG"
+        "RIG",
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
+      "story_count": 9,
+      "primary_driver": "Senate advances housing bill to limit private equity purchases of single-family homes",
       "key_drivers": [
-        "8-K - Federal Home Loan Bank of Topeka (0001325878) (Filer)",
-        "Cross-Asset Volatilities Decline As Traders Pivot Away From Hawkish Fed",
-        "Senate poised to advance housing bill to limit private equity purchases of single-family homes",
-        "8-K - Barings Private Credit Corp (0001859919) (Filer)"
+        "Senate advances housing bill to limit private equity purchases of single-family homes",
+        "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
+        "Tesla faces federal probe after Model 3 slams into Texas home, killing 76-year-old",
+        "Baldwin Insurance: Go-Private Rumors Appear Credible"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
-        "META"
+        "LLY",
+        "TGT"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "Armani On Why The AI Boom Is Different",
+      "story_count": 14,
+      "primary_driver": "Senate advances housing bill to limit private equity purchases of single-family homes",
       "key_drivers": [
-        "Armani On Why The AI Boom Is Different",
-        "8-K - Verses AI Inc. (0001879001) (Filer)",
-        "DigitalOcean: AI Inflection Story, FCF To Double (Upgrade)",
-        "SpaceX kicks off bond sale days after record IPO, discloses over $100 billion cash pile"
+        "Senate advances housing bill to limit private equity purchases of single-family homes",
+        "Fair Isaac Corporation: A Flawless Moat, But The 35x PE Leaves Little Margin For Error",
+        "Big Tech has split into two artificial-intelligence camps — but the smart money isn’t chasing the next OpenAI",
+        "CoreWeave's Liquidity Shock Meets AI Scale"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,21 +71,22 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AAPL",
-        "RIG",
-        "META",
-        "NKE"
+        "LLY",
+        "MSFT",
+        "GOOGL",
+        "RIG"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Neutral",
-      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Micron grew by $1 trillion this year. These two wild cards will determine its trajectory.",
+      "sentiment": "Positive",
+      "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
+      "story_count": 4,
+      "primary_driver": "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
       "key_drivers": [
-        "Micron grew by $1 trillion this year. These two wild cards will determine its trajectory.",
-        "Caterpillar’s stock hits a milestone as roaring industrials rally sweeps up Wall Street",
+        "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
+        "Play defense with these dividend payers that consistently buy back their own shares, says Wolfe Research",
+        "Caterpillar’s stock hits a milestone as AI-fueled industrials rally sweeps up Wall Street",
         "UPS to invest $48 million in temperature-controlled facilities amid healthcare boom"
       ],
       "key_tickers": [
@@ -96,6 +97,7 @@
         "HON"
       ],
       "trending_tickers": [
+        "BAC",
         "LLY"
       ]
     },
@@ -103,12 +105,13 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Senate poised to advance housing bill to limit private equity purchases of single-family homes",
+      "story_count": 5,
+      "primary_driver": "Senate advances housing bill to limit private equity purchases of single-family homes",
       "key_drivers": [
-        "Senate poised to advance housing bill to limit private equity purchases of single-family homes",
+        "Senate advances housing bill to limit private equity purchases of single-family homes",
         "China’s weird new economic spark: toy elves and robocops",
-        "1st Look at Local Housing Markets in December"
+        "Nike Q4 Preview: The Better-Than-Feared Value Opportunity",
+        "Wall Street was once uber bullish on gold. Now it's changing its tune"
       ],
       "key_tickers": [
         "NKE",
@@ -119,18 +122,17 @@
       ],
       "trending_tickers": [
         "NKE",
-        "WMT"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Eledon Pharmaceuticals, Inc. (ELDN) Discusses Updated Long-term Data From Phase 2 BESTOW Clinical Tr",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Eledon Pharmaceuticals, Inc. (ELDN) Discusses Updated Long-term Data From Phase 2 BESTOW Clinical Trial in Kidney Transp",
-        "The loneliness crisis has gotten so bad that lawmakers are ready to spend millions of dollars to fight it"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -148,13 +150,13 @@
       "sector": "Macro",
       "sentiment": "Positive",
       "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 9,
-      "primary_driver": "Allot: Strong SECaaS Momentum Supports Improving Outlook",
+      "story_count": 8,
+      "primary_driver": "SpaceX: I See 50% Downside, Even With Cursor",
       "key_drivers": [
-        "Allot: Strong SECaaS Momentum Supports Improving Outlook",
-        "Childcare tax breaks can save families and businesses money — but few use them, congressional report finds",
-        "8-K - Third Point Private Capital Partners (0002025369) (Filer)",
-        "MoonLake Immunotherapeutics (MLTX) Analyst/Investor Day Transcript"
+        "SpaceX: I See 50% Downside, Even With Cursor",
+        "Connectivity Is Marvell's Hidden Growth Engine Today",
+        "Wall Street loves growth stocks — but these 10 ‘losers’ are primed to win",
+        "BITX: Beware The Leveraged Bitcoin ETFs"
       ],
       "key_tickers": [
         "TLT",
@@ -164,7 +166,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "COST"
+        "GLD",
+        "DXY"
       ]
     }
   ]
