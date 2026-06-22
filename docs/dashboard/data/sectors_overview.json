@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "KNOT Offshore Partners: There Are Way Better Options Out There",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 7,
+      "primary_driver": "S&P 500 runs out of steam Monday, falls into the red as Big Tech, SpaceX struggle: Live updates",
       "key_drivers": [
-        "KNOT Offshore Partners: There Are Way Better Options Out There",
-        "Oil prices face fresh wave of volatility amid conflicting reports about Strait of Hormuz reopening and ongoing regional ",
-        "Oil tanker traffic in Strait of Hormuz jumps after U.S. and Iran implement deal to open sea lane",
-        "8-K - BATTALION OIL CORP (0001282648) (Filer)"
+        "S&P 500 runs out of steam Monday, falls into the red as Big Tech, SpaceX struggle: Live updates",
+        "Treasury Department authorizes Iranian oil sales through August",
+        "U.S. oil prices fall below $74 a barrel on 60-day pause on Iranian oil sanctions",
+        "Oil prices fall after Vance says U.S. and Iran made progress in peace talks"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "NKE",
+        "SPY",
         "LLY",
-        "SPY"
+        "NKE"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 9,
-      "primary_driver": "Dorchester Minerals: Overselling Pressures Increased, Buying Opportunities Widened",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "Alan Greenspan’s legacy as Fed chair: The ‘Greenspan put’ and a shift to overprotecting markets",
       "key_drivers": [
-        "Dorchester Minerals: Overselling Pressures Increased, Buying Opportunities Widened",
-        "DOJ rebuffs judge's request to put in writing it won't move forward with 'anti-weaponization' fund",
-        "Why Private Credit Risks May Be Unfairly Tarnishing Private Markets",
-        "Warsh’s new task forces give the Fed wiggle room to put off changing rates until December"
+        "Alan Greenspan’s legacy as Fed chair: The ‘Greenspan put’ and a shift to overprotecting markets",
+        "8-K - MERRILL LYNCH DEPOSITOR INC INDEXPLUS TRUST SERIES 2003-1 (0001267332) (Filer)",
+        "Braze: Incredible Growth Acceleration Shouldn't Be Ignored",
+        "Meta's WhatsApp head to step down, will be replaced by Indian fintech founder Kunal Shah"
       ],
       "key_tickers": [
         "JPM",
@@ -46,10 +46,7 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN",
-        "NKE",
-        "SPY",
-        "CL=F"
+        "META"
       ]
     },
     {
@@ -57,12 +54,12 @@
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 15,
-      "primary_driver": "FCLD: Stuck In The Middle As The SaaS Reckoning Drags On",
+      "primary_driver": "Alan Greenspan’s legacy as Fed chair: The ‘Greenspan put’ and a shift to overprotecting markets",
       "key_drivers": [
-        "FCLD: Stuck In The Middle As The SaaS Reckoning Drags On",
-        "Trump unveils the new Air Force One, a converted Qatari jet",
-        "John Jumper to leave Google DeepMind for Anthropic",
-        "Trump tells Axios he no longer views Anthropic as a national security threat"
+        "Alan Greenspan’s legacy as Fed chair: The ‘Greenspan put’ and a shift to overprotecting markets",
+        "Lucid to lay off roughly 18% of U.S. workforce, COO Marc Winterhoff leaves",
+        "These 2 stocks could be big winners from the next generation of AI chips",
+        "Albertsons: After Failed Kroger Merger, Supermarket Brand Bets On Digital And New Stores"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,22 +70,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "CL=F",
-        "GOOGL",
         "META",
-        "AMZN"
+        "MSFT",
+        "COST",
+        "BAC"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Trump unveils the new Air Force One, a converted Qatari jet",
+      "story_count": 2,
+      "primary_driver": "RTX: Raytheon Powers Growth While Valuation Caps Returns",
       "key_drivers": [
-        "Trump unveils the new Air Force One, a converted Qatari jet",
-        "John Jumper to leave Google DeepMind for Anthropic",
-        "8-K - T3 Defense Inc. (0001787518) (Filer)"
+        "RTX: Raytheon Powers Growth While Valuation Caps Returns",
+        "UPS to invest $48 million in temperature-controlled facilities amid healthcare boom"
       ],
       "key_tickers": [
         "GE",
@@ -98,8 +94,7 @@
         "HON"
       ],
       "trending_tickers": [
-        "GOOGL",
-        "META"
+        "RTX"
       ]
     },
     {
@@ -127,10 +122,11 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "What this biotech's volatile stock price tells you about the weight loss market right now",
+      "story_count": 2,
+      "primary_driver": "Nuvectis Pharma, Inc. (NVCT) Discusses Strategic In-Licensing Deal and Expansion Into Complement-Med",
       "key_drivers": [
-        "What this biotech's volatile stock price tells you about the weight loss market right now"
+        "Nuvectis Pharma, Inc. (NVCT) Discusses Strategic In-Licensing Deal and Expansion Into Complement-Mediated Diseases and O",
+        "Merck's Oncology Engine Is Still Accelerating"
       ],
       "key_tickers": [
         "LLY",
@@ -140,20 +136,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "RIG"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 10,
-      "primary_driver": "TPG Mortgage Investment Trust: A High-Yield REIT Reflecting Neutral Market Signals",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "CRH plc (CRH) M&A Call Transcript",
       "key_drivers": [
-        "TPG Mortgage Investment Trust: A High-Yield REIT Reflecting Neutral Market Signals",
-        "AST SpaceMobile: SpaceX Drawdown Triggers Dip Buying Opportunity - FY2027 Monetization Inflection (Rating Upgrade)",
-        "ESCO Technologies: Multiple Growth Drivers Make The Premium Worth Paying",
-        "Kuraray Co., Ltd. (KURRY) Analyst/Investor Day - Slideshow"
+        "CRH plc (CRH) M&A Call Transcript",
+        "Who is Andy Burnham? And 4 other things investors should know as the U.K. replaces its prime minister",
+        "SPXX: Attractive Discount, Distribution Gets A Bump",
+        "DGRO Wins Out Over VIG: Better Momentum And A Smoother Ride"
       ],
       "key_tickers": [
         "TLT",
@@ -163,9 +160,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "RIG",
-        "NKE",
-        "SPY"
+        "GLD",
+        "DXY"
       ]
     }
   ]
