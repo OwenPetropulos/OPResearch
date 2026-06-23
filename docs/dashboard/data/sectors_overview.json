@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 6,
-      "primary_driver": "Scorpio Tankers: Capital Returns Could Accelerate As Rates Stay Elevated",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 4,
+      "primary_driver": "U.S. Oil Production Outlook And Midstream Implications",
       "key_drivers": [
-        "Scorpio Tankers: Capital Returns Could Accelerate As Rates Stay Elevated",
-        "Qualcomm: The Coiled Spring Of The AI Semiconductor Market",
-        "Oil prices are lower as market monitors tanker traffic through Strait of Hormuz",
-        "U.S. issues sweeping Iran oil sanctions waivers, unlocking billions in revenue for Tehran"
+        "U.S. Oil Production Outlook And Midstream Implications",
+        "Want to diversify a bit away from the AI theme? Try Evercore ISI's 'negative beta' stocks",
+        "U.S. issues sweeping Iran oil sanctions waivers, unlocking billions in revenue for Tehran",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "NKE",
-        "CL=F",
+        "XOM",
         "BAC",
-        "LLY"
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 9,
-      "primary_driver": "Meta announces new smart glasses starting at $299, as Zuckerberg keeps pushing wearables",
+      "story_count": 8,
+      "primary_driver": "Best jumbo CD rates for July 2026: Earn up to 4.10% APY",
       "key_drivers": [
-        "Meta announces new smart glasses starting at $299, as Zuckerberg keeps pushing wearables",
-        "'I like their money': Trump threatens lawsuits against ABC for reporting on Reflecting Pool",
-        "Stock investors expect the Fed to save them. But no ‘Warsh put’ is coming.",
-        "8-K - SANGAMO THERAPEUTICS, INC (0001001233) (Filer)"
+        "Best jumbo CD rates for July 2026: Earn up to 4.10% APY",
+        "Inside Kevin Warsh's selection process for the next Atlanta Fed president",
+        "8-K - Federal Home Loan Bank of Boston (0001331463) (Filer)",
+        "8-K - Federal Home Loan Bank of Atlanta (0001331465) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "META",
-        "AMZN",
-        "COST",
-        "GS"
+        "META"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 17,
-      "primary_driver": "Stocks tumble on global chip rout with Nasdaq off 2% led by Micron: Live updates",
+      "story_count": 15,
+      "primary_driver": "Strait of Hormuz evacuation plan to begin for ships stranded in Persian Gulf, maritime organization ",
       "key_drivers": [
-        "Stocks tumble on global chip rout with Nasdaq off 2% led by Micron: Live updates",
-        "The Chip Rally Isn't Over: Here Are My 3 Top Picks",
-        "One factor may keep chip stocks on a roller coaster for foreseeable future",
-        "8-K - LCI INDUSTRIES (0000763744) (Filer)"
+        "Strait of Hormuz evacuation plan to begin for ships stranded in Persian Gulf, maritime organization says",
+        "S&P 500 falls on global chip rout with Nasdaq off more than 1%, led by Micron: Live updates",
+        "8-K - All In FutureTech Alliance, Inc. (0001708341) (Filer)",
+        "SpaceX could remain under pressure as more insiders gain permission to sell. Here are the key dates"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,20 +70,21 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "BAC",
         "SPY",
-        "LLY",
-        "AMZN",
-        "BAC"
+        "XOM",
+        "META"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
+      "story_count": 2,
+      "primary_driver": "Trump administration to loan $17 billion to speed deployment of 10 big nuclear reactors in U.S.",
       "key_drivers": [
-        "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military"
+        "Trump administration to loan $17 billion to speed deployment of 10 big nuclear reactors in U.S.",
+        "Factory job cuts in June neared financial crisis and Covid levels, S&P says"
       ],
       "key_tickers": [
         "GE",
@@ -105,9 +103,9 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "AI groups spend $20 million going head-to-head in New York race pitting Bores, Lasher, Schlossberg",
+      "primary_driver": "AI PACs pour $20 million into New York Democratic primary in AI regulation battle",
       "key_drivers": [
-        "AI groups spend $20 million going head-to-head in New York race pitting Bores, Lasher, Schlossberg",
+        "AI PACs pour $20 million into New York Democratic primary in AI regulation battle",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -126,10 +124,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Novo Nordisk: The Selloff Looks Like A Gift, And I'm Buying",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Novo Nordisk: The Selloff Looks Like A Gift, And I'm Buying"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -139,6 +137,7 @@
         "VRTX"
       ],
       "trending_tickers": [
+        "LLY",
         "NVO"
       ]
     },
@@ -147,12 +146,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 9,
-      "primary_driver": "Micron Earnings Preview: Will $1T Hold Its First Test?",
+      "primary_driver": "The Start Of A Semi-Rotation? Then Buy DPG",
       "key_drivers": [
-        "Micron Earnings Preview: Will $1T Hold Its First Test?",
-        "8-K - Carnival Corp Ltd. (0000815097) (Filer)",
-        "8-K - Kimbell Royalty Partners, LP (0001657788) (Filer)",
-        "GOF: 19-Year 20% Monthly Dividend Streak Is Under Threat"
+        "The Start Of A Semi-Rotation? Then Buy DPG",
+        "USA Rare Earth, Inc. (USAR) Presents at J.P. Morgan Natural Resources Conference 2026 Transcript",
+        "Taysha Gene Therapies, Inc. (TSHA) Discusses Longer-Term Clinical Data and Program Update for TSHA-102 in Rett Syndrome ",
+        "Inside Kevin Warsh's selection process for the next Atlanta Fed president"
       ],
       "key_tickers": [
         "TLT",
