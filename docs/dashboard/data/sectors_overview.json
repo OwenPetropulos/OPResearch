@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Positive",
-      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 5,
-      "primary_driver": "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 6,
+      "primary_driver": "Scorpio Tankers: Capital Returns Could Accelerate As Rates Stay Elevated",
       "key_drivers": [
-        "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
-        "A 40% market crash is lurking in the IPO pipeline. SpaceX and OpenAI could trigger it.",
-        "Treasury Department authorizes Iranian oil sales through August",
-        "Shipping stalls in Strait of Hormuz after Iran declares key waterway closed again"
+        "Scorpio Tankers: Capital Returns Could Accelerate As Rates Stay Elevated",
+        "Qualcomm: The Coiled Spring Of The AI Semiconductor Market",
+        "Oil prices are lower as market monitors tanker traffic through Strait of Hormuz",
+        "U.S. issues sweeping Iran oil sanctions waivers, unlocking billions in revenue for Tehran"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "NKE",
-        "RIG",
-        "LLY",
-        "SPY"
+        "CL=F",
+        "BAC",
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 9,
-      "primary_driver": "Senate advances housing bill to limit private equity purchases of single-family homes",
+      "primary_driver": "Meta announces new smart glasses starting at $299, as Zuckerberg keeps pushing wearables",
       "key_drivers": [
-        "Senate advances housing bill to limit private equity purchases of single-family homes",
-        "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
-        "Tesla faces federal probe after Model 3 slams into Texas home, killing 76-year-old",
-        "Baldwin Insurance: Go-Private Rumors Appear Credible"
+        "Meta announces new smart glasses starting at $299, as Zuckerberg keeps pushing wearables",
+        "'I like their money': Trump threatens lawsuits against ABC for reporting on Reflecting Pool",
+        "Stock investors expect the Fed to save them. But no ‘Warsh put’ is coming.",
+        "8-K - SANGAMO THERAPEUTICS, INC (0001001233) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "LLY",
-        "TGT"
+        "META",
+        "AMZN",
+        "COST",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 14,
-      "primary_driver": "Senate advances housing bill to limit private equity purchases of single-family homes",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 17,
+      "primary_driver": "Stocks tumble on global chip rout with Nasdaq off 2% led by Micron: Live updates",
       "key_drivers": [
-        "Senate advances housing bill to limit private equity purchases of single-family homes",
-        "Fair Isaac Corporation: A Flawless Moat, But The 35x PE Leaves Little Margin For Error",
-        "Big Tech has split into two artificial-intelligence camps — but the smart money isn’t chasing the next OpenAI",
-        "CoreWeave's Liquidity Shock Meets AI Scale"
+        "Stocks tumble on global chip rout with Nasdaq off 2% led by Micron: Live updates",
+        "The Chip Rally Isn't Over: Here Are My 3 Top Picks",
+        "One factor may keep chip stocks on a roller coaster for foreseeable future",
+        "8-K - LCI INDUSTRIES (0000763744) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,23 +73,20 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "SPY",
         "LLY",
-        "MSFT",
-        "GOOGL",
-        "RIG"
+        "AMZN",
+        "BAC"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Positive",
-      "tone": "Industrials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 4,
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
       "primary_driver": "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
       "key_drivers": [
-        "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military",
-        "Play defense with these dividend payers that consistently buy back their own shares, says Wolfe Research",
-        "Caterpillar’s stock hits a milestone as AI-fueled industrials rally sweeps up Wall Street",
-        "UPS to invest $48 million in temperature-controlled facilities amid healthcare boom"
+        "'We'll see' — Trump hedges on guarantee Iran won't use oil profits to rebuild military"
       ],
       "key_tickers": [
         "GE",
@@ -97,21 +96,19 @@
         "HON"
       ],
       "trending_tickers": [
-        "BAC",
-        "LLY"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Senate advances housing bill to limit private equity purchases of single-family homes",
+      "story_count": 2,
+      "primary_driver": "AI groups spend $20 million going head-to-head in New York race pitting Bores, Lasher, Schlossberg",
       "key_drivers": [
-        "Senate advances housing bill to limit private equity purchases of single-family homes",
-        "China’s weird new economic spark: toy elves and robocops",
-        "Nike Q4 Preview: The Better-Than-Feared Value Opportunity",
-        "Wall Street was once uber bullish on gold. Now it's changing its tune"
+        "AI groups spend $20 million going head-to-head in New York race pitting Bores, Lasher, Schlossberg",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -122,17 +119,17 @@
       ],
       "trending_tickers": [
         "NKE",
-        "TGT"
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 1,
+      "primary_driver": "Novo Nordisk: The Selloff Looks Like A Gift, And I'm Buying",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "Novo Nordisk: The Selloff Looks Like A Gift, And I'm Buying"
       ],
       "key_tickers": [
         "LLY",
@@ -142,21 +139,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
         "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 8,
-      "primary_driver": "SpaceX: I See 50% Downside, Even With Cursor",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "Micron Earnings Preview: Will $1T Hold Its First Test?",
       "key_drivers": [
-        "SpaceX: I See 50% Downside, Even With Cursor",
-        "Connectivity Is Marvell's Hidden Growth Engine Today",
-        "Wall Street loves growth stocks — but these 10 ‘losers’ are primed to win",
-        "BITX: Beware The Leveraged Bitcoin ETFs"
+        "Micron Earnings Preview: Will $1T Hold Its First Test?",
+        "8-K - Carnival Corp Ltd. (0000815097) (Filer)",
+        "8-K - Kimbell Royalty Partners, LP (0001657788) (Filer)",
+        "GOF: 19-Year 20% Monthly Dividend Streak Is Under Threat"
       ],
       "key_tickers": [
         "TLT",
