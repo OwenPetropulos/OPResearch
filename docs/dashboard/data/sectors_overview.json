@@ -5,10 +5,10 @@
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "U.S. Oil Production Outlook And Midstream Implications",
+      "primary_driver": "Murphy Oil Corporation (MUR) Presents at J.P. Morgan Natural Resources Conference 2026 Transcript",
       "key_drivers": [
-        "U.S. Oil Production Outlook And Midstream Implications",
-        "Want to diversify a bit away from the AI theme? Try Evercore ISI's 'negative beta' stocks",
+        "Murphy Oil Corporation (MUR) Presents at J.P. Morgan Natural Resources Conference 2026 Transcript",
+        "8-K - Pioneer Acquisition I Corp (0002040381) (Filer)",
         "U.S. issues sweeping Iran oil sanctions waivers, unlocking billions in revenue for Tehran",
         "Sunday Night Futures"
       ],
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "XOM",
         "BAC",
         "LLY",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Best jumbo CD rates for July 2026: Earn up to 4.10% APY",
+      "primary_driver": "FedEx posts strong earnings results in last quarter with freight business",
       "key_drivers": [
-        "Best jumbo CD rates for July 2026: Earn up to 4.10% APY",
-        "Inside Kevin Warsh's selection process for the next Atlanta Fed president",
-        "8-K - Federal Home Loan Bank of Boston (0001331463) (Filer)",
-        "8-K - Federal Home Loan Bank of Atlanta (0001331465) (Filer)"
+        "FedEx posts strong earnings results in last quarter with freight business",
+        "House expected to pass affordable housing bill, send it to Trump's desk",
+        "Netflix Looks Like An Incredible Deal Right Now",
+        "South Korea's stock market just had one of its worst days ever. Why Morgan Stanley says it's not breaking down"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "META"
+        "RIG",
+        "COST",
+        "MS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 15,
-      "primary_driver": "Strait of Hormuz evacuation plan to begin for ships stranded in Persian Gulf, maritime organization ",
+      "story_count": 13,
+      "primary_driver": "Cerebras falls 10% after chipmaker forecasts shrinking margin in first earnings report since IPO",
       "key_drivers": [
-        "Strait of Hormuz evacuation plan to begin for ships stranded in Persian Gulf, maritime organization says",
-        "S&P 500 falls on global chip rout with Nasdaq off more than 1%, led by Micron: Live updates",
-        "8-K - All In FutureTech Alliance, Inc. (0001708341) (Filer)",
-        "SpaceX could remain under pressure as more insiders gain permission to sell. Here are the key dates"
+        "Cerebras falls 10% after chipmaker forecasts shrinking margin in first earnings report since IPO",
+        "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security now or wait?",
+        "Ichor Holdings: Need To See Growth Patterns Sustained",
+        "Alphabet’s stock is set to join the Dow. Here’s which company is getting the boot."
       ],
       "key_tickers": [
         "NVDA",
@@ -70,20 +72,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "BAC",
-        "SPY",
-        "XOM",
-        "META"
+        "RIG",
+        "GOOGL",
+        "COST",
+        "BAC"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Trump administration to loan $17 billion to speed deployment of 10 big nuclear reactors in U.S.",
+      "story_count": 3,
+      "primary_driver": "FedEx posts strong earnings results in last quarter with freight business",
       "key_drivers": [
-        "Trump administration to loan $17 billion to speed deployment of 10 big nuclear reactors in U.S.",
+        "FedEx posts strong earnings results in last quarter with freight business",
+        "Zeta Global Holdings Corp. (ZETA) Discusses Strategic Partnership With Palantir and Pivot to AI Infrastructure Transcrip",
         "Factory job cuts in June neared financial crisis and Covid levels, S&P says"
       ],
       "key_tickers": [
@@ -102,10 +105,11 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "AI PACs pour $20 million into New York Democratic primary in AI regulation battle",
+      "story_count": 3,
+      "primary_driver": "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security n",
       "key_drivers": [
-        "AI PACs pour $20 million into New York Democratic primary in AI regulation battle",
+        "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security now or wait?",
+        "House expected to pass affordable housing bill, send it to Trump's desk",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -116,18 +120,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "RIG",
+        "COST"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "8-K - ENANTA PHARMACEUTICALS INC (0001177648) (Filer)",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "8-K - ENANTA PHARMACEUTICALS INC (0001177648) (Filer)",
+        "8-K - CATALYST PHARMACEUTICALS, INC. (0001369568) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -145,13 +150,13 @@
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "The Start Of A Semi-Rotation? Then Buy DPG",
+      "story_count": 8,
+      "primary_driver": "ACCESS Newswire Inc. (ACCS) Presents at IAccess Alpha Virtual Best Ideas Summer Investment Conferenc",
       "key_drivers": [
-        "The Start Of A Semi-Rotation? Then Buy DPG",
-        "USA Rare Earth, Inc. (USAR) Presents at J.P. Morgan Natural Resources Conference 2026 Transcript",
-        "Taysha Gene Therapies, Inc. (TSHA) Discusses Longer-Term Clinical Data and Program Update for TSHA-102 in Rett Syndrome ",
-        "Inside Kevin Warsh's selection process for the next Atlanta Fed president"
+        "ACCESS Newswire Inc. (ACCS) Presents at IAccess Alpha Virtual Best Ideas Summer Investment Conference 2026 Transcript",
+        "Alphabet added to Dow Jones Industrial Average, replacing Verizon",
+        "Trump Media: The Trump Premium Is Fading",
+        "SoFi: Market Still Misunderstanding Its Flywheel"
       ],
       "key_tickers": [
         "TLT",
@@ -161,8 +166,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "GOOGL",
+        "COST"
       ]
     }
   ]
