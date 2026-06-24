@@ -4,12 +4,10 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Murphy Oil Corporation (MUR) Presents at J.P. Morgan Natural Resources Conference 2026 Transcript",
+      "story_count": 2,
+      "primary_driver": "Treasury Secretary Bessent says U.S. GDP growth can return to 3% before end of the year",
       "key_drivers": [
-        "Murphy Oil Corporation (MUR) Presents at J.P. Morgan Natural Resources Conference 2026 Transcript",
-        "8-K - Pioneer Acquisition I Corp (0002040381) (Filer)",
-        "U.S. issues sweeping Iran oil sanctions waivers, unlocking billions in revenue for Tehran",
+        "Treasury Secretary Bessent says U.S. GDP growth can return to 3% before end of the year",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -20,7 +18,6 @@
         "RIG"
       ],
       "trending_tickers": [
-        "BAC",
         "LLY",
         "SPY",
         "CL=F"
@@ -28,15 +25,15 @@
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "FedEx posts strong earnings results in last quarter with freight business",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "story_count": 9,
+      "primary_driver": "Goldman Sachs Tactical Tilt Overlay Fund Q1 2026 Commentary",
       "key_drivers": [
-        "FedEx posts strong earnings results in last quarter with freight business",
-        "House expected to pass affordable housing bill, send it to Trump's desk",
-        "Netflix Looks Like An Incredible Deal Right Now",
-        "South Korea's stock market just had one of its worst days ever. Why Morgan Stanley says it's not breaking down"
+        "Goldman Sachs Tactical Tilt Overlay Fund Q1 2026 Commentary",
+        "Treasury Secretary Bessent says U.S. GDP growth can return to 3% before end of the year",
+        "Suncrete: Local Scale Can Make Ready-Mix More Valuable Than It Looks",
+        "Defense stocks plummet on reports Germany is scrapping warships; Rheinmetall stock down 17%"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +43,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "RIG",
         "COST",
-        "MS"
+        "GS",
+        "META",
+        "RIG"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
       "story_count": 13,
-      "primary_driver": "Cerebras falls 10% after chipmaker forecasts shrinking margin in first earnings report since IPO",
+      "primary_driver": "OpenAI unveils first chip as part of Broadcom deal in effort to 'build the full stack'",
       "key_drivers": [
-        "Cerebras falls 10% after chipmaker forecasts shrinking margin in first earnings report since IPO",
-        "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security now or wait?",
-        "Ichor Holdings: Need To See Growth Patterns Sustained",
-        "Alphabet’s stock is set to join the Dow. Here’s which company is getting the boot."
+        "OpenAI unveils first chip as part of Broadcom deal in effort to 'build the full stack'",
+        "‘Grand Theft Auto VI' is still on track for 2026 release. Buy its owner's stock, BTIG says",
+        "Global Bonds Stumble As Surging U.S. Dollar Piles On The Pain",
+        "Dollar Extends Gains Without Support Of Higher Rates"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,10 +70,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "RIG",
-        "GOOGL",
         "COST",
-        "BAC"
+        "META",
+        "RIG",
+        "LLY"
       ]
     },
     {
@@ -83,11 +81,11 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 3,
-      "primary_driver": "FedEx posts strong earnings results in last quarter with freight business",
+      "primary_driver": "Defense stocks plummet on reports Germany is scrapping warships; Rheinmetall stock down 17%",
       "key_drivers": [
-        "FedEx posts strong earnings results in last quarter with freight business",
-        "Zeta Global Holdings Corp. (ZETA) Discusses Strategic Partnership With Palantir and Pivot to AI Infrastructure Transcrip",
-        "Factory job cuts in June neared financial crisis and Covid levels, S&P says"
+        "Defense stocks plummet on reports Germany is scrapping warships; Rheinmetall stock down 17%",
+        "BlockchAIn Digital Infrastructure: Priced For AI, Powered By Crypto",
+        "Tankmaker KNDS lays out IPO plans amid defense selloff in Europe"
       ],
       "key_tickers": [
         "GE",
@@ -97,20 +95,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "META",
+        "RIG"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security n",
+      "story_count": 6,
+      "primary_driver": "Verastem, Inc. (VSTM) Discusses Preliminary TARGET-D 101 Data for VS-7375 in KRAS G12D Mutated Cance",
       "key_drivers": [
-        "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security now or wait?",
-        "House expected to pass affordable housing bill, send it to Trump's desk",
-        "1st Look at Local Housing Markets in December"
+        "Verastem, Inc. (VSTM) Discusses Preliminary TARGET-D 101 Data for VS-7375 in KRAS G12D Mutated Cancers - Slideshow",
+        "Ross Stores Is Changing The Retail Growth Playbook",
+        "Wendy's stock soars as meme traders target another turnaround play",
+        "Tesla and Waymo are chasing the robotaxi dream — but the company spending the most to win builds no cars at all"
       ],
       "key_tickers": [
         "NKE",
@@ -120,7 +119,7 @@
         "ONON"
       ],
       "trending_tickers": [
-        "RIG",
+        "TGT",
         "COST"
       ]
     },
@@ -128,11 +127,13 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "8-K - ENANTA PHARMACEUTICALS INC (0001177648) (Filer)",
+      "story_count": 4,
+      "primary_driver": "Verastem, Inc. (VSTM) Discusses Preliminary TARGET-D 101 Data for VS-7375 in KRAS G12D Mutated Cance",
       "key_drivers": [
-        "8-K - ENANTA PHARMACEUTICALS INC (0001177648) (Filer)",
-        "8-K - CATALYST PHARMACEUTICALS, INC. (0001369568) (Filer)"
+        "Verastem, Inc. (VSTM) Discusses Preliminary TARGET-D 101 Data for VS-7375 in KRAS G12D Mutated Cancers - Slideshow",
+        "Takeda Pharmaceutical Company Limited (TAK) Shareholder/Analyst Call - Slideshow",
+        "I had my gallbladder removed. After I got home, the hospital asked me for a donation. Is this ethical?",
+        "This disease is more expensive than cancer and heart disease combined. And it’s only going to get worse."
       ],
       "key_tickers": [
         "LLY",
@@ -142,21 +143,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "TGT"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "ACCESS Newswire Inc. (ACCS) Presents at IAccess Alpha Virtual Best Ideas Summer Investment Conferenc",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 13,
+      "primary_driver": "Japan Needs More Than Foreign Currency Intervention",
       "key_drivers": [
-        "ACCESS Newswire Inc. (ACCS) Presents at IAccess Alpha Virtual Best Ideas Summer Investment Conference 2026 Transcript",
-        "Alphabet added to Dow Jones Industrial Average, replacing Verizon",
-        "Trump Media: The Trump Premium Is Fading",
-        "SoFi: Market Still Misunderstanding Its Flywheel"
+        "Japan Needs More Than Foreign Currency Intervention",
+        "SiteOne Landscape Supply, Inc. (SITE) Analyst/Investor Day - Slideshow",
+        "Carnival Corporation Ltd. 2026 Q2 - Results - Earnings Call Presentation",
+        "Pulsar Helium: A Quantum Supplier De-Risked And Revalued"
       ],
       "key_tickers": [
         "TLT",
@@ -166,8 +166,10 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GOOGL",
-        "COST"
+        "LLY",
+        "SPY",
+        "META",
+        "RIG"
       ]
     }
   ]
