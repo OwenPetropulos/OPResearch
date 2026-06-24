@@ -2,13 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Treasury Secretary Bessent says U.S. GDP growth can return to 3% before end of the year",
+      "sentiment": "Negative",
+      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 8,
+      "primary_driver": "S&P 500 moves lower as oil slides, Micron falls ahead of earnings: Live updates",
       "key_drivers": [
-        "Treasury Secretary Bessent says U.S. GDP growth can return to 3% before end of the year",
-        "Sunday Night Futures"
+        "S&P 500 moves lower as oil slides, Micron falls ahead of earnings: Live updates",
+        "Why GPZ Falls Short As A Private Equity Proxy",
+        "Topaz Energy: The Best Oil Company Canada Has To Offer",
+        "Oil tankers with 35 million barrels stuck in Persian Gulf exited Strait of Hormuz since Iran deal"
       ],
       "key_tickers": [
         "XOM",
@@ -18,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "LLY",
+        "CL=F",
         "SPY",
-        "CL=F"
+        "OXY",
+        "NKE"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Positive",
       "tone": "Financials outlook constructive. Recent developments support near-term strength.",
-      "story_count": 9,
-      "primary_driver": "Goldman Sachs Tactical Tilt Overlay Fund Q1 2026 Commentary",
+      "story_count": 10,
+      "primary_driver": "FedEx Q4: The Pivot You Can't See On The Income Statement",
       "key_drivers": [
-        "Goldman Sachs Tactical Tilt Overlay Fund Q1 2026 Commentary",
-        "Treasury Secretary Bessent says U.S. GDP growth can return to 3% before end of the year",
-        "Suncrete: Local Scale Can Make Ready-Mix More Valuable Than It Looks",
-        "Defense stocks plummet on reports Germany is scrapping warships; Rheinmetall stock down 17%"
+        "FedEx Q4: The Pivot You Can't See On The Income Statement",
+        "This life sciences stock has a secret weapon, and AI will only make it more valuable",
+        "Trump cancels signing of bipartisan housing bill, demanding voter ID provision",
+        "Why GPZ Falls Short As A Private Equity Proxy"
       ],
       "key_tickers": [
         "JPM",
@@ -43,23 +46,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "COST",
-        "GS",
-        "META",
-        "RIG"
+        "OXY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "OpenAI unveils first chip as part of Broadcom deal in effort to 'build the full stack'",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 15,
+      "primary_driver": "This life sciences stock has a secret weapon, and AI will only make it more valuable",
       "key_drivers": [
-        "OpenAI unveils first chip as part of Broadcom deal in effort to 'build the full stack'",
-        "‘Grand Theft Auto VI' is still on track for 2026 release. Buy its owner's stock, BTIG says",
-        "Global Bonds Stumble As Surging U.S. Dollar Piles On The Pain",
-        "Dollar Extends Gains Without Support Of Higher Rates"
+        "This life sciences stock has a secret weapon, and AI will only make it more valuable",
+        "DFEN: An Indispensable Leverage Tool For An Uncertain Political Climate",
+        "Trump cancels signing of bipartisan housing bill, demanding voter ID provision",
+        "Traders are getting worried the chip stock bull market is cracking. How to protect yourself"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,22 +70,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "COST",
-        "META",
-        "RIG",
-        "LLY"
+        "TGT",
+        "LLY",
+        "NKE",
+        "AMZN"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Defense stocks plummet on reports Germany is scrapping warships; Rheinmetall stock down 17%",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Defense stocks plummet on reports Germany is scrapping warships; Rheinmetall stock down 17%",
-        "BlockchAIn Digital Infrastructure: Priced For AI, Powered By Crypto",
-        "Tankmaker KNDS lays out IPO plans amid defense selloff in Europe"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -95,21 +93,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "META",
-        "RIG"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
       "story_count": 6,
-      "primary_driver": "Verastem, Inc. (VSTM) Discusses Preliminary TARGET-D 101 Data for VS-7375 in KRAS G12D Mutated Cance",
+      "primary_driver": "Kering: Ambitious Long-Term Targets, But Recovery Still Needs To Be Proven",
       "key_drivers": [
-        "Verastem, Inc. (VSTM) Discusses Preliminary TARGET-D 101 Data for VS-7375 in KRAS G12D Mutated Cancers - Slideshow",
-        "Ross Stores Is Changing The Retail Growth Playbook",
-        "Wendy's stock soars as meme traders target another turnaround play",
-        "Tesla and Waymo are chasing the robotaxi dream — but the company spending the most to win builds no cars at all"
+        "Kering: Ambitious Long-Term Targets, But Recovery Still Needs To Be Proven",
+        "Trump cancels signing of bipartisan housing bill, demanding voter ID provision",
+        "Slate Auto says $24,950 electric truck will be profitable; targets positive cash flow next year",
+        "Micron earnings are set to send the market on a wild ride — and a new ETF may add to the volatility"
       ],
       "key_tickers": [
         "NKE",
@@ -120,20 +118,17 @@
       ],
       "trending_tickers": [
         "TGT",
-        "COST"
+        "LLY"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Verastem, Inc. (VSTM) Discusses Preliminary TARGET-D 101 Data for VS-7375 in KRAS G12D Mutated Cance",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Verastem, Inc. (VSTM) Discusses Preliminary TARGET-D 101 Data for VS-7375 in KRAS G12D Mutated Cancers - Slideshow",
-        "Takeda Pharmaceutical Company Limited (TAK) Shareholder/Analyst Call - Slideshow",
-        "I had my gallbladder removed. After I got home, the hospital asked me for a donation. Is this ethical?",
-        "This disease is more expensive than cancer and heart disease combined. And it’s only going to get worse."
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -143,20 +138,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "TGT"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Positive",
       "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "Japan Needs More Than Foreign Currency Intervention",
+      "story_count": 10,
+      "primary_driver": "PDI: A Rare Chance To Buy Near Net Asset Value",
       "key_drivers": [
-        "Japan Needs More Than Foreign Currency Intervention",
-        "SiteOne Landscape Supply, Inc. (SITE) Analyst/Investor Day - Slideshow",
-        "Carnival Corporation Ltd. 2026 Q2 - Results - Earnings Call Presentation",
-        "Pulsar Helium: A Quantum Supplier De-Risked And Revalued"
+        "PDI: A Rare Chance To Buy Near Net Asset Value",
+        "ICON Public Limited Company (ICLR) Q1 2026 Earnings Call Transcript",
+        "Northern Ultra-Short Fixed Income Fund Q1 2026 Commentary",
+        "Volatility Is Taking A Breather Ahead Of Micron Earnings"
       ],
       "key_tickers": [
         "TLT",
@@ -166,10 +162,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY",
-        "SPY",
-        "META",
-        "RIG"
+        "GLD",
+        "DXY"
       ]
     }
   ]
