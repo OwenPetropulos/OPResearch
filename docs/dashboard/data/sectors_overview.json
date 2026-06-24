@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Negative",
       "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 8,
-      "primary_driver": "S&P 500 moves lower as oil slides, Micron falls ahead of earnings: Live updates",
+      "story_count": 7,
+      "primary_driver": "BioAge Labs: Developing A 'Pipeline In A Pill'",
       "key_drivers": [
-        "S&P 500 moves lower as oil slides, Micron falls ahead of earnings: Live updates",
-        "Why GPZ Falls Short As A Private Equity Proxy",
-        "Topaz Energy: The Best Oil Company Canada Has To Offer",
-        "Oil tankers with 35 million barrels stuck in Persian Gulf exited Strait of Hormuz since Iran deal"
+        "BioAge Labs: Developing A 'Pipeline In A Pill'",
+        "Absci: Eli Lilly Backs Alopecia Data With Funding, But Risks Remain",
+        "Energy secretary says U.S. has ended Iran's ability to close Strait of Hormuz",
+        "U.S. crude oil briefly dips below $70 as tankers transit Strait of Hormuz"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "SPY",
-        "OXY",
-        "NKE"
+        "LLY",
+        "BAC",
+        "RIG"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 10,
-      "primary_driver": "FedEx Q4: The Pivot You Can't See On The Income Statement",
+      "primary_driver": "JPMorgan Chase unveils $50 billion buyback, Goldman Sachs raises dividend after Fed stress test",
       "key_drivers": [
-        "FedEx Q4: The Pivot You Can't See On The Income Statement",
-        "This life sciences stock has a secret weapon, and AI will only make it more valuable",
-        "Trump cancels signing of bipartisan housing bill, demanding voter ID provision",
-        "Why GPZ Falls Short As A Private Equity Proxy"
+        "JPMorgan Chase unveils $50 billion buyback, Goldman Sachs raises dividend after Fed stress test",
+        "Did the Trump White House just give Warsh the green light to hike interest rates? This analyst thinks so.",
+        "Federal Reserve says U.S. banks can withstand $708 billion in losses amid overhaul of capital rules",
+        "Credit Bureaus Remain Powerful, But TransUnion Offers The Better Setup Over Equifax"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "OXY"
+        "JPM",
+        "GS",
+        "BAC",
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 15,
-      "primary_driver": "This life sciences stock has a secret weapon, and AI will only make it more valuable",
+      "primary_driver": "Trump meets defense CEOs as Iran operations strain U.S. missile stockpiles",
       "key_drivers": [
-        "This life sciences stock has a secret weapon, and AI will only make it more valuable",
-        "DFEN: An Indispensable Leverage Tool For An Uncertain Political Climate",
-        "Trump cancels signing of bipartisan housing bill, demanding voter ID provision",
-        "Traders are getting worried the chip stock bull market is cracking. How to protect yourself"
+        "Trump meets defense CEOs as Iran operations strain U.S. missile stockpiles",
+        "Qualcomm’s stock is soaring as these big numbers excite Wall Street",
+        "Cerebras’s stock sinks below IPO price in a major blow to early investors",
+        "White House requests $87.6 billion supplemental spending for Iran war, farm aid"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,20 +73,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "TGT",
+        "BAC",
         "LLY",
-        "NKE",
-        "AMZN"
+        "CL=F",
+        "META"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Neutral",
-      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "sentiment": "Negative",
+      "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 2,
+      "primary_driver": "Trump meets defense CEOs as Iran operations strain U.S. missile stockpiles",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "Trump meets defense CEOs as Iran operations strain U.S. missile stockpiles",
+        "Trump cancels signing of bipartisan housing bill ahead of tense meeting with GOP senators"
       ],
       "key_tickers": [
         "GE",
@@ -99,15 +103,15 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Positive",
-      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 6,
-      "primary_driver": "Kering: Ambitious Long-Term Targets, But Recovery Still Needs To Be Proven",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 4,
+      "primary_driver": "Qualcomm’s stock is soaring as these big numbers excite Wall Street",
       "key_drivers": [
-        "Kering: Ambitious Long-Term Targets, But Recovery Still Needs To Be Proven",
-        "Trump cancels signing of bipartisan housing bill, demanding voter ID provision",
-        "Slate Auto says $24,950 electric truck will be profitable; targets positive cash flow next year",
-        "Micron earnings are set to send the market on a wild ride — and a new ETF may add to the volatility"
+        "Qualcomm’s stock is soaring as these big numbers excite Wall Street",
+        "White House requests $87.6 billion supplemental spending for Iran war, farm aid",
+        "Trump cancels signing of bipartisan housing bill ahead of tense meeting with GOP senators",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -117,18 +121,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "LLY"
+        "META",
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "Design Therapeutics: FA Early Data And FDA Discussions Are Promising Catalysts",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "Design Therapeutics: FA Early Data And FDA Discussions Are Promising Catalysts",
+        "Absci: Eli Lilly Backs Alopecia Data With Funding, But Risks Remain"
       ],
       "key_tickers": [
         "LLY",
@@ -138,21 +143,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "BAC",
+        "LLY"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 10,
-      "primary_driver": "PDI: A Rare Chance To Buy Near Net Asset Value",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 11,
+      "primary_driver": "Digital Turbine Stock: Cheap For A Reason",
       "key_drivers": [
-        "PDI: A Rare Chance To Buy Near Net Asset Value",
-        "ICON Public Limited Company (ICLR) Q1 2026 Earnings Call Transcript",
-        "Northern Ultra-Short Fixed Income Fund Q1 2026 Commentary",
-        "Volatility Is Taking A Breather Ahead Of Micron Earnings"
+        "Digital Turbine Stock: Cheap For A Reason",
+        "EWS: The Case For The Asian Tiger, But A Hold For Now",
+        "AT&T: SpaceX May Eat Its Lunch",
+        "Axon Enterprise, Inc. (AXON) Discusses Public Safety Innovation and Customer Perspectives in Webinar Panel Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -162,8 +167,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "JPM",
+        "GS",
+        "BAC"
       ]
     }
   ]
