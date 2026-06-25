@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Negative",
       "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 7,
-      "primary_driver": "U.S. inflation tops 4%, but tumbling oil prices to bring price relief soon",
+      "story_count": 4,
+      "primary_driver": "Iran tightens its grip on Strait of Hormuz, sending oil prices higher",
       "key_drivers": [
-        "U.S. inflation tops 4%, but tumbling oil prices to bring price relief soon",
-        "Hormuz Is Reopening, Oil Might Be Done Falling",
+        "Iran tightens its grip on Strait of Hormuz, sending oil prices higher",
         "Chevron says no quick fix for gas prices as Trump takes on Big Oil: ‘It’s going to take time’",
-        "Iraq piles pressure on OPEC over quota dispute after UAE exit"
+        "Iraq piles pressure on OPEC over quota dispute after UAE exit",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -31,12 +31,12 @@
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "JPMorgan names Doug Petno and Troy Rohrbaugh co-presidents as longtime exec Marianne Lake exits",
+      "primary_driver": "Microsoft lifts price of Xbox consoles due to soaring component costs",
       "key_drivers": [
-        "JPMorgan names Doug Petno and Troy Rohrbaugh co-presidents as longtime exec Marianne Lake exits",
-        "Alphabet's Dip Looks Increasingly Hard To Ignore",
-        "Core inflation rate hit 3.4% in May, highest since October 2023, Fed’s preferred gauge shows",
-        "How much does debt settlement cost?"
+        "Microsoft lifts price of Xbox consoles due to soaring component costs",
+        "Boston Scientific's Fall From Penthouse To Doghouse Creates A Value Opportunity",
+        "Amateur investors are changing how the stock market works. That’s creating opportunities for those who know where to loo",
+        "USB.PR.H: Hedge Inflation And Interest Rate Risk With Floating Preferreds"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "GOOGL",
-        "LLY",
-        "COST"
+        "MSFT",
+        "AAPL",
+        "COST",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "Apple raises prices on MacBook and iPad due to memory crunch, hints at more to come",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 13,
+      "primary_driver": "2 BDCs Delivering Sustainable High Yield For The Long Term",
       "key_drivers": [
-        "Apple raises prices on MacBook and iPad due to memory crunch, hints at more to come",
-        "The world’s top-performing stock market still isn’t a developed market. Here’s why, according to the MSCI chief",
-        "This Week's Plunge In Chip Stocks Is More Ammo For Bulls",
-        "Meta: An Inconvenient Truth The Market Hasn't Priced In Before Q2"
+        "2 BDCs Delivering Sustainable High Yield For The Long Term",
+        "Judge says lawsuit against Trump DOJ 'anti-weaponization' fund will proceed",
+        "Microsoft lifts price of Xbox consoles due to soaring component costs",
+        "Chan Zuckerberg Initiative's Biohub to open new rare disease funding round"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,20 +73,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "META",
-        "SPY",
-        "AAPL",
-        "COST"
+        "LLY",
+        "CL=F",
+        "AMZN",
+        "RIG"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Europe’s defense stocks are sliding again. Here’s what’s worrying investors",
+      "story_count": 2,
+      "primary_driver": "A trading opportunity is emerging in this AI infrastructure play, charts show",
       "key_drivers": [
-        "Europe’s defense stocks are sliding again. Here’s what’s worrying investors"
+        "A trading opportunity is emerging in this AI infrastructure play, charts show",
+        "Alphabet: The Big Infrastructure Bet Defining The Future Of The Company"
       ],
       "key_tickers": [
         "GE",
@@ -96,20 +97,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "META"
+        "GOOGL"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Positive",
       "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 5,
-      "primary_driver": "Consumer spending rises again — and now cheaper gas is on the way",
+      "story_count": 7,
+      "primary_driver": "Microsoft lifts price of Xbox consoles due to soaring component costs",
       "key_drivers": [
-        "Consumer spending rises again — and now cheaper gas is on the way",
-        "I'm Seeing Catalysts For The Inevitable Housing Upturn: 4 ETF 'Buy' Ideas",
-        "Darden Restaurants earnings beat estimates but Olive Garden growth weakens",
-        "Builders FirstSource: Housing Recovery Will Be Gradual Even With Legislative Support"
+        "Microsoft lifts price of Xbox consoles due to soaring component costs",
+        "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare Bleeding Disorders -",
+        "Amateur investors are changing how the stock market works. That’s creating opportunities for those who know where to loo",
+        "Luxury spending now driven by experiences and 'inheritourism'"
       ],
       "key_tickers": [
         "NKE",
@@ -119,18 +120,21 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "MSFT",
+        "AAPL",
+        "COST",
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "I had gallbladder surgery. After I got home, the hospital asked me for a financial donation. Is this",
+      "story_count": 2,
+      "primary_driver": "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare ",
       "key_drivers": [
-        "I had gallbladder surgery. After I got home, the hospital asked me for a financial donation. Is this ethical?"
+        "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare Bleeding Disorders -",
+        "This disease is more expensive than cancer and heart disease combined. And it’s only going to get worse."
       ],
       "key_tickers": [
         "LLY",
@@ -140,21 +144,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "TGT"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 14,
-      "primary_driver": "Nextpower: The Platform Story Is Getting Better",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 10,
+      "primary_driver": "Valneva SE (VALN) Shareholder/Analyst Call Prepared Remarks Transcript",
       "key_drivers": [
-        "Nextpower: The Platform Story Is Getting Better",
-        "Core inflation rate hit 3.4% in May, highest since October 2023, Fed’s preferred gauge shows",
-        "Europe’s defense stocks are sliding again. Here’s what’s worrying investors",
-        "Consumer spending rises again — and now cheaper gas is on the way"
+        "Valneva SE (VALN) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "iAnthus Capital Holdings, Inc. (ITHUF) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "MSCI Inc. (MSCI) Discusses Strategic Priorities and Innovation in Private Assets Business Transcript",
+        "Worthington Steel, Inc. (WS) Q4 2026 Earnings Call Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -164,10 +167,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
-        "META",
-        "CL=F",
-        "LLY"
+        "QQQ",
+        "GS"
       ]
     }
   ]
