@@ -2,14 +2,12 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Negative",
-      "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 4,
-      "primary_driver": "Iran tightens its grip on Strait of Hormuz, sending oil prices higher",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 2,
+      "primary_driver": "Chevron says no quick fix for gas prices as Trump takes on Big Oil: ‘It’s going to take time’",
       "key_drivers": [
-        "Iran tightens its grip on Strait of Hormuz, sending oil prices higher",
         "Chevron says no quick fix for gas prices as Trump takes on Big Oil: ‘It’s going to take time’",
-        "Iraq piles pressure on OPEC over quota dispute after UAE exit",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -20,10 +18,10 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
         "CVX",
         "LLY",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
@@ -31,12 +29,12 @@
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "Microsoft lifts price of Xbox consoles due to soaring component costs",
+      "primary_driver": "Trump keeps turning Republican wins into loyalty tests — and political liabilities",
       "key_drivers": [
-        "Microsoft lifts price of Xbox consoles due to soaring component costs",
-        "Boston Scientific's Fall From Penthouse To Doghouse Creates A Value Opportunity",
-        "Amateur investors are changing how the stock market works. That’s creating opportunities for those who know where to loo",
-        "USB.PR.H: Hedge Inflation And Interest Rate Risk With Floating Preferreds"
+        "Trump keeps turning Republican wins into loyalty tests — and political liabilities",
+        "Small-caps are booming this year. Here are some of Wall Street's top smaller picks",
+        "Chicago Fed President Goolsbee says inflation is too high; Williams sees price pressures easing",
+        "Apple’s MacBooks and iPads are getting more expensive as the memory crunch deepens"
       ],
       "key_tickers": [
         "JPM",
@@ -46,23 +44,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "MSFT",
         "AAPL",
-        "COST",
-        "GS"
+        "BAC",
+        "MSFT",
+        "COST"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 13,
-      "primary_driver": "2 BDCs Delivering Sustainable High Yield For The Long Term",
+      "story_count": 12,
+      "primary_driver": "AIS: The AI Bottleneck Thesis Still Has Legs",
       "key_drivers": [
-        "2 BDCs Delivering Sustainable High Yield For The Long Term",
-        "Judge says lawsuit against Trump DOJ 'anti-weaponization' fund will proceed",
-        "Microsoft lifts price of Xbox consoles due to soaring component costs",
-        "Chan Zuckerberg Initiative's Biohub to open new rare disease funding round"
+        "AIS: The AI Bottleneck Thesis Still Has Legs",
+        "Elastic: The AI Story Is Not Enough",
+        "On Semiconductor strikes $7 billion deal for Synaptics in physical AI push",
+        "Healwell AI Inc. (AIDX:CA) Shareholder/Analyst Call Prepared Remarks Transcript"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,21 +71,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
-        "CL=F",
-        "AMZN",
-        "RIG"
+        "MSFT",
+        "AAPL",
+        "TGT",
+        "COST"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "A trading opportunity is emerging in this AI infrastructure play, charts show",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "A trading opportunity is emerging in this AI infrastructure play, charts show",
-        "Alphabet: The Big Infrastructure Bet Defining The Future Of The Company"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -97,20 +94,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "GOOGL"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Positive",
-      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 7,
-      "primary_driver": "Microsoft lifts price of Xbox consoles due to soaring component costs",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 6,
+      "primary_driver": "Trump keeps turning Republican wins into loyalty tests — and political liabilities",
       "key_drivers": [
-        "Microsoft lifts price of Xbox consoles due to soaring component costs",
-        "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare Bleeding Disorders -",
-        "Amateur investors are changing how the stock market works. That’s creating opportunities for those who know where to loo",
-        "Luxury spending now driven by experiences and 'inheritourism'"
+        "Trump keeps turning Republican wins into loyalty tests — and political liabilities",
+        "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare Bleeding Disorders T",
+        "Microsoft’s stock is suffering a historic June rout as investors balk at heavy spending",
+        "Microsoft lifts price of Xbox consoles due to soaring component costs"
       ],
       "key_tickers": [
         "NKE",
@@ -121,9 +119,9 @@
       ],
       "trending_tickers": [
         "MSFT",
+        "TGT",
         "AAPL",
-        "COST",
-        "TGT"
+        "COST"
       ]
     },
     {
@@ -133,8 +131,8 @@
       "story_count": 2,
       "primary_driver": "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare ",
       "key_drivers": [
-        "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare Bleeding Disorders -",
-        "This disease is more expensive than cancer and heart disease combined. And it’s only going to get worse."
+        "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare Bleeding Disorders T",
+        "Crinetics Pharmaceuticals: 'Buy' On Palsonify Market Expansion And Atumelnant Advancements"
       ],
       "key_tickers": [
         "LLY",
@@ -149,15 +147,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "Valneva SE (VALN) Shareholder/Analyst Call Prepared Remarks Transcript",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 9,
+      "primary_driver": "S&P 500 futures are little changed as index heads for losing week: Live updates",
       "key_drivers": [
-        "Valneva SE (VALN) Shareholder/Analyst Call Prepared Remarks Transcript",
-        "iAnthus Capital Holdings, Inc. (ITHUF) Shareholder/Analyst Call Prepared Remarks Transcript",
-        "MSCI Inc. (MSCI) Discusses Strategic Priorities and Innovation in Private Assets Business Transcript",
-        "Worthington Steel, Inc. (WS) Q4 2026 Earnings Call Transcript"
+        "S&P 500 futures are little changed as index heads for losing week: Live updates",
+        "Democrats probe Trump's troubled $16 million reflecting pool renovation",
+        "GRNY: Highly Successful Theme-Rotation Strategy With Factor, Performance Nuances, A Hold",
+        "Orezone Gold Corporation (ORE:CA) Shareholder/Analyst Call Prepared Remarks Transcript"
       ],
       "key_tickers": [
         "TLT",
@@ -167,8 +165,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "QQQ",
-        "GS"
+        "SPY",
+        "RIG"
       ]
     }
   ]
