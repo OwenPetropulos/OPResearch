@@ -5,12 +5,12 @@
       "sentiment": "Negative",
       "tone": "Energy facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 7,
-      "primary_driver": "BioAge Labs: Developing A 'Pipeline In A Pill'",
+      "primary_driver": "U.S. inflation tops 4%, but tumbling oil prices to bring price relief soon",
       "key_drivers": [
-        "BioAge Labs: Developing A 'Pipeline In A Pill'",
-        "Absci: Eli Lilly Backs Alopecia Data With Funding, But Risks Remain",
-        "Energy secretary says U.S. has ended Iran's ability to close Strait of Hormuz",
-        "U.S. crude oil briefly dips below $70 as tankers transit Strait of Hormuz"
+        "U.S. inflation tops 4%, but tumbling oil prices to bring price relief soon",
+        "Hormuz Is Reopening, Oil Might Be Done Falling",
+        "Chevron says no quick fix for gas prices as Trump takes on Big Oil: ‘It’s going to take time’",
+        "Iraq piles pressure on OPEC over quota dispute after UAE exit"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
+        "CVX",
         "LLY",
-        "BAC",
-        "RIG"
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 10,
-      "primary_driver": "JPMorgan Chase unveils $50 billion buyback, Goldman Sachs raises dividend after Fed stress test",
+      "story_count": 8,
+      "primary_driver": "JPMorgan names Doug Petno and Troy Rohrbaugh co-presidents as longtime exec Marianne Lake exits",
       "key_drivers": [
-        "JPMorgan Chase unveils $50 billion buyback, Goldman Sachs raises dividend after Fed stress test",
-        "Did the Trump White House just give Warsh the green light to hike interest rates? This analyst thinks so.",
-        "Federal Reserve says U.S. banks can withstand $708 billion in losses amid overhaul of capital rules",
-        "Credit Bureaus Remain Powerful, But TransUnion Offers The Better Setup Over Equifax"
+        "JPMorgan names Doug Petno and Troy Rohrbaugh co-presidents as longtime exec Marianne Lake exits",
+        "Alphabet's Dip Looks Increasingly Hard To Ignore",
+        "Core inflation rate hit 3.4% in May, highest since October 2023, Fed’s preferred gauge shows",
+        "How much does debt settlement cost?"
       ],
       "key_tickers": [
         "JPM",
@@ -47,22 +47,22 @@
       ],
       "trending_tickers": [
         "JPM",
-        "GS",
-        "BAC",
-        "LLY"
+        "GOOGL",
+        "LLY",
+        "COST"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 15,
-      "primary_driver": "Trump meets defense CEOs as Iran operations strain U.S. missile stockpiles",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 11,
+      "primary_driver": "Apple raises prices on MacBook and iPad due to memory crunch, hints at more to come",
       "key_drivers": [
-        "Trump meets defense CEOs as Iran operations strain U.S. missile stockpiles",
-        "Qualcomm’s stock is soaring as these big numbers excite Wall Street",
-        "Cerebras’s stock sinks below IPO price in a major blow to early investors",
-        "White House requests $87.6 billion supplemental spending for Iran war, farm aid"
+        "Apple raises prices on MacBook and iPad due to memory crunch, hints at more to come",
+        "The world’s top-performing stock market still isn’t a developed market. Here’s why, according to the MSCI chief",
+        "This Week's Plunge In Chip Stocks Is More Ammo For Bulls",
+        "Meta: An Inconvenient Truth The Market Hasn't Priced In Before Q2"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,21 +73,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "BAC",
-        "LLY",
-        "CL=F",
-        "META"
+        "META",
+        "SPY",
+        "AAPL",
+        "COST"
       ]
     },
     {
       "sector": "Industrials",
-      "sentiment": "Negative",
-      "tone": "Industrials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 2,
-      "primary_driver": "Trump meets defense CEOs as Iran operations strain U.S. missile stockpiles",
+      "sentiment": "Neutral",
+      "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "Europe’s defense stocks are sliding again. Here’s what’s worrying investors",
       "key_drivers": [
-        "Trump meets defense CEOs as Iran operations strain U.S. missile stockpiles",
-        "Trump cancels signing of bipartisan housing bill ahead of tense meeting with GOP senators"
+        "Europe’s defense stocks are sliding again. Here’s what’s worrying investors"
       ],
       "key_tickers": [
         "GE",
@@ -97,21 +96,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "META"
       ]
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Qualcomm’s stock is soaring as these big numbers excite Wall Street",
+      "sentiment": "Positive",
+      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
+      "story_count": 5,
+      "primary_driver": "Consumer spending rises again — and now cheaper gas is on the way",
       "key_drivers": [
-        "Qualcomm’s stock is soaring as these big numbers excite Wall Street",
-        "White House requests $87.6 billion supplemental spending for Iran war, farm aid",
-        "Trump cancels signing of bipartisan housing bill ahead of tense meeting with GOP senators",
-        "1st Look at Local Housing Markets in December"
+        "Consumer spending rises again — and now cheaper gas is on the way",
+        "I'm Seeing Catalysts For The Inevitable Housing Upturn: 4 ETF 'Buy' Ideas",
+        "Darden Restaurants earnings beat estimates but Olive Garden growth weakens",
+        "Builders FirstSource: Housing Recovery Will Be Gradual Even With Legislative Support"
       ],
       "key_tickers": [
         "NKE",
@@ -121,19 +119,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "META",
-        "TGT"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Design Therapeutics: FA Early Data And FDA Discussions Are Promising Catalysts",
+      "story_count": 1,
+      "primary_driver": "I had gallbladder surgery. After I got home, the hospital asked me for a financial donation. Is this",
       "key_drivers": [
-        "Design Therapeutics: FA Early Data And FDA Discussions Are Promising Catalysts",
-        "Absci: Eli Lilly Backs Alopecia Data With Funding, But Risks Remain"
+        "I had gallbladder surgery. After I got home, the hospital asked me for a financial donation. Is this ethical?"
       ],
       "key_tickers": [
         "LLY",
@@ -143,21 +140,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "BAC",
-        "LLY"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "Digital Turbine Stock: Cheap For A Reason",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 14,
+      "primary_driver": "Nextpower: The Platform Story Is Getting Better",
       "key_drivers": [
-        "Digital Turbine Stock: Cheap For A Reason",
-        "EWS: The Case For The Asian Tiger, But A Hold For Now",
-        "AT&T: SpaceX May Eat Its Lunch",
-        "Axon Enterprise, Inc. (AXON) Discusses Public Safety Innovation and Customer Perspectives in Webinar Panel Transcript"
+        "Nextpower: The Platform Story Is Getting Better",
+        "Core inflation rate hit 3.4% in May, highest since October 2023, Fed’s preferred gauge shows",
+        "Europe’s defense stocks are sliding again. Here’s what’s worrying investors",
+        "Consumer spending rises again — and now cheaper gas is on the way"
       ],
       "key_tickers": [
         "TLT",
@@ -167,9 +164,10 @@
         "DXY"
       ],
       "trending_tickers": [
-        "JPM",
-        "GS",
-        "BAC"
+        "BAC",
+        "META",
+        "CL=F",
+        "LLY"
       ]
     }
   ]
