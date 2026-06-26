@@ -4,12 +4,11 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Obsidian Energy: One Of The Cheapest Oil Producers",
+      "story_count": 3,
+      "primary_driver": "Western Midstream: The Best Yield In The Industry",
       "key_drivers": [
-        "Obsidian Energy: One Of The Cheapest Oil Producers",
-        "Oil heads for another losing week, but analyst warns sluggish Strait of Hormuz traffic could send price soaring again",
-        "U.S. crude oil falls below $70, resuming losses after attack on cargo ship near Oman",
+        "Western Midstream: The Best Yield In The Industry",
+        "Iran tightens its grip on Strait of Hormuz, sending oil prices higher",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -27,15 +26,15 @@
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Imposter scams led fraud reports to the FTC for fifth straight year in 2025, causing $3.5 billion in",
+      "primary_driver": "VRIG: Income ETF Offsetting Interest Rate Risk (Rating Upgrade)",
       "key_drivers": [
-        "Imposter scams led fraud reports to the FTC for fifth straight year in 2025, causing $3.5 billion in losses",
-        "OpenAI and Anthropic face new AI reality as companies shift from tokenmaxxing to efficiency",
-        "Goldman Sachs says buy this gambling stock, sees it adding to its sharp 2026 gains",
-        "Blackstone Secured Lending: 13% Yield And Portfolio Evolution Make It A Buy"
+        "VRIG: Income ETF Offsetting Interest Rate Risk (Rating Upgrade)",
+        "FIFA World Cup prize money: What USMNT players stand to earn as America enters the knockout stage",
+        "Markets Bet On Warsh To Fight Inflation. Will The Fed Deliver?",
+        "Insurers shifted roof-replacement costs onto homeowners thanks to a new federal rule — just in time for hail and hurrica"
       ],
       "key_tickers": [
         "JPM",
@@ -45,21 +44,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
+        "RIG",
+        "NOC",
+        "COST",
         "AMZN"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 14,
-      "primary_driver": "The ambition penalty: Why speaking up and asking for more at work is still weaponized against women",
+      "primary_driver": "S&P 500 heads for losing week, chip stocks add to their losses on Friday: Live updates",
       "key_drivers": [
-        "The ambition penalty: Why speaking up and asking for more at work is still weaponized against women",
-        "Nano-X Withdraws Guidance, Signals Rocky Road Ahead",
-        "S&P 500 futures decline with chip stocks weak after OpenAI IPO delay report: Live updates",
-        "Imposter scams led fraud reports to the FTC for fifth straight year in 2025, causing $3.5 billion in losses"
+        "S&P 500 heads for losing week, chip stocks add to their losses on Friday: Live updates",
+        "BNB Chain Explained: Usage, Fees, And Token Value",
+        "Trump says Iran violated ceasefire with drone attacks on Strait of Hormuz ships",
+        "OpenAI hasn't held pre-IPO investor meetings or set timeline yet, sources say"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,10 +71,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
+        "LLY",
         "SPY",
-        "NVDA",
-        "MSFT"
+        "CL=F",
+        "RIG"
       ]
     },
     {
@@ -81,10 +82,10 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "RB Global: Marketplace Infrastructure With Economic Moats, This Is A Buy",
+      "primary_driver": "Primo Brands: The Infrastructure Bet Is Starting To Pay Off",
       "key_drivers": [
-        "RB Global: Marketplace Infrastructure With Economic Moats, This Is A Buy",
-        "FedEx Freight takes a step forward in its independent journey. Here's why we like the stock"
+        "Primo Brands: The Infrastructure Bet Is Starting To Pay Off",
+        "Honeywell Aerospace lands an analyst endorsement ahead of its debut. This is our plan for the stock"
       ],
       "key_tickers": [
         "GE",
@@ -100,14 +101,11 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Positive",
-      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
-      "story_count": 4,
-      "primary_driver": "Rise in memory chip costs puts pressure on retailers of laptops and smartphones",
+      "sentiment": "Neutral",
+      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 1,
+      "primary_driver": "1st Look at Local Housing Markets in December",
       "key_drivers": [
-        "Rise in memory chip costs puts pressure on retailers of laptops and smartphones",
-        "NBA targets Asian resurgence with technology and talent push",
-        "Trump keeps turning Republican wins into loyalty tests — and political liabilities",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -118,18 +116,21 @@
         "ONON"
       ],
       "trending_tickers": [
-        "COST",
-        "TGT"
+        "NKE",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 4,
+      "primary_driver": "Stocks making the biggest moves midday: Moderna, ON Semiconductor, Rocket Lab, Eli Lilly, Sandisk & ",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "Stocks making the biggest moves midday: Moderna, ON Semiconductor, Rocket Lab, Eli Lilly, Sandisk & more",
+        "Novo Nordisk: 3 Key Reasons The 'Buy The Dip' Thesis Is Flawed",
+        "Pfizer: Why Being Bullish Makes Sense Despite The Patent Cliff",
+        "A new bill would cap Medicare enrollees’ annual expenses at $5,000 — and could cost the government ‘tens of billions’"
       ],
       "key_tickers": [
         "LLY",
@@ -140,20 +141,22 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVO"
+        "NVO",
+        "PFE",
+        "COST"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 10,
-      "primary_driver": "The brands winning with World Cup advertising may not be the sponsors",
+      "primary_driver": "Leon Black refuses to answer questions on NDAs at Jeffrey Epstein hearing, Rep. Comer says",
       "key_drivers": [
-        "The brands winning with World Cup advertising may not be the sponsors",
-        "I Am Pounding The Table On These Preferred Stocks",
-        "Palantir: Upgrading To Bullish After A Record Quarter Meets A 48% Selloff",
-        "The ambition penalty: Why speaking up and asking for more at work is still weaponized against women"
+        "Leon Black refuses to answer questions on NDAs at Jeffrey Epstein hearing, Rep. Comer says",
+        "Vitalhub Corp. (VHI:CA) Shareholder/Analyst Call Transcript",
+        "Trump threatens 100% tariff on countries putting 'Digital Services Tax on American Companies'",
+        "Oracle Through A DuPont Lens: A Reward To Risk Balance"
       ],
       "key_tickers": [
         "TLT",
@@ -163,8 +166,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "BAC",
+        "LLY"
       ]
     }
   ]
