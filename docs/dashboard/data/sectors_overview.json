@@ -4,10 +4,12 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Chevron says no quick fix for gas prices as Trump takes on Big Oil: ‘It’s going to take time’",
+      "story_count": 4,
+      "primary_driver": "Obsidian Energy: One Of The Cheapest Oil Producers",
       "key_drivers": [
-        "Chevron says no quick fix for gas prices as Trump takes on Big Oil: ‘It’s going to take time’",
+        "Obsidian Energy: One Of The Cheapest Oil Producers",
+        "Oil heads for another losing week, but analyst warns sluggish Strait of Hormuz traffic could send price soaring again",
+        "U.S. crude oil falls below $70, resuming losses after attack on cargo ship near Oman",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -18,10 +20,9 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CVX",
+        "CL=F",
         "LLY",
-        "SPY",
-        "CL=F"
+        "SPY"
       ]
     },
     {
@@ -29,12 +30,12 @@
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "Trump keeps turning Republican wins into loyalty tests — and political liabilities",
+      "primary_driver": "Imposter scams led fraud reports to the FTC for fifth straight year in 2025, causing $3.5 billion in",
       "key_drivers": [
-        "Trump keeps turning Republican wins into loyalty tests — and political liabilities",
-        "Small-caps are booming this year. Here are some of Wall Street's top smaller picks",
-        "Chicago Fed President Goolsbee says inflation is too high; Williams sees price pressures easing",
-        "Apple’s MacBooks and iPads are getting more expensive as the memory crunch deepens"
+        "Imposter scams led fraud reports to the FTC for fifth straight year in 2025, causing $3.5 billion in losses",
+        "OpenAI and Anthropic face new AI reality as companies shift from tokenmaxxing to efficiency",
+        "Goldman Sachs says buy this gambling stock, sees it adding to its sharp 2026 gains",
+        "Blackstone Secured Lending: 13% Yield And Portfolio Evolution Make It A Buy"
       ],
       "key_tickers": [
         "JPM",
@@ -44,23 +45,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AAPL",
-        "BAC",
-        "MSFT",
-        "COST"
+        "GS",
+        "AMZN"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "AIS: The AI Bottleneck Thesis Still Has Legs",
+      "story_count": 14,
+      "primary_driver": "The ambition penalty: Why speaking up and asking for more at work is still weaponized against women",
       "key_drivers": [
-        "AIS: The AI Bottleneck Thesis Still Has Legs",
-        "Elastic: The AI Story Is Not Enough",
-        "On Semiconductor strikes $7 billion deal for Synaptics in physical AI push",
-        "Healwell AI Inc. (AIDX:CA) Shareholder/Analyst Call Prepared Remarks Transcript"
+        "The ambition penalty: Why speaking up and asking for more at work is still weaponized against women",
+        "Nano-X Withdraws Guidance, Signals Rocky Road Ahead",
+        "S&P 500 futures decline with chip stocks weak after OpenAI IPO delay report: Live updates",
+        "Imposter scams led fraud reports to the FTC for fifth straight year in 2025, causing $3.5 billion in losses"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,20 +70,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "MSFT",
-        "AAPL",
-        "TGT",
-        "COST"
+        "AMZN",
+        "SPY",
+        "NVDA",
+        "MSFT"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "RB Global: Marketplace Infrastructure With Economic Moats, This Is A Buy",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "RB Global: Marketplace Infrastructure With Economic Moats, This Is A Buy",
+        "FedEx Freight takes a step forward in its independent journey. Here's why we like the stock"
       ],
       "key_tickers": [
         "GE",
@@ -100,15 +100,15 @@
     },
     {
       "sector": "Consumer",
-      "sentiment": "Neutral",
-      "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Trump keeps turning Republican wins into loyalty tests — and political liabilities",
+      "sentiment": "Positive",
+      "tone": "Consumer outlook constructive. Recent developments support near-term strength.",
+      "story_count": 4,
+      "primary_driver": "Rise in memory chip costs puts pressure on retailers of laptops and smartphones",
       "key_drivers": [
+        "Rise in memory chip costs puts pressure on retailers of laptops and smartphones",
+        "NBA targets Asian resurgence with technology and talent push",
         "Trump keeps turning Republican wins into loyalty tests — and political liabilities",
-        "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare Bleeding Disorders T",
-        "Microsoft’s stock is suffering a historic June rout as investors balk at heavy spending",
-        "Microsoft lifts price of Xbox consoles due to soaring component costs"
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -118,21 +118,18 @@
         "ONON"
       ],
       "trending_tickers": [
-        "MSFT",
-        "TGT",
-        "AAPL",
-        "COST"
+        "COST",
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare ",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Alnylam Pharmaceuticals, Inc. (ALNY) Discusses ALN-6400 RNAi Therapy Targeting Plasminogen for Rare Bleeding Disorders T",
-        "Crinetics Pharmaceuticals: 'Buy' On Palsonify Market Expansion And Atumelnant Advancements"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -142,20 +139,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "TGT"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 9,
-      "primary_driver": "S&P 500 futures are little changed as index heads for losing week: Live updates",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 10,
+      "primary_driver": "The brands winning with World Cup advertising may not be the sponsors",
       "key_drivers": [
-        "S&P 500 futures are little changed as index heads for losing week: Live updates",
-        "Democrats probe Trump's troubled $16 million reflecting pool renovation",
-        "GRNY: Highly Successful Theme-Rotation Strategy With Factor, Performance Nuances, A Hold",
-        "Orezone Gold Corporation (ORE:CA) Shareholder/Analyst Call Prepared Remarks Transcript"
+        "The brands winning with World Cup advertising may not be the sponsors",
+        "I Am Pounding The Table On These Preferred Stocks",
+        "Palantir: Upgrading To Bullish After A Record Quarter Meets A 48% Selloff",
+        "The ambition penalty: Why speaking up and asking for more at work is still weaponized against women"
       ],
       "key_tickers": [
         "TLT",
@@ -165,8 +163,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY",
-        "RIG"
+        "GLD",
+        "DXY"
       ]
     }
   ]
