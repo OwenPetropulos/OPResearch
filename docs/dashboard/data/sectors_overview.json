@@ -2,14 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Neutral",
-      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "U.S. confirms retaliatory strike on Iran, pulling oil prices up in after-hours trading",
+      "sentiment": "Positive",
+      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
+      "story_count": 6,
+      "primary_driver": "The Curious Case Of Collapsing Oil Prices",
       "key_drivers": [
-        "U.S. confirms retaliatory strike on Iran, pulling oil prices up in after-hours trading",
-        "2026 2H Oil Dividend Roundup: Chevron Outshines Enterprise Products Partners",
-        "Sunday Night Futures"
+        "The Curious Case Of Collapsing Oil Prices",
+        "ENFR: Midstream Energy Index ETF, Not A Buy At These Levels",
+        "Oil prices rise as U.S. and Iran reach deal to halt attacks, U.S. oil above $70 per barrel again",
+        "8-K - Marathon Petroleum Corp (0001510295) (Filer)"
       ],
       "key_tickers": [
         "XOM",
@@ -20,7 +21,7 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "CVX",
+        "COST",
         "LLY",
         "SPY"
       ]
@@ -30,12 +31,12 @@
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "Credo: The AI Memory Supercycle Needs More Bandwidth",
+      "primary_driver": "Supreme Court rules Trump cannot fire Fed Governor Lisa Cook for now",
       "key_drivers": [
-        "Credo: The AI Memory Supercycle Needs More Bandwidth",
-        "Iran’s ship attack tests the shipping-insurance market just as war-risk premiums had plunged",
-        "Bond yields are falling as inflation pops. The Fed’s tough talk under Warsh is helping.",
-        "Gavin Newsom calls for national billionaires tax: 'It's time for an economic reset'"
+        "Supreme Court rules Trump cannot fire Fed Governor Lisa Cook for now",
+        "Fed’s Lisa Cook can stay at central bank while challenging Trump’s attempt to fire her, Supreme Court rules",
+        "The AI boom is colliding with a new threat: Severe weather",
+        "Trump bought as much as $5 million in Axon stock before ICE sought $220 million Taser deal"
       ],
       "key_tickers": [
         "JPM",
@@ -45,21 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "GS"
+        "AMZN",
+        "COST",
+        "RIG",
+        "MS"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Negative",
-      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 18,
-      "primary_driver": "ServiceNow, Salesforce and other software stocks surge as the OpenAI threat weakens",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 15,
+      "primary_driver": "S&P 500 rises as U.S.-Iran agree to halt hostilities, gain restrained by selling in chip stocks: Liv",
       "key_drivers": [
-        "ServiceNow, Salesforce and other software stocks surge as the OpenAI threat weakens",
-        "ECF: Discount Remains Deep With Activists Holding Significant Stakes",
-        "U.S. confirms retaliatory strike on Iran, pulling oil prices up in after-hours trading",
-        "ARTY: Why You Should Take AI Profits After A Remarkable Q2 (Rating Downgrade)"
+        "S&P 500 rises as U.S.-Iran agree to halt hostilities, gain restrained by selling in chip stocks: Live updates",
+        "Supreme Court rules Trump cannot fire Fed Governor Lisa Cook for now",
+        "Trump says U.S. and Iran to hold fresh talks in Qatar on Tuesday following weekend clashes",
+        "The AI boom is colliding with a new threat: Severe weather"
       ],
       "key_tickers": [
         "NVDA",
@@ -70,21 +73,23 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
         "CL=F",
-        "BAC",
-        "SPY"
+        "SPY",
+        "COST",
+        "AMZN"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "ServiceNow, Salesforce and other software stocks surge as the OpenAI threat weakens",
+      "story_count": 4,
+      "primary_driver": "Honeywell Aerospace: A Promising Venture, But I Need More Information",
       "key_drivers": [
-        "ServiceNow, Salesforce and other software stocks surge as the OpenAI threat weakens",
-        "U.S. confirms retaliatory strike on Iran, pulling oil prices up in after-hours trading"
+        "Honeywell Aerospace: A Promising Venture, But I Need More Information",
+        "The Club's top 10 things to watch in the stock market Monday",
+        "Laser weapons aren’t science fiction anymore — and they’re changing how defense stocks are valued",
+        "China widens Japan export curbs, targeting drone makers, nuclear firms and defense institutes"
       ],
       "key_tickers": [
         "GE",
@@ -94,21 +99,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LLY",
-        "CL=F"
+        "TGT"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Tech stocks just had one of their worst weeks in a year. Here’s how AI momentum went off the rails.",
+      "story_count": 5,
+      "primary_driver": "I’m 53 and want to retire in 12 years. Is 5% enough to put in my 401(k)?",
       "key_drivers": [
-        "Tech stocks just had one of their worst weeks in a year. Here’s how AI momentum went off the rails.",
-        "Walmart heir Lukas Walton buys minority stake in the Chicago Bulls and United Center",
-        "Greystone Housing: High-Yield Affordable Housing Play With Significant Risks",
-        "1st Look at Local Housing Markets in December"
+        "I’m 53 and want to retire in 12 years. Is 5% enough to put in my 401(k)?",
+        "Hard To Imagine A Retirement Portfolio Without These 2 Cash Machines",
+        "SpaceX's $25 billion bond sale drives huge demand - and a potential headache for investors",
+        "China widens Japan export curbs, targeting drone makers, nuclear firms and defense institutes"
       ],
       "key_tickers": [
         "NKE",
@@ -118,20 +122,17 @@
         "ONON"
       ],
       "trending_tickers": [
-        "WMT"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Amgen Continues To Perform",
+      "story_count": 1,
+      "primary_driver": "Seniors in Medicare are about to get landmark obesity drug coverage — but many may not know it yet",
       "key_drivers": [
-        "Amgen Continues To Perform",
-        "Healthcare stocks have become a haven for investors ditching tech",
-        "Precigen: Entering The Oncology 'Sweet Spot'",
-        "A breakout could be in the cards for this biopharmaceutical play, says Carter Worth"
+        "Seniors in Medicare are about to get landmark obesity drug coverage — but many may not know it yet"
       ],
       "key_tickers": [
         "LLY",
@@ -141,22 +142,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "AMGN",
-        "BAC",
         "LLY"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 11,
-      "primary_driver": "Dividend Champion, Contender, And Challenger Highlights: Week Of June 28",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 9,
+      "primary_driver": "DoorDash Is Starting To Look Appetizing",
       "key_drivers": [
-        "Dividend Champion, Contender, And Challenger Highlights: Week Of June 28",
-        "VICI And NexPoint: Still Cheap In A World Of Expensive",
-        "Primoris Services: The June Reset Is Worrisome - A Hold Is More Appropriate (Rating Downgrade)",
-        "Jack In The Box: A Two-Front Strategy Revisited"
+        "DoorDash Is Starting To Look Appetizing",
+        "Comcast Corporation (CMCSA) Discusses Strategic Separation of Media and Technology Businesses Into Two Public Companies ",
+        "Fed’s Lisa Cook can stay at central bank while challenging Trump’s attempt to fire her, Supreme Court rules",
+        "8-K - ASCENT INDUSTRIES CO. (0000095953) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -166,8 +165,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "BAC"
       ]
     }
   ]
