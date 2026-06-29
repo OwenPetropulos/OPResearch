@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Positive",
       "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 6,
-      "primary_driver": "The Curious Case Of Collapsing Oil Prices",
+      "story_count": 5,
+      "primary_driver": "Oil prices rise as U.S. and Iran reach deal to halt attacks, U.S. oil above $70 per barrel again",
       "key_drivers": [
-        "The Curious Case Of Collapsing Oil Prices",
-        "ENFR: Midstream Energy Index ETF, Not A Buy At These Levels",
         "Oil prices rise as U.S. and Iran reach deal to halt attacks, U.S. oil above $70 per barrel again",
-        "8-K - Marathon Petroleum Corp (0001510295) (Filer)"
+        "Stocks On Comeback Trail; Oil Rises Again",
+        "Tonix: Slow Start For Tonmya, Speculative Pipeline Warrants Hold Rating",
+        "Oil prices near pre-war levels — but persistent supply risks could spark a rebound, analysts warn"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
+        "BAC",
         "COST",
-        "LLY",
-        "SPY"
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "Supreme Court rules Trump cannot fire Fed Governor Lisa Cook for now",
+      "primary_driver": "8-K - ADAMS STREET CREDIT SOLUTIONS FUND (0001772918) (Filer)",
       "key_drivers": [
+        "8-K - ADAMS STREET CREDIT SOLUTIONS FUND (0001772918) (Filer)",
         "Supreme Court rules Trump cannot fire Fed Governor Lisa Cook for now",
-        "Fed’s Lisa Cook can stay at central bank while challenging Trump’s attempt to fire her, Supreme Court rules",
-        "The AI boom is colliding with a new threat: Severe weather",
-        "Trump bought as much as $5 million in Axon stock before ICE sought $220 million Taser deal"
+        "Is Wall Street misreading the Fed? The hidden upside catalyst for tech and real-estate stocks.",
+        "CNBC Points Pro: What's the smartest way to use my travel rewards?"
       ],
       "key_tickers": [
         "JPM",
@@ -47,22 +47,20 @@
       ],
       "trending_tickers": [
         "AMZN",
-        "COST",
-        "RIG",
-        "MS"
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
       "story_count": 15,
-      "primary_driver": "S&P 500 rises as U.S.-Iran agree to halt hostilities, gain restrained by selling in chip stocks: Liv",
+      "primary_driver": "Dow jumps more than 200 points as U.S.-Iran halt hostilities, Alphabet shares gain: Live updates",
       "key_drivers": [
-        "S&P 500 rises as U.S.-Iran agree to halt hostilities, gain restrained by selling in chip stocks: Live updates",
-        "Supreme Court rules Trump cannot fire Fed Governor Lisa Cook for now",
-        "Trump says U.S. and Iran to hold fresh talks in Qatar on Tuesday following weekend clashes",
-        "The AI boom is colliding with a new threat: Severe weather"
+        "Dow jumps more than 200 points as U.S.-Iran halt hostilities, Alphabet shares gain: Live updates",
+        "Sandisk: Avoid Becoming Exit Liquidity When The AI Trade Kabooms",
+        "Is the Comcast-NBCUniversal spinoff a precursor for M&A? Wall Street may already be betting on it.",
+        "Supreme Court rules Trump cannot fire Fed Governor Lisa Cook for now"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,23 +71,20 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "AMZN",
         "CL=F",
-        "SPY",
-        "COST",
-        "AMZN"
+        "GOOGL",
+        "LLY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Honeywell Aerospace: A Promising Venture, But I Need More Information",
+      "story_count": 1,
+      "primary_driver": "8-K - Macquarie Infrastructure Fund, L.P. (0002079966) (Filer)",
       "key_drivers": [
-        "Honeywell Aerospace: A Promising Venture, But I Need More Information",
-        "The Club's top 10 things to watch in the stock market Monday",
-        "Laser weapons aren’t science fiction anymore — and they’re changing how defense stocks are valued",
-        "China widens Japan export curbs, targeting drone makers, nuclear firms and defense institutes"
+        "8-K - Macquarie Infrastructure Fund, L.P. (0002079966) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -99,7 +94,8 @@
         "HON"
       ],
       "trending_tickers": [
-        "TGT"
+        "LMT",
+        "RTX"
       ]
     },
     {
@@ -107,12 +103,12 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 5,
-      "primary_driver": "I’m 53 and want to retire in 12 years. Is 5% enough to put in my 401(k)?",
+      "primary_driver": "Here's how Trump Accounts could affect women's retirement savings gap",
       "key_drivers": [
-        "I’m 53 and want to retire in 12 years. Is 5% enough to put in my 401(k)?",
-        "Hard To Imagine A Retirement Portfolio Without These 2 Cash Machines",
-        "SpaceX's $25 billion bond sale drives huge demand - and a potential headache for investors",
-        "China widens Japan export curbs, targeting drone makers, nuclear firms and defense institutes"
+        "Here's how Trump Accounts could affect women's retirement savings gap",
+        "CNBC Points Pro: What's the smartest way to use my travel rewards?",
+        "RBC lifts S&P 500 price target, but warns that it could be a volatile ride higher",
+        "SpaceX's $25 billion bond sale drives huge demand - and a potential headache for investors"
       ],
       "key_tickers": [
         "NKE",
@@ -122,7 +118,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT"
+        "TGT",
+        "SPY"
       ]
     },
     {
@@ -130,9 +127,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Seniors in Medicare are about to get landmark obesity drug coverage — but many may not know it yet",
+      "primary_driver": "I had gallbladder surgery. After I got home, the hospital asked me for a financial donation. Is this",
       "key_drivers": [
-        "Seniors in Medicare are about to get landmark obesity drug coverage — but many may not know it yet"
+        "I had gallbladder surgery. After I got home, the hospital asked me for a financial donation. Is this ethical?"
       ],
       "key_tickers": [
         "LLY",
@@ -142,20 +139,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 9,
-      "primary_driver": "DoorDash Is Starting To Look Appetizing",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 10,
+      "primary_driver": "8-K - Triller Group Inc. (0001769624) (Filer)",
       "key_drivers": [
-        "DoorDash Is Starting To Look Appetizing",
-        "Comcast Corporation (CMCSA) Discusses Strategic Separation of Media and Technology Businesses Into Two Public Companies ",
-        "Fed’s Lisa Cook can stay at central bank while challenging Trump’s attempt to fire her, Supreme Court rules",
-        "8-K - ASCENT INDUSTRIES CO. (0000095953) (Filer)"
+        "8-K - Triller Group Inc. (0001769624) (Filer)",
+        "July rally may be in store for stocks after weak June, Freedom's Jay Woods says",
+        "8-K - SECURITY NATIONAL FINANCIAL CORP (0000318673) (Filer)",
+        "Larimar Therapeutics, Inc. (LRMR) Discusses Regulatory Progress and Long-Term Data for Nomlabofusp in Friedreich's Ataxi"
       ],
       "key_tickers": [
         "TLT",
@@ -165,7 +163,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC"
+        "LLY",
+        "SPY"
       ]
     }
   ]
