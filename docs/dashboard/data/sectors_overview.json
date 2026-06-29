@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Positive",
       "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 5,
-      "primary_driver": "Oil prices rise as U.S. and Iran reach deal to halt attacks, U.S. oil above $70 per barrel again",
+      "story_count": 4,
+      "primary_driver": "Arrowhead Pharmaceuticals, Inc. (ARWR) Discusses Cardiometabolic Pipeline and Clinical Development P",
       "key_drivers": [
+        "Arrowhead Pharmaceuticals, Inc. (ARWR) Discusses Cardiometabolic Pipeline and Clinical Development Programs Transcript",
         "Oil prices rise as U.S. and Iran reach deal to halt attacks, U.S. oil above $70 per barrel again",
-        "Stocks On Comeback Trail; Oil Rises Again",
-        "Tonix: Slow Start For Tonmya, Speculative Pipeline Warrants Hold Rating",
-        "Oil prices near pre-war levels — but persistent supply risks could spark a rebound, analysts warn"
+        "Oil prices near pre-war levels — but persistent supply risks could spark a rebound, analysts warn",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -21,22 +21,22 @@
       ],
       "trending_tickers": [
         "CL=F",
-        "BAC",
+        "META",
         "COST",
         "LLY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "8-K - ADAMS STREET CREDIT SOLUTIONS FUND (0001772918) (Filer)",
+      "primary_driver": "8-K - Blue Owl Digital Infrastructure Trust (0002069692) (Filer)",
       "key_drivers": [
-        "8-K - ADAMS STREET CREDIT SOLUTIONS FUND (0001772918) (Filer)",
-        "Supreme Court rules Trump cannot fire Fed Governor Lisa Cook for now",
-        "Is Wall Street misreading the Fed? The hidden upside catalyst for tech and real-estate stocks.",
-        "CNBC Points Pro: What's the smartest way to use my travel rewards?"
+        "8-K - Blue Owl Digital Infrastructure Trust (0002069692) (Filer)",
+        "Biotech Is The Rate Cut Trade In Disguise",
+        "ResMed: Fear-Driven Selloff Creates A Compelling Margin Of Safety Entry Point",
+        "Supreme Court rulings on Fed, FTC: What they mean for consumers"
       ],
       "key_tickers": [
         "JPM",
@@ -52,15 +52,15 @@
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 15,
-      "primary_driver": "Dow jumps more than 200 points as U.S.-Iran halt hostilities, Alphabet shares gain: Live updates",
+      "primary_driver": "IRS says Trump Account contributions will not trigger annual gift tax reporting requirements",
       "key_drivers": [
-        "Dow jumps more than 200 points as U.S.-Iran halt hostilities, Alphabet shares gain: Live updates",
-        "Sandisk: Avoid Becoming Exit Liquidity When The AI Trade Kabooms",
-        "Is the Comcast-NBCUniversal spinoff a precursor for M&A? Wall Street may already be betting on it.",
-        "Supreme Court rules Trump cannot fire Fed Governor Lisa Cook for now"
+        "IRS says Trump Account contributions will not trigger annual gift tax reporting requirements",
+        "‘I claimed Social Security at 62’: At 76, I’m working at Walmart. Why do I still owe payroll taxes?",
+        "Rocket Lab to take on SpaceX’s Starlink with $8 billion acquisition",
+        "Marvell: A Buy Amid AI Infrastructure Boom And Nvidia Endorsement"
       ],
       "key_tickers": [
         "NVDA",
@@ -73,18 +73,21 @@
       "trending_tickers": [
         "AMZN",
         "CL=F",
-        "GOOGL",
-        "LLY"
+        "RIG",
+        "WMT"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "8-K - Macquarie Infrastructure Fund, L.P. (0002079966) (Filer)",
+      "story_count": 4,
+      "primary_driver": "Eli Lilly, Regeneron among first companies selected for FDA initiative to speed review of new manufa",
       "key_drivers": [
-        "8-K - Macquarie Infrastructure Fund, L.P. (0002079966) (Filer)"
+        "Eli Lilly, Regeneron among first companies selected for FDA initiative to speed review of new manufacturing facilities",
+        "Marvell: A Buy Amid AI Infrastructure Boom And Nvidia Endorsement",
+        "8-K - T3 Defense Inc. (0001787518) (Filer)",
+        "8-K - Blue Owl Digital Infrastructure Trust (0002069692) (Filer)"
       ],
       "key_tickers": [
         "GE",
@@ -94,21 +97,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "LLY",
+        "NVDA"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Here's how Trump Accounts could affect women's retirement savings gap",
+      "story_count": 4,
+      "primary_driver": "‘I claimed Social Security at 62’: At 76, I’m working at Walmart. Why do I still owe payroll taxes?",
       "key_drivers": [
+        "‘I claimed Social Security at 62’: At 76, I’m working at Walmart. Why do I still owe payroll taxes?",
         "Here's how Trump Accounts could affect women's retirement savings gap",
-        "CNBC Points Pro: What's the smartest way to use my travel rewards?",
-        "RBC lifts S&P 500 price target, but warns that it could be a volatile ride higher",
-        "SpaceX's $25 billion bond sale drives huge demand - and a potential headache for investors"
+        "SpaceX's $25 billion bond sale drives huge demand - and a potential headache for investors",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -118,18 +121,20 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "SPY"
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "I had gallbladder surgery. After I got home, the hospital asked me for a financial donation. Is this",
+      "story_count": 4,
+      "primary_driver": "Eli Lilly, Regeneron among first companies selected for FDA initiative to speed review of new manufa",
       "key_drivers": [
-        "I had gallbladder surgery. After I got home, the hospital asked me for a financial donation. Is this ethical?"
+        "Eli Lilly, Regeneron among first companies selected for FDA initiative to speed review of new manufacturing facilities",
+        "Biotech Is The Rate Cut Trade In Disguise",
+        "Arrowhead Pharmaceuticals, Inc. (ARWR) Discusses Cardiometabolic Pipeline and Clinical Development Programs Transcript",
+        "Transgene SA (TRGNF) Discusses Progress in Individualized Neoantigen Therapeutic Vaccines and Expansion into Early-Stage"
       ],
       "key_tickers": [
         "LLY",
@@ -140,20 +145,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "NVO"
+        "META"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "8-K - Triller Group Inc. (0001769624) (Filer)",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 8,
+      "primary_driver": "‘I don’t think I’ll make it to 80’: I’m 70 and single. Do I take out a reverse mortgage or a home-eq",
       "key_drivers": [
-        "8-K - Triller Group Inc. (0001769624) (Filer)",
-        "July rally may be in store for stocks after weak June, Freedom's Jay Woods says",
-        "8-K - SECURITY NATIONAL FINANCIAL CORP (0000318673) (Filer)",
-        "Larimar Therapeutics, Inc. (LRMR) Discusses Regulatory Progress and Long-Term Data for Nomlabofusp in Friedreich's Ataxi"
+        "‘I don’t think I’ll make it to 80’: I’m 70 and single. Do I take out a reverse mortgage or a home-equity agreement?",
+        "TechnipFMC: Pricey And Not With The Best Outlook",
+        "Key Indicators Point To A Strong Rally",
+        "My Prediction For H2 2026: Where The S&P 500 Goes From Here"
       ],
       "key_tickers": [
         "TLT",
@@ -163,8 +168,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY",
-        "SPY"
+        "SPY",
+        "LLY"
       ]
     }
   ]
