@@ -4,13 +4,12 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "Spyre Therapeutics: Deep And Diverse Immunology Pipeline Awaiting Data",
+      "story_count": 3,
+      "primary_driver": "How Rising Biofuel Demand Impacts Vegetable Oil Markets",
       "key_drivers": [
-        "Spyre Therapeutics: Deep And Diverse Immunology Pipeline Awaiting Data",
-        "Venture Global: America's Next LNG Champion, Intense Growth Ahead",
+        "How Rising Biofuel Demand Impacts Vegetable Oil Markets",
         "Oil prices set for steep monthly drop as Trump, Iran issue mixed messages on talks in Qatar",
-        "Strait of Hormuz is reopening faster than expected, says Morgan Stanley as it cuts oil-price target"
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +19,22 @@
         "RIG"
       ],
       "trending_tickers": [
-        "SPY",
         "CL=F",
-        "LNG",
-        "MS"
+        "LLY",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 9,
-      "primary_driver": "8-K - Empery Digital Inc. (0001829794) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
       "key_drivers": [
-        "8-K - Empery Digital Inc. (0001829794) (Filer)",
-        "8-K - Easterly Government Properties, Inc. (0001622194) (Filer)",
-        "Strait of Hormuz is reopening faster than expected, says Morgan Stanley as it cuts oil-price target",
-        "Short sellers keep betting against Pop Mart — even though it's been a losing trade"
+        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+        "Cleveland Fed President Hammack says AI could fuel inflation, rate hikes may be necessary",
+        "Private equity in youth sports draws bipartisan scrutiny in Congress",
+        "8-K - Principal Credit Real Estate Income Trust (0002026448) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +44,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "MS",
-        "TGT"
+        "AMZN"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 14,
-      "primary_driver": "8-K - HCW Biologics Inc. (0001828673) (Filer)",
+      "story_count": 11,
+      "primary_driver": "XAI Floating Rate & Alternative Income Trust (XFLT) Octagon Xai Clo Income Fund - Shareholder/Analys",
       "key_drivers": [
-        "8-K - HCW Biologics Inc. (0001828673) (Filer)",
-        "Microsoft: When Uncertainty Rules, Even Attractive Valuations Don't Matter",
-        "Mike Santoli: A great first half, but some erratic behavior raises doubts about the rally's integrity",
-        "Here are Tuesday's biggest analyst calls: Nvidia, Netflix, Tesla, Alphabet, AMD, Sandisk, Block, Broadcom & more"
+        "XAI Floating Rate & Alternative Income Trust (XFLT) Octagon Xai Clo Income Fund - Shareholder/Analyst Call Prepared Rema",
+        "Amazon is laying out $1 billion to follow Palantir’s AI playbook",
+        "8-K - AMERICAN SHARED HOSPITAL SERVICES (0000744825) (Filer)",
+        "8-K - UBS Commercial Mortgage Trust 2018-C11 (0001740040) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,23 +68,22 @@
         "PLTR"
       ],
       "trending_tickers": [
+        "AMZN",
         "LLY",
         "SPY",
-        "MSFT",
-        "NVDA"
+        "CL=F"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "The Renewables Infrastructure Group Limited (RWFRF) Shareholder/Analyst Call Prepared Remarks Transc",
+      "story_count": 3,
+      "primary_driver": "Cramer says this aerospace stock is significantly undervalued, sees 35% upside",
       "key_drivers": [
-        "The Renewables Infrastructure Group Limited (RWFRF) Shareholder/Analyst Call Prepared Remarks Transcript",
-        "What are VA rehab and renovation loans — plus the best lenders",
-        "China factory activity grows faster than expected in June on tech export demand",
-        "Industry lobbyists push House committee to block a ban on Pentagon defense contractors buying back their own stock"
+        "Cramer says this aerospace stock is significantly undervalued, sees 35% upside",
+        "AeroVironment skyrockets 15% as dronemaker capitalizes on defense spending surge",
+        "Trump's massive defense budget, depleted war machine, spark U.S. state battle for business and jobs"
       ],
       "key_tickers": [
         "GE",
@@ -97,21 +93,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "BAC",
-        "LLY"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Rafael Nadal talks tennis prize money, his hotels, and what sports taught him about business",
+      "story_count": 3,
+      "primary_driver": "Amazon: Fantastic Outlook In AWS And E-Commerce Vs. Potential Overvaluation",
       "key_drivers": [
-        "Rafael Nadal talks tennis prize money, his hotels, and what sports taught him about business",
-        "Strait of Hormuz is reopening faster than expected, says Morgan Stanley as it cuts oil-price target",
-        "Inflation likely to stay ‘significantly above target,’ top European central banker warns",
-        "Here's how Trump Accounts could affect women's retirement savings gap"
+        "Amazon: Fantastic Outlook In AWS And E-Commerce Vs. Potential Overvaluation",
+        "AeroVironment skyrockets 15% as dronemaker capitalizes on defense spending surge",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -121,21 +116,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "MS",
-        "NKE"
+        "AMZN"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Neutral",
-      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 6,
-      "primary_driver": "8-K - Moleculin Biotech, Inc. (0001659617) (Filer)",
+      "sentiment": "Negative",
+      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 4,
+      "primary_driver": "8-K - AMERICAN SHARED HOSPITAL SERVICES (0000744825) (Filer)",
       "key_drivers": [
-        "8-K - Moleculin Biotech, Inc. (0001659617) (Filer)",
-        "Viridian Therapeutics: Lumvoa Ready For Prime Time Following FDA Approval",
-        "Rafael Nadal talks tennis prize money, his hotels, and what sports taught him about business",
+        "8-K - AMERICAN SHARED HOSPITAL SERVICES (0000744825) (Filer)",
+        "FDA lets Philip Morris market Zyn nicotine pouches as less harmful than cigarettes",
+        "Plus Therapeutics, Inc. (PSTV) Discusses Rebranding and Integrated CNS Oncology Platform Strategy Transcript",
         "Medicare will start covering obesity drugs for the first time. Here's what patients should know"
       ],
       "key_tickers": [
@@ -152,15 +145,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 10,
-      "primary_driver": "8-K - Microbot Medical Inc. (0000883975) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 9,
+      "primary_driver": "8-K - CONDUENT Inc (0001677703) (Filer)",
       "key_drivers": [
-        "8-K - Microbot Medical Inc. (0000883975) (Filer)",
-        "Why The Post-SpaceX Market Isn't A Classic Sector Rotation",
-        "8-K - Vistagen Therapeutics, Inc. (0001411685) (Filer)",
-        "Sandisk: Micron Confirmed The Memory Supercycle"
+        "8-K - CONDUENT Inc (0001677703) (Filer)",
+        "8-K - EQT Exeter Real Estate Income Trust, Inc. (0001946997) (Filer)",
+        "T-Mobile: Why We're Buying Hundreds Of Shares",
+        "Your aging parent has a new romance. Here’s how to protect your inheritance — without looking greedy."
       ],
       "key_tickers": [
         "TLT",
@@ -170,8 +163,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "NKE",
-        "TGT"
+        "RIG"
       ]
     }
   ]
