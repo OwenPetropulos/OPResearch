@@ -4,12 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "How Rising Biofuel Demand Impacts Vegetable Oil Markets",
+      "story_count": 5,
+      "primary_driver": "Baker Hughes Weighed Down By Dashed Oil Boom Hopes",
       "key_drivers": [
-        "How Rising Biofuel Demand Impacts Vegetable Oil Markets",
-        "Oil prices set for steep monthly drop as Trump, Iran issue mixed messages on talks in Qatar",
-        "Sunday Night Futures"
+        "Baker Hughes Weighed Down By Dashed Oil Boom Hopes",
+        "Golar LNG: Contracted FLNG Growth Drives The Bull Case",
+        "Oil posts largest quarterly price drop in 6 years as historic supply crunch eases",
+        "Brent posts biggest monthly decline since March 2020 as traders monitor U.S.-Iran talks"
       ],
       "key_tickers": [
         "XOM",
@@ -19,9 +20,10 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
+        "LNG",
         "LLY",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
@@ -29,12 +31,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+      "primary_driver": "Bitcoin ETFs were supposed to make selloffs less painful. That theory is being put to the test.",
       "key_drivers": [
-        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
-        "Cleveland Fed President Hammack says AI could fuel inflation, rate hikes may be necessary",
-        "Private equity in youth sports draws bipartisan scrutiny in Congress",
-        "8-K - Principal Credit Real Estate Income Trust (0002026448) (Filer)"
+        "Bitcoin ETFs were supposed to make selloffs less painful. That theory is being put to the test.",
+        "Trump’s energy secretary says global warming is ‘no big deal.’ Meanwhile, a heat emergency is striking the U.S.",
+        "Dole: Pricing Tailwinds And Discounted Valuation Create A Buying Opportunity",
+        "8-K - Nuvation Bio Inc. (0001811063) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -44,20 +46,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN"
+        "RIG"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 11,
-      "primary_driver": "XAI Floating Rate & Alternative Income Trust (XFLT) Octagon Xai Clo Income Fund - Shareholder/Analys",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 13,
+      "primary_driver": "Delta Air Lines Q2 Earnings Preview: Here Are The Real Long-Term Signals",
       "key_drivers": [
-        "XAI Floating Rate & Alternative Income Trust (XFLT) Octagon Xai Clo Income Fund - Shareholder/Analyst Call Prepared Rema",
-        "Amazon is laying out $1 billion to follow Palantir’s AI playbook",
-        "8-K - AMERICAN SHARED HOSPITAL SERVICES (0000744825) (Filer)",
-        "8-K - UBS Commercial Mortgage Trust 2018-C11 (0001740040) (Filer)"
+        "Delta Air Lines Q2 Earnings Preview: Here Are The Real Long-Term Signals",
+        "Investors piled into ETFs at a record pace in the first half of 2026. Here’s where their money is flowing.",
+        "Trump's annual financial disclosure shows more than $580M in crypto-related income",
+        "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund"
       ],
       "key_tickers": [
         "NVDA",
@@ -68,21 +70,22 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
         "LLY",
-        "SPY",
-        "CL=F"
+        "NKE",
+        "RIG",
+        "SPY"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Cramer says this aerospace stock is significantly undervalued, sees 35% upside",
+      "story_count": 4,
+      "primary_driver": "Michael Burry says he's shorting Caterpillar for the first time after it nearly doubled in the AI-dr",
       "key_drivers": [
-        "Cramer says this aerospace stock is significantly undervalued, sees 35% upside",
-        "AeroVironment skyrockets 15% as dronemaker capitalizes on defense spending surge",
+        "Michael Burry says he's shorting Caterpillar for the first time after it nearly doubled in the AI-driven rally of 2026",
+        "SES S.A.: A Mispriced European Space Infrastructure Champion",
+        "AeroVironment skyrockets 19% as dronemaker capitalizes on defense spending surge",
         "Trump's massive defense budget, depleted war machine, spark U.S. state battle for business and jobs"
       ],
       "key_tickers": [
@@ -93,19 +96,19 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "LLY"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "Amazon: Fantastic Outlook In AWS And E-Commerce Vs. Potential Overvaluation",
+      "story_count": 4,
+      "primary_driver": "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund",
       "key_drivers": [
-        "Amazon: Fantastic Outlook In AWS And E-Commerce Vs. Potential Overvaluation",
-        "AeroVironment skyrockets 15% as dronemaker capitalizes on defense spending surge",
+        "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund",
+        "Verizon Leads July's 'Safer' Dogs Of The Dow; Nike Near 'Ideal'",
+        "AeroVironment skyrockets 19% as dronemaker capitalizes on defense spending surge",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -116,19 +119,17 @@
         "ONON"
       ],
       "trending_tickers": [
-        "AMZN"
+        "NKE"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Negative",
-      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 4,
-      "primary_driver": "8-K - AMERICAN SHARED HOSPITAL SERVICES (0000744825) (Filer)",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 2,
+      "primary_driver": "FDA lets Philip Morris market Zyn nicotine pouches as less harmful than cigarettes",
       "key_drivers": [
-        "8-K - AMERICAN SHARED HOSPITAL SERVICES (0000744825) (Filer)",
         "FDA lets Philip Morris market Zyn nicotine pouches as less harmful than cigarettes",
-        "Plus Therapeutics, Inc. (PSTV) Discusses Rebranding and Integrated CNS Oncology Platform Strategy Transcript",
         "Medicare will start covering obesity drugs for the first time. Here's what patients should know"
       ],
       "key_tickers": [
@@ -145,15 +146,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 9,
-      "primary_driver": "8-K - CONDUENT Inc (0001677703) (Filer)",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 12,
+      "primary_driver": "Trump's annual financial disclosure shows more than $580M in crypto-related income",
       "key_drivers": [
-        "8-K - CONDUENT Inc (0001677703) (Filer)",
-        "8-K - EQT Exeter Real Estate Income Trust, Inc. (0001946997) (Filer)",
-        "T-Mobile: Why We're Buying Hundreds Of Shares",
-        "Your aging parent has a new romance. Here’s how to protect your inheritance — without looking greedy."
+        "Trump's annual financial disclosure shows more than $580M in crypto-related income",
+        "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund",
+        "Pollard Banknote: A Bad Quarter Changes The Timing, Not The Thesis",
+        "Adobe: A Strong Business Model That Delivers - A Value Equation Deep Dive"
       ],
       "key_tickers": [
         "TLT",
@@ -163,7 +164,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "RIG"
+        "NKE",
+        "LLY"
       ]
     }
   ]
