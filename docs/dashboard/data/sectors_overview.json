@@ -2,15 +2,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "sentiment": "Positive",
-      "tone": "Energy outlook constructive. Recent developments support near-term strength.",
-      "story_count": 4,
-      "primary_driver": "Arrowhead Pharmaceuticals, Inc. (ARWR) Discusses Cardiometabolic Pipeline and Clinical Development P",
+      "sentiment": "Neutral",
+      "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 6,
+      "primary_driver": "Spyre Therapeutics: Deep And Diverse Immunology Pipeline Awaiting Data",
       "key_drivers": [
-        "Arrowhead Pharmaceuticals, Inc. (ARWR) Discusses Cardiometabolic Pipeline and Clinical Development Programs Transcript",
-        "Oil prices rise as U.S. and Iran reach deal to halt attacks, U.S. oil above $70 per barrel again",
-        "Oil prices near pre-war levels — but persistent supply risks could spark a rebound, analysts warn",
-        "Sunday Night Futures"
+        "Spyre Therapeutics: Deep And Diverse Immunology Pipeline Awaiting Data",
+        "Venture Global: America's Next LNG Champion, Intense Growth Ahead",
+        "Oil prices set for steep monthly drop as Trump, Iran issue mixed messages on talks in Qatar",
+        "Strait of Hormuz is reopening faster than expected, says Morgan Stanley as it cuts oil-price target"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
+        "SPY",
         "CL=F",
-        "META",
-        "COST",
-        "LLY"
+        "LNG",
+        "MS"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 8,
-      "primary_driver": "8-K - Blue Owl Digital Infrastructure Trust (0002069692) (Filer)",
+      "story_count": 9,
+      "primary_driver": "8-K - Empery Digital Inc. (0001829794) (Filer)",
       "key_drivers": [
-        "8-K - Blue Owl Digital Infrastructure Trust (0002069692) (Filer)",
-        "Biotech Is The Rate Cut Trade In Disguise",
-        "ResMed: Fear-Driven Selloff Creates A Compelling Margin Of Safety Entry Point",
-        "Supreme Court rulings on Fed, FTC: What they mean for consumers"
+        "8-K - Empery Digital Inc. (0001829794) (Filer)",
+        "8-K - Easterly Government Properties, Inc. (0001622194) (Filer)",
+        "Strait of Hormuz is reopening faster than expected, says Morgan Stanley as it cuts oil-price target",
+        "Short sellers keep betting against Pop Mart — even though it's been a losing trade"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "AMZN",
-        "LLY"
+        "MS",
+        "TGT"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Neutral",
       "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 15,
-      "primary_driver": "IRS says Trump Account contributions will not trigger annual gift tax reporting requirements",
+      "story_count": 14,
+      "primary_driver": "8-K - HCW Biologics Inc. (0001828673) (Filer)",
       "key_drivers": [
-        "IRS says Trump Account contributions will not trigger annual gift tax reporting requirements",
-        "‘I claimed Social Security at 62’: At 76, I’m working at Walmart. Why do I still owe payroll taxes?",
-        "Rocket Lab to take on SpaceX’s Starlink with $8 billion acquisition",
-        "Marvell: A Buy Amid AI Infrastructure Boom And Nvidia Endorsement"
+        "8-K - HCW Biologics Inc. (0001828673) (Filer)",
+        "Microsoft: When Uncertainty Rules, Even Attractive Valuations Don't Matter",
+        "Mike Santoli: A great first half, but some erratic behavior raises doubts about the rally's integrity",
+        "Here are Tuesday's biggest analyst calls: Nvidia, Netflix, Tesla, Alphabet, AMD, Sandisk, Block, Broadcom & more"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,23 +71,23 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
-        "CL=F",
-        "RIG",
-        "WMT"
+        "LLY",
+        "SPY",
+        "MSFT",
+        "NVDA"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Eli Lilly, Regeneron among first companies selected for FDA initiative to speed review of new manufa",
+      "story_count": 5,
+      "primary_driver": "The Renewables Infrastructure Group Limited (RWFRF) Shareholder/Analyst Call Prepared Remarks Transc",
       "key_drivers": [
-        "Eli Lilly, Regeneron among first companies selected for FDA initiative to speed review of new manufacturing facilities",
-        "Marvell: A Buy Amid AI Infrastructure Boom And Nvidia Endorsement",
-        "8-K - T3 Defense Inc. (0001787518) (Filer)",
-        "8-K - Blue Owl Digital Infrastructure Trust (0002069692) (Filer)"
+        "The Renewables Infrastructure Group Limited (RWFRF) Shareholder/Analyst Call Prepared Remarks Transcript",
+        "What are VA rehab and renovation loans — plus the best lenders",
+        "China factory activity grows faster than expected in June on tech export demand",
+        "Industry lobbyists push House committee to block a ban on Pentagon defense contractors buying back their own stock"
       ],
       "key_tickers": [
         "GE",
@@ -97,21 +97,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVDA"
+        "BAC",
+        "LLY"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "‘I claimed Social Security at 62’: At 76, I’m working at Walmart. Why do I still owe payroll taxes?",
+      "story_count": 5,
+      "primary_driver": "Rafael Nadal talks tennis prize money, his hotels, and what sports taught him about business",
       "key_drivers": [
-        "‘I claimed Social Security at 62’: At 76, I’m working at Walmart. Why do I still owe payroll taxes?",
-        "Here's how Trump Accounts could affect women's retirement savings gap",
-        "SpaceX's $25 billion bond sale drives huge demand - and a potential headache for investors",
-        "1st Look at Local Housing Markets in December"
+        "Rafael Nadal talks tennis prize money, his hotels, and what sports taught him about business",
+        "Strait of Hormuz is reopening faster than expected, says Morgan Stanley as it cuts oil-price target",
+        "Inflation likely to stay ‘significantly above target,’ top European central banker warns",
+        "Here's how Trump Accounts could affect women's retirement savings gap"
       ],
       "key_tickers": [
         "NKE",
@@ -121,20 +121,22 @@
         "ONON"
       ],
       "trending_tickers": [
-        "WMT"
+        "TGT",
+        "MS",
+        "NKE"
       ]
     },
     {
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Eli Lilly, Regeneron among first companies selected for FDA initiative to speed review of new manufa",
+      "story_count": 6,
+      "primary_driver": "8-K - Moleculin Biotech, Inc. (0001659617) (Filer)",
       "key_drivers": [
-        "Eli Lilly, Regeneron among first companies selected for FDA initiative to speed review of new manufacturing facilities",
-        "Biotech Is The Rate Cut Trade In Disguise",
-        "Arrowhead Pharmaceuticals, Inc. (ARWR) Discusses Cardiometabolic Pipeline and Clinical Development Programs Transcript",
-        "Transgene SA (TRGNF) Discusses Progress in Individualized Neoantigen Therapeutic Vaccines and Expansion into Early-Stage"
+        "8-K - Moleculin Biotech, Inc. (0001659617) (Filer)",
+        "Viridian Therapeutics: Lumvoa Ready For Prime Time Following FDA Approval",
+        "Rafael Nadal talks tennis prize money, his hotels, and what sports taught him about business",
+        "Medicare will start covering obesity drugs for the first time. Here's what patients should know"
       ],
       "key_tickers": [
         "LLY",
@@ -145,20 +147,20 @@
       ],
       "trending_tickers": [
         "LLY",
-        "META"
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 8,
-      "primary_driver": "‘I don’t think I’ll make it to 80’: I’m 70 and single. Do I take out a reverse mortgage or a home-eq",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 10,
+      "primary_driver": "8-K - Microbot Medical Inc. (0000883975) (Filer)",
       "key_drivers": [
-        "‘I don’t think I’ll make it to 80’: I’m 70 and single. Do I take out a reverse mortgage or a home-equity agreement?",
-        "TechnipFMC: Pricey And Not With The Best Outlook",
-        "Key Indicators Point To A Strong Rally",
-        "My Prediction For H2 2026: Where The S&P 500 Goes From Here"
+        "8-K - Microbot Medical Inc. (0000883975) (Filer)",
+        "Why The Post-SpaceX Market Isn't A Classic Sector Rotation",
+        "8-K - Vistagen Therapeutics, Inc. (0001411685) (Filer)",
+        "Sandisk: Micron Confirmed The Memory Supercycle"
       ],
       "key_tickers": [
         "TLT",
@@ -168,8 +170,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "SPY",
-        "LLY"
+        "NKE",
+        "TGT"
       ]
     }
   ]
