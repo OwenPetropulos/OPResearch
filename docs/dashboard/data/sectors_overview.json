@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "Baker Hughes Weighed Down By Dashed Oil Boom Hopes",
+      "story_count": 7,
+      "primary_driver": "Oil Price Slide Points To Demand Destruction As Stagflationary Consumer Sentiment Persists Globally",
       "key_drivers": [
-        "Baker Hughes Weighed Down By Dashed Oil Boom Hopes",
-        "Golar LNG: Contracted FLNG Growth Drives The Bull Case",
-        "Oil posts largest quarterly price drop in 6 years as historic supply crunch eases",
-        "Brent posts biggest monthly decline since March 2020 as traders monitor U.S.-Iran talks"
+        "Oil Price Slide Points To Demand Destruction As Stagflationary Consumer Sentiment Persists Globally",
+        "Oil prices wobble as uncertainty persists over U.S.-Iran talks in Qatar",
+        "8-K - Transocean Ltd. (0001451505) (Filer)",
+        "8-K - Valaris Ltd (0000314808) (Filer)"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "LNG",
+        "CL=F",
         "LLY",
-        "SPY",
-        "CL=F"
+        "RIG",
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Negative",
+      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
       "story_count": 8,
-      "primary_driver": "Bitcoin ETFs were supposed to make selloffs less painful. That theory is being put to the test.",
+      "primary_driver": "8-K - Manulife Private Credit Fund (0001988280) (Filer)",
       "key_drivers": [
-        "Bitcoin ETFs were supposed to make selloffs less painful. That theory is being put to the test.",
-        "Trump’s energy secretary says global warming is ‘no big deal.’ Meanwhile, a heat emergency is striking the U.S.",
-        "Dole: Pricing Tailwinds And Discounted Valuation Create A Buying Opportunity",
-        "8-K - Nuvation Bio Inc. (0001811063) (Filer)"
+        "8-K - Manulife Private Credit Fund (0001988280) (Filer)",
+        "Fed Chief Kevin Warsh declines to hint at July rate decision as he speaks at ECB forum: Live updates",
+        "Businesses added 98,000 jobs in June, ADP says. Labor market is on the mend, but it’s still not great.",
+        "Warsh warns investors not to expect hints at future Fed rate moves"
       ],
       "key_tickers": [
         "JPM",
@@ -46,20 +46,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "RIG"
+        "JPM",
+        "GS"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "Delta Air Lines Q2 Earnings Preview: Here Are The Real Long-Term Signals",
+      "story_count": 15,
+      "primary_driver": "Fed Chief Kevin Warsh declines to hint at July rate decision as he speaks at ECB forum: Live updates",
       "key_drivers": [
-        "Delta Air Lines Q2 Earnings Preview: Here Are The Real Long-Term Signals",
-        "Investors piled into ETFs at a record pace in the first half of 2026. Here’s where their money is flowing.",
-        "Trump's annual financial disclosure shows more than $580M in crypto-related income",
-        "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund"
+        "Fed Chief Kevin Warsh declines to hint at July rate decision as he speaks at ECB forum: Live updates",
+        "Businesses added 98,000 jobs in June, ADP says. Labor market is on the mend, but it’s still not great.",
+        "Nasdaq futures drop to kick off July as investors dump chip stocks after blockbuster first half: Live updates",
+        "Warsh warns investors not to expect hints at future Fed rate moves"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,22 +72,19 @@
       ],
       "trending_tickers": [
         "LLY",
+        "CL=F",
         "NKE",
-        "RIG",
-        "SPY"
+        "AMD"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Michael Burry says he's shorting Caterpillar for the first time after it nearly doubled in the AI-dr",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "Michael Burry says he's shorting Caterpillar for the first time after it nearly doubled in the AI-driven rally of 2026",
-        "SES S.A.: A Mispriced European Space Infrastructure Champion",
-        "AeroVironment skyrockets 19% as dronemaker capitalizes on defense spending surge",
-        "Trump's massive defense budget, depleted war machine, spark U.S. state battle for business and jobs"
+        "No major industrials stories in current update cycle."
       ],
       "key_tickers": [
         "GE",
@@ -96,7 +94,8 @@
         "HON"
       ],
       "trending_tickers": [
-        "LLY"
+        "LMT",
+        "RTX"
       ]
     },
     {
@@ -104,11 +103,11 @@
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 4,
-      "primary_driver": "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund",
+      "primary_driver": "Two 7%+ Yielding Retirement Picks That I'd Buy For Income Growth",
       "key_drivers": [
-        "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund",
-        "Verizon Leads July's 'Safer' Dogs Of The Dow; Nike Near 'Ideal'",
-        "AeroVironment skyrockets 19% as dronemaker capitalizes on defense spending surge",
+        "Two 7%+ Yielding Retirement Picks That I'd Buy For Income Growth",
+        "Private payrolls rose by 98,000 in June, less than expected, ADP reports",
+        "Stocks making the biggest moves premarket: Nike, ServiceNow, Constellation Brands & more",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -119,6 +118,7 @@
         "ONON"
       ],
       "trending_tickers": [
+        "TGT",
         "NKE"
       ]
     },
@@ -126,11 +126,10 @@
       "sector": "Healthcare",
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "FDA lets Philip Morris market Zyn nicotine pouches as less harmful than cigarettes",
+      "story_count": 0,
+      "primary_driver": "No recent stories",
       "key_drivers": [
-        "FDA lets Philip Morris market Zyn nicotine pouches as less harmful than cigarettes",
-        "Medicare will start covering obesity drugs for the first time. Here's what patients should know"
+        "No major healthcare stories in current update cycle."
       ],
       "key_tickers": [
         "LLY",
@@ -148,13 +147,13 @@
       "sector": "Macro",
       "sentiment": "Positive",
       "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 12,
-      "primary_driver": "Trump's annual financial disclosure shows more than $580M in crypto-related income",
+      "story_count": 11,
+      "primary_driver": "Oil Price Slide Points To Demand Destruction As Stagflationary Consumer Sentiment Persists Globally",
       "key_drivers": [
-        "Trump's annual financial disclosure shows more than $580M in crypto-related income",
-        "Nike results top estimates even as China sales drop 12%; retailer expects $986 million tariff refund",
-        "Pollard Banknote: A Bad Quarter Changes The Timing, Not The Thesis",
-        "Adobe: A Strong Business Model That Delivers - A Value Equation Deep Dive"
+        "Oil Price Slide Points To Demand Destruction As Stagflationary Consumer Sentiment Persists Globally",
+        "Record beef imports are flooding the U.S. — so why is your Fourth of July BBQ so expensive?",
+        "PlayStation will end physical disc production for new games in 2028",
+        "Fed Chief Kevin Warsh declines to hint at July rate decision as he speaks at ECB forum: Live updates"
       ],
       "key_tickers": [
         "TLT",
@@ -164,8 +163,10 @@
         "DXY"
       ],
       "trending_tickers": [
-        "NKE",
-        "LLY"
+        "LLY",
+        "CL=F",
+        "COST",
+        "RIG"
       ]
     }
   ]
