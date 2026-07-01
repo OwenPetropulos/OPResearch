@@ -4,13 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 7,
-      "primary_driver": "Oil Price Slide Points To Demand Destruction As Stagflationary Consumer Sentiment Persists Globally",
+      "story_count": 5,
+      "primary_driver": "8-K12B - ExxonMobil Holdings Corp (0002115436) (Filer)",
       "key_drivers": [
-        "Oil Price Slide Points To Demand Destruction As Stagflationary Consumer Sentiment Persists Globally",
-        "Oil prices wobble as uncertainty persists over U.S.-Iran talks in Qatar",
-        "8-K - Transocean Ltd. (0001451505) (Filer)",
-        "8-K - Valaris Ltd (0000314808) (Filer)"
+        "8-K12B - ExxonMobil Holdings Corp (0002115436) (Filer)",
+        "8-K - EXXON MOBIL CORP (0000034088) (Filer)",
+        "U.S. manufacturers keep on trucking despite a road littered with obstacles",
+        "Markets Taking A Break After Epic Quarter; Crude Falls"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
-        "LLY",
+        "AMZN",
+        "XOM",
         "RIG",
-        "SPY"
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Negative",
       "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 8,
-      "primary_driver": "8-K - Manulife Private Credit Fund (0001988280) (Filer)",
+      "story_count": 9,
+      "primary_driver": "Trump administration's limits on student loan forgiveness program are blocked. What to know",
       "key_drivers": [
-        "8-K - Manulife Private Credit Fund (0001988280) (Filer)",
-        "Fed Chief Kevin Warsh declines to hint at July rate decision as he speaks at ECB forum: Live updates",
-        "Businesses added 98,000 jobs in June, ADP says. Labor market is on the mend, but it’s still not great.",
-        "Warsh warns investors not to expect hints at future Fed rate moves"
+        "Trump administration's limits on student loan forgiveness program are blocked. What to know",
+        "Stock-market bulls need Kevin Warsh on their side to keep winning, says Wall Street veteran Bob Doll",
+        "Bitcoin's summer swoon creates unique trade in Strategy",
+        "U.S. auto industry faces increased uncertainty without extension of USMCA trade deal"
       ],
       "key_tickers": [
         "JPM",
@@ -46,21 +46,22 @@
         "KRE"
       ],
       "trending_tickers": [
-        "JPM",
-        "GS"
+        "RIG",
+        "AMZN",
+        "XOM"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 15,
-      "primary_driver": "Fed Chief Kevin Warsh declines to hint at July rate decision as he speaks at ECB forum: Live updates",
+      "primary_driver": "U.S. won’t renew USMCA, opening door for negotiations with Canada and Mexico",
       "key_drivers": [
-        "Fed Chief Kevin Warsh declines to hint at July rate decision as he speaks at ECB forum: Live updates",
-        "Businesses added 98,000 jobs in June, ADP says. Labor market is on the mend, but it’s still not great.",
-        "Nasdaq futures drop to kick off July as investors dump chip stocks after blockbuster first half: Live updates",
-        "Warsh warns investors not to expect hints at future Fed rate moves"
+        "U.S. won’t renew USMCA, opening door for negotiations with Canada and Mexico",
+        "8-K - COMM 2016-COR1 Mortgage Trust (0001685212) (Filer)",
+        "Stock-market bulls need Kevin Warsh on their side to keep winning, says Wall Street veteran Bob Doll",
+        "Bitcoin's summer swoon creates unique trade in Strategy"
       ],
       "key_tickers": [
         "NVDA",
@@ -71,10 +72,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
-        "CL=F",
-        "NKE",
-        "AMD"
+        "RIG",
+        "AMZN",
+        "XOM",
+        "META"
       ]
     },
     {
@@ -102,12 +103,11 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 4,
-      "primary_driver": "Two 7%+ Yielding Retirement Picks That I'd Buy For Income Growth",
+      "story_count": 3,
+      "primary_driver": "5 charts showing how ‘dumb money’ is transforming the stock market, as retail traders smash Wall Str",
       "key_drivers": [
-        "Two 7%+ Yielding Retirement Picks That I'd Buy For Income Growth",
+        "5 charts showing how ‘dumb money’ is transforming the stock market, as retail traders smash Wall Street records",
         "Private payrolls rose by 98,000 in June, less than expected, ADP reports",
-        "Stocks making the biggest moves premarket: Nike, ServiceNow, Constellation Brands & more",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -118,18 +118,17 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "NKE"
+        "TGT"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Neutral",
-      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "sentiment": "Negative",
+      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 1,
+      "primary_driver": "Millions of Americans can get Medicare to cover GLP-1s for weight loss starting this week. Here’s ho",
       "key_drivers": [
-        "No major healthcare stories in current update cycle."
+        "Millions of Americans can get Medicare to cover GLP-1s for weight loss starting this week. Here’s how much it costs."
       ],
       "key_tickers": [
         "LLY",
@@ -139,21 +138,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "LLY",
-        "NVO"
+        "COST"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "Oil Price Slide Points To Demand Destruction As Stagflationary Consumer Sentiment Persists Globally",
+      "sentiment": "Negative",
+      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 10,
+      "primary_driver": "Templeton Dragon Fund Inc. Q1 2026 Commentary",
       "key_drivers": [
-        "Oil Price Slide Points To Demand Destruction As Stagflationary Consumer Sentiment Persists Globally",
-        "Record beef imports are flooding the U.S. — so why is your Fourth of July BBQ so expensive?",
-        "PlayStation will end physical disc production for new games in 2028",
-        "Fed Chief Kevin Warsh declines to hint at July rate decision as he speaks at ECB forum: Live updates"
+        "Templeton Dragon Fund Inc. Q1 2026 Commentary",
+        "YBIT Makes Bitcoin \"Yield-Generating\": Here's How.",
+        "Inflation peaked in May as energy prices fell in June, Kalshi traders think",
+        "Weyerhaeuser's Scrappiness Will Lead To Large Free Cash Flow"
       ],
       "key_tickers": [
         "TLT",
@@ -163,10 +161,9 @@
         "DXY"
       ],
       "trending_tickers": [
-        "LLY",
-        "CL=F",
-        "COST",
-        "RIG"
+        "NKE",
+        "TIP",
+        "CL=F"
       ]
     }
   ]
