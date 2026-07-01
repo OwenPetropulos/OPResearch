@@ -4,13 +4,11 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 5,
-      "primary_driver": "8-K12B - ExxonMobil Holdings Corp (0002115436) (Filer)",
+      "story_count": 2,
+      "primary_driver": "Patterson-UTI Energy Inc: Consider Holding On To This Oil Drilling Company As The Strait Of Hormuz R",
       "key_drivers": [
-        "8-K12B - ExxonMobil Holdings Corp (0002115436) (Filer)",
-        "8-K - EXXON MOBIL CORP (0000034088) (Filer)",
-        "U.S. manufacturers keep on trucking despite a road littered with obstacles",
-        "Markets Taking A Break After Epic Quarter; Crude Falls"
+        "Patterson-UTI Energy Inc: Consider Holding On To This Oil Drilling Company As The Strait Of Hormuz Reopens",
+        "Sunday Night Futures"
       ],
       "key_tickers": [
         "XOM",
@@ -20,23 +18,22 @@
         "RIG"
       ],
       "trending_tickers": [
-        "AMZN",
-        "XOM",
-        "RIG",
+        "LLY",
+        "SPY",
         "CL=F"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Negative",
-      "tone": "Financials facing headwinds. Monitor key support levels and guidance revisions.",
-      "story_count": 9,
-      "primary_driver": "Trump administration's limits on student loan forgiveness program are blocked. What to know",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 8,
+      "primary_driver": "The Physical Limits Of AI: Where Scarcity Is Creating Opportunity",
       "key_drivers": [
-        "Trump administration's limits on student loan forgiveness program are blocked. What to know",
-        "Stock-market bulls need Kevin Warsh on their side to keep winning, says Wall Street veteran Bob Doll",
-        "Bitcoin's summer swoon creates unique trade in Strategy",
-        "U.S. auto industry faces increased uncertainty without extension of USMCA trade deal"
+        "The Physical Limits Of AI: Where Scarcity Is Creating Opportunity",
+        "IAK: The Insurance Sector Back In The Spotlight",
+        "8-K - Jackson Financial Inc. (0001822993) (Filer)",
+        "8-K - REINSURANCE GROUP OF AMERICA INC (0000898174) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -46,22 +43,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "RIG",
-        "AMZN",
-        "XOM"
+        "BAC",
+        "MS"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 15,
-      "primary_driver": "U.S. won’t renew USMCA, opening door for negotiations with Canada and Mexico",
+      "sentiment": "Positive",
+      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
+      "story_count": 12,
+      "primary_driver": "Patterson-UTI Energy Inc: Consider Holding On To This Oil Drilling Company As The Strait Of Hormuz R",
       "key_drivers": [
-        "U.S. won’t renew USMCA, opening door for negotiations with Canada and Mexico",
-        "8-K - COMM 2016-COR1 Mortgage Trust (0001685212) (Filer)",
-        "Stock-market bulls need Kevin Warsh on their side to keep winning, says Wall Street veteran Bob Doll",
-        "Bitcoin's summer swoon creates unique trade in Strategy"
+        "Patterson-UTI Energy Inc: Consider Holding On To This Oil Drilling Company As The Strait Of Hormuz Reopens",
+        "Phinia: Getting Acquisitive After Gaining Confidence",
+        "The Physical Limits Of AI: Where Scarcity Is Creating Opportunity",
+        "CoreWeave, Nebius shares tumble as Meta stands to become a fresh threat in the cloud"
       ],
       "key_tickers": [
         "NVDA",
@@ -72,20 +68,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "RIG",
-        "AMZN",
-        "XOM",
-        "META"
+        "LLY",
+        "META",
+        "NOC",
+        "BAC"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 0,
-      "primary_driver": "No recent stories",
+      "story_count": 2,
+      "primary_driver": "CoreWeave, Nebius shares tumble as Meta stands to become a fresh threat in the cloud",
       "key_drivers": [
-        "No major industrials stories in current update cycle."
+        "CoreWeave, Nebius shares tumble as Meta stands to become a fresh threat in the cloud",
+        "This is the best time ‘in a generation’ to buy space and defense stocks, analysts say"
       ],
       "key_tickers": [
         "GE",
@@ -95,20 +92,20 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "META"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "5 charts showing how ‘dumb money’ is transforming the stock market, as retail traders smash Wall Str",
+      "story_count": 7,
+      "primary_driver": "Build Less, Pay More: What Happened To American Housing",
       "key_drivers": [
-        "5 charts showing how ‘dumb money’ is transforming the stock market, as retail traders smash Wall Street records",
-        "Private payrolls rose by 98,000 in June, less than expected, ADP reports",
-        "1st Look at Local Housing Markets in December"
+        "Build Less, Pay More: What Happened To American Housing",
+        "Target: The Turnaround Is Here, The Deep Value Isn't",
+        "Webull: The Retail Trading Boom Is Back, But The Stock Still Has A Problem",
+        "I’m 53 and want to retire in 12 years. Is 5% enough to put in my 401(k)?"
       ],
       "key_tickers": [
         "NKE",
@@ -118,17 +115,19 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT"
+        "TGT",
+        "BAC",
+        "WMT"
       ]
     },
     {
       "sector": "Healthcare",
-      "sentiment": "Negative",
-      "tone": "Healthcare facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Millions of Americans can get Medicare to cover GLP-1s for weight loss starting this week. Here’s ho",
+      "primary_driver": "Healthy Returns: Walmart, CVS step in to help seniors navigate Medicare coverage of obesity drugs",
       "key_drivers": [
-        "Millions of Americans can get Medicare to cover GLP-1s for weight loss starting this week. Here’s how much it costs."
+        "Healthy Returns: Walmart, CVS step in to help seniors navigate Medicare coverage of obesity drugs"
       ],
       "key_tickers": [
         "LLY",
@@ -138,20 +137,20 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "COST"
+        "WMT"
       ]
     },
     {
       "sector": "Macro",
-      "sentiment": "Negative",
-      "tone": "Macro facing headwinds. Monitor key support levels and guidance revisions.",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 10,
-      "primary_driver": "Templeton Dragon Fund Inc. Q1 2026 Commentary",
+      "primary_driver": "Integra Resources: Buy Shares On The 40% Pullback",
       "key_drivers": [
-        "Templeton Dragon Fund Inc. Q1 2026 Commentary",
-        "YBIT Makes Bitcoin \"Yield-Generating\": Here's How.",
-        "Inflation peaked in May as energy prices fell in June, Kalshi traders think",
-        "Weyerhaeuser's Scrappiness Will Lead To Large Free Cash Flow"
+        "Integra Resources: Buy Shares On The 40% Pullback",
+        "Kimball Electronics, Inc. (KE) Helvoet International B.V. - M&A Call - Slideshow",
+        "Where can I invest my kid’s ‘Trump account’ money? The Treasury Department just answered that question.",
+        "Trump got $15,000 in FIFA tickets from Gianni Infantino. Next up: Presenting the World Cup trophy"
       ],
       "key_tickers": [
         "TLT",
@@ -161,9 +160,10 @@
         "DXY"
       ],
       "trending_tickers": [
-        "NKE",
-        "TIP",
-        "CL=F"
+        "BAC",
+        "LLY",
+        "COST",
+        "NOC"
       ]
     }
   ]
