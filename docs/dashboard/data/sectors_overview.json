@@ -4,9 +4,11 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Sunday Night Futures",
+      "story_count": 3,
+      "primary_driver": "8-K - MV Oil Trust (0001371782) (Filer)",
       "key_drivers": [
+        "8-K - MV Oil Trust (0001371782) (Filer)",
+        "Saudi Arabia has ramped up oil shipments through the Strait of Hormuz since U.S.-Iran deal",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -27,12 +29,12 @@
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "These are the top stock picks from UBS analysts heading into the third quarter",
+      "primary_driver": "8-K - AppTech Payments Corp. (0001070050) (Filer)",
       "key_drivers": [
-        "These are the top stock picks from UBS analysts heading into the third quarter",
-        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
-        "8-K - VISTA CREDIT STRATEGIC LENDING CORP. (0001919369) (Filer)",
-        "Rivian raises 2026 delivery outlook while Lucid misses Wall Street expectations for second quarter"
+        "8-K - AppTech Payments Corp. (0001070050) (Filer)",
+        "The Employment Report Just Changed Everything: June Miss Reshapes Fed Playbook",
+        "Why maxing out your 401(k) is a major financial mistake if you have credit-card and other punishing debt",
+        "Eni: Diversification Strategy Driving Long-Term Value Creation"
       ],
       "key_tickers": [
         "JPM",
@@ -42,20 +44,21 @@
         "KRE"
       ],
       "trending_tickers": [
-        "NVDA"
+        "GS",
+        "MS"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Positive",
-      "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "House lawmakers approved a bipartisan bill to protect older adults from financial fraud. Here's what",
+      "sentiment": "Neutral",
+      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 12,
+      "primary_driver": "8-K - Terra Innovatum Global N.V. (0002067627) (Filer)",
       "key_drivers": [
-        "House lawmakers approved a bipartisan bill to protect older adults from financial fraud. Here's what to know",
-        "Stock market gains minted nearly 1 million new millionaires in 2025, new UBS report says",
-        "Sandwich chain Jersey Mike's files for IPO, reports 50% same-store sales growth in recent years",
-        "Trump Just Went All-In On AI: Should You?"
+        "8-K - Terra Innovatum Global N.V. (0002067627) (Filer)",
+        "8-K - Core & Main, Inc. (0001856525) (Filer)",
+        "Jobs Report Fuels The Rotation Out Of AI CapEx Beneficiaries",
+        "8-K - MV Oil Trust (0001371782) (Filer)"
       ],
       "key_tickers": [
         "NVDA",
@@ -66,7 +69,7 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "NVDA",
+        "AMZN",
         "LLY",
         "SPY",
         "CL=F"
@@ -77,9 +80,9 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "TSMC: Even In CapEx Normalization, The Messiah Of Manufacturing Rules",
+      "primary_driver": "Saudi Arabia has ramped up oil shipments through the Strait of Hormuz since U.S.-Iran deal",
       "key_drivers": [
-        "TSMC: Even In CapEx Normalization, The Messiah Of Manufacturing Rules"
+        "Saudi Arabia has ramped up oil shipments through the Strait of Hormuz since U.S.-Iran deal"
       ],
       "key_tickers": [
         "GE",
@@ -97,11 +100,9 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "High-end camping and a capital raise: AutoCamp is banking on summer travel to fuel growth",
+      "story_count": 1,
+      "primary_driver": "1st Look at Local Housing Markets in December",
       "key_drivers": [
-        "High-end camping and a capital raise: AutoCamp is banking on summer travel to fuel growth",
-        "InnovAge: A Real Turnaround, But The Stock Now Trades Above Every Analyst Target",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -112,7 +113,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT"
+        "NKE",
+        "WMT"
       ]
     },
     {
@@ -138,15 +140,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Neutral",
-      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "Lindsay Corporation (LNN) Q3 2026 Earnings Call Transcript",
+      "sentiment": "Positive",
+      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
+      "story_count": 11,
+      "primary_driver": "President Donald Trump defends business dealings, his children in exclusive interview with CNBC",
       "key_drivers": [
-        "Lindsay Corporation (LNN) Q3 2026 Earnings Call Transcript",
-        "Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era",
-        "Why We Initiated A Position In Skanska",
-        "My Battle Between Fear, Greed, And Discipline"
+        "President Donald Trump defends business dealings, his children in exclusive interview with CNBC",
+        "Trump’s real-estate licensing income in foreign countries nearly doubled — and now features Qatar and Romania",
+        "Dividend Champion, Contender, And Challenger Highlights: Week Of July 5",
+        "Gamer trades in $1,000 of physical discs at GameStop, days after Sony announces end of disc era"
       ],
       "key_tickers": [
         "TLT",
