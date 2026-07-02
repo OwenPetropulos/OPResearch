@@ -5,9 +5,9 @@
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "Patterson-UTI Energy Inc: Consider Holding On To This Oil Drilling Company As The Strait Of Hormuz R",
+      "primary_driver": "Oil prices on pace for fourth straight weekly loss as Trump sees progress in U.S.-Iran talks",
       "key_drivers": [
-        "Patterson-UTI Energy Inc: Consider Holding On To This Oil Drilling Company As The Strait Of Hormuz Reopens",
+        "Oil prices on pace for fourth straight weekly loss as Trump sees progress in U.S.-Iran talks",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -18,22 +18,22 @@
         "RIG"
       ],
       "trending_tickers": [
+        "CL=F",
         "LLY",
-        "SPY",
-        "CL=F"
+        "SPY"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Neutral",
-      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
+      "sentiment": "Positive",
+      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
       "story_count": 8,
-      "primary_driver": "The Physical Limits Of AI: Where Scarcity Is Creating Opportunity",
+      "primary_driver": "8-K - Blue Owl Credit Income Corp. (0001812554) (Filer)",
       "key_drivers": [
-        "The Physical Limits Of AI: Where Scarcity Is Creating Opportunity",
-        "IAK: The Insurance Sector Back In The Spotlight",
-        "8-K - Jackson Financial Inc. (0001822993) (Filer)",
-        "8-K - REINSURANCE GROUP OF AMERICA INC (0000898174) (Filer)"
+        "8-K - Blue Owl Credit Income Corp. (0001812554) (Filer)",
+        "Rivian raises 2026 delivery outlook after strong demand in the second quarter",
+        "NetApp: Enterprise AI Demand Is Creating A Materially New Growth Trajectory",
+        "8-K - Gentherm Inc (0000903129) (Filer)"
       ],
       "key_tickers": [
         "JPM",
@@ -43,21 +43,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "BAC",
-        "MS"
+        "LLY"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 12,
-      "primary_driver": "Patterson-UTI Energy Inc: Consider Holding On To This Oil Drilling Company As The Strait Of Hormuz R",
+      "story_count": 13,
+      "primary_driver": "8-K - RenovoRx, Inc. (0001574094) (Filer)",
       "key_drivers": [
-        "Patterson-UTI Energy Inc: Consider Holding On To This Oil Drilling Company As The Strait Of Hormuz Reopens",
-        "Phinia: Getting Acquisitive After Gaining Confidence",
-        "The Physical Limits Of AI: Where Scarcity Is Creating Opportunity",
-        "CoreWeave, Nebius shares tumble as Meta stands to become a fresh threat in the cloud"
+        "8-K - RenovoRx, Inc. (0001574094) (Filer)",
+        "Rivian raises 2026 delivery outlook after strong demand in the second quarter",
+        "CoreWeave: Meta Compute Scare Is A Long-Term Buying Opportunity",
+        "Meta’s push into cloud computing means Wall Street has to prepare for lower margins"
       ],
       "key_tickers": [
         "NVDA",
@@ -68,10 +67,10 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "LLY",
         "META",
-        "NOC",
-        "BAC"
+        "LLY",
+        "CL=F",
+        "NVDA"
       ]
     },
     {
@@ -79,10 +78,10 @@
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 2,
-      "primary_driver": "CoreWeave, Nebius shares tumble as Meta stands to become a fresh threat in the cloud",
+      "primary_driver": "Meta’s push into cloud computing means Wall Street has to prepare for lower margins",
       "key_drivers": [
-        "CoreWeave, Nebius shares tumble as Meta stands to become a fresh threat in the cloud",
-        "This is the best time ‘in a generation’ to buy space and defense stocks, analysts say"
+        "Meta’s push into cloud computing means Wall Street has to prepare for lower margins",
+        "L3Harris: This Defense Tech Compounder Is Worth Its Premium"
       ],
       "key_tickers": [
         "GE",
@@ -99,13 +98,11 @@
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 7,
-      "primary_driver": "Build Less, Pay More: What Happened To American Housing",
+      "story_count": 2,
+      "primary_driver": "Want to live longer in retirement? This one money move could add years to your life.",
       "key_drivers": [
-        "Build Less, Pay More: What Happened To American Housing",
-        "Target: The Turnaround Is Here, The Deep Value Isn't",
-        "Webull: The Retail Trading Boom Is Back, But The Stock Still Has A Problem",
-        "I’m 53 and want to retire in 12 years. Is 5% enough to put in my 401(k)?"
+        "Want to live longer in retirement? This one money move could add years to your life.",
+        "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
         "NKE",
@@ -115,9 +112,7 @@
         "ONON"
       ],
       "trending_tickers": [
-        "TGT",
-        "BAC",
-        "WMT"
+        "LLY"
       ]
     },
     {
@@ -125,9 +120,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "Healthy Returns: Walmart, CVS step in to help seniors navigate Medicare coverage of obesity drugs",
+      "primary_driver": "8-K - CNS Pharmaceuticals, Inc. (0001729427) (Filer)",
       "key_drivers": [
-        "Healthy Returns: Walmart, CVS step in to help seniors navigate Medicare coverage of obesity drugs"
+        "8-K - CNS Pharmaceuticals, Inc. (0001729427) (Filer)"
       ],
       "key_tickers": [
         "LLY",
@@ -137,20 +132,21 @@
         "VRTX"
       ],
       "trending_tickers": [
-        "WMT"
+        "LLY",
+        "NVO"
       ]
     },
     {
       "sector": "Macro",
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 10,
-      "primary_driver": "Integra Resources: Buy Shares On The 40% Pullback",
+      "story_count": 8,
+      "primary_driver": "U.S. economy added 57,000 jobs in June, less than expected; unemployment rate at 4.2%",
       "key_drivers": [
-        "Integra Resources: Buy Shares On The 40% Pullback",
-        "Kimball Electronics, Inc. (KE) Helvoet International B.V. - M&A Call - Slideshow",
-        "Where can I invest my kid’s ‘Trump account’ money? The Treasury Department just answered that question.",
-        "Trump got $15,000 in FIFA tickets from Gianni Infantino. Next up: Presenting the World Cup trophy"
+        "U.S. economy added 57,000 jobs in June, less than expected; unemployment rate at 4.2%",
+        "8-K - VisionWave Holdings, Inc. (0002038439) (Filer)",
+        "8-K - Blue Owl Technology Income Corp. (0001869453) (Filer)",
+        "8-K - Columbia Financial, Inc. (0001723596) (Filer)"
       ],
       "key_tickers": [
         "TLT",
@@ -161,9 +157,7 @@
       ],
       "trending_tickers": [
         "BAC",
-        "LLY",
-        "COST",
-        "NOC"
+        "RIG"
       ]
     }
   ]
