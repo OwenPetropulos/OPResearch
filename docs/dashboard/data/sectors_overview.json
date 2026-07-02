@@ -4,10 +4,9 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Oil prices on pace for fourth straight weekly loss as Trump sees progress in U.S.-Iran talks",
+      "story_count": 1,
+      "primary_driver": "Sunday Night Futures",
       "key_drivers": [
-        "Oil prices on pace for fourth straight weekly loss as Trump sees progress in U.S.-Iran talks",
         "Sunday Night Futures"
       ],
       "key_tickers": [
@@ -18,22 +17,22 @@
         "RIG"
       ],
       "trending_tickers": [
-        "CL=F",
         "LLY",
-        "SPY"
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Financials",
-      "sentiment": "Positive",
-      "tone": "Financials outlook constructive. Recent developments support near-term strength.",
+      "sentiment": "Neutral",
+      "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "8-K - Blue Owl Credit Income Corp. (0001812554) (Filer)",
+      "primary_driver": "These are the top stock picks from UBS analysts heading into the third quarter",
       "key_drivers": [
-        "8-K - Blue Owl Credit Income Corp. (0001812554) (Filer)",
-        "Rivian raises 2026 delivery outlook after strong demand in the second quarter",
-        "NetApp: Enterprise AI Demand Is Creating A Materially New Growth Trajectory",
-        "8-K - Gentherm Inc (0000903129) (Filer)"
+        "These are the top stock picks from UBS analysts heading into the third quarter",
+        "8-K - Federal Home Loan Bank of Des Moines (0001325814) (Filer)",
+        "8-K - VISTA CREDIT STRATEGIC LENDING CORP. (0001919369) (Filer)",
+        "Rivian raises 2026 delivery outlook while Lucid misses Wall Street expectations for second quarter"
       ],
       "key_tickers": [
         "JPM",
@@ -43,20 +42,20 @@
         "KRE"
       ],
       "trending_tickers": [
-        "LLY"
+        "NVDA"
       ]
     },
     {
       "sector": "Technology",
       "sentiment": "Positive",
       "tone": "Technology outlook constructive. Recent developments support near-term strength.",
-      "story_count": 13,
-      "primary_driver": "8-K - RenovoRx, Inc. (0001574094) (Filer)",
+      "story_count": 11,
+      "primary_driver": "House lawmakers approved a bipartisan bill to protect older adults from financial fraud. Here's what",
       "key_drivers": [
-        "8-K - RenovoRx, Inc. (0001574094) (Filer)",
-        "Rivian raises 2026 delivery outlook after strong demand in the second quarter",
-        "CoreWeave: Meta Compute Scare Is A Long-Term Buying Opportunity",
-        "Meta’s push into cloud computing means Wall Street has to prepare for lower margins"
+        "House lawmakers approved a bipartisan bill to protect older adults from financial fraud. Here's what to know",
+        "Stock market gains minted nearly 1 million new millionaires in 2025, new UBS report says",
+        "Sandwich chain Jersey Mike's files for IPO, reports 50% same-store sales growth in recent years",
+        "Trump Just Went All-In On AI: Should You?"
       ],
       "key_tickers": [
         "NVDA",
@@ -67,21 +66,20 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "META",
+        "NVDA",
         "LLY",
-        "CL=F",
-        "NVDA"
+        "SPY",
+        "CL=F"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Meta’s push into cloud computing means Wall Street has to prepare for lower margins",
+      "story_count": 1,
+      "primary_driver": "TSMC: Even In CapEx Normalization, The Messiah Of Manufacturing Rules",
       "key_drivers": [
-        "Meta’s push into cloud computing means Wall Street has to prepare for lower margins",
-        "L3Harris: This Defense Tech Compounder Is Worth Its Premium"
+        "TSMC: Even In CapEx Normalization, The Messiah Of Manufacturing Rules"
       ],
       "key_tickers": [
         "GE",
@@ -91,17 +89,19 @@
         "HON"
       ],
       "trending_tickers": [
-        "META"
+        "LMT",
+        "RTX"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 2,
-      "primary_driver": "Want to live longer in retirement? This one money move could add years to your life.",
+      "story_count": 3,
+      "primary_driver": "High-end camping and a capital raise: AutoCamp is banking on summer travel to fuel growth",
       "key_drivers": [
-        "Want to live longer in retirement? This one money move could add years to your life.",
+        "High-end camping and a capital raise: AutoCamp is banking on summer travel to fuel growth",
+        "InnovAge: A Real Turnaround, But The Stock Now Trades Above Every Analyst Target",
         "1st Look at Local Housing Markets in December"
       ],
       "key_tickers": [
@@ -112,7 +112,7 @@
         "ONON"
       ],
       "trending_tickers": [
-        "LLY"
+        "TGT"
       ]
     },
     {
@@ -120,9 +120,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "8-K - CNS Pharmaceuticals, Inc. (0001729427) (Filer)",
+      "primary_driver": "The charts on this biotech stock look attractive, says Jay Woods",
       "key_drivers": [
-        "8-K - CNS Pharmaceuticals, Inc. (0001729427) (Filer)"
+        "The charts on this biotech stock look attractive, says Jay Woods"
       ],
       "key_tickers": [
         "LLY",
@@ -141,12 +141,12 @@
       "sentiment": "Neutral",
       "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 8,
-      "primary_driver": "U.S. economy added 57,000 jobs in June, less than expected; unemployment rate at 4.2%",
+      "primary_driver": "Lindsay Corporation (LNN) Q3 2026 Earnings Call Transcript",
       "key_drivers": [
-        "U.S. economy added 57,000 jobs in June, less than expected; unemployment rate at 4.2%",
-        "8-K - VisionWave Holdings, Inc. (0002038439) (Filer)",
-        "8-K - Blue Owl Technology Income Corp. (0001869453) (Filer)",
-        "8-K - Columbia Financial, Inc. (0001723596) (Filer)"
+        "Lindsay Corporation (LNN) Q3 2026 Earnings Call Transcript",
+        "Job seekers giving up: Labor force participation rate falls to lowest in 50 years, outside of Covid era",
+        "Why We Initiated A Position In Skanska",
+        "My Battle Between Fear, Greed, And Discipline"
       ],
       "key_tickers": [
         "TLT",
@@ -156,8 +156,8 @@
         "DXY"
       ],
       "trending_tickers": [
-        "BAC",
-        "RIG"
+        "GLD",
+        "DXY"
       ]
     }
   ]
