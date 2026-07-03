@@ -4,12 +4,13 @@
       "sector": "Energy",
       "sentiment": "Neutral",
       "tone": "Energy showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 3,
-      "primary_driver": "8-K - MV Oil Trust (0001371782) (Filer)",
+      "story_count": 7,
+      "primary_driver": "ExxonMobil: I'm Re-Entering As Valuation Is Attractive With Overlooked Market Opportunities (Rating ",
       "key_drivers": [
-        "8-K - MV Oil Trust (0001371782) (Filer)",
-        "Saudi Arabia has ramped up oil shipments through the Strait of Hormuz since U.S.-Iran deal",
-        "Sunday Night Futures"
+        "ExxonMobil: I'm Re-Entering As Valuation Is Attractive With Overlooked Market Opportunities (Rating Upgrade)",
+        "Evolution Petroleum: Solid Recent Production And Cost Performance",
+        "Oman walks a diplomatic tightrope over Strait of Hormuz fees, creating a ‘blind spot’ for markets",
+        "Weak jobs growth and easing oil prices reinforce expectations for Fed pause, analysts say"
       ],
       "key_tickers": [
         "XOM",
@@ -19,22 +20,23 @@
         "RIG"
       ],
       "trending_tickers": [
-        "LLY",
-        "SPY",
-        "CL=F"
+        "CL=F",
+        "XOM",
+        "COST",
+        "LLY"
       ]
     },
     {
       "sector": "Financials",
       "sentiment": "Neutral",
       "tone": "Financials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 8,
-      "primary_driver": "8-K - AppTech Payments Corp. (0001070050) (Filer)",
+      "story_count": 10,
+      "primary_driver": "Trump’s Freedom 250 draws corporate sponsors with business before his administration",
       "key_drivers": [
-        "8-K - AppTech Payments Corp. (0001070050) (Filer)",
-        "The Employment Report Just Changed Everything: June Miss Reshapes Fed Playbook",
-        "Why maxing out your 401(k) is a major financial mistake if you have credit-card and other punishing debt",
-        "Eni: Diversification Strategy Driving Long-Term Value Creation"
+        "Trump’s Freedom 250 draws corporate sponsors with business before his administration",
+        "American Express and Chase move luxury lounge wars beyond the airport",
+        "Gold prices set for first weekly rise in a month as investors scale back Fed rate hike bets",
+        "Oman walks a diplomatic tightrope over Strait of Hormuz fees, creating a ‘blind spot’ for markets"
       ],
       "key_tickers": [
         "JPM",
@@ -44,21 +46,23 @@
         "KRE"
       ],
       "trending_tickers": [
-        "GS",
-        "MS"
+        "AMZN",
+        "LMT",
+        "META",
+        "BAC"
       ]
     },
     {
       "sector": "Technology",
-      "sentiment": "Neutral",
-      "tone": "Technology showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 12,
-      "primary_driver": "8-K - Terra Innovatum Global N.V. (0002067627) (Filer)",
+      "sentiment": "Negative",
+      "tone": "Technology facing headwinds. Monitor key support levels and guidance revisions.",
+      "story_count": 16,
+      "primary_driver": "Global stock markets mixed as South Korea jumps, shrugging off chip slump: Live updates",
       "key_drivers": [
-        "8-K - Terra Innovatum Global N.V. (0002067627) (Filer)",
-        "8-K - Core & Main, Inc. (0001856525) (Filer)",
-        "Jobs Report Fuels The Rotation Out Of AI CapEx Beneficiaries",
-        "8-K - MV Oil Trust (0001371782) (Filer)"
+        "Global stock markets mixed as South Korea jumps, shrugging off chip slump: Live updates",
+        "‘I claimed Social Security at 62’: At 76, I’m working at Walmart. Why do I still owe payroll taxes?",
+        "CNX Resources: A Quality Gas Compounder, Fairly Priced - I'm Waiting For A Better Entry",
+        "Ford achieves quality milestone, as CEO targets flawless new vehicle launches"
       ],
       "key_tickers": [
         "NVDA",
@@ -69,20 +73,21 @@
         "PLTR"
       ],
       "trending_tickers": [
-        "AMZN",
-        "LLY",
-        "SPY",
-        "CL=F"
+        "CL=F",
+        "WMT",
+        "TGT",
+        "DX-Y.NYB"
       ]
     },
     {
       "sector": "Industrials",
       "sentiment": "Neutral",
       "tone": "Industrials showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "Saudi Arabia has ramped up oil shipments through the Strait of Hormuz since U.S.-Iran deal",
+      "story_count": 2,
+      "primary_driver": "Trump’s Freedom 250 draws corporate sponsors with business before his administration",
       "key_drivers": [
-        "Saudi Arabia has ramped up oil shipments through the Strait of Hormuz since U.S.-Iran deal"
+        "Trump’s Freedom 250 draws corporate sponsors with business before his administration",
+        "Manufacturing Trends Vary As North American And East Asian Growth Spurts Contrast With ASEAN Slowdown"
       ],
       "key_tickers": [
         "GE",
@@ -92,18 +97,21 @@
         "HON"
       ],
       "trending_tickers": [
-        "LMT",
-        "RTX"
+        "AMZN",
+        "LMT"
       ]
     },
     {
       "sector": "Consumer",
       "sentiment": "Neutral",
       "tone": "Consumer showing mixed signals. Await clearer catalysts before adding exposure.",
-      "story_count": 1,
-      "primary_driver": "1st Look at Local Housing Markets in December",
+      "story_count": 7,
+      "primary_driver": "‘I claimed Social Security at 62’: At 76, I’m working at Walmart. Why do I still owe payroll taxes?",
       "key_drivers": [
-        "1st Look at Local Housing Markets in December"
+        "‘I claimed Social Security at 62’: At 76, I’m working at Walmart. Why do I still owe payroll taxes?",
+        "Ford achieves quality milestone, as CEO targets flawless new vehicle launches",
+        "The Best Retirement Ever? Here's How I'm Preparing For It",
+        "Two 7%+-Yielding And Discounted CEFs For Retirement Income"
       ],
       "key_tickers": [
         "NKE",
@@ -113,8 +121,8 @@
         "ONON"
       ],
       "trending_tickers": [
-        "NKE",
-        "WMT"
+        "WMT",
+        "TGT"
       ]
     },
     {
@@ -122,9 +130,9 @@
       "sentiment": "Neutral",
       "tone": "Healthcare showing mixed signals. Await clearer catalysts before adding exposure.",
       "story_count": 1,
-      "primary_driver": "The charts on this biotech stock look attractive, says Jay Woods",
+      "primary_driver": "Rafael Nadal talks tennis prize money, his hotels, and what sports taught him about business",
       "key_drivers": [
-        "The charts on this biotech stock look attractive, says Jay Woods"
+        "Rafael Nadal talks tennis prize money, his hotels, and what sports taught him about business"
       ],
       "key_tickers": [
         "LLY",
@@ -140,15 +148,15 @@
     },
     {
       "sector": "Macro",
-      "sentiment": "Positive",
-      "tone": "Macro outlook constructive. Recent developments support near-term strength.",
-      "story_count": 11,
-      "primary_driver": "President Donald Trump defends business dealings, his children in exclusive interview with CNBC",
+      "sentiment": "Neutral",
+      "tone": "Macro showing mixed signals. Await clearer catalysts before adding exposure.",
+      "story_count": 10,
+      "primary_driver": "Dell: Not A Bad Time To Lock In The Profits (Rating Downgrade)",
       "key_drivers": [
-        "President Donald Trump defends business dealings, his children in exclusive interview with CNBC",
-        "Trump’s real-estate licensing income in foreign countries nearly doubled — and now features Qatar and Romania",
-        "Dividend Champion, Contender, And Challenger Highlights: Week Of July 5",
-        "Gamer trades in $1,000 of physical discs at GameStop, days after Sony announces end of disc era"
+        "Dell: Not A Bad Time To Lock In The Profits (Rating Downgrade)",
+        "Powerfleet: Impressive Results Need To Continue",
+        "I have no kids. Will I cause family drama by leaving different amounts to my nieces and nephews?",
+        "DXYZ Is A Great Way To Play Anthropic Pre-IPO"
       ],
       "key_tickers": [
         "TLT",
@@ -158,8 +166,7 @@
         "DXY"
       ],
       "trending_tickers": [
-        "GLD",
-        "DXY"
+        "DX-Y.NYB"
       ]
     }
   ]
