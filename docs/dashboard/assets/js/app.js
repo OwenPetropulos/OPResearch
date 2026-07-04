@@ -1,4 +1,4 @@
-/* app.js — Morning Brief Homepage */
+/* app.js — Morning Brief Homepage (Updated) */
 
 const WATCHLIST_STORAGE_KEY = 'opr_watchlist';
 
@@ -8,11 +8,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (href === 'index.html' || href === './index.html') a.classList.add('active');
   });
 
-  const [snapshot, macroNews, sectorNews, sectorsOverview] = await Promise.all([
+  const [snapshot, macroNews, sectorNews, sectorsOverview, earningsCalendar, maDeals] = await Promise.all([
     fetchJSON('./data/market_snapshot.json'),
     fetchJSON('./data/macro_news.json'),
     fetchJSON('./data/sector_news.json'),
-    fetchJSON('./data/sectors_overview.json')
+    fetchJSON('./data/sectors_overview.json'),
+    fetchJSON('./data/earnings_calendar.json'),
+    fetchJSON('./data/ma_deals.json'),
   ]);
 
   const watchlistData = await loadWatchlistData();
@@ -34,7 +36,13 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (snapshot?.global_markets) {
     renderGlobalMarkets(snapshot.global_markets);
   }
-  renderEarningsCalendar();
+  
+  // Load earnings calendar from JSON (replaces hardcoded version)
+  if (earningsCalendar) {
+    renderEarningsCalendarFromData(earningsCalendar);
+  } else {
+    renderEarningsCalendarFromData(null);  // Fallback to empty state
+  }
 
   if (macroNews?.stories?.length) {
     const sorted = sortByTimestamp(macroNews.stories);
@@ -54,6 +62,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     setInner('keyDevsContainer', sorted.slice(0, 15).map(renderStoryRow).join(''));
   } else {
     setInner('keyDevsContainer', '<div class="error-state">Development stories could not be loaded.</div>');
+  }
+
+  // Optional: Render M&A deals if container exists
+  if (maDeals?.deals?.length && document.getElementById('maDealsContainer')) {
+    renderMADeals(maDeals.deals.slice(0, 10));
   }
 
   if (watchlistData?.length) {
@@ -209,87 +222,34 @@ function renderGlobalMarkets(globalData) {
 }
 
 /* ============================================================
-   EARNINGS & MACRO CALENDAR
-   Hardcoded weekly schedule — update manually or via JSON later.
-   Shows current week Mon–Fri.
+   EARNINGS CALENDAR (JSON-DRIVEN)
+   Replaces the hardcoded version. Auto-updates on Mondays.
    ============================================================ */
 
-function renderEarningsCalendar() {
+function renderEarningsCalendarFromData(data) {
   const container = document.getElementById('calendarContainer');
   if (!container) return;
 
-  // Build Mon–Fri dates for current week
-  const today  = new Date();
-  const dow    = today.getDay(); // 0=Sun
-  const monday = new Date(today);
-  monday.setDate(today.getDate() - (dow === 0 ? 6 : dow - 1));
-
-  const days = [];
-  for (let i = 0; i < 5; i++) {
-    const d = new Date(monday);
-    d.setDate(monday.getDate() + i);
-    days.push(d);
+  // If no data, render empty state
+  if (!data || !data.calendar || !Array.isArray(data.calendar)) {
+    container.innerHTML = '<div style="padding: 20px; text-align: center; color: var(--muted);">Calendar data unavailable. Refresh to reload.</div>';
+    return;
   }
 
-  const dayNames = ['MON', 'TUE', 'WED', 'THU', 'FRI'];
+  const calendar = data.calendar;
+  const todayKey = formatDateKey(new Date());
 
-  // ── EDIT THIS SECTION WEEKLY ──────────────────────────────
-  // Format: { date: 'YYYY-MM-DD', events: [ { label, type, time, url } ] }
-  // type: 'earnings-pending' | 'earnings-beat' | 'earnings-miss' | 'macro-event' | 'macro-event high-importance'
-  const schedule = [
-    {
-      date: formatDateKey(days[0]),
-      events: [
-        { label: 'GOOGL earnings', type: 'earnings-pending', time: 'After close', url: 'https://abc.xyz/investor/' },
-        { label: 'ISM Mfg PMI',   type: 'macro-event',      time: '10:00 AM ET', url: 'https://ismworld.org' },
-      ]
-    },
-    {
-      date: formatDateKey(days[1]),
-      events: [
-        { label: 'MSFT earnings', type: 'earnings-pending', time: 'After close', url: 'https://investor.microsoft.com' },
-        { label: 'META earnings', type: 'earnings-pending', time: 'After close', url: 'https://investor.fb.com' },
-        { label: 'JOLTS',         type: 'macro-event',      time: '10:00 AM ET', url: 'https://bls.gov' },
-      ]
-    },
-    {
-      date: formatDateKey(days[2]),
-      events: [
-        { label: 'AAPL earnings', type: 'earnings-pending', time: 'After close', url: 'https://investor.apple.com' },
-        { label: 'AMZN earnings', type: 'earnings-pending', time: 'After close', url: 'https://ir.aboutamazon.com' },
-        { label: 'FOMC Decision', type: 'macro-event high-importance', time: '2:00 PM ET', url: 'https://federalreserve.gov' },
-      ]
-    },
-    {
-      date: formatDateKey(days[3]),
-      events: [
-        { label: 'Initial Claims', type: 'macro-event', time: '8:30 AM ET', url: 'https://dol.gov' },
-      ]
-    },
-    {
-      date: formatDateKey(days[4]),
-      events: [
-        { label: 'NFP / Jobs',    type: 'macro-event high-importance', time: '8:30 AM ET', url: 'https://bls.gov' },
-        { label: 'UMich Sent.',   type: 'macro-event', time: '10:00 AM ET', url: 'https://sca.isr.umich.edu' },
-      ]
-    },
-  ];
-  // ── END EDIT SECTION ──────────────────────────────────────
+  container.innerHTML = calendar.map((dayData, i) => {
+    const key = dayData.date;
+    const isToday = key === todayKey;
+    const events = dayData.events || [];
 
-  const todayKey = formatDateKey(today);
-
-  container.innerHTML = days.map((d, i) => {
-    const key       = formatDateKey(d);
-    const isToday   = key === todayKey;
-    const dayData   = schedule.find(s => s.date === key) || { events: [] };
-    const dateLabel = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-
-    const eventsHtml = dayData.events.length
-      ? dayData.events.map(ev => `
+    const eventsHtml = events.length
+      ? events.map(ev => `
           <div class="calendar-event ${ev.type}">
             ${ev.url
-              ? `<a href="${ev.url}" target="_blank" rel="noopener">${ev.label}</a>`
-              : ev.label}
+              ? `<a href="${ev.url}" target="_blank" rel="noopener">${ev.title}</a>`
+              : ev.title}
             ${ev.time ? `<span class="calendar-event-time">${ev.time}</span>` : ''}
           </div>`).join('')
       : `<div style="font-size:0.65rem;color:var(--text-muted);padding:4px 0;">—</div>`;
@@ -297,8 +257,8 @@ function renderEarningsCalendar() {
     return `
       <div class="calendar-day ${isToday ? 'today' : ''}">
         <div class="calendar-day-header">
-          <span class="calendar-day-name">${dayNames[i]}</span>
-          <span class="calendar-day-date">${dateLabel}</span>
+          <span class="calendar-day-name">${dayData.day}</span>
+          <span class="calendar-day-date">${new Date(dayData.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>
         </div>
         <div class="calendar-events">${eventsHtml}</div>
       </div>`;
@@ -310,6 +270,27 @@ function formatDateKey(d) {
   const m = String(d.getMonth() + 1).padStart(2, '0');
   const day = String(d.getDate()).padStart(2, '0');
   return `${y}-${m}-${day}`;
+}
+
+/* ============================================================
+   M&A DEALS (NEW)
+   ============================================================ */
+
+function renderMADeals(deals) {
+  const container = document.getElementById('maDealsContainer');
+  if (!container) return;
+
+  container.innerHTML = deals.map(deal => `
+    <div class="ma-deal-card">
+      <div class="ma-deal-title">${deal.title}</div>
+      <div class="ma-deal-meta">
+        <span>${deal.acquirer} → ${deal.target}</span>
+        ${deal.value_usd_millions ? `<span class="ma-value">$${deal.value_usd_millions}M</span>` : ''}
+      </div>
+      <div class="ma-deal-date">${deal.announced_date || 'TBD'} • ${deal.status}</div>
+      ${deal.url ? `<a href="${deal.url}" target="_blank" rel="noopener">Read more →</a>` : ''}
+    </div>
+  `).join('');
 }
 
 /* ============================================================
