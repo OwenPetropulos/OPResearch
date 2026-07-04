@@ -1,263 +1,201 @@
 """
 generate_market_snapshot.py
-
-Fetches live market data and writes data/market_snapshot.json.
-Includes equities, rates, commodities, FX, and global markets.
-
-RATE INDEX NOTE: Yahoo Finance ^TNX and ^IRX return yield values
-directly as percentages (e.g. 4.63 = 4.63%). Do NOT divide by 10.
+Fetches live market data (equities, rates, commodities, FX, global markets).
+Outputs: market_snapshot.json
 """
 
-import sys
-from datetime import datetime, timezone
+import json
+from datetime import datetime
+import yfinance as yf
+from pathlib import Path
 
-from common import data_path, write_json, utc_now_iso, fetch_price_data, log
-from config import SNAPSHOT_SYMBOLS, CBOE_RATE_TICKERS
+OUTPUT_DIR = Path(__file__).parent.parent / "docs" / "dashboard" / "data"
+OUTPUT_FILE = OUTPUT_DIR / "market_snapshot.json"
 
+# ─────────────────────────────────────────────────────────────
+# TICKER DEFINITIONS
+# ─────────────────────────────────────────────────────────────
 
-# ============================================================
+EQUITIES = [
+    {"label": "S&P 500", "ticker": "ES=F"},
+    {"label": "Nasdaq", "ticker": "NQ=F"},
+    {"label": "Dow Jones", "ticker": "YM=F"},
+    {"label": "Russell 2000", "ticker": "RTY=F"},
+    {"label": "VIX", "ticker": "^VIX"},
+]
+
+RATES = [
+    {"label": "US 3M", "ticker": "^IRX"},
+    {"label": "US 2Y", "ticker": "^TYX"},
+    {"label": "US 10Y", "ticker": "^TNX"},
+    {"label": "Japan 10Y", "ticker": "^FTJPY"},
+    {"label": "UK 10Y", "ticker": "^FTUK10"},
+    {"label": "China 10Y", "ticker": "513500.SH"},
+]
+
+COMMODITIES = [
+    {"label": "Crude Oil", "ticker": "CL=F"},
+    {"label": "Gold", "ticker": "GC=F"},
+    {"label": "Silver", "ticker": "SI=F"},
+    {"label": "Copper", "ticker": "HG=F"},
+]
+
+FX_PAIRS = [
+    {"label": "USD/JPY", "ticker": "USDJPY=X"},
+    {"label": "EUR/USD", "ticker": "EURUSD=X"},
+    {"label": "EUR/JPY", "ticker": "EURJPY=X"},
+    {"label": "DXY", "ticker": "DXY=F"},
+]
+
+GLOBAL_MARKETS = {
+    "asia": [
+        {"label": "Nikkei 225", "ticker": "^N225"},
+        {"label": "Hang Seng", "ticker": "^HSI"},
+        {"label": "Shanghai Comp", "ticker": "000001.SS"},
+        {"label": "KOSPI", "ticker": "^KS11"},
+    ],
+    "europe": [
+        {"label": "FTSE 100", "ticker": "^FTSE"},
+        {"label": "DAX", "ticker": "^GDAXI"},
+        {"label": "CAC 40", "ticker": "^FCHI"},
+        {"label": "Euro Stoxx 50", "ticker": "^STOXX50E"},
+    ],
+}
+
+# ─────────────────────────────────────────────────────────────
 # MARKET STATUS
-# ============================================================
+# ─────────────────────────────────────────────────────────────
 
-def infer_market_status() -> str:
-    now     = datetime.now(timezone.utc)
-    weekday = now.weekday()
-    hm      = now.hour * 60 + now.minute
-
-    if weekday >= 5:
-        return "Closed (Weekend)"
-    if 570 <= hm < 870:
-        return "Pre-Market"
-    elif 870 <= hm < 1260:
+def get_market_status():
+    """Determine market status (Open, Closed, Pre-Market, After-Hours)"""
+    now = datetime.utcnow()
+    hour_utc = now.hour
+    
+    # US market hours: 9:30 AM - 4:00 PM ET = 13:30 - 20:00 UTC
+    if 13 <= hour_utc < 20:
         return "Open"
-    elif hm >= 1260 or hm < 60:
+    elif 8 <= hour_utc < 13:
+        return "Pre-Market"
+    elif 20 <= hour_utc < 24:
         return "After-Hours"
     else:
         return "Closed"
 
+# ─────────────────────────────────────────────────────────────
+# DATA FETCHING
+# ─────────────────────────────────────────────────────────────
 
-# ============================================================
-# ITEM BUILDERS
-# ============================================================
-
-def build_simple_item(cfg: dict) -> dict | None:
-    data = fetch_price_data(cfg["ticker"])
-    if data is None:
-        return None
-    return {
-        "label":          cfg["label"],
-        "ticker":         cfg.get("display_ticker", cfg["ticker"]),
-        "price":          round(data["price"], 2),
-        "change":         round(data["change"], 2),
-        "percent_change": data["percent_change"],
-        "direction":      data["direction"],
-    }
-
-
-def build_rate_item(cfg: dict) -> dict | None:
+def fetch_tickers(ticker_specs):
     """
-    Build a rate/yield snapshot item.
-    DUMMY_ prefix = use static fallback, no fetch.
-    CBOE tickers return yield directly as percent — no scaling needed.
+    Fetch price data for a list of ticker specs.
+    Returns dict keyed by ticker with price, change, percent_change, direction.
     """
-    ticker = cfg["ticker"]
-
-    if ticker.startswith("DUMMY_"):
-        return {
-            "label":          cfg["label"],
-            "ticker":         cfg.get("display_ticker", ticker),
-            "price":          cfg.get("fallback", 0.0),
-            "change":         0.0,
-            "percent_change": 0.0,
-            "direction":      "flat",
-        }
-
-    data = fetch_price_data(ticker)
-
-    if data is None:
-        if "fallback" in cfg:
-            return {
-                "label":          cfg["label"],
-                "ticker":         cfg.get("display_ticker", ticker),
-                "price":          cfg["fallback"],
-                "change":         0.0,
-                "percent_change": 0.0,
-                "direction":      "flat",
+    if not ticker_specs:
+        return {}
+    
+    tickers_str = " ".join([spec["ticker"] for spec in ticker_specs])
+    try:
+        data = yf.download(tickers_str, period="5d", interval="1d", progress=False)
+    except Exception as e:
+        print(f"[ERROR] yfinance fetch failed: {e}")
+        return {}
+    
+    results = {}
+    for spec in ticker_specs:
+        ticker = spec["ticker"]
+        label = spec["label"]
+        
+        try:
+            # Handle single ticker vs multiple
+            if len(ticker_specs) == 1:
+                close_data = data['Close']
+            else:
+                close_data = data['Close'][ticker] if ticker in data['Close'].columns else None
+            
+            if close_data is None or len(close_data) < 2:
+                continue
+            
+            current = close_data.iloc[-1]
+            previous = close_data.iloc[-2]
+            change = current - previous
+            pct = (change / previous * 100) if previous != 0 else 0
+            
+            results[ticker] = {
+                "label": label,
+                "ticker": ticker,
+                "price": round(current, 2),
+                "change": round(change, 2),
+                "percent_change": round(pct, 2),
+                "direction": "up" if change >= 0 else "down",
             }
-        return None
+        except Exception as e:
+            print(f"[WARN] Could not fetch {ticker}: {e}")
+    
+    return results
 
-    # ^TNX and ^IRX already return percent values directly
-    # e.g. 4.63 means 4.63% — no division needed
-    price      = round(data["price"], 3)
-    prev       = round(data["prev_close"], 3)
-    change     = round(price - prev, 3)
-    pct_change = round((change / prev) * 100, 2) if prev else 0.0
-    direction  = "up" if change > 0 else ("down" if change < 0 else "flat")
+def fetch_rates():
+    """Fetch yield data (rates are percentages, already scaled)."""
+    rate_results = fetch_tickers(RATES)
+    
+    # Rates from Yahoo are already in percentage form (e.g., 4.37)
+    # No scaling needed for Treasury yields
+    output = []
+    for spec in RATES:
+        ticker = spec["ticker"]
+        if ticker in rate_results:
+            result = rate_results[ticker]
+            result["price"] = round(result["price"], 2)  # Keep as-is (already %)
+            output.append(result)
+    
+    return output
 
-    return {
-        "label":          cfg["label"],
-        "ticker":         cfg.get("display_ticker", ticker),
-        "price":          price,
-        "change":         change,
-        "percent_change": pct_change,
-        "direction":      direction,
-    }
-
-
-def build_fx_item(cfg: dict) -> dict | None:
-    """Build a snapshot item for an FX pair."""
-    data = fetch_price_data(cfg["ticker"])
-    if data is None:
-        return None
-    return {
-        "label":          cfg["label"],
-        "ticker":         cfg.get("display_ticker", cfg["ticker"]),
-        "price":          round(data["price"], 4),
-        "change":         round(data["change"], 4),
-        "percent_change": data["percent_change"],
-        "direction":      data["direction"],
-    }
-
-
-# ============================================================
-# MACRO SUMMARY
-# ============================================================
-
-def build_macro_summary(equities, rates, commodities, fx) -> str:
-    lines = []
-
-    eq_changes = [e["percent_change"] for e in equities if e.get("ticker") != "VIX"]
-    vix_items  = [e for e in equities if e.get("ticker") == "VIX"]
-    vix_level  = vix_items[0]["price"] if vix_items else None
-
-    if eq_changes:
-        avg_eq = sum(eq_changes) / len(eq_changes)
-        if avg_eq <= -0.5:
-            lines.append("Equity futures under broad pressure")
-        elif avg_eq >= 0.5:
-            lines.append("Equity futures broadly bid")
-        else:
-            lines.append("Equity futures mixed")
-
-    if vix_level is not None:
-        if vix_level >= 25:
-            lines.append(f"VIX elevated at {vix_level:.1f} — stress signals active")
-        elif vix_level >= 18:
-            lines.append(f"VIX at {vix_level:.1f} — market caution elevated")
-
-    us10y_items = [r for r in rates if r.get("ticker") == "US10Y"]
-    if us10y_items:
-        r10 = us10y_items[0]
-        if r10["change"] >= 0.04:
-            lines.append(f"10Y yields rising ({r10['price']:.2f}%), pressure on duration assets")
-        elif r10["change"] <= -0.04:
-            lines.append(f"10Y yields easing ({r10['price']:.2f}%), rate relief emerging")
-        else:
-            lines.append(f"Rates broadly stable; 10Y at {r10['price']:.2f}%")
-
-    gold_items = [c for c in commodities if c.get("ticker") == "GC"]
-    if gold_items:
-        g = gold_items[0]
-        if g["percent_change"] >= 0.5:
-            lines.append(f"Gold firming ({g['percent_change']:+.1f}%), safe-haven demand evident")
-        elif g["percent_change"] <= -0.5:
-            lines.append(f"Gold retreating ({g['percent_change']:+.1f}%)")
-
-    crude_items = [c for c in commodities if c.get("ticker") == "CL"]
-    if crude_items:
-        cl = crude_items[0]
-        if cl["percent_change"] <= -1.0:
-            lines.append(f"Crude sliding ({cl['percent_change']:+.1f}%)")
-        elif cl["percent_change"] >= 1.0:
-            lines.append(f"Crude firming ({cl['percent_change']:+.1f}%)")
-
-    # FX color
-    dxy_items = [f for f in fx if f.get("ticker") == "DXY"]
-    if dxy_items:
-        dxy = dxy_items[0]
-        if dxy["percent_change"] >= 0.4:
-            lines.append(f"Dollar strengthening (DXY {dxy['percent_change']:+.1f}%)")
-        elif dxy["percent_change"] <= -0.4:
-            lines.append(f"Dollar weakening (DXY {dxy['percent_change']:+.1f}%)")
-
-    if not lines:
-        return "Market data refreshed. Monitor key levels and upcoming macro releases."
-
-    return "; ".join(lines) + "."
-
-
-# ============================================================
+# ─────────────────────────────────────────────────────────────
 # MAIN
-# ============================================================
+# ─────────────────────────────────────────────────────────────
 
 def main():
-    log.info("=== generate_market_snapshot.py ===")
-
-    snapshot = {
-        "last_updated":   utc_now_iso(),
-        "macro_summary":  "",
-        "market_status":  infer_market_status(),
-        "equities":       [],
-        "rates":          [],
-        "commodities":    [],
-        "fx":             [],
-        "global_markets": {"asia": [], "europe": []},
+    print(f"\n{'='*60}")
+    print("generate_market_snapshot.py")
+    print(f"{'='*60}")
+    
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    
+    # Fetch all data groups
+    print("[...] Fetching equities...")
+    equities = [fetch_tickers([spec])[spec["ticker"]] for spec in EQUITIES 
+                if spec["ticker"] in fetch_tickers([spec])]
+    equities = list(fetch_tickers(EQUITIES).values())
+    
+    print("[...] Fetching rates...")
+    rates = fetch_rates()
+    
+    print("[...] Fetching commodities...")
+    commodities = list(fetch_tickers(COMMODITIES).values())
+    
+    print("[...] Fetching FX...")
+    fx = list(fetch_tickers(FX_PAIRS).values())
+    
+    print("[...] Fetching global markets...")
+    global_markets = {
+        "asia": list(fetch_tickers(GLOBAL_MARKETS["asia"]).values()),
+        "europe": list(fetch_tickers(GLOBAL_MARKETS["europe"]).values()),
     }
-
-    for cfg in SNAPSHOT_SYMBOLS.get("equities", []):
-        item = build_simple_item(cfg)
-        if item:
-            snapshot["equities"].append(item)
-        else:
-            log.warning(f"Skipping equity: {cfg['label']}")
-
-    for cfg in SNAPSHOT_SYMBOLS.get("rates", []):
-        item = build_rate_item(cfg)
-        if item:
-            snapshot["rates"].append(item)
-        else:
-            log.warning(f"Skipping rate: {cfg['label']}")
-
-    for cfg in SNAPSHOT_SYMBOLS.get("commodities", []):
-        item = build_simple_item(cfg)
-        if item:
-            snapshot["commodities"].append(item)
-        else:
-            log.warning(f"Skipping commodity: {cfg['label']}")
-
-    for cfg in SNAPSHOT_SYMBOLS.get("fx", []):
-        item = build_fx_item(cfg)
-        if item:
-            snapshot["fx"].append(item)
-        else:
-            log.warning(f"Skipping FX: {cfg['label']}")
-
-    for region in ("asia", "europe"):
-        for cfg in SNAPSHOT_SYMBOLS["global_markets"].get(region, []):
-            item = build_simple_item(cfg)
-            if item:
-                snapshot["global_markets"][region].append(item)
-            else:
-                log.warning(f"Skipping {region} index: {cfg['label']}")
-
-    snapshot["macro_summary"] = build_macro_summary(
-        snapshot["equities"],
-        snapshot["rates"],
-        snapshot["commodities"],
-        snapshot["fx"],
-    )
-
-    log.info(
-        f"Market status: {snapshot['market_status']} | "
-        f"Equities: {len(snapshot['equities'])} | "
-        f"Rates: {len(snapshot['rates'])} | "
-        f"FX: {len(snapshot['fx'])} | "
-        f"Commodities: {len(snapshot['commodities'])}"
-    )
-
-    success = write_json(data_path("market_snapshot.json"), snapshot)
-    sys.exit(0 if success else 1)
-
+    
+    # Build snapshot
+    snapshot = {
+        "last_updated": datetime.utcnow().isoformat() + "Z",
+        "market_status": get_market_status(),
+        "macro_summary": "Market data loaded. Review equities, rates, commodities for positioning cues.",
+        "equities": equities,
+        "rates": rates,
+        "commodities": commodities,
+        "fx": fx,
+        "global_markets": global_markets,
+    }
+    
+    # Write output
+    OUTPUT_FILE.write_text(json.dumps(snapshot, indent=2))
+    print(f"[OK] Snapshot written to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()
