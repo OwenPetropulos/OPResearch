@@ -351,9 +351,27 @@
               </div>
               <div class="field"
                 data-help-title="Margin ← Commodity"
-                data-help-body="Absolute change in EBIT margin per 1% change in oil price. Example: 0.10–0.30.">
+                data-help-body="Absolute change in EBIT margin per 1% change in oil price, applied above the cash breakeven price. Example: 0.10–0.30.">
                 <label for="margin_sensitivity_to_commodity">Margin ← Commodity</label>
                 <input type="number" id="margin_sensitivity_to_commodity" value="0.20" step="0.05" />
+              </div>
+              <div class="field"
+                data-help-title="Cash Breakeven Price"
+                data-help-body="Per-unit cash cost level. Below this price, fixed costs no longer scale down and margin compression accelerates. Example: 35–50.">
+                <label for="cash_breakeven_price">Cash Breakeven Price</label>
+                <input type="number" id="cash_breakeven_price" value="40" step="1" />
+              </div>
+              <div class="field"
+                data-help-title="Below-Breakeven Multiplier"
+                data-help-body="How much steeper margin sensitivity becomes once price falls below cash breakeven. 1.0 = no change in slope; 2.0 = twice as steep. Example: 1.5–3.0.">
+                <label for="below_breakeven_multiplier">Below-Breakeven Multiplier</label>
+                <input type="number" id="below_breakeven_multiplier" value="2.0" step="0.1" />
+              </div>
+              <div class="field"
+                data-help-title="Structural Margin Floor"
+                data-help-body="Minimum EBIT margin the model allows, representing the point where a producer would shut in production rather than operate at a larger loss. Example: -0.30 to -0.10.">
+                <label for="structural_margin_floor">Structural Margin Floor</label>
+                <input type="number" id="structural_margin_floor" value="-0.20" step="0.05" />
               </div>
               <div class="field"
                 data-help-title="Capex ← Commodity"
