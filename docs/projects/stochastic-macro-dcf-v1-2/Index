@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stochastic Macro-Driven DCF | OPResearch</title>
+  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Chart.js for interactive histogram + line charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+ 
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="site-tag">OPResearch</span>
+      <span class="version-tag">Stochastic Macro-Driven DCF · v1</span>
+    </div>
+  </header>
+ 
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1 class="hero-title">Stochastic Macro-Driven DCF</h1>
+        <p class="hero-sub">
+          This tool builds on a traditional discounted cash flow (DCF) framework, but instead of
+          producing a single valuation from one set of assumptions, it explores a range of possible
+          outcomes. Using familiar inputs such as revenue, margins, capital spending, and discount
+          rates, the model simulates different paths for key macro drivers including oil prices,
+          interest rates, and demand. Each path represents a possible economic environment, which is
+          translated into company performance and ultimately into an implied valuation. The result is
+          a distribution of values rather than a single estimate, allowing valuation to be viewed
+          across different macro conditions. In this version, the macro variables are simulated
+          independently and the operating relationships are intentionally simple to keep the model
+          transparent.
+        </p>
+ 
+        <!-- About this model — collapsed by default -->
+        <details class="about-details">
+          <summary class="about-summary">
+            <span class="about-chevron">▸</span>
+            About this model
+          </summary>
+          <div class="about-body">
+ 
+            <p>This model extends a standard discounted cash flow framework by evaluating company value across many possible macro environments rather than a single assumed path. A traditional DCF usually begins by selecting one set of assumptions for revenue growth, margins, reinvestment, and discount rates, then uses those assumptions to estimate one intrinsic value. That framework is useful, but it can also suggest more precision than the underlying environment warrants, especially for commodity-linked businesses.</p>
+ 
+            <p>Here, the valuation logic remains familiar, but the forecast process changes. Instead of assuming one future path for oil prices, interest rates, and demand, the model simulates many possible paths for those macro variables. Each path represents a different economic environment. Some are stronger, some weaker, and many fall somewhere in between.</p>
+ 
+            <p>Those macro paths are then mapped into company performance. In this version, oil prices, demand, and interest rates influence revenue, margins, capital spending, and free cash flow through a simplified operating structure. The output is therefore not a single forecast built from one assumed future, but a range of implied values generated across many internally consistent scenarios.</p>
+ 
+            <p>The value of that distribution is that it reveals more than an average estimate. It shows how wide the range of outcomes may be, how much downside may exist relative to the current market price, and whether upside and downside appear balanced or skewed. A company may look attractive near the center of the distribution while still carrying meaningful downside in weaker macro environments, or it may show limited downside but only modest upside.</p>
+ 
+            <p>Each simulation path can be thought of as one possible sequence of macro outcomes over the forecast period. A given path may involve stronger oil prices, weaker demand, lower rates, or any other combination permitted by the model assumptions. That path then produces a corresponding set of operating outcomes and, ultimately, an implied valuation. Repeating that process many times creates the full valuation distribution.</p>
+ 
+            <p>This framework is designed to support probabilistic interpretation rather than point prediction. It is not intended to identify one correct oil price or one exact stock value. Instead, it provides a structured way to view valuation across many possible futures using familiar DCF building blocks.</p>
+ 
+            <p>This version is intentionally simplified. The macro variables are simulated independently, the operating relationships are stylized, and many real-world frictions are not yet modeled. That makes the framework easier to inspect and interpret, but it also means the output should be read as a structured valuation system rather than a complete market model.</p>
+ 
+            <h3 class="about-h3">What a traditional DCF does</h3>
+            <p>A traditional discounted cash flow model estimates value by forecasting future free cash flow and discounting those cash flows back to the present. In most cases, the analyst selects one base case for revenue growth, profitability, reinvestment, and discount rates, which leads to one implied valuation, sometimes accompanied by a bull and bear case.</p>
+ 
+            <h3 class="about-h3">What this model changes</h3>
+            <p>This model keeps the same broad DCF structure, but replaces one assumed future with many simulated macro scenarios. Instead of asking what the company is worth under one forecast, it asks how value behaves across a range of possible oil, rate, and demand environments.</p>
+ 
+            <h3 class="about-h3">Why the distribution matters</h3>
+            <p>The distribution is useful because it helps show where valuation is centered, how wide the range of outcomes is, how much downside may exist relative to the market price, and whether the payoff profile appears balanced or skewed. It also makes uncertainty visible in a way a single-point estimate cannot.</p>
+ 
+            <h3 class="about-h3">What can be inferred from the output</h3>
+            <ul class="about-list">
+              <li>Where the center of the valuation distribution sits</li>
+              <li>How wide the range of outcomes is</li>
+              <li>How much downside exists relative to the current market price</li>
+              <li>Whether upside and downside are roughly balanced or skewed</li>
+              <li>How sensitive valuation appears to macro assumptions</li>
+            </ul>
+ 
+            <h3 class="about-h3">What should not be inferred</h3>
+            <p>The model should not be read as a precise prediction of where the stock will trade. It is also not a complete representation of all operating risks, capital structure dynamics, or market behavior. It is a probabilistic valuation framework, not a direct forecasting machine.</p>
+ 
+            <h3 class="about-h3">Version 1 limitations</h3>
+            <ul class="about-list">
+              <li>Macro variables are simulated independently</li>
+              <li>Operating sensitivities are simplified</li>
+              <li>Terminal value still plays a large role</li>
+              <li>Cost structure is not fully modeled</li>
+              <li>Capital structure dynamics are simplified</li>
+            </ul>
+ 
+            <h3 class="about-h3">Input guide</h3>
+ 
+            <p class="about-guide-sub">Basic inputs</p>
+            <ul class="about-list">
+              <li><strong>Current Oil Price</strong> — Starting oil price for all simulated paths.</li>
+              <li><strong>Oil Volatility</strong> — How widely oil prices move from path to path.</li>
+              <li><strong>Long-Run Oil Target</strong> — The level oil prices tend to drift toward over time.</li>
+              <li><strong>Interest Rate</strong> — Starting risk-free rate used in discounting.</li>
+              <li><strong>Demand Growth</strong> — Baseline growth assumption for the demand series.</li>
+              <li><strong>Revenue</strong> — Current company revenue used as the operating base.</li>
+              <li><strong>Production</strong> — Current production level used to anchor operating scale.</li>
+              <li><strong>EBIT Margin</strong> — Base operating profitability before interest and taxes.</li>
+              <li><strong>Capex % Rev</strong> — Share of revenue reinvested into the business.</li>
+              <li><strong>D&amp;A % Rev</strong> — Non-cash depreciation and amortization as a share of revenue.</li>
+              <li><strong>WC % Rev</strong> — Working capital intensity relative to revenue.</li>
+              <li><strong>Shares</strong> — Shares outstanding used to convert equity value into per-share value.</li>
+              <li><strong>Net Debt</strong> — Debt minus cash, subtracted from enterprise value.</li>
+              <li><strong>Market Price</strong> — Current stock price used for comparison.</li>
+              <li><strong>Simulations</strong> — Number of Monte Carlo paths to generate.</li>
+            </ul>
+ 
+            <p class="about-guide-sub">Advanced settings</p>
+            <ul class="about-list">
+              <li><strong>Commodity Reversion Speed</strong> — How quickly oil moves back toward its long-run target.</li>
+              <li><strong>Rate Reversion Speed</strong> — How quickly rates move back toward their long-run level.</li>
+              <li><strong>Rate Volatility</strong> — How much interest rates fluctuate.</li>
+              <li><strong>Rate Long-Run Target</strong> — Long-run anchor for interest rates.</li>
+              <li><strong>Demand Index Level</strong> — Starting level of the demand series.</li>
+              <li><strong>Demand Volatility</strong> — How much demand fluctuates path to path.</li>
+              <li><strong>Revenue ← Commodity</strong> — How strongly revenue responds to oil price changes.</li>
+              <li><strong>Revenue ← Demand</strong> — How strongly revenue responds to demand changes.</li>
+              <li><strong>Margin ← Commodity</strong> — How strongly margins respond to oil price changes.</li>
+              <li><strong>Capex ← Commodity</strong> — How strongly capex intensity responds to oil prices.</li>
+              <li><strong>Production ← Reinvestment</strong> — How strongly reinvestment supports future production.</li>
+              <li><strong>Tax Rate</strong> — Effective tax rate used in free cash flow.</li>
+              <li><strong>Beta</strong> — Equity sensitivity used in the cost of equity.</li>
+              <li><strong>ERP</strong> — Equity risk premium used in WACC.</li>
+              <li><strong>Debt Spread</strong> — Spread above the risk-free rate used in cost of debt.</li>
+              <li><strong>Debt Weight</strong> — Debt share of capital in WACC.</li>
+              <li><strong>Equity Weight</strong> — Equity share of capital in WACC.</li>
+              <li><strong>Terminal Growth</strong> — Perpetual growth assumption used in terminal value.</li>
+              <li><strong>Forecast Years</strong> — Number of explicit forecast years.</li>
+              <li><strong>Random Seed</strong> — Optional fixed number for reproducible runs.</li>
+            </ul>
+ 
+          </div><!-- /about-body -->
+        </details>
+ 
+      </div><!-- /hero-text -->
+    </div>
+  </section>
+ 
+  <!-- ===================== INPUT FORM ===================== -->
+  <section class="inputs-section">
+    <div class="container">
+ 
+      <!-- Contextual help box — updates on field focus -->
+      <div class="help-box" id="help-box">
+        <span class="help-icon">?</span>
+        <div class="help-content">
+          <span class="help-title" id="help-title">Input Guide</span>
+          <span class="help-body" id="help-body">Click any field to see a brief explanation and example value.</span>
+        </div>
+      </div>
+ 
+      <form id="model-form" autocomplete="off">
+ 
+        <!-- ========== SIMPLE INPUTS ========== -->
+ 
+        <div class="input-section-label">Macro Environment</div>
+        <div class="simple-grid">
+ 
+          <div class="field"
+            data-help-title="Current Oil Price"
+            data-help-body="Starting oil price for all simulated paths. Example: 70–85.">
+            <label for="commodity_current">Current Oil Price <span class="unit">$/bbl</span></label>
+            <input type="number" id="commodity_current" value="75" step="1" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="Oil Volatility"
+            data-help-body="How widely oil prices vary across scenarios. Example: 0.15–0.30.">
+            <label for="commodity_vol">Oil Volatility <span class="unit">annual σ</span></label>
+            <input type="number" id="commodity_vol" value="0.20" step="0.01" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="Long-Run Oil Target"
+            data-help-body="The price level oil tends to revert toward over time. Example: 65–85.">
+            <label for="commodity_long_run_mean">Long-Run Oil Target <span class="unit">$/bbl</span></label>
+            <input type="number" id="commodity_long_run_mean" value="70" step="1" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="Interest Rate"
+            data-help-body="Starting risk-free rate used in discounting. Entered as a decimal. Example: 0.04 = 4%.">
+            <label for="rate_current">Interest Rate <span class="unit">rf</span></label>
+            <input type="number" id="rate_current" value="0.045" step="0.001" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="Demand Growth"
+            data-help-body="Baseline annual growth rate for the demand series. Example: 0.01–0.03.">
+            <label for="demand_growth">Demand Growth <span class="unit">annual</span></label>
+            <input type="number" id="demand_growth" value="0.02" step="0.005" />
+          </div>
+ 
+        </div>
+ 
+        <div class="input-section-label" style="margin-top:2.25rem;">Company</div>
+        <div class="simple-grid">
+ 
+          <div class="field"
+            data-help-title="Revenue"
+            data-help-body="Current annual revenue used as the operating base. Example: 15,000–30,000.">
+            <label for="current_revenue">Revenue <span class="unit">$M</span></label>
+            <input type="number" id="current_revenue" value="20000" step="500" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="Production"
+            data-help-body="Current production level used to anchor operating scale.">
+            <label for="current_production">Production <span class="unit">Mboe/d</span></label>
+            <input type="number" id="current_production" value="500" step="10" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="EBIT Margin"
+            data-help-body="Base operating profitability at current oil price conditions. Example: 0.20–0.40.">
+            <label for="base_operating_margin">EBIT Margin</label>
+            <input type="number" id="base_operating_margin" value="0.30" step="0.01" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="Capex % Rev"
+            data-help-body="Share of revenue reinvested into the business. Example: 0.12–0.22.">
+            <label for="capex_percent_revenue">Capex % Rev</label>
+            <input type="number" id="capex_percent_revenue" value="0.18" step="0.01" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="D&A % Rev"
+            data-help-body="Non-cash depreciation and amortization as a share of revenue; added back to FCF.">
+            <label for="da_percent_revenue">D&amp;A % Rev</label>
+            <input type="number" id="da_percent_revenue" value="0.06" step="0.01" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="WC % Rev"
+            data-help-body="Working capital intensity relative to revenue. Example: 0.03–0.08.">
+            <label for="working_capital_percent_revenue">WC % Rev</label>
+            <input type="number" id="working_capital_percent_revenue" value="0.05" step="0.01" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="Shares"
+            data-help-body="Shares outstanding used to convert equity value to per-share price.">
+            <label for="shares_outstanding">Shares <span class="unit">M</span></label>
+            <input type="number" id="shares_outstanding" value="1500" step="10" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="Net Debt"
+            data-help-body="Debt minus cash, subtracted from enterprise value to arrive at equity value.">
+            <label for="net_debt">Net Debt <span class="unit">$M</span></label>
+            <input type="number" id="net_debt" value="5000" step="100" />
+          </div>
+ 
+          <div class="field"
+            data-help-title="Market Price"
+            data-help-body="Current stock price used as the reference for probability-below-market.">
+            <label for="current_stock_price">Market Price <span class="unit">$/share</span></label>
+            <input type="number" id="current_stock_price" value="42" step="0.5" />
+          </div>
+ 
+        </div>
+ 
+        <div class="input-section-label" style="margin-top:2.25rem;">Simulation</div>
+        <div class="simple-grid simple-grid--narrow">
+          <div class="field"
+            data-help-title="Simulations"
+            data-help-body="Number of Monte Carlo paths. More paths produce a smoother distribution. Example: 500–2,000.">
+            <label for="num_simulations">Simulations</label>
+            <input type="number" id="num_simulations" value="1000" step="100" min="100" max="5000" />
+          </div>
+        </div>
+ 
+        <!-- ========== ADVANCED SETTINGS (collapsed) ========== -->
+        <details class="advanced-details" id="advanced-section">
+          <summary class="advanced-summary">
+            <span class="adv-chevron">▸</span>
+            Advanced Settings
+            <span class="adv-note">Reversion speeds · sensitivities · WACC components · random seed</span>
+          </summary>
+ 
+          <div class="advanced-body">
+ 
+            <div class="adv-group-label">Oil Price Process</div>
+            <div class="simple-grid simple-grid--narrow">
+              <div class="field"
+                data-help-title="Commodity Reversion Speed"
+                data-help-body="How quickly oil prices are pulled back toward the long-run target. Example: 0.01–0.10.">
+                <label for="commodity_reversion_speed">Reversion Speed κ</label>
+                <input type="number" id="commodity_reversion_speed" value="0.02" step="0.01" />
+              </div>
+            </div>
+ 
+            <div class="adv-group-label">Interest Rate Process</div>
+            <div class="simple-grid">
+              <div class="field"
+                data-help-title="Rate Reversion Speed"
+                data-help-body="How quickly rates return toward their long-run level. Example: 0.10–0.50.">
+                <label for="rate_drift">Reversion Speed κ</label>
+                <input type="number" id="rate_drift" value="0.30" step="0.05" />
+              </div>
+              <div class="field"
+                data-help-title="Rate Volatility"
+                data-help-body="How much interest rates fluctuate path to path. Example: 0.005–0.015.">
+                <label for="rate_vol">Rate Volatility σ</label>
+                <input type="number" id="rate_vol" value="0.008" step="0.001" />
+              </div>
+              <div class="field"
+                data-help-title="Rate Long-Run Target"
+                data-help-body="Long-run anchor for interest rates. Example: 0.03–0.05.">
+                <label for="rate_long_run_mean">Long-Run Target</label>
+                <input type="number" id="rate_long_run_mean" value="0.040" step="0.005" />
+              </div>
+            </div>
+ 
+            <div class="adv-group-label">Demand Process</div>
+            <div class="simple-grid">
+              <div class="field"
+                data-help-title="Demand Index Level"
+                data-help-body="Starting level of the demand series. Only deviations from this level affect the model.">
+                <label for="demand_current">Demand Index Level</label>
+                <input type="number" id="demand_current" value="100" step="1" />
+              </div>
+              <div class="field"
+                data-help-title="Demand Volatility"
+                data-help-body="How much demand fluctuates path to path. Example: 0.03–0.10.">
+                <label for="demand_vol">Demand Volatility σ</label>
+                <input type="number" id="demand_vol" value="0.06" step="0.01" />
+              </div>
+            </div>
+ 
+            <div class="adv-group-label">Sensitivity Parameters</div>
+            <div class="simple-grid">
+              <div class="field"
+                data-help-title="Revenue ← Commodity"
+                data-help-body="How strongly revenue responds to oil price changes. Example: 0.50–0.90.">
+                <label for="revenue_sensitivity_to_commodity">Revenue ← Commodity</label>
+                <input type="number" id="revenue_sensitivity_to_commodity" value="0.70" step="0.05" />
+              </div>
+              <div class="field"
+                data-help-title="Revenue ← Demand"
+                data-help-body="How strongly revenue responds to demand changes. Example: 0.20–0.50.">
+                <label for="revenue_sensitivity_to_demand">Revenue ← Demand</label>
+                <input type="number" id="revenue_sensitivity_to_demand" value="0.30" step="0.05" />
+              </div>
+              <div class="field"
+                data-help-title="Margin ← Commodity"
+                data-help-body="Absolute change in EBIT margin per 1% change in oil price. Example: 0.10–0.30.">
+                <label for="margin_sensitivity_to_commodity">Margin ← Commodity</label>
+                <input type="number" id="margin_sensitivity_to_commodity" value="0.20" step="0.05" />
+              </div>
+              <div class="field"
+                data-help-title="Capex ← Commodity"
+                data-help-body="How much capex intensity responds to oil price changes. Example: 0.05–0.15.">
+                <label for="capex_sensitivity_to_commodity">Capex ← Commodity</label>
+                <input type="number" id="capex_sensitivity_to_commodity" value="0.10" step="0.05" />
+              </div>
+              <div class="field"
+                data-help-title="Production ← Reinvestment"
+                data-help-body="How strongly above-baseline reinvestment supports future production. Example: 0.02–0.08.">
+                <label for="production_growth_sensitivity_to_reinvestment">Production ← Reinvestment</label>
+                <input type="number" id="production_growth_sensitivity_to_reinvestment" value="0.05" step="0.01" />
+              </div>
+            </div>
+ 
+            <div class="adv-group-label">WACC &amp; Valuation</div>
+            <div class="simple-grid">
+              <div class="field"
+                data-help-title="Tax Rate"
+                data-help-body="Effective tax rate applied to EBIT and cost of debt. Example: 0.20–0.30.">
+                <label for="tax_rate">Tax Rate</label>
+                <input type="number" id="tax_rate" value="0.25" step="0.01" />
+              </div>
+              <div class="field"
+                data-help-title="Beta"
+                data-help-body="Equity sensitivity used in the cost of equity. Example: 1.0–1.5.">
+                <label for="beta">Beta</label>
+                <input type="number" id="beta" value="1.20" step="0.05" />
+              </div>
+              <div class="field"
+                data-help-title="ERP"
+                data-help-body="Equity risk premium used in WACC. Example: 0.04–0.06.">
+                <label for="equity_risk_premium">ERP</label>
+                <input type="number" id="equity_risk_premium" value="0.055" step="0.005" />
+              </div>
+              <div class="field"
+                data-help-title="Debt Spread"
+                data-help-body="Spread above the risk-free rate used in cost of debt. Example: 0.01–0.03.">
+                <label for="debt_spread">Debt Spread</label>
+                <input type="number" id="debt_spread" value="0.015" step="0.005" />
+              </div>
+              <div class="field"
+                data-help-title="Debt Weight"
+                data-help-body="Debt share of capital used in WACC. Example: 0.20–0.40.">
+                <label for="debt_weight">Debt Weight</label>
+                <input type="number" id="debt_weight" value="0.30" step="0.05" />
+              </div>
+              <div class="field"
+                data-help-title="Equity Weight"
+                data-help-body="Equity share of capital used in WACC. Should sum to 1 with debt weight.">
+                <label for="equity_weight">Equity Weight</label>
+                <input type="number" id="equity_weight" value="0.70" step="0.05" />
+              </div>
+              <div class="field"
+                data-help-title="Terminal Growth"
+                data-help-body="Perpetual growth assumption in terminal value. Must be below WACC. Example: 0.015–0.03.">
+                <label for="terminal_growth">Terminal Growth</label>
+                <input type="number" id="terminal_growth" value="0.025" step="0.005" />
+              </div>
+              <div class="field"
+                data-help-title="Forecast Years"
+                data-help-body="Number of explicit forecast years before terminal value.">
+                <label for="forecast_years">Forecast Years</label>
+                <input type="number" id="forecast_years" value="5" step="1" min="1" max="10" />
+              </div>
+            </div>
+ 
+            <div class="adv-group-label">Simulation Control</div>
+            <div class="simple-grid simple-grid--narrow">
+              <div class="field"
+                data-help-title="Random Seed"
+                data-help-body="Optional fixed seed for reproducible runs. Leave blank for a fresh result each run.">
+                <label for="random_seed">Random Seed <span class="unit">blank = random each run</span></label>
+                <input type="number" id="random_seed" value="" step="1" placeholder="leave blank for random" />
+              </div>
+            </div>
+ 
+          </div><!-- /advanced-body -->
+        </details>
+ 
+        <!-- RUN BUTTON -->
+        <div class="run-row">
+          <button type="button" id="run-btn" onclick="runModel()">Run Simulation</button>
+          <span id="run-status" class="run-status"></span>
+        </div>
+ 
+      </form>
+    </div>
+  </section>
+ 
+  <!-- ===================== RESULTS ===================== -->
+  <section class="results-section" id="results-section" style="display:none;">
+    <div class="container">
+ 
+      <div class="results-header">
+        <h2 class="section-title">Valuation Output</h2>
+        <span class="results-meta" id="results-meta"></span>
+      </div>
+ 
+      <!-- Summary Cards -->
+      <div class="summary-grid" id="summary-grid"></div>
+ 
+      <!-- Distribution Histogram -->
+      <div class="chart-block">
+        <div class="chart-block-header">
+          <div class="chart-title">Value Distribution</div>
+          <div class="chart-sub">Implied per-share equity value across all simulated paths · hover bars for details · red line = current market price</div>
+        </div>
+        <div class="chart-wrap chart-wrap--hist">
+          <canvas id="hist-canvas"></canvas>
+        </div>
+      </div>
+ 
+      <!-- Commodity Price Paths -->
+      <div class="chart-block">
+        <div class="chart-block-header">
+          <div class="chart-title">Commodity Price Paths</div>
+          <div class="chart-sub">15 representative oil price paths · central path highlighted</div>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="commodity-canvas"></canvas>
+        </div>
+      </div>
+ 
+      <!-- FCF Paths -->
+      <div class="chart-block">
+        <div class="chart-block-header">
+          <div class="chart-title">Free Cash Flow Paths</div>
+          <div class="chart-sub">FCF ($M) across 15 representative paths</div>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="fcf-canvas"></canvas>
+        </div>
+      </div>
+ 
+      <!-- WACC Paths -->
+      <div class="chart-block">
+        <div class="chart-block-header">
+          <div class="chart-title">WACC Paths</div>
+          <div class="chart-sub">Discount rate variation driven by simulated interest rate paths</div>
+        </div>
+        <div class="chart-wrap chart-wrap--short">
+          <canvas id="wacc-canvas"></canvas>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Stochastic Macro-Driven DCF · OPResearch · v1</p>
+      <p class="footer-note">State variables simulated independently — no cross-correlation. Correlated paths planned for v2.</p>
+    </div>
+  </footer>
+ 
+  <script src="script.js?v=2"></script>
+</body>
+</html>
