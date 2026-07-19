@@ -237,6 +237,9 @@ function buildOperatingPaths(statePaths, inputs) {
 // WACC = equity_weight*Ke + debt_weight*Kd*(1-tax)
 // Only rf varies with the simulation; all other WACC inputs fixed.
 // EV = sum(PV of FCFs) + PV of terminal value
+// Terminal-year FCF is smoothed over the final N forecast years (per path)
+// rather than a single raw year, so one noisy draw doesn't dominate the
+// ~60-70% of value that terminal value typically represents.
 // Equity = EV - net_debt  →  Price = Equity / shares
 // =============================================================
  
@@ -264,6 +267,7 @@ function discountValuationPaths(operatingPaths, waccPaths, inputs) {
   const n = fcf.length;
   const T = fcf[0].length;
   const { terminal_growth: g, net_debt, shares_outstanding } = inputs;
+  const smoothYears = Math.max(1, Math.min(inputs.terminal_smoothing_years || 1, T));
   const prices = new Array(n);
  
   for (let i = 0; i < n; i++) {
@@ -280,7 +284,13 @@ function discountValuationPaths(operatingPaths, waccPaths, inputs) {
     }
  
     const waccTerminal = waccPaths[i][T - 1];
-    const fcfTerminal  = fcf[i][T - 1];
+    // Average the final `smoothYears` years of this path's own FCF
+    // instead of using a single raw draw as the terminal-year base.
+    let fcfSum = 0;
+    for (let t = T - smoothYears; t < T; t++) {
+      fcfSum += fcf[i][t];
+    }
+    const fcfTerminal  = fcfSum / smoothYears;
     const tvDenom      = waccTerminal - g;
     const tv = tvDenom > 0.001 ? fcfTerminal * (1.0 + g) / tvDenom : 0;
  
@@ -770,6 +780,7 @@ function readInputs() {
     debt_weight:          get('debt_weight'),
     equity_weight:        get('equity_weight'),
     terminal_growth:      get('terminal_growth'),
+    terminal_smoothing_years: getInt('terminal_smoothing_years'),
  
     // Simulation
     num_simulations: Math.min(getInt('num_simulations'), 5000),
