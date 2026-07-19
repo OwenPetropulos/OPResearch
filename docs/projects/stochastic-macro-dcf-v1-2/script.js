@@ -148,8 +148,12 @@ function buildOperatingPaths(statePaths, inputs) {
   const revSensComm   = inputs.revenue_sensitivity_to_commodity;
   const revSensDem    = inputs.revenue_sensitivity_to_demand;
   const marginSens    = inputs.margin_sensitivity_to_commodity;
+  const breakeven     = inputs.cash_breakeven_price;
+  const belowMult     = inputs.below_breakeven_multiplier;
+  const marginFloor   = inputs.structural_margin_floor;
   const capexSens     = inputs.capex_sensitivity_to_commodity;
   const prodReinvSens = inputs.production_growth_sensitivity_to_reinvestment;
+  const breakevenDev  = (breakeven - comm0) / comm0;
  
   const production  = zeros2D(n, T);
   const revenue     = zeros2D(n, T);
@@ -181,8 +185,20 @@ function buildOperatingPaths(statePaths, inputs) {
       revT = Math.max(revT, 0);
       revenue[i][t] = revT;
  
-      let marginT = baseMargin + marginSens * commDev;
-      marginT = Math.min(Math.max(marginT, 0), 0.95);
+      // Kinked margin sensitivity: normal slope above cash breakeven,
+      // steeper slope below it (fixed costs don't scale down, so margin
+      // compression accelerates once price falls under cash cost).
+      let marginT;
+      if (commT >= breakeven) {
+        marginT = baseMargin + marginSens * commDev;
+      } else {
+        const normalPortion  = marginSens * breakevenDev;
+        const steepPortion   = marginSens * belowMult * (commDev - breakevenDev);
+        marginT = baseMargin + normalPortion + steepPortion;
+      }
+      // Structural floor: the point where a producer would shut in
+      // production rather than operate at a larger loss.
+      marginT = Math.min(Math.max(marginT, marginFloor), 0.95);
       margin[i][t] = marginT;
  
       const ebitT = revT * marginT;
@@ -740,6 +756,9 @@ function readInputs() {
     revenue_sensitivity_to_commodity: get('revenue_sensitivity_to_commodity'),
     revenue_sensitivity_to_demand:    get('revenue_sensitivity_to_demand'),
     margin_sensitivity_to_commodity:  get('margin_sensitivity_to_commodity'),
+    cash_breakeven_price:             get('cash_breakeven_price'),
+    below_breakeven_multiplier:       get('below_breakeven_multiplier'),
+    structural_margin_floor:          get('structural_margin_floor'),
     capex_sensitivity_to_commodity:   get('capex_sensitivity_to_commodity'),
     production_growth_sensitivity_to_reinvestment: get('production_growth_sensitivity_to_reinvestment'),
  
