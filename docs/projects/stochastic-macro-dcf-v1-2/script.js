@@ -54,87 +54,114 @@ function makeNormalSampler(rand) {
 // =============================================================
 // 2. STATE PATH SIMULATION
 //
-// Commodity price → Ornstein-Uhlenbeck (mean-reverting)
-// Interest rate   → Ornstein-Uhlenbeck (mean-reverting)
-// Demand index    → Geometric Brownian Motion (growth)
-// All three are independent in v1.
+// Commodity price -> Ornstein-Uhlenbeck (mean-reverting)
+// Interest rate   -> Ornstein-Uhlenbeck (mean-reverting)
+// Demand index    -> Geometric Brownian Motion (growth)
+//
+// v1.2: the three shocks are correlated via a 3x3 correlation matrix
+// (order: oil, rate, demand), transformed with a Cholesky factor so
+// recessions/inflation regimes can move the variables together instead
+// of drawing them independently.
 // =============================================================
- 
+
 function simulateStatePaths(inputs, randn) {
   const n = inputs.num_simulations;
   const T = inputs.forecast_years;
- 
-  const commodity = simulateOU(
-    inputs.commodity_current,
-    inputs.commodity_reversion_speed,
-    inputs.commodity_long_run_mean,
-    inputs.commodity_vol * inputs.commodity_current, // level-scaled absolute vol
-    n, T, randn, 1.0
-  );
- 
-  const rate = simulateOU(
-    inputs.rate_current,
-    inputs.rate_drift,
-    inputs.rate_long_run_mean,
-    inputs.rate_vol,
-    n, T, randn, 0.001
-  );
- 
-  const demand = simulateGBM(
-    inputs.demand_current,
-    inputs.demand_growth,
-    inputs.demand_vol,
-    n, T, randn
-  );
- 
+
+  // Cholesky factor of the 3x3 correlation matrix (order: oil, rate, demand).
+  // Clamped so an inconsistent set of pairwise correlations from the input
+  // fields can't produce NaNs from a negative sqrt.
+  const r12 = inputs.corr_oil_rate;
+  const r13 = inputs.corr_oil_demand;
+  const r23 = inputs.corr_rate_demand;
+  const L21 = r12;
+  const L22 = Math.sqrt(Math.max(1 - L21 * L21, 1e-8));
+  const L31 = r13;
+  const L32 = (r23 - L21 * L31) / L22;
+  const L33 = Math.sqrt(Math.max(1 - L31 * L31 - L32 * L32, 1e-8));
+
+  const commKappa = inputs.commodity_reversion_speed;
+  const commTheta = inputs.commodity_long_run_mean;
+  const commSigma = inputs.commodity_vol * inputs.commodity_current; // level-scaled absolute vol
+
+  const rateKappa = inputs.rate_drift;
+  const rateTheta = inputs.rate_long_run_mean;
+  const rateSigma = inputs.rate_vol;
+
+  const demandSigma = inputs.demand_vol;
+  const demandDrift = inputs.demand_growth - 0.5 * demandSigma * demandSigma;
+
+  const commodity = [];
+  const rate = [];
+  const demand = [];
+
+  for (let i = 0; i < n; i++) {
+    const commPath = new Array(T);
+    const ratePath = new Array(T);
+    const demandPath = new Array(T);
+
+    let comm = inputs.commodity_current;
+    let rt   = inputs.rate_current;
+    let dem  = inputs.demand_current;
+
+    for (let t = 0; t < T; t++) {
+      // Three independent standard-normal draws, transformed into
+      // correlated shocks (z1=oil, z2=rate, z3=demand) via the
+      // Cholesky factor computed above.
+      const e1 = randn();
+      const e2 = randn();
+      const e3 = randn();
+      const z1 = e1;
+      const z2 = L21 * e1 + L22 * e2;
+      const z3 = L31 * e1 + L32 * e2 + L33 * e3;
+
+      comm = comm + commKappa * (commTheta - comm) + commSigma * z1;
+      comm = Math.max(comm, 1.0);
+      commPath[t] = comm;
+
+      rt = rt + rateKappa * (rateTheta - rt) + rateSigma * z2;
+      rt = Math.max(rt, 0.001);
+      ratePath[t] = rt;
+
+      dem = dem * Math.exp(demandDrift + demandSigma * z3);
+      demandPath[t] = dem;
+    }
+
+    commodity.push(commPath);
+    rate.push(ratePath);
+    demand.push(demandPath);
+  }
+
   return { commodity, rate, demand };
-}
- 
-// Discrete Ornstein-Uhlenbeck: X(t+1) = X(t) + κ(θ - X(t)) + σ·ε
-function simulateOU(x0, kappa, theta, sigma, n, T, randn, floor) {
-  const paths = [];
-  for (let i = 0; i < n; i++) {
-    const path = new Array(T);
-    let x = x0;
-    for (let t = 0; t < T; t++) {
-      x = x + kappa * (theta - x) + sigma * randn();
-      if (floor !== undefined) x = Math.max(x, floor);
-      path[t] = x;
-    }
-    paths.push(path);
-  }
-  return paths;
-}
- 
-// Geometric Brownian Motion: X(t+1) = X(t) · exp((μ - σ²/2) + σ·ε)
-function simulateGBM(x0, mu, sigma, n, T, randn) {
-  const drift = mu - 0.5 * sigma * sigma;
-  const paths = [];
-  for (let i = 0; i < n; i++) {
-    const path = new Array(T);
-    let x = x0;
-    for (let t = 0; t < T; t++) {
-      x = x * Math.exp(drift + sigma * randn());
-      path[t] = x;
-    }
-    paths.push(path);
-  }
-  return paths;
 }
  
  
 // =============================================================
 // 3. OPERATING MODEL
 //
-// revenue → margin → EBIT → D&A → capex → WC → FCF
-// FCF = EBIT*(1-tax) + D&A - Capex - ΔWC
+// revenue -> margin -> EBIT -> D&A -> capex -> WC -> FCF
+// FCF = EBIT*(1-tax) + D&A - Capex - deltaWC
 // =============================================================
- 
+
+// Trailing average of a single path's values over the last `window`
+// years ending at t (inclusive). Shrinks near t=0 rather than reading
+// out of bounds. Shared by the capex pullback (A4) and debt spread
+// distress widening (A3) so both mechanisms react to the same signal.
+function trailingAverage(path, t, window) {
+  const start = Math.max(0, t - window + 1);
+  let sum = 0, cnt = 0;
+  for (let k = start; k <= t; k++) {
+    sum += path[k];
+    cnt++;
+  }
+  return sum / cnt;
+}
+
 function buildOperatingPaths(statePaths, inputs) {
   const { commodity, demand } = statePaths;
   const n = commodity.length;
   const T = commodity[0].length;
- 
+
   const rev0        = inputs.current_revenue;
   const prod0       = inputs.current_production;
   const comm0       = inputs.commodity_current;
@@ -144,7 +171,7 @@ function buildOperatingPaths(statePaths, inputs) {
   const daPct       = inputs.da_percent_revenue;
   const wcPct       = inputs.working_capital_percent_revenue;
   const tax         = inputs.tax_rate;
- 
+
   const revSensComm   = inputs.revenue_sensitivity_to_commodity;
   const revSensDem    = inputs.revenue_sensitivity_to_demand;
   const marginSens    = inputs.margin_sensitivity_to_commodity;
@@ -154,6 +181,14 @@ function buildOperatingPaths(statePaths, inputs) {
   const capexSens     = inputs.capex_sensitivity_to_commodity;
   const prodReinvSens = inputs.production_growth_sensitivity_to_reinvestment;
   const breakevenDev  = (breakeven - comm0) / comm0;
+
+  // Distress dynamics (A4): capex pulls back further, on top of the
+  // contemporaneous capexSens response, once trailing price sustains
+  // below the distress threshold -- modeling deferred/optional capex.
+  const distressThreshold  = inputs.distress_price_threshold;
+  const distressWindow     = inputs.distress_trailing_years;
+  const capexPullbackSens  = inputs.capex_pullback_sensitivity;
+
  
   const production  = zeros2D(n, T);
   const revenue     = zeros2D(n, T);
@@ -207,7 +242,12 @@ function buildOperatingPaths(statePaths, inputs) {
       const daT = daPct * revT;
       da[i][t] = daT;
  
-      let capexPctT = baseCapex + capexSens * commDev;
+      // A4: additional pullback once trailing price sustains below
+      // the distress threshold (management deferring capex in a
+      // sustained downturn, not just reacting to one bad print).
+      const trailAvgPriceCapex = trailingAverage(commodity[i], t, distressWindow);
+      const capexDistressGap = Math.max(0, (distressThreshold - trailAvgPriceCapex) / distressThreshold);
+      let capexPctT = baseCapex + capexSens * commDev - capexPullbackSens * capexDistressGap;
       capexPctT = Math.min(Math.max(capexPctT, 0), 0.60);
       const capexT = capexPctT * revT;
       capexArr[i][t] = capexT;
@@ -235,27 +275,41 @@ function buildOperatingPaths(statePaths, inputs) {
 // 4. VALUATION MODEL
 //
 // WACC = equity_weight*Ke + debt_weight*Kd*(1-tax)
-// Only rf varies with the simulation; all other WACC inputs fixed.
+// rf varies with the simulation. A3: debt_spread also widens with
+// sustained trailing price weakness (the same distress signal used
+// by the A4 capex pullback), so paths with the worst operating stress
+// also carry the worst financing cost -- rather than a fixed WACC
+// applied uniformly regardless of how distressed a path is.
 // EV = sum(PV of FCFs) + PV of terminal value
 // Terminal-year FCF is smoothed over the final N forecast years (per path)
 // rather than a single raw year, so one noisy draw doesn't dominate the
 // ~60-70% of value that terminal value typically represents.
-// Equity = EV - net_debt  →  Price = Equity / shares
+// Equity = EV - net_debt  ->  Price = Equity / shares
 // =============================================================
- 
+
 function buildWaccPaths(statePaths, inputs) {
-  const { rate } = statePaths;
+  const { rate, commodity } = statePaths;
   const n = rate.length;
   const T = rate[0].length;
   const { beta, equity_risk_premium: erp, debt_spread,
-          debt_weight, equity_weight, tax_rate } = inputs;
- 
+          debt_weight, equity_weight, tax_rate,
+          distress_price_threshold: distressThreshold,
+          distress_trailing_years: distressWindow,
+          debt_spread_distress_sensitivity: spreadDistressSens } = inputs;
+
   const wacc = zeros2D(n, T);
   for (let i = 0; i < n; i++) {
     for (let t = 0; t < T; t++) {
       const rf = rate[i][t];
       const ke = rf + beta * erp;
-      const kd = rf + debt_spread;
+
+      // A3: widen the debt spread as trailing price sustains below the
+      // distress threshold -- same distressGap construction as A4.
+      const trailAvgPriceWacc = trailingAverage(commodity[i], t, distressWindow);
+      const waccDistressGap   = Math.max(0, (distressThreshold - trailAvgPriceWacc) / distressThreshold);
+      const spreadT = debt_spread + spreadDistressSens * waccDistressGap;
+
+      const kd = rf + spreadT;
       wacc[i][t] = Math.max(equity_weight * ke + debt_weight * kd * (1 - tax_rate), 0.01);
     }
   }
@@ -750,6 +804,17 @@ function readInputs() {
     rate_long_run_mean:         get('rate_long_run_mean'),
     demand_current:             get('demand_current'),
     demand_vol:                 get('demand_vol'),
+
+    // Correlation structure (advanced)
+    corr_oil_rate:               get('corr_oil_rate'),
+    corr_oil_demand:             get('corr_oil_demand'),
+    corr_rate_demand:            get('corr_rate_demand'),
+
+    // Distress dynamics (advanced) — shared by capex optionality and debt spread
+    distress_price_threshold:    get('distress_price_threshold'),
+    distress_trailing_years:     getInt('distress_trailing_years'),
+    capex_pullback_sensitivity:  get('capex_pullback_sensitivity'),
+    debt_spread_distress_sensitivity: get('debt_spread_distress_sensitivity'),
  
     // Company (simple)
     current_revenue:            get('current_revenue'),
