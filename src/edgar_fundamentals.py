@@ -34,7 +34,7 @@ warnings.filterwarnings('ignore')
 # TODO(Owen): fill in your own name and email -- SEC requires a real,
 # descriptive User-Agent on every request. Example:
 # EDGAR_USER_AGENT = "Owen Petropulos owen@example.com"
-EDGAR_USER_AGENT = "REPLACE_ME name@example.com"
+EDGAR_USER_AGENT = "Owen Petropulos owenpetropulos@gmail.com"
 
 TICKER_CIK_URL = "https://www.sec.gov/files/company_tickers.json"
 COMPANY_FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
