@@ -34,7 +34,7 @@ warnings.filterwarnings('ignore')
 # TODO(Owen): fill in your own name and email -- SEC requires a real,
 # descriptive User-Agent on every request. Example:
 # EDGAR_USER_AGENT = "Owen Petropulos owen@example.com"
-EDGAR_USER_AGENT = "Owen Petropulos owenpetropulos@gmail.com"
+EDGAR_USER_AGENT = "REPLACE_ME name@example.com"
 
 TICKER_CIK_URL = "https://www.sec.gov/files/company_tickers.json"
 COMPANY_FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
@@ -85,15 +85,26 @@ def _get(url, params=None):
 
 def load_ticker_cik_map():
     """
-    SEC's own ticker->CIK lookup file. Returns dict[ticker] -> zero-padded
-    10-digit CIK string (as required by the companyfacts URL).
+    SEC's own ticker->CIK lookup file. Returns dict[ticker] -> (cik, title)
+    tuples, where title is the registrant's name -- useful for eyeballing
+    that a ticker resolved to the company you actually expect.
+
+    IMPORTANT: this file can contain more than one entry for the same
+    ticker string (e.g. an unrelated small/OTC registrant that happens to
+    reuse a well-known ticker elsewhere). SEC's file convention generally
+    lists the primary/most-liquid listing first, so this keeps the FIRST
+    match per ticker rather than the last -- fixes a real bug where a
+    well-known ticker (XOM) was getting silently overwritten by an
+    unrelated later entry in the file, resolving to the wrong CIK.
     """
     data = _get(TICKER_CIK_URL)
     mapping = {}
     for _, entry in data.items():
         ticker = entry['ticker'].upper()
         cik = str(entry['cik_str']).zfill(10)
-        mapping[ticker] = cik
+        title = entry.get('title', '')
+        if ticker not in mapping:  # first match wins
+            mapping[ticker] = (cik, title)
     return mapping
 
 
@@ -103,11 +114,23 @@ def fetch_company_facts(cik):
     return _get(COMPANY_FACTS_URL.format(cik=cik))
 
 
-def _extract_concept_series(facts_json, concept_key):
+def _extract_concept_series(facts_json, concept_key, annual_only=False):
     """
     Tries each candidate (taxonomy, tag) pair for this concept in
     priority order. Returns the first one with data, as a list of dicts:
     {filed, start, end, val, form, fy, fp}. Empty list if none matched.
+
+    annual_only: when True, filters to records whose reporting period
+    (end - start) is roughly a full year (340-386 days, allowing for
+    52/53-week fiscal calendars). This matters for flow concepts like
+    revenue -- without it, a 10-Q's quarterly figure (~3 months) and a
+    10-K's full-year figure get mixed together inconsistently, which
+    silently corrupts the resulting series (e.g. COP alternating between
+    ~$16B-quarter and ~$59B-year figures depending on which filing type
+    was most recently filed, rather than a consistent annual scale).
+    Not applied to instantaneous/balance-sheet concepts (shares, debt,
+    cash), since those aren't a duration -- a single filing's disclosed
+    balance is valid regardless of whether it came from a 10-Q or 10-K.
     """
     for taxonomy, tag in CONCEPT_TAGS[concept_key]:
         try:
@@ -122,20 +145,30 @@ def _extract_concept_series(facts_json, concept_key):
                 continue
             unit_key = next(iter(units))
         records = units[unit_key]
-        if records:
-            return [
-                {
-                    'filed': r.get('filed'),
-                    'start': r.get('start'),
-                    'end': r.get('end'),
-                    'val': r.get('val'),
-                    'form': r.get('form'),
-                    'fy': r.get('fy'),
-                    'fp': r.get('fp'),
-                }
-                for r in records
-                if r.get('filed') and r.get('val') is not None
-            ]
+        candidates = [
+            {
+                'filed': r.get('filed'),
+                'start': r.get('start'),
+                'end': r.get('end'),
+                'val': r.get('val'),
+                'form': r.get('form'),
+                'fy': r.get('fy'),
+                'fp': r.get('fp'),
+            }
+            for r in records
+            if r.get('filed') and r.get('val') is not None
+        ]
+        if annual_only:
+            filtered = []
+            for c in candidates:
+                if not c['start'] or not c['end']:
+                    continue
+                duration_days = (pd.Timestamp(c['end']) - pd.Timestamp(c['start'])).days
+                if 340 <= duration_days <= 386:
+                    filtered.append(c)
+            candidates = filtered
+        if candidates:
+            return candidates
     return []
 
 
@@ -146,7 +179,8 @@ def build_point_in_time_table(facts_json):
     date can look up "what was most recently known as of then."
     """
     series_by_concept = {
-        key: _extract_concept_series(facts_json, key) for key in CONCEPT_TAGS
+        key: _extract_concept_series(facts_json, key, annual_only=(key == 'revenue'))
+        for key in CONCEPT_TAGS
     }
 
     frames = []
@@ -221,15 +255,20 @@ def get_point_in_time_fundamentals(tickers, verbose=True):
 
     tables = {}
     for ticker in tickers:
-        cik = ticker_cik_map.get(ticker.upper())
-        if cik is None:
+        match = ticker_cik_map.get(ticker.upper())
+        if match is None:
             if verbose:
                 print(f"   {ticker}: not found in SEC ticker map, skipping")
             tables[ticker] = None
             continue
+        cik, title = match
         try:
             if verbose:
-                print(f"   {ticker}: fetching (CIK {cik})...", end=' ')
+                # Prints the registrant name alongside the CIK so you can
+                # eyeball that it resolved to the company you expect --
+                # e.g. confirm "XOM" -> "Exxon Mobil Corp", not some
+                # unrelated entity that happens to share the ticker.
+                print(f"   {ticker}: fetching (CIK {cik}, \"{title}\")...", end=' ')
             facts = fetch_company_facts(cik)
             table = build_point_in_time_table(facts)
             if table.empty:
