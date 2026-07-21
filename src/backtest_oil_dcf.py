@@ -588,52 +588,79 @@ def calculate_turnover(weights_history):
     return diffs.mean()  # average weekly one-way turnover
 
 
+def _series_metrics(value_series):
+    """Raw-decimal metrics for one value series (strategy or benchmark),
+    matching the schema used by docs/projects/moving_average_v1/metrics.json:
+    total_return/cagr/volatility/max_drawdown as raw decimals (7.20 = +720%,
+    not 720), sharpe as a unitless ratio.
+    """
+    total_return = value_series.iloc[-1] / value_series.iloc[0] - 1
+    years = (value_series.index[-1] - value_series.index[0]).days / 365.25
+    cagr = (value_series.iloc[-1] / value_series.iloc[0]) ** (1 / years) - 1
+    volatility = value_series.pct_change().std() * np.sqrt(52)
+    sharpe = cagr / volatility if volatility > 0 else 0
+    running_max = value_series.expanding().max()
+    max_drawdown = ((value_series - running_max) / running_max).min()
+    return {
+        'total_return': float(total_return),
+        'cagr': float(cagr),
+        'volatility': float(volatility),
+        'sharpe': float(sharpe),
+        'max_drawdown': float(max_drawdown),
+    }
+
+
 def calculate_metrics(portfolio_value, benchmark_value, weights_history):
+    strategy = _series_metrics(portfolio_value)
+    benchmark = _series_metrics(benchmark_value)
+    turnover = calculate_turnover(weights_history)
+
     print("=" * 70)
     print("PERFORMANCE RESULTS")
     print("=" * 70)
-
-    strat_ret = (portfolio_value.iloc[-1] / portfolio_value.iloc[0] - 1) * 100
-    bench_ret = (benchmark_value.iloc[-1] / benchmark_value.iloc[0] - 1) * 100
-    print(f"\nTotal return -- Strategy: {strat_ret:.2f}%  Benchmark: {bench_ret:.2f}%  Alpha: {strat_ret - bench_ret:+.2f}%")
-
-    years = (portfolio_value.index[-1] - portfolio_value.index[0]).days / 365.25
-    strat_cagr = ((portfolio_value.iloc[-1] / portfolio_value.iloc[0]) ** (1 / years) - 1) * 100
-    bench_cagr = ((benchmark_value.iloc[-1] / benchmark_value.iloc[0]) ** (1 / years) - 1) * 100
-    print(f"CAGR -- Strategy: {strat_cagr:.2f}%  Benchmark: {bench_cagr:.2f}%")
-
-    strat_vol = portfolio_value.pct_change().std() * np.sqrt(52) * 100
-    bench_vol = benchmark_value.pct_change().std() * np.sqrt(52) * 100
-    print(f"Volatility -- Strategy: {strat_vol:.2f}%  Benchmark: {bench_vol:.2f}%")
-
-    strat_sharpe = strat_cagr / strat_vol if strat_vol > 0 else 0
-    bench_sharpe = bench_cagr / bench_vol if bench_vol > 0 else 0
-    print(f"Sharpe (return/vol) -- Strategy: {strat_sharpe:.2f}  Benchmark: {bench_sharpe:.2f}")
-
-    strat_dd = ((portfolio_value - portfolio_value.expanding().max()) / portfolio_value.expanding().max() * 100).min()
-    bench_dd = ((benchmark_value - benchmark_value.expanding().max()) / benchmark_value.expanding().max() * 100).min()
-    print(f"Max drawdown -- Strategy: {strat_dd:.2f}%  Benchmark: {bench_dd:.2f}%")
-
-    turnover = calculate_turnover(weights_history)
+    print(f"\nTotal return -- Strategy: {strategy['total_return']*100:.2f}%  "
+          f"Benchmark: {benchmark['total_return']*100:.2f}%  "
+          f"Alpha: {(strategy['total_return']-benchmark['total_return'])*100:+.2f}%")
+    print(f"CAGR -- Strategy: {strategy['cagr']*100:.2f}%  Benchmark: {benchmark['cagr']*100:.2f}%")
+    print(f"Volatility -- Strategy: {strategy['volatility']*100:.2f}%  Benchmark: {benchmark['volatility']*100:.2f}%")
+    print(f"Sharpe (return/vol) -- Strategy: {strategy['sharpe']:.2f}  Benchmark: {benchmark['sharpe']:.2f}")
+    print(f"Max drawdown -- Strategy: {strategy['max_drawdown']*100:.2f}%  Benchmark: {benchmark['max_drawdown']*100:.2f}%")
     print(f"Avg weekly turnover: {turnover*100:.1f}%")
     print("=" * 70 + "\n")
+
+    return {
+        'period': {
+            'start': str(portfolio_value.index[0].date()),
+            'end': str(portfolio_value.index[-1].date()),
+        },
+        'metrics': {
+            'strategy': strategy,
+            'benchmark': benchmark,
+        },
+        'avg_weekly_turnover': float(turnover),
+    }
 
 
 # ============================================================================
 # 7. SAVE RESULTS
 # ============================================================================
 
-def save_results(portfolio_value, benchmark_value, weights_history):
+def save_results(metrics_dict, weights_history):
+    """
+    Writes metrics.json in the same schema as
+    docs/projects/moving_average_v1/metrics.json, so it can be dropped
+    directly into a new docs/projects/oil-dcf-backtest/ folder. Also
+    saves the weekly weights to CSV for your own debugging/analysis --
+    not required by the site, just useful to have.
+    """
+    import json
     output_dir = '../data' if os.path.exists('../data') else ('data' if os.path.exists('data') else '.')
 
-    results = pd.DataFrame({
-        'Date': portfolio_value.index,
-        'Strategy_Value': portfolio_value.values,
-        'Benchmark_Value': benchmark_value.reindex(portfolio_value.index).values,
-    })
-    results.to_csv(os.path.join(output_dir, 'oil_dcf_backtest_performance.csv'), index=False)
+    with open(os.path.join(output_dir, 'oil_dcf_metrics.json'), 'w') as f:
+        json.dump(metrics_dict, f, indent=2)
+
     weights_history.to_csv(os.path.join(output_dir, 'oil_dcf_backtest_weights.csv'))
-    print(f"Saved results to {output_dir}/oil_dcf_backtest_*.csv")
+    print(f"Saved oil_dcf_metrics.json and oil_dcf_backtest_weights.csv to {output_dir}/")
 
 
 # ============================================================================
@@ -661,8 +688,8 @@ def main():
         prices_df, wti, active_universe, fundamentals
     )
     benchmark_value = create_benchmark(weekly_prices[active_universe])
-    calculate_metrics(portfolio_value, benchmark_value, weights_history)
-    save_results(portfolio_value, benchmark_value, weights_history)
+    metrics_dict = calculate_metrics(portfolio_value, benchmark_value, weights_history)
+    save_results(metrics_dict, weights_history)
 
     print("BACKTEST COMPLETE\n")
 
