@@ -306,9 +306,13 @@ def get_point_in_time_fundamentals(tickers, verbose=True):
 if __name__ == "__main__":
     # Quick standalone smoke test -- prints a fundamentals snapshot for
     # a couple of dates so you can eyeball whether it's behaving sanely
-    # before wiring it into the full backtest.
-    test_tickers = ['XOM', 'COP']
+    # before wiring it into the full backtest. Covers the full universe
+    # so any other CIK collisions or missing-data tickers surface now,
+    # not mid-integration.
+    test_tickers = ['XOM', 'CVX', 'SHEL', 'TTE', 'BP',
+                     'COP', 'OXY', 'CNQ', 'SU', 'FANG', 'EOG', 'PBR']
     tables = get_point_in_time_fundamentals(test_tickers)
+    print("\n" + "=" * 70)
     for ticker, table in tables.items():
         print(f"\n=== {ticker} ===")
         if table is None:
