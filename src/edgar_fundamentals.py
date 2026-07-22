@@ -74,6 +74,26 @@ CONCEPT_TAGS = {
     ],
 }
 
+# Fallback keyword search used when none of the hardcoded CONCEPT_TAGS
+# candidates produce a reliable series. Many foreign filers (and some
+# US ones) report under a custom/company-specific extension taxonomy
+# instead of the standard us-gaap/ifrs-full tags -- e.g. TotalEnergies,
+# Suncor, and Petrobras all came back "frozen" (one stale value forever)
+# under the hardcoded candidates, almost certainly because their real
+# recurring disclosure lives under a tag we never checked. Rather than
+# hand-researching each company's actual tag name, this scans EVERY
+# taxonomy present in that company's filing history for any tag whose
+# name contains one of these keywords, tests each one, and keeps the
+# best-scoring result. Keyword matching is on the lowercased tag name
+# with no separators (XBRL tag names are CamelCase, e.g. "Revenues"),
+# so keep these as lowercase substrings.
+CONCEPT_KEYWORD_FALLBACKS = {
+    'revenue': ['revenue', 'salesrevenue', 'turnover', 'totalrevenues'],
+    'shares_outstanding': ['sharesoutstanding', 'sharesissued'],
+    'total_debt': ['debt', 'borrowing'],
+    'cash': ['cashandcashequivalents', 'cashequivalents'],
+}
+
 
 def _get(url, params=None):
     headers = {'User-Agent': EDGAR_USER_AGENT}
@@ -129,11 +149,82 @@ def fetch_company_facts(cik):
     return _get(COMPANY_FACTS_URL.format(cik=cik))
 
 
+def _records_from_units(units, unit_key_pref):
+    """Pulls the raw (filed, start, end, val, form, fy, fp) records out
+    of one tag's `units` dict, preferring the given unit key (USD or
+    shares) but falling back to whatever unit is present."""
+    if unit_key_pref not in units:
+        if not units:
+            return []
+        unit_key_pref = next(iter(units))
+    records = units[unit_key_pref]
+    return [
+        {
+            'filed': r.get('filed'), 'start': r.get('start'), 'end': r.get('end'),
+            'val': r.get('val'), 'form': r.get('form'), 'fy': r.get('fy'), 'fp': r.get('fp'),
+        }
+        for r in records
+        if r.get('filed') and r.get('val') is not None
+    ]
+
+
+def _apply_annual_filter(candidates):
+    """Keeps only records whose reporting period is roughly a full year
+    (340-386 days). See _extract_concept_series docstring for why this
+    matters for flow concepts like revenue."""
+    filtered = []
+    for c in candidates:
+        if not c['start'] or not c['end']:
+            continue
+        duration_days = (pd.Timestamp(c['end']) - pd.Timestamp(c['start'])).days
+        if 340 <= duration_days <= 386:
+            filtered.append(c)
+    return filtered
+
+
+def _score_candidate(records):
+    """Data-quality score for one candidate tag's records: how many
+    distinct filing dates it covers and how much the values actually
+    vary. A tag that only ever reports one stale number (the TTE/SU/PBR
+    failure pattern -- almost certainly the wrong tag, or one that
+    stopped being used) scores low even if it technically "has data."
+    """
+    if not records:
+        return (0, 0)
+    n_dates = len(set(r['filed'] for r in records))
+    n_unique_vals = len(set(r['val'] for r in records))
+    return (n_unique_vals, n_dates)
+
+
+def _discover_tags_by_keyword(facts_json, keywords):
+    """
+    Scans every taxonomy present in this company's filing history (not
+    just us-gaap/ifrs-full) for any tag whose name contains one of the
+    given keywords. This is the auto-discovery fallback for filers using
+    a custom/extension taxonomy for their real recurring disclosure --
+    rather than hand-researching each company's actual tag name, this
+    finds candidates automatically so they can be scored and compared
+    the same way as the hardcoded CONCEPT_TAGS list.
+    """
+    discovered = []
+    facts = facts_json.get('facts', {})
+    for taxonomy, tags in facts.items():
+        for tag in tags:
+            tag_lower = tag.lower()
+            if any(kw in tag_lower for kw in keywords):
+                discovered.append((taxonomy, tag))
+    return discovered
+
+
 def _extract_concept_series(facts_json, concept_key, annual_only=False):
     """
-    Tries each candidate (taxonomy, tag) pair for this concept in
-    priority order. Returns the first one with data, as a list of dicts:
-    {filed, start, end, val, form, fy, fp}. Empty list if none matched.
+    Tries every hardcoded CONCEPT_TAGS candidate for this concept, scores
+    each by data quality (_score_candidate), and if NONE of them score
+    well (empty, or fewer than 3 distinct values), automatically expands
+    the search to every tag in the company's filing history matching
+    CONCEPT_KEYWORD_FALLBACKS -- catching custom/extension taxonomy tags
+    that the hardcoded list doesn't know about. Returns the best-scoring
+    candidate's records, or an empty list if nothing usable was found.
 
     annual_only: when True, filters to records whose reporting period
     (end - start) is roughly a full year (340-386 days, allowing for
@@ -146,57 +237,64 @@ def _extract_concept_series(facts_json, concept_key, annual_only=False):
     Not applied to instantaneous/balance-sheet concepts (shares, debt,
     cash), since those aren't a duration -- a single filing's disclosed
     balance is valid regardless of whether it came from a 10-Q or 10-K.
+
+    Returns (records, source_label). source_label is None if nothing
+    usable was found (score fell below the reliability threshold).
     """
-    for taxonomy, tag in CONCEPT_TAGS[concept_key]:
+    unit_key_pref = 'shares' if concept_key == 'shares_outstanding' else 'USD'
+
+    def try_candidate(taxonomy, tag):
         try:
             units = facts_json['facts'][taxonomy][tag]['units']
         except KeyError:
-            continue
-        # Prefer USD for monetary concepts, 'shares' for share counts.
-        unit_key = 'shares' if concept_key == 'shares_outstanding' else 'USD'
-        if unit_key not in units:
-            # fall back to whatever unit is present
-            if not units:
-                continue
-            unit_key = next(iter(units))
-        records = units[unit_key]
-        candidates = [
-            {
-                'filed': r.get('filed'),
-                'start': r.get('start'),
-                'end': r.get('end'),
-                'val': r.get('val'),
-                'form': r.get('form'),
-                'fy': r.get('fy'),
-                'fp': r.get('fp'),
-            }
-            for r in records
-            if r.get('filed') and r.get('val') is not None
-        ]
+            return []
+        records = _records_from_units(units, unit_key_pref)
         if annual_only:
-            filtered = []
-            for c in candidates:
-                if not c['start'] or not c['end']:
-                    continue
-                duration_days = (pd.Timestamp(c['end']) - pd.Timestamp(c['start'])).days
-                if 340 <= duration_days <= 386:
-                    filtered.append(c)
-            candidates = filtered
-        if candidates:
-            return candidates
-    return []
+            records = _apply_annual_filter(records)
+        return records
+
+    best_records, best_score, best_source = [], (0, 0), None
+
+    # Pass 1: hardcoded candidates, in priority order.
+    for taxonomy, tag in CONCEPT_TAGS[concept_key]:
+        records = try_candidate(taxonomy, tag)
+        score = _score_candidate(records)
+        if score > best_score:
+            best_records, best_score, best_source = records, score, f"{taxonomy}:{tag}"
+
+    # Pass 2: only bother with keyword auto-discovery if pass 1 didn't
+    # find anything reliable (fewer than 3 distinct values) -- keeps the
+    # common case (major US filers, whose hardcoded tags work fine) fast.
+    if best_score[0] < 3 and concept_key in CONCEPT_KEYWORD_FALLBACKS:
+        keywords = CONCEPT_KEYWORD_FALLBACKS[concept_key]
+        for taxonomy, tag in _discover_tags_by_keyword(facts_json, keywords):
+            if (taxonomy, tag) in CONCEPT_TAGS[concept_key]:
+                continue  # already tried in pass 1
+            records = try_candidate(taxonomy, tag)
+            score = _score_candidate(records)
+            if score > best_score:
+                best_records, best_score, best_source = records, score, f"{taxonomy}:{tag} [auto-discovered]"
+
+    source = best_source if best_score[0] >= 3 else None
+    return best_records, source
 
 
-def build_point_in_time_table(facts_json):
+
+def build_point_in_time_table(facts_json, verbose=False):
     """
     Combines revenue, shares outstanding, total debt, and cash into one
     DataFrame indexed by filing date, forward-fillable so any historical
     date can look up "what was most recently known as of then."
+
+    verbose: if True, prints which tag ended up being used for each
+    concept -- useful for spotting when auto-discovery kicked in.
     """
-    series_by_concept = {
-        key: _extract_concept_series(facts_json, key, annual_only=(key == 'revenue'))
-        for key in CONCEPT_TAGS
-    }
+    series_by_concept = {}
+    for key in CONCEPT_TAGS:
+        records, source = _extract_concept_series(facts_json, key, annual_only=(key == 'revenue'))
+        series_by_concept[key] = records
+        if verbose:
+            print(f"      [{key}] using tag: {source or 'NONE FOUND'}")
 
     frames = []
     for concept, records in series_by_concept.items():
@@ -250,6 +348,28 @@ def as_of(point_in_time_table, date):
     }
 
 
+def is_reliable_series(table, min_unique_values=3):
+    """
+    Sanity check for a ticker's point-in-time table: real companies'
+    revenue genuinely changes year to year, especially for oil producers
+    across a 2019-2026 window that includes a price crash, a spike, and
+    a slow grind -- so a revenue series that's missing entirely, or
+    frozen at a single value across the whole history, almost certainly
+    means the XBRL tag matching failed to find that company's real
+    recurring revenue disclosure (e.g. a custom/extension tag not in
+    CONCEPT_TAGS), not that revenue was actually flat for years.
+
+    Returns False for tables that are empty or whose revenue column has
+    fewer than `min_unique_values` distinct values -- these tickers
+    should fall back to a static snapshot rather than be trusted as
+    genuinely point-in-time.
+    """
+    if table is None or table.empty or 'revenue' not in table.columns:
+        return False
+    n_unique = table['revenue'].nunique(dropna=True)
+    return n_unique >= min_unique_values
+
+
 def get_point_in_time_fundamentals(tickers, verbose=True):
     """
     Main entry point. Returns dict[ticker] -> point-in-time DataFrame
@@ -285,7 +405,7 @@ def get_point_in_time_fundamentals(tickers, verbose=True):
                 # unrelated entity that happens to share the ticker.
                 print(f"   {ticker}: fetching (CIK {cik}, \"{title}\")...", end=' ')
             facts = fetch_company_facts(cik)
-            table = build_point_in_time_table(facts)
+            table = build_point_in_time_table(facts, verbose=verbose)
             if table.empty:
                 if verbose:
                     print("no usable XBRL facts found")
@@ -312,6 +432,16 @@ if __name__ == "__main__":
     test_tickers = ['XOM', 'CVX', 'SHEL', 'TTE', 'BP',
                      'COP', 'OXY', 'CNQ', 'SU', 'FANG', 'EOG', 'PBR']
     tables = get_point_in_time_fundamentals(test_tickers)
+    print("\n" + "=" * 70)
+    print("RELIABILITY CHECK (would this ticker use EDGAR point-in-time,")
+    print("or fall back to a static snapshot in the full backtest?)")
+    print("=" * 70)
+    for ticker, table in tables.items():
+        reliable = is_reliable_series(table)
+        n_unique = table['revenue'].nunique(dropna=True) if (table is not None and not table.empty and 'revenue' in table.columns) else 0
+        print(f"   {ticker:5s} {'RELIABLE' if reliable else 'UNRELIABLE -> fallback needed':30s} "
+              f"({n_unique} distinct revenue values in history)")
+
     print("\n" + "=" * 70)
     for ticker, table in tables.items():
         print(f"\n=== {ticker} ===")
