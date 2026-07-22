@@ -83,6 +83,21 @@ def _get(url, params=None):
     return resp.json()
 
 
+# Manual CIK overrides for tickers where SEC's own ticker_cik file
+# resolves to the wrong entity. Confirmed case: "XOM" resolves to
+# "ExxonMobil Holdings Corp" (CIK 2115436, no real XBRL history) instead
+# of the actual public company "Exxon Mobil Corp" (CIK 34088) -- these
+# two entities both use "XOM" in SEC's file, and there's no reliable
+# ordering to pick the right one automatically. If you see a ticker
+# resolve to a company name that doesn't match what you expect (printed
+# alongside the CIK when fetching), look up the correct CIK yourself at
+# https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany and add it
+# here.
+CIK_OVERRIDES = {
+    'XOM': ('0000034088', 'Exxon Mobil Corp (manual override)'),
+}
+
+
 def load_ticker_cik_map():
     """
     SEC's own ticker->CIK lookup file. Returns dict[ticker] -> (cik, title)
@@ -255,7 +270,7 @@ def get_point_in_time_fundamentals(tickers, verbose=True):
 
     tables = {}
     for ticker in tickers:
-        match = ticker_cik_map.get(ticker.upper())
+        match = CIK_OVERRIDES.get(ticker.upper()) or ticker_cik_map.get(ticker.upper())
         if match is None:
             if verbose:
                 print(f"   {ticker}: not found in SEC ticker map, skipping")
