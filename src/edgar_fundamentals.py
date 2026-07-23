@@ -94,6 +94,21 @@ CONCEPT_KEYWORD_FALLBACKS = {
     'cash': ['cashandcashequivalents', 'cashequivalents'],
 }
 
+# Excludes tags that match a CONCEPT_KEYWORD_FALLBACKS keyword but are a
+# component/adjacent figure rather than the real consolidated total --
+# e.g. "RevenueFromSaleOfGoodsRelatedPartyTransactions" matches "revenue"
+# but is a small related-party subset, not total revenue (this is
+# exactly what got auto-selected for Suncor, giving a ~20x-too-small
+# figure). Matched the same way as the include keywords: lowercase
+# substring against the tag name.
+CONCEPT_EXCLUDE_KEYWORDS = {
+    'revenue': ['relatedparty', 'persegment', 'pershare', 'costof',
+                'expense', 'discontinued', 'disaggregat'],
+    'shares_outstanding': ['pershare', 'authorized', 'treasury'],
+    'total_debt': ['expense', 'pershare', 'interestexpense'],
+    'cash': ['pershare', 'restricted'],
+}
+
 
 def _get(url, params=None):
     headers = {'User-Agent': EDGAR_USER_AGENT}
@@ -183,35 +198,55 @@ def _apply_annual_filter(candidates):
 
 
 def _score_candidate(records):
-    """Data-quality score for one candidate tag's records: how many
-    distinct filing dates it covers and how much the values actually
-    vary. A tag that only ever reports one stale number (the TTE/SU/PBR
-    failure pattern -- almost certainly the wrong tag, or one that
-    stopped being used) scores low even if it technically "has data."
+    """
+    Data-quality score for one candidate tag's records, compared as a
+    tuple (recency, n_unique_vals, n_dates) -- Python compares tuples
+    left-to-right, so recency dominates.
+
+    Recency is checked FIRST and matters more than raw volume: a tag
+    that was actively used for years but then abandoned (company
+    switched to a different tag) will still have lots of historical
+    records, and could easily out-score a currently-active tag on pure
+    counts alone -- then silently freeze at whatever its last-ever value
+    was for every date after that. This is exactly what happened to OXY:
+    "SalesRevenueNet" scored well on volume from early filings but
+    stopped being used years ago, while "Revenues" kept updating -- pure
+    count-based scoring picked the abandoned one.
     """
     if not records:
-        return (0, 0)
+        return (pd.Timestamp.min, 0, 0)
+    filed_dates = [pd.Timestamp(r['filed']) for r in records]
+    most_recent = max(filed_dates)
     n_dates = len(set(r['filed'] for r in records))
     n_unique_vals = len(set(r['val'] for r in records))
-    return (n_unique_vals, n_dates)
+    return (most_recent, n_unique_vals, n_dates)
 
 
-def _discover_tags_by_keyword(facts_json, keywords):
+def _discover_tags_by_keyword(facts_json, keywords, exclude_keywords=None):
     """
     Scans every taxonomy present in this company's filing history (not
     just us-gaap/ifrs-full) for any tag whose name contains one of the
-    given keywords. This is the auto-discovery fallback for filers using
-    a custom/extension taxonomy for their real recurring disclosure --
+    given keywords, excluding any tag that also matches an exclude
+    keyword. This is the auto-discovery fallback for filers using a
+    custom/extension taxonomy for their real recurring disclosure --
     rather than hand-researching each company's actual tag name, this
     finds candidates automatically so they can be scored and compared
     the same way as the hardcoded CONCEPT_TAGS list.
+
+    exclude_keywords matters because plain keyword matching alone can
+    pick up component/adjacent figures that technically contain the
+    keyword but aren't the real total -- e.g. Suncor's real revenue got
+    missed in favor of "RevenueFromSaleOfGoodsRelatedPartyTransactions"
+    (a small related-party subset, matched on "revenue" with nothing to
+    rule it out), giving a figure roughly 20x too small.
     """
+    exclude_keywords = exclude_keywords or []
     discovered = []
     facts = facts_json.get('facts', {})
     for taxonomy, tags in facts.items():
         for tag in tags:
             tag_lower = tag.lower()
-            if any(kw in tag_lower for kw in keywords):
+            if any(kw in tag_lower for kw in keywords) and not any(ex in tag_lower for ex in exclude_keywords):
                 discovered.append((taxonomy, tag))
     return discovered
 
@@ -222,9 +257,10 @@ def _extract_concept_series(facts_json, concept_key, annual_only=False):
     each by data quality (_score_candidate), and if NONE of them score
     well (empty, or fewer than 3 distinct values), automatically expands
     the search to every tag in the company's filing history matching
-    CONCEPT_KEYWORD_FALLBACKS -- catching custom/extension taxonomy tags
-    that the hardcoded list doesn't know about. Returns the best-scoring
-    candidate's records, or an empty list if nothing usable was found.
+    CONCEPT_KEYWORD_FALLBACKS (excluding CONCEPT_EXCLUDE_KEYWORDS matches)
+    -- catching custom/extension taxonomy tags that the hardcoded list
+    doesn't know about. Returns the best-scoring candidate's records, or
+    an empty list if nothing usable was found.
 
     annual_only: when True, filters to records whose reporting period
     (end - start) is roughly a full year (340-386 days, allowing for
@@ -253,7 +289,7 @@ def _extract_concept_series(facts_json, concept_key, annual_only=False):
             records = _apply_annual_filter(records)
         return records
 
-    best_records, best_score, best_source = [], (0, 0), None
+    best_records, best_score, best_source = [], (pd.Timestamp.min, 0, 0), None
 
     # Pass 1: hardcoded candidates, in priority order.
     for taxonomy, tag in CONCEPT_TAGS[concept_key]:
@@ -265,9 +301,10 @@ def _extract_concept_series(facts_json, concept_key, annual_only=False):
     # Pass 2: only bother with keyword auto-discovery if pass 1 didn't
     # find anything reliable (fewer than 3 distinct values) -- keeps the
     # common case (major US filers, whose hardcoded tags work fine) fast.
-    if best_score[0] < 3 and concept_key in CONCEPT_KEYWORD_FALLBACKS:
+    if best_score[1] < 3 and concept_key in CONCEPT_KEYWORD_FALLBACKS:
         keywords = CONCEPT_KEYWORD_FALLBACKS[concept_key]
-        for taxonomy, tag in _discover_tags_by_keyword(facts_json, keywords):
+        exclude = CONCEPT_EXCLUDE_KEYWORDS.get(concept_key, [])
+        for taxonomy, tag in _discover_tags_by_keyword(facts_json, keywords, exclude):
             if (taxonomy, tag) in CONCEPT_TAGS[concept_key]:
                 continue  # already tried in pass 1
             records = try_candidate(taxonomy, tag)
@@ -275,7 +312,7 @@ def _extract_concept_series(facts_json, concept_key, annual_only=False):
             if score > best_score:
                 best_records, best_score, best_source = records, score, f"{taxonomy}:{tag} [auto-discovered]"
 
-    source = best_source if best_score[0] >= 3 else None
+    source = best_source if best_score[1] >= 3 else None
     return best_records, source
 
 
@@ -423,31 +460,128 @@ def get_point_in_time_fundamentals(tickers, verbose=True):
     return tables
 
 
-if __name__ == "__main__":
-    # Quick standalone smoke test -- prints a fundamentals snapshot for
-    # a couple of dates so you can eyeball whether it's behaving sanely
-    # before wiring it into the full backtest. Covers the full universe
-    # so any other CIK collisions or missing-data tickers surface now,
-    # not mid-integration.
-    test_tickers = ['XOM', 'CVX', 'SHEL', 'TTE', 'BP',
-                     'COP', 'OXY', 'CNQ', 'SU', 'FANG', 'EOG', 'PBR']
-    tables = get_point_in_time_fundamentals(test_tickers)
-    print("\n" + "=" * 70)
-    print("RELIABILITY CHECK (would this ticker use EDGAR point-in-time,")
-    print("or fall back to a static snapshot in the full backtest?)")
-    print("=" * 70)
-    for ticker, table in tables.items():
-        reliable = is_reliable_series(table)
-        n_unique = table['revenue'].nunique(dropna=True) if (table is not None and not table.empty and 'revenue' in table.columns) else 0
-        print(f"   {ticker:5s} {'RELIABLE' if reliable else 'UNRELIABLE -> fallback needed':30s} "
-              f"({n_unique} distinct revenue values in history)")
+def explore_candidates(facts_json, concept_key):
+    """
+    Diagnostic dump: lists EVERY candidate tag for this concept -- both
+    hardcoded CONCEPT_TAGS and keyword-discovered ones, deliberately NOT
+    filtered to annual-only (shows quarterly and annual data both) -- so
+    you can see everything available and manually judge which tag is the
+    real recurring disclosure, rather than trusting an automatic score.
 
-    print("\n" + "=" * 70)
-    for ticker, table in tables.items():
-        print(f"\n=== {ticker} ===")
-        if table is None:
-            print("   No data.")
+    Returns a list of dicts, sorted best-scoring first:
+    {source, n_records, n_dates, n_unique_vals, date_range, recent_samples}
+    """
+    unit_key_pref = 'shares' if concept_key == 'shares_outstanding' else 'USD'
+    hardcoded = list(CONCEPT_TAGS.get(concept_key, []))
+    keywords = CONCEPT_KEYWORD_FALLBACKS.get(concept_key, [])
+    # Deliberately NOT passing exclude_keywords here -- this is a
+    # diagnostic view, so it should show everything the keyword search
+    # matches, including candidates the main pipeline would filter out,
+    # so you can visually confirm the exclusion logic is doing the right
+    # thing rather than silently hiding candidates from you.
+    discovered = _discover_tags_by_keyword(facts_json, keywords) if keywords else []
+    all_candidates = hardcoded + [c for c in discovered if c not in hardcoded]
+
+    results = []
+    exclude = CONCEPT_EXCLUDE_KEYWORDS.get(concept_key, [])
+    for taxonomy, tag in all_candidates:
+        try:
+            units = facts_json['facts'][taxonomy][tag]['units']
+        except KeyError:
             continue
-        for date in ['2019-06-01', '2022-06-01', '2026-06-01']:
-            snap = as_of(table, date)
-            print(f"   as_of {date}: {snap}")
+        records = _records_from_units(units, unit_key_pref)
+        if not records:
+            continue
+        score = _score_candidate(records)
+        records_sorted = sorted(records, key=lambda r: r['filed'])
+        recent = records_sorted[-4:]  # last few, most useful for judging current scale/trend
+        would_be_excluded = any(ex in tag.lower() for ex in exclude)
+        results.append({
+            'source': f"{taxonomy}:{tag}",
+            'n_records': len(records),
+            'n_dates': score[2],
+            'n_unique_vals': score[1],
+            'date_range': (records_sorted[0]['filed'], records_sorted[-1]['filed']),
+            'recent_samples': [(r['filed'], r['form'], r['val']) for r in recent],
+            'would_be_excluded': would_be_excluded,
+        })
+
+    results.sort(key=lambda r: (r['n_unique_vals'], r['n_dates']), reverse=True)
+    return results
+
+
+def explore_ticker(ticker):
+    """
+    Fetches one ticker and prints a full diagnostic dump across all four
+    concepts -- every candidate tag found, not just the auto-selected
+    winner. Run this for any ticker whose reliability check still looks
+    wrong after the scoring/exclusion fixes, to manually identify the
+    correct tag and add it as a CONCEPT_TAGS priority entry (same
+    pattern as CIK_OVERRIDES for XOM).
+    """
+    if EDGAR_USER_AGENT.startswith("REPLACE_ME"):
+        raise RuntimeError("Set EDGAR_USER_AGENT before running.")
+    ticker_cik_map = load_ticker_cik_map()
+    match = CIK_OVERRIDES.get(ticker.upper()) or ticker_cik_map.get(ticker.upper())
+    if match is None:
+        print(f"{ticker}: not found in SEC ticker map")
+        return
+    cik, title = match
+    print(f"=== {ticker} (CIK {cik}, \"{title}\") ===\n")
+    facts = fetch_company_facts(cik)
+
+    for concept_key in CONCEPT_TAGS:
+        print(f"--- {concept_key} ---")
+        candidates = explore_candidates(facts, concept_key)
+        if not candidates:
+            print("   No candidates found at all.\n")
+            continue
+        for c in candidates:
+            flag = "  [WOULD BE AUTO-EXCLUDED]" if c['would_be_excluded'] else ""
+            print(f"   {c['source']}{flag}")
+            print(f"      {c['n_records']} records, {c['n_dates']} filing dates, "
+                  f"{c['n_unique_vals']} distinct values, "
+                  f"range {c['date_range'][0]} to {c['date_range'][1]}")
+            samples = ', '.join(f"{d} ({form}): {val:,.0f}" for d, form, val in c['recent_samples'])
+            print(f"      recent: {samples}")
+        print()
+
+
+if __name__ == "__main__":
+    import sys
+
+    if len(sys.argv) > 1 and sys.argv[1] == "--explore":
+        # Diagnostic mode: python edgar_fundamentals.py --explore TICKER1 TICKER2 ...
+        # Dumps every candidate tag per concept for manual verification.
+        explore_tickers = sys.argv[2:] or ['TTE', 'SU', 'PBR', 'BP', 'SHEL']
+        for t in explore_tickers:
+            explore_ticker(t)
+            print("=" * 70 + "\n")
+    else:
+        # Quick standalone smoke test -- prints a fundamentals snapshot for
+        # a couple of dates so you can eyeball whether it's behaving sanely
+        # before wiring it into the full backtest. Covers the full universe
+        # so any other CIK collisions or missing-data tickers surface now,
+        # not mid-integration.
+        test_tickers = ['XOM', 'CVX', 'SHEL', 'TTE', 'BP',
+                         'COP', 'OXY', 'CNQ', 'SU', 'FANG', 'EOG', 'PBR']
+        tables = get_point_in_time_fundamentals(test_tickers)
+        print("\n" + "=" * 70)
+        print("RELIABILITY CHECK (would this ticker use EDGAR point-in-time,")
+        print("or fall back to a static snapshot in the full backtest?)")
+        print("=" * 70)
+        for ticker, table in tables.items():
+            reliable = is_reliable_series(table)
+            n_unique = table['revenue'].nunique(dropna=True) if (table is not None and not table.empty and 'revenue' in table.columns) else 0
+            print(f"   {ticker:5s} {'RELIABLE' if reliable else 'UNRELIABLE -> fallback needed':30s} "
+                  f"({n_unique} distinct revenue values in history)")
+
+        print("\n" + "=" * 70)
+        for ticker, table in tables.items():
+            print(f"\n=== {ticker} ===")
+            if table is None:
+                print("   No data.")
+                continue
+            for date in ['2019-06-01', '2022-06-01', '2026-06-01']:
+                snap = as_of(table, date)
+                print(f"   as_of {date}: {snap}")
