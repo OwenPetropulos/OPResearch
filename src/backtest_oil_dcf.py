@@ -57,6 +57,11 @@ UNIVERSE = ['XOM', 'CVX', 'SHEL', 'TTE', 'BP',      # integrated majors
             'PBR']                                   # EM state-risk name
 
 WTI_TICKER = 'CL=F'
+# Third benchmark, distinct from the equal-weight-of-universe comparator:
+# a real, investable energy-sector benchmark. Energy Select Sector SPDR
+# Fund -- the standard broad energy-sector ETF -- rather than a
+# constructed portfolio of just this project's 12-name universe.
+SECTOR_BENCHMARK_TICKER = 'XLE'
 START_DATE = '2019-01-01'
 END_DATE = '2026-07-01'
 INITIAL_CAPITAL = 100_000
@@ -639,7 +644,10 @@ def run_backtest(prices_df, wti, universe, pit_tables, static_fundamentals, init
     return portfolio_value, weights_history, weekly_prices
 
 
-def create_benchmark(weekly_prices, initial_capital=INITIAL_CAPITAL):
+def create_equal_weight_benchmark(weekly_prices, initial_capital=INITIAL_CAPITAL):
+    """Equal-weight buy-and-hold of the SAME 12-name universe the
+    strategy trades -- isolates the value of the DCF-based ranking/
+    weighting signal specifically, holding the universe choice constant."""
     benchmark_weights = pd.DataFrame(index=weekly_prices.index, columns=weekly_prices.columns, dtype=float)
     for date in weekly_prices.index:
         valid = weekly_prices.loc[date].dropna()
@@ -656,6 +664,19 @@ def create_benchmark(weekly_prices, initial_capital=INITIAL_CAPITAL):
             price_changes = (weekly_prices.loc[date] / weekly_prices.loc[prev_date] - 1).fillna(0)
             ret = (benchmark_weights.loc[prev_date] * price_changes).sum()
             value.iloc[i] = value.iloc[i - 1] * (1 + ret)
+    return value
+
+
+def create_sector_benchmark(sector_prices, common_idx, initial_capital=INITIAL_CAPITAL):
+    """
+    Simple buy-and-hold of a single external ticker (XLE), reindexed to
+    the same weekly dates as the strategy -- a real, investable
+    comparator distinct from the constructed equal-weight-of-universe
+    benchmark. Answers "how did this do against just buying the energy
+    sector," not just "against equally weighting our own stock picks."
+    """
+    weekly_sector = sector_prices.resample('W-MON').first().reindex(common_idx, method='ffill')
+    value = initial_capital * (weekly_sector / weekly_sector.iloc[0])
     return value
 
 
@@ -690,7 +711,7 @@ def _series_metrics(value_series):
     }
 
 
-def calculate_metrics(portfolio_value, benchmark_value, weights_history):
+def calculate_metrics(portfolio_value, benchmark_value, weights_history, sector_benchmark_value=None):
     strategy = _series_metrics(portfolio_value)
     benchmark = _series_metrics(benchmark_value)
     turnover = calculate_turnover(weights_history)
@@ -699,16 +720,23 @@ def calculate_metrics(portfolio_value, benchmark_value, weights_history):
     print("PERFORMANCE RESULTS")
     print("=" * 70)
     print(f"\nTotal return -- Strategy: {strategy['total_return']*100:.2f}%  "
-          f"Benchmark: {benchmark['total_return']*100:.2f}%  "
-          f"Alpha: {(strategy['total_return']-benchmark['total_return'])*100:+.2f}%")
-    print(f"CAGR -- Strategy: {strategy['cagr']*100:.2f}%  Benchmark: {benchmark['cagr']*100:.2f}%")
-    print(f"Volatility -- Strategy: {strategy['volatility']*100:.2f}%  Benchmark: {benchmark['volatility']*100:.2f}%")
-    print(f"Sharpe (return/vol) -- Strategy: {strategy['sharpe']:.2f}  Benchmark: {benchmark['sharpe']:.2f}")
-    print(f"Max drawdown -- Strategy: {strategy['max_drawdown']*100:.2f}%  Benchmark: {benchmark['max_drawdown']*100:.2f}%")
+          f"Equal-weight: {benchmark['total_return']*100:.2f}%  "
+          f"Alpha vs equal-weight: {(strategy['total_return']-benchmark['total_return'])*100:+.2f}%")
+    print(f"CAGR -- Strategy: {strategy['cagr']*100:.2f}%  Equal-weight: {benchmark['cagr']*100:.2f}%")
+    print(f"Volatility -- Strategy: {strategy['volatility']*100:.2f}%  Equal-weight: {benchmark['volatility']*100:.2f}%")
+    print(f"Sharpe (return/vol) -- Strategy: {strategy['sharpe']:.2f}  Equal-weight: {benchmark['sharpe']:.2f}")
+    print(f"Max drawdown -- Strategy: {strategy['max_drawdown']*100:.2f}%  Equal-weight: {benchmark['max_drawdown']*100:.2f}%")
+
+    sector = None
+    if sector_benchmark_value is not None:
+        sector = _series_metrics(sector_benchmark_value)
+        print(f"Total return -- {SECTOR_BENCHMARK_TICKER}: {sector['total_return']*100:.2f}%  "
+              f"Alpha vs {SECTOR_BENCHMARK_TICKER}: {(strategy['total_return']-sector['total_return'])*100:+.2f}%")
+
     print(f"Avg weekly turnover: {turnover*100:.1f}%")
     print("=" * 70 + "\n")
 
-    return {
+    metrics_out = {
         'period': {
             'start': str(portfolio_value.index[0].date()),
             'end': str(portfolio_value.index[-1].date()),
@@ -719,19 +747,29 @@ def calculate_metrics(portfolio_value, benchmark_value, weights_history):
         },
         'avg_weekly_turnover': float(turnover),
     }
+    if sector is not None:
+        metrics_out['metrics']['sector_benchmark'] = sector
+        metrics_out['sector_benchmark_ticker'] = SECTOR_BENCHMARK_TICKER
+    return metrics_out
 
 
 # ============================================================================
 # 7. SAVE RESULTS
 # ============================================================================
 
-def save_results(metrics_dict, weights_history):
+def save_results(metrics_dict, weights_history, portfolio_value=None, benchmark_value=None, sector_benchmark_value=None):
     """
     Writes metrics.json in the same schema as
     docs/projects/moving_average_v1/metrics.json, so it can be dropped
     directly into a new docs/projects/oil-dcf-backtest/ folder. Also
     saves the weekly weights to CSV for your own debugging/analysis --
     not required by the site, just useful to have.
+
+    If the weekly value series are passed in, also writes
+    oil_dcf_timeseries.json -- the full week-by-week strategy/benchmark
+    values (not just final summary stats) that the project page's chart
+    needs to actually draw the performance lines. metrics.json alone
+    only has start/end totals, not the path in between.
     """
     import json
     output_dir = '../data' if os.path.exists('../data') else ('data' if os.path.exists('data') else '.')
@@ -741,6 +779,19 @@ def save_results(metrics_dict, weights_history):
 
     weights_history.to_csv(os.path.join(output_dir, 'oil_dcf_backtest_weights.csv'))
     print(f"Saved oil_dcf_metrics.json and oil_dcf_backtest_weights.csv to {output_dir}/")
+
+    if portfolio_value is not None and benchmark_value is not None:
+        series = {
+            'dates': [str(d.date()) for d in portfolio_value.index],
+            'strategy': [round(v, 2) for v in portfolio_value.values.tolist()],
+            'equal_weight': [round(v, 2) for v in benchmark_value.reindex(portfolio_value.index).values.tolist()],
+        }
+        if sector_benchmark_value is not None:
+            series['sector_benchmark'] = [round(v, 2) for v in sector_benchmark_value.reindex(portfolio_value.index).values.tolist()]
+            series['sector_benchmark_ticker'] = SECTOR_BENCHMARK_TICKER
+        with open(os.path.join(output_dir, 'oil_dcf_timeseries.json'), 'w') as f:
+            json.dump(series, f)
+        print(f"Saved oil_dcf_timeseries.json to {output_dir}/ (for the project page chart)")
 
 
 # ============================================================================
@@ -756,6 +807,8 @@ def main():
     if prices_df is None:
         return
 
+    sector_prices = download_series(SECTOR_BENCHMARK_TICKER, START_DATE, END_DATE, label=SECTOR_BENCHMARK_TICKER)
+
     pit_tables, static_fundamentals, source_summary = build_fundamentals_sources(UNIVERSE)
     active_universe = [t for t in UNIVERSE if source_summary[t] != 'none']
     if not active_universe:
@@ -767,10 +820,15 @@ def main():
     portfolio_value, weights_history, weekly_prices = run_backtest(
         prices_df, wti, active_universe, pit_tables, static_fundamentals
     )
-    benchmark_value = create_benchmark(weekly_prices[active_universe])
-    metrics_dict = calculate_metrics(portfolio_value, benchmark_value, weights_history)
+    benchmark_value = create_equal_weight_benchmark(weekly_prices[active_universe])
+
+    sector_benchmark_value = None
+    if sector_prices is not None:
+        sector_benchmark_value = create_sector_benchmark(sector_prices, portfolio_value.index)
+
+    metrics_dict = calculate_metrics(portfolio_value, benchmark_value, weights_history, sector_benchmark_value)
     metrics_dict['fundamentals_source'] = source_summary
-    save_results(metrics_dict, weights_history)
+    save_results(metrics_dict, weights_history, portfolio_value, benchmark_value, sector_benchmark_value)
 
     print("BACKTEST COMPLETE\n")
 
