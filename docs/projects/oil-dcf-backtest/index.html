@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weekly Oil-DCF Rebalancing Backtest • OPResearch</title>
+  <link rel="stylesheet" href="../../assets/css/theme.css" />
+  <style>
+    .hero { padding: 40px 0 8px; }
+    .hero h1 { font-size: 2.2rem; }
+
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--font-mono);
+      font-size: 13.5px;
+    }
+    .results-table th, .results-table td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .results-table th {
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      font-weight: 500;
+    }
+    .results-table td.metric-name {
+      font-family: var(--font-body);
+      color: var(--text);
+    }
+    .results-table tr:last-child td { border-bottom: none; }
+    .positive { color: var(--positive); }
+    .negative { color: var(--negative); }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin: 32px 0;
+    }
+    @media (min-width: 860px) {
+      .two-col { grid-template-columns: 1fr 1fr; }
+    }
+
+    .universe-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .source-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 13px;
+    }
+    .source-row:last-child { border-bottom: none; }
+    .source-row .ticker { color: var(--text); }
+    .source-row .source-type { color: var(--text-tertiary); }
+    .source-row .source-type.pit { color: var(--accent-bright); }
+  </style>
+</head>
+
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="../../index.html" class="site-nav-brand">OPResearch</a>
+      <div class="site-nav-context">Weekly Oil-DCF Backtest</div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <a href="../../index.html#projects" class="btn-link" style="margin-top: 24px; display: inline-block;">← Back to projects</a>
+
+    <section class="hero">
+      <span class="eyebrow">Systematic backtest</span>
+      <h1>Weekly Oil-DCF Rebalancing Backtest</h1>
+      <p class="prose">
+        Every week, this strategy runs a fast Monte Carlo version of the
+        <a href="../stochastic-macro-dcf-v1-2/index.html">Stochastic Macro-Driven DCF (v1.2)</a>
+        for each stock in a 12-name upstream oil universe, anchored to that Monday's WTI crude
+        price. Stocks are ranked by how far their price sits below simulated fair value, and the
+        portfolio is built long-only, tilted toward the cheapest names, with position sizes capped
+        on a graduated schedule based on how many names look genuinely undervalued that week.
+      </p>
+    </section>
+
+    <div class="marginalia">
+      <span class="marginalia-label">Methodology note — look-ahead bias</span>
+      <p>
+        Company fundamentals (revenue, shares outstanding, net debt) are pulled directly from
+        SEC EDGAR filing history and applied point-in-time — each week's valuation uses only
+        what was actually public as of that date, not today's numbers projected backward. 11 of
+        12 tickers use this point-in-time data; BP falls back to a single static snapshot (its
+        XBRL filing history lacks a usable shares-outstanding figure), so its contribution to the
+        backtest still carries some look-ahead bias.
+      </p>
+    </div>
+
+    <div class="two-col">
+      <section class="card">
+        <h3>Results summary</h3>
+        <table class="results-table">
+          <thead>
+            <tr><th>Metric</th><th>Strategy</th><th>Benchmark</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="metric-name">Total return</td>
+              <td>155.76%</td>
+              <td>164.16%</td>
+            </tr>
+            <tr>
+              <td class="metric-name">CAGR</td>
+              <td>13.36%</td>
+              <td>13.85%</td>
+            </tr>
+            <tr>
+              <td class="metric-name">Volatility</td>
+              <td>28.77%</td>
+              <td>33.13%</td>
+            </tr>
+            <tr>
+              <td class="metric-name">Sharpe (return/vol)</td>
+              <td>0.46</td>
+              <td>0.42</td>
+            </tr>
+            <tr>
+              <td class="metric-name">Max drawdown</td>
+              <td>-55.26%</td>
+              <td>-62.67%</td>
+            </tr>
+            <tr>
+              <td class="metric-name">Avg weekly turnover</td>
+              <td>9.4%</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top: 16px; font-size: 13px;">
+          Benchmark is an equal-weight buy-and-hold portfolio of the same 12-name universe.
+          Backtest spans 392 weeks, January 2019 through June 2026.
+        </p>
+      </section>
+
+      <section class="card">
+        <h3>Reading these results</h3>
+        <p>
+          The strategy trails the benchmark on raw return, but with meaningfully lower volatility,
+          a shallower max drawdown, and a better Sharpe ratio. That's a coherent pattern, not a
+          contradiction: the DCF signal is giving up some upside capture in exchange for real
+          downside protection, which is a defensible risk/return tradeoff on its own rather than a
+          weaker version of the benchmark.
+        </p>
+        <p>
+          It's also worth naming directly: an earlier version of this backtest, run before the
+          point-in-time fix above, showed the strategy <em>beating</em> the benchmark by roughly
+          16 points of alpha. Most of that apparent edge was an artifact of using 2026 fundamentals
+          to make 2019 decisions. Alpha shrinking — or reversing — after removing a source of
+          look-ahead bias is the expected, credible outcome, not a failure of the strategy.
+        </p>
+      </section>
+    </div>
+
+    <div class="section-heading" style="margin-top: 48px;">
+      <h2>Universe &amp; methodology</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="two-col">
+      <section class="card">
+        <h3>Universe (12 names)</h3>
+        <p style="font-size: 13.5px;">
+          Integrated majors, pure-play upstream E&amp;P, one oil-sands operator, and one
+          EM state-controlled name — each with distinct, evidence-based operating assumptions
+          in the underlying DCF rather than one shared default.
+        </p>
+        <div class="universe-grid">
+          <span class="tag">XOM</span><span class="tag">CVX</span><span class="tag">SHEL</span>
+          <span class="tag">TTE</span><span class="tag">BP</span><span class="tag">COP</span>
+          <span class="tag">OXY</span><span class="tag">CNQ</span><span class="tag">SU</span>
+          <span class="tag">FANG</span><span class="tag">EOG</span><span class="tag">PBR</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Fundamentals source, by ticker</h3>
+        <div class="source-row"><span class="ticker">XOM</span><span class="source-type pit">point-in-time</span></div>
+        <div class="source-row"><span class="ticker">CVX</span><span class="source-type pit">point-in-time</span></div>
+        <div class="source-row"><span class="ticker">SHEL</span><span class="source-type pit">point-in-time</span></div>
+        <div class="source-row"><span class="ticker">TTE</span><span class="source-type pit">point-in-time</span></div>
+        <div class="source-row"><span class="ticker">BP</span><span class="source-type">static snapshot</span></div>
+        <div class="source-row"><span class="ticker">COP</span><span class="source-type pit">point-in-time</span></div>
+        <div class="source-row"><span class="ticker">OXY</span><span class="source-type pit">point-in-time</span></div>
+        <div class="source-row"><span class="ticker">CNQ</span><span class="source-type pit">point-in-time</span></div>
+        <div class="source-row"><span class="ticker">SU</span><span class="source-type pit">point-in-time</span></div>
+        <div class="source-row"><span class="ticker">FANG</span><span class="source-type pit">point-in-time</span></div>
+        <div class="source-row"><span class="ticker">EOG</span><span class="source-type pit">point-in-time</span></div>
+        <div class="source-row"><span class="ticker">PBR</span><span class="source-type pit">point-in-time</span></div>
+      </section>
+    </div>
+
+    <section class="card" style="margin-bottom: 40px;">
+      <h3>Position sizing</h3>
+      <p style="font-size: 14px;">
+        Weights are set by relative undervaluation — <code>(fair value − price) / fair value</code> —
+        normalized across all positively-signaled names, then capped on a schedule tied to how
+        many names are eligible that week: 30% cap with 1 eligible name, rising to 50% with 2,
+        60% with 3, 65% with 4, 75% with 5, and 85% with 6, uncapped beyond that. When capped
+        weights can't fully deploy capital (e.g. only one cheap name with a 30% cap), the
+        remainder sits in cash rather than being forced into a less-convincing name.
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <p>Part of <a href="../../index.html">OPResearch</a>. See the underlying
+        <a href="../stochastic-macro-dcf-v1-2/index.html">Stochastic Macro-Driven DCF (v1.2)</a> tool
+        for the valuation model this backtest trades on.</p>
+    </footer>
+  </div>
+</body>
+</html>
