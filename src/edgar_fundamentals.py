@@ -403,7 +403,18 @@ def as_of(point_in_time_table, date):
     """
     if point_in_time_table is None or point_in_time_table.empty:
         return None
-    eligible = point_in_time_table[point_in_time_table.index <= pd.Timestamp(date)]
+    # EDGAR filing dates are plain calendar dates with no timezone.
+    # `date` may come from a timezone-aware source instead (e.g.
+    # yfinance's price index, which is US/Eastern) -- comparing a
+    # tz-aware Timestamp against a tz-naive DatetimeIndex raises a
+    # TypeError in pandas rather than silently guessing, so strip tz
+    # info here if present. This is a same-day-resolution comparison
+    # (which filings existed as of a given date), so dropping the
+    # timezone doesn't lose anything meaningful.
+    query_ts = pd.Timestamp(date)
+    if query_ts.tz is not None:
+        query_ts = query_ts.tz_localize(None)
+    eligible = point_in_time_table[point_in_time_table.index <= query_ts]
     if eligible.empty:
         return None
     row = eligible.iloc[-1]
