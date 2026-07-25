@@ -40,6 +40,8 @@ except ImportError:
     subprocess.check_call(['pip3', 'install', '--upgrade', 'yfinance'])
     import yfinance as yf
 
+import edgar_fundamentals as edgar
+
 
 # ============================================================================
 # 1. CONFIGURATION
@@ -265,6 +267,68 @@ def fetch_static_fundamentals(tickers):
         time.sleep(0.3)
 
     return fundamentals
+
+
+def build_fundamentals_sources(tickers):
+    """
+    Primary fundamentals path for the backtest. Tries SEC EDGAR
+    point-in-time data first (fixes the look-ahead bias -- each week
+    uses only what was actually public as of that date, not today's
+    numbers applied retroactively). Falls back to a static one-time
+    yfinance snapshot for any ticker where EDGAR data is missing or
+    unreliable (checked via edgar.is_reliable_series) -- as of the last
+    verified run, that's tickers like SHEL (pre-2021 IFRS filings
+    largely lack machine-readable XBRL) and BP (genuinely no usable
+    shares_outstanding tag in its filing history). Same accuracy as
+    before for those, not worse -- just not the look-ahead-bias fix.
+
+    Returns (pit_tables, static_fundamentals, source_summary):
+      pit_tables: dict[ticker] -> point-in-time DataFrame, for tickers
+        using EDGAR data. Pass to edgar.as_of(table, date) per week.
+      static_fundamentals: dict[ticker] -> single fundamentals dict, for
+        tickers using the static fallback. Same dict every week.
+      source_summary: dict[ticker] -> 'point-in-time' | 'static' | 'none',
+        for printing a clear summary of which treatment each ticker got.
+    """
+    print("Fetching SEC EDGAR point-in-time fundamentals...")
+    try:
+        raw_tables = edgar.get_point_in_time_fundamentals(tickers, verbose=False)
+    except RuntimeError as e:
+        print(f"   EDGAR fetch unavailable ({e}) -- using static fallback for all tickers.")
+        raw_tables = {t: None for t in tickers}
+
+    pit_tables = {}
+    fallback_needed = []
+    for ticker in tickers:
+        table = raw_tables.get(ticker)
+        if edgar.is_reliable_series(table):
+            pit_tables[ticker] = table
+            print(f"   {ticker}: point-in-time (EDGAR)")
+        else:
+            fallback_needed.append(ticker)
+
+    static_fundamentals = {}
+    if fallback_needed:
+        print(f"\nFalling back to static snapshot for: {fallback_needed}")
+        static_fundamentals = fetch_static_fundamentals(fallback_needed)
+
+    source_summary = {}
+    for ticker in tickers:
+        if ticker in pit_tables:
+            source_summary[ticker] = 'point-in-time'
+        elif ticker in static_fundamentals:
+            source_summary[ticker] = 'static'
+        else:
+            source_summary[ticker] = 'none'
+
+    print("\n" + "=" * 70)
+    print("FUNDAMENTALS SOURCE SUMMARY")
+    print("=" * 70)
+    for ticker in tickers:
+        print(f"   {ticker:6s} {source_summary[ticker]}")
+    print("=" * 70 + "\n")
+
+    return pit_tables, static_fundamentals, source_summary
 
 
 # ============================================================================
@@ -507,7 +571,22 @@ def build_weekly_weights(fair_values, prices):
 # 5. BACKTEST LOOP
 # ============================================================================
 
-def run_backtest(prices_df, wti, universe, fundamentals, initial_capital=INITIAL_CAPITAL):
+def _resolve_fundamentals(ticker, date, pit_tables, static_fundamentals):
+    """
+    Per-ticker, per-week fundamentals lookup: point-in-time from EDGAR
+    if this ticker has a reliable table, otherwise the static snapshot
+    (same dict every week), otherwise None (ticker can't be valued this
+    week -- e.g. a point-in-time ticker before its first available
+    filing, matching FANG's real 2019 gap seen during testing).
+    """
+    if ticker in pit_tables:
+        return edgar.as_of(pit_tables[ticker], date)
+    if ticker in static_fundamentals:
+        return static_fundamentals[ticker]
+    return None
+
+
+def run_backtest(prices_df, wti, universe, pit_tables, static_fundamentals, initial_capital=INITIAL_CAPITAL):
     weekly_prices = prices_df.resample('W-MON').first()
     weekly_wti = wti.resample('W-MON').first()
 
@@ -527,10 +606,11 @@ def run_backtest(prices_df, wti, universe, fundamentals, initial_capital=INITIAL
 
         fair_values = {}
         for ticker in universe:
-            if ticker not in fundamentals:
+            ticker_fundamentals = _resolve_fundamentals(ticker, date, pit_tables, static_fundamentals)
+            if ticker_fundamentals is None:
                 continue
             inputs = {**DEFAULT_ASSUMPTIONS, **MACRO_ASSUMPTIONS,
-                      **fundamentals[ticker], **COMPANY_OVERRIDES.get(ticker, {})}
+                      **ticker_fundamentals, **COMPANY_OVERRIDES.get(ticker, {})}
             try:
                 fair_values[ticker] = fair_value(inputs, wti_price, seed=hash((ticker, str(date))) % (2**32))
             except Exception:
@@ -676,19 +756,20 @@ def main():
     if prices_df is None:
         return
 
-    fundamentals = fetch_static_fundamentals(UNIVERSE)
-    if not fundamentals:
+    pit_tables, static_fundamentals, source_summary = build_fundamentals_sources(UNIVERSE)
+    active_universe = [t for t in UNIVERSE if source_summary[t] != 'none']
+    if not active_universe:
         print("No fundamentals available -- cannot proceed.")
         return
 
-    active_universe = [t for t in UNIVERSE if t in fundamentals]
-    print(f"\nActive universe ({len(active_universe)}): {active_universe}\n")
+    print(f"Active universe ({len(active_universe)}): {active_universe}\n")
 
     portfolio_value, weights_history, weekly_prices = run_backtest(
-        prices_df, wti, active_universe, fundamentals
+        prices_df, wti, active_universe, pit_tables, static_fundamentals
     )
     benchmark_value = create_benchmark(weekly_prices[active_universe])
     metrics_dict = calculate_metrics(portfolio_value, benchmark_value, weights_history)
+    metrics_dict['fundamentals_source'] = source_summary
     save_results(metrics_dict, weights_history)
 
     print("BACKTEST COMPLETE\n")
