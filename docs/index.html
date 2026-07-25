@@ -4,255 +4,258 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>OPResearch</title>
-
+  <link rel="stylesheet" href="assets/css/theme.css" />
   <style>
-    :root{
-      --bg: #0b1220;
-      --panel: #0f1a2b;
-      --panel2: #0c1626;
-      --text: #f6f8fc;
-      --muted: #a9b7cf;
-      --line: rgba(255,255,255,0.10);
-      --accent: #66a6ff;
-      --accent2: #7ee0a3;
-      --shadow: 0 20px 50px rgba(0,0,0,0.35);
-      --radius: 14px;
-      --maxw: 1100px;
+    .hero {
+      padding: 64px 0 40px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 68ch;
     }
 
-    * { box-sizing: border-box; }
-    body{
-      margin: 0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 20% -10%, rgba(102,166,255,0.22), transparent 60%),
-                  radial-gradient(900px 500px at 90% 10%, rgba(126,224,163,0.16), transparent 60%),
-                  var(--bg);
-      color: var(--text);
-      min-height: 100vh;
+    .section-heading {
+      margin: 56px 0 20px;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .section-heading h2 { margin: 0; }
+    .section-heading .rule {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 860px) {
+      .project-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .project-card {
       display: flex;
       flex-direction: column;
     }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .wrap{
-      max-width: var(--maxw);
-      margin: 40px auto 0;
-      padding: 0 22px;
-      flex: 1;
-    }
-
-    .topbar{
+    .project-card .card-body { flex: 1; }
+    .project-card p { font-size: 14px; margin-bottom: 14px; }
+    .project-card .card-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 18px;
-      color: var(--muted);
-      font-size: 14px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
     }
 
-    .badge{
-      display: inline-flex;
-      gap: 8px;
-      align-items: center;
-      padding: 6px 10px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255,255,255,0.03);
-      color: var(--muted);
-    }
-
-    .hero{
-      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 22px 22px;
-      margin-bottom: 18px;
-    }
-
-    h1{
-      margin: 0 0 6px;
-      font-size: 34px;
-      letter-spacing: -0.6px;
-    }
-
-    .sub{
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.5;
-      max-width: 80ch;
-    }
-
-    .grid{
+    .about-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 14px;
-      margin-top: 14px;
+      gap: 32px;
+      align-items: start;
     }
-
-    @media (min-width: 900px){
-      .grid { grid-template-columns: 1fr 1fr; }
+    @media (min-width: 860px) {
+      .about-grid { grid-template-columns: 1.4fr 1fr; }
     }
-
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.02));
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 18px 18px;
-      position: relative;
+    .about-grid p { font-size: 14.5px; line-height: 1.75; }
+    .about-facts {
       display: flex;
       flex-direction: column;
+      gap: 14px;
     }
-
-    .card h2{
-      margin: 0 0 6px;
-      font-size: 18px;
-    }
-
-    .meta{
-      color: var(--muted);
-      font-size: 13px;
-      margin-bottom: 10px;
-      line-height: 1.4;
-    }
-
-    .tags{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 10px;
-      margin-bottom: 8px;
-    }
-
-    .tag{
-      font-size: 12px;
-      color: var(--muted);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 5px 9px;
-      background: rgba(255,255,255,0.03);
-    }
-
-    .publish-date{
+    .about-fact-label {
+      font-family: var(--font-mono);
       font-size: 11px;
-      color: var(--muted);
-      font-style: italic;
-      text-align: right;
-      margin-top: auto;
-      opacity: 0.8;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 2px;
     }
-
-    /* Footer Sections */
-    .footer-container{
-      max-width: var(--maxw);
-      margin: 40px auto 0;
-      padding: 0 22px 30px;
-    }
-
-    .about-section{
-      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 18px 20px;
-      margin-bottom: 16px;
-    }
-
-    .about-section h3{
-      margin: 0 0 8px;
-      font-size: 16px;
-      color: var(--text);
-    }
-
-    .about-section p{
-      margin: 0;
-      color: var(--muted);
+    .about-fact-value {
       font-size: 14px;
-      line-height: 1.5;
-    }
-
-    .legal-footer{
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.6;
-      padding: 16px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .legal-footer p{
-      margin: 0 0 8px;
-    }
-
-    .legal-footer p:last-child{
-      margin: 0;
+      color: var(--text);
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="topbar">
-      <div class="badge">OPResearch</div>
-      <div class="badge">Systematic backtests</div>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="index.html" class="site-nav-brand">OPResearch</a>
+      <div class="site-nav-links">
+        <a href="#projects">Projects</a>
+        <a href="dashboard/index.html">Dashboard</a>
+        <a href="#about">About</a>
+        <a href="https://www.linkedin.com/in/owenpetropulos" target="_blank">LinkedIn</a>
+      </div>
     </div>
+  </nav>
 
+  <div class="wrap">
     <section class="hero">
-      <h1>OPResearch</h1>
-      <p class="sub">
-        This site documents ongoing work focused on market dynamics, portfolio construction, quantitative analysis, and macroeconomic analysis. The central interest is understanding how markets behave across different environments and how systematic strategies can be designed, tested, and refined over time. Current work centers on portfolio backtesting and exploratory analysis of factors, volatility, drawdowns, and risk-adjusted performance. Projects emphasize transparency around assumptions, methodology, and limitations, with results supported by historical data and visualizations. The broader goal is to develop a clear and repeatable process for studying markets by combining theory, data, and iteration. This work is ongoing and will continue to evolve as new research is added.
+      <span class="eyebrow">Quantitative markets research</span>
+      <h1>Systematic research on markets, valuation, and macro risk.</h1>
+      <p>
+        This site documents ongoing work in portfolio construction, quantitative valuation,
+        and macroeconomic analysis — understanding how markets behave across different
+        environments, and how systematic strategies can be designed, tested, and refined
+        against that behavior. Projects here favor explicit assumptions over black boxes:
+        every model states its methodology and its limitations, and every backtest is built
+        to be interrogated, not just trusted. This work is ongoing and will keep evolving as
+        new research is added.
       </p>
     </section>
 
-   <div class="grid">
-
-  <section class="card">
-    <h2>Stochastic Macro-Driven DCF</h2>
-    <div class="meta">
-      A probabilistic valuation tool that simulates macro paths for oil, rates, and demand, then maps them into free cash flow and a distribution of implied values.
-    </div>
-    <a href="projects/stochastic-macro-dcf/index.html">View Tool Here →</a>
-    <div class="publish-date">Published on 04/19/26</div>
-  </section>
-
-  <section class="card">
-    <h2>Stochastic Macro-Driven DCF (v1.2)</h2>
-    <div class="meta">
-      A probabilistic valuation tool that simulates macro paths for oil, rates, and demand, then maps them into free cash flow and a distribution of implied values.
-    </div>
-    <a href="projects/stochastic-macro-dcf-v1-2/index.html">View Tool Here →</a>
-    <div class="publish-date">Published on 07/19/26</div>
-  </section>
-
-  <section class="card">
-    <h2>Moving Average Strategy (v1)</h2>
-    <div class="meta">
-      Weekly-rebalanced strategy using a 12-month trailing signal over a fixed large-cap universe.
-      Results shown vs an equal-weight benchmark and Nasdaq 100 (QQQ).
-    </div>
-    <a href="./projects/moving_average_v1/">View results →</a>
-    <div class="publish-date">Published on 01/23/26</div>
-  </section>
-
-</div>
-
-  <div class="footer-container">
-    <div class="about-section">
-      <h3>About</h3>
-      <p>
-        I'm an undergraduate student at Trinity College studying Mathematics and Economics with an interest in public markets and equity research. 
-        <a href="https://www.linkedin.com/in/owenpetropulos" target="_blank">LinkenLn →</a>
-      </p>
+    <div id="projects" class="section-heading">
+      <h2>Projects</h2>
+      <div class="rule"></div>
     </div>
 
-    <div class="legal-footer">
-      <p><strong>Disclaimer:</strong> All content on this site is for educational and research purposes only and does not constitute investment advice. Past performance does not guarantee future results. Always consult with a qualified financial advisor before making investment decisions.</p>
-      
-      <p><strong>Copyright Notice:</strong> © 2026 Owen Petropulos. All rights reserved. The content, methodologies, code, visualizations, and analysis presented on this site are the intellectual property of Owen Petropulos. Unauthorized reproduction, distribution, or use of this material without explicit written permission is prohibited.</p>
-      
+    <div class="project-grid">
+
+      <section class="card project-card">
+        <div class="card-body">
+          <span class="tag accent">Live tool</span>
+          <h3 style="margin-top:12px;">Stochastic Macro-Driven DCF (v1.2)</h3>
+          <p>
+            A probabilistic valuation tool that simulates correlated macro paths for oil,
+            rates, and demand, then maps them into free cash flow and a distribution of
+            implied values — including distress-linked capex and cost-of-debt dynamics.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="projects/stochastic-macro-dcf-v1-2/index.html" class="btn-link">View tool →</a>
+          <span class="publish-date">Published 07/19/26</span>
+        </div>
+      </section>
+
+      <section class="card project-card">
+        <div class="card-body">
+          <span class="tag">Backtest</span>
+          <h3 style="margin-top:12px;">Weekly Oil-DCF Rebalancing Backtest</h3>
+          <p>
+            A long-only, conviction-weighted strategy that ranks upstream oil producers by
+            how far price sits below their simulated DCF fair value each week, using
+            point-in-time SEC filing data to avoid look-ahead bias.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="projects/oil-dcf-backtest/index.html" class="btn-link">View results →</a>
+          <span class="publish-date">Published 07/25/26</span>
+        </div>
+      </section>
+
+      <section class="card project-card">
+        <div class="card-body">
+          <span class="tag">Dashboard</span>
+          <h3 style="margin-top:12px;">Markets Dashboard</h3>
+          <p>
+            A live market snapshot — equities, rates, commodities, and FX — refreshed
+            through the day, alongside sector coverage and a personal watchlist.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="dashboard/index.html" class="btn-link">Open dashboard →</a>
+          <span class="publish-date">Updated continuously</span>
+        </div>
+      </section>
+
+      <section class="card project-card">
+        <div class="card-body">
+          <span class="tag">Tool</span>
+          <h3 style="margin-top:12px;">Stochastic Macro-Driven DCF</h3>
+          <p>
+            The original probabilistic valuation tool that simulates macro paths for oil,
+            rates, and demand, then maps them into free cash flow and a distribution of
+            implied values. Superseded by v1.2.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="projects/stochastic-macro-dcf/index.html" class="btn-link">View tool →</a>
+          <span class="publish-date">Published 04/19/26</span>
+        </div>
+      </section>
+
+      <section class="card project-card">
+        <div class="card-body">
+          <span class="tag">Backtest</span>
+          <h3 style="margin-top:12px;">Moving Average Strategy (v1)</h3>
+          <p>
+            A weekly-rebalanced strategy using a 12-month trailing signal over a fixed
+            large-cap universe. Results shown against an equal-weight benchmark and the
+            Nasdaq 100 (QQQ).
+          </p>
+        </div>
+        <div class="card-footer">
+          <a href="projects/moving_average_v1/index.html" class="btn-link">View results →</a>
+          <span class="publish-date">Published 01/23/26</span>
+        </div>
+      </section>
+
+    </div>
+
+    <div id="about" class="section-heading">
+      <h2>About</h2>
+      <div class="rule"></div>
+    </div>
+
+    <section class="card" style="margin-bottom: 40px;">
+      <div class="about-grid">
+        <div>
+          <p>
+            I'm an undergraduate at Trinity College studying Mathematics and Economics,
+            with a focus on quantitative finance and equity research. My work centers on
+            building systematic tools — valuation models, backtesting frameworks, and
+            market dashboards — that make the assumptions behind an investment thesis
+            explicit and testable, rather than treating them as a black box.
+          </p>
+          <p>
+            Current projects on this site include a stochastic, macro-driven DCF for
+            valuing commodity-linked equities across a distribution of outcomes rather
+            than a single point estimate, and a weekly-rebalancing backtest that trades
+            directly on that model's own fair-value signal, using point-in-time SEC
+            filing data rather than static snapshots. Both are built end-to-end in Python
+            and JavaScript.
+          </p>
+          <p>
+            I'm Energy Sector Head for Trinity's Student Investment Fund, and I'll be
+            studying at the University of St Andrews in Fall 2026.
+          </p>
+        </div>
+        <div class="about-facts">
+          <div>
+            <div class="about-fact-label">Focus</div>
+            <div class="about-fact-value">Quantitative valuation &amp; systematic strategy</div>
+          </div>
+          <div>
+            <div class="about-fact-label">Study</div>
+            <div class="about-fact-value">Mathematics &amp; Economics, Trinity College</div>
+          </div>
+          <div>
+            <div class="about-fact-label">Role</div>
+            <div class="about-fact-value">Energy Sector Head, Trinity Student Investment Fund</div>
+          </div>
+          <div>
+            <div class="about-fact-label">Contact</div>
+            <div class="about-fact-value"><a href="https://www.linkedin.com/in/owenpetropulos" target="_blank">LinkedIn →</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p><strong style="color: var(--text-secondary);">Disclaimer:</strong> All content on this site is for educational and research purposes only and does not constitute investment advice. Past performance does not guarantee future results. Always consult with a qualified financial advisor before making investment decisions.</p>
+      <p><strong style="color: var(--text-secondary);">Copyright Notice:</strong> © 2026 Owen Petropulos. All rights reserved. The content, methodologies, code, visualizations, and analysis presented on this site are the intellectual property of Owen Petropulos. Unauthorized reproduction, distribution, or use of this material without explicit written permission is prohibited.</p>
       <p>For inquiries regarding licensing or collaboration, please contact via <a href="https://www.linkedin.com/in/owenpetropulos" target="_blank">LinkedIn</a>.</p>
-    </div>
+    </footer>
   </div>
 </body>
 </html>
