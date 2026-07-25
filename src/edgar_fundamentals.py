@@ -34,7 +34,7 @@ warnings.filterwarnings('ignore')
 # TODO(Owen): fill in your own name and email -- SEC requires a real,
 # descriptive User-Agent on every request. Example:
 # EDGAR_USER_AGENT = "Owen Petropulos owen@example.com"
-EDGAR_USER_AGENT = "Owen Petropulos owenpetropulos@gmail.com"
+EDGAR_USER_AGENT = "REPLACE_ME name@example.com"
 
 TICKER_CIK_URL = "https://www.sec.gov/files/company_tickers.json"
 COMPANY_FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
@@ -446,15 +446,27 @@ def is_reliable_series(table, min_unique_values=3):
     recurring revenue disclosure (e.g. a custom/extension tag not in
     CONCEPT_TAGS), not that revenue was actually flat for years.
 
-    Returns False for tables that are empty or whose revenue column has
-    fewer than `min_unique_values` distinct values -- these tickers
-    should fall back to a static snapshot rather than be trusted as
-    genuinely point-in-time.
+    Checks BOTH revenue and shares_outstanding -- as_of() requires both
+    to be non-null to return anything at all, so a table can have
+    perfectly good revenue data and still produce nothing but None from
+    every as_of() call if shares_outstanding independently failed (this
+    was BP's exact failure mode: revenue looked "reliable" while shares
+    were silently missing, so every actual snapshot came back None
+    despite the ticker being labeled reliable).
+
+    Returns False for tables that are empty or where either required
+    column has fewer than `min_unique_values` distinct values -- these
+    tickers should fall back to a static snapshot rather than be trusted
+    as genuinely point-in-time.
     """
-    if table is None or table.empty or 'revenue' not in table.columns:
+    if table is None or table.empty:
         return False
-    n_unique = table['revenue'].nunique(dropna=True)
-    return n_unique >= min_unique_values
+    for required_col in ('revenue', 'shares_outstanding'):
+        if required_col not in table.columns:
+            return False
+        if table[required_col].nunique(dropna=True) < min_unique_values:
+            return False
+    return True
 
 
 def get_point_in_time_fundamentals(tickers, verbose=True):
@@ -622,9 +634,11 @@ if __name__ == "__main__":
         print("=" * 70)
         for ticker, table in tables.items():
             reliable = is_reliable_series(table)
-            n_unique = table['revenue'].nunique(dropna=True) if (table is not None and not table.empty and 'revenue' in table.columns) else 0
+            has_cols = table is not None and not table.empty
+            n_rev = table['revenue'].nunique(dropna=True) if (has_cols and 'revenue' in table.columns) else 0
+            n_shares = table['shares_outstanding'].nunique(dropna=True) if (has_cols and 'shares_outstanding' in table.columns) else 0
             print(f"   {ticker:5s} {'RELIABLE' if reliable else 'UNRELIABLE -> fallback needed':30s} "
-                  f"({n_unique} distinct revenue values in history)")
+                  f"(revenue: {n_rev} distinct, shares: {n_shares} distinct)")
 
         print("\n" + "=" * 70)
         for ticker, table in tables.items():
