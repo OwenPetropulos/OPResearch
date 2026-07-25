@@ -1,0 +1,45 @@
+{
+  "period": {
+    "start": "2019-01-07",
+    "end": "2026-07-06"
+  },
+  "metrics": {
+    "strategy": {
+      "total_return": 1.4965087722088422,
+      "cagr": 0.12990803504901605,
+      "volatility": 0.2869237493765999,
+      "sharpe": 0.45276152751826093,
+      "max_drawdown": -0.5513497051154131
+    },
+    "benchmark": {
+      "total_return": 1.6415985888193543,
+      "cagr": 0.1384613621920936,
+      "volatility": 0.3313301080814402,
+      "sharpe": 0.417895503049364,
+      "max_drawdown": -0.6266568091423345
+    },
+    "sector_benchmark": {
+      "total_return": 1.5323640875842575,
+      "cagr": 0.132061069203808,
+      "volatility": 0.30026191699013965,
+      "sharpe": 0.43981957661365617,
+      "max_drawdown": -0.5676932953167266
+    }
+  },
+  "avg_weekly_turnover": 0.09569299626472204,
+  "sector_benchmark_ticker": "XLE",
+  "fundamentals_source": {
+    "XOM": "point-in-time",
+    "CVX": "point-in-time",
+    "SHEL": "point-in-time",
+    "TTE": "point-in-time",
+    "BP": "static",
+    "COP": "point-in-time",
+    "OXY": "point-in-time",
+    "CNQ": "point-in-time",
+    "SU": "point-in-time",
+    "FANG": "point-in-time",
+    "EOG": "point-in-time",
+    "PBR": "point-in-time"
+  }
+}
