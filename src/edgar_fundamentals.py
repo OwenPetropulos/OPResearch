@@ -34,7 +34,7 @@ warnings.filterwarnings('ignore')
 # TODO(Owen): fill in your own name and email -- SEC requires a real,
 # descriptive User-Agent on every request. Example:
 # EDGAR_USER_AGENT = "Owen Petropulos owen@example.com"
-EDGAR_USER_AGENT = "Owen Petropulos owenpetropulos@gmail.com"
+EDGAR_USER_AGENT = "REPLACE_ME name@example.com"
 
 TICKER_CIK_URL = "https://www.sec.gov/files/company_tickers.json"
 COMPANY_FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json"
@@ -54,6 +54,14 @@ CONCEPT_TAGS = {
         ('us-gaap', 'RevenueFromContractWithCustomerIncludingAssessedTax'),
         ('us-gaap', 'SalesRevenueNet'),
         ('us-gaap', 'SalesRevenueGoodsNet'),
+        # IFRS 15 ("Revenue from Contracts with Customers") took effect
+        # ~2018 and many IFRS filers switched their revenue tag then --
+        # confirmed via TTE's diagnostic: 'ifrs-full:Revenue' only has
+        # data through 2018-07-27, after which TotalEnergies reports
+        # under this tag instead. Likely affects other IFRS filers in
+        # this project's universe too (SHEL, BP, CNQ, SU, PBR), not just
+        # TTE, so this is hardcoded rather than left to auto-discovery.
+        ('ifrs-full', 'RevenueFromContractsWithCustomers'),
         ('ifrs-full', 'Revenue'),
     ],
     'shares_outstanding': [
@@ -66,11 +74,27 @@ CONCEPT_TAGS = {
         ('us-gaap', 'LongTermDebt'),
         ('us-gaap', 'LongTermDebtNoncurrent'),
         ('ifrs-full', 'BorrowingsNoncurrent'),
+        # IFRS filers commonly split current/noncurrent borrowings under
+        # these tags rather than one combined "total debt" figure.
+        # LongtermBorrowings alone understates true total debt (excludes
+        # the current portion), but is a reasonable single-tag fallback
+        # when net_debt_direct (below) isn't available for a company.
+        ('ifrs-full', 'LongtermBorrowings'),
     ],
     'cash': [
         ('us-gaap', 'CashAndCashEquivalentsAtCarryingValue'),
         ('us-gaap', 'CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents'),
         ('ifrs-full', 'CashAndCashEquivalents'),
+    ],
+    # Some companies (confirmed: TotalEnergies) disclose their own
+    # pre-computed net debt figure directly. Using it, when available,
+    # is strictly more reliable than combining separately-matched
+    # total_debt and cash tags -- one less place for tag-matching to go
+    # wrong. as_of() prefers this over the computed debt-minus-cash
+    # value whenever it's present. Not a required concept -- most
+    # companies won't have it, and total_debt/cash cover those.
+    'net_debt_direct': [
+        ('ifrs-full', 'NetDebt'),
     ],
 }
 
@@ -105,7 +129,16 @@ CONCEPT_EXCLUDE_KEYWORDS = {
     'revenue': ['relatedparty', 'persegment', 'pershare', 'costof',
                 'expense', 'discontinued', 'disaggregat'],
     'shares_outstanding': ['pershare', 'authorized', 'treasury'],
-    'total_debt': ['expense', 'pershare', 'interestexpense'],
+    'total_debt': ['expense', 'pershare', 'interestexpense',
+                   # Cash-flow-statement FLOW items (period changes,
+                   # proceeds, repayments) rather than balance-sheet
+                   # STOCK items (the actual debt owed as of a date).
+                   # Confirmed bug: 'CashFlowsFromUsedInIncreaseDecrease
+                   # InCurrentBorrowings' matched the 'borrowing' keyword
+                   # for TTE but is a period change, not a debt balance.
+                   'cashflow', 'increasedecrease', 'proceedsfrom',
+                   'repaymentsof', 'capitalised', 'capitalized',
+                   'undrawn', 'weightedaverage'],
     'cash': ['pershare', 'restricted'],
 }
 
@@ -329,7 +362,12 @@ def build_point_in_time_table(facts_json, verbose=False):
     series_by_concept = {}
     for key in CONCEPT_TAGS:
         records, source = _extract_concept_series(facts_json, key, annual_only=(key == 'revenue'))
-        series_by_concept[key] = records
+        # Only use records that actually cleared the reliability bar
+        # (source is not None) -- otherwise "NONE FOUND" gets printed
+        # while low-quality/sub-threshold records still silently leak
+        # into the table (e.g. BP showing a stray shares_outstanding
+        # value despite the log saying no usable tag was found).
+        series_by_concept[key] = records if source is not None else []
         if verbose:
             print(f"      [{key}] using tag: {source or 'NONE FOUND'}")
 
@@ -371,17 +409,29 @@ def as_of(point_in_time_table, date):
     row = eligible.iloc[-1]
     revenue = row.get('revenue')
     shares = row.get('shares_outstanding')
-    debt_raw = row.get('total_debt', 0.0)
-    cash_raw = row.get('cash', 0.0)
     if pd.isna(revenue) or pd.isna(shares):
         return None
-    debt_val = float(debt_raw) if not pd.isna(debt_raw) else 0.0
-    cash_val = float(cash_raw) if not pd.isna(cash_raw) else 0.0
+
+    # Prefer a company's own self-reported net debt figure (confirmed
+    # available for TotalEnergies via 'ifrs-full:NetDebt') over combining
+    # separately-matched total_debt and cash tags -- one fewer place for
+    # tag-matching to go wrong. Falls back to the computed value for
+    # companies that don't disclose net debt as its own line item.
+    net_debt_direct = row.get('net_debt_direct')
+    if not pd.isna(net_debt_direct):
+        net_debt = float(net_debt_direct)
+    else:
+        debt_raw = row.get('total_debt', 0.0)
+        cash_raw = row.get('cash', 0.0)
+        debt_val = float(debt_raw) if not pd.isna(debt_raw) else 0.0
+        cash_val = float(cash_raw) if not pd.isna(cash_raw) else 0.0
+        net_debt = debt_val - cash_val
+
     return {
         'current_revenue': float(revenue) / 1e6,       # normalize to $mm
         'current_production': 100,                       # scale-free anchor
         'shares_outstanding': float(shares) / 1e6,        # normalize to mm shares
-        'net_debt': (debt_val - cash_val) / 1e6,
+        'net_debt': net_debt / 1e6,
     }
 
 
